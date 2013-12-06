@@ -26,10 +26,10 @@
   - минимальное поддерживаемое разрешение 1024x768
   - максимальное количество браузеров
   - IE6 можно не поддерживать
-  - ((bem.info BEM))
+  - [BEM](http://bem.info)
     - минимум как методология
     - максимум как платформа
-  - следование ((https://github.com/yandex-shri-ekb/8-exam/tree/master/codestyle codestyle))
+  - следование [codestyle](https://github.com/yandex-shri-ekb/8-exam/tree/master/codestyle)
   - все ручками (исключение, использование csscomb)
 
 
