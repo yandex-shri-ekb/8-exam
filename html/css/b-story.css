@@ -1,0 +1,85 @@
+.b-story
+{
+    position: relative;
+    height: 3544px;
+    width: 100%;
+}
+
+.b-story-georgiy:after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 96px;
+    top: -34px;
+    background: url("../img/b-story-georgiy-line.png") no-repeat;
+    width: 762px;
+    height: 3280px;
+}
+
+.b-story__first,
+.b-story__second
+{
+    height: 800px;
+    position: relative;
+}
+
+.b-description-step
+{
+    width: 294px;
+    padding: 80px 0 0;
+    margin: 0 96px 0;
+}
+
+.b-description-step_right
+{
+    float: right;
+}
+
+.b-story-georgiy__img-notebook,
+.b-story-georgiy__img-phone,
+.b-story-georgiy__img-pen,
+.b-story-georgiy__img-photo,
+.b-story-georgiy__img-ticket,
+.b-story-georgiy__img-watch
+{
+    position: absolute;
+}
+
+.b-story-georgiy__img-notebook
+{
+    left: 504px;
+    top: 90px;
+}
+
+.b-story-georgiy__img-phone
+{
+    left: -18px;
+    top: 338px;
+}
+
+.b-story-georgiy__img-pen
+{
+    left: 340px;
+    top: 335px;
+}
+
+.b-story-georgiy__img-ticket
+{
+    left: 426px;
+    top: 445px;
+}
+
+.b-story-georgiy__img-watch
+{
+    left: 504px;
+    top: 602px;
+    z-index: 2;
+}
+
+.b-story-georgiy__img-photo
+{
+    left: 816px;
+    top: 558px;
+}
+

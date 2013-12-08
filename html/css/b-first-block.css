@@ -1,0 +1,179 @@
+.b-first-block
+{
+    position: relative;
+    z-index: 1;
+}
+
+.b-first-block__header
+{
+    height: 575px;
+    text-align: center;
+}
+
+.b-first-block__description
+{
+    border-bottom: 2px solid #000;
+}
+
+.b-logo
+{
+    display: inline-block;
+    background: url("../img/logo.png") no-repeat;
+    width: 138px;
+    height: 92px;
+    margin: 0 0 275px;
+}
+
+.b-title-page
+{
+    font: 48px/48px Arial, sans-serif;
+}
+
+.b-text-information
+{
+    float: left;
+    width: 450px;
+    margin: 80px 96px;
+}
+
+.b-play-video
+{
+    float: left;
+    margin: 80px  0 0;
+}
+
+.b-play-video__img
+{
+    display: block;
+    background-image: url("../img/play-video.png");
+    width: 138px;
+    height: 84px;
+    margin: 0 0 10px;
+}
+
+.b-first-block__person
+{
+    height: 420px;
+    position: relative;
+}
+
+.b-person
+{
+    width: 612px;
+    margin: 80px auto 0;
+}
+
+.b-person__item
+{
+    width: 140px;
+    float: left;
+    margin: 0 96px 0 0;
+    text-align: center;
+    position: relative;
+}
+
+.b-person-avatar
+{
+    background-image: url("../img/avatars-small.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 138px;
+    cursor: pointer;
+    margin: 0 0 10px;
+
+}
+
+.b-person__item_mr0
+{
+    margin-right: 0;
+}
+
+.b-person-avatar_alex_small
+ {
+     background-position: 0 -149px;
+ }
+
+.b-person-avatar_georgiy_small
+{
+    background-position: 0 -298px;
+}
+
+.b-person-avatar_big
+{
+    background: url("../img/avatars-big.png") no-repeat 0 0;
+    width: 174px;
+    height: 175px;
+    margin-top: -25px;
+    margin-left: -15px;
+}
+
+.b-person-avatar_max_big
+{
+    background-position: 0 0;
+}
+
+.b-person-avatar_alex_big
+{
+   background-position: 0 -184px;
+}
+
+.b-person-avatar_georgiy_big
+{
+    background-position: 0 -368px;
+}
+
+.b-person-description
+{
+    width: 762px;
+    margin: 30px auto 0;
+    position: relative;
+}
+
+.b-person-description__item{
+    position: absolute;
+    width: 294px;
+    text-align: center;
+}
+
+.b-person-description__item_middle
+{
+    left: 234px;
+}
+
+.b-person-description__item_right
+{
+    right: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
