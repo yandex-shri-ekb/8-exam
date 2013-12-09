@@ -1,0 +1,64 @@
+/*
+Позиционирование
+Отображение
+Размеры
+Таблицы/Списки
+Текст
+Шрифт
+Цвета/Эффекты
+Свойства группируются по типам
+1em = 16px
+
+12 пунктов * (96/72) = 16 пикселей.
+*/
+
+html
+{
+    font: 100%/1.125em Arial, Helvetica, sans-serif;
+}
+
+body
+{
+    background: #fff;
+
+    /*font: normal 100%/1.125em Arial, Helvetica, sans-serif;*/
+    
+    color: #000;
+}
+
+.b-steps
+{
+    margin: 1.125em 0 0 1.125em;
+
+    border: 1px #000 solid;
+}
+
+.b-steps-stepOne
+{
+    width: 60em;
+    min-height: 78em;
+
+    background: #ffe05d;
+
+border: 1px green solid;    
+}
+
+.stepOne-logo-block
+{
+    position: relative;
+
+    height: 38em;
+
+    text-align: center;
+
+    background: url(img/logo.png) no-repeat;
+
+}
+
+.motto
+{
+    position: relative;
+    top: 18em;
+
+    font: bold 2.25em sans-serif;
+}
