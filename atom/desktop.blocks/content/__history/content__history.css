@@ -1,0 +1,10 @@
+.content__history
+{
+    position: relative;
+
+    width: 952px;
+    margin: 18px 0 18px 18px;
+
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}

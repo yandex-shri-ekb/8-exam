@@ -1,6 +1,6 @@
 ({
     block: 'page',
-    title: 'Title of the page',
+    title: 'Экзаменационная работа — Яндекс ШРИ в Екатеринбурге 2013 — Антон Жевак',
     favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '_index.css', ie: false },
@@ -15,21 +15,25 @@
             js: true
         },
         {
-            block: 'header',
-            content: [
-                'header content goes here'
-            ]
+            block: 'aside-button',
+            mods: { icon: 'close' },
+            js: true
         },
         {
             block: 'content',
             content: [
-                'main content'
-            ]
-        },
-        {
-            block: 'footer',
-            content: [
-                'footer content goes here'
+                {
+                    elem: 'history',
+                    content: [
+
+                    ]
+                },
+                {
+                    elem: 'aside',
+                    content: [
+
+                    ]
+                }
             ]
         },
         { elem: 'js', url: '_index.js' }
