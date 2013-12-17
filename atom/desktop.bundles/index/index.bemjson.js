@@ -9,6 +9,12 @@
     ],
     content:[
         {
+            block: 'popup',
+            content: 'Привет',
+            id: 'video',
+            js: true
+        },
+        {
             block: 'header',
             content: [
                 'header content goes here'

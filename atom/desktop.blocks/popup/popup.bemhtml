@@ -1,0 +1,13 @@
+block popup {
+    content : [
+        {
+            elem: 'inner',
+            content: [
+                { elem: 'content', content: this.ctx.content },
+                { elem: 'close' },
+                { elem: 'shadow' }
+            ]
+        },
+        { elem: 'va-helper' }
+    ]
+}

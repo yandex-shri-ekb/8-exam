@@ -1,0 +1,10 @@
+.popup__content
+{
+    top: 0;
+    left: 0;
+
+    min-width: 150px;
+    min-height: 100px;
+
+    background: #c0c0c0;
+}
