@@ -1,0 +1,7 @@
+.footer
+{
+    width: 100%; /* for ie7 */
+    padding: 73px 0 90px;
+
+    border-top: 2px solid #000;
+}

@@ -1,0 +1,19 @@
+.steps__item_num_four
+{
+    padding: 0 0 588px;
+}
+
+.steps_color_yellow .steps__item_num_four
+{
+    background: no-repeat 251px 100% url(../img/step/yellow-sep4.png);
+}
+
+.steps_color_red .steps__item_num_four
+{
+    background: no-repeat 251px 100% url(../img/step/red-sep4.png);
+}
+
+.steps_color_blue .steps__item_num_four
+{
+    background: no-repeat 241px 100% url(../img/step/blue-sep4.png);
+}

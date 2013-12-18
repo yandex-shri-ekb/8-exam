@@ -1,0 +1,13 @@
+.footer__menu-link
+{
+    display: inline;
+
+    text-decoration: none;
+
+    color: #000;
+}
+
+.footer__menu-link:hover
+{
+    text-decoration: underline;
+}

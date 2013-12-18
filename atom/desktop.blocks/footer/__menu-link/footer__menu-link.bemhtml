@@ -1,0 +1,6 @@
+elem menu-link {
+    tag: 'a',
+    attrs: {
+        href: this.ctx.url
+    }
+}
