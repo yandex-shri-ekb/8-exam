@@ -1,0 +1,25 @@
+.video__link-image
+{
+    width: 130px;
+    height: 75px;
+    margin: 0 0 10px;
+
+    border: 2px solid #000;
+    border-radius: 3px;
+    background: url(video__link-image.png) no-repeat 50%;
+}
+
+.page_color_yellow .video__link-image
+{
+    background-color: #ffe05d;
+}
+
+.page_color_red .video__link-image
+{
+    background-color: #ff8282;
+}
+
+.page_color_blue .video__link-image
+{
+    background-color: #72c4f6;
+}

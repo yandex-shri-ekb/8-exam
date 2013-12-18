@@ -6,7 +6,7 @@ block header {
         },
         {
             elem: 'title',
-            content: '— А что если интернет подстроится под&nbsp;меня?'
+            content: this.ctx.content
         },
         { elem: 'atoms' }
     ]

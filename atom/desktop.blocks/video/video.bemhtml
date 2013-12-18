@@ -1,0 +1,17 @@
+block video {
+    content: [
+        {
+            elem: 'text',
+            content: this.ctx.content
+        },
+        {
+            elem: 'link',
+            tag: 'a',
+            attrs: { href: '#video', title: 'Открыть видео' },
+            content: [
+                { elem: 'link-image' },
+                'Весь сайт в одном видео'
+            ]
+        }
+    ]
+}
