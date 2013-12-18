@@ -1,0 +1,45 @@
+.story-box
+{
+    width: 990px;
+    outline: 2px solid #000;
+    outline-offset: -2px;
+    background: #ff8282;
+}
+
+.yandex-box
+{
+    height: 590px;
+}
+
+.yandex-logo
+{
+    width: 138px;
+    height: 92px;
+    margin: 0 auto;
+    background: url(/images/yandex-logo_bg.png)
+}
+
+.yandex-logo-scene
+{
+    margin: 0 auto;
+    padding: 0;
+}
+
+.yandex-logo-scene-parallaxed-image
+{
+    display: block;
+    width: 100%;
+}
+
+.yandex-scene__drinks-and-airplanes
+{
+    position: absolute;
+    left: 230px;
+}
+
+.yandex-scene__splash
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
