@@ -1,6 +1,6 @@
 modules.define('i-bem__dom', function(provide, BEMDOM) {
 
-    BEMDOM.decl('persons', {
+    BEMDOM.decl('video', {
         onSetMod : {
             js : {
                 inited : function() {
@@ -9,15 +9,14 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
             },
         },
         _onLinkClick: function(e) {
-            // получить цвет из модификатора
-            // var color = this.getMod('color')
-            // var c = this.findBlockOutside('i-controller-user');
-            // c.changeColor(color);
+            alert('Открыть попап');
+            // TODO: Почему-то не находит
+            // var popup = this.findBlockOutside('popup');
+            // popup.setMod('showed', 'yes');
         },
     }, {
 
     });
-
 
     provide(BEMDOM);
 

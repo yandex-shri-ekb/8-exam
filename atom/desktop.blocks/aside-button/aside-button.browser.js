@@ -1,8 +1,18 @@
-/*global modules:false */
+modules.define('i-bem__dom', function(provide, BEMDOM) {
 
-modules.define('aside-button', function(provide) {
+    BEMDOM.decl('aside-button', {
+        onSetMod: {
+            js: function() {
+                this.bindTo('click', function(e) {
+                    alert('Clicked!');
+                });
+            },
+        },
+    }, {
 
-provide();
+    });
+
+    provide(BEMDOM);
 
 });
 
