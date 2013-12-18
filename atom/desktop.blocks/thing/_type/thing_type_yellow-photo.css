@@ -1,0 +1,10 @@
+.thing_type_yellow-photo
+{
+    bottom: 350px;
+    left: -90px;
+
+    width: 142px;
+    height: 158px;
+
+    background: url(thing_type_yellow-photo.png);
+}

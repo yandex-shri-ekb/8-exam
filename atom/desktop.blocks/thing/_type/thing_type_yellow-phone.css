@@ -1,0 +1,10 @@
+.thing_type_yellow-phone
+{
+    bottom: 240px;
+    right: 160px;
+
+    width: 150px;
+    height: 282px;
+
+    background: url(thing_type_yellow-phone.png);
+}

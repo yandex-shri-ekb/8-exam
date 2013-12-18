@@ -1,0 +1,10 @@
+.thing_type_blue-pen
+{
+    bottom: 290px;
+    left: 330px;
+
+    width: 48px;
+    height: 233px;
+
+    background: url(thing_type_blue-pen.png);
+}

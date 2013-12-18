@@ -1,0 +1,10 @@
+.thing_type_yellow-camera
+{
+    bottom: 130px;
+    left: 565px;
+
+    width: 228px;
+    height: 164px;
+
+    background: url(thing_type_yellow-camera.png);
+}

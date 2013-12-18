@@ -1,0 +1,10 @@
+.thing_type_blue-cell-phone
+{
+    left: 170px;
+    bottom: 250px;
+
+    width: 148px;
+    height: 278px;
+
+    background: url(thing_type_blue-cell-phone.png);
+}

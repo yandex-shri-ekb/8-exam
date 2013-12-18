@@ -1,0 +1,10 @@
+.thing_type_red-mug
+{
+    bottom: 175px;
+    left: 520px;
+
+    width: 138px;
+    height: 224px;
+
+    background: url(thing_type_red-mug.png);
+}

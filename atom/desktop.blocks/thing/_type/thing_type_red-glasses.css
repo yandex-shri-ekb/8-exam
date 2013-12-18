@@ -1,0 +1,10 @@
+.thing_type_red-glasses
+{
+    bottom: 5px;
+    right: 5px;
+
+    width: 384px;
+    height: 137px;
+
+    background: url(thing_type_red-glasses.png);
+}

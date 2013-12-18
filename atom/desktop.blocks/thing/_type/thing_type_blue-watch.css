@@ -1,0 +1,10 @@
+.thing_type_blue-watch
+{
+    bottom: 20px;
+    left: 485px;
+
+    width: 130px;
+    height: 247px;
+
+    background: url(thing_type_blue-watch.png);
+}

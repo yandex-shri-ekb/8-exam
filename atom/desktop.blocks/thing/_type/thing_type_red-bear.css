@@ -1,0 +1,10 @@
+.thing_type_red-bear
+{
+    bottom: -235px;
+    left: -59px;
+
+    width: 318px;
+    height: 386px;
+
+    background: url(thing_type_red-bear.png);
+}

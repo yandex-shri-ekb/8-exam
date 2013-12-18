@@ -1,0 +1,10 @@
+.thing_type_blue-ticket
+{
+    bottom: 275px;
+    right: 90px;
+
+    width: 454px;
+    height: 179px;
+
+    background: url(thing_type_blue-ticket.png);
+}

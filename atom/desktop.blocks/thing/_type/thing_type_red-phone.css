@@ -1,0 +1,10 @@
+.thing_type_red-phone
+{
+    bottom: 210px;
+    left: 95px;
+
+    width: 150px;
+    height: 280px;
+
+    background: url(thing_type_red-phone.png);
+}

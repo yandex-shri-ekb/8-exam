@@ -1,0 +1,10 @@
+.thing_type_red-tamagotchi
+{
+    bottom: -50px;
+    left: -65px;
+
+    width: 149px;
+    height: 237px;
+
+    background: url(thing_type_red-tamagotchi.png);
+}

@@ -1,0 +1,10 @@
+.thing_type_red-bottle
+{
+    bottom: 85px;
+    left: 600px;
+
+    width: 162px;
+    height: 397px;
+
+    background: url(thing_type_red-bottle.png);
+}

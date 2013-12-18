@@ -1,0 +1,10 @@
+.thing_type_red-photo
+{
+    bottom: 270px;
+    left: 95px;
+
+    width: 306px;
+    height: 242px;
+
+    background: url(thing_type_red-photo.png);
+}

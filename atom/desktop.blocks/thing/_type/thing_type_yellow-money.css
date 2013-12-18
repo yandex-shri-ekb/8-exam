@@ -1,0 +1,10 @@
+.thing_type_yellow-money
+{
+    bottom: 360px;
+    left: 425px;
+
+    width: 216px;
+    height: 207px;
+
+    background: url(thing_type_yellow-money.png);
+}

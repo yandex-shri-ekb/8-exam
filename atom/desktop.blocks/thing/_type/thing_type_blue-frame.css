@@ -1,0 +1,10 @@
+.thing_type_blue-frame
+{
+    bottom: 20px;
+    right: -70px;
+
+    width: 227px;
+    height: 292px;
+
+    background: url(thing_type_blue-frame.png);
+}

@@ -1,0 +1,10 @@
+.thing_type_red-monitor
+{
+    top: 30px;
+    right: -60px;
+
+    width: 450px;
+    height: 377px;
+
+    background: url(thing_type_red-monitor.png);
+}

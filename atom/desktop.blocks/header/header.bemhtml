@@ -1,0 +1,13 @@
+block header {
+    content: [
+        {
+            elem: 'flag',
+            content: 'Яндекс'
+        },
+        {
+            elem: 'title',
+            content: '— А что если интернет подстроится под&nbsp;меня?'
+        },
+        { elem: 'atoms' }
+    ]
+}
