@@ -13,8 +13,9 @@
             block: 'popup',
             content: {
                 elem: 'iframe',
+                tag: 'iframe',
                 attrs: {
-                    src: '//player.vimeo.com/video/75709551?title=0&amp;byline=0&amp;portrait=0&amp;color=ffcc00&amp;autoplay=1',
+                    src: '//player.vimeo.com/video/75709551?title=0&amp;byline=0&amp;portrait=0&amp;color=ffcc00&amp',
                     width: 500,
                     height: 281,
                     frameborder: 0,

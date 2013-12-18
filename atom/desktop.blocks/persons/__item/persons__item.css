@@ -1,0 +1,13 @@
+.persons__item
+{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+
+    width: 235px;
+    padding: 0 0 72px;
+
+    vertical-align: top;
+
+    font: 16px/1.15 Arial;
+}

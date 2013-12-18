@@ -1,0 +1,79 @@
+block persons {
+    content: {
+        elem: 'items',
+        content: [
+            {
+                elem: 'item',
+                content: [
+                    {
+                        elem: 'link',
+                        content: [
+                            {
+                                elem: 'photo',
+                                tag: 'img',
+                                attrs: { src: '/desktop.blocks/persons/__photo/max.png', width: 138, height: 138, alt: 'Максим' }
+                            },
+                            {
+                                elem: 'name',
+                                content: 'Максим'
+                            }
+                        ]
+                    },
+                    {
+                        elem: 'desc',
+                        content: 'Предпочитает путешествовать самостоятельно и налегке. Уверен, что только так можно проникнуться культурой страны.'
+                    },
+                    { elem: 'sep' }
+                ]
+            },
+            {
+                elem: 'item',
+                content: [
+                    {
+                        elem: 'link',
+                        content: [
+                            {
+                                elem: 'photo',
+                                tag: 'img',
+                                attrs: { src: '/desktop.blocks/persons/__photo/alex.png', width: 138, height: 138, alt: 'Алексей Быков' }
+                            },
+                            {
+                                elem: 'name',
+                                content: 'Алексей Быков'
+                            }
+                        ]
+                    },
+                    {
+                        elem: 'desc',
+                        content: 'В отпуск ездит вместе с женой и дочкой. Считает, что отдыхать лучше всего в отелях на побережье.'
+                    },
+                    { elem: 'sep' }
+                ]
+            },
+            {
+                elem: 'item',
+                content: [
+                    {
+                        elem: 'link',
+                        content: [
+                            {
+                                elem: 'photo',
+                                tag: 'img',
+                                attrs: { src: '/desktop.blocks/persons/__photo/george.png', width: 138, height: 138, alt: 'Георгий И. Дауге' }
+                            },
+                            {
+                                elem: 'name',
+                                content: 'Георгий И. Дауге'
+                            }
+                        ]
+                    },
+                    {
+                        elem: 'desc',
+                        content: 'Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания.'
+                    },
+                    { elem: 'sep' }
+                ]
+            }
+        ]
+    }
+}

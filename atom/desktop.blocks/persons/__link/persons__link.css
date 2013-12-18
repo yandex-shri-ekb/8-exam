@@ -1,0 +1,6 @@
+.persons__link
+{
+    display: inline-block;
+
+    cursor: pointer;
+}

@@ -1,0 +1,24 @@
+.persons__sep
+{
+    position: absolute;
+    bottom: -43px;
+    left: 95px;
+
+    width: 762px;
+    height: 97px;
+}
+
+.page_color_yellow .persons__sep
+{
+    background: url(yellow_sep.png);
+}
+
+.page_color_red .persons__sep
+{
+    background: url(red_sep.png);
+}
+
+.page_color_blue .persons__sep
+{
+    background: url(blue_sep.png);
+}
