@@ -1,0 +1,103 @@
+/* ../../desktop.blocks/page/page.css begin */
+.page
+{
+  margin: 0;
+}
+
+/* ../../desktop.blocks/page/page.css end */
+/* ../../desktop.blocks/wrapper/wrapper.css begin */
+.wrapper
+{
+  overflow: hidden;
+}
+
+/* ../../desktop.blocks/wrapper/wrapper.css end */
+/* ../../desktop.blocks/history/history.css begin */
+
+.history
+{
+  margin: 18px 0 18px 18px;
+  border: 2px solid #000;
+  border-right: 0;
+  width: 950px;
+}
+
+/* ../../desktop.blocks/history/history.css end */
+/* ../../desktop.blocks/head-history/head-history.css begin */
+.head-history
+{
+  height: 589px;
+  border-bottom: 2px solid #000;
+  position: relative;
+  background: #ffe05d;
+}
+
+/* ../../desktop.blocks/head-history/head-history.css end */
+/* ../../desktop.blocks/head-history/__background/head-history__background.css begin */
+.head-history__background
+{
+  background: url("../../desktop.blocks/head-history/__background/head-history__background.png") no-repeat;
+  height: 570px;
+  position: absolute;
+  width: 972px;
+  top: -20px;
+  left: -20px;
+}
+
+/* ../../desktop.blocks/head-history/__background/head-history__background.css end */
+/* ../../desktop.blocks/head-history/__title/head-history__title.css begin */
+.head-history__title {
+  font: 48px/48px "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  top: 428px;
+
+}
+
+/* ../../desktop.blocks/head-history/__title/head-history__title.css end */
+/* ../../desktop.blocks/video-history/video-history.css begin */
+.video-history
+{
+  height: 392px;
+  border-bottom: 2px solid #000;
+  font: 16px/24px Arial, sans-serif;
+}
+
+/* ../../desktop.blocks/video-history/video-history.css end */
+/* ../../desktop.blocks/introductory-text/introductory-text.css begin */
+.introductory-text
+{
+}
+
+/* ../../desktop.blocks/introductory-text/introductory-text.css end */
+/* ../../desktop.blocks/video-button/video-button.css begin */
+.video-button
+{
+}
+
+/* ../../desktop.blocks/video-button/video-button.css end */
+/* ../../desktop.blocks/video-button/__button/video-button__button.css begin */
+.video-button__button
+{
+}
+
+/* ../../desktop.blocks/video-button/__button/video-button__button.css end */
+/* ../../desktop.blocks/video-button/__title/video-button__title.css begin */
+.video-button__title
+{
+}
+
+/* ../../desktop.blocks/video-button/__title/video-button__title.css end */
+/* ../../desktop.blocks/used-services/used-services.css begin */
+.used-services {
+  border-left: 2px #000 solid;
+  outline: 18px rgba(0, 0, 0, 0.10) solid;
+  width: 100%;
+  margin-left: 970px;
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+/* ../../desktop.blocks/used-services/used-services.css end */

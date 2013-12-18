@@ -1,0 +1,9 @@
+.head-history__background
+{
+  background: url("head-history__background.png") no-repeat;
+  height: 570px;
+  position: absolute;
+  width: 972px;
+  top: -20px;
+  left: -20px;
+}

@@ -1,0 +1,12 @@
+@import url(../../desktop.blocks/page/page.css);
+@import url(../../desktop.blocks/wrapper/wrapper.css);
+@import url(../../desktop.blocks/history/history.css);
+@import url(../../desktop.blocks/head-history/head-history.css);
+@import url(../../desktop.blocks/head-history/__background/head-history__background.css);
+@import url(../../desktop.blocks/head-history/__title/head-history__title.css);
+@import url(../../desktop.blocks/video-history/video-history.css);
+@import url(../../desktop.blocks/introductory-text/introductory-text.css);
+@import url(../../desktop.blocks/video-button/video-button.css);
+@import url(../../desktop.blocks/video-button/__button/video-button__button.css);
+@import url(../../desktop.blocks/video-button/__title/video-button__title.css);
+@import url(../../desktop.blocks/used-services/used-services.css);

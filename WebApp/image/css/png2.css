@@ -1,0 +1,19 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:d6290ba86d640e2a3b9d154cbf09df3c:b0347d86cf5078c5a5166d73453ad509:415f22b0e755ac0d21ceecfd18c75de9$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(png2.png);}
+
+.atom-logo {width:294px; height:201px; background-position: -2px -2px}
+.vide_max {width:138px; height:80px; background-position: -298px -166px}
+.video_alex {width:138px; height:80px; background-position: -298px -84px}
+.video_grig {width:138px; height:80px; background-position: -298px -2px}
+.yandex-logo {width:78px; height:30px; background-position: -2px -205px}
