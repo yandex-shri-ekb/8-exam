@@ -1,3 +1,7 @@
-.content__cell
+.content__cell:after
 {
+    display: table;
+    clear: both;
+
+    content: "";
 }

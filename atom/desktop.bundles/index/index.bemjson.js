@@ -1,5 +1,6 @@
 ({
     block: 'page',
+    mods: { color: 'yellow' },
     title: 'Экзаменационная работа — Яндекс ШРИ в Екатеринбурге 2013 — Антон Жевак',
     favicon: '/favicon.ico',
     head: [
@@ -368,7 +369,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_yellow/right.1.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/yellow/right.1.jpg',
                                                     },
                                                 ],
                                             },
@@ -389,7 +390,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_yellow/right.2.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/yellow/right.2.jpg',
                                                     },
                                                 ],
                                             },
@@ -410,7 +411,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_yellow/right.3.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/yellow/right.3.jpg',
                                                     },
                                                 ],
                                             },
@@ -431,7 +432,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_yellow/right.4.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/yellow/right.4.jpg',
                                                     },
                                                 ],
                                             },
@@ -458,7 +459,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_red/right.1.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/red/right.1.jpg',
                                                     },
                                                 ],
                                             },
@@ -479,7 +480,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_red/right.2.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/red/right.2.jpg',
                                                     },
                                                 ],
                                             },
@@ -500,7 +501,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_red/right.3.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/red/right.3.jpg',
                                                     },
                                                 ],
                                             },
@@ -521,7 +522,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_red/right.4.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/red/right.4.jpg',
                                                     },
                                                 ],
                                             },
@@ -548,7 +549,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_blue/right.1.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/blue/right.1.jpg',
                                                     },
                                                 ],
                                             },
@@ -569,7 +570,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_blue/right.2.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/blue/right.2.jpg',
                                                     },
                                                 ],
                                             },
@@ -590,7 +591,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_blue/right.3.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/blue/right.3.jpg',
                                                     },
                                                 ],
                                             },
@@ -611,7 +612,7 @@
                                                     },
                                                     {
                                                         elem: 'screen',
-                                                        attrs: { src: 'img/aside-items/_color_blue/right.4.jpg' },
+                                                        img: '/desktop.blocks/aside-items/_color/blue/right.4.jpg',
                                                     },
                                                 ],
                                             },

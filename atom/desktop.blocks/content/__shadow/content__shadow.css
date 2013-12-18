@@ -10,6 +10,6 @@
 
     content: "";
 
-    background: url(../img/content__shadow.png);
+    background: url(content__shadow.png);
     background: rgba(0,0,0, .15);
 }

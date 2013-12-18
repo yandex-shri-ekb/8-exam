@@ -1,3 +1,20 @@
 .content__cell_type_history
 {
+    width: 2856px;
+    margin-top: 43px;
+}
+
+.page_color_yellow .content__cell_type_history
+{
+    margin-left: 0;
+}
+
+.page_color_red .content__cell_type_history
+{
+    margin-left: -952px;
+}
+
+.page_color_blue .content__cell_type_history
+{
+    margin-left: -1904px;
 }

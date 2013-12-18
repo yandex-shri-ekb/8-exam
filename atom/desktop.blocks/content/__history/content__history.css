@@ -8,3 +8,19 @@
     border-left: 2px solid #000;
     border-right: 2px solid #000;
 }
+
+
+.page_color_yellow .content__history
+{
+    background: #ffe05d;
+}
+
+.page_color_red .content__history
+{
+    background: #ff8282;
+}
+
+.page_color_blue .content__history
+{
+    background: #72c4f6;
+}

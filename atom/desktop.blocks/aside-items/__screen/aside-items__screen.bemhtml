@@ -1,0 +1,6 @@
+elem screen {
+    tag: 'img',
+    attrs: {
+        src: this.ctx.img
+    }
+}
