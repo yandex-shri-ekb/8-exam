@@ -3,7 +3,7 @@
     mix: [
         { block: 'i-color-controller', js: true },
         { block: 'i-popup-controller', js: true },
-        { block: 'i-height-setter', js: true },
+        //{ block: 'i-height-controller', js: true },
     ],
     title: 'Экзаменационная работа — Яндекс ШРИ в Екатеринбурге 2013 — Антон Жевак',
     head: [
@@ -12,7 +12,7 @@
     ],
     content:[
         { block: 'person', mods: {color: 'blue'} },
-        { block: 'nav' },
+        { block: 'nav', js: true },
         {
             block: 'popup',
             content: {
@@ -40,6 +40,9 @@
         },
         {
             block: 'content',
+            mix: [
+                { block: 'i-height-controller', js: true },
+            ],
             content: [
                 {
                     elem: 'history',
@@ -47,7 +50,7 @@
                         {
                             elem: 'cell',
                             mods: { type: 'header' },
-                            attrs: { id: 'header' },
+                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'header' } }],
                             content: [
                                 {
                                     block: 'header',
@@ -72,7 +75,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'one' },
-                                            attrs: { id: 'yellow-1' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'yellow-1' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -88,7 +91,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'two' },
-                                            attrs: { id: 'yellow-2' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'yellow-2' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -104,7 +107,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'three' },
-                                            attrs: { id: 'yellow-3' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'yellow-3' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -121,7 +124,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'four' },
-                                            attrs: { id: 'yellow-4' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'yellow-4' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -144,7 +147,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'one' },
-                                            attrs: { id: 'red-1' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'red-1' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -161,7 +164,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'two' },
-                                            attrs: { id: 'red-2' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'red-2' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -178,7 +181,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'three' },
-                                            attrs: { id: 'red-3' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'red-3' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -196,7 +199,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'four' },
-                                            attrs: { id: 'red-4' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'red-4' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -222,7 +225,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'one' },
-                                            attrs: { id: 'blue-1' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'blue-1' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -240,7 +243,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'two' },
-                                            attrs: { id: 'blue-2' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'blue-2' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -257,7 +260,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'three' },
-                                            attrs: { id: 'blue-3' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'blue-3' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -274,7 +277,7 @@
                                         {
                                             elem: 'item',
                                             mods: { num: 'four' },
-                                            attrs: { id: 'blue-4' },
+                                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'blue-4' } }],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -294,7 +297,7 @@
                         {
                             elem: 'cell',
                             mods: { type: 'footer', },
-                            attrs: { id: 'footer' },
+                            mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'footer' } }],
                             content: [
                                 { block: 'persons' },
                                 {
@@ -314,8 +317,7 @@
                             elem: 'cell',
                             mods: { type: 'aside', border: 'bottom' },
                             mix: [{ block: 'i-height-setter', elem: 'block' }],
-
-                            attrs: { 'data-height': 'header' },
+                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'header' } }],
                             content: [
                                 {
                                     block: 'aside-items',
@@ -372,7 +374,7 @@
                                     content: [
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'yellow-1' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'yellow-1' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -393,7 +395,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'yellow-2' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'yellow-2' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -414,7 +416,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'yellow-3' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'yellow-3' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -435,7 +437,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'yellow-4' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'yellow-4' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -462,7 +464,7 @@
                                     content: [
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'red-1' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'red-1' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -483,7 +485,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'red-2' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'red-2' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -504,7 +506,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'red-3' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'red-3' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -525,7 +527,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'red-4' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'red-4' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -552,7 +554,7 @@
                                     content: [
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'blue-1' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'blue-1' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -573,7 +575,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'blue-2' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'blue-2' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -594,7 +596,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'blue-3' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'blue-3' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -615,7 +617,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            attrs: { 'data-height': 'yellow-4' },
+                                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'blue-4' } }],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -641,7 +643,7 @@
                         {
                             elem: 'cell',
                             mods: { type: 'aside' },
-                            attrs: { 'data-height' : 'footer' },
+                            mix: [{ block: 'i-height-controller', elem: 'in', mods: { name: 'footer' } }],
                             content: {
                                 block: 'aside-items',
                                 content: {
