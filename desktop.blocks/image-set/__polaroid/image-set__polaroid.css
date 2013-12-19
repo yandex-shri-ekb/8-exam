@@ -7,17 +7,16 @@
 
 .image-set__polaroid_pos_1
 {
-    top: 360px;
+    margin-top: 360px;
     margin-left: -106px;
-
 }
 
 .image-set__polaroid_pos_2
 {
-    top: 532px;
+    margin-top: 532px;
 }
 
 .image-set__polaroid_pos_3
 {
-    top: 498px;
+    margin-top: 498px;
 }

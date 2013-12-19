@@ -1,4 +1,16 @@
 .image-set__aeroexpress
 {
     background: url(image-set__aeroexpress.png) no-repeat;
+    width: 628px;
+    height: 244px;
+}
+
+.image-set__aeroexpress_push_down_yes
+{
+    margin-top: 318px;
+}
+
+.image-set__aeroexpress_push_left_yes
+{
+    margin-left: -174px;
 }

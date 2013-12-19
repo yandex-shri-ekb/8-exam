@@ -1,21 +1,38 @@
 .user__icon
 {
+    background: url(user__icon.png);
     width: 138px;
     height: 138px;
     margin: 0 auto 16px;
 }
 
-.user__icon.yellow
+.user__icon_type_yellow
 {
-    background: url(../../story/story/first/users/yellow.png);
 }
 
-.user__icon.blue
+.user__icon_type_red
 {
-    background: url(../../story/story/first/users/gray.png);
 }
 
-.user__icon.red
+.user__icon_type__blue
 {
-    background: url(../../story/story/first/users/red.png);
+}
+
+.user__icon_type_mini
+{
+    width: 140px;
+    height: 140px;
+    background-position: ;
+}
+
+.user__icon_type_middle
+{
+    width: 180px;
+    height: 180px;
+}
+
+.user__icon_type_large
+{
+    width: 220px;
+    height: 220px;
 }
