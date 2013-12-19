@@ -28,7 +28,7 @@
                                             elem: 'hero',
                                             mix: { block: 'grid__module', mods: {span: 10, col: 2} },
                                             content: '- А что если интернет подстроится под меня?'
-                                        },
+                                        }
                                     ]
                                 },
                                 {
@@ -77,7 +77,116 @@
                                             type: 'blue',
                                             name: 'Григорий И. Дауге',
                                             text: 'Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания..'
+                                        }
+                                    ]
+                                },
+                                {
+                                    elem: 'steps',
+                                    content: [
+                                        {
+                                            block: 'step',
+                                            content: [
+                                                {
+                                                    elem: 'row',
+                                                    mix: { block: 'grid_row' },
+                                                    content: [
+                                                        {
+                                                            elem: 'path-1',
+                                                            mix: { block: 'grid__module', mods: {col: 2, span: 10 } }
+                                                        },
+                                                        {
+                                                            elem: 'text',
+                                                            mix: { block: 'grid__module', mods: {col: 2, span: 4 } },
+                                                            content: 'Максим хочет увидеть настоящий, нетуристический Таиланд. <br><br/>Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё, что ему нужно, — билет на самолёт.'
+                                                        },
+                                                        {
+                                                            elem: 'map-holder',
+                                                            mix: { block: 'grid__module', mods: {col: 7, span: 4 } },
+                                                            content:
+                                                            {
+                                                                elem: 'map',
+                                                                mods: { 'pushed_up': 'yes' }
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'row',
+                                                    mix: { block: 'grid_row' },
+                                                    content: [
+                                                        {
+                                                            elem: 'path-2',
+                                                            mix: { block: 'grid__module', mods: {col: 2, span: 9 } }
+                                                        },
+                                                        {
+                                                            elem: 'aviaticket-holder',
+                                                            mix: { block: 'grid__module', mods: {col: 1, span: 6 } },
+                                                            content: {
+                                                                elem: 'aviaticket',
+                                                                mods: { 'pushed_up': 'yes', 'pushed_left': 'yes' }
+                                                            }
+
+                                                        },
+                                                        {
+                                                            elem: 'compass-holder',
+                                                            mix: { block: 'grid__module', mods: {col: 8, span: 3 } },
+                                                            content: {
+                                                                block: 'image-set',
+                                                                elem: 'compass',
+                                                                mods: { 'pushed_up': 'yes' }
+                                                            }
+                                                        },
+                                                        {
+                                                            elem: 'book-holder',
+                                                            mix: { block: 'grid__module', mods: {col: 11, span: 3 } },
+                                                            content: {
+                                                                elem: 'book',
+                                                                mods: { 'pushed_up': 'yes' }
+                                                            }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         },
+                                        {
+                                            block: 'step',
+                                            content: [
+                                                {
+                                                    elem: 'row',
+                                                    mix: { block: 'grid_row' },
+                                                    content: [
+                                                        {
+                                                            elem: 'laptop',
+                                                            mix: { block: 'grid__module', mods: {col: 2, span: 5 } },
+                                                            mods: { 'push_down': 'yes' }
+                                                        },
+                                                        {
+                                                            elem: 'text',
+                                                            mix: { block: 'grid__module', mods: {col: 8, span: 4 } },
+                                                            content: 'Максим хочет увидеть настоящий, нетуристический Таиланд. <br><br/>Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё, что ему нужно, — билет на самолёт.'
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    elem: 'row',
+                                                    mix: { block: 'grid_row' },
+                                                    content: [
+                                                        {
+                                                            elem: 'path-3',
+                                                            mix: { block: 'grid__module', mods: {col: 2, span: 9 } }
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'step-3',
+                                            content: 'step-3'
+                                        },
+                                        {
+                                            elem: 'step-4',
+                                            content: 'step-4'
+                                        }
                                     ]
                                 },
                                 {

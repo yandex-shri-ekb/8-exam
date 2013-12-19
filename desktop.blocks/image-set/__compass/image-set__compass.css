@@ -1,0 +1,11 @@
+.image-set__compass
+{
+    background: url(../../story/story/story/images/yellow_30.png);
+    width: 150px;
+    height: 161px;
+}
+
+.image-set__compass_pushed_up_yes
+{
+    margin-top: -82px;
+}
