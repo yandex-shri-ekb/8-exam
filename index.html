@@ -22,6 +22,8 @@
     </head>
     <body>
         <div class="container">
+            <div class="sidebar">
+            </div>
             <div class="drinks-and-airplanes-box">
                 <div class="drinks-and-airplanes-box__logo"></div>
                 <div class="drinks-and-airplanes-box__text-field">
@@ -39,6 +41,28 @@
                 </div>
             </div>
             <div class="storyline-box">
+                <div class="storyline-box__red-images">
+                    <img src="images/red/family.png" class="storyline-box__red_image storyline-box__red_image-family" alt="Фотграфия семьи в рамке">
+                    <img src="images/red/papers.png" class="storyline-box__red_image storyline-box__red_image-papers" alt="Бумаги">
+                    <img src="images/red/passport.png" data-stellar-ratio="1.1" class="storyline-box__red_image storyline-box__red_image-passport" alt="Пасспорт и билеты">
+                    <img src="images/red/book.png" class="storyline-box__red_image storyline-box__red_image-book" alt="Книга о семейном отдыхе">
+                    <img src="images/red/bear.png" data-stellar-ratio="1.1" class="storyline-box__red_image storyline-box__red_image-bear" alt="Детский плюшевый мишка">
+                    <img src="images/red/applephone.png" data-stellar-ratio="1.03" class="storyline-box__red_image storyline-box__red_image-applephone" alt="Яблочный телефон">
+                    <img src="images/red/bill.png" class="storyline-box__red_image storyline-box__red_image-bill" alt="Чек">
+                    <img src="images/red/lenses_down.png" class="storyline-box__red_image storyline-box__red_image-lenses_down" alt="Пачка линз">
+                    <img src="images/red/lenses_up.png" data-stellar-ratio="1.03" class="storyline-box__red_image storyline-box__red_image-lenses_up" alt="Пачка линз">
+                     <img src="images/red/tamagochi.png" class="storyline-box__red_image storyline-box__red_image-tamagochi" alt="Тамагочи">
+                    <img src="images/red/glass.png" data-stellar-ratio="1.03" class="storyline-box__red_image storyline-box__red_image-glass" alt="Солнцезащитные очки">
+                    <img src="images/red/driver-lic.png" class="storyline-box__red_image storyline-box__red_image-driver-lic" alt="Водительское удостоверение">
+                    <img src="images/red/keys.png" data-stellar-ratio="1.06" class="storyline-box__red_image storyline-box__red_image-keys" alt="Ключи">
+                    <img src="images/red/ipc.png" class="storyline-box__red_image storyline-box__red_image-ipc" alt="Компьютер">
+                    <img src="images/red/cup-of-milk.png" class="storyline-box__red_image storyline-box__red_image-cup-of-milk" alt="Компьютер">
+                    <img src="images/red/bag.png" class="storyline-box__red_image storyline-box__red_image-bag-one" alt="Чемодан">
+                    <img src="images/red/bag.png" class="storyline-box__red_image storyline-box__red_image-bag-two" alt="Чемодан">
+                    <img src="images/red/bag.png" class="storyline-box__red_image storyline-box__red_image-bag-three" alt="Чемодан">
+                    <img src="images/red/food.png" class="storyline-box__red_image storyline-box__red_image-bag-food" alt="Еда">
+                    <img src="images/red/drinks.png" class="storyline-box__red_image storyline-box__red_image-bag-drinks" alt="Напитки">
+                </div>
             </div>
             <div class="footer">
                 <div class="footer__image-field">
@@ -47,13 +71,8 @@
                 <div class="footer__text-field">
                     <p>Мир один, а люди разные. Так и интернет — он один, но для каждого разный.</p>
                     <p>Теперь посмотрите, как планировали путешествие в Таиланд другие герои.</p>
-                    <p>
-                        <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
-                        <div class="yashare-auto-init" data-yashareL10n="ru"
-                            data-yashareQuickServices="yaru,vkontakte,facebook,twitter,moimir,gplus"
-                            data-yashareTheme="counter">
-                        </div> 
-                    </p>
+                    <p class="yashare-auto-init" data-yashareL10n="ru" data-yashareQuickServices="yaru,vkontakte,facebook,twitter,moimir,gplus" data-yashareTheme="counter">
+                    </p> 
                     <div class="footer__span-text-field">
                         <span class="footer__span-text"><a href="help.yandex.ru">Помощь</a></span>
                         <span class="footer__span-text"><a href="feedback2.yandex.ru/atom">Обратная связь</a></span>
@@ -64,7 +83,12 @@
         </div>
         <!-- Load scripts -->
         <script type="text/javascript" src="//yandex.st/jquery/2.0.3/jquery.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.stellar.min.js"></script>
+        <script type="text/javascript" src="//yandex.st/share/share.js"></script>
         <script type="text/javascript">
+            $(function() {
+                $(window).stellar();
+            });
         </script>
     </body>
 </html>

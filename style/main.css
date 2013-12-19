@@ -6,13 +6,19 @@ body
     line-height: 1.5;
 }
 
+.wrap
+{
+
+}
+
 .container
 {
-    width: 990px;
+    width: 975px;
+    float: left;
     background: #ff8282;
-    outline: 2px solid #000;
-    outline-offset: -2px;
+    border: 2px solid #000;
     margin: 18px;
+    z-index: 1;
 }
 
 /* DRINKS AND AIRPLANES! */
@@ -72,12 +78,133 @@ body
     background-repeat: no-repeat;
 }
 
+.annotation-and-video-box__button:hover
+{
+    box-shadow: 0 0 20px #ff8282;
+}
+
 /* STORYLINE! */
 .storyline-box
 {
     position: relative;
+    height: 4450px;
 }
 
+.storyline-box__red-images
+{
+    height: 3280px;
+    background: url(/images/red/guides.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.storyline-box__red_image
+{
+    position: absolute;
+    pointer-events: none;
+}
+
+.storyline-box__red_image-family
+{
+    margin: 373px 0 0 96px;
+}
+
+.storyline-box__red_image-papers
+{
+    margin: 123px 0 0 486px;
+}
+
+.storyline-box__red_image-passport
+{
+    margin: 520px 0 0 564px;
+}
+
+.storyline-box__red_image-book
+{
+    margin: 684px 0 0 174px;
+}
+
+.storyline-box__red_image-bear
+{
+    margin: 733px 0 0 -60px;
+}
+
+.storyline-box__red_image-applephone
+{
+    margin: 1230px 0 0 96px;
+}
+
+.storyline-box__red_image-bill
+{
+    margin: 1160px 0 0 350px;
+}
+
+.storyline-box__red_image-lenses_up
+{
+    margin: 1210px 0 0 520px;
+}
+
+.storyline-box__red_image-lenses_down
+{
+    margin: 1230px 0 0 550px;
+}
+
+.storyline-box__red_image-tamagochi
+{
+    margin: 1500px 0 0 -48px;
+}
+
+.storyline-box__red_image-glass
+{
+    margin: 1590px 0 0 580px;
+}
+
+.storyline-box__red_image-driver-lic
+{
+    margin: 1972px 0 0 96px;
+}
+
+.storyline-box__red_image-keys
+{
+    margin: 2100px 0 0 260px;
+}
+
+.storyline-box__red_image-ipc
+{
+    margin: 1850px -48px 0 590px;
+}
+
+.storyline-box__red_image-cup-of-milk
+{
+    margin: 2200px 0 0 430px;
+}
+
+.storyline-box__red_image-bag-one
+{
+    margin: 2400px 0 0 -64px;
+}
+
+.storyline-box__red_image-bag-two
+{
+    margin: 2340px 0 0 -82px;
+}
+
+.storyline-box__red_image-bag-three
+{
+    margin: 2270px 0 0 -64px;
+}
+
+.storyline-box__red_image-bag-food
+{
+    margin: 2800px 0 0 -250px;
+}
+
+.storyline-box__red_image-bag-drinks
+{
+    margin: 2830px 0 0 96px;
+}
+
+/* FOOTER! */
 .footer
 {
     height: 400px;
@@ -102,5 +229,15 @@ body
 .footer__image-field
 {
     position: absolute;
-    padding: 100px 0 0 700px;
+    padding: 100px 0 0 666px;  /* Так правда лучше Оо */
+}
+
+/* SIDEBAR! */
+.sidebar
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    margin-left: 1008px;
+    background: #000;
 }
