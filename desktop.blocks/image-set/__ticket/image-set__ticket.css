@@ -1,0 +1,11 @@
+.image-set__ticket
+{
+    background: url(image-set__ticket.png) no-repeat;
+    width: 193px;
+    height: 244px;
+}
+
+.image-set__ticket_push_right_yes
+{
+    margin-left: 16px;
+}

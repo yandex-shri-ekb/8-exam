@@ -1,11 +1,11 @@
 .image-set__map
 {
-    background: url(../../story/story/story/images/yellow_22.png);
+    background: url(image-set__map.png) no-repeat;
     width: 294px;
     height: 218px;
 }
 
-.image-set__map_pushed_up_yes
+.image-set__map_push_up_yes
 {
     margin-top: -36px;
 }

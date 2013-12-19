@@ -100,12 +100,12 @@
                                                             content: 'Максим хочет увидеть настоящий, нетуристический Таиланд. <br><br/>Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё, что ему нужно, — билет на самолёт.'
                                                         },
                                                         {
-                                                            elem: 'map-holder',
+                                                            block: 'image-set',
                                                             mix: { block: 'grid__module', mods: {col: 7, span: 4 } },
                                                             content:
                                                             {
                                                                 elem: 'map',
-                                                                mods: { 'pushed_up': 'yes' }
+                                                                mods: { 'push_up': 'yes' }
                                                             }
                                                         }
                                                     ]
@@ -119,29 +119,28 @@
                                                             mix: { block: 'grid__module', mods: {col: 2, span: 9 } }
                                                         },
                                                         {
-                                                            elem: 'aviaticket-holder',
+                                                            block: 'image-set',
                                                             mix: { block: 'grid__module', mods: {col: 1, span: 6 } },
                                                             content: {
                                                                 elem: 'aviaticket',
-                                                                mods: { 'pushed_up': 'yes', 'pushed_left': 'yes' }
+                                                                mods: { 'push_up': 'yes', 'push_left': 'yes' }
                                                             }
 
                                                         },
                                                         {
-                                                            elem: 'compass-holder',
+                                                            block: 'image-set',
                                                             mix: { block: 'grid__module', mods: {col: 8, span: 3 } },
                                                             content: {
-                                                                block: 'image-set',
                                                                 elem: 'compass',
-                                                                mods: { 'pushed_up': 'yes' }
+                                                                mods: { 'push_up': 'yes' }
                                                             }
                                                         },
                                                         {
-                                                            elem: 'book-holder',
+                                                            block: 'image-set',
                                                             mix: { block: 'grid__module', mods: {col: 11, span: 3 } },
                                                             content: {
                                                                 elem: 'book',
-                                                                mods: { 'pushed_up': 'yes' }
+                                                                mods: { 'push_up': 'yes' }
                                                             }
                                                         }
                                                     ]
@@ -156,14 +155,70 @@
                                                     mix: { block: 'grid_row' },
                                                     content: [
                                                         {
-                                                            elem: 'laptop',
-                                                            mix: { block: 'grid__module', mods: {col: 2, span: 5 } },
-                                                            mods: { 'push_down': 'yes' }
+                                                            elem: 'path-3',
+                                                            mix: { block: 'grid__module', mods: {col: 2, span: 12 } }
+                                                        },
+                                                        {
+                                                            block: 'image-set',
+                                                            content: [
+                                                                {
+                                                                    elem: 'polaroid',
+                                                                    mix: { block: 'grid__module', mods: {col: 1, span: 2 } },
+                                                                    mods: { 'pos': 1 }
+                                                                },
+                                                                {
+                                                                    elem: 'polaroid',
+                                                                    mix: { block: 'grid__module', mods: {col: 4, span: 2 } },
+                                                                    mods: { 'pos': 3 }
+                                                                },
+                                                                {
+                                                                    elem: 'polaroid',
+                                                                    mix: { block: 'grid__module', mods: {col: 3, span: 2 } },
+                                                                    mods: { 'pos': 2 }
+                                                                },
+                                                                {
+                                                                    elem: 'laptop',
+                                                                    mix: { block: 'grid__module', mods: {col: 2, span: 5 } },
+                                                                    mods: { 'push_down': 'yes' }
+                                                                },
+                                                                {
+                                                                    elem: 'iphone',
+                                                                    mix: { block: 'grid__module', mods: {col: 9, span: 3 } },
+                                                                    mods: { 'push_down': 'yes' }
+                                                                }
+                                                            ]
                                                         },
                                                         {
                                                             elem: 'text',
                                                             mix: { block: 'grid__module', mods: {col: 8, span: 4 } },
                                                             content: 'Максим хочет увидеть настоящий, нетуристический Таиланд. <br><br/>Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё, что ему нужно, — билет на самолёт.'
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'step',
+                                            content: [
+                                                {
+                                                    elem: 'row',
+                                                    mix: { block: 'grid_row' },
+                                                    content: [
+                                                        {
+                                                            elem: 'text',
+                                                            mix: { block: 'grid__module', mods: {col: 2, span: 4 } },
+                                                            content: 'Рюкзак с вещами и ноутбуком — вот и весь багаж Максима. <br><br> На метро он доберётся до вокзала, а оттуда поедет на аэроэкспрессе.'
+                                                        },
+                                                        {
+                                                            block: 'image-set',
+                                                            mix: { block: 'grid__module', mods: {col: 9, span: 4 } },
+                                                            content: [
+                                                                {
+                                                                    elem: 'magazine',
+                                                                    mods: { 'push_up' : 'yes', 'push_right' : 'yes' }
+                                                                }
+                                                            ]
+
                                                         }
                                                     ]
                                                 },
@@ -172,16 +227,32 @@
                                                     mix: { block: 'grid_row' },
                                                     content: [
                                                         {
-                                                            elem: 'path-3',
-                                                            mix: { block: 'grid__module', mods: {col: 2, span: 9 } }
+                                                            block: 'image-set',
+                                                            content: [
+                                                                {
+                                                                    elem: 'ticket',
+                                                                    mods: { 'push-right': 'yes' },
+                                                                    mix: { block: 'grid__module', mods: {col: 5, span: 3 } }
+                                                                },
+                                                                {
+                                                                    elem: 'aeroexpress',
+                                                                    mods: { 'push-right': 'yes' },
+                                                                    mix: { block: 'grid__module', mods: {col: 1, span: 10 } }
+                                                                },
+                                                                {
+                                                                    elem: 'money'
+                                                                },
+                                                                {
+                                                                    elem: 'traffic'
+                                                                },
+                                                                {
+                                                                    elem: 'ipod'
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
                                             ]
-                                        },
-                                        {
-                                            block: 'step-3',
-                                            content: 'step-3'
                                         },
                                         {
                                             elem: 'step-4',

@@ -1,16 +1,16 @@
 .image-set__aviaticket
 {
-    background: url(../../story/story/story/images/yellow_36.png);
+    background: url(image-set__aviaticket.png) no-repeat;
     width: 620px;
     height: 244px;
 }
 
-.image-set__aviaticket_pushed_up_yes
+.image-set__aviaticket_push_up_yes
 {
     margin-top: -82px;
 }
 
-.image-set__aviaticket_pushed_left_yes
+.image-set__aviaticket_push_left_yes
 {
     margin-left: -166px;
 }

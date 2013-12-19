@@ -1,11 +1,11 @@
 .image-set__book
 {
-    background: url(../../story/story/story/images/yellow_33.png);
+    background: url(image-set__book.png) no-repeat;
     width: 240px;
     height: 302px;
 }
 
-.image-set__book_pushed_up_yes
+.image-set__book_push_up_yes
 {
     margin-top: -82px;
 }
