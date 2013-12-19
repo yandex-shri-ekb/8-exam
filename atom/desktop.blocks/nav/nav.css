@@ -1,0 +1,12 @@
+.nav
+{
+    position: fixed;
+    z-index: 100;
+    top: 20px;
+    left: 18px;
+
+    width: 956px;
+    height: 100px;
+
+    background: rgba(0,0,0, .1);
+}

@@ -1,0 +1,11 @@
+.person
+{
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 18px;
+
+    width: 956px;
+    height: 0;
+    margin: -109px 0 0;
+}

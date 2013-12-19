@@ -11,6 +11,8 @@
         { elem: 'meta', attrs: { name: 'description', content: '' }}
     ],
     content:[
+        { block: 'person', mods: {color: 'blue'} },
+        { block: 'nav' },
         {
             block: 'popup',
             content: {

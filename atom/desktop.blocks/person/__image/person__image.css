@@ -1,0 +1,24 @@
+.person__image
+{
+    width: 217px;
+    height: 217px;
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.person_color_yellow .person__image
+{
+    background-image: url(yellow.png);
+}
+
+.person_color_red .person__image
+{
+    background-image: url(red.png);
+}
+
+.person_color_blue .person__image
+{
+    background-image: url(blue.png);
+}
