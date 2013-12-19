@@ -1,0 +1,7 @@
+.story__video-image
+{
+    background: url(../story/first/video.png);
+    width: 138px;
+    height: 80px;
+    margin: 0 0 16px;
+}

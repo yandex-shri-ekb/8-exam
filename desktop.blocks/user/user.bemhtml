@@ -1,0 +1,20 @@
+block('user')(
+
+    content()(function() {
+        return [
+            {
+                elem: 'icon',
+                content: this.ctx.icon
+            },
+            {
+                elem: 'name',
+                content: this.ctx.name
+            },
+            {
+                elem: 'text',
+                content: this.ctx.text
+            }
+        ];
+    })
+
+);
