@@ -1,17 +1,30 @@
-.story-box
+body
+{
+    padding: 0;
+    margin: 0;
+    font: 1em "Arial";
+    line-height: 1.5;
+}
+
+.container
 {
     width: 990px;
+    background: #ff8282;
     outline: 2px solid #000;
     outline-offset: -2px;
-    background: #ff8282;
+    margin: 18px;
 }
 
-.yandex-box
+/* DRINKS AND AIRPLANES! */
+.drinks-and-airplanes-box
 {
+    position: relative;
     height: 590px;
+    background: url(/images/yandex-box_bg.png);
+    border-bottom: 2px solid #000;
 }
 
-.yandex-logo
+.drinks-and-airplanes-box__logo
 {
     width: 138px;
     height: 92px;
@@ -19,27 +32,75 @@
     background: url(/images/yandex-logo_bg.png)
 }
 
-.yandex-logo-scene
-{
-    margin: 0 auto;
-    padding: 0;
-}
-
-.yandex-logo-scene-parallaxed-image
-{
-    display: block;
-    width: 100%;
-}
-
-.yandex-scene__drinks-and-airplanes
+.drinks-and-airplanes-box__text-field
 {
     position: absolute;
-    left: 230px;
+    width: 990px;
+    bottom: 40px;
+    text-align: center;
 }
 
-.yandex-scene__splash
+/* ANNOTATION AND VIDEO! */
+.annotation-and-video-box
+{
+    height: 395px;
+    background: #fff;
+    border-bottom: 2px solid #000;
+}
+
+.annotation-and-video-box__text-field
+{
+    padding: 70px 425px 0 96px;
+}
+
+.annotation-and-video-box__button-field
 {
     position: absolute;
-    top: 0;
-    left: 0;
+    padding: 94px 0 0 642px;
+    text-align: center;
+}
+
+.annotation-and-video-box__button
+{
+    width: 190px;
+    height: 90px;
+    margin: 0  0 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: #ff8282 url(/images/annotation-and-video-box__button_arrow-right.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+/* STORYLINE! */
+.storyline-box
+{
+    position: relative;
+}
+
+.footer
+{
+    height: 400px;
+    background: #fff;
+}
+
+.footer__text-field
+{
+    padding: 70px 425px 0 96px;
+}
+
+.footer__span-text-field
+{
+    margin-top: 50px;
+}
+
+.footer__span-text
+{
+    margin: 0 40px 0 0;
+}
+
+.footer__image-field
+{
+    position: absolute;
+    padding: 100px 0 0 700px;
 }

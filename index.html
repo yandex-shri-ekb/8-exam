@@ -21,29 +21,50 @@
         <link rel="apple-touch-icon" sizes="152x152" href="images/icons/apple-touch-icon-152x152.png">
     </head>
     <body>
-        <div class="story-box">
-            <div class="yandex-box">
-                <div class="yandex-logo"></div>
-                <div>
-                    <ul class="yandex-scene__drinks-and-airplanes">
-                        <li class="layer" data-depth="0.10"><img src="images/yandex-scene__drinks-and-airplanes.png"></li>
-                    </ul>
-                    <ul class="yandex-scene__splash">
-                        <li class="layer" data-depth="0.20"><img src="images/yandex-scene__splash_grey.png"></li>
-                        <li class="layer" data-depth="0.30"><img src="images/yandex-scene__splash_white.png"></li>
-                    </ul>
+        <div class="container">
+            <div class="drinks-and-airplanes-box">
+                <div class="drinks-and-airplanes-box__logo"></div>
+                <div class="drinks-and-airplanes-box__text-field">
+                    <h1>А что, если интернет подстроится под Вас?</h1>
+                </div>
+            </div>
+            <div class="annotation-and-video-box">
+                <div class="annotation-and-video-box__button-field">
+                    <div class="annotation-and-video-box__button"></div>
+                    <span class="annotation-and-video-box__button-label">Весь сайт в одном видео</span>
+                </div>
+                <div class="annotation-and-video-box__text-field">
+                        <p>Интернет сегодня — это не только информация и технологии, но и люди. Людей много и они все разные, а сайты для всех пользователей обычно выглядят одинаково. Яндекс уже научился адаптироваться под конкретного пользователя и готов поделиться этой технологией с другими.</p>
+                        <p>«Атом». Технологическая платформа, задача которой — предоставить сайтам возможность изменять содержание страниц под конкретного пользователя.</p>
+                </div>
+            </div>
+            <div class="storyline-box">
+            </div>
+            <div class="footer">
+                <div class="footer__image-field">
+                    <img src="images/icons/apple-touch-icon-152x152.png">
+                </div>
+                <div class="footer__text-field">
+                    <p>Мир один, а люди разные. Так и интернет — он один, но для каждого разный.</p>
+                    <p>Теперь посмотрите, как планировали путешествие в Таиланд другие герои.</p>
+                    <p>
+                        <script type="text/javascript" src="//yandex.st/share/share.js" charset="utf-8"></script>
+                        <div class="yashare-auto-init" data-yashareL10n="ru"
+                            data-yashareQuickServices="yaru,vkontakte,facebook,twitter,moimir,gplus"
+                            data-yashareTheme="counter">
+                        </div> 
+                    </p>
+                    <div class="footer__span-text-field">
+                        <span class="footer__span-text"><a href="help.yandex.ru">Помощь</a></span>
+                        <span class="footer__span-text"><a href="feedback2.yandex.ru/atom">Обратная связь</a></span>
+                        <span>© 2013, ООО <a href="yandex.ru">«Яндекс»</a></span>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Load scripts -->
-        <script type="text/javascript" src="js/parallax.min.js"></script>
+        <script type="text/javascript" src="//yandex.st/jquery/2.0.3/jquery.min.js"></script>
         <script type="text/javascript">
-            // First-plan scene
-            var first_scene = document.getElementsByClassName("yandex-scene__drinks-and-airplanes")[0];
-            var parallax_first_scene = new Parallax(first_scene);
-            // Second plan scene
-            var second_scene = document.getElementsByClassName("yandex-scene__splash")[0];
-            var parallax_second_scene = new Parallax(second_scene);
         </script>
     </body>
 </html>
