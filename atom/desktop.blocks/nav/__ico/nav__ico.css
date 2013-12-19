@@ -1,0 +1,9 @@
+.nav__ico
+{
+    display: inline-block;
+
+    width: 100px;
+    height: 100px;
+
+    background: url(nav__ico.png);
+}

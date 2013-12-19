@@ -1,0 +1,39 @@
+.nav_num_one .nav__ico_color_blue
+{
+    background-position: -550px -50px;
+}
+
+.nav_num_two .nav__ico_color_blue
+{
+    background-position: -550px -150px;
+}
+
+.nav_num_three .nav__ico_color_blue
+{
+    background-position: -550px -250px;
+}
+
+.nav_num_four .nav__ico_color_blue
+{
+    background-position: -550px -350px;
+}
+
+.page_color_blue .nav_num_one .nav__ico_color_blue
+{
+    background-position: -450px -50px;
+}
+
+.page_color_blue .nav_num_two .nav__ico_color_blue
+{
+    background-position: -450px -150px;
+}
+
+.page_color_blue .nav_num_three .nav__ico_color_blue
+{
+    background-position: -450px -250px;
+}
+
+.page_color_blue .nav_num_four .nav__ico_color_blue
+{
+    background-position: -450px -350px;
+}

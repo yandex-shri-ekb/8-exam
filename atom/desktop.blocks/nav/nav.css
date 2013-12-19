@@ -2,11 +2,15 @@
 {
     position: fixed;
     z-index: 100;
-    top: 20px;
+    top: -100px;
     left: 18px;
 
     width: 956px;
     height: 100px;
 
+    text-align: center;
+
     background: rgba(0,0,0, .1);
+
+    font: 0/0 a;
 }

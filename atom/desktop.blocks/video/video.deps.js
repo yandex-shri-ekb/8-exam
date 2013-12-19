@@ -1,7 +1,5 @@
 ({
     mustDeps: [
-        {
-            elems: ['link', 'link-image', 'text'],
-        }
+        { elems: ['link', 'link-image', 'text'] },
     ],
 })

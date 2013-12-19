@@ -3,6 +3,7 @@
     mix: [
         { block: 'i-color-controller', js: true },
         { block: 'i-popup-controller', js: true },
+        { block: 'i-scroll-controller', js: true },
         //{ block: 'i-height-controller', js: true },
     ],
     title: 'Экзаменационная работа — Яндекс ШРИ в Екатеринбурге 2013 — Антон Жевак',
@@ -12,7 +13,7 @@
     ],
     content:[
         { block: 'person', mods: {color: 'blue'} },
-        { block: 'nav', js: true },
+        { block: 'nav', js: true, mods: {num:'one'}},
         {
             block: 'popup',
             content: {

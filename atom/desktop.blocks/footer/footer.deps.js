@@ -1,14 +1,5 @@
 ({
     mustDeps: [
-        {
-            elems: [
-                'copyrights',
-                'line',
-                'menu',
-                'menu-item',
-                'menu-link',
-                'text',
-            ],
-        },
+        { elems: ['copyrights', 'line', 'menu', 'menu-item', 'menu-link', 'text'] },
     ],
 })

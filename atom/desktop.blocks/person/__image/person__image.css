@@ -2,10 +2,24 @@
 {
     width: 217px;
     height: 217px;
-    margin: 0 auto;
+    margin: -100px auto 0;
+
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
 
     background-repeat: no-repeat;
     background-position: 50%;
+}
+
+.person__image:hover
+{
+    -webkit-transition: opacity .3s;
+    -moz-transition: opacity .3s;
+    -o-transition: opacity .3s;
+    transition: opacity .3s;
+    opacity: .3;
 }
 
 .person_color_yellow .person__image
