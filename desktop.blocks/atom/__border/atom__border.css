@@ -2,19 +2,5 @@
 {
     margin: 18px 0 18px 18px;
     border: 2px solid #000;
-}
-
-.atom__border_color_yellow
-{
-    background: #ffe05d;
-}
-
-.atom__border_color_red
-{
-    background: #ff8282;
-}
-
-.atom__border_color_blue
-{
-    background: #72c4f6;
+    border-right: 0;
 }

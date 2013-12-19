@@ -1,0 +1,9 @@
+[class^=image_theme_yellow]
+{
+    position: absolute;
+}
+
+.image_theme_yellow_layer_middle
+{
+    z-index: 10;
+}

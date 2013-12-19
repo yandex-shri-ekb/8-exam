@@ -13,6 +13,7 @@
         { elem: 'laptop' },
         { elem: 'magazine' },
         { elem: 'map' },
+        { elem: 'money' },
         { elem: 'notebook' },
         { elem: 'polaroid' },
         { elem: 'ticket' },

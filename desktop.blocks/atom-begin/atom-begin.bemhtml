@@ -49,6 +49,7 @@ block('atom-begin')(
             },
             {
                 block: 'users',
+                mix: { block: 'grid_cols_12' },
                 content: {
                     elem: 'wrap',
                     content: [
