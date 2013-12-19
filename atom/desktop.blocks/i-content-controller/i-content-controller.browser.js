@@ -1,8 +1,10 @@
-/*global modules:false */
+modules.define('i-bem__dom', ['jquery'] function(provide, $, BEMDOM) {
 
-modules.define('i-content-controller', function(provide) {
+    BEMDOM.decl('i-content-controller', {
 
-provide();
+    });
+
+    provide(BEMDOM);
 
 });
 
