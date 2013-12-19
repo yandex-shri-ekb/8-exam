@@ -1,4 +1,4 @@
-modules.define('i-bem__dom', function(provide, BEMDOM) {
+modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
 
     BEMDOM.decl('i-color-controller', {
         onSetMod: {
@@ -6,9 +6,10 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
                 inited: function() {
                     this._page = this.findBlockOn('page');
                     this._person = this.findBlockInside('person');
+                    this._personsYPos = this.findBlockInside('persons').domElem.offset().top;
 
                     var color = this.__self.getRandomColor();
-                    this._setColor(color);
+                    this._setColor({ color: color });
 
                     var choisers = this.findBlocksOn('choiser', 'persons');
                     for (var i = 0, len = choisers.length; i < len; i++) {
@@ -17,12 +18,15 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
                 },
             },
         },
-        _onColorChange: function(e, color) {
-            this._setColor(color);
+        _onColorChange: function(e, data) {
+            this._setColor(data);
         },
-        _setColor: function(color) {
-            this._page.setMod('color', color);
-            this._person.setMod('color', color);
+        _setColor: function(data) {
+            this._page.setMod('color', data.color);
+            this._person.setMod('color', data.color);
+
+            if (data.scroll === true)
+                $('body').animate({ scrollTop: this._personsYPos }, 'fast');
         },
     }, {
         getRandomColor: function() {

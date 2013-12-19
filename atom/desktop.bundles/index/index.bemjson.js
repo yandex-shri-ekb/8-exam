@@ -4,7 +4,8 @@
         { block: 'i-color-controller', js: true },
         { block: 'i-popup-controller', js: true },
         { block: 'i-scroll-controller', js: true },
-        //{ block: 'i-height-controller', js: true },
+        { block: 'i-content-controller', js: true },
+        { block: 'i-height-controller', js: true },
     ],
     title: 'Экзаменационная работа — Яндекс ШРИ в Екатеринбурге 2013 — Антон Жевак',
     head: [
@@ -35,15 +36,7 @@
             js: true,
         },
         {
-            block: 'aside-button',
-            mods: { icon: 'close' },
-            js: true,
-        },
-        {
             block: 'content',
-            mix: [
-                { block: 'i-height-controller', js: true },
-            ],
             content: [
                 {
                     elem: 'history',
@@ -300,7 +293,7 @@
                             mods: { type: 'footer', },
                             mix: [{ block: 'i-height-controller', elem: 'out', mods: { name: 'footer' } }],
                             content: [
-                                { block: 'persons' },
+                                { block: 'persons', mods: { bottom: 'yes' } },
                                 {
                                     block: 'footer',
                                     content: 'Мир один, а люди разные. Так и интернет — он один, но для каждого разный.<br><br>Теперь посмотрите, как планировали путешествие в Таиланд другие герои.',
@@ -312,6 +305,7 @@
                 {
                     elem: 'aside',
                     content: [
+                        { block: 'aside-button', js: true },
                         { elem: 'shadow' },
                         { block: 'aside-logo' },
                         {

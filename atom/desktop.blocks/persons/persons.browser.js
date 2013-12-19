@@ -12,7 +12,7 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         },
         _onLinkClick: function(e) {
             var color = this.getMod($(e.delegateTarget), 'color');
-            this.trigger('colorChange', color);
+            this.trigger('colorChange', { color: color, scroll: this.hasMod('bottom') ? true : false });
         },
         _onMouseEnter: function(e) {
             this.setMod($(e.delegateTarget), 'hovered', 'yes');
