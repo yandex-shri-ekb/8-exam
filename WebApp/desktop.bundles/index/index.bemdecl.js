@@ -34,13 +34,32 @@ exports.blocks = [
         "name": "video-history"
     },
     {
+        "name": "grid-wrap"
+    },
+    {
+        "name": "grid",
+        "mods": [
+            {
+                "name": "coll",
+                "vals": [
+                    "2",
+                    "9"
+                ]
+            },
+            {
+                "name": "size",
+                "vals": [
+                    "6",
+                    "3"
+                ]
+            }
+        ]
+    },
+    {
         "name": "introductory-text",
         "elems": [
             {
-                "name": "pragraf1"
-            },
-            {
-                "name": "pragraf2"
+                "name": "pragraf"
             }
         ]
     },
@@ -60,5 +79,8 @@ exports.blocks = [
     },
     {
         "name": "head-services"
+    },
+    {
+        "name": "hack"
     }
 ];

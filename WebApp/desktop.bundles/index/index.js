@@ -27,8 +27,11 @@
 /*borschik:include:../../desktop.blocks/head-history/__background/head-history__background.browser.js*/;
 /*borschik:include:../../desktop.blocks/head-history/__title/head-history__title.browser.js*/;
 /*borschik:include:../../desktop.blocks/video-history/video-history.browser.js*/;
+/*borschik:include:../../desktop.blocks/grid-wrap/grid-wrap.browser.js*/;
+/*borschik:include:../../desktop.blocks/grid/grid.browser.js*/;
 /*borschik:include:../../desktop.blocks/introductory-text/introductory-text.browser.js*/;
 /*borschik:include:../../desktop.blocks/video-button/video-button.browser.js*/;
 /*borschik:include:../../desktop.blocks/video-button/__button/video-button__button.browser.js*/;
 /*borschik:include:../../desktop.blocks/video-button/__title/video-button__title.browser.js*/;
 /*borschik:include:../../desktop.blocks/used-services/used-services.browser.js*/;
+/*borschik:include:../../desktop.blocks/hack/hack.browser.js*/;

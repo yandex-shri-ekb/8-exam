@@ -127,15 +127,45 @@ exports.deps = [
         "block": "video-history"
     },
     {
+        "block": "grid-wrap"
+    },
+    {
+        "block": "grid"
+    },
+    {
+        "block": "grid",
+        "mod": "coll"
+    },
+    {
+        "block": "grid",
+        "mod": "coll",
+        "val": "2"
+    },
+    {
+        "block": "grid",
+        "mod": "coll",
+        "val": "9"
+    },
+    {
+        "block": "grid",
+        "mod": "size"
+    },
+    {
+        "block": "grid",
+        "mod": "size",
+        "val": "6"
+    },
+    {
+        "block": "grid",
+        "mod": "size",
+        "val": "3"
+    },
+    {
         "block": "introductory-text"
     },
     {
         "block": "introductory-text",
-        "elem": "pragraf1"
-    },
-    {
-        "block": "introductory-text",
-        "elem": "pragraf2"
+        "elem": "pragraf"
     },
     {
         "block": "video-button"
@@ -153,6 +183,9 @@ exports.deps = [
     },
     {
         "block": "head-services"
+    },
+    {
+        "block": "hack"
     }
 ];
 exports.depsByTechs = {

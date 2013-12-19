@@ -3904,6 +3904,30 @@ provide();
 
 /* ../../desktop.blocks/video-history/video-history.browser.js end */
 ;
+/* ../../desktop.blocks/grid-wrap/grid-wrap.browser.js begin */
+/*global modules:false */
+
+modules.define('grid-wrap', function(provide) {
+
+provide();
+
+});
+
+
+/* ../../desktop.blocks/grid-wrap/grid-wrap.browser.js end */
+;
+/* ../../desktop.blocks/grid/grid.browser.js begin */
+/*global modules:false */
+
+modules.define('grid', function(provide) {
+
+provide();
+
+});
+
+
+/* ../../desktop.blocks/grid/grid.browser.js end */
+;
 /* ../../desktop.blocks/introductory-text/introductory-text.browser.js begin */
 /*global modules:false */
 
@@ -3963,4 +3987,16 @@ provide();
 
 
 /* ../../desktop.blocks/used-services/used-services.browser.js end */
+;
+/* ../../desktop.blocks/hack/hack.browser.js begin */
+/*global modules:false */
+
+modules.define('hack', function(provide) {
+
+provide();
+
+});
+
+
+/* ../../desktop.blocks/hack/hack.browser.js end */
 ;
