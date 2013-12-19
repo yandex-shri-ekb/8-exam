@@ -1,38 +1,62 @@
 .user__icon
 {
-    background: url(user__icon.png);
-    width: 138px;
-    height: 138px;
-    margin: 0 auto 16px;
+    background: url(user__icon.png) no-repeat;
+    margin: 0 auto 18px;
 }
 
-.user__icon_type_yellow
-{
-}
-
-.user__icon_type_red
-{
-}
-
-.user__icon_type__blue
-{
-}
-
-.user__icon_type_mini
+.user__icon_size_mini
 {
     width: 140px;
     height: 140px;
-    background-position: ;
 }
 
-.user__icon_type_middle
+.user__icon_size_mini.user__icon_color_yellow
 {
-    width: 180px;
-    height: 180px;
+    background-position: 0 0;
 }
 
-.user__icon_type_large
+.user__icon_size_mini.user__icon_color_red
+{
+    background-position: 0 -230px;
+}
+
+.user__icon_size_mini.user__icon_color_blue
+{
+    background-position: 0 -460px
+}
+
+.user__icon_size_middle.user__icon_color_yellow
+{
+    background-position: -150px 0;
+}
+
+.user__icon_size_middle.user__icon_color_red
+{
+    background-position: -150px -230px;
+}
+
+.user__icon_size_middle.user__icon_color_blue
+{
+    background-position: -150px -460px;
+}
+
+.user__icon_size_large
 {
     width: 220px;
     height: 220px;
+}
+
+.user__icon_size_large.user__icon_color_yellow
+{
+    background-position: -340px 0;
+}
+
+.user__icon_size_large.user__icon_color_red
+{
+    background-position: -340px -230px;
+}
+
+.user__icon_size_large.user__icon_color_blue
+{
+    background-position: -340px 460px;
 }

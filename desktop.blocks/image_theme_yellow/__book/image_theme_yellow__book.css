@@ -1,0 +1,11 @@
+.image_theme_yellow__book
+{
+    background: url(image_theme_yellow__book.png) no-repeat;
+    width: 240px;
+    height: 302px;
+}
+
+.image_theme_yellow__book_push_up_yes
+{
+    margin-top: 240px;
+}

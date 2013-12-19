@@ -1,0 +1,16 @@
+.image_theme_yellow__aviaticket
+{
+    background: url(image_theme_yellow__aviaticket.png) no-repeat;
+    width: 620px;
+    height: 244px;
+}
+
+.image_theme_yellow__aviaticket_push_down_yes
+{
+    margin-top: 240px;
+}
+
+.image_theme_yellow__aviaticket_push_left_yes
+{
+    margin-left: -166px;
+}
