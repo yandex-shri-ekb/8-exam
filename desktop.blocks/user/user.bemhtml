@@ -3,7 +3,7 @@ block('user')(
     content()(function() {
         return [
             {
-                elem: 'icon',
+                elem: 'icon ' + this.ctx.type,
                 content: this.ctx.icon
             },
             {

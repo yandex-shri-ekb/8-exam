@@ -1,7 +1,21 @@
 .user__icon
 {
-    background: url(../../story/story/first/users/yellow.png);
     width: 138px;
     height: 138px;
     margin: 0 auto 16px;
+}
+
+.user__icon.yellow
+{
+    background: url(../../story/story/first/users/yellow.png);
+}
+
+.user__icon.blue
+{
+    background: url(../../story/story/first/users/gray.png);
+}
+
+.user__icon.red
+{
+    background: url(../../story/story/first/users/red.png);
 }
