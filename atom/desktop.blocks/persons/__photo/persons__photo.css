@@ -3,6 +3,9 @@
     display: block;
 
     width: 138px;
-    height: 138px;
-    margin: 0 auto 10px;
+    height: 174px;
+    margin: 0 0 10px;
+
+    background-repeat: no-repeat;
+    background-position: 50%;
 }

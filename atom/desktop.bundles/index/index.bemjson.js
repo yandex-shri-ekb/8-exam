@@ -12,7 +12,7 @@
         { elem: 'css', url: '_index.ie.css', ie: 'lte IE 8' },
     ],
     content:[
-        { block: 'person', mods: {color: 'blue'} },
+        { block: 'person' },
         { block: 'nav', js: true, mods: {num:'one'}},
         {
             block: 'popup',

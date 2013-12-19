@@ -1,0 +1,12 @@
+.persons__photo_color_yellow
+{
+    background-image: url(yellow.png);
+}
+
+.page_color_yellow .persons__photo_color_yellow
+{
+    width: 174px;
+    height: 174px;
+
+    background-image: url(yellow_current.png);
+}

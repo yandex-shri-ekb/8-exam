@@ -15,8 +15,7 @@ block persons {
                             content: [
                                 {
                                     elem: 'photo',
-                                    tag: 'img',
-                                    attrs: { src: '/desktop.blocks/persons/__photo/max.png', width: 138, height: 138, alt: 'Максим' }
+                                    mods: { color: 'yellow' }
                                 },
                                 {
                                     elem: 'name',
@@ -40,8 +39,7 @@ block persons {
                             content: [
                                 {
                                     elem: 'photo',
-                                    tag: 'img',
-                                    attrs: { src: '/desktop.blocks/persons/__photo/alex.png', width: 138, height: 138, alt: 'Алексей Быков' }
+                                    mods: { color: 'red' }
                                 },
                                 {
                                     elem: 'name',
@@ -65,8 +63,7 @@ block persons {
                             content: [
                                 {
                                     elem: 'photo',
-                                    tag: 'img',
-                                    attrs: { src: '/desktop.blocks/persons/__photo/george.png', width: 138, height: 138, alt: 'Георгий И. Дауге' }
+                                    mods: { color: 'blue' }
                                 },
                                 {
                                     elem: 'name',

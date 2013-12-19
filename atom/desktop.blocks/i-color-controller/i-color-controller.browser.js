@@ -5,6 +5,7 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
             js: {
                 inited: function() {
                     this._page = this.findBlockOn('page');
+                    this._person = this.findBlockInside('person');
 
                     var color = this.__self.getRandomColor();
                     this._setColor(color);
@@ -21,6 +22,7 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
         },
         _setColor: function(color) {
             this._page.setMod('color', color);
+            this._person.setMod('color', color);
         },
     }, {
         getRandomColor: function() {

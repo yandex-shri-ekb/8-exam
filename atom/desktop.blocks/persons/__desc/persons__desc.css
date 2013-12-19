@@ -1,12 +1,11 @@
 .persons__desc
 {
-/* иначе дед прыгает
     -webkit-transition: opacity .2s;
        -moz-transition: opacity .2s;
             transition: opacity .2s;
-*/
 
-    visibility: hidden;
+    /*visibility: hidden;*/
+    opacity: 0;
 
     margin: 0 -30px;
 
@@ -16,7 +15,6 @@
 
 .persons__item_hovered_yes .persons__desc
 {
-    display: block;
-
-    visibility: visible;
+    /*visibility: visible;*/
+    opacity: 1;
 }
