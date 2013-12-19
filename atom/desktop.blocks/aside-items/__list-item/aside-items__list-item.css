@@ -1,7 +1,3 @@
-.aside-items__list-item
-{
-}
-
 .aside-items__list-item:before
 {
     content: "— ";

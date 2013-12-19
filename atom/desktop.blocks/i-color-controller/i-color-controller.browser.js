@@ -4,25 +4,30 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
         onSetMod: {
             js: {
                 inited: function() {
-                    var color = this.getRandomColor();
-                    this.setColor(color);
+                    this._page = this.findBlockOn('page');
+
+                    var color = this.__self.getRandomColor();
+                    this._setColor(color);
+
+                    var choisers = this.findBlocksOn('choiser', 'persons');
+                    for (var i = 0, len = choisers.length; i < len; i++) {
+                        choisers[i].on('colorChange', this._onColorChange, this);
+                    }
                 },
             },
         },
-        setColor: function(color) {
-            var page = this.findBlockOutside('page');
-            page.setMod('color', color);
+        _onColorChange: function(e, color) {
+            this._setColor(color);
         },
-        getPage: function() {
-            return this.findBlockOutside('page');
+        _setColor: function(color) {
+            this._page.setMod('color', color);
         },
+    }, {
         getRandomColor: function() {
             var colors = ['yellow', 'red', 'blue'];
             var random = Math.floor(Math.random() * (colors.length));
             return colors[random];
         },
-    }, {
-
     });
 
     provide(BEMDOM);

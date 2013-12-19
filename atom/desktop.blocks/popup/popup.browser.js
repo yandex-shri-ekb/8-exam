@@ -4,12 +4,13 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
         onSetMod : {
             js : {
                 inited : function() {
-                    // Скрываем попап
-                    this.bindTo('close', 'click', function() {
-                        this.delMod('showed');
-                    });
+                    this.bindTo('click', this.hide);
+                    this.bindTo('close', 'click', this.hide);
                 },
             },
+        },
+        hide: function() {
+            this.delMod('showed');
         },
     }, {
 

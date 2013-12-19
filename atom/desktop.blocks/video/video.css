@@ -2,7 +2,6 @@
 {
     position: relative;
 
-    width: 100%; /* без этого в ИЕ7 всё расплывается */
     min-height: 120px;
     padding: 80px 0;
 

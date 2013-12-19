@@ -9,5 +9,6 @@ block popup {
             ]
         },
         { elem: 'va-helper' }
-    ]
+    ],
+    mix: [{ block: 'i-popup-controller', elem: 'popup' }]
 }

@@ -2,13 +2,13 @@
     block: 'page',
     mix: [
         { block: 'i-color-controller', js: true },
+        { block: 'i-popup-controller', js: true },
+        { block: 'i-height-setter', js: true },
     ],
     title: 'Экзаменационная работа — Яндекс ШРИ в Екатеринбурге 2013 — Антон Жевак',
-    favicon: '/favicon.ico',
     head: [
         { elem: 'css', url: '_index.css', ie: false },
-        { elem: 'css', url: '_index.ie.css', ie: 'gte IE 6' },
-        { elem: 'meta', attrs: { name: 'description', content: '' }}
+        { elem: 'css', url: '_index.ie.css', ie: 'lte IE 8' },
     ],
     content:[
         { block: 'person', mods: {color: 'blue'} },
@@ -313,6 +313,8 @@
                         {
                             elem: 'cell',
                             mods: { type: 'aside', border: 'bottom' },
+                            mix: [{ block: 'i-height-setter', elem: 'block' }],
+
                             attrs: { 'data-height': 'header' },
                             content: [
                                 {
