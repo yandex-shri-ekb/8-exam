@@ -1,42 +1,39 @@
 /* index.css begin */
 /* ../../desktop.blocks/page/page.css begin */
-.page
-{
+.page {
   margin: 0;
 }
 
 /* ../../desktop.blocks/page/page.css end */
 /* ../../desktop.blocks/wrapper/wrapper.css begin */
-.wrapper
-{
+.wrapper {
   overflow: hidden;
 }
 
 /* ../../desktop.blocks/wrapper/wrapper.css end */
 /* ../../desktop.blocks/history/history.css begin */
 
-.history
-{
+.history {
   margin: 18px 0 18px 18px;
   border: 2px solid #000;
   border-right: 0;
   width: 952px;
+  background: #ffe05d;
+
+  font: 16px/24px Arial, sans-serif;
 }
 
 /* ../../desktop.blocks/history/history.css end */
 /* ../../desktop.blocks/head-history/head-history.css begin */
-.head-history
-{
+.head-history {
   height: 589px;
   border-bottom: 2px solid #000;
   position: relative;
-  background: #ffe05d;
 }
 
 /* ../../desktop.blocks/head-history/head-history.css end */
 /* ../../desktop.blocks/head-history/__background/head-history__background.css begin */
-.head-history__background
-{
+.head-history__background {
   background: url("../../desktop.blocks/head-history/__background/head-history__background.png") no-repeat;
   height: 570px;
   position: absolute;
@@ -58,11 +55,10 @@
 
 /* ../../desktop.blocks/head-history/__title/head-history__title.css end */
 /* ../../desktop.blocks/video-history/video-history.css begin */
-.video-history
-{
+.video-history {
   height: 392px;
   border-bottom: 2px solid #000;
-  font: 16px/24px Arial, sans-serif;
+  background: #fff;
 }
 
 /* ../../desktop.blocks/video-history/video-history.css end */
@@ -77,6 +73,19 @@
 }
 
 /* ../../desktop.blocks/grid-wrap/grid-wrap.css end */
+/* ../../desktop.blocks/introductory-text/introductory-text.css begin */
+.introductory-text {
+  margin-top: 77px;
+  margin-left: 18px;
+}
+
+/* ../../desktop.blocks/introductory-text/introductory-text.css end */
+/* ../../desktop.blocks/introductory-text/__paragraf/introductory-text__paragraf.css begin */
+.introductory-text__paragraf {
+  margin-bottom: 30px;
+}
+
+/* ../../desktop.blocks/introductory-text/__paragraf/introductory-text__paragraf.css end */
 /* ../../desktop.blocks/grid/grid.css begin */
 .grid {
   float: left;
@@ -192,32 +201,149 @@
 }
 
 /* ../../desktop.blocks/grid/grid.css end */
-/* ../../desktop.blocks/introductory-text/introductory-text.css begin */
-.introductory-text
-{
-  margin-top: 77px
-
-}
-
-/* ../../desktop.blocks/introductory-text/introductory-text.css end */
 /* ../../desktop.blocks/video-button/video-button.css begin */
-.video-button
-{
+.video-button {
+  margin-top: 80px;
 }
 
 /* ../../desktop.blocks/video-button/video-button.css end */
 /* ../../desktop.blocks/video-button/__button/video-button__button.css begin */
-.video-button__button
-{
+.video-button__button {
+  display: inline-block;
+  overflow: hidden;
+
 }
 
 /* ../../desktop.blocks/video-button/__button/video-button__button.css end */
+/* ../../desktop.blocks/video-button/__max/video-button__max.css begin */
+.video-button__max {
+  background: url("/image/sprite1.png") no-repeat -298px -166px;
+  width: 138px;
+  height: 80px;
+}
+
+/* ../../desktop.blocks/video-button/__max/video-button__max.css end */
+/* ../../desktop.blocks/video-button/__alex/video-button__alex.css begin */
+.video-button__alex {
+  background: url("/image/sprite1.png") no-repeat -298px -84px;
+  width: 138px;
+  height: 80px;
+  display: none;
+}
+
+/* ../../desktop.blocks/video-button/__alex/video-button__alex.css end */
+/* ../../desktop.blocks/video-button/__grig/video-button__grig.css begin */
+.video-button__grig {
+  background: url("/image/sprite1.png") no-repeat -298px -2px;
+  width: 138px;
+  height: 80px;
+  display: none;
+}
+
+/* ../../desktop.blocks/video-button/__grig/video-button__grig.css end */
 /* ../../desktop.blocks/video-button/__title/video-button__title.css begin */
-.video-button__title
-{
+.video-button__title {
+  margin-top: 5px;
 }
 
 /* ../../desktop.blocks/video-button/__title/video-button__title.css end */
+/* ../../desktop.blocks/select-person/select-person.css begin */
+.select-person {
+  height: 280px;
+}
+
+/* ../../desktop.blocks/select-person/select-person.css end */
+/* ../../desktop.blocks/select-max/select-max.css begin */
+.select-max {
+  display: inline-block;
+  overflow: hidden;
+  background: url("/image/sprite2.png") no-repeat -1467px -2px;
+  width: 138px;
+  height: 138px;
+  margin-left: 18px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+
+/* ../../desktop.blocks/select-max/select-max.css end */
+/* ../../desktop.blocks/person-name/person-name.css begin */
+.person-name {
+  text-align: center;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 700;
+  margin: 0 -4px 0 14px;
+}
+
+/* ../../desktop.blocks/person-name/person-name.css end */
+/* ../../desktop.blocks/select-alex/select-alex.css begin */
+.select-alex {
+  display: inline-block;
+  overflow: hidden;
+  background: url("/image/sprite2.png") no-repeat -1327px -2px;
+  width: 138px;
+  height: 139px;
+  margin-left: 18px;
+  margin-top: 79px;
+  cursor: pointer;
+}
+
+/* ../../desktop.blocks/select-alex/select-alex.css end */
+/* ../../desktop.blocks/select-grig/select-grig.css begin */
+.select-grig {
+  display: inline-block;
+  overflow: hidden;
+  background: url("/image/sprite2.png") no-repeat -1187px -2px;
+  width: 138px;
+  height: 139px;
+  margin-left: 18px;
+  margin-top: 79px;
+  cursor: pointer;
+}
+
+/* ../../desktop.blocks/select-grig/select-grig.css end */
+/* ../../desktop.blocks/person-description/person-description.css begin */
+.person-description {
+  height: 106px;
+  text-align: center;
+}
+
+/* ../../desktop.blocks/person-description/person-description.css end */
+/* ../../desktop.blocks/person-history/person-history.css begin */
+.person-history {
+  border-bottom: 2px solid #000;
+}
+
+/* ../../desktop.blocks/person-history/person-history.css end */
+/* ../../desktop.blocks/history-max/history-max.css begin */
+.history-max {
+  height: 3310px;
+  background: url("/image/max-s2.png");
+  position: relative;
+  margin-left: -20px;
+}
+
+.history-max:before {
+  height: 3310px;
+  background: url("/image/max-s1.png");
+  width: 100%;
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ../../desktop.blocks/history-max/history-max.css end */
+/* ../../desktop.blocks/history-alex/history-alex.css begin */
+.history-alex {
+}
+
+/* ../../desktop.blocks/history-alex/history-alex.css end */
+/* ../../desktop.blocks/history-grig/history-grig.css begin */
+.history-grig {
+}
+
+/* ../../desktop.blocks/history-grig/history-grig.css end */
 /* ../../desktop.blocks/used-services/used-services.css begin */
 .used-services {
   border-left: 2px #000 solid;
@@ -226,14 +352,14 @@
   margin-left: 972px;
   position: absolute;
   top: 0;
-  height: 100%;
+  height: 1100%;
 }
 
 /* ../../desktop.blocks/used-services/used-services.css end */
 /* ../../desktop.blocks/hack/hack.css begin */
 .hack {
   width: 100%;
-  height: 100%;
+  height: 1100%;
   margin: 0;
   padding: 0;
   background-image: linear-gradient(-90deg, transparent 0px, transparent 18px, rgba(0, 0, 0, .1) 18px, rgba(0, 0, 0, .1) 78px);

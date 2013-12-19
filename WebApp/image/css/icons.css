@@ -25,7 +25,12 @@
 .grig3 {width:217px; height:217px; background-position: -221px -2px}
 .hotel {width:69px; height:74px; background-position: -1455px -143px}
 .lenses {width:84px; height:67px; background-position: -1703px -142px}
-.max {width:138px; height:138px; background-position: -1467px -2px}
+
+.max {
+  width: 138px;
+  height: 138px;
+}
+
 .max2 {width:174px; height:174px; background-position: -659px -2px}
 .max3 {width:217px; height:217px; background-position: -2px -2px}
 .money {width:94px; height:74px; background-position: -1187px -143px}

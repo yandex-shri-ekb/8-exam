@@ -1,1 +1,1929 @@
-{"files":{"bemhtml":[{"file":"grid.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.bemhtml","lastUpdated":1387441152000,"suffix":"bemhtml"},{"file":"grid-wrap.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.bemhtml","lastUpdated":1387441172000,"suffix":"bemhtml"},{"file":"hack.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.bemhtml","lastUpdated":1387437722000,"suffix":"bemhtml"},{"file":"head-history.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.bemhtml","lastUpdated":1387122619000,"suffix":"bemhtml"},{"file":"head-history__background.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.bemhtml","lastUpdated":1387311199000,"suffix":"bemhtml"},{"file":"head-history__title.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.bemhtml","lastUpdated":1387311825000,"suffix":"bemhtml"},{"file":"history.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.bemhtml","lastUpdated":1387122632000,"suffix":"bemhtml"},{"file":"introductory-text.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.bemhtml","lastUpdated":1387123193000,"suffix":"bemhtml"},{"file":"introductory-text__paragraf1.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf1/introductory-text__paragraf1.bemhtml","lastUpdated":1387123565000,"suffix":"bemhtml"},{"file":"introductory-text__paragraf2.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf2/introductory-text__paragraf2.bemhtml","lastUpdated":1387123610000,"suffix":"bemhtml"},{"file":"page.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.bemhtml","lastUpdated":1387310328000,"suffix":"bemhtml"},{"file":"used-services.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.bemhtml","lastUpdated":1387132966000,"suffix":"bemhtml"},{"file":"video-button.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.bemhtml","lastUpdated":1387123848000,"suffix":"bemhtml"},{"file":"video-button__button.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.bemhtml","lastUpdated":1387123879000,"suffix":"bemhtml"},{"file":"video-button__title.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.bemhtml","lastUpdated":1387123891000,"suffix":"bemhtml"},{"file":"video-history.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.bemhtml","lastUpdated":1387123161000,"suffix":"bemhtml"},{"file":"wrapper.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.bemhtml","lastUpdated":1387313528000,"suffix":"bemhtml"}],"browser.js":[{"file":"grid.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.browser.js","lastUpdated":1387441152000,"suffix":"browser.js"},{"file":"grid-wrap.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.browser.js","lastUpdated":1387441172000,"suffix":"browser.js"},{"file":"hack.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.browser.js","lastUpdated":1387437722000,"suffix":"browser.js"},{"file":"head-history.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.browser.js","lastUpdated":1387122619000,"suffix":"browser.js"},{"file":"head-history__background.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.browser.js","lastUpdated":1387311199000,"suffix":"browser.js"},{"file":"head-history__title.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.browser.js","lastUpdated":1387311825000,"suffix":"browser.js"},{"file":"history.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.browser.js","lastUpdated":1387122632000,"suffix":"browser.js"},{"file":"introductory-text.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.browser.js","lastUpdated":1387123193000,"suffix":"browser.js"},{"file":"introductory-text__paragraf1.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf1/introductory-text__paragraf1.browser.js","lastUpdated":1387123565000,"suffix":"browser.js"},{"file":"introductory-text__paragraf2.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf2/introductory-text__paragraf2.browser.js","lastUpdated":1387123610000,"suffix":"browser.js"},{"file":"page.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.browser.js","lastUpdated":1387310328000,"suffix":"browser.js"},{"file":"used-services.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.browser.js","lastUpdated":1387132966000,"suffix":"browser.js"},{"file":"video-button.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.browser.js","lastUpdated":1387123848000,"suffix":"browser.js"},{"file":"video-button__button.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.browser.js","lastUpdated":1387123879000,"suffix":"browser.js"},{"file":"video-button__title.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.browser.js","lastUpdated":1387123891000,"suffix":"browser.js"},{"file":"video-history.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.browser.js","lastUpdated":1387123161000,"suffix":"browser.js"},{"file":"wrapper.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.browser.js","lastUpdated":1387313528000,"suffix":"browser.js"}],"css":[{"file":"grid.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.css","lastUpdated":1387454946000,"suffix":"css"},{"file":"grid-wrap.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.css","lastUpdated":1387453327000,"suffix":"css"},{"file":"hack.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.css","lastUpdated":1387440139000,"suffix":"css"},{"file":"head-history.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.css","lastUpdated":1387311881000,"suffix":"css"},{"file":"head-history__background.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.css","lastUpdated":1387313026000,"suffix":"css"},{"file":"head-history__title.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.css","lastUpdated":1387312322000,"suffix":"css"},{"file":"history.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.css","lastUpdated":1387440001000,"suffix":"css"},{"file":"introductory-text.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.css","lastUpdated":1387455191000,"suffix":"css"},{"file":"introductory-text__paragraf1.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf1/introductory-text__paragraf1.css","lastUpdated":1387123565000,"suffix":"css"},{"file":"introductory-text__paragraf2.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf2/introductory-text__paragraf2.css","lastUpdated":1387123610000,"suffix":"css"},{"file":"page.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.css","lastUpdated":1387313544000,"suffix":"css"},{"file":"used-services.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.css","lastUpdated":1387440010000,"suffix":"css"},{"file":"video-button.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.css","lastUpdated":1387123848000,"suffix":"css"},{"file":"video-button__button.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.css","lastUpdated":1387123879000,"suffix":"css"},{"file":"video-button__title.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.css","lastUpdated":1387123891000,"suffix":"css"},{"file":"video-history.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.css","lastUpdated":1387314695000,"suffix":"css"},{"file":"wrapper.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.css","lastUpdated":1387313544000,"suffix":"css"}],"png":[{"file":"head-history__background.png","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.png","lastUpdated":1387224616000,"suffix":"png"}],"blocks":[{"file":"head-history.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.blocks","lastUpdated":1387122619000,"suffix":"blocks"},{"file":"history.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.blocks","lastUpdated":1387122632000,"suffix":"blocks"},{"file":"introductory-text__paragraf1.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf1/introductory-text__paragraf1.blocks","lastUpdated":1387123565000,"suffix":"blocks"},{"file":"introductory-text__paragraf2.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf2/introductory-text__paragraf2.blocks","lastUpdated":1387123610000,"suffix":"blocks"},{"file":"introductory-text.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.blocks","lastUpdated":1387123193000,"suffix":"blocks"},{"file":"video-button.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.blocks","lastUpdated":1387123848000,"suffix":"blocks"},{"file":"video-history.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.blocks","lastUpdated":1387123161000,"suffix":"blocks"}]},"tree":{"grid":{"elems":{},"mods":{},"files":{"bemhtml":[{"file":"grid.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.bemhtml","lastUpdated":1387441152000,"suffix":"bemhtml"}],"browser.js":[{"file":"grid.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.browser.js","lastUpdated":1387441152000,"suffix":"browser.js"}],"css":[{"file":"grid.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.css","lastUpdated":1387454946000,"suffix":"css"}]}},"grid-wrap":{"elems":{},"mods":{},"files":{"bemhtml":[{"file":"grid-wrap.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.bemhtml","lastUpdated":1387441172000,"suffix":"bemhtml"}],"browser.js":[{"file":"grid-wrap.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.browser.js","lastUpdated":1387441172000,"suffix":"browser.js"}],"css":[{"file":"grid-wrap.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.css","lastUpdated":1387453327000,"suffix":"css"}]}},"hack":{"elems":{},"mods":{},"files":{"bemhtml":[{"file":"hack.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.bemhtml","lastUpdated":1387437722000,"suffix":"bemhtml"}],"browser.js":[{"file":"hack.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.browser.js","lastUpdated":1387437722000,"suffix":"browser.js"}],"css":[{"file":"hack.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.css","lastUpdated":1387440139000,"suffix":"css"}]}},"head-history":{"elems":{"background":{"mods":{},"files":{"bemhtml":[{"file":"head-history__background.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.bemhtml","lastUpdated":1387311199000,"suffix":"bemhtml"}],"browser.js":[{"file":"head-history__background.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.browser.js","lastUpdated":1387311199000,"suffix":"browser.js"}],"css":[{"file":"head-history__background.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.css","lastUpdated":1387313026000,"suffix":"css"}],"png":[{"file":"head-history__background.png","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.png","lastUpdated":1387224616000,"suffix":"png"}]}},"title":{"mods":{},"files":{"bemhtml":[{"file":"head-history__title.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.bemhtml","lastUpdated":1387311825000,"suffix":"bemhtml"}],"browser.js":[{"file":"head-history__title.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.browser.js","lastUpdated":1387311825000,"suffix":"browser.js"}],"css":[{"file":"head-history__title.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.css","lastUpdated":1387312322000,"suffix":"css"}]}}},"mods":{},"files":{"bemhtml":[{"file":"head-history.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.bemhtml","lastUpdated":1387122619000,"suffix":"bemhtml"}],"browser.js":[{"file":"head-history.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.browser.js","lastUpdated":1387122619000,"suffix":"browser.js"}],"css":[{"file":"head-history.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.css","lastUpdated":1387311881000,"suffix":"css"}],"blocks":[{"file":"head-history.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.blocks","lastUpdated":1387122619000,"suffix":"blocks"}]}},"history":{"elems":{},"mods":{},"files":{"bemhtml":[{"file":"history.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.bemhtml","lastUpdated":1387122632000,"suffix":"bemhtml"}],"browser.js":[{"file":"history.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.browser.js","lastUpdated":1387122632000,"suffix":"browser.js"}],"css":[{"file":"history.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.css","lastUpdated":1387440001000,"suffix":"css"}],"blocks":[{"file":"history.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.blocks","lastUpdated":1387122632000,"suffix":"blocks"}]}},"introductory-text":{"elems":{"paragraf1":{"mods":{},"files":{"bemhtml":[{"file":"introductory-text__paragraf1.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf1/introductory-text__paragraf1.bemhtml","lastUpdated":1387123565000,"suffix":"bemhtml"}],"browser.js":[{"file":"introductory-text__paragraf1.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf1/introductory-text__paragraf1.browser.js","lastUpdated":1387123565000,"suffix":"browser.js"}],"css":[{"file":"introductory-text__paragraf1.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf1/introductory-text__paragraf1.css","lastUpdated":1387123565000,"suffix":"css"}],"blocks":[{"file":"introductory-text__paragraf1.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf1/introductory-text__paragraf1.blocks","lastUpdated":1387123565000,"suffix":"blocks"}]}},"paragraf2":{"mods":{},"files":{"bemhtml":[{"file":"introductory-text__paragraf2.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf2/introductory-text__paragraf2.bemhtml","lastUpdated":1387123610000,"suffix":"bemhtml"}],"browser.js":[{"file":"introductory-text__paragraf2.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf2/introductory-text__paragraf2.browser.js","lastUpdated":1387123610000,"suffix":"browser.js"}],"css":[{"file":"introductory-text__paragraf2.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf2/introductory-text__paragraf2.css","lastUpdated":1387123610000,"suffix":"css"}],"blocks":[{"file":"introductory-text__paragraf2.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf2/introductory-text__paragraf2.blocks","lastUpdated":1387123610000,"suffix":"blocks"}]}}},"mods":{},"files":{"bemhtml":[{"file":"introductory-text.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.bemhtml","lastUpdated":1387123193000,"suffix":"bemhtml"}],"browser.js":[{"file":"introductory-text.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.browser.js","lastUpdated":1387123193000,"suffix":"browser.js"}],"css":[{"file":"introductory-text.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.css","lastUpdated":1387455191000,"suffix":"css"}],"blocks":[{"file":"introductory-text.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.blocks","lastUpdated":1387123193000,"suffix":"blocks"}]}},"page":{"elems":{},"mods":{},"files":{"bemhtml":[{"file":"page.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.bemhtml","lastUpdated":1387310328000,"suffix":"bemhtml"}],"browser.js":[{"file":"page.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.browser.js","lastUpdated":1387310328000,"suffix":"browser.js"}],"css":[{"file":"page.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.css","lastUpdated":1387313544000,"suffix":"css"}]}},"used-services":{"elems":{},"mods":{},"files":{"bemhtml":[{"file":"used-services.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.bemhtml","lastUpdated":1387132966000,"suffix":"bemhtml"}],"browser.js":[{"file":"used-services.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.browser.js","lastUpdated":1387132966000,"suffix":"browser.js"}],"css":[{"file":"used-services.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.css","lastUpdated":1387440010000,"suffix":"css"}]}},"video-button":{"elems":{"button":{"mods":{},"files":{"bemhtml":[{"file":"video-button__button.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.bemhtml","lastUpdated":1387123879000,"suffix":"bemhtml"}],"browser.js":[{"file":"video-button__button.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.browser.js","lastUpdated":1387123879000,"suffix":"browser.js"}],"css":[{"file":"video-button__button.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.css","lastUpdated":1387123879000,"suffix":"css"}]}},"title":{"mods":{},"files":{"bemhtml":[{"file":"video-button__title.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.bemhtml","lastUpdated":1387123891000,"suffix":"bemhtml"}],"browser.js":[{"file":"video-button__title.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.browser.js","lastUpdated":1387123891000,"suffix":"browser.js"}],"css":[{"file":"video-button__title.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.css","lastUpdated":1387123891000,"suffix":"css"}]}}},"mods":{},"files":{"bemhtml":[{"file":"video-button.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.bemhtml","lastUpdated":1387123848000,"suffix":"bemhtml"}],"browser.js":[{"file":"video-button.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.browser.js","lastUpdated":1387123848000,"suffix":"browser.js"}],"css":[{"file":"video-button.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.css","lastUpdated":1387123848000,"suffix":"css"}],"blocks":[{"file":"video-button.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.blocks","lastUpdated":1387123848000,"suffix":"blocks"}]}},"video-history":{"elems":{},"mods":{},"files":{"bemhtml":[{"file":"video-history.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.bemhtml","lastUpdated":1387123161000,"suffix":"bemhtml"}],"browser.js":[{"file":"video-history.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.browser.js","lastUpdated":1387123161000,"suffix":"browser.js"}],"css":[{"file":"video-history.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.css","lastUpdated":1387314695000,"suffix":"css"}],"blocks":[{"file":"video-history.blocks","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.blocks","lastUpdated":1387123161000,"suffix":"blocks"}]}},"wrapper":{"elems":{},"mods":{},"files":{"bemhtml":[{"file":"wrapper.bemhtml","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.bemhtml","lastUpdated":1387313528000,"suffix":"bemhtml"}],"browser.js":[{"file":"wrapper.browser.js","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.browser.js","lastUpdated":1387313528000,"suffix":"browser.js"}],"css":[{"file":"wrapper.css","absPath":"/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.css","lastUpdated":1387313544000,"suffix":"css"}]}}},"blocks":[{"block":"grid","suffix":".bemhtml","tech":"bemhtml"},{"block":"grid","suffix":".browser.js","tech":"browser.js"},{"block":"grid","suffix":".css","tech":"css"},{"block":"grid-wrap","suffix":".bemhtml","tech":"bemhtml"},{"block":"grid-wrap","suffix":".browser.js","tech":"browser.js"},{"block":"grid-wrap","suffix":".css","tech":"css"},{"block":"hack","suffix":".bemhtml","tech":"bemhtml"},{"block":"hack","suffix":".browser.js","tech":"browser.js"},{"block":"hack","suffix":".css","tech":"css"},{"block":"head-history","suffix":".bemhtml","tech":"bemhtml"},{"block":"head-history","suffix":".browser.js","tech":"browser.js"},{"block":"head-history","suffix":".css","tech":"css"},{"block":"head-history","elem":"background","suffix":".bemhtml","tech":"bemhtml"},{"block":"head-history","elem":"background","suffix":".browser.js","tech":"browser.js"},{"block":"head-history","elem":"background","suffix":".css","tech":"css"},{"block":"head-history","elem":"background","suffix":".png"},{"block":"head-history","elem":"title","suffix":".bemhtml","tech":"bemhtml"},{"block":"head-history","elem":"title","suffix":".browser.js","tech":"browser.js"},{"block":"head-history","elem":"title","suffix":".css","tech":"css"},{"block":"head-history","suffix":".blocks"},{"block":"history","suffix":".bemhtml","tech":"bemhtml"},{"block":"history","suffix":".browser.js","tech":"browser.js"},{"block":"history","suffix":".css","tech":"css"},{"block":"history","suffix":".blocks"},{"block":"introductory-text","suffix":".bemhtml","tech":"bemhtml"},{"block":"introductory-text","suffix":".browser.js","tech":"browser.js"},{"block":"introductory-text","suffix":".css","tech":"css"},{"block":"introductory-text","elem":"paragraf1","suffix":".bemhtml","tech":"bemhtml"},{"block":"introductory-text","elem":"paragraf1","suffix":".browser.js","tech":"browser.js"},{"block":"introductory-text","elem":"paragraf1","suffix":".css","tech":"css"},{"block":"introductory-text","elem":"paragraf1","suffix":".blocks"},{"block":"introductory-text","elem":"paragraf2","suffix":".bemhtml","tech":"bemhtml"},{"block":"introductory-text","elem":"paragraf2","suffix":".browser.js","tech":"browser.js"},{"block":"introductory-text","elem":"paragraf2","suffix":".css","tech":"css"},{"block":"introductory-text","elem":"paragraf2","suffix":".blocks"},{"block":"introductory-text","suffix":".blocks"},{"block":"page","suffix":".bemhtml","tech":"bemhtml"},{"block":"page","suffix":".browser.js","tech":"browser.js"},{"block":"page","suffix":".css","tech":"css"},{"block":"used-services","suffix":".bemhtml","tech":"bemhtml"},{"block":"used-services","suffix":".browser.js","tech":"browser.js"},{"block":"used-services","suffix":".css","tech":"css"},{"block":"video-button","suffix":".bemhtml","tech":"bemhtml"},{"block":"video-button","suffix":".browser.js","tech":"browser.js"},{"block":"video-button","suffix":".css","tech":"css"},{"block":"video-button","elem":"button","suffix":".bemhtml","tech":"bemhtml"},{"block":"video-button","elem":"button","suffix":".browser.js","tech":"browser.js"},{"block":"video-button","elem":"button","suffix":".css","tech":"css"},{"block":"video-button","elem":"title","suffix":".bemhtml","tech":"bemhtml"},{"block":"video-button","elem":"title","suffix":".browser.js","tech":"browser.js"},{"block":"video-button","elem":"title","suffix":".css","tech":"css"},{"block":"video-button","suffix":".blocks"},{"block":"video-history","suffix":".bemhtml","tech":"bemhtml"},{"block":"video-history","suffix":".browser.js","tech":"browser.js"},{"block":"video-history","suffix":".css","tech":"css"},{"block":"video-history","suffix":".blocks"},{"block":"wrapper","suffix":".bemhtml","tech":"bemhtml"},{"block":"wrapper","suffix":".browser.js","tech":"browser.js"},{"block":"wrapper","suffix":".css","tech":"css"}]}
+{"files": {
+  "bemhtml": [
+    {
+      "file": "grid.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.bemhtml",
+      "lastUpdated": 1387441152000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "grid-wrap.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.bemhtml",
+      "lastUpdated": 1387441172000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "hack.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.bemhtml",
+      "lastUpdated": 1387437722000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "head-history.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.bemhtml",
+      "lastUpdated": 1387122619000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "head-history__background.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.bemhtml",
+      "lastUpdated": 1387311199000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "head-history__title.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.bemhtml",
+      "lastUpdated": 1387311825000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "history.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.bemhtml",
+      "lastUpdated": 1387122632000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "history-alex.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-alex/history-alex.bemhtml",
+      "lastUpdated": 1387467177000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "history-grig.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-grig/history-grig.bemhtml",
+      "lastUpdated": 1387467182000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "history-max.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-max/history-max.bemhtml",
+      "lastUpdated": 1387467172000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "introductory-text.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.bemhtml",
+      "lastUpdated": 1387123193000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "page.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.bemhtml",
+      "lastUpdated": 1387310328000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "person-description.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-description/person-description.bemhtml",
+      "lastUpdated": 1387477576000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "person-history.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-history/person-history.bemhtml",
+      "lastUpdated": 1387467069000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "person-name.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-name/person-name.bemhtml",
+      "lastUpdated": 1387473981000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "select-alex.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-alex/select-alex.bemhtml",
+      "lastUpdated": 1387465514000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "select-grig.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-grig/select-grig.bemhtml",
+      "lastUpdated": 1387465484000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "select-max.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-max/select-max.bemhtml",
+      "lastUpdated": 1387465474000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "select-person.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-person/select-person.bemhtml",
+      "lastUpdated": 1387465467000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "used-services.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.bemhtml",
+      "lastUpdated": 1387132966000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "video-button.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.bemhtml",
+      "lastUpdated": 1387123848000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "video-button__alex.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__alex/video-button__alex.bemhtml",
+      "lastUpdated": 1387459602000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "video-button__button.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.bemhtml",
+      "lastUpdated": 1387123879000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "video-button__grig.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__grig/video-button__grig.bemhtml",
+      "lastUpdated": 1387459609000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "video-button__max.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__max/video-button__max.bemhtml",
+      "lastUpdated": 1387459595000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "video-button__title.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.bemhtml",
+      "lastUpdated": 1387123891000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "video-history.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.bemhtml",
+      "lastUpdated": 1387123161000,
+      "suffix": "bemhtml"
+    },
+    {
+      "file": "wrapper.bemhtml",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.bemhtml",
+      "lastUpdated": 1387313528000,
+      "suffix": "bemhtml"
+    }
+  ],
+  "browser.js": [
+    {
+      "file": "grid.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.browser.js",
+      "lastUpdated": 1387441152000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "grid-wrap.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.browser.js",
+      "lastUpdated": 1387441172000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "hack.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.browser.js",
+      "lastUpdated": 1387437722000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "head-history.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.browser.js",
+      "lastUpdated": 1387122619000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "head-history__background.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.browser.js",
+      "lastUpdated": 1387311199000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "head-history__title.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.browser.js",
+      "lastUpdated": 1387311825000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "history.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.browser.js",
+      "lastUpdated": 1387122632000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "history-alex.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-alex/history-alex.browser.js",
+      "lastUpdated": 1387467177000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "history-grig.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-grig/history-grig.browser.js",
+      "lastUpdated": 1387467182000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "history-max.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-max/history-max.browser.js",
+      "lastUpdated": 1387467172000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "introductory-text.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.browser.js",
+      "lastUpdated": 1387123193000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "page.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.browser.js",
+      "lastUpdated": 1387310328000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "person-description.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-description/person-description.browser.js",
+      "lastUpdated": 1387477576000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "person-history.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-history/person-history.browser.js",
+      "lastUpdated": 1387467069000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "person-name.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-name/person-name.browser.js",
+      "lastUpdated": 1387473981000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "select-alex.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-alex/select-alex.browser.js",
+      "lastUpdated": 1387465514000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "select-grig.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-grig/select-grig.browser.js",
+      "lastUpdated": 1387465484000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "select-max.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-max/select-max.browser.js",
+      "lastUpdated": 1387465474000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "select-person.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-person/select-person.browser.js",
+      "lastUpdated": 1387465467000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "used-services.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.browser.js",
+      "lastUpdated": 1387132966000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "video-button.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.browser.js",
+      "lastUpdated": 1387123848000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "video-button__alex.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__alex/video-button__alex.browser.js",
+      "lastUpdated": 1387459602000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "video-button__button.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.browser.js",
+      "lastUpdated": 1387123879000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "video-button__grig.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__grig/video-button__grig.browser.js",
+      "lastUpdated": 1387459609000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "video-button__max.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__max/video-button__max.browser.js",
+      "lastUpdated": 1387459595000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "video-button__title.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.browser.js",
+      "lastUpdated": 1387123891000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "video-history.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.browser.js",
+      "lastUpdated": 1387123161000,
+      "suffix": "browser.js"
+    },
+    {
+      "file": "wrapper.browser.js",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.browser.js",
+      "lastUpdated": 1387313528000,
+      "suffix": "browser.js"
+    }
+  ],
+  "css": [
+    {
+      "file": "grid.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.css",
+      "lastUpdated": 1387454946000,
+      "suffix": "css"
+    },
+    {
+      "file": "grid-wrap.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.css",
+      "lastUpdated": 1387453327000,
+      "suffix": "css"
+    },
+    {
+      "file": "hack.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.css",
+      "lastUpdated": 1387466728000,
+      "suffix": "css"
+    },
+    {
+      "file": "head-history.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.css",
+      "lastUpdated": 1387465737000,
+      "suffix": "css"
+    },
+    {
+      "file": "head-history__background.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.css",
+      "lastUpdated": 1387313026000,
+      "suffix": "css"
+    },
+    {
+      "file": "head-history__title.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.css",
+      "lastUpdated": 1387312322000,
+      "suffix": "css"
+    },
+    {
+      "file": "history.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.css",
+      "lastUpdated": 1387474160000,
+      "suffix": "css"
+    },
+    {
+      "file": "history-alex.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-alex/history-alex.css",
+      "lastUpdated": 1387467177000,
+      "suffix": "css"
+    },
+    {
+      "file": "history-grig.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-grig/history-grig.css",
+      "lastUpdated": 1387467182000,
+      "suffix": "css"
+    },
+    {
+      "file": "history-max.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-max/history-max.css",
+      "lastUpdated": 1387471330000,
+      "suffix": "css"
+    },
+    {
+      "file": "introductory-text.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.css",
+      "lastUpdated": 1387460684000,
+      "suffix": "css"
+    },
+    {
+      "file": "introductory-text__paragraf.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf/introductory-text__paragraf.css",
+      "lastUpdated": 1387458318000,
+      "suffix": "css"
+    },
+    {
+      "file": "page.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.css",
+      "lastUpdated": 1387313544000,
+      "suffix": "css"
+    },
+    {
+      "file": "person-description.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-description/person-description.css",
+      "lastUpdated": 1387477640000,
+      "suffix": "css"
+    },
+    {
+      "file": "person-history.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-history/person-history.css",
+      "lastUpdated": 1387468358000,
+      "suffix": "css"
+    },
+    {
+      "file": "person-name.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-name/person-name.css",
+      "lastUpdated": 1387474644000,
+      "suffix": "css"
+    },
+    {
+      "file": "select-alex.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-alex/select-alex.css",
+      "lastUpdated": 1387471867000,
+      "suffix": "css"
+    },
+    {
+      "file": "select-grig.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-grig/select-grig.css",
+      "lastUpdated": 1387471867000,
+      "suffix": "css"
+    },
+    {
+      "file": "select-max.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-max/select-max.css",
+      "lastUpdated": 1387471867000,
+      "suffix": "css"
+    },
+    {
+      "file": "select-person.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-person/select-person.css",
+      "lastUpdated": 1387475664000,
+      "suffix": "css"
+    },
+    {
+      "file": "used-services.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.css",
+      "lastUpdated": 1387465782000,
+      "suffix": "css"
+    },
+    {
+      "file": "video-button.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.css",
+      "lastUpdated": 1387472881000,
+      "suffix": "css"
+    },
+    {
+      "file": "video-button__alex.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__alex/video-button__alex.css",
+      "lastUpdated": 1387459881000,
+      "suffix": "css"
+    },
+    {
+      "file": "video-button__button.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.css",
+      "lastUpdated": 1387459725000,
+      "suffix": "css"
+    },
+    {
+      "file": "video-button__grig.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__grig/video-button__grig.css",
+      "lastUpdated": 1387459881000,
+      "suffix": "css"
+    },
+    {
+      "file": "video-button__max.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__max/video-button__max.css",
+      "lastUpdated": 1387459725000,
+      "suffix": "css"
+    },
+    {
+      "file": "video-button__title.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.css",
+      "lastUpdated": 1387460582000,
+      "suffix": "css"
+    },
+    {
+      "file": "video-history.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.css",
+      "lastUpdated": 1387474160000,
+      "suffix": "css"
+    },
+    {
+      "file": "wrapper.css",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.css",
+      "lastUpdated": 1387313544000,
+      "suffix": "css"
+    }
+  ],
+  "png": [
+    {
+      "file": "head-history__background.png",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.png",
+      "lastUpdated": 1387224616000,
+      "suffix": "png"
+    }
+  ],
+  "blocks": [
+    {
+      "file": "head-history.blocks",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.blocks",
+      "lastUpdated": 1387122619000,
+      "suffix": "blocks"
+    },
+    {
+      "file": "history.blocks",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.blocks",
+      "lastUpdated": 1387122632000,
+      "suffix": "blocks"
+    },
+    {
+      "file": "introductory-text.blocks",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.blocks",
+      "lastUpdated": 1387123193000,
+      "suffix": "blocks"
+    },
+    {
+      "file": "video-button.blocks",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.blocks",
+      "lastUpdated": 1387123848000,
+      "suffix": "blocks"
+    },
+    {
+      "file": "video-history.blocks",
+      "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.blocks",
+      "lastUpdated": 1387123161000,
+      "suffix": "blocks"
+    }
+  ]
+}, "tree": {
+  "grid": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "grid.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.bemhtml",
+          "lastUpdated": 1387441152000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "grid.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.browser.js",
+          "lastUpdated": 1387441152000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "grid.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid/grid.css",
+          "lastUpdated": 1387454946000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "grid-wrap": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "grid-wrap.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.bemhtml",
+          "lastUpdated": 1387441172000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "grid-wrap.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.browser.js",
+          "lastUpdated": 1387441172000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "grid-wrap.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/grid-wrap/grid-wrap.css",
+          "lastUpdated": 1387453327000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "hack": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "hack.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.bemhtml",
+          "lastUpdated": 1387437722000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "hack.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.browser.js",
+          "lastUpdated": 1387437722000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "hack.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/hack/hack.css",
+          "lastUpdated": 1387466728000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "head-history": {
+    "elems": {
+      "background": {
+        "mods": {},
+        "files": {
+          "bemhtml": [
+            {
+              "file": "head-history__background.bemhtml",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.bemhtml",
+              "lastUpdated": 1387311199000,
+              "suffix": "bemhtml"
+            }
+          ],
+          "browser.js": [
+            {
+              "file": "head-history__background.browser.js",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.browser.js",
+              "lastUpdated": 1387311199000,
+              "suffix": "browser.js"
+            }
+          ],
+          "css": [
+            {
+              "file": "head-history__background.css",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.css",
+              "lastUpdated": 1387313026000,
+              "suffix": "css"
+            }
+          ],
+          "png": [
+            {
+              "file": "head-history__background.png",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__background/head-history__background.png",
+              "lastUpdated": 1387224616000,
+              "suffix": "png"
+            }
+          ]
+        }
+      },
+      "title": {
+        "mods": {},
+        "files": {
+          "bemhtml": [
+            {
+              "file": "head-history__title.bemhtml",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.bemhtml",
+              "lastUpdated": 1387311825000,
+              "suffix": "bemhtml"
+            }
+          ],
+          "browser.js": [
+            {
+              "file": "head-history__title.browser.js",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.browser.js",
+              "lastUpdated": 1387311825000,
+              "suffix": "browser.js"
+            }
+          ],
+          "css": [
+            {
+              "file": "head-history__title.css",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/__title/head-history__title.css",
+              "lastUpdated": 1387312322000,
+              "suffix": "css"
+            }
+          ]
+        }
+      }
+    },
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "head-history.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.bemhtml",
+          "lastUpdated": 1387122619000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "head-history.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.browser.js",
+          "lastUpdated": 1387122619000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "head-history.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.css",
+          "lastUpdated": 1387465737000,
+          "suffix": "css"
+        }
+      ],
+      "blocks": [
+        {
+          "file": "head-history.blocks",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/head-history/head-history.blocks",
+          "lastUpdated": 1387122619000,
+          "suffix": "blocks"
+        }
+      ]
+    }
+  },
+  "history": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "history.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.bemhtml",
+          "lastUpdated": 1387122632000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "history.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.browser.js",
+          "lastUpdated": 1387122632000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "history.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.css",
+          "lastUpdated": 1387474160000,
+          "suffix": "css"
+        }
+      ],
+      "blocks": [
+        {
+          "file": "history.blocks",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history/history.blocks",
+          "lastUpdated": 1387122632000,
+          "suffix": "blocks"
+        }
+      ]
+    }
+  },
+  "history-alex": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "history-alex.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-alex/history-alex.bemhtml",
+          "lastUpdated": 1387467177000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "history-alex.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-alex/history-alex.browser.js",
+          "lastUpdated": 1387467177000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "history-alex.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-alex/history-alex.css",
+          "lastUpdated": 1387467177000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "history-grig": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "history-grig.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-grig/history-grig.bemhtml",
+          "lastUpdated": 1387467182000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "history-grig.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-grig/history-grig.browser.js",
+          "lastUpdated": 1387467182000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "history-grig.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-grig/history-grig.css",
+          "lastUpdated": 1387467182000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "history-max": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "history-max.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-max/history-max.bemhtml",
+          "lastUpdated": 1387467172000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "history-max.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-max/history-max.browser.js",
+          "lastUpdated": 1387467172000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "history-max.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/history-max/history-max.css",
+          "lastUpdated": 1387471330000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "introductory-text": {
+    "elems": {
+      "paragraf": {
+        "mods": {},
+        "files": {
+          "css": [
+            {
+              "file": "introductory-text__paragraf.css",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/__paragraf/introductory-text__paragraf.css",
+              "lastUpdated": 1387458318000,
+              "suffix": "css"
+            }
+          ]
+        }
+      }
+    },
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "introductory-text.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.bemhtml",
+          "lastUpdated": 1387123193000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "introductory-text.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.browser.js",
+          "lastUpdated": 1387123193000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "introductory-text.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.css",
+          "lastUpdated": 1387460684000,
+          "suffix": "css"
+        }
+      ],
+      "blocks": [
+        {
+          "file": "introductory-text.blocks",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/introductory-text/introductory-text.blocks",
+          "lastUpdated": 1387123193000,
+          "suffix": "blocks"
+        }
+      ]
+    }
+  },
+  "page": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "page.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.bemhtml",
+          "lastUpdated": 1387310328000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "page.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.browser.js",
+          "lastUpdated": 1387310328000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "page.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/page/page.css",
+          "lastUpdated": 1387313544000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "person-description": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "person-description.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-description/person-description.bemhtml",
+          "lastUpdated": 1387477576000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "person-description.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-description/person-description.browser.js",
+          "lastUpdated": 1387477576000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "person-description.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-description/person-description.css",
+          "lastUpdated": 1387477640000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "person-history": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "person-history.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-history/person-history.bemhtml",
+          "lastUpdated": 1387467069000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "person-history.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-history/person-history.browser.js",
+          "lastUpdated": 1387467069000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "person-history.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-history/person-history.css",
+          "lastUpdated": 1387468358000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "person-name": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "person-name.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-name/person-name.bemhtml",
+          "lastUpdated": 1387473981000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "person-name.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-name/person-name.browser.js",
+          "lastUpdated": 1387473981000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "person-name.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/person-name/person-name.css",
+          "lastUpdated": 1387474644000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "select-alex": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "select-alex.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-alex/select-alex.bemhtml",
+          "lastUpdated": 1387465514000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "select-alex.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-alex/select-alex.browser.js",
+          "lastUpdated": 1387465514000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "select-alex.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-alex/select-alex.css",
+          "lastUpdated": 1387471867000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "select-grig": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "select-grig.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-grig/select-grig.bemhtml",
+          "lastUpdated": 1387465484000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "select-grig.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-grig/select-grig.browser.js",
+          "lastUpdated": 1387465484000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "select-grig.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-grig/select-grig.css",
+          "lastUpdated": 1387471867000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "select-max": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "select-max.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-max/select-max.bemhtml",
+          "lastUpdated": 1387465474000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "select-max.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-max/select-max.browser.js",
+          "lastUpdated": 1387465474000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "select-max.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-max/select-max.css",
+          "lastUpdated": 1387471867000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "select-person": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "select-person.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-person/select-person.bemhtml",
+          "lastUpdated": 1387465467000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "select-person.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-person/select-person.browser.js",
+          "lastUpdated": 1387465467000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "select-person.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/select-person/select-person.css",
+          "lastUpdated": 1387475664000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "used-services": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "used-services.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.bemhtml",
+          "lastUpdated": 1387132966000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "used-services.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.browser.js",
+          "lastUpdated": 1387132966000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "used-services.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/used-services/used-services.css",
+          "lastUpdated": 1387465782000,
+          "suffix": "css"
+        }
+      ]
+    }
+  },
+  "video-button": {
+    "elems": {
+      "alex": {
+        "mods": {},
+        "files": {
+          "bemhtml": [
+            {
+              "file": "video-button__alex.bemhtml",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__alex/video-button__alex.bemhtml",
+              "lastUpdated": 1387459602000,
+              "suffix": "bemhtml"
+            }
+          ],
+          "browser.js": [
+            {
+              "file": "video-button__alex.browser.js",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__alex/video-button__alex.browser.js",
+              "lastUpdated": 1387459602000,
+              "suffix": "browser.js"
+            }
+          ],
+          "css": [
+            {
+              "file": "video-button__alex.css",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__alex/video-button__alex.css",
+              "lastUpdated": 1387459881000,
+              "suffix": "css"
+            }
+          ]
+        }
+      },
+      "button": {
+        "mods": {},
+        "files": {
+          "bemhtml": [
+            {
+              "file": "video-button__button.bemhtml",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.bemhtml",
+              "lastUpdated": 1387123879000,
+              "suffix": "bemhtml"
+            }
+          ],
+          "browser.js": [
+            {
+              "file": "video-button__button.browser.js",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.browser.js",
+              "lastUpdated": 1387123879000,
+              "suffix": "browser.js"
+            }
+          ],
+          "css": [
+            {
+              "file": "video-button__button.css",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__button/video-button__button.css",
+              "lastUpdated": 1387459725000,
+              "suffix": "css"
+            }
+          ]
+        }
+      },
+      "grig": {
+        "mods": {},
+        "files": {
+          "bemhtml": [
+            {
+              "file": "video-button__grig.bemhtml",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__grig/video-button__grig.bemhtml",
+              "lastUpdated": 1387459609000,
+              "suffix": "bemhtml"
+            }
+          ],
+          "browser.js": [
+            {
+              "file": "video-button__grig.browser.js",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__grig/video-button__grig.browser.js",
+              "lastUpdated": 1387459609000,
+              "suffix": "browser.js"
+            }
+          ],
+          "css": [
+            {
+              "file": "video-button__grig.css",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__grig/video-button__grig.css",
+              "lastUpdated": 1387459881000,
+              "suffix": "css"
+            }
+          ]
+        }
+      },
+      "max": {
+        "mods": {},
+        "files": {
+          "bemhtml": [
+            {
+              "file": "video-button__max.bemhtml",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__max/video-button__max.bemhtml",
+              "lastUpdated": 1387459595000,
+              "suffix": "bemhtml"
+            }
+          ],
+          "browser.js": [
+            {
+              "file": "video-button__max.browser.js",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__max/video-button__max.browser.js",
+              "lastUpdated": 1387459595000,
+              "suffix": "browser.js"
+            }
+          ],
+          "css": [
+            {
+              "file": "video-button__max.css",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__max/video-button__max.css",
+              "lastUpdated": 1387459725000,
+              "suffix": "css"
+            }
+          ]
+        }
+      },
+      "title": {
+        "mods": {},
+        "files": {
+          "bemhtml": [
+            {
+              "file": "video-button__title.bemhtml",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.bemhtml",
+              "lastUpdated": 1387123891000,
+              "suffix": "bemhtml"
+            }
+          ],
+          "browser.js": [
+            {
+              "file": "video-button__title.browser.js",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.browser.js",
+              "lastUpdated": 1387123891000,
+              "suffix": "browser.js"
+            }
+          ],
+          "css": [
+            {
+              "file": "video-button__title.css",
+              "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/__title/video-button__title.css",
+              "lastUpdated": 1387460582000,
+              "suffix": "css"
+            }
+          ]
+        }
+      }
+    },
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "video-button.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.bemhtml",
+          "lastUpdated": 1387123848000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "video-button.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.browser.js",
+          "lastUpdated": 1387123848000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "video-button.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.css",
+          "lastUpdated": 1387472881000,
+          "suffix": "css"
+        }
+      ],
+      "blocks": [
+        {
+          "file": "video-button.blocks",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-button/video-button.blocks",
+          "lastUpdated": 1387123848000,
+          "suffix": "blocks"
+        }
+      ]
+    }
+  },
+  "video-history": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "video-history.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.bemhtml",
+          "lastUpdated": 1387123161000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "video-history.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.browser.js",
+          "lastUpdated": 1387123161000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "video-history.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.css",
+          "lastUpdated": 1387474160000,
+          "suffix": "css"
+        }
+      ],
+      "blocks": [
+        {
+          "file": "video-history.blocks",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/video-history/video-history.blocks",
+          "lastUpdated": 1387123161000,
+          "suffix": "blocks"
+        }
+      ]
+    }
+  },
+  "wrapper": {
+    "elems": {},
+    "mods": {},
+    "files": {
+      "bemhtml": [
+        {
+          "file": "wrapper.bemhtml",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.bemhtml",
+          "lastUpdated": 1387313528000,
+          "suffix": "bemhtml"
+        }
+      ],
+      "browser.js": [
+        {
+          "file": "wrapper.browser.js",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.browser.js",
+          "lastUpdated": 1387313528000,
+          "suffix": "browser.js"
+        }
+      ],
+      "css": [
+        {
+          "file": "wrapper.css",
+          "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.blocks/wrapper/wrapper.css",
+          "lastUpdated": 1387313544000,
+          "suffix": "css"
+        }
+      ]
+    }
+  }
+}, "blocks": [
+  {
+    "block": "grid",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "grid",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "grid",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "grid-wrap",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "grid-wrap",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "grid-wrap",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "hack",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "hack",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "hack",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "head-history",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "head-history",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "head-history",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "head-history",
+    "elem": "background",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "head-history",
+    "elem": "background",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "head-history",
+    "elem": "background",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "head-history",
+    "elem": "background",
+    "suffix": ".png"
+  },
+  {
+    "block": "head-history",
+    "elem": "title",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "head-history",
+    "elem": "title",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "head-history",
+    "elem": "title",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "head-history",
+    "suffix": ".blocks"
+  },
+  {
+    "block": "history",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "history",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "history",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "history",
+    "suffix": ".blocks"
+  },
+  {
+    "block": "history-alex",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "history-alex",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "history-alex",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "history-grig",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "history-grig",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "history-grig",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "history-max",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "history-max",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "history-max",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "introductory-text",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "introductory-text",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "introductory-text",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "introductory-text",
+    "elem": "paragraf",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "introductory-text",
+    "suffix": ".blocks"
+  },
+  {
+    "block": "page",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "page",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "page",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "person-description",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "person-description",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "person-description",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "person-history",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "person-history",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "person-history",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "person-name",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "person-name",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "person-name",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "select-alex",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "select-alex",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "select-alex",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "select-grig",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "select-grig",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "select-grig",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "select-max",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "select-max",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "select-max",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "select-person",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "select-person",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "select-person",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "used-services",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "used-services",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "used-services",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "video-button",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "video-button",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "video-button",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "video-button",
+    "elem": "alex",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "video-button",
+    "elem": "alex",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "video-button",
+    "elem": "alex",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "video-button",
+    "elem": "button",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "video-button",
+    "elem": "button",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "video-button",
+    "elem": "button",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "video-button",
+    "elem": "grig",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "video-button",
+    "elem": "grig",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "video-button",
+    "elem": "grig",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "video-button",
+    "elem": "max",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "video-button",
+    "elem": "max",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "video-button",
+    "elem": "max",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "video-button",
+    "elem": "title",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "video-button",
+    "elem": "title",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "video-button",
+    "elem": "title",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "video-button",
+    "suffix": ".blocks"
+  },
+  {
+    "block": "video-history",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "video-history",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "video-history",
+    "suffix": ".css",
+    "tech": "css"
+  },
+  {
+    "block": "video-history",
+    "suffix": ".blocks"
+  },
+  {
+    "block": "wrapper",
+    "suffix": ".bemhtml",
+    "tech": "bemhtml"
+  },
+  {
+    "block": "wrapper",
+    "suffix": ".browser.js",
+    "tech": "browser.js"
+  },
+  {
+    "block": "wrapper",
+    "suffix": ".css",
+    "tech": "css"
+  }
+]}
