@@ -1,0 +1,582 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-family: arial;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 323px auto 0;
+    width: 745px;
+}
+h2
+{
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 24px;
+}
+p
+{
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    width: 800px;
+}
+.left_block_two p
+{
+    width: 475px;
+}
+.main
+{
+    min-width: 990px;
+    position: relative;
+    overflow: hidden;
+}
+
+/*LEFT*/
+.left_block
+{
+    width: 954px;
+    padding: 18px;
+}
+.left_block_one
+{
+    border: 2px solid #000;
+    border-bottom: none;
+    height: 590px;
+    text-align: center;
+    background: url("images/logotip.png") no-repeat -20px -20px;
+}
+.left_block_two
+{
+    border: 2px solid #000;
+    border-bottom: none;
+    padding: 65px 0 85px 80px;
+    position: relative;
+}
+
+.logo
+{
+    width: 100px;
+    padding: 17px 17px 0;
+    margin: 0 auto;
+    border: 2px solid #000;
+    border-top: none;
+    border-bottom: none;
+    background: #fff;
+}
+.logo a
+{
+    display: block;
+    width: 78px;
+    height: 30px;
+    margin: 0 auto;
+    background-image: url("images/logo.png");
+}
+.arrow_down_black
+{
+    width: 0;
+    height: 0;
+    border-left: 70px solid transparent;
+    border-right: 70px solid transparent;
+    border-top: 40px solid #000;
+    margin: 0 auto;
+}
+.arrow_down_white
+{
+    width: 0;
+    height: 0;
+    border-left: 66px solid transparent;
+    border-right: 66px solid transparent;
+    border-top: 38px solid #fff;
+    margin: -40px -66px;
+}
+.left_block_three
+{
+    height: 240px;
+    border: 2px solid #000;
+    padding: 65px 0 85px 80px;
+    position: relative;
+    border-bottom: none;
+}
+.person
+{
+    margin: 0 50px;
+}
+.one_pers
+{
+    float: left;
+
+}
+.pers
+{
+    cursor: pointer;
+    background: url("images/pers-small.png");
+    width: 138px;
+    height: 138px;
+    margin: 0 44px;
+
+}
+.one_pers:hover .desc_pers
+{
+    display: block;
+}
+.pers.boy
+{
+    background-position: 0 0;
+}
+.pers.man
+{
+    background-position: 0 288px;
+}
+.pers.grandman
+{
+    background-position: 0 138px;
+}
+.pers.active
+{
+    background: url("images/pers-med.png");
+    height: 175px;
+    margin: -17px 26px 0 25px;
+    width: 175px;
+    cursor: default;
+}
+.name
+{
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0 0;
+}
+.pers.active.boy
+{
+    background-position: 0 0;
+}
+
+.pers.active.man
+{
+    background-position: 0 360px;
+}
+.pers.active.grandman
+{
+    background-position: 0 720px;
+}
+.desc_pers
+{
+    display: none;
+    margin: 20px 0 0 -30px;
+    padding: 0 0 20px;
+    position: absolute;
+    text-align: center;
+    width: 297px;
+    line-height: 24px;
+}
+
+/*Story*/
+.left_block_four
+{
+    border: 2px solid #000;
+    border-top: none;
+    border-bottom: none;
+    height: 1750px;
+    position: relative;
+    overflow: hidden;
+    background: #ffe05d;
+}
+
+
+/*История персонажей*/
+.left_block_fours.boy
+{
+    left: 0;
+    width: 762px;
+    position: absolute;
+    padding: 0 78px 0 96px;
+    background: url("images/start-yellow.png") top center no-repeat;
+    height: 3280px;
+    border: none;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.left_block_fours.boy p
+{
+    width: 300px;
+    text-align: center;
+    padding: 130px 0 0;
+}
+.left_block_fours.boy p + p
+{
+    padding: 0;
+}
+.left_block_fours.boy .maps
+{
+    float: right;
+    margin: 5px 70px 0 0;
+}
+.tickets_and_compass
+{
+    height: 565px;
+    background: url("images/tickets_back.png") no-repeat center top;
+    position: relative;
+}
+.ticket
+{
+    float: left;
+    margin: 40px 0 0 -226px;
+}
+.compass
+{
+    margin: 40px 0 0 110px;
+}
+
+.book {
+    margin: 45px;
+    position: absolute;
+}
+.comp_disk
+{
+    height: 710px;
+    text-align: right;
+    background: url("images/yellow_back_phone.png") 586px 240px no-repeat;
+}
+.left_block_fours.boy .comp_disk p
+{
+    position: absolute;
+    right: 66px;
+}
+.left_block_fours.boy .comp_disk p + p
+{
+    padding: 0;
+}
+
+.disk {
+    left: 0;
+    margin: 300px 0 0;
+    position: absolute;
+}
+
+.computer {
+    left: 90px;
+    margin: 25px 0 0;
+    position: absolute;
+}
+
+
+.phone {
+    margin: 270px 120px 0;
+    position: absolute;
+    right: 0;
+}
+.yellow_end
+{
+    height: 90px;
+    background: url("images/yellow-end.png") 151px 0 no-repeat;
+}
+
+
+
+
+.left_block_fours.man
+{
+    left: -954px;
+    width: 762px;
+    position: absolute;
+    padding: 0 78px 0 96px;
+    background: url("images/start-red.png") top center no-repeat;
+    height: 3280px;
+    border: none;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.left_block_fours.man p
+{
+    width: 300px;
+    text-align: center;
+    padding: 130px 0 0;
+}
+.left_block_fours.man p + p
+{
+    padding: 0;
+}
+.tour_and_passport
+{
+    float: right;
+    margin: 145px -92px 0 0;
+}
+.photo_book
+{
+    height: 555px;
+    background: url("images/red-back-start.png") no-repeat 130px 0;
+}
+.photo
+{
+    padding: 40px 0 0;
+}
+
+
+.check_glasses
+{
+    height: 710px;
+    text-align: right;
+    background: url("images/red_back_glasses.png") 571px 220px no-repeat;
+}
+.left_block_fours.man .check_glasses p
+{
+    position: absolute;
+    padding: 0;
+    right: 66px;
+}
+.left_block_fours.man .check_glasses p + p
+{
+    padding: 130px 0 0;
+}
+
+.beer {
+    left: 0;
+    margin: -200px 0 0;
+    position: absolute;
+}
+
+.red-phone {
+    left: 96px;
+    margin: 300px 0 0;
+    position: absolute;
+}
+
+.check {
+    margin: 260px -62px 0 0;
+}
+
+.glasses {
+    margin: 670px 0 0;
+    position: absolute;
+    right: 0;
+}
+.red-end
+{
+    height: 90px;
+    background: url("images/red-end.png") 375px 0 no-repeat;
+}
+
+
+
+
+.left_block_fours.grademan
+{
+    left: -954px;
+    width: 762px;
+    position: absolute;
+    padding: 0 78px 0 96px;
+    background: url("images/start-blue.png") top center no-repeat;
+    height: 3280px;
+    border: none;
+    transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+.left_block_fours.grademan p
+{
+    width: 300px;
+    text-align: center;
+    padding: 130px 0 0;
+}
+.left_block_fours.grademan p + p
+{
+    padding: 0;
+}
+.ticket_watch
+{
+    float: right;
+    margin: 145px -92px 0 0;
+}
+.phone_pen
+{
+    height: 565px;
+    background: url("images/back-watch-ticket.png") 96px 0 no-repeat;
+}
+.phone_st
+{
+    margin: 40px 0 0 -96px;
+}
+.pen{
+    display: block;
+    float: right;
+    margin: 40px 20px 0 0;
+}
+.diving
+{
+    height: 660px;
+    text-align: right;
+    background: url("images/back-diving.png") 613px 235px no-repeat;
+}
+.diving p {
+    position: absolute;
+    right: 66px;
+}
+
+.notebook {
+    left: 0;
+    position: absolute;
+}
+
+.ipad {
+    left: 190px;
+    position: absolute;
+}
+
+.diving_mask {
+    margin: 40px 0 0;
+    position: absolute;
+    right: 0;
+}
+.blue-end
+{
+    height: 129px;
+    background: url("images/blue-end.png") 164px 0 no-repeat;
+}
+
+
+.left_block_fours.boy.actives,
+.left_block_fours.man.actives,
+.left_block_fours.grademan.actives
+{
+    display: block;
+    z-index: 1;
+}
+
+
+.left_block_five
+{
+    height: 185px;
+    border: 2px solid #000;
+    border-top: none;
+    padding: 65px 0 85px 80px;
+    position: relative;
+}
+.left_block_six
+{
+    border: 2px solid #000;
+    border-top: none;
+    padding: 65px 0 85px 80px;
+    position: relative;
+    background: #fff;
+}
+
+/*RIGHT*/
+.right_block
+{
+    width: 858px;
+    position: absolute;
+    top: 0;
+    margin: 0 0 0 952px;
+    padding: 0 0 0 18px;
+    background: url("images/shadow.png") repeat-y;
+    z-index: 2;
+}
+.right_block.click
+{
+    cursor: pointer;
+}
+.right_block_one
+{
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    background: #fff;
+    padding: 32px 0 35px 35px;
+}
+.right_block_one h2
+{
+    line-height: 30px;
+}
+.right_block_two
+{
+    height: 890px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    background: #fff;
+    padding: 18px 0 50px 35px;
+}
+.but_wrap
+{
+    position: absolute;
+    top: 87px;
+    right: 120px;
+}
+.button
+{
+    width: 140px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+    margin: 0 0 5px;
+}
+
+.button > img {
+    margin: 20px 0 0;
+}
+.right_block_three
+{
+    padding: 18px 0 50px 35px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    background: #fff;
+}
+
+
+.right_block_three.red,
+.right_block_three.blue,
+.right_block_four.red,
+.right_block_four.blue
+{
+    display: none;
+}
+
+.right_block_four
+{
+    padding: 18px 0 50px 35px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    background: #fff;
+}
+.right_block_five
+{
+    padding: 18px 0 50px 35px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    background: #fff;
+}
+.right_block_six
+{
+    padding: 18px 0 50px 35px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    background: #fff;
+}
+.right_block_seven
+{
+    padding: 18px 0 50px 35px;
+    border: 2px solid #000;
+    border-top: none;
+    border-right: none;
+    border-bottom: none;
+    background: #fff;
+}
