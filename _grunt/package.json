@@ -1,0 +1,11 @@
+{
+  "name": "ShriExam",
+  "version": "0.0.0",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-contrib-watch": "~0.2.0",
+    "grunt-contrib-compass": "~0.4.1",
+    "grunt-csscomb": "~1.1.0:",
+    "matchdep": "~0.3.0"
+  }
+}

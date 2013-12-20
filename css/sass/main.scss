@@ -1,0 +1,198 @@
+@import "compass";
+
+$sprite-spacing: 20px;
+$sprite: sprite-map("sprites/*.png");
+
+/* fonts */
+@font-face
+{
+    font-family: 'Textbook';
+    src: local('textbook');
+    src: url("//yandex.st/atom-www/_/1wUguRKdVPX0Lw2dlQ1I-l4X0hI.woff"), url("//yandex.st/atom-www/_/_qMiA1SBxUbup2B5BieefMuSpsk.ttf")
+}
+
+/* Wrappers */
+.l-wrapper
+{
+    width: 954px;
+    margin: 16px;
+    position: relative;
+    border: 2px solid #000;
+    height: 2000px;
+}
+
+.l-wrapper_yellow
+{
+    background-color: #ffe05d;
+}
+
+/* Header */
+.b-header
+{
+    height: 588px;
+    background: url("../img/b-header.png") 10% 0 no-repeat;
+    border-bottom: 2px solid #000;
+}
+
+.l-logo
+{
+    overflow: hidden;
+    display: block;
+    width: 138px;
+    height: 92px;
+    background: sprite($sprite, "l-logo") no-repeat;
+    margin: -2px 0 0;
+}
+
+.b-logo
+{
+    display: block;
+    width: 78px;
+    height: 30px;
+    background: sprite($sprite, "b-logo") no-repeat;
+    margin: 18px auto 0;
+}
+
+.b-slogan
+{
+    font: 48px/1 "Textbook";
+    text-align: center;
+    margin: 350px 0 0;
+}
+
+/* Top description */
+.b-description
+{
+    padding: 80px 0;
+    background: #fff;
+    border-bottom: 2px solid #000;
+}
+
+.b-description-content
+{
+    @include box-sizing("border-box");
+    padding: 0 37px 0 0;
+}
+
+.b-description-video
+{
+
+}
+
+.b-description-video-icon
+{
+    display: block;
+    width: 138px;
+    height: 80px;
+    background: sprite($sprite, "b-description-video-icon") no-repeat;
+}
+
+.b-description-video-caption
+{
+    margin: 6px 0 0;
+}
+
+/* Persons block */
+.b-persons
+{
+    margin: 80px 0 0;
+}
+
+.b-persons-item
+{
+
+}
+
+.b-persons-item-caption
+{
+    margin: 8px 0 0;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+}
+
+.l-person-description
+{
+    margin-top: 20px;
+}
+
+.b-person-description
+{
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+    height: 100px;
+}
+
+/* Persons icon */
+.b-person-yellow-icon
+{
+    display: block;
+    width: 138px;
+    height: 138px;
+    background: sprite($sprite, "b-person-yellow-icon") no-repeat;
+}
+
+.b-person-yellow-icon_active
+{
+    display: block;
+    width: 174px;
+    height: 174px;
+    background: sprite($sprite, "b-person-yellow-icon_active") no-repeat;
+}
+
+.b-person-yellow-icon_popup
+{
+    display: block;
+    width: 217px;
+    height: 217px;
+    background: sprite($sprite, "b-person-yellow-icon_popup") no-repeat;
+}
+
+.b-person-blue-icon
+{
+    display: block;
+    width: 138px;
+    height: 138px;
+    background: sprite($sprite, "b-person-blue-icon") no-repeat;
+}
+
+.b-person-blue-icon_active
+{
+    display: block;
+    width: 174px;
+    height: 174px;
+    background: sprite($sprite, "b-person-blue-icon_active") no-repeat;
+}
+
+.b-person-blue-icon_popup
+{
+    display: block;
+    width: 217px;
+    height: 217px;
+    background: sprite($sprite, "b-person-blue-icon_popup") no-repeat;
+}
+
+.b-person-red-icon
+{
+    display: block;
+    width: 138px;
+    height: 138px;
+    background: sprite($sprite, "b-person-red-icon") no-repeat;
+}
+
+.b-person-red-icon_active
+{
+    display: block;
+    width: 174px;
+    height: 174px;
+    background: sprite($sprite, "b-person-red-icon_active") no-repeat;
+}
+
+.b-person-red-icon_popup
+{
+    display: block;
+    width: 217px;
+    height: 217px;
+    background: sprite($sprite, "b-person-red-icon_popup") no-repeat;
+}
