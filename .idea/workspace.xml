@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32cb6d48-31e9-4e51-aaff-48da309229e7" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/script.js" afterPath="$PROJECT_DIR$/html/js/script.js" />
+      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\.idea\8-exam.iml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\.idea\workspace.xml" afterPath="" />
     </list>
     <ignored path="8-exam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -282,7 +289,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
