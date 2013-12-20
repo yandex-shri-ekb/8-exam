@@ -90,6 +90,153 @@ body
     height: 4450px;
 }
 
+.storyline-box__image
+{
+    position: absolute;
+    pointer-events: none;
+}
+
+/* yellow */
+.storyline-box__yellow
+{
+    width: 100%;
+    position: absolute;
+}
+
+.storyline-box__yellow-images
+{
+    height: 3280px;
+    background: url(/images/yellow/guides.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.storyline-box__yellow_text-field
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffe05d;
+}
+
+.storyline-box__yellow_text_one  /* text */
+{
+    margin: 105px 580px 0 96px;
+}
+
+.storyline-box__yellow_text_two
+{
+    margin: 895px 96px 0 630px;
+}
+
+.storyline-box__yellow_text_three
+{
+    margin: 1720px 580px 0 96px;
+}
+
+.storyline-box__yellow_text_four
+{
+    margin: 2455px 96px 0 630px;
+}
+
+.storyline-box__yellow_image-map  /* images */
+{
+    margin: 8px 0 0 486px;
+}
+
+.storyline-box__yellow_image-ticket
+{
+    margin: 360px 0 0 -150px;
+}
+
+.storyline-box__yellow_image-compass
+{
+    margin: 360px 0 0 564px;
+}
+
+.storyline-box__yellow_image-book
+{
+    margin: 360px 0 0 798px;
+}
+
+.storyline-box__yellow_image-hipster-polaroid
+{
+    margin: 1200px 0 0 -90px;
+}
+
+.storyline-box__yellow_image-laptop
+{
+    margin: 930px 0 0 96px;
+}
+
+.storyline-box__yellow_image-applephone
+{
+    margin: 1175px 0 0 642px;
+}
+
+.storyline-box__yellow_image-magazine
+{
+    margin: 1570px 0 0 750px;
+}
+
+.storyline-box__yellow_image-ticket-loli
+{
+    margin: 2050px 0 0 358px;
+}
+
+.storyline-box__yellow_image-ticket-with-qrcode
+{
+    margin: 1968px 0 0 -157px;
+}
+
+.storyline-box__yellow_image-blackjack-and-girls-of-easy-virtue
+{
+    margin: 1930px 0 0 426px;
+}
+
+.storyline-box__yellow_image-applepod
+{
+    margin: 2060px 0 0 640px;
+}
+
+.storyline-box__yellow_image-traffic
+{
+    margin: 2240px 0 0 174px;
+}
+
+.storyline-box__yellow_image-bag
+{
+    margin: 2530px 0 0 96px;
+}
+
+.storyline-box__yellow_image-carton
+{
+    margin: 2775px 0 0 565px;
+}
+
+.storyline-box__yellow_image-notebook
+{
+    margin: 2990px 0 0 175px;
+}
+
+.storyline-box__yellow_image-bottle
+{
+    margin: 2990px 0 0 408px;
+}
+
+.storyline-box__yellow_image-camera
+{
+    margin: 3015px 0 0 565px;
+}
+
+/* red */
+.storyline-box__red
+{
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+
 .storyline-box__red-images
 {
     height: 3280px;
@@ -98,13 +245,35 @@ body
     background-position: center;
 }
 
-.storyline-box__red_image
+.storyline-box__red_text-field
 {
     position: absolute;
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    background: #ff8282;
 }
 
-.storyline-box__red_image-family
+.storyline-box__red_text_one  /* text */
+{
+    margin: 100px 580px 0 96px;
+}
+
+.storyline-box__red_text_two
+{
+    margin: 880px 96px 0 643px;
+}
+
+.storyline-box__red_text_three
+{
+    margin: 1695px 580px 0 96px;
+}
+
+.storyline-box__red_text_four
+{
+    margin: 2490px 96px 0 643px;
+}
+
+.storyline-box__red_image-family  /* images */
 {
     margin: 373px 0 0 96px;
 }
@@ -171,7 +340,7 @@ body
 
 .storyline-box__red_image-ipc
 {
-    margin: 1850px -48px 0 590px;
+    margin: 1850px 0 0 590px;
 }
 
 .storyline-box__red_image-cup-of-milk
@@ -202,6 +371,165 @@ body
 .storyline-box__red_image-bag-drinks
 {
     margin: 2830px 0 0 96px;
+}
+
+/* blue */
+.storyline-box__blue
+{
+    width: 100%;
+    display: none;
+    position: absolute;
+}
+
+.storyline-box__blue-images
+{
+    height: 3280px;
+    background: url(/images/blue/guides.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.storyline-box__blue_image-ticket  /* images */
+{
+    margin: 446px 0 0 408px;
+}
+
+.storyline-box__blue_image-notepad
+{
+    margin: 120px 0 0 486px;
+}
+
+.storyline-box__blue_image-phone
+{
+    margin: 333px 0 0 -42px;
+}
+
+.storyline-box__blue_image-pen
+{
+    margin: 373px 0 0 330px;
+}
+
+.storyline-box__blue_image-watch
+{
+    margin: 603px 0 0 486px;
+}
+
+.storyline-box__blue_image-photo
+{
+    margin: 560px 0 0 800px;
+}
+
+.storyline-box__blue_image-papers
+{
+    margin: 900px 0 0 -300px;
+}
+
+.storyline-box__blue_image-notebook-with-bookmark
+{
+    margin: 1050px 0 0 -80px;
+}
+
+.storyline-box__blue_image-applepad
+{
+    margin: 900px 0 0 192px;
+}
+
+.storyline-box__blue_image-cup-of-milk
+{
+    margin: 1270px 0 0 330px;
+}
+
+.storyline-box__blue_image-mask
+{
+    margin: 1235px 0 0 582px;
+}
+/* TODO: выпить кофе (ещё)*/
+.storyline-box__blue_image-snorkel
+{
+    margin: 1000px 0 0 735px;
+}
+
+.storyline-box__blue_image-applephone
+{
+    margin: 1930px 0 0 174px;
+}
+
+.storyline-box__blue_image-lifebuoy
+{
+    margin: 1540px 0 0 798px;
+}
+
+.storyline-box__blue_image-card-one
+{
+    margin: 1980px 0 0 500px;
+}
+
+.storyline-box__blue_image-card-two
+{
+    margin: 2030px 0 0 430px;
+}
+
+.storyline-box__blue_image-card-three
+{
+    margin: 1930px 0 0 410px;
+}
+
+.storyline-box__blue_image-money
+{
+    margin: 2110px 0 0 798px;
+}
+
+.storyline-box__blue_image-tie
+{
+    margin: 1735px 0 0 486px;
+}
+
+.storyline-box__blue_image-bag
+{
+    margin: 2310px 0 0 -100px;
+}
+
+.storyline-box__blue_image-newspaper
+{
+    margin: 2750px 0 0 80px;
+}
+
+.storyline-box__blue_image-magazine
+{
+    margin: 2750px 0 0 486px;
+}
+
+.storyline-box__blue_image-book
+{
+    margin: 2820px 0 0 888px;
+}
+
+.storyline-box__blue_text-field
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #72c4f6;
+}
+
+.storyline-box__blue_text_one  /* text */
+{
+    margin: 80px 580px 0 96px;
+}
+
+.storyline-box__blue_text_two
+{
+    margin: 920px 96px 0 643px;
+}
+
+.storyline-box__blue_text_three
+{
+    margin: 1720px 580px 0 96px;
+}
+
+.storyline-box__blue_text_four
+{
+    margin: 2490px 96px 0 643px;
 }
 
 /* FOOTER! */
