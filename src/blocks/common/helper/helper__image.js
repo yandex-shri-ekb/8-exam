@@ -9,7 +9,8 @@ module.exports = {
             content: {
                 block: 'image',
                 src: src,
-                mods: mods
+                mods: mods,
+                js: true
             }
         };
     },
