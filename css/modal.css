@@ -1,0 +1,67 @@
+.b-body_modal
+{
+    overflow: hidden;
+}
+
+.b-modal__wrapper
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1020px;
+    min-height: 780px;
+    overflow: auto;
+    z-index: 40;
+    transition: .2s top cubic-bezier(.8,1.1,.9,.9);
+}
+
+.b-modal__wrapper_disabled
+{
+    top: -300%;
+}
+
+.b-modal
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 720px;
+    height: 405px;
+    margin: -202px -360px;
+    padding: 0 18px 18px 0;
+    line-height: 0;
+    background: no-repeat 100% 0 url(../img/modal_shadow.png);
+}
+
+.b-modal__close
+{
+    position: absolute;
+    top: 18px;
+    right: 36px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    background: -351px -294px no-repeat url(../img/icons.png);
+}
+.b-modal__close:hover 
+{
+    background-position: -351px -330px;
+}
+
+.b-modal__inner
+{
+    padding: 0 0 18px 0;
+    background: no-repeat 0 100% url(../img/modal_shadow.png);
+}
+
+.b-modal__shield
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+}
