@@ -1,0 +1,37 @@
+.b-slider
+{
+    overflow: hidden;
+    margin: -80px -20px;
+    padding: 80px 20px;
+    width: 100%;
+}
+
+.b-slider__reil
+{
+    position: relative;
+    display: inline;
+    white-space: nowrap;
+}
+
+.b-slider__item
+{
+    display: inline-block;
+    min-height: 100%;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 -20px;
+    white-space: normal;
+    vertical-align: top;
+}
+
+.b-slider__reil_red
+{
+    margin-left: -60px;
+    left: -100%;
+}
+
+.b-slider__reil_blue
+{
+    margin-left: -100px;
+    left: -200%;
+}
