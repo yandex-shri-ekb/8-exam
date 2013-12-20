@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html>
+	
+	<head>
+	<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+	<script type="text/javascript" src="http://yandex.st/jquery/2.0.3/jquery.js"></script>
+	<script type="text/javascript" src="http://yandex.st/jquery-ui/1.10.3/jquery-ui.js"></script>
+	
+	<script type="text/javascript" src="stories/story.js"></script>
+	<script type="text/javascript" src="stories/red.js"></script>
+	<script type="text/javascript" src="stories/yellow.js"></script>	
+	<script type="text/javascript" src="stories/blue.js"></script>
+	
+	<script type="text/javascript" src="sidebar.js"></script>
+	
+	<script type="text/javascript" src="main.js"></script>
+	
+	<link rel="stylesheet" href="styles.css" />
+	<link rel="stylesheet" href="sidebar.css" />
+	
+	<title>SHRI 2013.</title>
+	</head>
+
+	<body onload="init();">
+		<div class="header">
+			<div class="container">
+				<p class="title">
+					А что если интернет подстроится <br />
+					под вас?
+				</p>
+			</div>
+		</div>
+		<div class="info">
+			<div class="container">
+				<div>
+					<p class="mainText">
+						Интернет сегодня — это не только информация и технологии, 
+						но и люди. Людей много и они все разные, а сайты для всех 
+						пользователей обычно выглядят одинаково. Яндекс уже 
+						 научился адаптироваться под конкретного пользователя
+						 и готов поделиться этой технологией с другими. 
+					</p>
+					<p class="mainText">
+						«Атом». Технологическая платформа, задача которой -
+						 предоставить сайтам возможность изменять содержание
+						 страниц под конкретного пользователя.
+					</p>
+				</div>				
+				<div>
+					<div class="video" onclick="playVideo();">
+						<div class="triangle">
+						</div>
+					</div>	
+					<p class="mainText">Весь сайт в одном видео</p>			
+				</div>
+			</div>
+		</div>
+		<div class="persons"> <!-- картинки для выбора историй (персонажи) -->
+			<div class="container">
+				<div class="personImage yellowPerson" onclick="new YellowStory().activate();">
+				</div>
+				<div class="personImage redPerson" onclick="new RedStory().activate();">
+				</div>
+				<div class="personImage bluePerson" onclick="new BlueStory().activate();">
+				</div>
+			</div>
+		</div>
+		<div class="story"> <!-- основной контент для истории -->
+			<div class="container">
+				<div class="story1">
+					<p class="mainText"></p>					
+				</div>
+				<div class="story2">
+					<p class="mainText"></p>
+			   </div>
+				<div class="story3">
+					<p class="mainText"></p>
+			   </div>
+				<div class="story4">
+					<p class="mainText"></p>
+			   </div>
+			   
+			</div>
+		</div>
+		<div class="persons"> <!-- нижние персонажи -->
+			<div class="container">
+				<div class="personImage yellowPerson" onclick="new YellowStory().activate();">
+				</div>
+				<div class="personImage redPerson" onclick="new RedStory().activate();">
+				</div>
+				<div class="personImage bluePerson" onclick="new BlueStory().activate();">
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="container">
+			</div>
+		</div>	
+	<div class="bigPersonIcon"> <!-- Картинка человека появляющаяся при скролле в центре -->
+	</div>
+	<div class="storyIconContainer"> <!-- маленькие иконки, появляющиеся при скролее вверху -->
+		<div class="container">
+			<div class="storyIcon yellowStoryIcon" onclick="new YellowStory().activate();">
+			</div>
+			<div class="storyIcon redStoryIcon" onclick="new RedStory().activate();">
+			</div>
+			<div class="storyIcon blueStoryIcon" onclick="new BlueStory().activate()">
+			</div>
+		</div>
+	</div>			
+	<div class="sideBar"> 
+		<div class="shadowWrapper"> <!-- маленький блок, добавляющий тень слева от панели -->
+			<div class="shadow">
+			</div>
+		</div>
+		<div class="sideBarBlock sideBarHeader">
+			<div class="container">
+				<p class="sideBarTitle">
+					"Атом": сценарии применения
+				</p>
+				<p class="sideBarText">
+					«Атом» — это платформа, которая позволит сайтам в интернете адаптироваться под каждого конкретного <br />
+					пользователя. Показывать ему только интересную информацию, помогать быстрее решать задачи.
+				</p>
+				<p class="sideBarText">
+					Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому пользователю,  <br />
+					но делающих страницу более интересной, более удобной для него.		
+				</p>
+				<img src="Images/yaLogo.png" alt="Yandex Logo" />
+			</div>
+		</div>
+		<div class="sideBarBlock sideBarVideo"> <!-- Блок хранящий видео о концеренции -->
+			<div class="container">
+				<p class="sideBarTitle">
+					Презентация платформы «Атом» на конференции YaС 2013
+				</p>
+				<p class="sideBarText">
+					Yet another Conference (YaС) — технологическая конференция Яндекса, которая ежегодно проходит <br />
+					в Москве, начиная с 2010 года.
+				</p>
+				<img src="Images/presentationVideo.png" alt="Yandex Conference" />
+			</div>
+		</div>
+		<div class="sideBarBlock sideBarStoryBlock sideBarStory1">
+			<div class="container">
+				<p class="sideBarTitle">
+				</p>
+				<p class="sideBarText">
+				</p>
+				<img class="sideBarStory1Image" alt="Story1" />
+			</div>
+		</div>
+		<div class="sideBarBlock sideBarStoryBlock sideBarStory2">
+			<div class="container">
+				<p class="sideBarTitle">
+				</p>
+				<p class="sideBarText">
+				</p>
+				<img class="sideBarStory2Image" alt="Story2" />
+			</div>
+		</div>
+		<div class="sideBarBlock sideBarStoryBlock sideBarStory3">
+			<div class="container">
+				<p class="sideBarTitle">
+				</p>
+				<p class="sideBarText">
+				</p>
+				<img class="sideBarStory3Image" alt="Story3" />
+			</div>
+		</div>
+		<div class="sideBarBlock sideBarStoryBlock sideBarStory4">
+			<div class="container">
+				<p class="sideBarTitle">
+				</p>
+				<p class="sideBarText">
+				</p>
+				<img class="sideBarStory4Image" alt="Story4" />
+			</div>
+		</div>
+		<div class="sideBarFooter">
+			<div class="container">
+				<p class="sideBarTitle">
+					Закрытое тестирование «Атома»
+				</p>
+				<p class="sideBarText">
+					Замысел такого масштаба невозможно воплотить в одиночку, поэтому мы уже начали проводить <br />
+					эксперименты с первыми партнёрами. Каким будет результат этой работы, во многом зависит от них <br />
+					 и от других вебмастеров. У нас есть идея и технологии для её реализации, но мы не хотим двигаться дальше <br />
+					 без ваших мыслей, мнения, опыта и осознания ваших потребностей. Всё это необходимо нам для того, чтобы  <br />
+					 превратить идею в полноценный продукт, полезный в реальных ситуациях.
+				</p>
+				<p class="sideBarText">
+					Если вы хотите принять участие в развитии «Атома», то вам необходимо выполнить следующие шаги:
+				</p>
+				<ul>
+					<li class="sideBarText">выбрать ключевые рубрики вашего сайта;</li>
+					<li class="sideBarText">установить на ваш сайт Яндекс.Метрику;</li>
+					<li class="sideBarText">разметить страницы каждой выбранной рубрики разными <a href="http://help.yandex.ru/metrika/general/goals.xml">целями в Метрике</a>.</li>
+				</ul>
+				<p class="sideBarText">
+					Присылайте письмо, в котором указаны идентификаторы целей и чётко описаны те задачи, которые вы бы хотели решить с помощью «Атома».
+				</p>
+				<p class="sideBarText">
+					Авторы самых интересных писем и предложений станут участниками эксперимента. Все новости и примеры мы будет публиковать в корпоративном блоге и на Хабрахабре.
+				</p>
+				<p class="sideBarText">
+					Свяжитесь с нами через <a href="http://feedback2.yandex.ru/atom/">форму обратной связи </a> или пишите на <a href="atom-experiments@yandex-team.ru">atom-experiments@yandex-team.ru</a>
+				</p>
+				<p class="sideBarText">
+					Читайте про «Атом» <a href="http://clubs.ya.ru/company/replies.xml?item_no=71712">в нашем корпоративном блоге </a> и <a href="http://habrahabr.ru/company/yandex/blog/195982/">на Хабрахабре</a>.				
+				</p>
+			</div>
+		</div>
+	</div>	
+	<div class="sideBarExpandButton" onclick="sideBar.expand();">		
+	</div>
+	<div class="sideBarReduceButton" onclick="sideBar.reduce();">		
+	</div>	
+	<div class="videoPlayerContainer" onclick="hideVideo();"> 
+		<video id="videoPlayer" class="videoPlayer" controls>
+			<source src="Videos/video.mp4" type="video/mp4" />
+			<source src="Videos/video.ogv" type="video/ogg" />			
+		</video>
+	</div>				
+	</body>		
+
+</html>
