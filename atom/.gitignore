@@ -8,3 +8,9 @@ node_modules/
 *.bundles/*/*.*
 !*.bundles/*/*.bemjson.js
 !*.bundles/.bem/*
+
+
+# for demo
+!*.bundles/*/_*.css
+!*.bundles/*/_*.js
+!*.bundles/*/*.html
