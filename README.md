@@ -1,1 +1,1 @@
-[codestyle](https://github.com/yandex-shri-ekb/8-exam/tree/master/codestyle)
+[Демо](http://rawgithub.com/solomein/8-exam/master/dist/index.html)
