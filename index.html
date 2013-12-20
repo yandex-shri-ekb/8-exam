@@ -18,7 +18,7 @@
         $('[data-w]').each(function(){
             var plugin = $(this).attr('data-w');
             if (typeof $(this)[plugin] === 'function'){
-                var options = $(this).data('w-option');
+                var options = $(this).data('w-options');
                 $(this)[plugin](options);
             }
         });
@@ -59,7 +59,7 @@
         </div>
         <div class="story__item story__item-3">
             <!-- меню выбора персонажа -->
-            <div class="paths-menu" data-w="paths-menu" data-w-options="{}">
+            <div class="paths-menu" data-w="paths-menu" data-w-options='{}'>
                 <div class="paths-menu grid_cols_12">
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_3 grid__module_span_2">
@@ -336,7 +336,7 @@
         </div>
         <div class="story__item story__item-last-1">
             <!-- меню выбора персонажа без описания -->
-            <div class="paths-menu" data-w="paths-menu" data-w-options="{}">
+            <div class="paths-menu" data-w="paths-menu" data-w-options='{"scrollto":".story__item-3"}'>
                 <div class="paths-menu grid_cols_12">
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_3 grid__module_span_2">
