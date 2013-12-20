@@ -3,7 +3,7 @@
 var sideBar = (function() {
 	//сохраняем смещение, чтобы потом сворачивать панель туда же
 	var offset;
-	return {
+	return  {
 	
 		visible : function()
 		{
