@@ -1,0 +1,219 @@
+.b-page__separator-stable_red 
+{
+    position: absolute;
+    left: 1px;
+    width: 762px;
+    background: no-repeat url(../img/way_red.png);
+}
+
+.b-page__separator-stable_red_1 
+{
+    bottom: -71px;
+    height: 90px;
+    background-position: 0 0;
+}
+
+.b-page__separator-line_red_1 
+{
+    margin: 0 0 18px 136px;
+    height: 486px;
+}
+
+.b-page__separator-stable_red_2 
+{
+    bottom: -60px;
+    height: 539px;
+    background-position: 0 -90px;
+}
+
+.b-page__separator-line_red_2 
+{
+    margin: 0 0 478px 624px;
+    height: 25px;
+}
+
+.b-page__separator-stable_red_3 
+{
+    bottom: -60px;
+    height: 161px;
+    background-position: 0 -628px;
+}
+
+.b-page__separator-line_red_3 
+{
+    margin: 0 0 100px 136px;
+    height: 405px;
+}
+
+.b-page__separator-stable_red_4 
+{
+    bottom: -43px;
+    height: 547px;
+    background-position: 0 -789px;
+}
+
+.b-page__separator-line_red_4 
+{
+    margin: 0 0 504px 0;
+    height: 0px;
+}
+
+.b-scenario__pic_red 
+{
+    position: absolute;
+    z-index: 1;
+    background: no-repeat url(../img/scenario_red.png);
+}
+
+.b-scenario__pic_red_book 
+{
+    top: 639px;
+    left: 174px;
+    width: 228px;
+    height: 300px;
+    background-position: -384px 0;
+}
+
+.b-scenario__pic_red_bear 
+{
+    top: 688px;
+    left: -60px;
+    width: 318px;
+    height: 386px;
+    background-position: 0 -492px;
+}
+
+.b-scenario__pic_red_portret 
+{
+    bottom: 218px;
+    left: 96px;
+    width: 306px;
+    height: 242px;
+    background-position: -612px 0;
+}
+
+.b-scenario__pic_red_tour 
+{
+    top: 75px;
+    left: 496px;
+    width: 383px;
+    height: 491px;
+    background-position: 0 0;
+}
+
+.b-scenario__pic_red_pasports 
+{
+    top: 474px;
+    left: 564px;
+    width: 484px;
+    height: 227px;
+    background-position: -403px -302px;
+}
+
+.b-scenario__pic_red_glasses 
+{
+    bottom: -53px;
+    left: 564px;
+    width: 382px;
+    height: 139px;
+    background-position: -72px -1719px;
+}
+
+.b-scenario__pic_red_iphone 
+{
+    top: 370px;
+    left: 96px;
+    width: 151px;
+    height: 280px;
+    background-position: -612px -543px;
+}
+
+.b-scenario__pic_red_bill 
+{
+    top: 333px;
+    left: 330px;
+    width: 221px;
+    height: 351px;
+    background-position: -347px -530px;
+}
+
+.b-scenario__pic_red_lenses 
+{
+    bottom: 139px;
+    left: 486px;
+    width: 410px;
+    height: 283px;
+    background-position: -929px -543px;
+}
+
+.b-scenario__pic_red_bags 
+{
+    top: 578px;
+    left: -138px;
+    width: 566px;
+    height: 523px;
+    background-position: -802px -839px;
+}
+
+.b-scenario__pic_red_cup 
+{
+    top: 512px;
+    left: 522px;
+    width: 139px;
+    height: 224px;
+    background-position: -549px -1676px;
+}
+
+.b-scenario__pic_red_imac 
+{
+    top: 99px;
+    left: 564px;
+    width: 451px;
+    height: 529px;
+    background-position: -917px 0;
+}
+
+.b-scenario__pic_red_lisence 
+{
+    bottom: 274px;
+    left: 96px;
+    width: 299px;
+    height: 187px;
+    background-position: -982px -1676px;
+}
+
+.b-scenario__pic_red_keys 
+{
+    bottom: 233px;
+    left: 252px;
+    width: 223px;
+    height: 147px;
+    background-position: -728px -1696px;
+}
+
+.b-scenario__pic_red_tamagotchi 
+{
+    top: -126px;
+    left: -60px;
+    width: 148px;
+    height: 237px;
+    background-position: -765px -543px;
+}
+
+.b-scenario__pic_red_food 
+{
+    bottom: 151px;
+    left: -254px;
+    width: 1280px;
+    height: 315px;
+    background-position: 0 -1361px;
+}
+
+.b-scenario__pic_red_drinks 
+{
+    bottom: 21px;
+    left: 89px;
+    width: 796px;
+    height: 399px;
+    background-position: 0 -895px;
+}
