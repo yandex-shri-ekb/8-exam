@@ -7,7 +7,7 @@ block('user')(
         return [
             {
                 elem: 'icon',
-                mods: { color: mods.color, size: mods.size },
+                mods: { theme: mods.theme, size: mods.size },
                 content: this.ctx.icon
             },
             {

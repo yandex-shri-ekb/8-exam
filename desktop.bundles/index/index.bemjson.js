@@ -6,7 +6,9 @@
         {elem: 'css', url: '_index.css', ie: false},
         {elem: 'css', url: 'css/_anygrid.css', ie: false},
         {elem: 'css', url: '_index.ie.css', ie: 'gte IE 6'},
-        {elem: 'meta', attrs: {name: 'description', content: ''}}
+        {elem: 'meta', attrs: {name: 'description', content: ''}},
+        {elem: 'js', url: './jquery-1.10.2.js'},
+        {elem: 'js', url: './js/index.js'}
     ],
     content: [
         {
@@ -49,15 +51,8 @@
                    }
                 ]
            }
-       },
-        {elem: 'js', url: '_index.js'}
-
-        /*{
-            block: 'i-jquery',
-            elem: 'core'
-       },
-        {elem: 'js', url: 'js/index.js'}*/
-
-
+       }
+        // // TODO затирает jQuery в глобальной области видимости
+        //{elem: 'js', url: '_index.js'}
     ]
 })

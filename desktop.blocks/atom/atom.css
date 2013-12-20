@@ -3,3 +3,8 @@
     position: relative;
     width: 972px;
 }
+
+.atom_cursor_pointer
+{
+    cursor: pointer;
+}
