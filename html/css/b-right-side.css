@@ -1,0 +1,84 @@
+.b-right-side
+{
+    border-left: 2px solid #000;
+    position: absolute;
+    left: 970px;
+    top: 0;
+    background: #fff;
+    width: 100%;
+    min-width: 18px;
+    z-index: 10;
+    box-shadow: -15px 0 rgba(0,0,0,0.2);
+}
+
+.b-right-side__padding
+{
+    padding: 35px;
+}
+
+.b-right-side-container
+{
+    height: 730px;
+}
+
+.b-right-side__first
+{
+    height: 1507px;
+}
+
+.b-right-side__footer
+{
+    height: 742px;
+}
+
+.b-right-side__content
+{
+    width: 630px;
+}
+
+.close-icon,
+.open-icon
+{
+    display: none;
+    width: 67px;
+    height: 67px;
+    background-image: url("../img/right-x.png");
+    background-position: 0 67px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+    cursor: pointer;
+}
+
+.close-icon:hover,
+.open-icon:hover
+{
+    background-position: 67px 0;
+}
+
+.open-icon
+{
+    background-image: url("../img/right-q.png");
+}
+
+.b-right-side_story
+{
+    display: none;
+}
+
+.b-right-side_story.active
+{
+    display: block;
+}
+
+.b-logo_ya
+{
+    display: block;
+    background: url("../img/logo-small.png") no-repeat;
+    width: 78px;
+    height: 30px;
+    position: absolute;
+    left: 815px;
+    top: 30px;
+}

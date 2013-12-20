@@ -1,0 +1,235 @@
+.b-float-person
+{
+    display: none;
+    position: fixed;
+    top: 50%;
+    margin-top: -115px;
+    left: 400px;
+    width: 224px;
+    height: 224px;
+    z-index: 5;
+}
+
+.b-float-person.b-float-person_georgiy
+{
+    background: url("../img/georgiy/georgiy.png") no-repeat;
+    display: block;
+}
+
+.b-float-person.b-float-person_max
+{
+    background: url("../img/max/max.png") no-repeat;
+    display: block;
+}
+
+.b-float-person.b-float-person_alex
+{
+    background: url("../img/alex/alex.png") no-repeat;
+    display: block;
+}
+
+.b-float-switch
+{
+    display: none;
+    position: fixed;
+    top: 50px;
+    left: 365px;
+    width: 300px;
+    z-index: 5;
+}
+
+.b-float-switch__item
+{
+    position: absolute;
+    background: url("../img/sprite.png") no-repeat;
+    top: 0;
+    cursor: pointer;
+}
+
+.b-float-switch__item_mr0
+{
+    margin-right: 0;
+}
+
+
+.b-float-switch__item_alex
+{
+    left: 100px;
+}
+
+.b-float-switch__item_georgiy
+{
+    left: 205px;
+}
+
+.b-float-switch__item_max-liner.active
+{
+    background-position: -2px -86px;
+    width: 79px;
+    height: 79px;
+}
+
+.b-float-switch__item_max-dress.active
+{
+    background-position: -2px -395px;
+    width: 84px;
+    height: 74px;
+}
+
+.b-float-switch__item_max-train.active
+{
+    background-position: -2px -471px;
+    width: 94px;
+    height: 72px;
+}
+
+.b-float-switch__item_max-moped.active
+{
+    background-position: -2px -617px;
+    width: 89px;
+    height: 69px;
+}
+
+.b-float-switch__item_alex-ticket.active
+{
+    background-position: -2px -243px;
+    width: 94px;
+    height: 74px;
+}
+
+.b-float-switch__item_alex-eye.active
+{
+    background-position: -2px -828px;
+    width: 84px;
+    height: 67px;
+}
+
+.b-float-switch__item_alex-car.active
+{
+    background-position: -2px -759px;
+    width: 89px;
+    height: 67px;
+}
+
+.b-float-switch__item_alex-drink.active
+{
+    background-position: -2px -688px;
+    width: 67px;
+    height: 69px;
+}
+
+.b-float-switch__item_georgiy-bed.active
+{
+    background-position: -2px -319px;
+    width: 69px;
+    height: 74px;
+}
+
+.b-float-switch__item_georgiy-driving.active
+{
+    background-position: -2px -0px;
+    width: 84px;
+    height: 84px;
+}
+
+.b-float-switch__item_georgiy-taxi.active
+{
+    background-position: -2px -897px;
+    width: 94px;
+    height: 67px;
+}
+
+.b-float-switch__item_georgiy-yoga.active
+{
+    background-position: -2px -167px;
+    width: 84px;
+    height: 74px;
+}
+
+.b-float-switch__item_max-liner
+{
+    background-position: -2px -1100px;
+    width: 65px;
+    height: 65px;
+}
+
+.b-float-switch__item_max-dress
+{
+    background-position: -2px -1291px;
+    width: 70px;
+    height: 60px;
+}
+
+.b-float-switch__item_max-train
+{
+    background-position: -2px -966px;
+    width: 80px;
+    height: 65px
+}
+
+.b-float-switch__item_max-moped
+{
+    background-position: -2px -1539px;
+    width: 75px;
+    height: 60px;
+}
+
+.b-float-switch__item_alex-ticket
+{
+    background-position: -2px -1415px;
+    width: 80px;
+    height: 60px;
+}
+
+.b-float-switch__item_alex-eye
+{
+    background-position: -2px -1353px;
+    width: 70px;
+    height: 60px;
+    left: 105px;
+}
+
+.b-float-switch__item_alex-car
+{
+    background-position: -2px -1167px;
+    width: 80px;
+    height: 60px;
+    left: 103px;
+}
+
+.b-float-switch__item_alex-drink
+{
+    background-position: -2px -1601px;
+    width: 60px;
+    height: 60px;
+    left: 110px;
+}
+
+.b-float-switch__item_georgiy-bed
+{
+    background-position: -2px -1477px;
+    width: 60px;
+    height: 60px;
+}
+
+.b-float-switch__item_georgiy-driving
+{
+    background-position: -2px -545px;
+    width: 70px;
+    height: 70px;
+    top: -10px;
+}
+
+.b-float-switch__item_georgiy-taxi
+{
+    background-position: -2px -1229px;
+    width: 80px;
+    height: 60px;
+}
+
+.b-float-switch__item_georgiy-yoga
+{
+    background-position: -2px -1033px;
+    width: 70px;
+    height: 65px;
+}

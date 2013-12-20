@@ -1,0 +1,27 @@
+.b-lightbox__overflow
+{
+    display: none;
+    background: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+}
+
+.b-lightbox__custom
+{
+    width: 720px;
+    padding: 20px 20px 15px;
+    background: #c0c0c0;
+    margin: -223px 0 0 -380px;
+    z-index: 9999;
+    top: -1000px;
+    left: 50%;
+    position: absolute;
+    display: block;
+    box-shadow: 10px 10px rgba(0,0,0,0.1);
+}
