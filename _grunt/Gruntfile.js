@@ -22,10 +22,11 @@ module.exports = function (grunt) {
         csscomb: {
             main: {
                 options: {
-                    sortOrder: './.csscomb.json'
+                    sortOrder: '.csscomb.json'
                 },
                 files: {
-                    '../css/main.css': ['../css/main.css']
+                    '../css/main.css': ['../css/main.css'],
+//                    '../css/sass/main.scss': ['../css/sass/main.scss']
                 }
             }
         }

@@ -23,9 +23,23 @@ $sprite: sprite-map("sprites/*.png");
     overflow: hidden;
 }
 
+/* Themes */
 .b-yellow
 {
     background-color: #ffe05d;
+    @include transition(background-color 0.5s ease);
+}
+
+.b-blue
+{
+    background-color: #72c4f6;
+    @include transition(background-color 0.5s ease);
+}
+
+.b-red
+{
+    background-color: #ff8282;
+    @include transition(background-color 0.5s ease);
 }
 
 /* Header */
@@ -523,7 +537,8 @@ $sprite: sprite-map("sprites/*.png");
     right: 30px;
     z-index: 5;
 
-    &:hover {
+    &:hover
+    {
         background: sprite($sprite, "b-icon-sidebar-show_hover") no-repeat;
     }
 }

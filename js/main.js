@@ -26,6 +26,29 @@ var person = {
     }
 };
 
+var theme = {
+    themeClasses: ['b-yellow', 'b-blue', 'b-red'],
+    init: function () {
+        var _this = this;
+
+        $('.js-person-icon').click(function (event) {
+            event.preventDefault();
+
+            var $this = $(this),
+                classTheme = $this.data('theme-class');
+
+            _this.toggleTheme(classTheme);
+        });
+    },
+    toggleTheme: function (classTheme) {
+        var _this = this,
+            $themeElements = $('.js-theme-element');
+
+        $themeElements.removeClass(_this.themeClasses.join(' ')).addClass(classTheme);
+    }
+};
+
 $(function () {
     person.init();
+    theme.init();
 });
