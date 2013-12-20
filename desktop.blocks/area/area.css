@@ -1,0 +1,10 @@
+.area
+{
+	position: relative;
+	display: none;
+}
+
+.area_visible
+{
+	display: block;
+}

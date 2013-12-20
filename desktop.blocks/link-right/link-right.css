@@ -1,0 +1,9 @@
+.link-right
+{
+	display: inline;
+}
+
+.link-right:hover
+{
+	color: #f00;
+}

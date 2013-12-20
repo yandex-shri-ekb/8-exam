@@ -1,0 +1,8 @@
+.general-info__icon
+{
+	float: left;
+	margin: 80px 0;
+	width: 216px;
+	height: 112px;
+	background: url('atom-logo.png') top left no-repeat;
+}

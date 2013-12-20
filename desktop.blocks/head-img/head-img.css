@@ -1,0 +1,10 @@
+.head-img
+{
+	position: relative;
+	width: 954px;
+	height: 590px;
+	margin-left: -2px;
+	background: url('head.png') left top no-repeat;
+}
+
+

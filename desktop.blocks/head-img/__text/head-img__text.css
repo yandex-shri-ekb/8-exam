@@ -1,0 +1,9 @@
+.head-img__text
+{
+	position: absolute;
+	left: 77px;
+	bottom: 65px;
+	width: 800px;
+	text-align: center;
+	font: normal 46px MyriadPro, Helvetica;
+}
