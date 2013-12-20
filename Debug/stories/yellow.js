@@ -15,7 +15,7 @@ YellowStory.prototype.getBackgroundColor = function()
 
 YellowStory.prototype.getStoryImage = function()
 {
-	return "url('Images/yellowStory.png') no-repeat";
+	return "url('Images/Yellow/story.png') no-repeat";
 }
 
 YellowStory.prototype.getBigPersonImage = function()
@@ -61,10 +61,10 @@ YellowStory.prototype.getSideBarContent = function()
 YellowStory.prototype.getSideBarImages = function()
 {
 	return [
-			"Images/yellowRightStory1.jpg",
-			"Images/yellowRightStory2.jpg",
-			"Images/yellowRightStory3.jpg",
-			"Images/yellowRightStory4.jpg"
+			"Images/Yellow/right1.jpg",
+			"Images/Yellow/right2.jpg",
+			"Images/Yellow/right3.jpg",
+			"Images/Yellow/right4.jpg"
 	];
 }
 

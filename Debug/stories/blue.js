@@ -13,7 +13,7 @@ BlueStory.prototype.getBackgroundColor = function()
 
 BlueStory.prototype.getStoryImage = function()
 {
-	return "url('Images/blueStory.png') no-repeat";
+	return "url('Images/Blue/story.png') no-repeat";
 }
 
 
@@ -63,10 +63,10 @@ BlueStory.prototype.getSideBarContent = function()
 BlueStory.prototype.getSideBarImages = function()
 {
 	return [
-			"Images/blueRightStory1.jpg",
-			"Images/blueRightStory2.jpg",
-			"Images/blueRightStory3.jpg",
-			"Images/blueRightStory4.jpg"
+			"Images/Blue/right1.jpg",
+			"Images/Blue/right2.jpg",
+			"Images/Blue/right3.jpg",
+			"Images/Blue/right4.jpg"
 	];
 }
 

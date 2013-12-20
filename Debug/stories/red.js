@@ -15,7 +15,7 @@ RedStory.prototype.getBackgroundColor = function()
 
 RedStory.prototype.getStoryImage = function()
 {
-	return "url('Images/redStory.png') no-repeat";
+	return "url('Images/Red/story.png') no-repeat";
 }
 
 RedStory.prototype.getBigPersonImage = function()
@@ -62,9 +62,9 @@ RedStory.prototype.getSideBarContent = function()
 RedStory.prototype.getSideBarImages = function()
 {
 	return [
-			"Images/redRightStory1.jpg",
-			"Images/redRightStory2.jpg",
-			"Images/redRightStory3.jpg",
-			"Images/redRightStory4.jpg"
+			"Images/Red/right1.jpg",
+			"Images/Red/right2.jpg",
+			"Images/Red/right3.jpg",
+			"Images/Red/right4.jpg"
 	];
 }
