@@ -1,0 +1,114 @@
+.b-aside__clicker
+{
+    position: fixed;
+    z-index: 12;
+    top: 50px;
+    right: 50px;
+    width: 60px;
+    height: 60px;
+    padding: 0 8px 8px 0;
+    margin: 0 -8px -8px 0;
+    cursor: pointer;
+    background: -309px 0 url(../img/icons.png);
+    transition: .2s left cubic-bezier(.2,-.2,.8,1.2);
+}
+
+.b-aside__clicker:hover
+{
+    background-position: -309px -80px;
+}
+
+.b-aside__clicker_close
+{
+    background-position: -409px 0;
+}
+
+.b-aside__clicker_close:hover
+{
+    background-position: -409px -80px;
+}
+
+.b-aside__clicker_disabled
+{
+    top: -100px;
+}
+
+.b-aside__pic
+{
+    margin: 80px 0 50px;
+}
+
+.b-aside__paragraph
+{
+    width: 640px;
+}
+
+.b-aside__present-conteiner
+{
+    border-top: 2px solid #000;
+    margin: 0 -34px;
+    padding: 20px 34px 20px;
+    width: 2000px;
+}
+
+.b-video__wrapper
+{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    padding: 8px;
+    border: 2px solid;
+    background: #e7e7e8;
+    border-radius: 4px;
+    box-shadow: 
+       1px  1px #e5e5e5,
+       2px  2px #e5e5e5,
+       3px  3px #e5e5e5,
+       4px  4px #e5e5e5,
+       5px  5px #e5e5e5,
+       6px  6px #e5e5e5,
+       7px  7px #e5e5e5,
+       8px  8px #e5e5e5,
+       9px  9px #e5e5e5,
+      10px 10px #e5e5e5;
+}
+
+.b-video__conteiner
+{
+    position: relative;
+    border: 2px solid;
+    line-height: 0;
+}
+
+.b-video__conteiner:after 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    content: '';
+}
+
+.b-aside__opened
+.b-video__conteiner:after 
+{
+    display: none;
+}
+
+.b-aside__list
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.b-aside__list-item:before
+{
+    content: '— ';
+}
+
+.b-aside__link
+{
+    color: #0d44a0;
+}
