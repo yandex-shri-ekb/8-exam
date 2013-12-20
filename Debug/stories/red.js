@@ -68,3 +68,12 @@ RedStory.prototype.getSideBarImages = function()
 			"Images/Red/right4.jpg"
 	];
 }
+
+RedStory.prototype.getStoryIcons = function()
+{
+	return [
+		"url('Images/stories.png') 20px 10px no-repeat",
+		"url('Images/stories.png') 20px -130px no-repeat",
+		"url('Images/stories.png') 20px -270px no-repeat"			
+	];
+}

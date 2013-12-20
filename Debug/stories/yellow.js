@@ -68,6 +68,13 @@ YellowStory.prototype.getSideBarImages = function()
 	];
 }
 
-
+YellowStory.prototype.getStoryIcons = function()
+{
+	return [
+		"url('Images/stories.png') -180px 10px no-repeat",
+		"url('Images/stories.png') -180px -130px no-repeat",
+		"url('Images/stories.png') -180px -270px no-repeat"			
+	];
+}
 
 

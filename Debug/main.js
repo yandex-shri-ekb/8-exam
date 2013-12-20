@@ -44,15 +44,15 @@ function hookScroll()
 		var value = $(this).scrollTop();
 		if(inRange(1500, value, 2200))
 		{
-			iconsManager.showIcons(1);
+			iconsManager.showIcons(0);
 		}
 		else if(inRange(2200, value, 2900))
 		{
-			iconsManager.showIcons(2);
+			iconsManager.showIcons(1);
 		}
 		else if(inRange(2900, value, 3800))
 		{
-			iconsManager.showIcons(3);
+			iconsManager.showIcons(2);
 		}
 		else
 		{

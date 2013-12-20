@@ -70,7 +70,12 @@ BlueStory.prototype.getSideBarImages = function()
 	];
 }
 
-
-
-
+BlueStory.prototype.getStoryIcons = function()
+{
+	return [
+		"url('Images/stories.png') -450px 10px no-repeat",
+		"url('Images/stories.png') -450px -130px no-repeat",
+		"url('Images/stories.png') -450px -270px no-repeat"			
+	];
+}
 
