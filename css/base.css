@@ -155,7 +155,7 @@ a:hover {
  * Hide visually and from screenreaders, but maintain layout
 */
 @media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003173}}
-.invisible {
+.i-invisible {
   visibility: hidden;
 }
 

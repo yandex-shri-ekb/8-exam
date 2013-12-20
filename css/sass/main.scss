@@ -18,7 +18,7 @@ $sprite: sprite-map("sprites/*.png");
     margin: 16px;
     position: relative;
     border: 2px solid #000;
-    height: 2000px;
+    height: 5000px;
 }
 
 .l-wrapper_yellow
@@ -95,7 +95,7 @@ $sprite: sprite-map("sprites/*.png");
 /* Persons block */
 .b-persons
 {
-    margin: 80px 0 0;
+    margin: 80px 0 30px 0;
 }
 
 .b-persons-item
@@ -195,4 +195,69 @@ $sprite: sprite-map("sprites/*.png");
     width: 217px;
     height: 217px;
     background: sprite($sprite, "b-person-red-icon_popup") no-repeat;
+}
+
+/* Story */
+.b-story
+{
+
+}
+
+.b-story-stage
+{
+    position: relative;
+}
+
+/* Story :: Yellow */
+.b-story_yellow
+{
+
+}
+
+.b-story-yellow-stage_1
+{
+    height: 800px;
+}
+
+.b-story-yellow-stage_2
+{
+    height: 800px;
+}
+
+.b-story-yellow-stage_3
+{
+    height: 800px;
+}
+
+.b-story-yellow-stage_4
+{
+    height: 800px;
+}
+
+.b-story-yellow-path-1
+{
+
+    & > img {
+        display: block;
+        position: absolute;
+        top: -8px;
+    }
+}
+
+.b-story-yellow-path-2
+{
+
+    & > img {
+        display: block;
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+.b-story-yellow-thing-1 {
+
+}
+
+.b-story-yellow-text-1 {
+    margin-top: 110px;
 }

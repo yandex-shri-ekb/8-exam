@@ -12,7 +12,7 @@
   margin: 16px;
   position: relative;
   border: 2px solid #000;
-  height: 2000px;
+  height: 5000px;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\0000325}}
@@ -86,7 +86,7 @@
 /* Persons block */
 @media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\0000397}}
 .b-persons {
-  margin: 80px 0 0;
+  margin: 80px 0 30px 0;
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003107}}
@@ -181,4 +181,50 @@
   width: 217px;
   height: 217px;
   background: url('/../img/sprites-s9f4056d38e.png') 0 -1095px no-repeat;
+}
+
+/* Story */
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003207}}
+.b-story-stage {
+  position: relative;
+}
+
+/* Story :: Yellow */
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003218}}
+.b-story-yellow-stage_1 {
+  height: 800px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003223}}
+.b-story-yellow-stage_2 {
+  height: 800px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003228}}
+.b-story-yellow-stage_3 {
+  height: 800px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003233}}
+.b-story-yellow-stage_4 {
+  height: 800px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003240}}
+.b-story-yellow-path-1 > img {
+  display: block;
+  position: absolute;
+  top: -8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003250}}
+.b-story-yellow-path-2 > img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003261}}
+.b-story-yellow-text-1 {
+  margin-top: 110px;
 }
