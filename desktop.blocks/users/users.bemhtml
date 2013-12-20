@@ -1,36 +1,33 @@
-block('users')(
+block users {
 
-    content()(function() {
-
-        return {
-            elem: 'row',
-            mix: { block: 'grid_row' },
-            content: {
-                elem: 'wrap',
-                content: [
-                    {
-                        block: 'user',
-                        mods: { theme: 'yellow', 'size': 'mini' },
-                        name: 'Максим',
-                        text: 'Предпочитает путешествовать самостоятельно и налегке. Уверен, что только так можно проникнуться культурой страны.',
-                        mix: { block: 'grid__module', mods: {span: 4, col: 2} }
-                    },
-                    {
-                        block: 'user',
-                        mods: { theme: 'red', 'size': 'mini' },
-                        name: 'Алексей',
-                        text: 'В отпуск ездит вместе с женой и дочкой. Считает, что отдыхать лучше всего в отелях на побережье..',
-                        mix: { block: 'grid__module', mods: {span: 4, col: 5} }
-                    },
-                    {
-                        block: 'user',
-                        mods: { theme: 'blue', 'size': 'mini' },
-                        name: 'Григорий И. Дауге',
-                        text: 'Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания..',
-                        mix: { block: 'grid__module', mods: {span: 4, col: 8} }
-                    }
-                ]
-            }
+    content : {
+        elem: 'row',
+        mix: { block: 'grid_row' },
+        content: {
+            elem: 'wrap',
+            content: [
+                {
+                    block: 'user',
+                    mods: { theme: 'yellow', 'size': 'mini' },
+                    name: 'Максим',
+                    text: 'Предпочитает путешествовать самостоятельно и налегке. Уверен, что только так можно проникнуться культурой страны.',
+                    mix: { block: 'grid__module', mods: {span: 4, col: 2} }
+                },
+                {
+                    block: 'user',
+                    mods: { theme: 'red', 'size': 'mini' },
+                    name: 'Алексей',
+                    text: 'В отпуск ездит вместе с женой и дочкой. Считает, что отдыхать лучше всего в отелях на побережье..',
+                    mix: { block: 'grid__module', mods: {span: 4, col: 5} }
+                },
+                {
+                    block: 'user',
+                    mods: { theme: 'blue', 'size': 'mini' },
+                    name: 'Григорий И. Дауге',
+                    text: 'Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания..',
+                    mix: { block: 'grid__module', mods: {span: 4, col: 8} }
+                }
+            ]
         }
-    })
-)
+    }
+}

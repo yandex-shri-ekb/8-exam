@@ -1,0 +1,11 @@
+.step-icon
+{
+    background: url(step-icon.png) no-repeat;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: inline-block;
+    /* TODO optimize */
+    *display: inline;
+    zoom: 1;
+}

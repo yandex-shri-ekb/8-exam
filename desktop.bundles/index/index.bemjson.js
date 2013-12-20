@@ -25,20 +25,54 @@
                                 mods: {theme: 'blue'},
                                 content: [
                                     {block: 'header'},
-                                    {block: 'users'},
+                                    {block: 'users', mods: { 'pos': 'top' }},
                                     {
                                         block: 'stories',
                                         content: [
+                                            {
+                                                elem: 'locomotive',
+                                                content: [
+                                                {
+                                                    elem: 'icons',
+                                                    content: [
+                                                        {
+                                                            block: 'step-icon',
+                                                            mods: {
+                                                                'theme': 'yellow',
+                                                                'active': 'no'
+                                                            }
+                                                        },
+                                                        {
+                                                            block: 'step-icon',
+                                                            mods: {
+                                                                'theme': 'red',
+                                                                'active': 'no'
+                                                            }
+                                                        },
+                                                        {
+                                                            block: 'step-icon',
+                                                            mods: {
+                                                                'theme': 'blue',
+                                                                'active': 'no'
+                                                            }
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    block: 'user-icon',
+                                                    mods: {'size': 'large', 'theme': 'yellow', 'push_down': 'yes'}
+                                                }
+                                            ]},
                                             {block: 'story-theme-yellow', mix: {block: 'story'}},
                                             {block: 'story-theme-blue', mix: {block: 'story'}}
                                         ]
                                    },
-                                    {block: 'users', mods: {'show_text': 'no'}},
+                                    {block: 'users', mods: {'show_text': 'no', 'pos': 'bottom'}},
                                     {block: 'footer'}
                                 ]
                            }
                         ]
-                   },
+                    },
                     {
                         block: 'atom-ledge',
                         content: [
@@ -48,7 +82,7 @@
                                 content: {elem: 'inner'}
                            }
                         ]
-                   }
+                    }
                 ]
            }
        }

@@ -1,4 +1,10 @@
 .user__text
 {
     position: absolute;
+    display: none;
+}
+
+.user__text_show_yes
+{
+    display: block;
 }

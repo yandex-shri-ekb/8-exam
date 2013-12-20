@@ -1,24 +1,21 @@
-block('user')(
+block user {
 
-    content()(function() {
-        var mods = this.ctx.mods;
-        // TODO спросить как можно не применять mods к блоку
-        this.ctx.mods = {};
-        return [
-            {
-                elem: 'icon',
-                mods: { theme: mods.theme, size: mods.size },
-                content: this.ctx.icon
+    content: [
+        {
+            block: 'user-icon',
+            mods: {
+                theme: this.ctx.mods.theme,
+                size: this.ctx.mods.size
             },
-            {
-                elem: 'name',
-                content: this.ctx.name
-            },
-            {
-                elem: 'text',
-                content: this.ctx.text
-            }
-        ];
-    })
-
-);
+            content: this.ctx.icon
+        },
+        {
+            elem: 'name',
+            content: this.ctx.name
+        },
+        {
+            elem: 'text',
+            content: this.ctx.text
+        }
+    ]
+}

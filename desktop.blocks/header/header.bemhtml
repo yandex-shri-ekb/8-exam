@@ -1,11 +1,7 @@
-block('header')(
+block header {
 
-    content()(function() {
-
-        return [
-            { block: 'header-logo' },
-            { block: 'header-info' },
-        ];
-    })
-
-);
+    content: [
+        { block: 'header-logo' },
+        { block: 'header-info' }
+    ]
+}

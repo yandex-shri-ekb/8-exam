@@ -1,63 +1,40 @@
-.user__icon
+.step-icon_theme_red.step-icon_step_1.step-icon_active_yes
 {
-    background: url(../step-icon.png) no-repeat;
-    margin: 0 auto 18px;
-    cursor: pointer;
+    background-position: -220px 0;
 }
 
-.user__icon_size_mini
+.step-icon_theme_red.step-icon_step_2.step-icon_active_yes
 {
-    width: 140px;
-    height: 140px;
+    background-position: -220px -110px;
 }
 
-.user__icon_size_mini.user__icon_theme_yellow
+.step-icon_theme_red.step-icon_step_3.step-icon_active_yes
 {
-    background-position: 0 0;
+    background-position: -220px -220px;
 }
 
-.user__icon_size_mini.user__icon_theme_red
+.step-icon_theme_red.step-icon_step_4.step-icon_active_yes
 {
-    background-position: 0 -230px;
+    background-position: -220px -330px;
 }
 
-.user__icon_size_mini.user__icon_theme_blue
+
+.step-icon_theme_red.step-icon_step_1.step-icon_active_no
 {
-    background-position: 0 -460px
+    background-position: -330px 0;
 }
 
-.user__icon_size_middle.user__icon_theme_yellow
+.step-icon_theme_red.step-icon_step_2.step-icon_active_no
 {
-    background-position: -150px 0;
+    background-position: -330px -110px;
 }
 
-.user__icon_size_middle.user__icon_theme_red
+.step-icon_theme_red.step-icon_step_3.step-icon_active_no
 {
-    background-position: -150px -230px;
+    background-position: -330px -220px;
 }
 
-.user__icon_size_middle.user__icon_theme_blue
+.step-icon_theme_red.step-icon_step_4.step-icon_active_no
 {
-    background-position: -150px -460px;
-}
-
-.user__icon_size_large
-{
-    width: 220px;
-    height: 220px;
-}
-
-.user__icon_size_large.user__icon_theme_yellow
-{
-    background-position: -340px 0;
-}
-
-.user__icon_size_large.user__icon_theme_red
-{
-    background-position: -340px -230px;
-}
-
-.user__icon_size_large.user__icon_theme_blue
-{
-    background-position: -340px 460px;
+    background-position: -330px -330px;
 }
