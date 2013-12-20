@@ -1,0 +1,846 @@
+/* ..\..\desktop.blocks\layout\layout.css begin */
+.layout
+{
+    width: 950px;
+    margin: 18px;
+
+    -webkit-transition: background .5s;
+            transition: background .5s;
+
+    border: solid 2px #000;
+    background: url("../images/layout/layout_background.png") no-repeat;
+}
+
+.layout_sidebar_show
+{
+    cursor: pointer;
+}
+
+.layout_color_yellow
+{
+    background-color: #ffe05d;
+}
+
+.layout_color_red
+{
+    background-color: #ff8282;
+}
+
+.layout_color_blue
+{
+    background-color: #72c4f6;
+}
+/* ..\..\desktop.blocks\layout\layout.css end */
+/* ..\..\desktop.blocks\header\header.css begin */
+.header
+{
+    display: block;
+
+    height: 550px;
+
+    border-bottom: solid 2px;
+}
+
+.header__logo
+{
+    position: relative;
+    top: -6px;
+
+    width: 146px;
+    height: 100px;
+    margin: 0 auto;
+
+    background: url("../images/header/header__logo.png");
+}
+
+.header__title
+{
+    margin-top: 260px;
+    padding: 0 40px;
+
+    text-align: center;
+
+    font: 400 46px/48px sans-serif;
+}
+/* ..\..\desktop.blocks\header\header.css end */
+/* ..\..\desktop.blocks\intro\intro.css begin */
+.intro
+{
+    height: 400px;
+
+    border-bottom: solid 2px;
+    background: #fff;
+}
+
+.intro__text
+{
+    display: inline-block;
+
+    width: 450px;
+    padding: 80px 0 0 100px;
+}
+
+.intro__video
+{
+    display: inline-block;
+
+    margin: 100px;
+
+    vertical-align: top;
+}
+/* ..\..\desktop.blocks\intro\intro.css end */
+/* ..\..\desktop.blocks\video-block\video-block.css begin */
+.video-block__button
+{
+    display: block;
+
+    width: 138px;
+    height: 80px;
+    margin-bottom: 10px;
+
+    cursor: pointer;
+    -webkit-transition: all .3s;
+            transition: all .3s;
+
+    border-radius: 5px;
+    background: url("../images/video-block/video-button.png");
+}
+
+.video-block__button:hover
+{
+    box-shadow: inset 0 0 10px #000;
+}
+
+.video-block__button:active
+{
+    -webkit-transition: all .1s;
+            transition: all .1s;
+
+    box-shadow: inset 1px 1px 15px #000;
+}
+
+.video-block__button_color_yellow
+{
+    background-color: #ffe05d;
+}
+
+.video-block__button_color_red
+{
+    background-color: #ff8282;
+}
+
+.video-block__button_color_blue
+{
+    background-color: #72c4f6;
+}
+/* ..\..\desktop.blocks\video-block\video-block.css end */
+/* ..\..\desktop.blocks\persons\persons.css begin */
+.persons
+{
+    text-align: center;
+}
+
+.persons_position_top
+{
+    height: 350px;
+    padding-top: 50px;
+}
+/* ..\..\desktop.blocks\persons\persons.css end */
+/* ..\..\desktop.blocks\person\person.css begin */
+.person
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 230px;
+
+    vertical-align: top;
+}
+
+.person__name
+{
+    padding: 8px 0;
+
+    cursor: pointer;
+
+    font-weight: 800;
+}
+
+.person__image
+{
+    display: block;
+
+    width: 140px;
+    height: 150px;
+    margin: 30px auto 0;
+
+    cursor: pointer;
+
+    background: url("../images/person/persons.png") no-repeat;
+}
+
+.person_active .person__image
+{
+    width: 180px;
+    height: 180px;
+    margin-top: 15px;
+}
+
+.person_active .person__image,
+.person_active .person__name
+{
+    cursor: default;
+}
+
+.person_color_yellow .person__image
+{
+    background-position: 0 -90px;
+}
+
+.person_color_yellow.person_active .person__image
+{
+    background-position: -275px -50px;
+}
+
+.person_color_red .person__image
+{
+    background-position: 0 -235px;
+}
+
+.person_color_red.person_active .person__image
+{
+    background-position: -276px -235px;
+}
+
+.person_color_blue .person__image
+{
+    background-position: 0 -390px;
+}
+
+.person_color_blue.person_active .person__image
+{
+    background-position: -276px -420px;
+}
+
+.person__subtitle
+{
+    position: absolute;
+    top: 230px;
+
+    display: none;
+
+    width: 300px;
+    margin-left: -35px;
+    padding-top: 10px;
+}
+
+.person_expand .person__subtitle
+{
+    display: block;
+}
+/* ..\..\desktop.blocks\person\person.css end */
+/* ..\..\desktop.blocks\story-toggler\story-toggler.css begin */
+.story-toggler
+{
+    position: fixed;
+    z-index: 2;
+    top: -100px;
+    left: 0;
+
+    width: 970px;
+
+    text-align: center;
+}
+
+.story-toggler__toggle-item
+{
+    display: inline-block;
+
+    width: 80px;
+    height: 75px;
+    margin: 0 15px;
+
+    cursor: pointer;
+
+    border: solid 2px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("../images/story-toggler/story-icons.png");
+}
+
+.story-toggler__toggle-item_active
+{
+    box-shadow: inset 0 0 10px #000;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_yellow
+{
+    background-position: -100px 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_red
+{
+    background-position: 0 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_blue
+{
+    background-position: -200px 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_yellow.story-toggler__toggle-item_active
+{
+    background-position: -396px 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_red.story-toggler__toggle-item_active
+{
+    background-position: -298px 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_blue.story-toggler__toggle-item_active
+{
+    background-position: -497px 6px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_yellow
+{
+    background-position: -100px -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_red
+{
+    background-position: 0 -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_blue
+{
+    background-position: -200px -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_yellow.story-toggler__toggle-item_active
+{
+    background-position: -396px -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_red.story-toggler__toggle-item_active
+{
+    background-position: -298px -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_blue.story-toggler__toggle-item_active
+{
+    background-position: -497px -78px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_yellow
+{
+    background-position: -100px -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_red
+{
+    background-position: 0 -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_blue
+{
+    background-position: -198px -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_yellow.story-toggler__toggle-item_active
+{
+    background-position: -396px -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_red.story-toggler__toggle-item_active
+{
+    background-position: -298px -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_blue.story-toggler__toggle-item_active
+{
+    background-position: -498px -163px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_yellow
+{
+    background-position: -100px -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_red
+{
+    background-position: 0 -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_blue
+{
+    background-position: -198px -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_yellow.story-toggler__toggle-item_active
+{
+    background-position: -398px -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_red.story-toggler__toggle-item_active
+{
+    background-position: -298px -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_blue.story-toggler__toggle-item_active
+{
+    background-position: -496px -248px;
+}
+/* ..\..\desktop.blocks\story-toggler\story-toggler.css end */
+/* ..\..\desktop.blocks\story\story.css begin */
+.story
+{
+    height: 3270px;
+}
+
+.story_color_yellow
+{
+    background: url("../images/story/story-yellow-path.png") no-repeat 50% 0;
+}
+
+.story_color_red
+{
+    background: url("../images/story/story-red-path.png") no-repeat 50% 0;
+}
+
+.story_color_blue
+{
+    background: url("../images/story/story-blue-path.png") no-repeat 50% 0;
+}
+
+.story-yellow
+{
+    position: absolute;
+
+    display: none;
+
+    width: 1610px;
+    height: 3300px;
+
+    background: url("../images/story/story-yellow-images.png") no-repeat 0 0;
+}
+
+.story-yellow > div
+{
+    position: absolute;
+
+    text-align: center;
+}
+
+.story-yellow__text-1
+{
+    top: 100px;
+    left: 370px;
+
+    width: 300px;
+}
+
+.story-yellow__text-2
+{
+    top: 900px;
+    left: 840px;
+
+    width: 320px;
+}
+
+.story-yellow__text-3
+{
+    top: 1720px;
+    left: 370px;
+
+    width: 270px;
+}
+
+.story-yellow__text-4
+{
+    top: 2475px;
+    left: 840px;
+
+    width: 320px;
+}
+
+.story-red
+{
+    position: absolute;
+
+    display: none;
+
+    width: 1610px;
+    height: 3300px;
+
+    background: url("../images/story/story-red-images.png") no-repeat 0 110px;
+}
+
+.story-red > div
+{
+    position: absolute;
+
+    text-align: center;
+}
+
+.story-red__text-1
+{
+    top: 100px;
+    left: 370px;
+
+    width: 300px;
+}
+
+.story-red__text-2
+{
+    top: 900px;
+    left: 840px;
+
+    width: 320px;
+}
+
+.story-red__text-3
+{
+    top: 1680px;
+    left: 340px;
+
+    width: 340px;
+}
+
+.story-red__text-4
+{
+    top: 2510px;
+    left: 840px;
+
+    width: 300px;
+}
+
+.story-blue
+{
+    position: absolute;
+
+    display: none;
+
+    width: 1610px;
+    height: 3300px;
+
+    background: url("../images/story/story-blue-images.png") no-repeat 0 110px;
+}
+
+.story-blue > div
+{
+    position: absolute;
+
+    text-align: center;
+}
+
+.story-blue__text-1
+{
+    top: 85px;
+    left: 360px;
+
+    width: 310px;
+}
+
+.story-blue__text-2
+{
+    top: 900px;
+    left: 830px;
+
+    width: 300px;
+}
+
+.story-blue__text-3
+{
+    top: 1715px;
+    left: 395px;
+
+    width: 240px;
+}
+
+.story-blue__text-4
+{
+    top: 2505px;
+    left: 860px;
+
+    width: 280px;
+}
+/* ..\..\desktop.blocks\story\story.css end */
+/* ..\..\desktop.blocks\story-person\story-person.css begin */
+.story-person
+{
+    position: fixed;
+    z-index: 8;
+    top: 200%;
+    left: 390px;
+
+    width: 220px;
+    height: 220px;
+    margin-top: -100px;
+
+    background: url("../images/story-person/story-persons.png");
+}
+
+.story-person_color_yellow
+{
+    background-position: 0 0;
+}
+
+.story-person_color_red
+{
+    background-position: 444px 0;
+}
+
+.story-person_color_blue
+{
+    background-position: 220px 0;
+}
+/* ..\..\desktop.blocks\story-person\story-person.css end */
+/* ..\..\desktop.blocks\footer\footer.css begin */
+.footer
+{
+    margin-top: 20px;
+    padding: 20px 100px;
+
+    border-top: solid 2px #000;
+    background: #fff;
+}
+
+.footer__text
+{
+    display: inline-block;
+
+    width: 500px;
+}
+
+.footer__logo
+{
+    display: inline-block;
+
+    width: 102px;
+    height: 102px;
+    margin: 40px 0 0 60px;
+
+    vertical-align: top;
+
+    background: url("../images/footer/footer-logo.png");
+}
+
+.footer__links
+{
+    margin-top: 80px;
+}
+
+.footer__link
+{
+    margin-right: 20px;
+
+    text-decoration: none;
+
+    color: #000;
+}
+
+.footer__link:hover
+{
+    color: #e22;
+}
+
+.footer__copy
+{
+    margin-left: 110px;
+}
+/* ..\..\desktop.blocks\footer\footer.css end */
+/* ..\..\desktop.blocks\sidebar\sidebar.css begin */
+.sidebar
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 970px;
+
+    min-width: 850px;
+    height: 100%;
+
+    border-left: solid 2px #000;
+    background: #fff;
+}
+
+.sidebar:before
+{
+    position: absolute;
+    left: -18px;
+
+    display: block;
+
+    width: 16px;
+    height: 100%;
+
+    content: '';
+
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.sidebar_fixed_no.sidebar_show_no
+{
+    cursor: pointer;
+}
+
+.sidebar_show_yes
+{
+    cursor: default;
+}
+
+.sidebar-toggle-button_show_no
+{
+    display: none;
+}
+
+.sidebar__intro,
+.sidebar__presentation,
+.sidebar__story > div
+{
+    padding: 20px 50px;
+
+    border-bottom: solid 2px;
+}
+
+.sidebar__testing
+{
+    padding: 20px 50px;
+}
+
+.sidebar__intro
+{
+    height: 460px;
+}
+
+.sidebar__presentation
+{
+    height: 875px;
+}
+
+.sidebar__presentation iframe
+{
+    border: 0;
+}
+
+.sidebar__block-1
+{
+    height: 740px;
+}
+
+.sidebar__block-2
+{
+    height: 750px;
+}
+
+.sidebar__block-3
+{
+    height: 760px;
+}
+
+.sidebar__block-4
+{
+    height: 770px;
+}
+/* ..\..\desktop.blocks\sidebar\sidebar.css end */
+/* ..\..\desktop.blocks\frame\frame.css begin */
+.frame
+{
+    padding: 10px;
+
+    border: solid 2px #000;
+    border-radius: 8px;
+    background: #ccc;
+}
+/* ..\..\desktop.blocks\frame\frame.css end */
+/* ..\..\desktop.blocks\sidebar-toggle-button\sidebar-toggle-button.css begin */
+.sidebar-toggle-button
+{
+    position: fixed;
+    z-index: 10;
+    top: 35px;
+    right: 35px;
+
+    width: 67px;
+    height: 67px;
+
+    cursor: pointer;
+
+    border: 0;
+    outline: 0;
+    background: url("../images/sidebar-toggle-button/sidebar-toggle-button.png");
+}
+
+.sidebar-toggle-button_state_help
+{
+    background-position: 0 0;
+}
+
+.sidebar-toggle-button_state_help:hover
+{
+    background-position: 0 -80px;
+}
+
+.sidebar-toggle-button_state_close
+{
+    background-position: 67px 0;
+}
+
+.sidebar-toggle-button_state_close:hover
+{
+    background-position: 67px -80px;
+}
+/* ..\..\desktop.blocks\sidebar-toggle-button\sidebar-toggle-button.css end */
+/* ..\..\desktop.blocks\main-video\main-video.css begin */
+.main-video
+{
+    position: fixed;
+    z-index: 15;
+    top: 15%;
+    left: 50%;
+
+    display: none;
+
+    width: 650px;
+    height: 350px;
+    margin-left: -355px;
+    padding: 30px;
+
+    border: solid 1px #888;
+    background: #fff;
+    box-shadow: 0 5px 10px #666;
+}
+
+.main-video_show_yes
+{
+    display: block;
+}
+
+.main-video iframe
+{
+    border: 0;
+}
+/* ..\..\desktop.blocks\main-video\main-video.css end */
+/* ..\..\desktop.blocks\overlay\overlay.css begin */
+.overlay
+{
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: .3;
+    background: #000;
+}
+
+.overlay_show_no
+{
+    display: none;
+}
+/* ..\..\desktop.blocks\overlay\overlay.css end */
