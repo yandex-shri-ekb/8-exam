@@ -1,0 +1,22 @@
+.text
+{
+    position: relative;
+}
+
+.text_align_center
+{
+    text-align: center;
+}
+
+.text__paragraph
+{
+    margin: 0 0 24px;
+}
+
+.text__title
+{
+    font-size: 24px;
+    font-weight: 100;
+
+    margin: 0 0 10px;
+}

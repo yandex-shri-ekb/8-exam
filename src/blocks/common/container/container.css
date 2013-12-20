@@ -1,0 +1,52 @@
+.container
+{
+    width: 954px;
+
+    -webkit-transition: background-color 200ms linear;
+       -moz-transition: background-color 200ms linear;
+         -o-transition: background-color 200ms linear;
+            transition: background-color 200ms linear;
+
+    border: 2px solid #000;
+}
+
+.container_type_yellow
+{
+    background: #ffe05d;
+}
+
+.container_type_blue
+{
+    background: #72c4f6;
+}
+
+.container_type_red
+{
+    background: #ff8283;
+}
+
+.container_disactive
+{
+    cursor: pointer;
+}
+
+.container__info
+{
+    padding: 80px 0 0;
+
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    background: #fff;
+}
+
+.container__footer
+{
+    padding: 74px 0 0;
+
+    border-top: 2px solid #000;
+}
+
+.container__footer-links
+{
+    height: 100px;
+}

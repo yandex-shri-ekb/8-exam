@@ -1,0 +1,13 @@
+.personal__blue,
+.personal__red,
+.personal__yellow
+{
+    display: none;
+}
+
+.page_type_blue .personal__blue,
+.page_type_red .personal__red,
+.page_type_yellow .personal__yellow
+{
+    display: block;
+}

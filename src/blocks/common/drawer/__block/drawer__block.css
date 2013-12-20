@@ -1,0 +1,16 @@
+.drawer__block
+{
+    padding: 34px 0 0 34px;
+
+    border-top: 2px solid #000;
+}
+
+.drawer__block_common_atom
+{
+    min-height: 485px;
+}
+
+.drawer__block_common_presentation
+{
+    min-height: 896px;
+}

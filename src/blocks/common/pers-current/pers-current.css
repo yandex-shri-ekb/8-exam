@@ -1,0 +1,36 @@
+.pers-current
+{
+    display: none;
+
+    width: 217px;
+    height: 217px;
+    margin: -108px auto 0;
+
+    background: red;
+    background: url("../../../images/pers/pers-current.png");
+}
+
+.pers-current_active
+{
+    display: block;
+
+    -webkit-animation: fadeIn .3s;
+       -moz-animation: fadeIn .3s;
+         -o-animation: fadeIn .3s;
+            animation: fadeIn .3s;
+}
+
+.pers-current_type_yellow
+{
+    background-position: 0 0;
+}
+
+.pers-current_type_red
+{
+    background-position: 0 -227px;
+}
+
+.pers-current_type_blue
+{
+    background-position: 0 -454px;
+}

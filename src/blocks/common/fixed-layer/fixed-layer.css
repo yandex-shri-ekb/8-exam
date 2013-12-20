@@ -1,0 +1,19 @@
+.fixed-layer
+{
+    position: fixed;
+    top: 0;
+
+    width: 954px;
+}
+
+.fixed-layer_position_center
+{
+    top: 50%;
+}
+
+.fixed-layer__content
+{
+    position: relative;
+
+    height: 0;
+}

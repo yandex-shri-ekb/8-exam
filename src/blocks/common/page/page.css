@@ -1,0 +1,18 @@
+.page
+{
+    font: 100 16px/1.5 Arial, sans-serif;
+
+    min-width: 1024px;
+    margin: 0;
+
+    background: #fff;
+}
+
+.page__content
+{
+    position: relative;
+
+    overflow-x: hidden;
+
+    padding: 18px;
+}
