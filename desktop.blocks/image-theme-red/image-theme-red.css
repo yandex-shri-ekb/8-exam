@@ -1,0 +1,9 @@
+[class^=image-theme-blue__]
+{
+    position: absolute;
+}
+
+.image-theme-blue_layer_middle
+{
+    z-index: 10;
+}

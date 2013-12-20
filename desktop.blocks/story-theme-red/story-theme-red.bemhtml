@@ -1,0 +1,256 @@
+block 'story-theme-red' {
+
+    content: {
+        elem: 'steps',
+        content: [
+            {
+                block: 'step',
+                content: [
+                    {
+                        elem: 'text-holder',
+                        mix: {block: 'grid_cols_12'},
+                        content: [
+                            {
+                                block: 'path-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 2, span: 10}},
+                                content: {elem: 'step-1'}
+                            },
+                            {
+                                elem: 'text-holder-inner',
+                                mix: {block: 'grid_row'},
+                                content: [
+                                    {
+                                        elem: 'text',
+                                        mix: {block: 'grid__module', mods: {col: 2, span: 4}},
+                                        content: 'Максим хочет увидеть настоящий, нетуристический Таиланд. <br><br> Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё, что ему нужно, — билет на самолёт.'
+                                    },
+                                    {
+                                        block: 'image-theme-red',
+                                        mix: {block: 'grid__module', mods: {col: 7, span: 6}},
+                                        content: {elem: 'tour', mods: {'push_down': 'yes'}}
+                                    },
+                                    {
+                                        block: 'image-theme-red',
+                                        mix: {block: 'grid__module', mods: {col: 8, span: 6}},
+                                        content: {elem: 'passports', mods: {'push_down': 'yes'}}
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        elem: 'images',
+                        mix: {block: 'grid_row'},
+                        content: [
+                            {
+                                block: 'path-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 2, span: 9}},
+                                content: {elem: 'step-2'}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 2, span: 5}},
+                                content: {elem: 'portlet', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 3, span: 4}},
+                                content: {elem: 'book', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 1, span: 4}},
+                                content: {elem: 'bear', mods: {'push_down': 'yes', 'push_left': 'yes'}}
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                block: 'step',
+                content: [
+                    {
+                        elem: 'text-holder',
+                        mix: {block: 'grid_cols_12'},
+                        content: [
+                            {
+                                elem: 'text-holder-inner',
+                                mix: {block: 'grid_row'},
+                                content: [
+                                    {
+                                        elem: 'text',
+                                        mix: {block: 'grid__module', mods: {col: 8, span: 4}},
+                                        content: 'Для путешествия по жаркой стране Максиму нужна удобная одежда и крепкая обувь. <br><br> Он не желает тратить время на походы по магазинам, ведь интересные ему вещи можно с лёгкостью найти в интернете.'
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        elem: 'images',
+                        mix: {block: 'grid_row'},
+                        content: [
+                            {
+                                block: 'path-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 2, span: 10}},
+                                content: {elem: 'step-3'}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 2, span: 2}},
+                                content: {elem: 'iphone', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 5, span: 3}},
+                                content: {elem: 'bill', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 7, span: 5}},
+                                content: {elem: 'lenses', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 8, span: 5}},
+                                content: {elem: 'glasses', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 1, span: 2}},
+                                content: {elem: 'tamagotchi', mods: {'push_down': 'yes', 'push_left': 'yes'}}
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                block: 'step',
+                content: [
+                    {
+                        elem: 'text-holder',
+                        mix: {block: 'grid_cols_12'},
+                        content: [
+                            {
+                                elem: 'text-holder-inner',
+                                mix: {block: 'grid_row'},
+                                content: [
+                                    {
+                                        elem: 'text',
+                                        mix: {block: 'grid__module', mods: {col: 2, span: 4}},
+                                        content: 'Рюкзак с вещами и ноутбуком — вот и весь багаж Максима. <br><br> На метро он доберётся до вокзала, а оттуда поедет на аэроэкспрессе.'
+                                    },
+                                    {
+                                        block: 'image-theme-red',
+                                        mix: {block: 'grid__module', mods: {col: 8, span: 6}},
+                                        content: {elem: 'imac-monitor', mods: {'push_down': 'yes'}}
+                                    },
+                                    {
+                                        block: 'image-theme-red',
+                                        mix: {block: 'grid__module', mods: {col: 10, span: 6}},
+                                        content: {elem: 'imac-keyboard', mods: {'push_down': 'yes'}}
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        elem: 'images',
+                        mix: {block: 'grid_row'},
+                        content: [
+                            {
+                                block: 'path-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 2, span: 9}},
+                                content: {elem: 'step-4'}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 2, span: 4}},
+                                content: {elem: 'license', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 4, span: 3}},
+                                content: {elem: 'keys', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 1, span: 6}},
+                                content: {elem: 'bags', mods: {'push_down': 'yes', 'push_left': 'yes'}}
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                block: 'step',
+                content: [
+                    {
+                        elem: 'text-holder',
+                        mix: {block: 'grid_cols_12'},
+                        content: [
+                            {
+                                elem: 'text-holder-inner',
+                                mix: {block: 'grid_row'},
+                                content: [
+                                    {
+                                        elem: 'text',
+                                        mix: {block: 'grid__module', mods: {col: 8, span: 4}},
+                                        content: 'Максим не сидит на месте — в поисках интересных мест он колесит по всей стране. <br><br> Когда ночь застаёт его в пути, Максим просто находит ближайший хостел. Утром он решает — остаться и осмотреть местные достопримечательности или вернуться на дорогу.'
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        elem: 'images',
+                        mix: {block: 'grid_row'},
+                        content: [
+                            {
+                                block: 'path-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 4, span: 8}},
+                                content: {elem: 'step-5'}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 1, span: 4}},
+                                content: {elem: 'food-fish', mods: {'push_down': 'yes', 'push_left': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 3, span: 4}},
+                                content: {elem: 'food-eggs', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 11, span: 3}},
+                                content: {elem: 'food-grape', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 8, span: 3}},
+                                content: {elem: 'drink-wine', mods: {'push_down': 'yes', 'push_right': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 2, span: 4}},
+                                content: {elem: 'drink-milk', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 7, span: 4}},
+                                content: {elem: 'drink-coup-full', mods: {'push_down': 'yes'}}
+                            },
+                            {
+                                block: 'image-theme-red',
+                                mix: {block: 'grid__module', mods: {col: 11, span: 4}},
+                                content: {elem: 'drink-coup-middle', mods: {'push_down': 'yes'}}
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+
+}

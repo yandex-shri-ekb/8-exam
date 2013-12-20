@@ -1,0 +1,11 @@
+.image-theme-red__lenses
+{
+    background: url(image-theme-red__lenses.png) no-repeat;
+    width: 410px;
+    height: 283px;
+}
+
+.image-theme-red__lenses_push_down_yes
+{
+    margin-top: 80px;
+}
