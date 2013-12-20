@@ -1,22 +1,36 @@
 body,
-p
+p,
+ul
 {
     margin: 0;
     padding: 0;
     font: 16px/24px Arial, sans-serif;
 }
 
+ul{
+    list-style: none;
+}
+
 .b-wrapper
+{
+    position: relative;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.b-left-side
 {
     width: 954px;
     float: left;
-    padding: 18px;
+    padding: 18px 0 18px 18px;
     background: #fff;
+    position: relative;
 }
 
 .b-container
 {
     border: 2px solid #000;
+    border-right: 0;
     position: relative;
 }
 
@@ -74,6 +88,10 @@ p
     margin-bottom: 10px;
 }
 
+.b-paragraph_mb30{
+    margin-bottom: 30px;
+}
+
 .b-text_bold{
     font-weight: 600;
 }
@@ -82,3 +100,40 @@ p
 {
     text-align: center;
 }
+
+.b-icontop-textbottom
+{
+    float: left;
+    margin: 80px  0 0;
+}
+
+
+.border-top
+{
+    border-top: 2px solid #000;
+}
+
+.b-title-section
+{
+    display: block;
+    font-size: 24px;
+    margin: 0 0 30px;
+    font-weight: 400;
+}
+
+.b-video-wpapper
+{
+    display: inline-block;
+    padding: 8px 8px 2px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: #e7e7e8;
+    box-shadow: 10px 10px #e5e5e5;
+}
+
+.b-img-margin
+{
+    margin: 45px 0 15px;
+}
+
+

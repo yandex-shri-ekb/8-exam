@@ -13,6 +13,8 @@
 .b-first-block__description
 {
     border-bottom: 2px solid #000;
+    border-top: 2px solid #000;
+    background: #fff;
 }
 
 .b-logo
@@ -21,7 +23,7 @@
     background: url("../img/logo.png") no-repeat;
     width: 138px;
     height: 92px;
-    margin: 0 0 275px;
+    margin: -2px auto 275px;
 }
 
 .b-title-page
@@ -36,20 +38,34 @@
     margin: 80px 96px;
 }
 
-.b-play-video
-{
-    float: left;
-    margin: 80px  0 0;
-}
 
-.b-play-video__img
+
+.b-icontop-textbottom__play-video
 {
     display: block;
-    background-image: url("../img/play-video.png");
-    width: 138px;
-    height: 84px;
+    background: url("../img/play-video.png") center no-repeat;
+    width: 134px;
+    height: 80px;
     margin: 0 0 10px;
+    border-radius: 5px;
+    border: 2px solid #000;
 }
+
+.b-container_blue .b-icontop-textbottom__play-video
+{
+    background-color: #72c4f6;
+}
+
+.b-container_red .b-icontop-textbottom__play-video
+{
+    background-color: #ff8282;
+}
+
+.b-container_yellow .b-icontop-textbottom__play-video
+{
+    background-color: #ffe05d;
+}
+
 
 .b-first-block__person
 {
@@ -63,6 +79,11 @@
     margin: 80px auto 0;
 }
 
+.b-person_mb80
+{
+    margin-bottom: 80px;
+}
+
 .b-person__item
 {
     width: 140px;
@@ -72,20 +93,31 @@
     position: relative;
 }
 
-.b-person-avatar
-{
-    background-image: url("../img/avatars-small.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    height: 138px;
-    cursor: pointer;
-    margin: 0 0 10px;
-
-}
-
 .b-person__item_mr0
 {
     margin-right: 0;
+}
+
+.b-person-avatar_alex_small,
+.b-person-avatar_georgiy_small,
+.b-person-avatar_max_small
+{
+    background-image: url("../img/avatars-small.png");
+    background-repeat: no-repeat;
+    height: 138px;
+    cursor: pointer;
+    margin: 0 0 10px;
+}
+
+.b-person-avatar_max_small.active,
+.b-person-avatar_alex_small.active,
+.b-person-avatar_georgiy_small.active
+{
+    background: url("../img/avatars-big.png") no-repeat 0 0;
+    width: 174px;
+    height: 175px;
+    margin-top: -25px;
+    margin-left: -15px;
 }
 
 .b-person-avatar_alex_small
@@ -98,26 +130,22 @@
     background-position: 0 -298px;
 }
 
-.b-person-avatar_big
-{
-    background: url("../img/avatars-big.png") no-repeat 0 0;
-    width: 174px;
-    height: 175px;
-    margin-top: -25px;
-    margin-left: -15px;
-}
-
-.b-person-avatar_max_big
+.b-person-avatar_max_small
 {
     background-position: 0 0;
 }
 
-.b-person-avatar_alex_big
+.b-person-avatar_alex_small.active
+{
+    background-position: 0 0;
+}
+
+.b-person-avatar_alex_small.active
 {
    background-position: 0 -184px;
 }
 
-.b-person-avatar_georgiy_big
+.b-person-avatar_georgiy_small.active
 {
     background-position: 0 -368px;
 }
@@ -133,6 +161,7 @@
     position: absolute;
     width: 294px;
     text-align: center;
+    display: none;
 }
 
 .b-person-description__item_middle
