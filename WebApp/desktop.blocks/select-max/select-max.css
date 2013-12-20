@@ -1,0 +1,11 @@
+.select-max
+{
+    display: inline-block;
+    overflow: hidden;
+    background: url("/image/sprite2.png") no-repeat -1467px -2px;
+    width: 138px;
+    height: 138px;
+    margin-left: 18px;
+    margin-top: 80px;
+    cursor: pointer;
+}

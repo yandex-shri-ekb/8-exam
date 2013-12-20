@@ -1,8 +1,8 @@
 /*global modules:false */
 
-modules.define('wrapper', function(provide) {
+modules.define('wrapper', function (provide) {
 
-provide();
+    provide();
 
 });
 

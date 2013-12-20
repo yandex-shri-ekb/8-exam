@@ -1,132 +1,221 @@
 exports.blocks = [
-  {
-    "name": "page",
-    "elems": [
-      {
-        "name": "css"
-      },
-      {
-        "name": "meta"
-      },
-      {
-        "name": "js"
-      }
-    ]
-  },
-  {
-    "name": "wrapper"
-  },
-  {
-    "name": "history"
-  },
-  {
-    "name": "head-history",
-    "elems": [
-      {
-        "name": "background"
-      },
-      {
-        "name": "title"
-      }
-    ]
-  },
-  {
-    "name": "video-history"
-  },
-  {
-    "name": "grid-wrap"
-  },
-  {
-    "name": "introductory-text",
-    "elems": [
-      {
+    {
+        "name": "page",
+        "elems": [
+            {
+                "name": "css"
+            },
+            {
+                "name": "meta"
+            },
+            {
+                "name": "js"
+            }
+        ]
+    },
+    {
+        "name": "wrapper"
+    },
+    {
+        "name": "services-toggle"
+    },
+    {
+        "name": "history"
+    },
+    {
+        "name": "head-history",
+        "elems": [
+            {
+                "name": "background"
+            },
+            {
+                "name": "title"
+            }
+        ]
+    },
+    {
+        "name": "video-history"
+    },
+    {
+        "name": "grid-wrap"
+    },
+    {
+        "name": "introductory-text"
+    },
+    {
+        "name": "grid",
+        "mods": [
+            {
+                "name": "coll",
+                "vals": [
+                    "2",
+                    "9",
+                    "3",
+                    "6",
+                    "5",
+                    "8"
+                ]
+            },
+            {
+                "name": "size",
+                "vals": [
+                    "6",
+                    "3",
+                    "2",
+                    "4"
+                ]
+            }
+        ]
+    },
+    {
         "name": "paragraf"
-      }
-    ]
-  },
-  {
-    "name": "grid",
-    "mods": [
-      {
-        "name": "coll",
-        "vals": [
-          "2", "9", "3", "6", "5", "8"
+    },
+    {
+        "name": "video-button",
+        "elems": [
+            {
+                "name": "button"
+            },
+            {
+                "name": "max"
+            },
+            {
+                "name": "alex"
+            },
+            {
+                "name": "grig"
+            },
+            {
+                "name": "title"
+            }
         ]
-      },
-      {
-        "name": "size",
-        "vals": [
-          "6", "3", "2", "4"
+    },
+    {
+        "name": "select-person",
+        "mods": [
+            {
+                "name": "top",
+                "vals": [
+                    "up"
+                ]
+            }
         ]
-      }
-    ]
-  },
-  {
-    "name": "video-button",
-    "elems": [
-      {
-        "name": "button"
-      },
-      {
-        "name": "max"
-      },
-      {
-        "name": "alex"
-      },
-      {
-        "name": "grig"
-      },
-      {
+    },
+    {
+        "name": "select-max"
+    },
+    {
+        "name": "person-name"
+    },
+    {
+        "name": "select-alex"
+    },
+    {
+        "name": "select-grig"
+    },
+    {
+        "name": "person-description"
+    },
+    {
+        "name": "max-description"
+    },
+    {
+        "name": "indent"
+    },
+    {
+        "name": "alex-description"
+    },
+    {
+        "name": "grig-description"
+    },
+    {
+        "name": "person-history"
+    },
+    {
+        "name": "history-max"
+    },
+    {
+        "name": "history-text"
+    },
+    {
+        "name": "step1"
+    },
+    {
+        "name": "step2"
+    },
+    {
+        "name": "step3"
+    },
+    {
+        "name": "step4"
+    },
+    {
+        "name": "history-alex"
+    },
+    {
+        "name": "history-grig"
+    },
+    {
+        "name": "atom-footer"
+    },
+    {
+        "name": "atom-logo"
+    },
+    {
+        "name": "used-services"
+    },
+    {
+        "name": "application-scenarios"
+    },
+    {
+        "name": "used-services-block"
+    },
+    {
+        "name": "used-services-content-wrapper"
+    },
+    {
         "name": "title"
-      }
-    ]
-  },
-  {
-    "name": "select-person"
-  },
-  {
-    "name": "select-max"
-  },
-  {
-    "name": "person-name"
-  },
-  {
-    "name": "select-alex"
-  },
-  {
-    "name": "select-grig"
-  },
-  {
-    "name": "person-description"
-  },
-  {
-    "name": "max-description"
-  },
-  {
-    "name": "alex-description"
-  },
-  {
-    "name": "grig-description"
-  },
-  {
-    "name": "person-history"
-  },
-  {
-    "name": "history-max"
-  },
-  {
-    "name": "history-alex"
-  },
-  {
-    "name": "history-grig"
-  },
-  {
-    "name": "used-services"
-  },
-  {
-    "name": "head-services"
-  },
-  {
-    "name": "hack"
-  }
+    },
+    {
+        "name": "atom-logo2"
+    },
+    {
+        "name": "yandex-logo"
+    },
+    {
+        "name": "presentation"
+    },
+    {
+        "name": "YaC-video"
+    },
+    {
+        "name": "max-used-services"
+    },
+    {
+        "name": "us-step1"
+    },
+    {
+        "name": "img"
+    },
+    {
+        "name": "us-step2"
+    },
+    {
+        "name": "us-step3"
+    },
+    {
+        "name": "us-step4"
+    },
+    {
+        "name": "alex-used-services"
+    },
+    {
+        "name": "grig-used-services"
+    },
+    {
+        "name": "closed-testing"
+    },
+    {
+        "name": "hack"
+    }
 ];

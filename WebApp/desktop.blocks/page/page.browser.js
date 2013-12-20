@@ -1,8 +1,8 @@
 /*global modules:false */
 
-modules.define('page', function(provide) {
+modules.define('page', function (provide) {
 
-provide();
+    provide();
 
 });
 

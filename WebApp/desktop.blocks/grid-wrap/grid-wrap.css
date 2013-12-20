@@ -1,0 +1,9 @@
+.grid-wrap
+{
+    padding-right: 174px;
+    margin-left: -2px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}

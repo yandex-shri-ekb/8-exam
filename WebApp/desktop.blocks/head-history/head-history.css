@@ -1,5 +1,6 @@
-.head-history {
-  height: 589px;
-  border-bottom: 2px solid #000;
-  position: relative;
+.head-history
+{
+    height: 589px;
+    border-bottom: 2px solid #000;
+    position: relative;
 }

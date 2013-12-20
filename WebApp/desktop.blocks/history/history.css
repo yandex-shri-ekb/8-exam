@@ -1,11 +1,11 @@
 
 .history
 {
-  margin: 18px 0 18px 18px;
-  border: 2px solid #000;
-  border-right: 0;
-  width: 952px;
-  background: #ffe05d;
-
-  font: 16px/24px Arial, sans-serif;
+    margin: 18px 0 18px 18px;
+    border: 2px solid #000;
+    border-right: 0;
+    width: 952px;
+    background: #ffe05d;
+    position: relative;
+    float: left;
 }

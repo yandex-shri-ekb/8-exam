@@ -1,0 +1,7 @@
+.video-button__alex
+{
+    background: url("/image/sprite1.png") no-repeat -298px -84px;
+    width: 138px;
+    height: 80px;
+    display: none;
+}

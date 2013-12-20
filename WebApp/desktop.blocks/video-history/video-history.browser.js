@@ -1,8 +1,8 @@
 /*global modules:false */
 
-modules.define('video-history', function(provide) {
+modules.define('video-history', function (provide) {
 
-provide();
+    provide();
 
 });
 

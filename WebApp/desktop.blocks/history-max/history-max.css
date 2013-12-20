@@ -1,0 +1,18 @@
+.history-max
+{
+    height: 3310px;
+    background: url("/image/max-s2.png");
+    position: relative;
+    margin-left: -20px;
+}
+
+.history-max:before
+{
+    height: 3310px;
+    background: url("/image/max-s1.png");
+    width: 100%;
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+}

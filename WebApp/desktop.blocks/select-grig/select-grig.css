@@ -1,0 +1,11 @@
+.select-grig
+{
+    display: inline-block;
+    overflow: hidden;
+    background: url("/image/sprite2.png") no-repeat -1187px -2px;
+    width: 138px;
+    height: 139px;
+    margin-left: 18px;
+    margin-top: 79px;
+    cursor: pointer;
+}

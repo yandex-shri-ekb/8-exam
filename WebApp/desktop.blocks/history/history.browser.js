@@ -1,8 +1,8 @@
 /*global modules:false */
 
-modules.define('history', function(provide) {
+modules.define('history', function (provide) {
 
-provide();
+    provide();
 
 });
 

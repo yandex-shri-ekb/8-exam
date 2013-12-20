@@ -1,5 +1,6 @@
-.video-button__button {
-  display: inline-block;
-  overflow: hidden;
+.video-button__button
+{
+    display: inline-block;
+    overflow: hidden;
 
 }

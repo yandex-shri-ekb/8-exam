@@ -1,8 +1,8 @@
 /*global modules:false */
 
-modules.define('video-button', function(provide) {
+modules.define('video-button', function (provide) {
 
-provide();
+    provide();
 
 });
 

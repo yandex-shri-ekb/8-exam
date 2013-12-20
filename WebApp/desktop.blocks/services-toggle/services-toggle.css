@@ -1,0 +1,17 @@
+.services-toggle
+{
+    display: inline-block;
+    overflow: hidden;
+    background: url('/image/sprite2.png') no-repeat -1858px -142px;
+    width: 67px;
+    height: 67px;
+    position: fixed;
+    right: 36px;
+    top: 36px;
+    z-index: 1;
+}
+
+.services-toggle:hover
+{
+    background-position: -1789px -142px
+}
