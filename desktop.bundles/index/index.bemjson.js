@@ -739,7 +739,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '/i/yellow/right.1.jpg'
+                                            url: '../../i/yellow/right.1.jpg'
                                         }
                                     ]
                                 }
@@ -761,7 +761,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '/i/yellow/right.2.jpg'
+                                            url: '../../i/yellow/right.2.jpg'
                                         }
                                     ]
                                 }
@@ -783,7 +783,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '/i/yellow/right.3.jpg'
+                                            url: '../../i/yellow/right.3.jpg'
                                         }
                                     ]
                                 }
@@ -805,7 +805,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '/i/yellow/right.4.jpg'
+                                            url: '../../i/yellow/right.4.jpg'
                                         }
                                     ]
                                 }
@@ -837,7 +837,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '/i/red/right.1.jpg'
+                                            url: '../../i/red/right.1.jpg'
                                         }
                                     ]
                                 }
@@ -859,7 +859,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '/i/red/right.2.jpg'
+                                            url: '../../i/red/right.2.jpg'
                                         }
                                     ]
                                 }
@@ -881,7 +881,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '/i/red/right.3.jpg'
+                                            url: '../../i/red/right.3.jpg'
                                         }
                                     ]
                                 }
@@ -903,7 +903,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '/i/red/right.4.jpg'
+                                            url: '../../i/red/right.4.jpg'
                                         }
                                     ]
                                 }
@@ -931,7 +931,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '/i/blue/right.1.jpg'
+                                            url: '../../i/blue/right.1.jpg'
                                         }
                                     ]
                                 }
@@ -953,7 +953,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '/i/blue/right.2.jpg'
+                                            url: '../../i/blue/right.2.jpg'
                                         }
                                     ]
                                 }
@@ -975,7 +975,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '/i/blue/right.3.jpg'
+                                            url: '../../i/blue/right.3.jpg'
                                         }
                                     ]
                                 }
@@ -997,7 +997,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '/i/blue/right.4.jpg'
+                                            url: '../../i/blue/right.4.jpg'
                                         }
                                     ]
                                 }
