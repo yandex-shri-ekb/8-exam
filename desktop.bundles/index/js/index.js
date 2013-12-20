@@ -22,7 +22,8 @@ var App = (function() {
     App.prototype._assignEvents = function() {
         $(document).on('click', '.atom-ledge', $.proxy(this._onClickLedge, this));
         $(document).on('click', '.atom', $.proxy(this._onClickOutsideLedge, this));
-        $(document).on('click', '.user__icon', $.proxy(this._onClickUserIcon, this));
+        $(document).on('click', '.user-icon', $.proxy(this._onClickUserIcon, this)); // TODO merge with next
+        $(document).on('click', '.step-icon', $.proxy(this._onClickUserIcon, this));
         $(document).on('mouseover', '.user', $.proxy(this._onHoverUser, this));
         $(window).on('scroll', $.proxy(this._onScrollWindow, this));
     };
@@ -84,6 +85,7 @@ var App = (function() {
         this._activateThemeBackground(theme);
         this._activateThemeStory(theme);
         this._activateThemeIcon(theme);
+        this._activateUserIcon(theme);
         this._calculateThemeSteps();
     };
 
@@ -102,9 +104,18 @@ var App = (function() {
     };
 
     App.prototype._activateThemeIcon = function(theme) {
-        var $icon = this.view.$stories.find('.step-icon_theme_' + theme);
-        $icon.removeClass('step-icon_active_no');
-        $icon.addClass('step-icon_active_yes');
+        var $icons = this.view.$stories.find('.step-icon');
+        $icons.addClass('step-icon_active_no');
+
+        $icons.filter('.step-icon_theme_' + theme)
+            .removeClass('step-icon_active_no')
+            .addClass('step-icon_active_yes');
+    };
+
+    App.prototype._activateUserIcon = function(theme) {
+        var $user = this.view.$stories.find('.user-icon');
+        var className = $user.attr('class').replace(/theme_\w+/, 'theme_' + theme);
+        $user.attr('class', className);
     };
 
     App.prototype._onHoverUser = function(e) {
