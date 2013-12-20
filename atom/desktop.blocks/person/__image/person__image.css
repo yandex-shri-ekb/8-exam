@@ -1,15 +1,11 @@
 .person__image
 {
-    width: 217px;
-    height: 217px;
+    width: 220px;
+    height: 220px;
     margin: -100px auto 0;
-
-    background-repeat: no-repeat;
-    background-position: 50%;
 
     -webkit-transition: opacity .3s;
        -moz-transition: opacity .3s;
-         -o-transition: opacity .3s;
             transition: opacity .3s;
 }
 
@@ -19,21 +15,20 @@
 
     -webkit-transition: opacity .3s;
        -moz-transition: opacity .3s;
-         -o-transition: opacity .3s;
             transition: opacity .3s;
 }
 
 .person_color_yellow .person__image
 {
-    background-image: url(yellow.png);
+    background: 0 0 url(person__image.png);
 }
 
 .person_color_red .person__image
 {
-    background-image: url(red.png);
+    background: -220px 0 url(person__image.png);
 }
 
 .person_color_blue .person__image
 {
-    background-image: url(blue.png);
+    background: -440px 0 url(person__image.png);
 }
