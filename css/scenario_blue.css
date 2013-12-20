@@ -1,0 +1,256 @@
+
+.b-page__separator-stable_blue
+{
+    position: absolute;
+    left: 1px;
+    width: 100%;
+    background: url(../img/way_blue.png);
+}
+
+.b-page__separator-line_blue_1
+{
+    margin: 0 0 48px 146px;
+    height: 434px;
+}
+
+.b-page__separator-stable_blue_1
+{
+    bottom: -63px;
+    height: 114px;
+    background-position: 0 0;
+}
+
+.b-page__separator-line_blue_2
+{
+    margin: 0 0 247px 624px;
+    height: 255px;
+}
+
+.b-page__separator-stable_blue_2
+{
+    bottom: -61px;
+    height: 312px;
+    background-position: 0 -114px;
+}
+
+.b-page__separator-line_blue_3
+{
+    margin: 0 0 102px 136px;
+    height: 398px;
+}
+
+.b-page__separator-stable_blue_3
+{
+    bottom: -60px;
+    height: 166px;
+    background-position: 0 -426px;
+}
+
+.b-page__separator-line_blue_4
+{
+    margin: 0 0 58px 624px;
+    height: 444px;
+}
+
+.b-page__separator-stable_blue_4
+{
+    bottom: -44px;
+    height: 105px;
+    background-position: 0 -592px;
+}
+
+.b-scenario__pic_blue 
+{
+    position: absolute;
+    z-index: 1;
+    background: no-repeat url(../img/scenario_blue.png);
+}
+
+.b-scenario__pic_blue_photo
+{
+    top: 560px;
+    left: 798px;
+    width: 227px;
+    height: 292px;
+    background-position: -436px 0;
+}
+
+.b-scenario__pic_blue_watch
+{
+    top: 605px;
+    left: 486px;
+    width: 130px;
+    height: 247px;
+    background-position: -306px 0;
+}
+
+.b-scenario__pic_blue_ticket
+{
+    top: 446px;
+    left: 408px;
+    width: 454px;
+    height: 179px;
+    background-position: -306px -292px;
+}
+
+.b-scenario__pic_blue_pen
+{
+    bottom: 220px;
+    left: 321px;
+    width: 50px;
+    height: 235px;
+    background-position: -696px -19px;
+}
+
+.b-scenario__pic_blue_notebook
+{
+    top: 88px;
+    left: 486px;
+    width: 306px;
+    height: 434px;
+    background-position: 0 0;
+}
+
+.b-scenario__pic_blue_phone
+{
+    bottom: 77px;
+    left: -20px;
+    width: 306px;
+    height: 384px;
+    background-position: 0 -434px;
+}
+
+.b-scenario__pic_blue_paper
+{
+    top: 100px;
+    left: -20px;
+    width: 123px;
+    height: 624px;
+    background-position: -760px -530px;
+}
+
+.b-scenario__pic_blue_notebook2
+{
+    top: 243px;
+    left: -20px;
+    width: 186px;
+    height: 318px;
+    background-position: -574px -474px;
+}
+
+.b-scenario__pic_blue_mask
+{
+    bottom: 240px;
+    left: 564px;
+    width: 396px;
+    height: 226px;
+    background-position: 0 -1277px;
+}
+
+.b-scenario__pic_blue_palka
+{
+    bottom: 77px;
+    left: 720px;
+    width: 227px;
+    height: 623px;
+    background-position: -533px -818px;
+}
+
+.b-scenario__pic_blue_ipad
+{
+    top: 100px;
+    left: 174px;
+    width: 305px;
+    height: 458px;
+    background-position: 0 -818px;
+}
+
+.b-scenario__pic_blue_cup
+{
+    top: 469px;
+    left: 330px;
+    width: 245px;
+    height: 305px;
+    background-position: -306px -471px;
+}
+
+.b-scenario__pic_blue_tie
+{
+    top: 100px;
+    left: 486px;
+    width: 381px;
+    height: 529px;
+    background-position: -760px 0;
+}
+
+.b-scenario__pic_blue_krug
+{
+    top: -80px;
+    left: 798px;
+    width: 443px;
+    height: 555px;
+    background-position: -1239px 0;
+}
+
+.b-scenario__pic_blue_money
+{
+    top: 486px;
+    left: 798px;
+    width: 150px;
+    height: 245px;
+    background-position: -320px -818px;
+}
+
+.b-scenario__pic_blue_cards 
+{
+    top: 340px;
+    left: 408px;
+    width: 300px;
+    height: 233px;
+    background-position: -902px -946px;
+}
+
+.b-scenario__pic_blue_iphone 
+{
+    top: 332px;
+    left: 174px;
+    width: 147px;
+    height: 283px;
+    background-position: -1378px -638px;
+}
+
+.b-scenario__pic_blue_bag 
+{
+    top: 677px;
+    left: -60px;
+    width: 475px;
+    height: 409px;
+    background-position: -902px -529px;
+}
+
+.b-scenario__pic_blue_newspaper
+{
+    top: 319px;
+    left: 60px;
+    width: 319px;
+    height: 422px;
+    background-position: -1042px -1195px;
+}
+
+.b-scenario__pic_blue_magazine
+{
+    bottom: 80px;
+    left: 486px;
+    width: 306px;
+    height: 412px;
+    background-position: -1378px -944px;
+}
+
+.b-scenario__pic_blue_book
+{
+    top: 430px;
+    left: 858px;
+    width: 237px;
+    height: 305px;
+    background-position: -784px -1195px;
+}
