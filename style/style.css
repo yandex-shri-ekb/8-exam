@@ -1,18 +1,24 @@
-body{
+body
+{
     font: 16px/24px Arial, Helvatica, sans-serif;
     margin: 0;
     min-width: 990px;
     position: relative;
 }
-p,
-ul{
+
+p, ul
+{
     margin: 0 0 30px;
 }
-ul{
+
+ul
+{
     list-style: none;
     padding: 0;
 }
-li:before{
+
+li:before
+{
     content: '';
     display: inline-block;
     background: #000;
@@ -20,6 +26,27 @@ li:before{
     width: 18px;
     vertical-align: middle;
     margin-right: 5px;
+}
+
+.layout
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.h_size_2
+{
+    font-size: 28px;
+    line-height: 30px;
+    margin: 0 0 30px;
+}
+
+.h_size_3
+{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 400;
+    margin: 0 0 20px;
 }
 /* sidebar */
 .sidebar
@@ -153,6 +180,7 @@ li:before{
     border-bottom: 2px solid #000;
     position: relative;
 }
+
 .story__item-1
 {
     height: 172px;
@@ -161,23 +189,27 @@ li:before{
     line-height: 48px;
     text-align: center;
 }
+
 .story__item-2
 {
     height: 302px;
     padding-top: 80px;
     background: #fff;
 }
+
 .story__item-3
 {
     height: 342px;
     padding-top: 80px;
     border: 0;
 }
+
 .story__item-last-1
 {
     height: 300px;
     padding-top: 50px;
 }
+
 .story__item-last-2
 {
     height: 260px;
@@ -185,12 +217,14 @@ li:before{
     padding-top: 50px;
     background: #fff;
 }
+
 .story__item-footer
 {
     border: 0;
     height: 100px;
     background: #fff
 }
+
 .story__logo
 {
     background: no-repeat url('img/bg-logo.png');
@@ -202,42 +236,51 @@ li:before{
     top: -2px;
     left: 406px;
 }
+
 .story__bg
 {
     position: absolute;
     left: -20px;
     top: -20px;
 }
+
 /* Пути историй */
 .story-path__item
 {
     display: none;
 }
+
 .story-path__item_state_active
 {
     display: block;
 }
+
 .story-path__line
 {
     margin-left: 18px;
 }
+
 .story-path__line_yellow-2
 {
     margin: 0;
 }
+
 .story-path__line_red-2
 {
     margin-left: 73px;
 }
+
 .story-path__line_red-5
 {
     margin-left: -7px;
 }
+
 .story-path__text
 {
     margin: 30px 0 0;
     text-align: center;
 }
+
 .story-path__image{
     position: absolute;
 }
@@ -246,22 +289,27 @@ li:before{
 {
     margin: 5px 0 0 0;
 }
+
 .story-path__image_yellow-2
 {
     margin: 38px 0 0 -22px;
 }
+
 .story-path__image_yellow-3
 {
     margin: -200px 0 0 -22px;
 }
+
 .story-path__image_yellow-4
 {
     margin: -355px 0 0 -22px;
 }
+
 .story-path__image_yellow-5
 {
     margin-top: -225px;
 }
+
 .story-path__image_yellow-6
 {
     margin-top: 270px;
@@ -271,18 +319,22 @@ li:before{
 {
     margin: 125px 0 0 0;
 }
+
 .story-path__image_red-2
 {
     margin: 38px 0 0 -22px;
 }
+
 .story-path__image_red-3
 {
     margin: 38px 0 0 -22px;
 }
+
 .story-path__image_red-4
 {
     margin: -180px 0 0 -22px;
 }
+
 .story-path__image_red-5
 {
     margin: 38px 0 0 -22px;
@@ -292,19 +344,24 @@ li:before{
 {
     margin: -200px 0 0 -22px;
 }
+
 .story-path__image_blue-2
 {
     margin: -200px 0 0 -22px;
 }
+
 .story-path__image_blue-3
 {
     margin: -380px 0 0 -22px;
 }
+
 .story-path__image_blue-4
 {
     margin: 25px 0 0 0;
 }
+
 /* видео кнопка */
+
 .video-btn
 {
     display: block;
@@ -313,14 +370,17 @@ li:before{
     margin-bottom: 18px;
     background: no-repeat 0 80px url(img/icons.png);
 }
+
 .video-btn_type_yellow
 {
     background-position: -896px -563px;
 }
+
 .video-btn_type_red
 {
     background-position: -569px -563px;
 }
+
 .video-btn_type_blue
 {
     background-position: -735px -563px;
@@ -392,64 +452,52 @@ li:before{
     text-align: center;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-.layout{
-    position: relative;
-    overflow: hidden;
+/* Активная персона (путь) по центру*/
+.person-active
+{
+    position: fixed;
+    width: 175px;
+    height: 175px;
+    top: -200px;
+    margin-top: -80px;
+    left: 410px;
+    background: no-repeat -140px 0 url(img/icons.png);
+    z-index: 100;
+    -webkit-transition: top 200ms;
+            transition: top 200ms;
 }
 
-
-.head-2{
-    font-size: 28px;
-    line-height: 30px;
-    margin: 0 0 30px;
-}
-.head-3{
-    font-size: 24px;
-    line-height: 30px;
-    font-weight: 400;
-    margin: 0 0 20px;
+.person-active_state_show{
+    top: 50%;
 }
 
+.person-active_type_yellow
+{
+    background-position: -140px 0;
+}
 
+.person-active_type_red
+{
+    background-position: -140px -183px;
+}
 
+.person-active_type_blue
+{
+    background-position: -140px -368px;
+}
 
-/*Первое состояние (персонаж)*/
-/*.atom_state_1{*/
+/*@todo Меню в пути */
 
-/*}*/
-
-/*.state{*/
-    /*display: none;*/
-/*}*/
-/*.atom_state_1 .state-1{*/
-    /*display: block;*/
-/*}*/
-/*.atom_state_2 .state-2{*/
-    /*display: block;*/
-/*}*/
-/*.atom_state_3 .state-3{*/
-    /*display: block;*/
-/*}*/
-.fixed-menu{
+.fixed-menu
+{
     position: fixed;
     width: 300px;
     height: 90px;
     top: 10px;
     left: 350px;
 }
-.fixed-menu__item{
+.fixed-menu__item
+{
     float: left;
     width: 90px;
     height: 90px;
@@ -457,23 +505,15 @@ li:before{
     background: #000;
     background: no-repeat 0 0 url(img/icons.png);
 }
-.fixed-menu__item_yellow{
+.fixed-menu__item_yellow
+{
     background-position: -565px -26px;
 }
-.fixed-menu__item_red{
+.fixed-menu__item_red
+{
     background-position: -665px -26px;
 }
-.fixed-menu__item_blue{
+.fixed-menu__item_blue
+{
     background-position: -765px -26px;
-}
-
-.fixed-current-user{
-    position: fixed;
-    width: 175px;
-    height: 175px;
-    top: 50%;
-    left: 410px;
-    /*margin: -50% 0 0 -50%;*/
-    background: no-repeat -140px 0 url(img/icons.png);
-    z-index: 100;
 }

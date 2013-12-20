@@ -13,6 +13,10 @@
             if (typeof this.options.scrollto === 'undefined'){
                 this.options.scrollto = false;
             }
+            // Когда считать скрытым?
+            if (!$.isArray(self.options.when_hidden)){
+                self.options.when_hidden = ['out-top', 'out-bottom'];
+            }
             this.element.on('click', '.paths-menu__item', function(e){
                 if (!$(this).hasClass('paths-menu__item_state_active')){
                     e.preventDefault();
@@ -33,7 +37,40 @@
             .on('mouseleave', '.paths-menu__item', function(e){
                 self.show_description();
             });
+            // Определяем, попадает ли виджет в область viewport'а
+            $(window).on('scroll', function(){
+                self.check_visible();
+            }).on('resize', function(){
+                self.check_visible();
+            });
+
             self.show_description();
+        },
+
+        check_visible: function(){
+            var self = this;
+            if (!this.wait_check){
+                self.wait_check = true;
+                setTimeout(function(){
+                    var $win = $(window),
+                        pos = 'in';
+                    if (self.element.offset().top + self.element.height() < $win.scrollTop()){
+                        pos = 'out-top';
+                    }else
+                    if ($win.scrollTop() + $win.height() < self.element.offset().top){
+                        pos = 'out-bottom';
+                    }
+                    if (pos !== 'in' && $.inArray(pos, self.options.when_hidden) === -1){
+                        pos = 'in';
+                    }
+                    //if (self.current_pos !== pos){
+                    //    self.current_pos = pos;
+                        // Сообщаем всем о своей позиции
+                        self.callParents('paths_menu_visible', {value: pos === 'in', key: self.eventNamespace}, null, true);
+                    //}
+                    self.wait_check = false;
+                },1000)
+            }
         },
 
         show_description: function(type){

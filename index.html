@@ -12,6 +12,7 @@
     <script src="js/exam.sidebar.js"></script>
     <script src="js/exam.sidebar-switcher.js"></script>
     <script src="js/exam.paths-menu.js"></script>
+    <script src="js/exam.person-active.js"></script>
     <script>
     $(document).ready(function(){
         // Подключение виджетов к тегам
@@ -25,7 +26,7 @@
     });
     </script>
 </head>
-<body class="atom_state_1">
+<body>
 <div class="layout" data-w="widget">
     <div class="story story_type_yellow" data-w="story">
         <div class="story__item story__item-1">
@@ -59,7 +60,7 @@
         </div>
         <div class="story__item story__item-3">
             <!-- меню выбора персонажа -->
-            <div class="paths-menu" data-w="paths-menu" data-w-options='{}'>
+            <div class="paths-menu" data-w="paths-menu" data-w-options='{"when_hidden":["out-top"]}'>
                 <div class="paths-menu grid_cols_12">
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_3 grid__module_span_2">
@@ -336,11 +337,11 @@
         </div>
         <div class="story__item story__item-last-1">
             <!-- меню выбора персонажа без описания -->
-            <div class="paths-menu" data-w="paths-menu" data-w-options='{"scrollto":".story__item-3"}'>
+            <div class="paths-menu" data-w="paths-menu" data-w-options='{"scrollto":".story__item-3", "when_hidden":["out-bottom"]}'>
                 <div class="paths-menu grid_cols_12">
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_3 grid__module_span_2">
-                            <div class="paths-menu__item paths-menu__item_type_yellow" data-type="yellow">
+                            <div class="paths-menu__item paths-menu__item_type_yellow paths-menu__item_state_active" data-type="yellow">
                                 <div class="paths-menu__icon paths-menu__icon_type_yellow"></div>
                                 <div class="paths-menu__label">Максим</div>
                             </div>
@@ -388,15 +389,15 @@
     <div class="sidebar" data-w="sidebar">
         <div class="sidebar__item sidebar__item-1">
             <div class="sidebar__item-content">
-                <h2 class="head-2">«Атом»</h2>
-                <h3 class="head-3">Сценарии применения</h3>
+                <h2 class="h_size_2">«Атом»</h2>
+                <h3 class="h_size_3">Сценарии применения</h3>
                 <p>«Атом» — это платформа, которая позволит сайтам в интернете адаптироваться под каждого конкретного пользователя. Показывать ему только интересную информацию, помогать быстрее решать задачи.</p>
                 <p>Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому пользователю, но делающих страницу более интересной, более удобной для него.</p>
             </div>
         </div>
         <div class="sidebar__item sidebar__item-2">
             <div class="sidebar__item-content">
-                <h3 class="head-3">Презентация платформы «Атом» на конференции YaС 2013</h3>
+                <h3 class="h_size_3">Презентация платформы «Атом» на конференции YaС 2013</h3>
                 <p>Yet another Conference (YaС) — технологическая конференция Яндекса, которая ежегодно проходит в Москве, начиная с 2010 года.</p>
             </div>
         </div>
@@ -405,28 +406,28 @@
             <div class="texts__item texts__item_type_yellow texts__item_state_active">
                 <div class="sidebar__item sidebar__item-3">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Покупка авиабилетов</h3>
+                        <h3 class="h_size_3">Покупка авиабилетов</h3>
                         <p>Уже в результатах поиска Максим может уточнить удобные даты и перейти сразу на сайт с подходящими ему вариантами.</p>
                         <img src="i/yellow/right.1.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="sidebar__item sidebar__item-4">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Рекомендации по покупке подходящих товаров</h3>
+                        <h3 class="h_size_3">Рекомендации по покупке подходящих товаров</h3>
                         <p>Предложения на главной странице выбраны на основе информации о предпочтениях Максима, полученных сайтом от «Атома».</p>
                         <img src="i/yellow/right.2.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="sidebar__item sidebar__item-5">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Предложение купить билет на аэроэкспресс</h3>
+                        <h3 class="h_size_3">Предложение купить билет на аэроэкспресс</h3>
                         <p>Зная предпочтения Максима, сайт предлагает ему подходящий способ добраться до аэропорта и рекомендует время отправления.</p>
                         <img src="i/yellow/right.3.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="sidebar__item sidebar__item-6">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Выбор интересных мест для посещения</h3>
+                        <h3 class="h_size_3">Выбор интересных мест для посещения</h3>
                         <p>Когда Максим выбирает в интернете достопримечательности для посещения в путешествии, сайт предлагает ему обратить внимание и на другие объекты, которые могут быть ему интересны.</p>
                         <img src="i/yellow/right.4.jpg" alt=""/>
                     </div>
@@ -436,28 +437,28 @@
             <div class="texts__item texts__item_type_red">
                 <div class="sidebar__item sidebar__item-3">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Покупка тура</h3>
+                        <h3 class="h_size_3">Покупка тура</h3>
                         <p>В острове Алексей Быков сразу указывает параметры для поиска тура. Из результатов убраны слишком дорогие и престижные для Алексея отели. В списке вариантов — туры, идеально подходящие для семейного отдыха с детьми.</p>
                         <img src="i/red/right.1.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="sidebar__item sidebar__item-4">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Напоминание от интернет-магазина</h3>
+                        <h3 class="h_size_3">Напоминание от интернет-магазина</h3>
                         <p>Контактные линзы из прошлого заказа Алексея скоро должны подойти к концу. Сайт, на котором он обычно их приобретает, отправляет ему напоминание о повторной покупке с кнопкой перехода на предзаполненную форму заказа в один клик.</p>
                         <img src="i/red/right.2.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="sidebar__item sidebar__item-5">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Рекомендация по времени выезда с учётом пробок на дорогах</h3>
+                        <h3 class="h_size_3">Рекомендация по времени выезда с учётом пробок на дорогах</h3>
                         <p>Алексею предлагается оптимальный маршрут с учётом времени вылета и прогнозом пробок.</p>
                         <img src="i/red/right.3.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="sidebar__item sidebar__item-6">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Рекомендации по выбору ресторана</h3>
+                        <h3 class="h_size_3">Рекомендации по выбору ресторана</h3>
                         <p>При поиске ресторанов для посещения, сайт рекомендует Алексею места на основе информации о его предпочтениях и вкусах.</p>
                         <img src="i/red/right.4.jpg" alt=""/>
                     </div>
@@ -467,28 +468,28 @@
             <div class="texts__item texts__item_type_blue">
                 <div class="sidebar__item sidebar__item-3">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Покупка авиабилетов</h3>
+                        <h3 class="h_size_3">Покупка авиабилетов</h3>
                         <p>Уже в результатах поиска Максим может уточнить удобные даты и перейти сразу на сайт с подходящими ему вариантами.</p>
                         <img src="i/blue/right.1.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="sidebar__item sidebar__item-4">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Рекомендации по покупке подходящих товаров</h3>
+                        <h3 class="h_size_3">Рекомендации по покупке подходящих товаров</h3>
                         <p>Предложения на главной странице выбраны на основе информации о предпочтениях Максима, полученных сайтом от «Атома».</p>
                         <img src="i/blue/right.2.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="sidebar__item sidebar__item-5">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Предложение купить билет на аэроэкспресс</h3>
+                        <h3 class="h_size_3">Предложение купить билет на аэроэкспресс</h3>
                         <p>Зная предпочтения Максима, сайт предлагает ему подходящий способ добраться до аэропорта и рекомендует время отправления.</p>
                         <img src="i/blue/right.3.jpg" alt=""/>
                     </div>
                 </div>
                 <div class="sidebar__item sidebar__item-6">
                     <div class="sidebar__item-content">
-                        <h3 class="head-3">Выбор интересных мест для посещения</h3>
+                        <h3 class="h_size_3">Выбор интересных мест для посещения</h3>
                         <p>Когда Максим выбирает в интернете достопримечательности для посещения в путешествии, сайт предлагает ему обратить внимание и на другие объекты, которые могут быть ему интересны.</p>
                         <img src="i/blue/right.4.jpg" alt=""/>
                     </div>
@@ -497,7 +498,7 @@
         </div>
         <div class="sidebar__item sidebar__item-7">
             <div class="sidebar__item-content">
-                <h3 class="head-3">Закрытое тестирование «Атома»</h3>
+                <h3 class="h_size_3">Закрытое тестирование «Атома»</h3>
                 <p>Замысел такого масштаба невозможно воплотить в одиночку, поэтому мы уже начали проводить эксперименты с первыми партнёрами. Каким будет результат этой работы, во многом зависит от них и от других вебмастеров. У нас есть идея и технологии для её реализации, но мы не хотим двигаться дальше без ваших мыслей, мнения, опыта и осознания ваших потребностей. Всё это необходимо нам для того, чтобы превратить идею в полноценный продукт, полезный в реальных ситуациях.</p>
                 <ul>
                     <li>выбрать ключевые рубрики вашего сайта;</li>
@@ -518,10 +519,10 @@
         <div class="fixed-menu__item fixed-menu__item_yellow"></div>
         <div class="fixed-menu__item fixed-menu__item_red"></div>
         <div class="fixed-menu__item fixed-menu__item_blue"></div>
-    </div>
-    <div class="fixed-current-user">
-
     </div>-->
+    <div class="person-active person-active_type_yellow" data-w="person-active">
+
+    </div>
 </div>
 </body>
 </html>
