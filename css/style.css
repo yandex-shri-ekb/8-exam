@@ -1,0 +1,450 @@
+html,
+body
+{
+    margin: 0;
+}
+
+p
+{
+    margin: 0 0 24px;
+}
+
+body
+{
+    background: #FFFFFF;
+    color: #000;
+    font: 400 16px/24px Arial,Helvetica,sans-serif;
+    min-height: 100%;
+    min-width: 1024px;
+}
+
+.content
+{
+    background: #e7e7e7;
+    margin: 18px;
+    border: 2px solid #000;
+    position: relative;
+    width: 952px;
+}
+
+.header
+{
+    height: 589px;
+    padding: 0 16px;
+    border-bottom: 2px solid #000;
+}
+
+.substrate
+{
+    background: url("../images/background.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 570px;
+    width: 100%;
+    left: -36px;
+    position: relative;
+    top: -20px;
+    width: 972px;
+    z-index: 1;
+}
+
+.ticket
+{
+    z-index: 2;
+}
+
+.label
+{
+    background: url("../images/label.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 92px;
+    position: relative;
+    top: -2px;
+    width: 138px;
+    display: block;
+}
+
+.logo
+{
+    display: block;
+    background: url("../images/logo_ya.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 30px;
+    position: relative;
+    top: 18px;
+    width: 78px;
+    margin: 0 auto;
+}
+
+.title
+{
+    font: 45px/48px Arial,Helvetica,sans-serif;
+    position: absolute;
+    text-align: center;
+    top: 421px;
+    z-index: 2;
+}
+
+.intro
+{
+    height: 232px;
+    border-bottom: 2px solid #000;
+    padding: 80px 16px;
+    background: #fff;
+}
+
+.intro__text
+{
+    position: relative;
+    top: -6px;
+    left: -1px;
+}
+
+.btn_play
+{
+    margin: 0 0 0 18px;
+}
+
+.play
+{
+    background: url("../images/btn_play.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 80px;
+    width: 138px;
+    cursor: pointer;
+}
+
+.play__text,
+.logoatom__text
+{
+    margin: 11px 0 0;
+}
+
+.persons
+{
+    height: 222px;
+    padding: 80px 16px;
+}
+
+.persons__switch
+{
+    height: 166px;
+}
+
+.person__yellow
+{
+    cursor: pointer;
+}
+
+.person__red
+{
+    cursor: pointer;
+    margin: 0 96px;
+}
+
+.person__blue
+{
+    cursor: pointer;
+    height: 138px;
+}
+
+.person__yellow__avatar
+{
+    background: url("../images/persons.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
+    height: 138px;
+    width: 138px;
+}
+
+.person__red__avatar
+{
+    background: url("../images/persons.png") no-repeat scroll center -147px rgba(0, 0, 0, 0);
+    height: 138px;
+    width: 138px;
+}
+
+.person__blue__avatar
+{
+    background: url("../images/persons.png") no-repeat scroll center -297px rgba(0, 0, 0, 0);
+    height: 138px;
+    width: 138px;
+}
+
+.person__name
+{
+    text-align: center;
+    font-weight: 700;
+    margin: 10px 0 0 -5px;
+    width: 150px;
+}
+
+.person__desc
+{
+    display: none;
+    text-align: center;
+    margin: 13px 0 0 -78px;
+}
+
+.person__yellow:hover .person__desc,
+.person__red:hover .person__desc,
+.person__blue:hover .person__desc
+{
+    display: block;
+}
+
+.history
+{
+    padding: 0 16px;
+    height: 3310px;
+    background: #e7e7e7;
+    text-align: center;
+}
+
+.grid__align
+{
+    left: -78px;
+}
+
+.yellow_block1
+{
+    height: 826px;
+}
+
+.yellow_block1__substrate
+{
+    background: url("../images/yellow/line1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 887px;
+    width: 762px;
+}
+
+.yellow_block1__map
+{
+    margin: 8px 0 0;
+}
+
+.yellow_block1__text
+{
+    margin: -110px 0 0;
+}
+
+.yellow_block1__aviaticket
+{
+    margin: 47px 0 0 -166px;
+}
+
+.yellow_block1__compass
+{
+    margin: 47px 0 0 18px;
+}
+
+.yellow_block1__book
+{
+    margin: -167px 0 0 330px;
+}
+
+.yellow_block2
+{
+    height: 584px;
+    padding: 215px 0 0;
+}
+
+.yellow_block2__substrate
+{
+    background: url("../images/yellow/line2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 565px;
+    width: 686px;
+    margin: 80px 0 0;
+}
+
+.yellow_block2__text
+{
+    margin: -135px 0 0;
+}
+
+.yellow_block2__laptop
+{
+    margin: -199px 0 0;
+    position: relative;
+    z-index: 2;
+}
+
+.yellow_block2__polaroid1
+{
+    left: -228px;
+    top: -220px;
+    position: relative;
+    z-index: 1;
+}
+
+.yellow_block2__polaroid2
+{
+    left: -32px;
+    top: -93px;
+    position: relative;
+    z-index: 1;
+}
+
+.yellow_block2__polaroid3
+{
+    left: -37px;
+    top: -217px;
+    position: relative;
+    z-index: 1;
+}
+
+.yellow_block2__iphone
+{
+    margin: 34px 0 0 18px;
+}
+
+.yellow_block3
+{
+    height: 588px;
+    padding: 213px 0 0;
+}
+
+.yellow_block3__substrate
+{
+    background: url("../images/yellow/line3.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 565px;
+    width: 626px;
+    margin: 84px 0 0;
+}
+
+.yellow_block3__text
+{
+    margin: -140px 0 0;
+}
+
+.yellow_block3__magazine
+{
+    margin: -275px 0 0 48px;
+}
+
+.yellow_block3__aeroexpress
+{
+    left: -174px;
+    position: relative;
+    top: -3px;
+    z-index: 2;
+}
+
+.yellow_block3__money
+{
+    left: 390px;
+    top: -330px;
+    position: relative;
+    z-index: 3;
+}
+
+.yellow_block3__ticket
+{
+    left: 100px;
+    position: relative;
+    top: -173px;
+    z-index: 1;
+}
+
+.yellow_block3__traffic
+{
+    left: 6px;
+    position: relative;
+    top: -225px;
+}
+
+.yellow_block3__ipod
+{
+    margin: 94px 0 0 174px;
+}
+
+.yellow_block4
+{
+    height: 746px;
+    padding: 73px 0 0;
+}
+
+.yellow_block4__substrate
+{
+    background: url("../images/yellow/line4.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 588px;
+    width: 570px;
+    margin: 222px 156px 0;
+}
+
+.yellow_block4__backpack
+{
+    margin: -106px 0 0;
+}
+
+.yellow_block4__text
+{
+    left: 16px;
+    position: relative;
+    top: -122px;
+}
+
+.yellow_block4__carton
+{
+    margin: -80px 96px 0;
+}
+
+.yellow_block4__notebook
+{
+    margin: 60px 0 0;
+}
+
+.yellow_block4__botle
+{
+    margin: 58px 18px 0;
+}
+
+.yellow_block4__camera
+{
+    margin: 87px 36px 0;
+}
+
+.persons__footer
+{
+    height: 192px;
+    padding: 32px 16px 56px;
+    border-bottom: 2px solid #000;
+}
+
+.yellow_active
+{
+    background: url("../images/persons.png") no-repeat scroll center -450px rgba(0, 0, 0, 0);
+    height: 174px;
+    width: 174px;
+    margin: -20px 0 0 -20px;
+    cursor: default;
+}
+
+.red_active
+{
+    background: url("../images/persons.png") no-repeat scroll center -634px rgba(0, 0, 0, 0);
+    height: 174px;
+    width: 174px;
+    margin: -20px 0 0 -20px;
+    cursor: default;
+}
+
+.blue_active
+{
+    background: url("../images/persons.png") no-repeat scroll center -818px rgba(0, 0, 0, 0);
+    height: 174px;
+    width: 174px;
+    margin: -20px 0 0 -20px;
+    cursor: default;
+}
+
+.footer
+{
+    height: 316px;
+    padding: 80px 16px;
+}
+
+.footer__text
+{
+    margin: -5px 0 0;
+}
+
+.logoatom
+{
+    background: url("../images/logoatom.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 102px;
+    width: 102px;
+}
