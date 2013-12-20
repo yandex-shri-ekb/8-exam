@@ -1,7 +1,7 @@
 ({
     shouldDeps: [
-        { block: 'image-theme-blue' },
-        { block: 'path-theme-blue' },
+        { block: 'image-theme-yellow' },
+        { block: 'path-theme-yellow' },
         { block: 'step' },
     ]
 })

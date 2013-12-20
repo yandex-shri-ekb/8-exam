@@ -1,11 +1,11 @@
-.image_theme_blue__notepad
+.image-theme-blue__notepad
 {
-    background: url(image_theme_blue__notepad.png) no-repeat;
+    background: url(image-theme-blue__notepad.png) no-repeat;
     width: 306px;
     height: 434px;
 }
 
-.image_theme_blue__notepad_push_down_yes
+.image-theme-blue__notepad_push_down_yes
 {
     margin-top: 80px;
 }

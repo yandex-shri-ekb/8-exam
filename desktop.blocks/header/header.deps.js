@@ -1,7 +1,6 @@
 ({
     shouldDeps: [
-        { block: 'header' },
-        { block: 'start' },
-        { block: 'users' }
+        { block: 'header-logo' },
+        { block: 'header-info' },
     ]
 })

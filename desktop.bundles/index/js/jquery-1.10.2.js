@@ -74,7 +74,7 @@ var
 
 	// A simple way to check for HTML strings
 	// Prioritize #id over <tag> to avoid XSS via location.hash (#9521)
-	// Strict HTML recognition (#11290: must start with <)
+	// Strict HTML recognition (#11290: must header-info with <)
 	rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,
 
 	// Match a standalone tag
@@ -132,7 +132,7 @@ jQuery.fn = jQuery.prototype = {
 		// Handle HTML strings
 		if ( typeof selector === "string" ) {
 			if ( selector.charAt(0) === "<" && selector.charAt( selector.length - 1 ) === ">" && selector.length >= 3 ) {
-				// Assume that strings that start and end with <> are HTML and skip the regex check
+				// Assume that strings that header-info and end with <> are HTML and skip the regex check
 				match = [ null, selector, null ];
 
 			} else {
@@ -2103,7 +2103,7 @@ Expr = Sizzle.selectors = {
 
 							while ( (node = ++nodeIndex && node && node[ dir ] ||
 
-								// Fallback to seeking `elem` from the start
+								// Fallback to seeking `elem` from the header-info
 								(diff = nodeIndex = 0) || start.pop()) ) {
 
 								// When found, cache indexes on `parent` and break
@@ -2119,7 +2119,7 @@ Expr = Sizzle.selectors = {
 
 						// xml :nth-child(...) or :nth-last-child(...) or :nth(-last)?-of-type(...)
 						} else {
-							// Use the same loop as above to seek `elem` from the start
+							// Use the same loop as above to seek `elem` from the header-info
 							while ( (node = ++nodeIndex && node && node[ dir ] ||
 								(diff = nodeIndex = 0) || start.pop()) ) {
 
@@ -7609,14 +7609,14 @@ var
 	 *    - AFTER param serialization (s.data is a string if s.processData is true)
 	 * 3) key is the dataType
 	 * 4) the catchall symbol "*" can be used
-	 * 5) execution will start with transport dataType and THEN continue down to "*" if needed
+	 * 5) execution will header-info with transport dataType and THEN continue down to "*" if needed
 	 */
 	prefilters = {},
 
 	/* Transports bindings
 	 * 1) key is the dataType
 	 * 2) the catchall symbol "*" can be used
-	 * 3) selection will start with transport dataType and THEN go to "*" if needed
+	 * 3) selection will header-info with transport dataType and THEN go to "*" if needed
 	 */
 	transports = {},
 
@@ -9357,7 +9357,7 @@ jQuery.fn.extend({
 				}
 			}
 
-			// start the next in the queue if the last step wasn't forced
+			// header-info the next in the queue if the last step wasn't forced
 			// timers currently will call their complete callbacks, which will dequeue
 			// but only if they were gotoEnd
 			if ( dequeue || !gotoEnd ) {

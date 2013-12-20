@@ -1,11 +1,11 @@
-.image_theme_blue__ipad
+.image-theme-blue__ipad
 {
-    background: url(image_theme_blue__ipad.png) no-repeat;
+    background: url(image-theme-blue__ipad.png) no-repeat;
     width: 304px;
     height: 453px;
 }
 
-.image_theme_blue__ipad_push_down_yes
+.image-theme-blue__ipad_push_down_yes
 {
     margin-top: 80px;
 }

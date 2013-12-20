@@ -3,7 +3,8 @@ block('users')(
     content()(function() {
 
         return {
-            mix: { block: 'grid_cols_12' },
+            elem: 'row',
+            mix: { block: 'grid_row' },
             content: {
                 elem: 'wrap',
                 content: [

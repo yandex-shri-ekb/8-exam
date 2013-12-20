@@ -1,52 +1,10 @@
-block('atom-begin')(
+block('header')(
 
     content()(function() {
 
         return [
-            {
-                block: 'header',
-                content: [
-                    { elem: 'orbital' },
-                    {
-                        elem: 'ya-logo',
-                        mix: { block: 'grid__module', mods: { col: 6, span: 2 } }
-                    },
-                    {
-                        elem: 'title',
-                        mix: { block: 'grid__module', mods: { col: 2, span: 10 } },
-                        content: '- А что если интернет подстроится под меня?'
-                    }
-                ]
-            },
-            {
-                block: 'header-info',
-                content: [
-                    {
-                        elem: 'info',
-                        content: [
-                            {
-                                elem: 'lead-text',
-                                mix: { block: 'grid__module', mods: { col: 2, span: 6 } },
-                                content: 'Интернет сегодня — это не только информация и технологии, но и люди. Людей много и они все разные, а сайты для всех пользователей обычно выглядят одинаково. Яндекс уже научился адаптироваться под конкретного пользователя и готов поделиться этой технологией с другими. <br/><br/> «Атом». Технологическая платформа, задача которой — предоставить сайтам возможность изменять содержание страниц под конкретного пользователя.'
-                            },
-                            {
-                                elem: 'video-holder',
-                                mix: { block: 'grid__module', mods: { col: 9, span: 3 } },
-                                content: [
-                                    {
-                                        elem: 'video-image',
-                                        mods: { color: this.ctx.color }
-                                    },
-                                    {
-                                        elem: 'video-text',
-                                        content: 'Весь сайт в одном видео'
-                                    }
-                                ]
-                            }
-                        ]
-                    }
-                ]
-            },
+            { block: 'header-logo' },
+            { block: 'header-info' },
         ];
     })
 

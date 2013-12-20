@@ -1,6 +1,6 @@
-.header-start__video-image
+.header-info__video-image
 {
-    background: url(header-start__video-image.png);
+    background: url(header-info__video-image.png);
     width: 138px;
     height: 80px;
     margin: 0 0 16px;
@@ -11,12 +11,12 @@
     background-color: #ffe05d;
 }
 
-.header-start__video-image_color_red
+.header-info__video-image_color_red
 {
     background-color: #ff8282;
 }
 
-.header-start__video-image_color_blue
+.header-info__video-image_color_blue
 {
     background-color: #72c4f6;
 }

@@ -1,11 +1,11 @@
-.image_theme_blue__ticket
+.image-theme-blue__ticket
 {
-    background: url(image_theme_blue__ticket.png) no-repeat;
+    background: url(image-theme-blue__ticket.png) no-repeat;
     width: 454px;
     height: 179px;
 }
 
-.image_theme_blue__ticket_push_down_yes
+.image-theme-blue__ticket_push_down_yes
 {
     margin-top: 144px;
 }

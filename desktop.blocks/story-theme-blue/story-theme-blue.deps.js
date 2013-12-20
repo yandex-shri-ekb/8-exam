@@ -1,8 +1,7 @@
 ({
     shouldDeps: [
-        { block: 'atom-begin'},
-        { block: 'image-theme-yellow' },
-        { block: 'path-theme-yellow' },
+        { block: 'image-theme-blue' },
+        { block: 'path-theme-blue' },
         { block: 'step' },
     ]
 })

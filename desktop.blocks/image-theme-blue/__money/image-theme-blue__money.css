@@ -1,11 +1,11 @@
-.image_theme_blue__money
+.image-theme-blue__money
 {
-    background: url(image_theme_blue__money.png) no-repeat;
+    background: url(image-theme-blue__money.png) no-repeat;
     width: 148px;
     height: 244px;
 }
 
-.image_theme_blue__money_push_down_yes
+.image-theme-blue__money_push_down_yes
 {
     margin-top: 486px;
 }

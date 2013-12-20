@@ -1,0 +1,20 @@
+.atom__border
+{
+    border: 2px solid #000;
+    border-right: 0;
+}
+
+.atom__border_theme_yellow
+{
+    background: #ffe05d;
+}
+
+.atom__border_theme_red
+{
+    background: #ff8282;
+}
+
+.atom__border_theme_blue
+{
+    background: #72c4f6;
+}

@@ -1,16 +1,16 @@
-.image_theme_blue__paper
+.image-theme-blue__paper
 {
-    background: url(image_theme_blue__paper.png) no-repeat;
+    background: url(image-theme-blue__paper.png) no-repeat;
     width: 384px;
     height: 621px;
 }
 
-.image_theme_blue__paper_push_down_yes
+.image-theme-blue__paper_push_down_yes
 {
     margin-top: 80px;
 }
 
-.image_theme_blue__paper_push_left_yes
+.image-theme-blue__paper_push_left_yes
 {
     margin-left: -306px;
 }

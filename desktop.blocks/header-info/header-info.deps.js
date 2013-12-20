@@ -1,7 +1,6 @@
 ({
     shouldDeps: [
-        { elem: 'info' },
-        { elem: 'lead-text' },
+        { elem: 'inner' },
         { elem: 'video-image' }
     ]
 })

@@ -1,11 +1,11 @@
-.image_theme_blue__pen
+.image-theme-blue__pen
 {
-    background: url(image_theme_blue__pen.png) no-repeat;
+    background: url(image-theme-blue__pen.png) no-repeat;
     width: 48px;
     height: 223px;
 }
 
-.image_theme_blue__pen_push_down_yes
+.image-theme-blue__pen_push_down_yes
 {
     margin-top: 36px;
 }
