@@ -28,7 +28,7 @@ html
 
 body
 {
-    height: 100%;
+    position: relative;
     min-height: 100%;
     font: 16px/1.5 "Arial", "Helvetica", sans-serif;
     color: #000;
@@ -93,8 +93,14 @@ textarea
    Author's custom styles
    ========================================================================== */
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
 a:hover
 {
+    color: red;
     text-decoration: none;
 }
 
