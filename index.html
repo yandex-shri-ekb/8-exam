@@ -3,12 +3,335 @@
 <head>
     <title></title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bs3-grid.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/dev.css"/>
     <script data-main="js/main.js" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js"></script>
 </head>
 <body>
 
+    <div class="b-page dev*">
+        <div class="layout">
+            <div class="story-container layout__main">
+                <div class="container">
+                    <div class="dev__grid">
+                        <div class="row">
+                            <div class="col-xs-1">1</div>
+                            <div class="col-xs-1">2</div>
+                            <div class="col-xs-1">3</div>
+                            <div class="col-xs-1">4</div>
+                            <div class="col-xs-1">5</div>
+                            <div class="col-xs-1">6</div>
+                            <div class="col-xs-1">7</div>
+                            <div class="col-xs-1">8</div>
+                            <div class="col-xs-1">9</div>
+                            <div class="col-xs-1">0</div>
+                            <div class="col-xs-1">1</div>
+                            <div class="col-xs-1">2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-2">4/2</div>
+                            <div class="col-xs-4 col-xs-offset-2">4/2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2">2/2</div>
+                            <div class="col-xs-2 col-xs-offset-2">2/2</div>
+                            <div class="col-xs-2 col-xs-offset-2">2/2</div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-1">2/1</div>
+                            <div class="col-xs-2 col-xs-offset-1">2/1</div>
+                            <div class="col-xs-2 col-xs-offset-1">2/1</div>
+                        </div>
+                    </div>
 
+                    <div class="story-container__block header row">
+                        <div class="header__logo">
+                            <div class="header__logo-inner"></div>
+                        </div>
+                        <div class="banner">
+                            <div class="banner__bg"></div>
+                            <div class="header__text">
+                                <div class="col-xs-10 col-xs-offset-1">
+                                    А что если интернет подстроится под вас?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-container__block story-header row">
+                        <div class="col-xs-6 col-xs-offset-1">
+                            <div class="content">
+                                <p>Интернет сегодня — это не только информация и технологии, но и люди.
+                                    Людей много и они все разные, а сайты для всех пользователей обычно
+                                    выглядят одинаково. Яндекс уже научился адаптироваться под  конкретного
+                                    пользователя и готов поделиться этой технологией с другими.</p>
+
+                                <p>«Атом». Технологическая платформа, задача которой - предоставить сайтам
+                                    возможность изменять содержание страниц под конкретного пользователя.</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-2 col-xs-offset-1">
+                            <div class="video-btn">
+                                <div class="video-btn__btn"></div>
+                                <div class="video-btn__text">Весь сайт в одном видео</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-container__block switcher-top">
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2">
+                                <div class="char char_yellow">
+                                    <div class="char__image"></div>
+                                    <div class="char__name">Максим</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-xs-offset-1">
+                                <div class="char char_red">
+                                    <div class="char__image"></div>
+                                    <div class="char__name">Алексей</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-xs-offset-1">
+                                <div class="char char_blue">
+                                    <div class="char__image"></div>
+                                    <div class="char__name">И. Дауге</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4 col-xs-offset-1">
+                                <div class="char-text char-text_yellow">
+                                    <div class="content content_pressed">
+                                        <p>Предпочитает путешествовать самостоятельно и налегке.
+                                            Уверен, что только так можно проникнуться культурой страны.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-xs-offset-4">
+                                <div class="char-text char-text_red">
+                                    <div class="content content_pressed">
+                                        <p>В отпуск ездит вместе с женой и дочкой.
+                                            Считает, что отдыхать лучше всего в отелях на побережье.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-4 col-xs-offset-7">
+                                <div class="char-text char-text_blue">
+                                    <div class="content content_pressed">
+                                        <p>Очень дорожит редкими отпусками и превыше всего
+                                            ценит комфорт и качество обслуживания.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-10 col-xs-offset-1">
+                                <div class="switcher-top__line"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-container__block story">
+                        <div class="story__char story-yellow">
+                            <div class="story__part story-yellow-part-1" id="story-yellow-part-1">
+                                <div class="row">
+                                    <div class="col-xs-4 col-xs-offset-1">
+                                        <div class="content">
+                                            <p>Максим хочет увидеть настоящий, нетуристический Таиланд.</p>
+                                            <p>Он планирует путешествовать по стране самостоятельно,
+                                                составлять маршрут по ходу. Поэтому всё, что ему нужно, —
+                                                билет на самолёт.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-6 col-xs-offset-1">
+                                        <img class="image image_yellow-map" src="images/yellow/map.png" width="294" height="218">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="story__part story-yellow-part-2" id="story-yellow-part-2">
+                                <img class="image image_yellow-ticket" src="images/yellow/ticket.png" width="620" height="244">
+                                <img class="image image_yellow-compass" src="images/yellow/compass.png" width="150" height="161">
+                                <img class="image image_yellow-book" src="images/yellow/book.png" width="240" height="302">
+                            </div>
+
+                            <div class="story__part story-yellow-part-3" id="story-yellow-part-3">
+                                <div class="story-yellow-part-3__bg"></div>
+                                <div class="row">
+                                    <div class="col-xs-5 col-xs-offset-1">
+                                        <img class="image image_yellow-laptop" src="images/yellow/laptop.png" width="384" height="492">
+                                        <img class="image image_yellow-polaroid-1" src="images/yellow/polaroid.png" height="158">
+                                        <img class="image image_yellow-polaroid-2" src="images/yellow/polaroid.png" width="142" height="158">
+                                        <img class="image image_yellow-polaroid-3" src="images/yellow/polaroid.png" width="142" height="158">
+                                    </div>
+                                    <div class="col-xs-4 col-xs-offset-1">
+                                        <div class="content">
+                                            <p>Для путешествия по жаркой стране Максиму нужна удобная одежда
+                                                и крепкая обувь.</p>
+                                            <p>Он не желает тратить время на походы по магазинам,
+                                                ведь интересные ему вещи можно с лёгкостью найти в интернете.</p>
+                                        </div>
+
+                                        <img class="image image image_yellow-iphone" src="images/yellow/iphone.png" width="150" height="282">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="story__part story-yellow-part-4" id="story-yellow-part-4">
+                                <div class="row">
+                                    <div class="col-xs-4 col-xs-offset-1">
+                                        <div class="content">
+                                            <p>Рюкзак с вещами и ноутбуком — вот и весь багаж Максима.</p>
+                                            <p>На метро он доберётся до вокзала, а оттуда поедет на аэроэкспрессе.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-3 col-xs-offset-4">
+                                        <img class="image image_yellow-magazine" src="images/yellow/magazine.png" width="306" height="394">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="story__part story-yellow-part-5" id="story-yellow-part-5">
+                                <div class="story-yellow-part-5__bg"></div>
+                                <img class="image image_yellow-airticket" src="images/yellow/airticket.png" width="193" height="244">
+                                <img class="image image_yellow-aeroexpress" src="images/yellow/aeroexpress.png" width="628" height="244">
+                                <img class="image image_yellow-money" src="images/yellow/money.png" width="216" height="207">
+                                <img class="image image_yellow-ipod" src="images/yellow/ipod.png" width="298" height="238">
+                                <img class="image image_yellow-traffic" src="images/yellow/traffic.png" width="150" height="158">
+                            </div>
+
+                            <div class="story__part story-yellow-part-6" id="story-yellow-part-6">
+                                <div class="story-yellow-part-6__bg"></div>
+                                <div class="row">
+                                    <div class="col-xs-5 col-xs-offset-1">
+                                        <img class="image image_yellow-backpack" src="images/yellow/backpack.png" width="396" height="394">
+                                    </div>
+                                    <div class="col-xs-4 col-xs-offset-1">
+                                        <div class="content">
+                                            <p>Максим не сидит на месте — в поисках интересных мест он колесит
+                                                по всей стране.</p>
+                                            <p>Когда ночь застаёт его в пути, Максим просто находит
+                                                ближайший хостел. Утром он решает — остаться и осмотреть
+                                                местные достопримечательности или вернуться на дорогу.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="story__part story-yellow-part-7" id="story-yellow-part-7">
+                                <div class="story-yellow-part-7__bg"></div>
+
+                                <div class="row">
+                                    <div class="col-xs-offset-7 col-xs-5">
+                                        <img class="image image_yellow-carton" src="images/yellow/carton.png" width="454" height="132">
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-2 col-xs-offset-2">
+                                        <img class="image image_yellow-notebook" src="images/yellow/notebook.png" width="150" height="192">
+                                    </div>
+                                    <div class="col-xs-1 col-xs-offset-1">
+                                        <img class="image image_yellow-bottle" src="images/yellow/bottle.png" width="108" height="228">
+                                    </div>
+                                    <div class="col-xs-3 col-xs-offset-1">
+                                        <img class="image image_yellow-camera" src="images/yellow/camera.png" width="228" height="164">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-container__block switcher-bottom">
+                        <div class="row">
+                            <div class="col-xs-2 col-xs-offset-2">
+                                <div class="char char_yellow">
+                                    <div class="char__image"></div>
+                                    <div class="char__name">Максим</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-xs-offset-1">
+                                <div class="char char_red">
+                                    <div class="char__image"></div>
+                                    <div class="char__name">Алексей</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-2 col-xs-offset-1">
+                                <div class="char char_blue">
+                                    <div class="char__image"></div>
+                                    <div class="char__name">И. Дауге</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="story-container__block footer row">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xs-6 col-xs-offset-1">
+                                    <div class="content">
+                                        <p>Мир один, а люди разные. Так и интернет — он один,
+                                            но для каждого разный.</p>
+                                        <p>Теперь посмотрите, как планировали путешествие в Таиланд другие герои.</p>
+                                    </div>
+                                </div>
+                                <div class="col-xs-2 col-xs-offset-1">
+                                    <img class="atom-logo" src="images/atom-logo.png" width="102" height="102">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3 col-xs-offset-1">
+                                    © 2013 ООО «Яндекс»
+                                </div>
+                                <div class="col-xs-8">
+                                    <div class="footer__links">
+                                        <a class="footer__link" href="#">Помощь</a>
+                                        <a class="footer__link" href="#">Обратная связь</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="info-container layout__floated">
+                <div class="info-container__block">
+                    <div class="info-container__holder">
+                        <h2 class="info-container__title">«Атом»: сценарии применения</h2>
+
+                        <div class="content">
+                            <p>«Атом» — это платформа, которая позволит сайтам в интернете адаптироваться под каждого
+                                конкретного пользователя. Показывать ему только интересную информацию, помогать
+                                быстрее решать задачи.</p>
+                            <p>Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных
+                                самому пользователю, но делающих страницу более интересной, более удобной для
+                                него.</p>
+                        </div>
+                        <div class="info-container__image">
+                            <img src="images/info-container__image.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-container__block">
+                    <div class="info-container__holder">
+                        <div class="info-container__content">
+                            <h2 class="info-container__title">Презентация платформы «Атом» на конференции YaС 2013</h2>
+
+                            <div class="content">
+                                <p>Yet another Conference (YaС) — технологическая конференция Яндекса, которая ежегодно
+                                    проходит в Москве, начиная с 2010 года.</p>
+                            </div>
+                            <div class="frame">
+                                <div class="frame__content">
+                                    <!--<iframe class="player" frameborder="0" webkitallowfullscreen="webkitallowfullscreen"
+                                            mozallowfullscreen="mozallowfullscreen" allowfullscreen="allowfullscreen"
+                                            width="720" height="405" data-src=""
+                                            src="http://video.yandex.ru/iframe/ya-events/ey7zrfqdd2.2022/"></iframe>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 </html>

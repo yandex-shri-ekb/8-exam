@@ -11,5 +11,5 @@ require.config({
     }
 });
 
-require(['app/utils']);
+require(['app/utils/string']);
 require(['app/init']);

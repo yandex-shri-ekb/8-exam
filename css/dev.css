@@ -1,0 +1,26 @@
+.dev [class*="col-"]
+{
+    background: rgba(100, 100, 100, 0.3);
+    outline: 1px solid #000;
+}
+
+.dev__grid
+{
+    position: fixed;
+    top: 40px;
+    opacity: 0.5;
+    z-index: 1000;
+    width: 954px;
+    display: none;
+}
+
+.dev .dev__grid
+{
+    display: block;
+}
+
+.dev__grid [class*="col-"]
+{
+    font-size: 30px;
+    text-align: center;
+}

@@ -1,6 +1,6 @@
 'use strict';
 
-require(['app/app', 'jquery'], function(App, $) {
+define(['app/app', 'jquery'], function(App, $) {
     var app = new App();
 
     $(function() {
