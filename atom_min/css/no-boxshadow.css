@@ -1,0 +1,29 @@
+.b-sidebar__no-boxshadow
+{
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    border: 0;
+    background: url(../blocks/b-sidebar/no-boxshadow/b-sidebar__no-boxshadow.png) repeat;
+}
+.b-helper:after
+{
+    content: '';
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    z-index: 4;
+    top: 5px;
+    left: 5px;
+    background: url(../blocks/b-helper/b-helper_no-boxshadow.png) no-repeat;
+}
+.b-modal-shadow:after
+{
+    width: 760px;
+    height: 427px;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: url(../blocks/b-modal/b-modal-shadow/b-modal-shadow_no-boxshadow.png) repeat;
+}

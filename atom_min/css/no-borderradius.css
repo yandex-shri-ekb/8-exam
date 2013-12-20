@@ -1,0 +1,15 @@
+.b-helper
+{
+    width: 60px;
+    height: 60px;
+    border: 0;
+    background: url(../blocks/b-helper/b-helper_no-borderradius.png) no-repeat;
+}
+.b-helper:hover
+{
+    background: url(../blocks/b-helper/b-helper_no-borderradius-hover.png) no-repeat;
+}
+.b-helper__icon
+{
+    margin: 16px auto;
+}
