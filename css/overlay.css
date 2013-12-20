@@ -1,0 +1,200 @@
+.b-overlay
+{
+    position: fixed;
+    width: 0;
+    height: 100%;
+    min-height: 700px;
+    top: 0;
+    left: 0;
+    transition: .2s linear top;
+    z-index: 9;
+}
+
+.b-overlay_disabled
+{
+    top: -400%;
+}
+
+.b-overlay__pers
+{
+    position: absolute;
+    top: 50%;
+    left: 500px;
+    margin: -109px;
+    width: 217px;
+    height: 217px;
+    padding: 0 7px 7px 0;
+    background: url(../img/icons.png);
+}
+
+.b-overlay__pers_yellow
+{
+    background-position: 0 -530px;
+}
+
+.b-overlay__pers_red
+{
+    background-position: -264px -530px;
+}
+
+.b-overlay__pers_blue
+{
+    background-position: -521px -530px;
+}
+
+
+.b-overlay__action-list
+{
+    position: absolute;
+    top: 50px;
+    left: 500px;
+    width: 340px;
+    margin: 0 -170px;
+    text-align: justify;
+}
+
+.b-overlay__action-list_helper
+{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 100%;
+    height: 0;
+}
+
+.b-overlay__action
+{
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+    width: 87px;
+    height: 87px;
+    text-decoration: none;
+    background: no-repeat url(../img/icons.png);
+}
+
+.b-overlay__action_selected 
+{
+    position: relative;
+    top: 10px;
+}
+
+.b-overlay__action-list_yellow .b-overlay__action_yellow_1
+{
+    background-position: 0 10px;
+}
+
+.b-overlay__action-list_yellow .b-overlay__action_yellow_2
+{
+    background-position: 0 -129px;
+}
+
+.b-overlay__action-list_yellow .b-overlay__action_yellow_3
+{
+    background-position: 0 -269px;
+}
+
+.b-overlay__action-list_yellow .b-overlay__action_yellow_4
+{
+    background-position: 0 -410px;
+}
+
+.b-overlay__action-list_red .b-overlay__action_red_1
+{
+    background-position: -99px 10px;
+}
+
+.b-overlay__action-list_red .b-overlay__action_red_2
+{
+    background-position: -99px -129px;
+}
+
+.b-overlay__action-list_red .b-overlay__action_red_3
+{
+    background-position: -99px -269px;
+}
+
+.b-overlay__action-list_red .b-overlay__action_red_4
+{
+    background-position: -99px -410px;
+}
+
+.b-overlay__action-list_blue .b-overlay__action_blue_1
+{
+    background-position: -199px 10px;
+}
+
+.b-overlay__action-list_blue .b-overlay__action_blue_2
+{
+    background-position: -199px -129px;
+}
+
+.b-overlay__action-list_blue .b-overlay__action_blue_3
+{
+    background-position: -199px -269px;
+}
+
+.b-overlay__action-list_blue .b-overlay__action_blue_4
+{
+    background-position: -199px -410px;
+}
+
+.b-overlay__action_yellow_1
+{
+    background-position: -627px 10px;
+}
+
+.b-overlay__action_yellow_2
+{
+    background-position: -627px -129px;
+}
+
+.b-overlay__action_yellow_3
+{
+    background-position: -627px -269px;
+}
+
+.b-overlay__action_yellow_4
+{
+    background-position: -627px -410px;
+}
+
+.b-overlay__action_red_1
+{
+    background-position: -502px 10px;
+}
+
+.b-overlay__action_red_2
+{
+    background-position: -502px -129px;
+}
+
+.b-overlay__action_red_3
+{
+    background-position: -502px -269px;
+}
+
+.b-overlay__action_red_4
+{
+    background-position: -502px -410px;
+}
+
+.b-overlay__action_blue_1
+{
+    background-position: -754px 10px;
+}
+
+.b-overlay__action_blue_2
+{
+    background-position: -754px -129px;
+}
+
+.b-overlay__action_blue_3
+{
+    background-position: -754px -269px;
+}
+
+.b-overlay__action_blue_4
+{
+    background-position: -754px -410px;
+}
