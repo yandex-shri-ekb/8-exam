@@ -1,6 +1,5 @@
 .aside-items__list-items
 {
-    *padding: 0 0 0 20px;
-
     *list-style: disc;
+    *padding: 0 0 0 20px;
 }

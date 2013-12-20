@@ -1,5 +1,5 @@
 ({
     mustDeps: [
-        { elems: ['image'] },
+        {elems: ['image']},
     ],
 })

@@ -1,16 +1,16 @@
 .persons__desc
 {
-    -webkit-transition: opacity .2s;
-       -moz-transition: opacity .2s;
-            transition: opacity .2s;
-
-    /*visibility: hidden;*/
-    opacity: 0;
-
     margin: 0 -30px;
 
     font-size: 16px;
     line-height: 24px;
+
+    /*visibility: hidden;*/
+    opacity: 0;
+
+    -webkit-transition: opacity .2s;
+       -moz-transition: opacity .2s;
+            transition: opacity .2s;
 }
 
 .persons__item_hovered_yes .persons__desc

@@ -9,10 +9,10 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                     this._personsYPos = this.findBlockInside('persons').domElem.offset().top;
 
                     var color = this.__self.getRandomColor();
-                    this._setColor({ color: color });
+                    this._setColor({color: color});
 
                     var choisers = this.findBlocksOn('choiser', 'persons');
-                    for (var i = 0, len = choisers.length; i < len; i++) {
+                    for(var i = 0, len = choisers.length; i < len; i++) {
                         choisers[i].on('colorChange', this._onColorChange, this);
                     }
                 },
@@ -25,8 +25,8 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             this._page.setMod('color', data.color);
             this._person.setMod('color', data.color);
 
-            if (data.scroll === true)
-                $('body').animate({ scrollTop: this._personsYPos }, 'fast');
+            if(data.scroll === true)
+                $('body').animate({scrollTop: this._personsYPos}, 'fast');
         },
     }, {
         getRandomColor: function() {

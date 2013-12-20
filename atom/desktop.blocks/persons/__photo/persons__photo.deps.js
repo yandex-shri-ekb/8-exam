@@ -1,5 +1,5 @@
 ({
     mustDeps: [
-        { mods: { color: ['yellow', 'red', 'blue'] } },
+        {mods: {color: ['yellow', 'red', 'blue']}},
     ],
 })

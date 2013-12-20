@@ -4,8 +4,8 @@
     height: 90px;
     margin: 0 auto;
 
+    font: 0/0 a;
+
     color: transparent;
     background: url(header__flag.png);
-
-    font: 0/0 a;
 }
