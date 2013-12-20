@@ -15,8 +15,6 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
         _showPopup: function() {
             this._popup.setMod('showed', 'yes');
         },
-    }, {
-
     });
 
     provide(BEMDOM);

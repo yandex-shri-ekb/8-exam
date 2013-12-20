@@ -7,11 +7,11 @@ block video {
         {
             elem: 'link',
             tag: 'a',
-            attrs: { title: 'Открыть видео' },
-            mix: [{ block: 'i-popup-controller', elem: 'link' }],
+            attrs: {title: 'Открыть видео'},
+            mix: [{block: 'i-popup-controller', elem: 'link'}],
             js: true,
             content: [
-                { elem: 'link-image' },
+                {elem: 'link-image'},
                 'Весь сайт в одном видео'
             ]
         }

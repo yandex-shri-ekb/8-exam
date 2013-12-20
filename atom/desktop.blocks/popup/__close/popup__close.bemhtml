@@ -1,4 +1,4 @@
 elem close {
     tag: 'a',
-    attrs: { title: 'Закрыть' }
+    attrs: {title: 'Закрыть'}
 }

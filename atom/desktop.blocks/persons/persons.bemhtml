@@ -1,6 +1,6 @@
 block persons {
     js: true,
-    mix: [{ block: 'i-color-controller', elem: 'choiser' }],
+    mix: [{block: 'i-color-controller', elem: 'choiser'}],
     content: [
         {
             elem: 'items',
@@ -11,11 +11,11 @@ block persons {
                         {
                             elem: 'link',
                             tag: 'a',
-                            mods: { color: 'yellow' },
+                            mods: {color: 'yellow'},
                             content: [
                                 {
                                     elem: 'photo',
-                                    mods: { color: 'yellow' }
+                                    mods: {color: 'yellow'}
                                 },
                                 {
                                     elem: 'name',
@@ -35,11 +35,11 @@ block persons {
                         {
                             elem: 'link',
                             tag: 'a',
-                            mods: { color: 'red' },
+                            mods: {color: 'red'},
                             content: [
                                 {
                                     elem: 'photo',
-                                    mods: { color: 'red' }
+                                    mods: {color: 'red'}
                                 },
                                 {
                                     elem: 'name',
@@ -59,11 +59,11 @@ block persons {
                         {
                             elem: 'link',
                             tag: 'a',
-                            mods: { color: 'blue' },
+                            mods: {color: 'blue'},
                             content: [
                                 {
                                     elem: 'photo',
-                                    mods: { color: 'blue' }
+                                    mods: {color: 'blue'}
                                 },
                                 {
                                     elem: 'name',
@@ -79,6 +79,6 @@ block persons {
                 }
             ]
         },
-        { elem: 'sep' }
+        {elem: 'sep'}
     ]
 }

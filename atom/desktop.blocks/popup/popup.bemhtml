@@ -3,12 +3,12 @@ block popup {
         {
             elem: 'inner',
             content: [
-                { elem: 'content', content: this.ctx.content },
-                { elem: 'close' },
-                { elem: 'shadow' }
+                {elem: 'content', content: this.ctx.content},
+                {elem: 'close'},
+                {elem: 'shadow'}
             ]
         },
-        { elem: 'va-helper' }
+        {elem: 'va-helper'}
     ],
-    mix: [{ block: 'i-popup-controller', elem: 'popup' }]
+    mix: [{block: 'i-popup-controller', elem: 'popup'}]
 }
