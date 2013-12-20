@@ -1,0 +1,21 @@
+.b-chose__line-corner
+{
+    padding: 0 2px 2px 0;
+    border: 0 none;
+    background: url(../img/chose_line_ie.png);
+}
+
+.b-chose__about {
+    display: none;
+}
+
+.b-chose__linkList:hover .b-chose__about_selected
+{
+    display: none;
+}
+
+.b-chose__link:hover .b-chose__about,
+.b-chose__about_selected
+{
+    display: block;
+}
