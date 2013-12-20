@@ -2,38 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="32cb6d48-31e9-4e51-aaff-48da309229e7" name="Default" comment="">
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\codestyle\css.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\codestyle\javascript.md" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\html\img\b-story-georgiy-line.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\html\img\line.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\html\img\notebook.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\html\img\pen.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\html\img\phone.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\html\img\photo.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\html\img\ticket.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\html\img\watch.png" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\blue\right.1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\blue\right.2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\blue\right.3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\blue\right.4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\red\right.1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\red\right.2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\red\right.3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\red\right.4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\yellow\right.1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\yellow\right.2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\yellow\right.3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="E:\Юля\work\www\ekzamen\8-exam\i\yellow\right.4.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/img/avatars-big.png" afterPath="$PROJECT_DIR$/html/img/avatars-big.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/img/avatars-small.png" afterPath="$PROJECT_DIR$/html/img/avatars-small.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/img/b-first-block.png" afterPath="$PROJECT_DIR$/html/img/b-first-block.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/img/play-video.png" afterPath="$PROJECT_DIR$/html/img/play-video.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/b-first-block.css" afterPath="$PROJECT_DIR$/html/css/b-first-block.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/b-story.css" afterPath="$PROJECT_DIR$/html/css/b-story.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/general.css" afterPath="$PROJECT_DIR$/html/css/general.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/index.html" afterPath="$PROJECT_DIR$/html/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/css/style.css" afterPath="$PROJECT_DIR$/html/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/html/js/script.js" afterPath="$PROJECT_DIR$/html/js/script.js" />
     </list>
     <ignored path="8-exam.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -59,16 +29,16 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="435" column="22" selection-start="31743" selection-end="31743" vertical-scroll-proportion="-7.3846154" vertical-offset="7203" max-vertical-offset="8160">
+            <state line="12" column="16" selection-start="311" selection-end="326" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="8160">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="142" column="18" selection-start="6516" selection-end="6537" vertical-scroll-proportion="0.0" vertical-offset="1992" max-vertical-offset="4012">
+            <state line="31" column="43" selection-start="682" selection-end="682" vertical-scroll-proportion="0.4131403" vertical-offset="156" max-vertical-offset="4148">
               <folding />
             </state>
           </provider>
@@ -77,7 +47,7 @@
       <file leaf-file-name="b-first-block.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/b-first-block.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="147" column="37" selection-start="2279" selection-end="2285" vertical-scroll-proportion="-11.64" vertical-offset="2208" max-vertical-offset="3638">
+            <state line="147" column="37" selection-start="2279" selection-end="2285" vertical-scroll-proportion="0.0" vertical-offset="2208" max-vertical-offset="3638">
               <folding />
             </state>
           </provider>
@@ -92,10 +62,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="b-story.css" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="b-story.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/b-story.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="72" selection-end="90" vertical-scroll-proportion="0.09465479" vertical-offset="0" max-vertical-offset="7276">
+            <state line="5" column="0" selection-start="72" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="7276">
               <folding />
             </state>
           </provider>
@@ -104,7 +74,7 @@
       <file leaf-file-name="style.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="18" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="204">
+            <state line="6" column="18" selection-start="176" selection-end="176" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="204">
               <folding />
             </state>
           </provider>
@@ -113,7 +83,7 @@
       <file leaf-file-name="b-footer.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/b-footer.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="1" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="612">
+            <state line="30" column="1" selection-start="474" selection-end="474" vertical-scroll-proportion="0.0" vertical-offset="510" max-vertical-offset="612">
               <folding />
             </state>
           </provider>
@@ -122,7 +92,7 @@
       <file leaf-file-name="lightbox.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/lightbox.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="561">
+            <state line="27" column="0" selection-start="497" selection-end="497" vertical-scroll-proportion="0.0" vertical-offset="459" max-vertical-offset="561">
               <folding />
             </state>
           </provider>
@@ -131,7 +101,7 @@
       <file leaf-file-name="general.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/general.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="12" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2465">
+            <state line="29" column="12" selection-start="339" selection-end="339" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="2465">
               <folding />
             </state>
           </provider>
@@ -165,8 +135,6 @@
     <option name="changedFiles">
       <list>
         <option value="$PROJECT_DIR$/html/css/b-first-block.css" />
-        <option value="$PROJECT_DIR$/html/index.html" />
-        <option value="$PROJECT_DIR$/html/js/script.js" />
         <option value="$PROJECT_DIR$/html/css/floating-switch.css" />
         <option value="$PROJECT_DIR$/html/css/lightbox.css" />
         <option value="$PROJECT_DIR$/html/css/style.css" />
@@ -174,6 +142,8 @@
         <option value="$PROJECT_DIR$/html/css/b-footer.css" />
         <option value="$PROJECT_DIR$/html/css/b-right-side.css" />
         <option value="$PROJECT_DIR$/html/css/b-story.css" />
+        <option value="$PROJECT_DIR$/html/index.html" />
+        <option value="$PROJECT_DIR$/html/js/script.js" />
       </list>
     </option>
   </component>
@@ -210,6 +180,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -280,7 +251,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -314,7 +284,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -392,21 +362,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/b-first-block.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="37" selection-start="2279" selection-end="2285" vertical-scroll-proportion="-11.64" vertical-offset="2208" max-vertical-offset="3638">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="18" selection-start="6516" selection-end="6537" vertical-scroll-proportion="0.0" vertical-offset="1992" max-vertical-offset="4012">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="435" column="22" selection-start="31743" selection-end="31743" vertical-scroll-proportion="-7.3846154" vertical-offset="7203" max-vertical-offset="8160">
+        <state line="147" column="37" selection-start="2279" selection-end="2285" vertical-scroll-proportion="0.0" vertical-offset="2208" max-vertical-offset="3638">
           <folding />
         </state>
       </provider>
@@ -455,7 +411,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/html/css/b-story.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="72" selection-end="90" vertical-scroll-proportion="0.09465479" vertical-offset="0" max-vertical-offset="7276">
+        <state line="5" column="0" selection-start="72" selection-end="90" vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="7276">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="16" selection-start="311" selection-end="326" vertical-scroll-proportion="-4.0" vertical-offset="0" max-vertical-offset="8160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/html/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="43" selection-start="682" selection-end="682" vertical-scroll-proportion="0.4131403" vertical-offset="156" max-vertical-offset="4148">
           <folding />
         </state>
       </provider>

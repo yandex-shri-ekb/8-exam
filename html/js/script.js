@@ -6,6 +6,7 @@ $(document).ready(function(){
     hoverPerson();
     switchingPersonFloat();
     changeStatusPerson();
+    topAfterClickPersonBottom();
 });
 
 $( window ).resize(function() {
@@ -25,25 +26,27 @@ function toggleRightSide(){
         $('.open-icon').show();
 
 
-        rightSide.click(function(){
+        rightSide.toggle(function(){
             $('.open-icon').removeClass('open-icon').addClass('close-icon');
-
             var windowWidth = $(window).width();
-            var leftMargin = windowWidth-700;
+            var leftMargin = windowWidth-810;
 
             $(this).animate({
                 left: leftMargin
             }, 500);
-
-            $('.close-icon').click(function(){
-                $(this).removeClass('close-icon').addClass('open-icon');
+            }, function(){
+                $('.close-icon').removeClass('close-icon').addClass('open-icon');
                 $('.b-right-side').animate({
                     left: "970px"
                 }, 500);
 
-            });
         });
-
+        $('.close-icon').click(function(){
+            $('.close-icon').removeClass('close-icon').addClass('open-icon');
+            $('.b-right-side').animate({
+                left: "970px"
+            }, 500);
+        });
     } else{
 
         $('.b-right-side').css('cursor', 'default');
@@ -226,5 +229,11 @@ function floatingSwitch(){
             $('.b-float-switch').fadeOut(500);
             $('.b-float-person').fadeOut(500);
         }
+    });
+}
+
+function topAfterClickPersonBottom(){
+    $('.b-person_bottom .b-person-avatar').click(function(){
+        $('html, body').animate({scrollTop: 1500}, 'slow')
     });
 }
