@@ -1,0 +1,30 @@
+.header
+{
+    display: block;
+
+    height: 550px;
+
+    border-bottom: solid 2px;
+}
+
+.header__logo
+{
+    position: relative;
+    top: -6px;
+
+    width: 146px;
+    height: 100px;
+    margin: 0 auto;
+
+    background: url(header__logo.png);
+}
+
+.header__title
+{
+    margin-top: 260px;
+    padding: 0 40px;
+
+    text-align: center;
+
+    font: 400 46px/48px sans-serif;
+}

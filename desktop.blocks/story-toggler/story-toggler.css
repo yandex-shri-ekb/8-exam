@@ -1,0 +1,152 @@
+.story-toggler
+{
+    position: fixed;
+    z-index: 2;
+    top: -100px;
+    left: 0;
+
+    width: 970px;
+
+    text-align: center;
+}
+
+.story-toggler__toggle-item
+{
+    display: inline-block;
+
+    width: 80px;
+    height: 75px;
+    margin: 0 15px;
+
+    cursor: pointer;
+
+    border: solid 2px rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    background-color: rgba(0, 0, 0, 0.2);
+    background-image: url("../../desktop.blocks/story-toggler/story-icons.png");
+}
+
+.story-toggler__toggle-item_active
+{
+    box-shadow: inset 0 0 10px #000;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_yellow
+{
+    background-position: -100px 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_red
+{
+    background-position: 0 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_blue
+{
+    background-position: -200px 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_yellow.story-toggler__toggle-item_active
+{
+    background-position: -396px 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_red.story-toggler__toggle-item_active
+{
+    background-position: -298px 6px;
+}
+
+.story-toggler_block_1 .story-toggler__toggle-item_color_blue.story-toggler__toggle-item_active
+{
+    background-position: -497px 6px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_yellow
+{
+    background-position: -100px -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_red
+{
+    background-position: 0 -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_blue
+{
+    background-position: -200px -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_yellow.story-toggler__toggle-item_active
+{
+    background-position: -396px -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_red.story-toggler__toggle-item_active
+{
+    background-position: -298px -78px;
+}
+
+.story-toggler_block_2 .story-toggler__toggle-item_color_blue.story-toggler__toggle-item_active
+{
+    background-position: -497px -78px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_yellow
+{
+    background-position: -100px -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_red
+{
+    background-position: 0 -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_blue
+{
+    background-position: -198px -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_yellow.story-toggler__toggle-item_active
+{
+    background-position: -396px -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_red.story-toggler__toggle-item_active
+{
+    background-position: -298px -163px;
+}
+
+.story-toggler_block_3 .story-toggler__toggle-item_color_blue.story-toggler__toggle-item_active
+{
+    background-position: -498px -163px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_yellow
+{
+    background-position: -100px -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_red
+{
+    background-position: 0 -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_blue
+{
+    background-position: -198px -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_yellow.story-toggler__toggle-item_active
+{
+    background-position: -398px -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_red.story-toggler__toggle-item_active
+{
+    background-position: -298px -248px;
+}
+
+.story-toggler_block_4 .story-toggler__toggle-item_color_blue.story-toggler__toggle-item_active
+{
+    background-position: -496px -248px;
+}

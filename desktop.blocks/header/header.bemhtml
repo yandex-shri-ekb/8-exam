@@ -1,0 +1,12 @@
+block header {
+    content: [
+        {
+            elem: 'logo'
+        },
+        {
+            elem: 'title',
+            tag: 'h1',
+            content: '— А что если интернет подстроится под меня?'
+        }
+    ]
+}

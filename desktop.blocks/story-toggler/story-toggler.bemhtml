@@ -1,0 +1,17 @@
+block story-toggler {
+    content: [
+        {
+            elem: 'toggle-item',
+            elemMods: { 'color': 'yellow' }
+
+        },
+        {
+            elem: 'toggle-item',
+            elemMods: { 'color': 'red' }
+        },
+        {
+            elem: 'toggle-item',
+            elemMods: { 'color': 'blue' }
+        }
+    ]
+}

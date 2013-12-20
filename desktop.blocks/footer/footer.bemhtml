@@ -1,0 +1,47 @@
+block footer {
+    content: [
+        {
+            elem: 'text',
+            content: [
+                {
+                    tag: 'p',
+                    content: 'Мир один, а люди разные. Так и интернет — он один, но для каждого разный.'
+                },
+                {
+                    tag: 'p',
+                    content: 'Теперь посмотрите, как планировали путешествие в Таиланд другие герои.'
+                }
+            ]
+        },
+        {
+            elem: 'logo'
+        },
+        {
+            elem: 'links',
+            content: [
+                {
+                    elem: 'link',
+                    tag: 'a',
+                    attrs: {
+                        href: '//help.yandex.ru/search/'
+                    },
+                    content: 'Помощь'
+                },
+                {
+                    elem: 'link',
+                    tag: 'a',
+                    attrs: {
+                        href: '//feedback2.yandex.ru/atom/'
+                    },
+                    content: 'Обратная связь'
+                },
+                {
+                    elem: 'copy',
+                    tag: 'span',
+                    content: '&copy; 2013 ООО «Яндекс»'
+                }
+
+            ]
+        }
+    ]
+}

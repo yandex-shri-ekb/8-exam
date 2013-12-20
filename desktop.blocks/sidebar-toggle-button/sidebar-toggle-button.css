@@ -1,0 +1,36 @@
+.sidebar-toggle-button
+{
+    position: fixed;
+    z-index: 10;
+    top: 35px;
+    right: 35px;
+
+    width: 67px;
+    height: 67px;
+
+    cursor: pointer;
+
+    border: 0;
+    outline: 0;
+    background: url('sidebar-toggle-button.png');
+}
+
+.sidebar-toggle-button_state_help
+{
+    background-position: 0 0;
+}
+
+.sidebar-toggle-button_state_help:hover
+{
+    background-position: 0 -80px;
+}
+
+.sidebar-toggle-button_state_close
+{
+    background-position: 67px 0;
+}
+
+.sidebar-toggle-button_state_close:hover
+{
+    background-position: 67px -80px;
+}
