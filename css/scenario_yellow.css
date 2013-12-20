@@ -1,0 +1,224 @@
+
+.b-page__separator-stable_yellow
+{
+    position: absolute;
+    left: 1px;
+    width: 726px;
+    background: no-repeat url(../img/way_yellow.png);
+}
+
+.b-page__separator-line_yellow_1
+{
+    margin: 0 0 147px 136px;
+    height: 355px;
+}
+
+.b-page__separator-stable_yellow_1
+{
+    bottom: -61px;
+    height: 210px;
+    background-position: 0 0;
+}
+
+.b-page__separator-line_yellow_2
+{
+    margin: 0 0 195px 624px;
+    height: 305px;
+}
+
+.b-page__separator-stable_yellow_2
+{
+    bottom: -62px;
+    height: 260px;
+    background-position: 0 -210px;
+}
+
+.b-page__separator-line_yellow_3
+{
+    margin: 0 0 107px 136px;
+    height: 396px;
+}
+
+.b-page__separator-stable_yellow_3
+{
+    bottom: -61px;
+    height: 171px;
+    background-position: 0 -469px;
+}
+
+.b-page__separator-line_yellow_4
+{
+    margin: 0 0 333px 624px;
+    height: 189px;
+}
+
+.b-page__separator-stable_yellow_4
+{
+    bottom: -38px;
+    height: 399px;
+    background-position: 0 -614px;
+}
+
+.b-scenario__pic_yellow
+{
+    position: absolute;
+    z-index: 1;
+    background: no-repeat url(../img/scenario_yellow.png);
+}
+
+.b-scenario__pic_yellow_aviaticket
+{
+    bottom: 238px;
+    left: -147px;
+    width: 621px;
+    height: 245px;
+    background-position: 0 -222px;
+}
+
+.b-scenario__pic_yellow_compass
+{
+    top: 318px;
+    left: 564px;
+    width: 150px;
+    height: 161px;
+    background-position: -340px -28px;
+}
+
+.b-scenario__pic_yellow_book
+{
+    top: 319px;
+    left: 798px;
+    width: 306px;
+    height: 394px;
+    background-position: -924px -838px;
+}
+
+.b-scenario__pic_yellow_map
+{
+    top: -36px;
+    left: 486px;
+    width: 295px;
+    height: 218px;
+    background-position: 0 0;
+}
+
+.b-scenario__pic_yellow_polaroid
+{
+    top: 359px;
+    left: -90px;
+    width: 485px;
+    height: 325px;
+    background-position: -707px 0;
+}
+
+.b-scenario__pic_yellow_iphone
+{
+    bottom: 185px;
+    left: 642px;
+    width: 150px;
+    height: 282px;
+    background-position: -1127px -556px;
+}
+
+.b-scenario__pic_yellow_laptop
+{
+    top: 80px;
+    left: 96px;
+    width: 384px;
+    height: 492px;
+    background-position: 0 -496px;
+}
+
+.b-scenario__pic_yellow_magazine
+{
+    top: 721px;
+    left: 750px;
+    width: 306px;
+    height: 394px;
+    background-position: -924px -838px;
+}
+
+.b-scenario__pic_yellow_backpack
+{
+    top: 80px;
+    left: 96px;
+    width: 396px;
+    height: 395px;
+    background-position: -384px -505px;
+}
+
+.b-scenario__pic_yellow_carton
+{
+    bottom: 346px;
+    left: 564px;
+    width: 454px;
+    height: 133px;
+    background-position: -150px -1232px;
+}
+
+.b-scenario__pic_yellow_camera
+{
+    top: 567px;
+    left: 564px;
+    width: 229px;
+    height: 164px;
+    background-position: -620px -1232px;
+}
+
+.b-scenario__pic_yellow_bottle
+{
+    top: 557px;
+    left: 408px;
+    width: 110px;
+    height: 229px;
+    background-position: -792px -596px;
+}
+
+.b-scenario__pic_yellow_notebook
+{
+    top: 557px;
+    left: 174px;
+    width: 150px;
+    height: 192px;
+    background-position: 0 -1232px;
+}
+
+.b-scenario__pic_yellow_ticket {
+    bottom: 140px;
+    left: 357px;
+    width: 195px;
+    height: 244px;
+    background-position: -923px -580px;
+}
+
+.b-scenario__pic_yellow_ipod {
+    top: 432px;
+    left: 642px;
+    width: 300px;
+    height: 239px;
+    background-position: -784px -341px;
+}
+
+.b-scenario__pic_yellow_traffic {
+    bottom: 26px;
+    left: 174px;
+    width: 150px;
+    height: 158px;
+    background-position: -545px -30px;
+}
+
+.b-scenario__pic_yellow_aeroexpress {
+    bottom: 221px;
+    left: -156px;
+    width: 628px;
+    height: 244px;
+    background-position: 0 -988px;
+}
+
+.b-scenario__pic_yellow_money {
+    top: 299px;
+    left: 426px;
+    width: 216px;
+    height: 208px;
+    background-position: -1117px -342px;
+}
