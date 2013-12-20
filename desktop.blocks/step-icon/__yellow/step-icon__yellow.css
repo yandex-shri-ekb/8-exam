@@ -1,0 +1,11 @@
+.user__icon
+{
+    background: url(../step-icon.png) no-repeat;
+    margin: 0 auto 18px;
+    cursor: pointer;
+}
+
+.step-icon__active.step-icon__step-1
+{
+    
+}

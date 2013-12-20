@@ -1,6 +1,6 @@
 .user__icon
 {
-    background: url(user__icon.png) no-repeat;
+    background: url(../step-icon.png) no-repeat;
     margin: 0 auto 18px;
     cursor: pointer;
 }
