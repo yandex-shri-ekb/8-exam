@@ -1,0 +1,136 @@
+
+.b-chose__main
+{
+    padding: 80px 126px 340px;
+}
+
+.b-chose__link
+{
+    position: relative;
+    float: left;
+    width: 234px;
+    padding: 150px 0 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.b-chose__link_yellow 
+{}
+
+.b-chose__link_red 
+{}
+
+.b-chose__link_blue 
+{}
+
+.b-chose__link_selected 
+{
+
+}
+
+.b-chose__pic 
+{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 0;
+    width: 138px;
+    margin: 0 -69px;
+    transition: linear .1s;
+    transition-property: margin, width;
+}
+
+.b-chose__pic_selected,
+.b-chose__link:hover .b-chose__pic
+{
+    width: 174px;
+    margin: -18px -87px;
+}
+
+.b-chose__caption
+{
+    display: block;
+    padding: 10px 0 10px;
+    color: #000;
+    font-weight: 700;
+}
+
+.b-chose__about 
+{
+    position: absolute;
+    top: 196px;
+    left: 50%;
+    width: 294px;
+    margin: 0 -147px;
+    opacity: 0;
+    transition: .15 linear opacity .3s;
+    color: #000;
+}
+
+.b-chose__linkList:hover .b-chose__about_selected
+{
+    opacity: 0;
+}
+
+.b-chose__link:hover .b-chose__about,
+.b-chose__about_selected
+{
+    opacity: 1;
+    transition: linear opacity .3s;
+}
+
+.b-chose__line 
+{
+    position: relative;
+    width: 762px;
+    margin: 0 auto;
+}
+
+.b-chose__line_blue 
+{}
+
+.b-chose__line-stable 
+{
+    position: absolute;
+    top: -12px;
+    width: 762px;
+    height: 63px;
+    background: url(../img/chose_line.png);
+}
+
+.b-chose__line-animated 
+{
+    position: absolute;
+    top: -12px;
+    right: 32px;
+    border-bottom: 2px solid #000;
+    -webkit-transition: .3s width linear;
+            transition: .3s width linear;
+}
+
+.b-chose__line-animated_blue 
+{
+    width: 102px;
+}
+
+.b-chose__line-animated_red 
+{
+    width: 336px;
+}
+
+.b-chose__line-animated_yellow 
+{
+    width: 572px;
+}
+
+.b-chose__line-corner 
+{
+    position: absolute;
+    top: -34px;
+    left: -12px;
+    width: 12px;
+    height: 34px;
+    border-radius: 0 0 0 10px;
+    border: solid #000;
+    border-width: 0 0 2px 2px;
+}
