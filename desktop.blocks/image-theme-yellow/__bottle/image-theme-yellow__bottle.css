@@ -1,0 +1,11 @@
+.image-theme-yellow__bottle
+{
+    background: url(image-theme-yellow__bottle.png) no-repeat;
+    width: 108px;
+    height: 228px;
+}
+
+.image-theme-yellow__bottle_push_down_yes
+{
+    margin-top: 262px;
+}

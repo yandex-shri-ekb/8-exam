@@ -1,7 +1,7 @@
 ({
     shouldDeps: [
-        { elem: 'orbital' },
-        { elem: 'title' },
-        { elem: 'ya-logo' }
+        { block: 'header' },
+        { block: 'start' },
+        { block: 'users' }
     ]
 })

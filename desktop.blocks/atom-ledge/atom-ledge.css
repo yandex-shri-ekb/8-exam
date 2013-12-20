@@ -1,0 +1,10 @@
+.ledge
+{
+    position: absolute;
+    left: 972px;
+    overflow: hidden;
+    background: yellow;
+    top: 0;
+    bottom: 0;
+    margin: -18px 0;
+}

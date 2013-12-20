@@ -1,0 +1,8 @@
+.head__orbital
+{
+    background: url(head__orbital.png) no-repeat;
+    position: absolute;
+    width: 954px;
+    height: 593px;
+    margin: -2px 0 0 -20px;
+}
