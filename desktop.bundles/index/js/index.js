@@ -69,8 +69,8 @@ var App = (function() {
     };
 
     App.prototype._showRandomTheme = function() {
-        var themes = ['yellow', /* 'red',*/ 'blue'];
-        var i = getRandomInt(0, 1);
+        var themes = ['red']; /*'yellow',  'red', 'blue'];*/
+        var i = getRandomInt(0, 0);
         var theme = themes[i];
         this._activateTheme(theme);
         this._showUserText(theme);

@@ -1,17 +1,11 @@
 .image-theme-red__keys
 {
     background: url(image-theme-red__keys.png) no-repeat;
-    width: 475px;
-    height: 409px;
-}
-/*
-
-.image-theme-red__keys_push_up_yes
-{
-    margin-top: -124px;
+    width: 222px;
+    height: 147px;
 }
 
-.image-theme-red__keys_push_left_yes
+.image-theme-red__keys_push_down_yes
 {
-    margin-left: -75px;
-}*/
+    margin-top: 120px;
+}

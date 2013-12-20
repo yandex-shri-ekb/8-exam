@@ -22,7 +22,7 @@
                         content: [
                             {
                                 elem: 'border',
-                                mods: {theme: 'blue'},
+                                mods: {theme: 'red'},
                                 content: [
                                     {block: 'header'},
                                     {block: 'users', mods: { 'pos': 'top' }},
@@ -64,6 +64,7 @@
                                                 }
                                             ]},
                                             {block: 'story-theme-yellow', mix: {block: 'story'}},
+                                            {block: 'story-theme-red', mix: {block: 'story'}},
                                             {block: 'story-theme-blue', mix: {block: 'story'}}
                                         ]
                                    },

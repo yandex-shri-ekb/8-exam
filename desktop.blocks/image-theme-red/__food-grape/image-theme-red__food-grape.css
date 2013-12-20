@@ -1,17 +1,11 @@
-.image-theme-red__grape
+.image-theme-red__food-grape
 {
-    background: url(image-theme-red__grape.png) no-repeat;
-    width: 475px;
-    height: 409px;
-}
-/*
-
-.image-theme-red__grape_push_up_yes
-{
-    margin-top: -124px;
+    background: url(image-theme-red__food-grape.png) no-repeat;
+    width: 228px;
+    height: 231px;
 }
 
-.image-theme-red__grape_push_left_yes
+.image-theme-red__food-grape_push_down_yes
 {
-    margin-left: -75px;
-}*/
+    margin-top: 40px;
+}

@@ -160,7 +160,7 @@ block 'story-theme-red' {
                         content: [
                             {
                                 block: 'path-theme-red',
-                                mix: {block: 'grid__module', mods: {col: 2, span: 9}},
+                                mix: {block: 'grid__module', mods: {col: 2, span: 8}},
                                 content: {elem: 'step-4'}
                             },
                             {
@@ -208,7 +208,7 @@ block 'story-theme-red' {
                         content: [
                             {
                                 block: 'path-theme-red',
-                                mix: {block: 'grid__module', mods: {col: 4, span: 8}},
+                                mix: {block: 'grid__module', mods: {col: 7, span: 4}},
                                 content: {elem: 'step-5'}
                             },
                             {

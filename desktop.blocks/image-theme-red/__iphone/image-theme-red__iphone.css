@@ -1,17 +1,11 @@
-.image-theme-red__iphine
+.image-theme-red__iphone
 {
-    background: url(image-theme-red__iphine.png) no-repeat;
-    width: 475px;
-    height: 409px;
-}
-/*
-
-.image-theme-red__iphine_push_up_yes
-{
-    margin-top: -124px;
+    background: url(image-theme-red__iphone.png) no-repeat;
+    width: 150px;
+    height: 280px;
 }
 
-.image-theme-red__iphine_push_left_yes
+.image-theme-red__iphone_pushd_down_yes
 {
-    margin-left: -75px;
-}*/
+    margin-top: 74px
+}

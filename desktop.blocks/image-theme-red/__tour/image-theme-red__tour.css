@@ -1,17 +1,11 @@
 .image-theme-red__tour
 {
     background: url(image-theme-red__tour.png) no-repeat;
-    width: 475px;
-    height: 409px;
-}
-/*
-
-.image-theme-red__tour_push_up_yes
-{
-    margin-top: -124px;
+    width: 384px;
+    height: 492px;
 }
 
-.image-theme-red__tour_push_left_yes
+.image-theme-red__tour_push_down_yes
 {
-    margin-left: -75px;
-}*/
+    margin-top: 90px;
+}

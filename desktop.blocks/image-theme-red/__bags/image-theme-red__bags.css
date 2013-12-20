@@ -1,17 +1,16 @@
 .image-theme-red__bags
 {
     background: url(image-theme-red__bags.png) no-repeat;
-    width: 475px;
-    height: 409px;
+    width: 566px;
+    height: 521px;
 }
-/*
 
-.image-theme-red__bags_push_up_yes
+.image-theme-red__bags_push_down_yes
 {
-    margin-top: -124px;
+    margin-top: 278px;
 }
 
 .image-theme-red__bags_push_left_yes
 {
-    margin-left: -75px;
-}*/
+    margin-left: -155px;
+}

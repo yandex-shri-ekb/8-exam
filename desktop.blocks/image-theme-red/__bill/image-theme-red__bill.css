@@ -1,17 +1,11 @@
 .image-theme-red__bill
 {
     background: url(image-theme-red__bill.png) no-repeat;
-    width: 475px;
-    height: 409px;
-}
-/*
-
-.image-theme-red__bill_push_up_yes
-{
-    margin-top: -124px;
+    width: 220px;
+    height: 347px;
 }
 
-.image-theme-red__bill_push_left_yes
+.image-theme-red__bill_push_down_yes
 {
-    margin-left: -75px;
-}*/
+    margin-top: 72px;
+}

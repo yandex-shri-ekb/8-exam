@@ -1,7 +1,7 @@
-.path-theme-blue__step-1 {
+.path-theme-red__step-1 {
     position: absolute;
-    background: url(path-theme-blue__step-1.png) no-repeat;
-    width: 762px;
+    background: url(path-theme-red__step-1.png) no-repeat;
+    width: 763px;
     height: 97px;
     top: -40px;
 }

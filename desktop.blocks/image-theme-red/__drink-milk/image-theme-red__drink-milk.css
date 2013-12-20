@@ -1,17 +1,11 @@
 .image-theme-red__drink-milk
 {
     background: url(image-theme-red__drink-milk.png) no-repeat;
-    width: 475px;
-    height: 409px;
-}
-/*
-
-.image-theme-red__drink-milk_push_up_yes
-{
-    margin-top: -124px;
+    width: 103px;
+    height: 256px;
 }
 
-.image-theme-red__drink-milk_push_left_yes
+.image-theme-red__drink-milk_push_down_yes
 {
-    margin-left: -75px;
-}*/
+    margin-top: 212px;
+}
