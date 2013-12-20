@@ -17,7 +17,6 @@ body
 .container-content
 {
     width: 956px;
-    background: #ff8282;
     border: 2px solid #000;
     border-right: 0;
     margin: 18px;
@@ -76,7 +75,7 @@ body
     margin: 0  0 5px;
     border: 2px solid #000;
     border-radius: 5px;
-    background: #ff8282 url(/images/annotation-and-video-box__button_arrow-right.png);
+    background: url(/images/annotation-and-video-box__button_arrow-right.png);
     background-position: center center;
     background-repeat: no-repeat;
 }
@@ -84,6 +83,37 @@ body
 .annotation-and-video-box__button:hover
 {
     box-shadow: 0 0 20px #ff8282;
+}
+
+/* PERSONAGE SWITCHER! */
+.personage-switcher-box
+{
+    height: 410px;
+}
+
+.poesonage__image
+{
+    position: absolute;
+}
+
+.personage-switcher-box__pers-field
+{
+    margin-top: 82px;
+}
+
+.personage-switcher-box__yellow-field
+{
+    margin-left: 174px;
+}
+
+.personage-switcher-box__red-field
+{
+    margin-left: 408px;
+}
+
+.personage-switcher-box__blue-field
+{
+    margin-left: 642px;
 }
 
 /* STORYLINE! */
@@ -104,6 +134,7 @@ body
 {
     width: 100%;
     position: absolute;
+    background: #ffe05d;
 }
 
 .storyline-box__yellow-images
@@ -119,7 +150,7 @@ body
     position: absolute;
     top: 0;
     left: 0;
-    background: #ffe05d;
+    background: #ffe05d;  /* Чтобы было не видно линии */
 }
 
 .storyline-box__yellow_text_one  /* text */
@@ -235,9 +266,9 @@ body
 /* red */
 .storyline-box__red
 {
-    display: none;
     width: 100%;
     position: absolute;
+    background: #ff8282;
 }
 
 .storyline-box__red-images
@@ -333,12 +364,12 @@ body
 
 .storyline-box__red_image-driver-lic
 {
-    margin: 1972px 0 0 96px;
+    margin: 2070px 0 0 96px;
 }
 
 .storyline-box__red_image-keys
 {
-    margin: 2100px 0 0 260px;
+    margin: 2180px 0 0 260px;
 }
 
 .storyline-box__red_image-ipc
@@ -380,8 +411,8 @@ body
 .storyline-box__blue
 {
     width: 100%;
-    display: none;
     position: absolute;
+    background: #72c4f6;
 }
 
 .storyline-box__blue-images
@@ -390,6 +421,34 @@ body
     background: url(/images/blue/guides.png);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.storyline-box__blue_text-field
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #72c4f6;
+}
+
+.storyline-box__blue_text_one  /* text */
+{
+    margin: 80px 580px 0 96px;
+}
+
+.storyline-box__blue_text_two
+{
+    margin: 920px 96px 0 643px;
+}
+
+.storyline-box__blue_text_three
+{
+    margin: 1720px 580px 0 96px;
+}
+
+.storyline-box__blue_text_four
+{
+    margin: 2490px 96px 0 643px;
 }
 
 .storyline-box__blue_image-ticket  /* images */
@@ -404,7 +463,7 @@ body
 
 .storyline-box__blue_image-phone
 {
-    margin: 333px 0 0 -42px;
+    margin: 380px 0 0 -42px;
 }
 
 .storyline-box__blue_image-pen
@@ -505,34 +564,6 @@ body
 .storyline-box__blue_image-book
 {
     margin: 2820px 0 0 888px;
-}
-
-.storyline-box__blue_text-field
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #72c4f6;
-}
-
-.storyline-box__blue_text_one  /* text */
-{
-    margin: 80px 580px 0 96px;
-}
-
-.storyline-box__blue_text_two
-{
-    margin: 920px 96px 0 643px;
-}
-
-.storyline-box__blue_text_three
-{
-    margin: 1720px 580px 0 96px;
-}
-
-.storyline-box__blue_text_four
-{
-    margin: 2490px 96px 0 643px;
 }
 
 /* FOOTER! */

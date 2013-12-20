@@ -22,7 +22,7 @@
     </head>
     <body>
         <div class="wrap">
-            <div class="container-content backgroung-switchable">
+            <div class="container-content background-switchable">
                 <div class="drinks-and-airplanes-box">
                     <div class="drinks-and-airplanes-box__logo"></div>
                     <div class="drinks-and-airplanes-box__text-field">
@@ -31,12 +31,23 @@
                 </div>
                 <div class="annotation-and-video-box">
                     <div class="annotation-and-video-box__button-field">
-                        <div class="annotation-and-video-box__button backgroung-switchable"></div>
+                        <div class="annotation-and-video-box__button background-switchable"></div>
                         <span class="annotation-and-video-box__button-label">Весь сайт в одном видео</span>
                     </div>
                     <div class="annotation-and-video-box__text-field">
                             <p>Интернет сегодня — это не только информация и технологии, но и люди. Людей много и они все разные, а сайты для всех пользователей обычно выглядят одинаково. Яндекс уже научился адаптироваться под конкретного пользователя и готов поделиться этой технологией с другими.</p>
                             <p>«Атом». Технологическая платформа, задача которой — предоставить сайтам возможность изменять содержание страниц под конкретного пользователя.</p>
+                    </div>
+                </div>
+                <div class="personage-switcher-box">
+                    <div class="personage-switcher-box__pers-field personage-switcher-box__yellow-field">
+                        <img class="poesonage__image" src="/images/common/pers-yellow.png">
+                    </div>
+                    <div class="personage-switcher-box__pers-field personage-switcher-box__red-field">
+                        <img class="poesonage__image" src="/images/common/pers-red.png">
+                    </div>
+                    <div class="personage-switcher-box__pers-field personage-switcher-box__blue-field">
+                        <img class="poesonage__image" src="/images/common/pers-blue.png">
                     </div>
                 </div>
                 <div class="storyline-box">
@@ -198,19 +209,55 @@
         <script type="text/javascript" src="/js/jquery.stellar.min.js"></script>
         <script type="text/javascript" src="//yandex.st/share/share.js"></script>
         <script type="text/javascript">
-            $(function() {
-                $(window).stellar(); // Параллаксим все и вся
-                $('.sidebar__button').on('click', function() {
-                    var sidebar = $('.sidebar')
-                    var currentMode = sidebar.hasClass('sidebar__close');
-                    if (currentMode === true) {
-                        var sidebarClasses = sidebar.attr('class');
-                        sidebar.attr('class', sidebarClasses.replace('close', 'open'))
+            function sidebarChangeMode() {
+                var sidebar = $('.sidebar')
+                var currentMode = sidebar.hasClass('sidebar__close');
+                if (currentMode === true) {
+                    var sidebarClasses = sidebar.attr('class');
+                    sidebar.attr('class', sidebarClasses.replace('close', 'open'))
+                } else {
+                    var sidebarClasses = sidebar.attr('class');
+                    sidebar.attr('class', sidebarClasses.replace('open', 'close'))
+                }
+            }
+
+            function changePers(pers) {
+                var personages = {
+                    yellow: $('.storyline-box__yellow'),
+                    red: $('.storyline-box__red'),
+                    blue: $('.storyline-box__blue')
+                }
+                for (p in personages) {
+                    if (p === pers) {
+                        personages[p].css('visibility', 'visible');
                     } else {
-                        var sidebarClasses = sidebar.attr('class');
-                        sidebar.attr('class', sidebarClasses.replace('open', 'close'))
+                        personages[p].css('visibility', 'hidden');
                     }
+                }
+                var persColor = personages[pers].css('background-color');
+                var backgroundSwitchable = $('.background-switchable');
+                backgroundSwitchable.each(function(i, e) {
+                    $(e).css('background-color', persColor);
                 });
+            }
+
+            $(function() {
+                var personages = ['yellow', 'red', 'blue'];
+                // Set random pers
+                var r = Math.floor(Math.random() * personages.length);
+                changePers(personages[r]);
+                $(window).stellar(); // Параллаксим все и вся
+                $('.sidebar__button').on('click', sidebarChangeMode);
+                // Повесим обработчики
+                $('.personage-switcher-box__yellow-field').on('click', function() {
+                    changePers('yellow')
+                })
+                $('.personage-switcher-box__red-field').on('click', function() {
+                    changePers('red')
+                })
+                $('.personage-switcher-box__blue-field').on('click', function() {
+                    changePers('blue')
+                })
             });
         </script>
     </body>
