@@ -207,17 +207,20 @@ function floatingSwitch(){
 
             $('.b-float-switch').find('.b-float-switch__item').removeClass('active');
             if($('.b-container').hasClass('b-container_yellow')){
+                $('.b-float-person').removeClass('b-float-person_alex b-float-person_georgiy');
                 $('.b-float-person').addClass('b-float-person_max');
                 $('.b-float-switch__item_max').addClass('active');
             }
 
             if($('.b-container').hasClass('b-container_red')){
+                $('.b-float-person').removeClass('b-float-person_max b-float-person_georgiy');
                 $('.b-float-person').addClass('b-float-person_alex');
                 $('.b-float-switch__item_alex').addClass('active');
 
             }
 
             if($('.b-container').hasClass('b-container_blue')){
+                $('.b-float-person').removeClass('b-float-person_max b-float-person_alex');
                 $('.b-float-person').addClass('b-float-person_georgiy');
                 $('.b-float-switch__item_georgiy').addClass('active');
             }
