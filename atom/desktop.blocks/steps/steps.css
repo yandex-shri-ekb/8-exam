@@ -1,6 +1,19 @@
 .steps
 {
-    float: left;
-
     width: 952px;
+}
+
+.page_color_yellow .steps_color_yellow
+{
+    display: block !important;
+}
+
+.page_color_red .steps_color_red
+{
+    display: block !important;
+}
+
+.page_color_blue .steps_color_blue
+{
+    display: block !important;
 }

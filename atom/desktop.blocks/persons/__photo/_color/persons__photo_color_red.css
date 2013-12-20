@@ -1,12 +1,12 @@
 .persons__photo_color_red
 {
-    background-image: url(red.png);
+    background-position: -140px 50%;
 }
 
 .page_color_red .persons__photo_color_red
 {
-    width: 174px;
-    height: 174px;
+    width: 175px;
+    height: 175px;
 
-    background-image: url(red_current.png);
+    background: -175px 0 url(persons__photo.png);
 }

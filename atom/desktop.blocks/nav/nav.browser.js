@@ -8,9 +8,9 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                 },
                 hided: function() {
                     $(this.domElem).animate({top: -100}, 'fast');
-                },
-            },
-        },
+                }
+            }
+        }
     });
 
     provide(BEMDOM);

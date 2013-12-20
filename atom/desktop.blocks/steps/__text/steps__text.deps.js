@@ -1,9 +1,5 @@
 ({
     mustDeps: [
-        {
-            mods: {
-                pull: ['right', 'left'],
-            },
-        },
-    ],
+        {mods: {pull: ['right', 'left']}}
+    ]
 })

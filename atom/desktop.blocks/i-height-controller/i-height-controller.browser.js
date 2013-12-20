@@ -13,9 +13,14 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                         var height = out.outerHeight() - borderWidth;
                         recipient.css('height', height);
                     }
-                },
-            },
-        },
+
+                    steps = this.findBlocksInside('steps');
+                    for(var i = 0, len = steps.length; i < len; i++) {
+                        steps[i].domElem.css('display', 'none')
+                    }
+                }
+            }
+        }
     });
 
     provide(BEMDOM);

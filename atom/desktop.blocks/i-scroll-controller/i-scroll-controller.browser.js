@@ -5,16 +5,14 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             js: {
                 inited: function() {
                     var windowHeight = $(window).height(),
-
                         p = this.findBlocksInside('persons'),
-                        from = p[0].domElem.offset().top + p[0].domElem.outerHeight(),
-                        to = p[1].domElem.offset().top,
-
                         person = this.findBlockInside('person'),
                         nav = this.findBlockInside('nav');
 
                     $(window).on('scroll', function(e) {
-                        var scrollTop = $(window).scrollTop();
+                        var scrollTop = $(window).scrollTop(),
+                            from = p[0].domElem.offset().top + p[0].domElem.outerHeight(),
+                            to = p[1].domElem.offset().top;
 
                         if(scrollTop < from || (scrollTop + windowHeight) > to) {
                             person.setMod('status', 'hided');
@@ -24,9 +22,9 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                             nav.setMod('status', 'showed');
                         }
                     });
-                },
-            },
-        },
+                }
+            }
+        }
     });
 
     provide(BEMDOM);

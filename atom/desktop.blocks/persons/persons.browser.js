@@ -7,8 +7,8 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                     this.bindTo('link', 'click', this._onLinkClick);
                     this.bindTo('item', 'mouseenter', this._onMouseEnter);
                     this.bindTo('item', 'mouseleave', this._onMouseLeave);
-                },
-            },
+                }
+            }
         },
         _onLinkClick: function(e) {
             var color = this.getMod($(e.delegateTarget), 'color');
@@ -19,7 +19,7 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         },
         _onMouseLeave: function(e) {
             this.delMod($(e.delegateTarget), 'hovered');
-        },
+        }
     });
 
     provide(BEMDOM);

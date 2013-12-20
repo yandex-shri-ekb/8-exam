@@ -2,14 +2,17 @@ block nav {
     content: [
         {
             elem: 'ico',
+            tag: 'a',
             mods: {color: 'yellow'}
         },
         {
             elem: 'ico',
+            tag: 'a',
             mods: {color: 'red'}
         },
         {
             elem: 'ico',
+            tag: 'a',
             mods: {color: 'blue'}
         }
     ]

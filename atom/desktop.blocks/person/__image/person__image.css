@@ -15,7 +15,7 @@
 
 .person__image:hover
 {
-    opacity: .3;
+    opacity: .5;
 
     -webkit-transition: opacity .3s;
        -moz-transition: opacity .3s;

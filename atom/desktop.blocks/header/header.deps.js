@@ -1,5 +1,5 @@
 ({
     mustDeps: [
-        {elems: ['flag', 'atoms', 'title']},
-    ],
+        {elems: ['flag', 'atoms', 'title']}
+    ]
 })

@@ -2,10 +2,10 @@
 {
     display: block;
 
-    width: 138px;
-    height: 174px;
+    width: 140px;
+    height: 175px;
     margin: 0 0 10px;
 
+    background-image: url(persons__photo.png);
     background-repeat: no-repeat;
-    background-position: 50%;
 }
