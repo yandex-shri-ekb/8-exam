@@ -303,6 +303,7 @@
                 },
                 {
                     block: 'aside',
+                    js: true,
                     content: [
                         {elem: 'button', mods: {hide: 'yes', icon: 'question'}, js: true},
                         {elem: 'shadow'},
