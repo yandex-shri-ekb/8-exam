@@ -1,9 +1,0 @@
-.aside__button_icon_close
-{
-    background-position: -100% 0;
-}
-
-.aside__button_icon_close:hover
-{
-    background-position: -100% -100%;
-}

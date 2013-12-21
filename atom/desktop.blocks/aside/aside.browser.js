@@ -6,9 +6,20 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         onSetMod: {
             js: {
                 inited: function() {
-                    this.elem('button', this._onButtonClick);
                     this._resetButtonVisibility();
+                    this.bindTo('button', 'click', this._onButtonClick);
                     $(window).on('resize', $.proxy(this._resetButtonVisibility, this));
+                    $(window).on('resize', $.proxy(this._resetAsidePosition, this));
+                    this.on('openAside', this._openAside);
+                    this.on('closeAside', this._closeAside);
+                }
+            },
+            opened: {
+                yes: function() {
+                    this._resetAsidePosition();
+                },
+                no: function() {
+                    this.domElem.animate({left: this.historyWidth});
                 }
             }
         },
@@ -16,7 +27,7 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             if(this.hasMod('opened', 'yes')) {
                 this.trigger('closeAside');
             } else {
-                trigger('openAside');
+                this.trigger('openAside');
             }
         },
         _resetButtonVisibility: function() {
@@ -27,6 +38,23 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                 this.setMod(button, 'hide', 'yes');
             }
         },
+        _resetAsidePosition: function() {
+            if(this.hasMod('opened', 'yes')) {
+                var windowWidth = $(window).width(),
+                    asideLeft = windowWidth - this.asideWidth;
+                if(asideLeft > this.historyWidth) {
+                    asideLeft = this.historyWidth;
+                    this._closeAside();
+                }
+                this.domElem.animate({left: asideLeft});
+            }
+        },
+        _openAside: function() {
+            this.setMod('opened', 'yes');
+        },
+        _closeAside: function() {
+            this.setMod('opened', 'no');
+        }
     });
 
     provide(BEMDOM);
