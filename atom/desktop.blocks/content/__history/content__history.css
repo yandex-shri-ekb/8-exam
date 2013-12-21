@@ -7,6 +7,10 @@
 
     border-right: 2px solid #000;
     border-left: 2px solid #000;
+
+    -webkit-transition: background-color 0.5s;
+       -moz-transition: background-color 0.5s;
+            transition: background-color 0.5s;
 }
 
 .page_color_yellow .content__history
