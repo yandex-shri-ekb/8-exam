@@ -2,7 +2,7 @@
     mustDeps: [
         {
             mods: {
-                type: ['aside', 'footer', 'header', 'history'],
+                type: ['footer', 'header', 'history'],
                 border: ['bottom']
             }
         }

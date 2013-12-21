@@ -302,14 +302,14 @@
                     ],
                 },
                 {
-                    elem: 'aside',
+                    block: 'aside',
                     content: [
-                        {block: 'aside-button', mods: {hide: 'yes', icon: 'question'}, js: true},
+                        {elem: 'button', mods: {hide: 'yes', icon: 'question'}, js: true},
                         {elem: 'shadow'},
-                        {block: 'aside-logo'},
+                        {elem: 'ya-logo'},
                         {
                             elem: 'cell',
-                            mods: {type: 'aside', border: 'bottom'},
+                            mods: {border: 'bottom'},
                             mix: [{block: 'i-height-setter', elem: 'block'}],
                             mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'header'}}],
                             content: [
@@ -360,7 +360,6 @@
                         },
                         {
                             elem: 'cell',
-                            mods: {type: 'aside'},
                             content: [
                                 {
                                     block: 'aside-items',
@@ -636,7 +635,6 @@
                         },
                         {
                             elem: 'cell',
-                            mods: {type: 'aside'},
                             mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'footer'}}],
                             content: {
                                 block: 'aside-items',

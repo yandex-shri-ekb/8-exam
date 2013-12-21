@@ -1,9 +1,9 @@
-.aside-button_icon_question
+.aside__button_icon_question
 {
     background-position: 0 0;
 }
 
-.aside-button_icon_question:hover
+.aside__button_icon_question:hover
 {
     background-position: 0 -100%;
 }

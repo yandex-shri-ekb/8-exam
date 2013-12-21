@@ -1,14 +1,14 @@
-.aside-button
+.aside__button
 {
     position: fixed;
     z-index: 20;
     top: 70px;
     right: 20px;
 
-    width: 65px;
-    height: 69px;
+    width: 67px;
+    height: 71px;
 
     cursor: pointer;
 
-    background-image: url(aside-button.png);
+    background-image: url(aside__button.png);
 }

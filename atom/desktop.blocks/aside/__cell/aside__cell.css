@@ -1,4 +1,4 @@
-.content__cell:after
+.aside__cell:after
 {
     display: table;
     clear: both;

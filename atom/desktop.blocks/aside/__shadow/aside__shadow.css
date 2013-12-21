@@ -1,4 +1,4 @@
-.content__shadow
+.aside__shadow
 {
     position: absolute;
     z-index: 10;
@@ -10,6 +10,6 @@
 
     content: "";
 
-    background: url(content__shadow.png);
+    background: url(aside__shadow.png);
     background: rgba(0,0,0, .15);
 }

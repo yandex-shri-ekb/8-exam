@@ -1,4 +1,4 @@
-.aside-logo
+.aside__ya-logo
 {
     position: absolute;
     top: 15px;
@@ -8,5 +8,5 @@
     height: 30px;
     margin: 10px 982px 0 0;
 
-    background: url(aside-logo.png);
+    background: url(aside__ya-logo.png);
 }
