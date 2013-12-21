@@ -11,9 +11,10 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                     var color = this.__self.getRandomColor();
                     this._setColor({color: color});
 
-                    var choisers = this.findBlocksOn('choiser', 'persons');
-                    for(var i = 0, len = choisers.length; i < len; i++) {
-                        choisers[i].on('colorChange', this._onColorChange, this);
+                    var switchers = this.findBlocksInside('persons');
+                    switchers.push(this.findBlockInside('nav'));
+                    for(var i = 0, len = switchers.length; i < len; i++) {
+                        switchers[i].on('colorChange', this._onColorChange, this);
                     }
                 }
             }

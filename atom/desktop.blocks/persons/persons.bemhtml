@@ -1,6 +1,6 @@
 block persons {
     js: true,
-    mix: [{block: 'i-color-controller', elem: 'choiser'}],
+    mix: [{block: 'i-color-controller'}],
     content: [
         {
             elem: 'items',
