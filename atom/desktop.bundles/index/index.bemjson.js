@@ -43,7 +43,7 @@
                         {
                             elem: 'cell',
                             mods: {type: 'header'},
-                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'header'}}],
+                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'header'}}],
                             content: [
                                 {
                                     block: 'header',
@@ -68,7 +68,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'one'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'yellow-1'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'yellow-1'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -84,7 +84,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'two'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'yellow-2'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'yellow-2'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -100,7 +100,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'three'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'yellow-3'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'yellow-3'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -117,7 +117,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'four'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'yellow-4'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'yellow-4'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -140,7 +140,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'one'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'red-1'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'red-1'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -157,7 +157,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'two'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'red-2'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'red-2'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -174,7 +174,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'three'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'red-3'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'red-3'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -192,7 +192,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'four'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'red-4'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'red-4'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -218,7 +218,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'one'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'blue-1'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'blue-1'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -236,7 +236,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'two'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'blue-2'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'blue-2'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -253,7 +253,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'three'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'blue-3'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'blue-3'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -270,7 +270,7 @@
                                         {
                                             elem: 'item',
                                             mods: {num: 'four'},
-                                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'blue-4'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'blue-4'}}],
                                             content: [
                                                 {
                                                     elem: 'text',
@@ -290,7 +290,7 @@
                         {
                             elem: 'cell',
                             mods: {type: 'footer',},
-                            mix: [{block: 'i-height-controller', elem: 'out', mods: {name: 'footer'}}],
+                            mix: [{block: 'i-height-controller', elem: 'h-exp', mods: {name: 'footer'}}],
                             content: [
                                 {block: 'persons', mods: {bottom: 'yes'}},
                                 {
@@ -311,7 +311,7 @@
                             elem: 'cell',
                             mods: {type: 'aside', border: 'bottom'},
                             mix: [{block: 'i-height-setter', elem: 'block'}],
-                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'header'}}],
+                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'header'}}],
                             content: [
                                 {
                                     block: 'aside-items',
@@ -368,7 +368,7 @@
                                     content: [
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'yellow-1'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'yellow-1'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -389,7 +389,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'yellow-2'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'yellow-2'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -410,7 +410,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'yellow-3'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'yellow-3'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -431,7 +431,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'yellow-4'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'yellow-4'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -458,7 +458,7 @@
                                     content: [
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'red-1'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'red-1'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -479,7 +479,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'red-2'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'red-2'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -500,7 +500,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'red-3'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'red-3'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -521,7 +521,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'red-4'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'red-4'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -548,7 +548,7 @@
                                     content: [
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'blue-1'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'blue-1'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -569,7 +569,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'blue-2'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'blue-2'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -590,7 +590,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'blue-3'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'blue-3'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -611,7 +611,7 @@
                                         },
                                         {
                                             elem: 'item',
-                                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'blue-4'}}],
+                                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'blue-4'}}],
                                             content: {
                                                 elem: 'inner',
                                                 content: [
@@ -637,7 +637,7 @@
                         {
                             elem: 'cell',
                             mods: {type: 'aside'},
-                            mix: [{block: 'i-height-controller', elem: 'in', mods: {name: 'footer'}}],
+                            mix: [{block: 'i-height-controller', elem: 'h-imp', mods: {name: 'footer'}}],
                             content: {
                                 block: 'aside-items',
                                 content: {
