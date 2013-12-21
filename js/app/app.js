@@ -6,7 +6,7 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         charColors = ['yellow', 'red', 'blue'],
         bPageColors = ['b-page_yellow', 'b-page_red', 'b-page_blue'],
         $bPage = $('.b-page', $body),
-        coords = {};
+        infoPartInited = [];
 
     /**
      * @export app/app
@@ -35,11 +35,29 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
 
         // show story
         $('.story__char').hide();
-        $('.story-' + char).show();
+        $('#story-' + char).show();
+
+        // show info
+        $('.info__char').hide();
+        $('#info-' + char).show();
 
         // switcher
         $('.char').removeClass('char_selected');
         $('.char_' + char).addClass('char_selected');
+
+        if(infoPartInited.indexOf(char) === -1) {
+            $('#info-' + char).find('.info-part').each(function() {
+                var $part = $(this),
+                    $related = $($part.data('related')),
+                    ph = $part.outerHeight(),
+                    partBottom = $part.offset().top + ph,
+                    relatedBottom = $related.offset().top + $related.outerHeight(),
+                    h = ph + (relatedBottom - partBottom);
+                $part.height(h);
+            });
+
+            infoPartInited.push(char);
+        }
     }
 
     /**

@@ -1,5 +1,7 @@
 .story-red-part-1
 {
+    padding: 0 0 240px;
+    margin: 0 0 50px;
 }
 
 .story-red-part-1__bg
@@ -31,7 +33,9 @@
 
 .image_red-book
 {
-    margin: 80px 0 -45px;
+    position: absolute;
+    top: 80px;
+    left: 0;
 }
 
 .image_red-bear
@@ -43,7 +47,8 @@
 
 .story-red-part-2
 {
-    margin-top: 110px;
+    margin: 0 0 90px;
+    padding: 30px 0 85px;
 }
 
 .story-red-part-2__bg
@@ -51,9 +56,14 @@
     position: absolute;
     width: 100%;
     height: 565px;
-    background: url("../images/red/story-red-part-2__bg.png") 78px 0 no-repeat;
+    background: url("../images/red/story-red-part-2__bg.png") 79px 0 no-repeat;
     left: 0;
-    top: -90px;
+    top: 260px;
+}
+
+.story-red-part-2__row-1
+{
+    margin-bottom: 84px;
 }
 
 .image_red-bill
@@ -68,7 +78,22 @@
 
 .image_red-tamagotchi
 {
-    margin: -30px 0 -30px -78px;
+    position: absolute;
+    top: -30px;
+    left: -78px;
+}
+
+.image_red-glasses
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.story-red-part-3
+{
+    padding: 0 0 250px;
+    margin: 0 0 60px;
 }
 
 .image_red-imac
@@ -90,29 +115,29 @@
 
 .story-red-part-4
 {
-    padding-top: 360px;
+    padding-top: 36px;
 }
 
-.story-red-part-4__bg
+.story-red-part-3__bg
 {
     position: absolute;
     width: 100%;
     height: 565px;
-    background: url("../images/red/story-red-part-4__bg.png") 132px 0 no-repeat;
+    background: url("../images/red/story-red-part-3__bg.png") 132px 0 no-repeat;
     left: 0;
-    top: -245px;
+    top: 275px;
 }
 
 .image_red-bags
 {
-    left: -145px;
+    right: -30px;
     position: absolute;
     top: 30px;
 }
 
 .image_red-cup
 {
-    left: 510px;
+    left: 15px;
     position: absolute;
     top: -30px;
 }

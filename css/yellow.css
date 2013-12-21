@@ -26,15 +26,24 @@
 
 .story-yellow-part-2
 {
+    height: 503px;
+    margin-bottom: 92px;
+}
+
+.story-yellow-part-2__bg
+{
+    position: absolute;
+    left: 0;
+    top: 0;
     width: 100%;
     height: 565px;
-    background: url("../images/yellow/story-yellow-part-2.png") 154px -2px no-repeat;
-    margin-bottom: 30px;
+    background: url("../images/yellow/story-yellow-part-2.png") 138px 0 no-repeat;
 }
 
 .story-yellow-part-3
 {
-    padding-bottom: 344px;
+    margin-bottom: 110px;
+    padding-bottom: 234px;
 }
 
 .story-yellow-part-3__bg
@@ -100,9 +109,9 @@
 
 .story-yellow-part-5
 {
+    height: 503px;
+    margin-bottom: 94px;
     position: relative;
-    height: 565px;
-    margin-bottom: 50px;
 }
 
 .image_yellow-airticket
@@ -152,7 +161,8 @@
 
 .story-yellow-part-7
 {
-    height: 548px;
+    height: 503px;
+    margin: 0 0 45px;
 }
 
 .story-yellow-part-7__bg
