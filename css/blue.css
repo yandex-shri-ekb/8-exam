@@ -1,0 +1,55 @@
+.story-blue-part-1
+{
+    margin-bottom: 30px;
+    padding-bottom: 417px;
+}
+
+.story-blue-part-1__bg
+{
+    background: url("../images/blue/story-blue-part-1__bg.png") no-repeat scroll 152px 0 rgba(0, 0, 0, 0);
+    height: 565px;
+    left: 0;
+    position: absolute;
+    top: 285px;
+    width: 100%;
+}
+
+.image_blue-notebook
+{
+
+}
+
+.image_blue-phone
+{
+    left: -54px;
+    position: absolute;
+    top: 45px;
+}
+
+.image_blue-pen
+{
+    left: 340px;
+    position: absolute;
+    top: 50px;
+}
+
+.image_blue-ticket
+{
+    position: absolute;
+    right: 75px;
+    top: 146px;
+}
+
+.image_blue-watch
+{
+    left: 505px;
+    position: absolute;
+    top: 305px;
+}
+
+.image_blue-photo
+{
+    position: absolute;
+    right: -75px;
+    top: 260px;
+}

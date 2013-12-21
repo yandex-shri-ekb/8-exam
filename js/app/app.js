@@ -5,7 +5,8 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         $body = $(document.body),
         charColors = ['yellow', 'red', 'blue'],
         bPageColors = ['b-page_yellow', 'b-page_red', 'b-page_blue'],
-        $bPage = $('.b-page', $body);
+        $bPage = $('.b-page', $body),
+        coords = {};
 
     /**
      * @export app/app
@@ -18,24 +19,76 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         this.config = {};
     }
 
-    function _selectChar(charColor) {
+    /**
+     * @param {string} char red|blue|yellow
+     */
+    function _selectChar(char) {
+        if($bPage.hasClass('b-page_' + char)) {
+            return;
+        }
+
         $bPage.removeClass(bPageColors.join(' '));
-        $bPage.addClass('b-page_' + charColor);
+        $bPage.addClass('b-page_' + char);
 
         $('.char-text').hide();
-        $('.char-text_' + charColor).show();
+        $('.char-text_' + char).show();
 
-        //.char__image_selected
+        // show story
+        $('.story__char').hide();
+        $('.story-' + char).show();
+
+        // switcher
+        $('.char').removeClass('char_selected');
+        $('.char_' + char).addClass('char_selected');
     }
 
     /**
      */
     App.prototype.init = function() {
-        _selectChar(charColors[random.getInt(0, 2)]);
+        //_selectChar(charColors[random.getInt(0, 2)]);
+        _selectChar('blue');
 
-        setInterval(function() {
+        /*setInterval(function() {
             _selectChar(charColors[random.getInt(0, 2)]);
-        }, 5000)
+        }, 5000);*/
+
+        $('.switcher-top,.switcher-bottom').on('click', '.char', function() {
+            var $char = $(this);
+
+            switch(true) {
+                case $char.hasClass('char_yellow'):
+                    _selectChar('yellow');
+                    break;
+                case $char.hasClass('char_red'):
+                    _selectChar('red');
+                    break;
+                case $char.hasClass('char_blue'):
+                    _selectChar('blue');
+                    break;
+            }
+
+            if($char.closest('.switcher-bottom').length > 0) {
+                var scrollTo = $('.switcher-top').offset().top;
+                $body.add('html').animate({ scrollTop: scrollTo }, "slow");
+                // window.scrollTo(x-coord, y-coord);
+            }
+
+            return false;
+        });
+
+        /*
+        * $(window).scroll(function(){
+         if ($(this).scrollTop() > 100) {
+         $('.scrollup').fadeIn();
+         } else {
+         $('.scrollup').fadeOut();
+         }
+         });*/
+
+        $('.open-btn').on('click', function() {
+            var $btn = $(this);
+            $bPage.toggleClass('dev');
+        });
     };
 
     return App;

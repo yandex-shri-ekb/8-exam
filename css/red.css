@@ -1,0 +1,175 @@
+.story-red-part-1
+{
+}
+
+.story-red-part-1__bg
+{
+    position: absolute;
+    width: 100%;
+    height: 565px;
+    background: url("../images/red/story-red-part-1__bg.png") 215px 0 no-repeat;
+    left: 0;
+    top: 230px;
+}
+
+.image_red-painting
+{
+    margin-top: 65px;
+}
+
+.image_red-tour
+{
+    margin-top: -12px;
+}
+
+.image_red-passport
+{
+    position: absolute;
+    bottom: -110px;
+    right: -170px;
+}
+
+.image_red-book
+{
+    margin: 80px 0 -45px;
+}
+
+.image_red-bear
+{
+    position: absolute;
+    left: -228px;
+    top: 130px;
+}
+
+.story-red-part-2
+{
+    margin-top: 110px;
+}
+
+.story-red-part-2__bg
+{
+    position: absolute;
+    width: 100%;
+    height: 565px;
+    background: url("../images/red/story-red-part-2__bg.png") 78px 0 no-repeat;
+    left: 0;
+    top: -90px;
+}
+
+.image_red-bill
+{
+    margin: -40px 0 30px;
+}
+
+.image_red-lenses
+{
+    margin-left: -76px;
+}
+
+.image_red-tamagotchi
+{
+    margin: -30px 0 -30px -78px;
+}
+
+.image_red-imac
+{
+}
+
+.image_red-lisence
+{
+    margin-top: 60px;
+    position: relative;
+}
+
+.image_red-keys
+{
+    bottom: -38px;
+    position: absolute;
+    right: -80px;
+}
+
+.story-red-part-4
+{
+    padding-top: 360px;
+}
+
+.story-red-part-4__bg
+{
+    position: absolute;
+    width: 100%;
+    height: 565px;
+    background: url("../images/red/story-red-part-4__bg.png") 132px 0 no-repeat;
+    left: 0;
+    top: -245px;
+}
+
+.image_red-bags
+{
+    left: -145px;
+    position: absolute;
+    top: 30px;
+}
+
+.image_red-cup
+{
+    left: 510px;
+    position: absolute;
+    top: -30px;
+}
+
+.story-red-part-5
+{
+    height: 565px;
+    background: url("../images/red/story-red-part-5__bg.png") 472px 0 no-repeat;
+    margin-top: 30px;
+}
+
+.image_red-fish
+{
+    left: -288px;
+    position: absolute;
+    top: 30px;
+}
+
+.image_red-breakfast
+{
+    left: 140px;
+    position: absolute;
+    top: 22px;
+}
+
+.image_red-fruit
+{
+    position: absolute;
+    right: -66px;
+    top: 15px;
+}
+
+.image_red-juice
+{
+    left: 55px;
+    position: absolute;
+    top: 196px;
+}
+
+.image_red-wineglass1
+{
+    position: absolute;
+    right: 395px;
+    top: 245px;
+}
+
+.image_red-wineglass2
+{
+    position: absolute;
+    right: 74px;
+    top: 245px;
+}
+
+/* красное вино =D */
+.image_red-wine
+{
+    position: absolute;
+    right: 186px;
+    top: 72px;
+}

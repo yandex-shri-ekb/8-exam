@@ -5,12 +5,16 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bs3-grid.css"/>
     <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="css/yellow.css"/>
+    <link rel="stylesheet" href="css/red.css"/>
+    <link rel="stylesheet" href="css/blue.css"/>
     <link rel="stylesheet" href="css/dev.css"/>
     <script data-main="js/main.js" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.9/require.min.js"></script>
 </head>
 <body>
 
-    <div class="b-page dev*">
+    <div class="b-page dev">
+        <div class="open-btn"></div>
         <div class="layout">
             <div class="story-container layout__main">
                 <div class="container">
@@ -131,7 +135,7 @@
                         </div>
                     </div>
                     <div class="story-container__block story">
-                        <div class="story__char story-yellow">
+                        <div class="story__char story-yellow" id="story-yellow">
                             <div class="story__part story-yellow-part-1" id="story-yellow-part-1">
                                 <div class="row">
                                     <div class="col-xs-4 col-xs-offset-1">
@@ -237,6 +241,156 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="story__char story-red" id="story-red">
+                            <div class="story__part story-red-part-1" id="story-red-part-1">
+                                <div class="story-red-part-1__bg"></div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-xs-offset-1">
+                                        <div class="content">
+                                            <p>Устав от турецких пляжей, Алексей Быков решил вывезти семью в Таиланд.</p>
+                                            <p>Он выбирает тур так, чтобы уложиться в адекватную сумму, но порадовать
+                                                всех: приемлемый уровень комфорта, детская анимация,
+                                                недалеко от пляжа, «все включено».</p>
+                                        </div>
+
+                                        <img class="image image_red-portret" src="images/red/portret.png" width="306" height="242">
+                                    </div>
+                                    <div class="col-xs-5 col-xs-offset-1">
+                                        <img class="image image_red-tour" src="images/red/tour.png" width="384" height="492">
+                                        <img class="image image_red-passport" src="images/red/passport.png" width="482" height="226">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-3 col-xs-offset-2">
+                                        <img class="image image_red-book" src="images/red/book.png" width="228" height="300">
+                                        <img class="image image_red-bear" src="images/red/bear.png" width="318" height="386">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-xs-offset-7">
+                                        <div class="content">
+                                            <p>Алексей твердо уверен, что линзы практичнее обычных очков —
+                                                как минимум потому, что вместе с ними можно надеть другие очки:
+                                                для плавания или солнечные.</p>
+                                            <p>Он привык к тому, что у него всегда есть запас одноразовых линз.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="story__part story-red-part-2" id="story-red-part-2">
+                                <div class="story-red-part-2__bg"></div>
+                                <div class="row">
+                                    <div class="col-xs-2 col-xs-offset-1">
+                                        <img class="image image_red-iphone" src="images/red/iphone.png" width="150" height="281">
+                                    </div>
+                                    <div class="col-xs-3 col-xs-offset-1">
+                                        <img class="image image_red-bill" src="images/red/bill.png" width="220" height="347">
+                                    </div>
+                                    <div class="col-xs-4">
+                                        <img class="image image_red-lenses" src="images/red/lenses.png" width="410" height="283">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-1">
+                                        <img class="image image_red-tamagotchi" src="images/red/tamagotchi.png" width="149" height="237">
+                                    </div>
+                                    <div class="col-xs-5 col-xs-offset-6">
+                                        <img class="image image_red-glasses" src="images/red/glasses.png" width="384" height="137">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="story__part story-red-part-3" id="story-red-part-3">
+                                <div class="story-red-part-3__bg"></div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-xs-offset-1">
+                                        <div class="content">
+                                            <p>У семьи Быковых с собой очень много багажа, большую часть которого
+                                                занимают платья жены и детские вещи.</p>
+                                            <p>Ехать с сумками на общественном транспорте им совсем не хочется,
+                                                тем более, когда есть вместительный автомобиль. Алексей решает
+                                                переплатить за парковку у аэропорта, зато добраться с удобством.</p>
+                                        </div>
+
+                                        <img class="image image_red-lisence" src="images/red/lisence.png" width="298" height="187">
+                                        <img class="image image_red-keys" src="images/red/keys.png" width="222" height="147">
+                                    </div>
+                                    <div class="col-xs-5 col-xs-offset-2">
+                                        <img class="image image_red-imac" src="images/red/imac.png" width="450" height="529">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="story__part story-red-part-4" id="story-red-part-4">
+                                <div class="story-red-part-4__bg"></div>
+                                <img class="image image_red-bags" src="images/red/bags.png" width="566" height="521">
+                                <img class="image image_red-cup" src="images/red/cup.png" width="138" height="224">
+                                <div class="row">
+                                    <div class="col-xs-4 col-xs-offset-7">
+                                        <div class="content">
+                                            <p>Для Алексея один из основных мотивов выбора Таиланда — гастрономический:
+                                                и он, и жена любят экзотическую кухню.</p>
+                                            <p>Каждый день они вместе отправляются на поиски новых ресторанов.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="story__part story-red-part-5" id="story-red-part-5">
+                                <div class="story-red-part-5__bg"></div>
+                                <img class="image image_red-fish" src="images/red/fish.png" width="384" height="308">
+                                <img class="image image_red-breakfast" src="images/red/breakfast.png" width="306" height="310">
+                                <img class="image image_red-fruit" src="images/red/fruit.png" width="228" height="231">
+                                <img class="image image_red-juice" src="images/red/juice.png" width="103" height="253">
+                                <img class="image image_red-wineglass1" src="images/red/wineglass.png" width="86" height="181">
+                                <img class="image image_red-wineglass2" src="images/red/wineglass.png" width="86" height="181">
+                                <img class="image image_red-wine" src="images/red/wine.png" width="162" height="397">
+                            </div>
+                        </div>
+
+                        <div class="story__char story-blue" id="story-blue">
+
+                            <div class="story__part story-blue-part-1" id="story-blue-part-1">
+                                <div class="story-blue-part-1__bg"></div>
+
+                                <img class="image image_blue-phone" src="images/blue/phone.png" width="318" height="384">
+                                <img class="image image_blue-pen" src="images/blue/pen.png" width="48" height="233">
+                                <img class="image image_blue-ticket" src="images/blue/ticket.png" width="454" height="179">
+                                <img class="image image_blue-watch" src="images/blue/watch.png" width="130" height="247">
+                                <img class="image image_blue-photo" src="images/blue/photo.png" width="227" height="292">
+
+                                <div class="row">
+                                    <div class="col-xs-4 col-xs-offset-1">
+                                        <div class="content">
+                                            <p>Григорий Иоганович Дауге редко отдыхает —
+                                                бизнес требует от него полной отдачи.</p>
+                                            <p>Друзья и коллеги, переживающие за его здоровье, подарили ему билет
+                                                в Таиланд. Поспорив для вида, Григорий Иоганович решает,
+                                                что здоровье важнее, и садится выбирать отель.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-4 col-xs-offset-1">
+                                        <img class="image image_blue-notebook" src="images/blue/notebook.png" width="306" height="434">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="story__part story-blue-part-2" id="story-blue-part-2">
+                                <div class="story-blue-part-2__bg"></div>
+                                <div class="row">
+                                    <div class="col-xs-4 col-xs-offset-7">
+                                        <div class="content">
+                                            <p>Даже отдых должен приносить в жизнь что-нибудь новое —
+                                                таков жизненный принцип Григория Иогановича.</p>
+                                            <p>В этой поездке он планирует научиться дайвингу: посмотреть на
+                                                коралловые рифы и причудливых морских животных.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                     </div>
                     <div class="story-container__block switcher-bottom">

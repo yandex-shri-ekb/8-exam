@@ -1,0 +1,182 @@
+.image_yellow-map
+{
+    margin-top: -125px;
+}
+
+.image_yellow-ticket
+{
+    position: absolute;
+    top: 40px;
+    left: -148px;
+}
+
+.image_yellow-compass
+{
+    position: absolute;
+    top: 40px;
+    left: 564px;
+}
+
+.image_yellow-book
+{
+    position: absolute;
+    top: 40px;
+    left: 798px;
+}
+
+.story-yellow-part-2
+{
+    width: 100%;
+    height: 565px;
+    background: url("../images/yellow/story-yellow-part-2.png") 154px -2px no-repeat;
+    margin-bottom: 30px;
+}
+
+.story-yellow-part-3
+{
+    padding-bottom: 344px;
+}
+
+.story-yellow-part-3__bg
+{
+    position: absolute;
+    top: 240px;
+    width: 100%;
+    height: 565px;
+    background: url("../images/yellow/story-yellow-part-3__bg.png") 96px 0 no-repeat;
+}
+
+.image_yellow-iphone
+{
+    margin: 0 auto;
+}
+
+.image_yellow-laptop
+{
+    position: relative;
+    z-index: 4;
+}
+
+.image_yellow-polaroid-1
+{
+    position: absolute;
+    top: 280px;
+    left: -170px;
+}
+
+.image_yellow-polaroid-2
+{
+    position: absolute;
+    bottom: -72px;
+    left: 156px;
+}
+
+.image_yellow-polaroid-3
+{
+    position: absolute;
+    bottom: -112px;
+    left: 78px;
+    z-index: 3;
+}
+
+.story-yellow-part-4
+{
+    position: relative;
+}
+
+.story-yellow-part-5__bg
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 565px;
+    background: url("../images/yellow/story-yellow-part-5__bg.png") 96px 0 no-repeat;
+}
+
+.image_yellow-magazine
+{
+    margin-top: -180px;
+}
+
+.story-yellow-part-5
+{
+    position: relative;
+    height: 565px;
+    margin-bottom: 50px;
+}
+
+.image_yellow-airticket
+{
+    position: absolute;
+    top: 120px;
+    left: 355px;
+}
+
+.image_yellow-aeroexpress
+{
+    position: absolute;
+    top: 40px;
+    left: -155px;
+}
+
+.image_yellow-money
+{
+    position: absolute;
+    top: 0;
+    left: 426px;
+}
+
+.image_yellow-ipod
+{
+    position: absolute;
+    top: 136px;
+    left: 642px;
+}
+
+.image_yellow-traffic
+{
+    position: absolute;
+    top: 320px;
+    left: 155px;
+}
+
+.story-yellow-part-6
+{
+    margin-bottom: 40px;
+}
+
+.image_yellow-backpack
+{
+    margin: 0 0 -120px;
+}
+
+.story-yellow-part-7
+{
+    height: 548px;
+}
+
+.story-yellow-part-7__bg
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 548px;
+    background: url("../images/yellow/story-yellow-part-7__bg.png") 252px 0 no-repeat;
+}
+
+.image_yellow-carton
+{
+    margin: 30px 0 130px;
+}
+
+.image_yellow-notebook
+{
+}
+
+.image_yellow-bottle
+{
+}
+
+.image_yellow-camera
+{
+}
