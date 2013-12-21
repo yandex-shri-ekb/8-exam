@@ -19,7 +19,7 @@ modules.define(
                         this.delMod('active');
                     }, this);
                 }
-            },
+            }
         });
 
         provide(DOM);

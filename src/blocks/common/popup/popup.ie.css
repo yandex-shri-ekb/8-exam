@@ -1,0 +1,4 @@
+.popup__overlay
+{
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+}

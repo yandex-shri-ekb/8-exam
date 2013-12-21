@@ -54,7 +54,7 @@ module.exports = function(grunt) {
             pages: {
                 expand: true,
                 cwd: 'src/pages/index/',
-                src: ['_index.css', '_index.js', 'index.html'],
+                src: ['_index*.css', '_index.js', 'index.html'],
                 dest: 'dist/'
             }
         },
@@ -63,7 +63,8 @@ module.exports = function(grunt) {
             dist: {
                 files: [
                     {src: 'dist/_index.js', dest: 'dist/scripts.js'},
-                    {src: 'dist/_index.css', dest: 'dist/styles.css'}
+                    {src: 'dist/_index.css', dest: 'dist/styles.css'},
+                    {src: 'dist/_index.ie.css', dest: 'dist/styles.ie.css'}
                 ]
             }
         },
@@ -75,6 +76,7 @@ module.exports = function(grunt) {
                 replacements: [
                     {from: '../../images/', to: './images/'},
                     {from: '_index.css', to: 'styles.css'},
+                    {from: '_index.ie.css', to: 'styles.ie.css'},
                     {from: '_index.js', to: 'scripts.js'}
                 ]
             }

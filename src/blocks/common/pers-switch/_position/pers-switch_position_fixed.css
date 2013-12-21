@@ -8,7 +8,7 @@
 
 .pers-switch_position_fixed.pers-switch_active
 {
-    display: table;
+    display: block;
 
     -webkit-animation: fadeIn .3s;
        -moz-animation: fadeIn .3s;
@@ -18,7 +18,9 @@
 
 .pers-switch_position_fixed .pers-switch__item
 {
-    display: table-cell;
+    float: left;
+
+    width: 33.333%;
 }
 
 .pers-switch__pictogram

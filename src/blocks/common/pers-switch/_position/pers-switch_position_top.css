@@ -5,10 +5,9 @@
 
 .pers-switch__desc
 {
-    position: absolute;
-    top: 198px;
-
     display: none;
+
+    margin: 25px 0 0;
 }
 
 .pers-switch__item:hover .pers-switch__desc
@@ -16,7 +15,14 @@
     display: block;
 }
 
+.pers-switch__item_selected:hover .pers-switch__desc
+{
+    margin: 7px 0 0;
+}
+
 .pers-switch_unhovered .pers-switch__item_selected .pers-switch__desc
 {
     display: block;
+
+    margin: 7px 0 0;
 }

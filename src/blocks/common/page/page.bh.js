@@ -4,41 +4,40 @@ module.exports = function(bh) {
             {elem: 'doctype', content: ctx.param('doctype') || '<!DOCTYPE HTML>'},
             {
                 elem: 'html',
-                content:
-                {
-                    elem: 'content',
-                    content: [
-                        {
-                            tag: 'head',
-                            content: [
-                                [
+                content: [
+                    {
+                        tag: 'head',
+                        content: [
+                            [
+                                {
+                                    elem: 'meta',
+                                    attrs: {charset: 'utf-8'}
+                                },
+                                {
+                                    elem: 'meta',
+                                    attrs: {
+                                        'http-equiv': 'X-UA-Compatible',
+                                        content: 'IE=Edge'
+                                    }
+                                },
+                                {
+                                    elem: 'title',
+                                    content: ctx.param('title')
+                                },
+                                ctx.param('favicon') &&
                                     {
-                                        elem: 'meta',
-                                        attrs: {charset: 'utf-8'}
-                                    },
-                                    {
-                                        elem: 'meta',
-                                        attrs: {
-                                            'http-equiv': 'X-UA-Compatible',
-                                            content: 'IE=Edge'
-                                        }
-                                    },
-                                    {
-                                        elem: 'title',
-                                        content: ctx.param('title')
-                                    },
-                                    ctx.param('favicon') &&
-                                        {
-                                            elem: 'favicon',
-                                            url: ctx.param('favicon')
-                                        }
-                                ],
-                                ctx.param('styles')
-                            ]
-                        },
-                        ctx.json()
-                    ]
-                }
+                                        elem: 'favicon',
+                                        url: ctx.param('favicon')
+                                    }
+                            ],
+                            ctx.param('styles')
+                        ]
+                    },
+                    {
+                        elem: 'content',
+                        content: ctx.json()
+                    }
+                ]
             }
         ];
     });
@@ -88,38 +87,33 @@ module.exports = function(bh) {
         ctx.bem(false);
     });
 
-    bh.match('page__css', function(ctx) {
-        var url = ctx.param('url');
-
+    bh.match('page__css', function(ctx, json) {
         ctx.bem(false);
 
-        if(url) {
+        if (json.url) {
             ctx.tag('link');
             ctx.attr('rel', 'stylesheet');
-            ctx.attr('href', url);
+            ctx.attr('href', json.url);
         } else {
             ctx.tag('style');
         }
 
-        var ie = ctx.param('ie');
-        if(ie) {
-            if(ie === true) {
+        if (json.hasOwnProperty('ie')) {
+            var ie = json.ie;
+            if (ie === true) {
                 return [6, 7, 8, 9].map(function(v) {
-                    return {
-                        elem: 'css',
-                        url: url + '.ie' + v + '.css', ie: 'IE ' + v
-                    };
+                    return { elem: 'css', url: json.url + '.ie' + v + '.css', ie: 'IE ' + v };
                 });
             } else {
                 var hideRule = !ie ?
-                    ['gt IE 9', '<!-->', '<!--'] :
+                    ['gte IE 9', '<!-->', '<!--'] :
                     ie === '!IE' ?
                         [ie, '<!-->', '<!--'] :
                         [ie, '', ''];
                 return [
                     '<!--[if ' + hideRule[0] + ']>',
                     hideRule[1],
-                    ctx.content(),
+                    json,
                     hideRule[2],
                     '<![endif]-->'
                 ];

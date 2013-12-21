@@ -14,22 +14,25 @@ module.exports = function (config) {
             [require('bh/techs/bh-client-module'), {target: '?.bh.client.js', jsAttrName: 'data-bem', jsAttrScheme: 'json'}],
             [require('enb/techs/file-merge'), {sources: ['?.modules.js', '?.bh.client.js'], target: '?.js'}],
             require('enb/techs/css'),
+            require('enb/techs/css-ie'),
             require('enb/techs/html-from-bemjson')
         ]);
 
-        nodeConfig.addTargets(['_?.js', '_?.css', '?.html']);
+        nodeConfig.addTargets(['_?.js', '_?.css', '_?.ie.css', '?.html']);
 
         nodeConfig.mode('development', function(nodeConfig) {
             nodeConfig.addTechs([
                 [require('enb/techs/borschik'), {sourceTarget: '?.js', destTarget: '_?.js', minify: false}],
-                [require('enb/techs/file-copy'), {sourceTarget: '?.css', destTarget: '_?.css'}]
+                [require('enb/techs/file-copy'), {sourceTarget: '?.css', destTarget: '_?.css'}],
+                [require('enb/techs/file-copy'), {sourceTarget: '?.ie.css', destTarget: '_?.ie.css'}]
            ]);
        });
 
         nodeConfig.mode('production', function(nodeConfig) {
             nodeConfig.addTechs([
                 [require('enb/techs/borschik'), {sourceTarget: '?.js', destTarget: '_?.js'}],
-                [require('enb/techs/borschik'), {sourceTarget: '?.css', destTarget: '_?.css', freeze: 'yes'}]
+                [require('enb/techs/borschik'), {sourceTarget: '?.css', destTarget: '_?.css'}],
+                [require('enb/techs/borschik'), {sourceTarget: '?.ie.css', destTarget: '_?.ie.css'}]
            ]);
         });
     });

@@ -2,6 +2,8 @@ modules.define(
     'i-bem__dom',
     ['jquery'],
     function(provide, $, DOM) {
+        var $window = $(window);
+
         DOM.decl('pers-switch',
             {
                 onSetMod: {
@@ -21,6 +23,7 @@ modules.define(
 
                 _onItemClicked: function(ev) {
                     this._page.emit('change-state', this.elemParams($(ev.currentTarget)));
+                    $window.trigger('scroll');
                 }
             }
         );

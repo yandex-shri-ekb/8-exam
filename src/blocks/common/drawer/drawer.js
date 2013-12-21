@@ -16,6 +16,8 @@ modules.define(
 
                     this._initialize();
 
+                    this._debounceOpen = debounce(this._open, 100);
+
                     this.bindTo(this.$window, 'resize', debounce(this._initialize, 150), this);
                     this.bindTo(this.elem('control'), 'click', this._toggle, this);
 
@@ -29,11 +31,12 @@ modules.define(
             },
 
             _initialize: function () {
+                this.unbindFrom(this.domElem, 'click');
+
                 if(this.$window.width() < 972 + 800) {
                     this.bindTo(this.domElem, 'click', this.active, this);
                     this.setMod('covered');
                 } else {
-                    this.unbindFrom(this.domElem, 'click');
                     this.delMod('covered');
                     this.disactive();
                 }
@@ -64,14 +67,14 @@ modules.define(
             active: function() {
                 this._open();
                 this._container.disactive();
-                this.bindTo(this.$window, 'resize', this._open, this);
+                this.bindTo(this.$window, 'resize', this._debounceOpen, this);
                 this.bindTo(this.$document, 'keydown', this._disactiveOnKeypress, this);
             },
 
             disactive: function() {
                 this._close();
                 this._container.active();
-                this.unbindFrom(this.$window, 'resize', this._open);
+                this.unbindFrom(this.$window, 'resize', this._debounceOpen);
                 this.unbindFrom(this.$document, 'keydown', this._disactiveOnKeypress);
             }
         });
