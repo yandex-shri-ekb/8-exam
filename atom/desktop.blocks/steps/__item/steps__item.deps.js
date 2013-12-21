@@ -1,9 +1,5 @@
 ({
     mustDeps: [
-        {
-            mods: {
-                num: ['one', 'two', 'three', 'four'],
-            },
-        },
-    ],
+        {mods: {num: ['one', 'two', 'three', 'four']}}
+    ]
 })
