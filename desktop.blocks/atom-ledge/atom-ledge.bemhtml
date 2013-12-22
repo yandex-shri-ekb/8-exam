@@ -1,0 +1,4 @@
+block 'atom-ledge' {
+
+    js: true
+}

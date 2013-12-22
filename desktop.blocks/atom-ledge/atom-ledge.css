@@ -2,7 +2,6 @@
 {
     position: absolute;
     left: 972px;
-    background: yellow;
     top: 0;
     bottom: 0;
     border-left: 2px solid #000;
@@ -10,7 +9,7 @@
     cursor: pointer;
 }
 
-.atom-ledge_open_yes
+.atom-ledge_opened_yes
 {
     cursor: auto;
 }

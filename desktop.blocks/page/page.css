@@ -4,3 +4,8 @@
     font-family: sans-serif;
     min-width: 1024px;
 }
+
+.page_active_yes
+{
+    cursor: pointer;
+}

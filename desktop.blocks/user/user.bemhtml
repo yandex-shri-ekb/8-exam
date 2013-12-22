@@ -1,5 +1,7 @@
 block user {
 
+    js: true,
+
     content: [
         {
             block: 'user-icon',

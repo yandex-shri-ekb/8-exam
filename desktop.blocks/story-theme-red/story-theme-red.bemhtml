@@ -44,7 +44,7 @@ block 'story-theme-red' {
                         content: [
                             {
                                 block: 'path-theme-red',
-                                mix: {block: 'grid__module', mods: {col: 2, span: 9}},
+                                mix: {block: 'grid__module', mods: {col: 4, span: 9}},
                                 content: {elem: 'step-2'}
                             },
                             {
