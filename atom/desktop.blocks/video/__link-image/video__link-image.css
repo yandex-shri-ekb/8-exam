@@ -6,7 +6,7 @@
 
     border: 2px solid #000;
     border-radius: 3px;
-    background: url(video__link-image.png) no-repeat 50%;
+    background: no-repeat 50% url(video__link-image.png);
 
     -webkit-transition: background-color .5s;
        -moz-transition: background-color .5s;
