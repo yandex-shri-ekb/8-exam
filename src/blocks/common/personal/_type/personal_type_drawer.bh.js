@@ -1,28 +1,28 @@
 module.exports = function(bh) {
     bh.match('personal_type_drawer__yellow', function(ctx) {
         ctx.content([
-            require('../bemjson/drawer/yellow/yellow.1'),
-            require('../bemjson/drawer/yellow/yellow.2'),
-            require('../bemjson/drawer/yellow/yellow.3'),
-            require('../bemjson/drawer/yellow/yellow.4')
+            {elem: 'yellow', mods: {drawer: '1'}},
+            {elem: 'yellow', mods: {drawer: '2'}},
+            {elem: 'yellow', mods: {drawer: '3'}},
+            {elem: 'yellow', mods: {drawer: '4'}}
         ]);
     });
 
     bh.match('personal_type_drawer__red', function(ctx) {
         ctx.content([
-            require('../bemjson/drawer/red/red.1'),
-            require('../bemjson/drawer/red/red.2'),
-            require('../bemjson/drawer/red/red.3'),
-            require('../bemjson/drawer/red/red.4')
+            {elem: 'red', mods: {drawer: '1'}},
+            {elem: 'red', mods: {drawer: '2'}},
+            {elem: 'red', mods: {drawer: '3'}},
+            {elem: 'red', mods: {drawer: '4'}}
         ]);
     });
 
     bh.match('personal_type_drawer__blue', function(ctx) {
         ctx.content([
-            require('../bemjson/drawer/blue/blue.1'),
-            require('../bemjson/drawer/blue/blue.2'),
-            require('../bemjson/drawer/blue/blue.3'),
-            require('../bemjson/drawer/blue/blue.4')
+            {elem: 'blue', mods: {drawer: '1'}},
+            {elem: 'blue', mods: {drawer: '2'}},
+            {elem: 'blue', mods: {drawer: '3'}},
+            {elem: 'blue', mods: {drawer: '4'}}
         ]);
     });
 };

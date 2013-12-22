@@ -2,6 +2,7 @@ module.exports = function(bh) {
     bh.match('container', function(ctx) {
         ctx.content([
             {elem: 'header'},
+            {elem: 'info'},
             {
                 block: 'pers-switch',
                 mods: {position: 'top'},
@@ -21,19 +22,8 @@ module.exports = function(bh) {
                 mods: {position: 'bottom'},
                 js: true
             },
-            {elem: 'foot'}
+            {elem: 'footer'}
         ]);
         ctx.js(true);
-    });
-
-    bh.match('container__header', function(ctx) {
-        return [
-            require('./bemjson/common.header'),
-            require('./bemjson/common.info')
-        ];
-    });
-
-    bh.match('container__foot', function(ctx) {
-        return require('./bemjson/common.footer');
     });
 };
