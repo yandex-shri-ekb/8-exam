@@ -184,6 +184,7 @@ function lightboxToggle(){
     $('.open-lightbox').on('click', function(){
         body.css('overflow-y','hidden');
         $('.b-wrapper').css('overflow-y','hidden');
+        $('.b-lightbox__content iframe').attr('src', '//player.vimeo.com/video/75709551?title=0&amp;byline=0&amp;portrait=0&amp;color=ffcc00');
         modal_container.animate({opacity: "show"}, 300);
         modal_custom.animate({ top: '50%' }, 500);
         return false;
@@ -191,6 +192,7 @@ function lightboxToggle(){
 
 
     modal_container.click( function(){
+        $('.b-lightbox__content iframe').removeAttr('src');
         modal_custom.animate({ top: '-1000px' }, 500);
         modal_container.animate({opacity: "hide"}, 1000);
         setTimeout(function () {
