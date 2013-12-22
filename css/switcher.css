@@ -1,0 +1,156 @@
+
+.char
+{
+    cursor: pointer;
+    float: left;
+    text-align: center;
+    width: 33.33%;
+}
+
+.char__image
+{
+    width: 142px;
+    height: 142px;
+    margin: 0 auto;
+    background: url("../images/char__image.png") no-repeat transparent;
+}
+
+.char__name
+{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 5px 0 0;
+    text-align: center;
+}
+
+.char-text
+{
+    text-align: center;
+    display: none;
+    min-height: 100px;
+    margin-top: 15px;
+}
+
+.char-yellow
+{
+    text-align: left;
+}
+
+.char-red
+{
+    text-align: center;
+}
+
+.char-blue
+{
+    text-align: right;
+}
+
+.char__inner
+{
+    display: inline-block;
+}
+
+.char-yellow .char__image
+{
+    background-position: 0 0;
+}
+
+.char-red .char__image
+{
+    background-position: 0 -149px;
+}
+
+.char-blue .char__image
+{
+    background-position: 0 -298px;
+}
+
+.char-yellow_selected .char__image,
+.char-red_selected .char__image,
+.char-blue_selected .char__image
+{
+    width: 180px;
+    height: 180px;
+    margin: -19px 0 0;
+}
+
+.char-yellow_selected .char__image
+{
+    background-position: 0 -440px;
+}
+
+.char-red_selected .char__image
+{
+    background-position: 0 -625px;
+}
+
+.char-blue_selected .char__image
+{
+    background-position: 0 -810px;
+}
+
+.char-yellow_selected .char__inner
+{
+    margin-left: -19px;
+}
+
+.char-red_selected .char__inner
+{
+}
+
+.char-blue_selected .char__inner
+{
+    margin-right: -19px;
+}
+
+.switcher-top
+{
+    padding: 80px 0 0;
+}
+
+.switcher-top__line
+{
+    width: 762px;
+    height: 97px;
+    margin: 30px 0 0;
+}
+
+.switcher-bottom
+{
+    padding: 30px 0 50px;
+    border-bottom: 2px solid #000;
+}
+
+.char-floated
+{
+    position: fixed;
+    top: 50%;
+    width: 954px;
+    z-index: 20;
+    display: none;
+}
+
+.char-floated__image
+{
+    margin: -110px auto 0;
+    width: 220px;
+    height: 220px;
+    background: url("../images/char__image.png") no-repeat transparent;
+}
+
+.char-floated__image_yellow
+{
+    background-position: 0 -990px;
+}
+
+.char-floated__image_red
+{
+    background-position: 0 -1216px;
+}
+
+.char-floated__image_blue
+{
+    background-position: 0 -1443px;
+}

@@ -6,7 +6,14 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         charColors = ['yellow', 'red', 'blue'],
         bPageColors = ['b-page_yellow', 'b-page_red', 'b-page_blue'],
         $bPage = $('.b-page', $body),
-        infoPartInited = [];
+        $switcherTop = $('.switcher-top'),
+        $switcherBottom = $('.switcher-bottom'),
+        $charFloated = $('.char-floated'),
+        infoPartInited = [],
+        coords = {
+            // диапозон, в котором будет отображаться $charFloated
+            charFloated: [0, 0]
+        };
 
     /**
      * @export app/app
@@ -42,9 +49,23 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         $('#info-' + char).show();
 
         // switcher
-        $('.char').removeClass('char_selected');
-        $('.char_' + char).addClass('char_selected');
+        var $char = $('.char');
+        $.each(charColors, function(i, c) {
+            $char.removeClass('char-' + c + '_selected');
+        });
+        $('.char-' + char).addClass('char-' + char + '_selected');
 
+        // floated swicher
+        var $floatedImage = $('.char-floated__image');
+        $.each(charColors, function(i, c) {
+            $floatedImage.removeClass('char-floated__image_' + c);
+        });
+
+        $floatedImage.addClass('char-floated__image_' + char);
+
+        $bPage.addClass('b-page_' + char);
+
+        // высота info блоков
         if(infoPartInited.indexOf(char) === -1) {
             $('#info-' + char).find('.info-part').each(function() {
                 var $part = $(this),
@@ -58,13 +79,33 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
 
             infoPartInited.push(char);
         }
+
+        // расчет диапозона
+        coords.charFloated = [
+            $switcherTop.offset().top + $switcherTop.height(),
+            $switcherBottom.offset().top
+        ];
+    }
+
+    function _getCurrentChar()
+    {
+        var color = null;
+
+        $.each(charColors, function(i, c) {
+            if($bPage.hasClass('b-page_' + c)) {
+                color = c;
+            }
+        });
+
+        return color;
     }
 
     /**
      */
     App.prototype.init = function() {
-        //_selectChar(charColors[random.getInt(0, 2)]);
-        _selectChar('blue');
+
+        _selectChar(charColors[random.getInt(0, 2)]);
+        //_selectChar('blue');
 
         /*setInterval(function() {
             _selectChar(charColors[random.getInt(0, 2)]);
@@ -74,19 +115,20 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
             var $char = $(this);
 
             switch(true) {
-                case $char.hasClass('char_yellow'):
+                case $char.hasClass('char-yellow'):
                     _selectChar('yellow');
                     break;
-                case $char.hasClass('char_red'):
+                case $char.hasClass('char-red'):
                     _selectChar('red');
                     break;
-                case $char.hasClass('char_blue'):
+                case $char.hasClass('char-blue'):
                     _selectChar('blue');
                     break;
             }
 
             if($char.closest('.switcher-bottom').length > 0) {
-                var scrollTo = $('.switcher-top').offset().top;
+                var scrollTo = $switcherTop.offset().top;
+                // TODO возможно стоит отключать плавающий switcher
                 $body.add('html').animate({ scrollTop: scrollTo }, "slow");
                 // window.scrollTo(x-coord, y-coord);
             }
@@ -94,19 +136,47 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
             return false;
         });
 
-        /*
-        * $(window).scroll(function(){
-         if ($(this).scrollTop() > 100) {
-         $('.scrollup').fadeIn();
-         } else {
-         $('.scrollup').fadeOut();
-         }
-         });*/
+        // todo timer
+        $window.scroll(function() {
+            var wY1 = $window.scrollTop(),
+                wY2 = wY1 + $window.height();
+            if( wY1 > coords.charFloated[0] && wY2 < coords.charFloated[1] ) {
+                $charFloated.fadeIn('fast');
+            }
+            else {
+                $charFloated.fadeOut('fast');
+            }
+        });
 
         $('.open-btn').on('click', function() {
             var $btn = $(this);
             $bPage.toggleClass('dev');
         });
+
+        // desc
+        var $charText = $('.char-text');
+        $('.char', $switcherTop).hover(
+            function() {
+                var $char = $(this),
+                    charColor;
+
+                $charText.hide();
+                $.each(charColors, function(i, c) {
+                    if($char.hasClass('char-' + c)) {
+                        charColor = c;
+                    }
+                });
+
+                $charText.filter('.char-text_' + charColor).show();
+            },
+            function() {
+                var $char = $(this),
+                    currentChar = _getCurrentChar();
+
+                $charText.hide();
+                $charText.filter('.char-text_' + currentChar).show();
+            }
+        );
     };
 
     return App;
