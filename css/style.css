@@ -4,18 +4,37 @@ body
     margin: 0;
 }
 
-p
-{
-    margin: 0 0 24px;
-}
-
 body
 {
     background: #FFFFFF;
     color: #000;
     font: 400 16px/24px Arial,Helvetica,sans-serif;
     min-height: 100%;
-    min-width: 1024px;
+    min-width: 990px;
+}
+
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: #f00;
+    text-decoration: none;
+}
+
+p,
+ul
+{
+    margin: 0 0 24px;
+}
+
+h3
+{
+    font: 400 24px/24px Arial,Helvetica,sans-serif;
+    margin: 18px 0;
 }
 
 .content
@@ -25,6 +44,168 @@ body
     border: 2px solid #000;
     position: relative;
     width: 952px;
+    -webkit-transition: background-color 300ms linear 0s;
+       -moz-transition: background-color 300ms linear 0s;
+        -ms-transition: background-color 300ms linear 0s;
+         -o-transition: background-color 300ms linear 0s;
+            transition: background 300ms linear 0s;
+}
+
+.wrapper
+{
+    overflow: hidden;
+    position: relative;
+}
+
+.right:before
+{
+    background: rgba(0, 0, 0, 0.2);
+    bottom: 0;
+    content: "";
+    left: -18px;
+    position: absolute;
+    top: 0;
+    width: 18px;
+    z-index: 10;
+}
+
+.right
+{
+    background: #fff;
+    border-left: 2px solid #000;
+    cursor: pointer;
+    left: 972px;
+    padding: 18px 0 0;
+    position: absolute;
+    top: -18px;
+    z-index: 1s0;
+    bottom: -18px;
+    width: 100%;
+    -webkit-transition: left 300ms linear 0s;
+       -moz-transition: left 300ms linear 0s;
+        -ms-transition: left 300ms linear 0s;
+         -o-transition: left 300ms linear 0s;
+            transition: left 300ms linear 0s;
+}
+
+.right__block
+{
+
+    padding: 15px 33px;
+}
+
+.right__text
+{
+    width: 632px;
+}
+
+.right__header
+{ 
+    border-bottom: 2px solid #000;
+}
+
+.right__header__logo
+{
+    left: 680px;
+    position: absolute;
+    top: 47px;
+}
+
+.right__header__img
+{
+    margin: 92px 0 27px 5px; 
+}
+
+.right__intro
+{ 
+    border-bottom: 2px solid #000;
+    height: 780px;
+}
+
+.right__intro__video
+{
+    background: url("../images/right_video.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    width: 712px;
+    height: 405px;
+    margin: 30px 0 0;
+}
+
+.right__yellow__block1
+{
+    border-bottom: 2px solid #000;
+    height: 758px;
+}
+
+.right__yellow__block2
+{
+    border-bottom: 2px solid #000;
+    height: 767px;
+}
+
+.right__yellow__block3
+{
+    border-bottom: 2px solid #000;
+    height: 768px;
+}
+
+.right__yellow__block4
+{
+    border-bottom: 2px solid #000;
+    height: 788px;
+}
+
+.right__red__block1
+{
+    border-bottom: 2px solid #000;
+    height: 768px;
+}
+
+.right__red__block2
+{
+    border-bottom: 2px solid #000;
+    height: 769px;
+}
+
+.right__red__block3
+{
+    border-bottom: 2px solid #000;
+    height: 826px;
+}
+
+.right__red__block4
+{
+    border-bottom: 2px solid #000;
+    height: 768px;
+}
+
+.right__blue__block1
+{
+    border-bottom: 2px solid #000;
+    height: 768px;
+}
+
+.right__blue__block2
+{
+    border-bottom: 2px solid #000;
+    height: 766px;
+}
+
+.right__blue__block3
+{
+    border-bottom: 2px solid #000;
+    height: 768px;
+}
+
+.right__blue__block4
+{
+    border-bottom: 2px solid #000;
+    height: 780px;
+}
+
+.link
+{
+    color: #1a3dc1;
+    text-decoration: underline;
 }
 
 .header
@@ -107,6 +288,11 @@ body
     height: 80px;
     width: 138px;
     cursor: pointer;
+    -webkit-transition: background-color 300ms linear 0s;
+       -moz-transition: background-color 300ms linear 0s;
+        -ms-transition: background-color 300ms linear 0s;
+         -o-transition: background-color 300ms linear 0s;
+            transition: background 300ms linear 0s;
 }
 
 .play__text,
@@ -188,213 +374,46 @@ body
 
 .history
 {
-    padding: 0 16px;
-    height: 3310px;
+    padding: 0 16px; 
     background: #e7e7e7;
+    overflow: hidden;
+    -webkit-transition: background-color 300ms linear 0s;
+       -moz-transition: background-color 300ms linear 0s;
+        -ms-transition: background-color 300ms linear 0s;
+         -o-transition: background-color 300ms linear 0s;
+            transition: background 300ms linear 0s;
+}
+
+.histort__text
+{
     text-align: center;
+}
+
+.history__yellow
+{
+    height: 3310px;
+}
+
+.history__red
+{
+    height: 3340px;
+}
+
+.history__blue
+{
+    height: 3283px;
+}
+
+.yellow,
+.red,
+.blue
+{
+    display: none;
 }
 
 .grid__align
 {
     left: -78px;
-}
-
-.yellow_block1
-{
-    height: 826px;
-}
-
-.yellow_block1__substrate
-{
-    background: url("../images/yellow/line1.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 887px;
-    width: 762px;
-}
-
-.yellow_block1__map
-{
-    margin: 8px 0 0;
-}
-
-.yellow_block1__text
-{
-    margin: -110px 0 0;
-}
-
-.yellow_block1__aviaticket
-{
-    margin: 47px 0 0 -166px;
-}
-
-.yellow_block1__compass
-{
-    margin: 47px 0 0 18px;
-}
-
-.yellow_block1__book
-{
-    margin: -167px 0 0 330px;
-}
-
-.yellow_block2
-{
-    height: 584px;
-    padding: 215px 0 0;
-}
-
-.yellow_block2__substrate
-{
-    background: url("../images/yellow/line2.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 565px;
-    width: 686px;
-    margin: 80px 0 0;
-}
-
-.yellow_block2__text
-{
-    margin: -135px 0 0;
-}
-
-.yellow_block2__laptop
-{
-    margin: -199px 0 0;
-    position: relative;
-    z-index: 2;
-}
-
-.yellow_block2__polaroid1
-{
-    left: -228px;
-    top: -220px;
-    position: relative;
-    z-index: 1;
-}
-
-.yellow_block2__polaroid2
-{
-    left: -32px;
-    top: -93px;
-    position: relative;
-    z-index: 1;
-}
-
-.yellow_block2__polaroid3
-{
-    left: -37px;
-    top: -217px;
-    position: relative;
-    z-index: 1;
-}
-
-.yellow_block2__iphone
-{
-    margin: 34px 0 0 18px;
-}
-
-.yellow_block3
-{
-    height: 588px;
-    padding: 213px 0 0;
-}
-
-.yellow_block3__substrate
-{
-    background: url("../images/yellow/line3.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 565px;
-    width: 626px;
-    margin: 84px 0 0;
-}
-
-.yellow_block3__text
-{
-    margin: -140px 0 0;
-}
-
-.yellow_block3__magazine
-{
-    margin: -275px 0 0 48px;
-}
-
-.yellow_block3__aeroexpress
-{
-    left: -174px;
-    position: relative;
-    top: -3px;
-    z-index: 2;
-}
-
-.yellow_block3__money
-{
-    left: 390px;
-    top: -330px;
-    position: relative;
-    z-index: 3;
-}
-
-.yellow_block3__ticket
-{
-    left: 100px;
-    position: relative;
-    top: -173px;
-    z-index: 1;
-}
-
-.yellow_block3__traffic
-{
-    left: 6px;
-    position: relative;
-    top: -225px;
-}
-
-.yellow_block3__ipod
-{
-    margin: 94px 0 0 174px;
-}
-
-.yellow_block4
-{
-    height: 746px;
-    padding: 73px 0 0;
-}
-
-.yellow_block4__substrate
-{
-    background: url("../images/yellow/line4.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 588px;
-    width: 570px;
-    margin: 222px 156px 0;
-}
-
-.yellow_block4__backpack
-{
-    margin: -106px 0 0;
-}
-
-.yellow_block4__text
-{
-    left: 16px;
-    position: relative;
-    top: -122px;
-}
-
-.yellow_block4__carton
-{
-    margin: -80px 96px 0;
-}
-
-.yellow_block4__notebook
-{
-    margin: 60px 0 0;
-}
-
-.yellow_block4__botle
-{
-    margin: 58px 18px 0;
-}
-
-.yellow_block4__camera
-{
-    margin: 87px 36px 0;
 }
 
 .persons__footer
@@ -447,4 +466,631 @@ body
     background: url("../images/logoatom.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     height: 102px;
     width: 102px;
+}
+
+.footer__links
+{
+    margin: 159px 0 0 -1px;
+}
+
+.footer__links__help
+{
+    margin: 0 13px 0 0;
+}
+
+.copyright
+{
+    margin: 159px 0 0 -17px;
+}
+
+.yellow_block1
+{
+    height: 46px;
+}
+
+.yellow_block1__substrate
+{
+    background: url("../images/yellow/line1.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
+    height: 85px;
+}
+
+.yellow_block1__map
+{
+    margin: 7px 0 0;
+}
+
+.yellow_block2
+{
+    height: 504px;
+    padding: 276px 0 0;
+}
+
+.yellow_block2__substrate
+{
+    background: url("../images/yellow/line2.png") no-repeat scroll 136px 0 rgba(0, 0, 0, 0);
+    height: 565px;
+}
+
+.yellow_block2__text
+{
+    margin: -115px 0 52px;
+}
+
+.yellow_block2__aviaticket
+{
+    margin: 0 0 0 -166px;
+}
+
+.yellow_block3
+{
+    height: 504px;
+    padding: 295px 0 0;
+}
+
+.yellow_block3__substrate
+{
+    background: url("../images/yellow/line3.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
+    height: 565px;
+}
+
+.yellow_block3__text
+{
+    margin: 80px 0 0;
+}
+
+.yellow_block3__laptop
+{
+    margin: -199px 0 0;
+    position: relative;
+    z-index: 2;
+}
+
+.yellow_block3__polaroid1
+{
+    left: -186px;
+    top: -220px;
+    position: relative;
+    z-index: 1;
+}
+
+.yellow_block3__polaroid2
+{
+    left: 10px;
+    top: -93px;
+    position: relative;
+    z-index: 1;
+}
+
+.yellow_block3__polaroid3
+{
+    left: 78px;
+    top: -217px;
+    position: relative;
+    z-index: 1;
+}
+
+.yellow_block3__iphone
+{
+    margin: 35px 0 0;
+}
+
+.yellow_block3__magazine
+{
+    margin: 118px 0 0 30px;
+}
+
+.yellow_block4
+{
+    height: 504px;
+    padding: 296px 0 0;
+}
+
+.yellow_block4__substrate
+{
+    background: url("../images/yellow/line4.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
+    height: 565px;
+}
+
+.yellow_block4__text
+{
+    margin: -220px 0 0;
+}
+
+.yellow_block4__aeroexpress
+{
+    margin: -3px 0 0 -174px;
+    position: relative;
+    z-index: 2;
+}
+
+.yellow_block4__money
+{
+    left: 408px;
+    position: relative;
+    top: -328px;
+    z-index: 3;
+}
+
+.yellow_block4__ticket
+{
+    left: 119px;
+    position: relative;
+    top: -171px;
+    z-index: 1;
+}
+
+.yellow_block4__traffic
+{
+    left: 156px;
+    position: relative;
+    top: -223px;
+}
+
+.yellow_block4__ipod
+{
+    margin: 94px 0 0;
+}
+
+.yellow_block5
+{
+    height: 524px;
+    padding: 296px 0 0;
+}
+
+.yellow_block5__substrate
+{
+    background: url("../images/yellow/line5.png") no-repeat scroll 234px 0 rgba(0, 0, 0, 0);
+    height: 588px;
+}
+
+.yellow_block5__text
+{
+    margin: -118px 0 0;
+}
+
+.yellow_block5__backpack
+{
+    margin: -201px 0 0;
+}
+
+.yellow_block5__carton
+{
+    margin: 41px 0 79px;
+}
+
+.yellow_block5__camera
+{
+    margin: 28px 0 0;
+}
+
+.red_block1
+{
+    height: 46px;
+}
+
+.red_block1__substrate
+{
+    background: url("../images/red/line1.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
+    height: 97px;
+}
+
+.red_block2
+{
+    height: 504px;
+    padding: 286px 0 0;
+}
+
+.red_block2__substrate
+{
+    background: url("../images/red/line2.png") no-repeat scroll 214px 0 rgba(0, 0, 0, 0);
+    height: 555px;
+}
+
+.red_block2__text
+{
+    margin: 60px 0 0;
+}
+
+.red_block2__tour
+{
+    margin: -223px 0 0;
+}
+
+.red_block2__pasports
+{
+     margin: -102px 0 0 78px;
+}
+
+.red_block2__portret
+{
+    margin: 27px 0 0;
+}
+
+.red_block2__book
+{
+    margin: -68px 0 0 156px;
+}
+
+.red_block2__bear
+{
+    margin: -257px 0 0 -78px;
+}
+
+.red_block3
+{
+    height: 504px;
+    padding: 296px 0 0;
+}
+
+.red_block3__substrate
+{
+    background: url("../images/red/line3.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
+    height: 565px;
+}
+
+.red_block3__text
+{
+    margin: -210px 0 0;
+}
+
+.red_block3__iphone
+{
+    margin: 75px 0 0;
+}
+
+.red_block3__bill
+{
+    margin: 40px 0 0;
+}
+
+.red_block3__lenses
+{
+    margin: -250px 0 0 156px;
+    position: relative;
+    top: -64px;
+}
+
+.red_block3__tamagotchi
+{
+    margin: -56px 0 0 -78px;
+}
+
+.red_block3__glasses
+{
+    margin: -16px 0 0;
+}
+
+.red_block4
+{
+    height: 504px;
+    padding: 355px 0 0;
+}
+
+.red_block4__substrate
+{
+    background: url("../images/red/line4.png") no-repeat scroll 124px 0 rgba(0, 0, 0, 0);
+    height: 565px;
+}
+
+.red_block4__text
+{
+    margin: -40px 0 0;
+}
+
+.red_block4__lisence
+{
+    margin: 29px 0 0;
+}
+
+.red_block4__keys
+{
+    margin: -112px 0 0 156px;
+}
+
+.red_block4__imac
+{
+    margin: -209px 0 0;
+}
+
+.red_block4__bags
+{
+    margin: -57px 0 0 -156px;
+}
+
+.red_block4__cup
+{
+    margin: -123px 0 0 36px;
+}
+
+.red_block5__text
+{
+    margin: -221px 0 0;
+}
+
+.red_block5
+{
+    height: 504px;
+    padding: 295px 0 0;
+}
+
+.red_block5__substrate
+{
+    background: url("../images/red/line5.png") no-repeat scroll 468px 0 rgba(0, 0, 0, 0);
+    height: 548px;
+}
+
+.red_block5__fish
+{
+    margin: 32px 0 0 -272px;
+}
+
+.red_block5__glass
+{
+    margin: -148px 0 0 71px;
+}
+
+.red_block5__breakfast
+{
+    margin: 34px 0 0;
+}
+
+.red_block5__wineglass1
+{
+    margin: 258px 0 0;
+}
+
+.red_block5__wine
+{
+    margin: 76px 0 0 36px;
+}
+
+.red_block5__fruit
+{
+    margin: 34px 0 0;
+}
+
+.red_block5__wineglass2
+{
+    margin: -15px 0 0;
+}
+
+.blue_block1
+{
+    height: 36px;
+}
+
+.blue_block1__substrate
+{
+    background: url("../images/blue/line1.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
+    height: 97px;
+}
+
+.blue_block2__text
+{
+    margin: 72px 0 0;
+}
+
+.blue_block2
+{
+    height: 504px;
+    padding: 296px 0 0;
+}
+
+.blue_block2__substrate
+{
+    background: url("../images/blue/line2.png") no-repeat scroll 156px 0 rgba(0, 0, 0, 0);
+    height: 566px;
+}
+
+.blue_block2__phone
+{
+    margin: 25px 0 0 -78px;
+}
+
+.blue_block2__pen
+{
+    margin: 25px 0 0;
+}
+
+.blue_block2__ticket
+{
+    margin: 131px 0 0;
+}
+
+.blue_block2__notebook
+{
+    margin: -170px 0 0 78px;
+    position: relative;
+    top: -374px;
+}
+
+.blue_block2__watch
+{
+    left: -310px;
+    position: relative;
+    top: -44px;
+}
+
+.blue_block2__photo
+{
+    left: 390px;
+    position: relative;
+    top: -342px;
+}
+
+.blue_block3__text
+{
+    margin: -314px 0 0;
+}
+
+.blue_block3
+{
+    height: 504px;
+    padding: 296px 0 0;
+}
+
+.blue_block3__substrate
+{
+    background: url("../images/blue/line3.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
+    height: 565px;
+}
+
+.blue_block3__paper
+{
+    margin: -299px 0 0 -302px;
+}
+
+.blue_block3__notebook
+{
+    left: -78px;
+    margin: -300px 0 0;
+    position: relative;
+    top: -185px;
+}
+
+.blue_block3__ipad
+{
+    margin: -300px 0 0;
+}
+
+.blue_block3__cup
+{
+    margin: -90px 0 0 156px;
+}
+
+.blue_block3__mask
+{
+    margin: -63px 0 0;
+}
+
+.blue_block3__palka
+{
+    margin: -466px 0 0 156px;
+}
+
+.blue_block4__text
+{
+    margin: 105px 0 0;
+}
+
+.blue_block4
+{
+    height: 504px;
+    padding: 296px 0 0;
+}
+
+.blue_block4__substrate
+{
+    background: url("../images/blue/line4.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
+    height: 565px;
+}
+
+.blue_block4__iphone
+{
+    margin: 35px 0 0;
+}
+
+.blue_block4__krug
+{
+    margin: -378px 0 0 390px;
+}
+
+.blue_block4__cards
+{
+    position: relative;
+    top: -158px;
+}
+
+.blue_block4__money
+{
+    left: 88px;
+    margin: 6px 0 0;
+    position: relative;
+}
+
+.blue_block4__tie
+{
+    left: 78px;
+    margin: -500px 0 0;
+    position: relative;
+    top: -135px;
+}
+
+.blue_block4__bag
+{
+    margin: -94px 0 0 -78px;
+}
+
+.blue_block5__text
+{
+    margin: -196px 0 0;
+}
+
+.blue_block5
+{
+    height: 504px;
+    padding: 296px 0 0;
+}
+
+.blue_block5__substrate
+{
+    background: url("../images/blue/line5.png") no-repeat scroll 234px 0 rgba(0, 0, 0, 0);
+    height: 548px;
+}
+
+.blue_block5__newspaper
+{
+    margin: 21px 0 0;
+}
+
+.blue_block5__magazine
+{
+    margin: 21px 0 0;
+}
+
+.blue_block5__book
+{
+    margin: 132px 0 0;
+}
+
+.help
+{
+    background: url("../images/right_btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    height: 68px;
+    width: 67px;
+    position: fixed;
+    z-index: 20;
+    display: block;
+    cursor: pointer;
+    right: 36px;
+    top: 36px;
+}
+
+.help:hover
+{
+    background-position: 0 -70px;
+}
+
+.popup
+{
+    height: 100%;
+    width: 100%;
+    z-index: 30;
+    display: none;
+    position: fixed;
+    background: none no-repeat scroll 0 0 rgba(0, 0, 0, 0.5);
+}
+
+.popup__content
+{
+    background: url("../images/popup.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    bottom: 0;
+    height: 447px;
+    left: 0;
+    margin: auto;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 780px;
+    z-index: 40;
 }

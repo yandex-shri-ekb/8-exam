@@ -16,6 +16,16 @@
     position: relative;
 }
 
+.gutter_left
+{
+    margin-left: 9px;
+}
+
+.gutter_right
+{
+    margin-right: 9px;
+}
+
 .grid_1
 {
     width:60px;
