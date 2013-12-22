@@ -11,8 +11,9 @@
     <script src="js/exam.story.js"></script>
     <script src="js/exam.sidebar.js"></script>
     <script src="js/exam.sidebar-switcher.js"></script>
-    <script src="js/exam.paths-menu.js"></script>
+    <script src="js/exam.person-menu.js"></script>
     <script src="js/exam.person-active.js"></script>
+    <script src="js/exam.person-bar.js"></script>
     <script>
     $(document).ready(function(){
         // Подключение виджетов к тегам
@@ -60,41 +61,41 @@
         </div>
         <div class="story__item story__item-3">
             <!-- меню выбора персонажа -->
-            <div class="paths-menu" data-w="paths-menu" data-w-options='{"when_hidden":["out-top"]}'>
-                <div class="paths-menu grid_cols_12">
+            <div class="person-menu" data-w="person-menu" data-w-options='{"when_hidden":["out-top"]}'>
+                <div class="person-menu grid_cols_12">
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_3 grid__module_span_2">
-                            <div class="paths-menu__item paths-menu__item_type_yellow paths-menu__item_state_active" data-type="yellow">
-                                <div class="paths-menu__icon paths-menu__icon_type_yellow"></div>
-                                <div class="paths-menu__label">Максим</div>
+                            <div class="person-menu__item person-menu__item_type_yellow person-menu__item_state_active" data-type="yellow">
+                                <div class="person-menu__icon person-menu__icon_type_yellow"></div>
+                                <div class="person-menu__label">Максим</div>
                             </div>
                         </div>
                         <div class="grid__module grid__module_col_6 grid__module_span_2">
-                            <div class="paths-menu__item paths-menu__item_type_red" data-type="red">
-                                <div class="paths-menu__icon paths-menu__icon_type_red"></div>
-                                <div class="paths-menu__label">Алексей Быков</div>
+                            <div class="person-menu__item person-menu__item_type_red" data-type="red">
+                                <div class="person-menu__icon person-menu__icon_type_red"></div>
+                                <div class="person-menu__label">Алексей Быков</div>
                             </div>
                         </div>
                         <div class="grid__module grid__module_col_9 grid__module_span_2">
-                            <div class="paths-menu__item paths-menu__item_type_blue" data-type="blue">
-                                <div class="paths-menu__icon paths-menu__icon_type_blue"></div>
-                                <div class="paths-menu__label">Георгий И. Дауге</div>
+                            <div class="person-menu__item person-menu__item_type_blue" data-type="blue">
+                                <div class="person-menu__icon person-menu__icon_type_blue"></div>
+                                <div class="person-menu__label">Георгий И. Дауге</div>
                             </div>
                         </div>
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_4">
-                            <div class="paths-menu__desc paths-menu__desc_type_yellow">
+                            <div class="person-menu__desc person-menu__desc_type_yellow">
                                 Предпочитает путешествовать самостоятельно и налегке. Уверен, что только так можно проникнуться культурой страны.
                             </div>
                         </div>
                         <div class="grid__module grid__module_col_5 grid__module_span_4">
-                            <div class="paths-menu__desc paths-menu__desc_type_red">
+                            <div class="person-menu__desc person-menu__desc_type_red">
                                 В отпуск ездит вместе с женой и дочкой. Считает, что отдыхать лучше всего в отелях на побережье.
                             </div>
                         </div>
                         <div class="grid__module grid__module_col_8 grid__module_span_4">
-                            <div class="paths-menu__desc paths-menu__desc_type_blue">
+                            <div class="person-menu__desc person-menu__desc_type_blue">
                                 Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания.
                             </div>
                         </div>
@@ -104,7 +105,7 @@
         </div>
         <div class="story-path">
             <!-- Путь первого юзера -->
-            <div class="story-path__item story-path__item_type_yellow story-path__item_state_active">
+            <div class="story-path__item story-path__item_type_yellow story-path__item_state_active" data-type="yellow">
                 <div class="grid_cols_12">
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_1">
@@ -116,7 +117,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="1">
                                 <p>Максим хочет увидеть настоящий, нетуристический Таиланд.</p>
                                 <p>Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё, что ему нужно, — билет на самолёт.</p>
                             </div>
@@ -132,7 +133,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_8 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="2">
                                 <p>Для путешествия по жаркой стране Максиму нужна удобная одежда и крепкая обувь.</p>
                                 <p>Он не желает тратить время на походы по магазинам, ведь интересные ему вещи можно с лёгкостью найти в интернете.</p>
                             </div>
@@ -148,7 +149,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="3">
                                 <p>Рюкзак с вещами и ноутбуком — вот и весь багаж Максима.</p>
                                 <p>На метро он доберётся до вокзала, а оттуда поедет на аэроэкспрессе.</p>
                             </div>
@@ -164,7 +165,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_8 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="4">
                                 <p>Максим не сидит на месте — в поисках интересных мест он колесит по всей стране.</p>
                                 <p>Когда ночь застаёт его в пути, Максим находит ближайший хостел. Утром решает остаться и осмотреть местные достопри-мечательности или вернуться на дорогу.</p>
                             </div>
@@ -184,7 +185,7 @@
                 </div>
             </div>
             <!-- Путь второго юзера -->
-            <div class="story-path__item story-path__item_type_red">
+            <div class="story-path__item story-path__item_type_red" data-type="red">
                 <div class="grid_cols_12">
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_1">
@@ -196,7 +197,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="1">
                                 <p>Максим хочет увидеть настоящий, нетуристический Таиланд.</p>
                                 <p>Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё, что ему нужно, — билет на самолёт.</p>
                             </div>
@@ -212,7 +213,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_8 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="2">
                                 <p>Для путешествия по жаркой стране Максиму нужна удобная одежда и крепкая обувь.</p>
                                 <p>Он не желает тратить время на походы по магазинам, ведь интересные ему вещи можно с лёгкостью найти в интернете.</p>
                             </div>
@@ -228,7 +229,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="3">
                                 <p>Рюкзак с вещами и ноутбуком — вот и весь багаж Максима.</p>
                                 <p>На метро он доберётся до вокзала, а оттуда поедет на аэроэкспрессе.</p>
                             </div>
@@ -244,7 +245,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_8 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="4">
                                 <p>Максим не сидит на месте — в поисках интересных мест он колесит по всей стране.</p>
                                 <p>Когда ночь застаёт его в пути, Максим находит ближайший хостел. Утром решает остаться и осмотреть местные достопри-мечательности или вернуться на дорогу.</p>
                             </div>
@@ -261,7 +262,7 @@
                 </div>
             </div>
             <!-- Путь третьего юзера -->
-            <div class="story-path__item story-path__item_type_blue">
+            <div class="story-path__item story-path__item_type_blue" data-type="blue">
                 <div class="grid_cols_12">
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_1">
@@ -270,7 +271,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="1">
                                 <p>Григорий Иоганович Дауге редко отдыхает — бизнес требует от него полной отдачи.</p>
                                 <p>Друзья и коллеги, переживающие за его здоровье, подарили ему билет в Таиланд. Поспорив для вида, Григорий Иоганович решает, что здоровье важнее, и садится выбирать отель.</p>
                             </div>
@@ -286,7 +287,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_8 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="2">
                                 <p>Даже отдых должен приносить в жизнь что-нибудь новое — таков жизненный принцип Григория Иогановича.</p>
                                 <p>В этой поездке он планирует научиться дайвингу: посмотреть на коралловые рифы и причудливых морских животных.</p>
                             </div>
@@ -302,7 +303,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_2 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="3">
                                 <p>Перед отлётом Григорий Иоганович отправил своего личного водителя в отпуск.</p>
                                 <p>Добираться до аэропорта он будет на такси.</p>
                             </div>
@@ -318,7 +319,7 @@
                     </div>
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_8 grid__module_span_4">
-                            <div class="story-path__text">
+                            <div class="story-path__text" data-pos="4">
                                 <p>В Таиланде Григорий Иоганович наконец понимает, как сильно он устал на работе.</p>
                                 <p>Каждый день он в обязательном порядке ходит на массаж, а утро начинает с йоги.</p>
                             </div>
@@ -337,25 +338,25 @@
         </div>
         <div class="story__item story__item-last-1">
             <!-- меню выбора персонажа без описания -->
-            <div class="paths-menu" data-w="paths-menu" data-w-options='{"scrollto":".story__item-3", "when_hidden":["out-bottom"]}'>
-                <div class="paths-menu grid_cols_12">
+            <div class="person-menu" data-w="person-menu" data-w-options='{"scrollto":".story__item-3", "when_hidden":["out-bottom"]}'>
+                <div class="person-menu grid_cols_12">
                     <div class="grid__row">
                         <div class="grid__module grid__module_col_3 grid__module_span_2">
-                            <div class="paths-menu__item paths-menu__item_type_yellow paths-menu__item_state_active" data-type="yellow">
-                                <div class="paths-menu__icon paths-menu__icon_type_yellow"></div>
-                                <div class="paths-menu__label">Максим</div>
+                            <div class="person-menu__item person-menu__item_type_yellow person-menu__item_state_active" data-type="yellow">
+                                <div class="person-menu__icon person-menu__icon_type_yellow"></div>
+                                <div class="person-menu__label">Максим</div>
                             </div>
                         </div>
                         <div class="grid__module grid__module_col_6 grid__module_span_2">
-                            <div class="paths-menu__item paths-menu__item_type_red" data-type="red">
-                                <div class="paths-menu__icon paths-menu__icon_type_red"></div>
-                                <div class="paths-menu__label">Алексей Быков</div>
+                            <div class="person-menu__item person-menu__item_type_red" data-type="red">
+                                <div class="person-menu__icon person-menu__icon_type_red"></div>
+                                <div class="person-menu__label">Алексей Быков</div>
                             </div>
                         </div>
                         <div class="grid__module grid__module_col_9 grid__module_span_2">
-                            <div class="paths-menu__item paths-menu__item_type_blue" data-type="blue">
-                                <div class="paths-menu__icon paths-menu__icon_type_blue"></div>
-                                <div class="paths-menu__label">Георгий И. Дауге</div>
+                            <div class="person-menu__item person-menu__item_type_blue" data-type="blue">
+                                <div class="person-menu__icon person-menu__icon_type_blue"></div>
+                                <div class="person-menu__label">Георгий И. Дауге</div>
                             </div>
                         </div>
                     </div>
@@ -514,12 +515,11 @@
 
     <div class="sidebar-switcher" data-w="sidebar-switcher"></div>
 
-<!--
-    <div class="fixed-menu">
-        <div class="fixed-menu__item fixed-menu__item_yellow"></div>
-        <div class="fixed-menu__item fixed-menu__item_red"></div>
-        <div class="fixed-menu__item fixed-menu__item_blue"></div>
-    </div>-->
+    <div class="person-bar" data-w="person-bar">
+        <div class="person-bar__item person-bar__item_type_yellow person-bar__item_pos_1 person-bar__item_state_active" data-type="yellow"></div>
+        <div class="person-bar__item person-bar__item_type_red person-bar__item_pos_1" data-type="red"></div>
+        <div class="person-bar__item person-bar__item_type_blue person-bar__item_pos_1" data-type="blue"></div>
+    </div>
     <div class="person-active person-active_type_yellow" data-w="person-active">
 
     </div>

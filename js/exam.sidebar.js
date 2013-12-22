@@ -21,8 +21,8 @@
                 if (!self.element.hasClass('sidebar_state_show')){
                     e.preventDefault();
                     // Сообщаем всем, что бокувую панель нужно скрыть/показать
-                    // Виджет сам будет реагировать на сообщение методом call_view_sidebar()
-                    self.callParents('view_sidebar', !self.element.hasClass('sidebar_state_show'), null, true);
+                    // Виджет сам будет реагировать на сообщение методом call_show_sidebar()
+                    self.callParents('show_sidebar', !self.element.hasClass('sidebar_state_show'), null, true);
                 }
             });
             $(window).on('resize', function(){
@@ -47,9 +47,9 @@
             }
         },
         /**
-         * Реакция на изменения вида от других виджетов
+         * Реакция на открытие/скрытыие
          */
-        call_view_sidebar: function(caller, show){
+        call_show_sidebar: function(caller, show){
             if (show){
                 this.element.addClass('sidebar_state_show');
             }else{
@@ -58,9 +58,9 @@
             this.view();
         },
         /**
-         * Реакция на изменения вида боковой панели
+         * Реакция на выбор персонажа
          */
-        call_select_path: function(caller, type){
+        call_select_person: function(caller, type){
             this._$texts.find('.texts__item_state_active').removeClass('texts__item_state_active');
             this._$texts.find('.texts__item_type_'+type).addClass('texts__item_state_active');
         }

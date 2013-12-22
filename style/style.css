@@ -227,7 +227,7 @@ li:before
 
 .story__logo
 {
-    background: no-repeat url('img/bg-logo.png');
+    background: no-repeat -566px -326px url('img/icons.png');
     text-align: center;
     width: 138px;
     height: 84px;
@@ -245,14 +245,24 @@ li:before
 }
 
 /* Пути историй */
+.story-path
+{
+    height: 3322px;
+}
 .story-path__item
 {
-    display: none;
+    left: -2000px;
+    width: 972px;
+    position: absolute;
+    opacity: 0.01;
+    -webkit-transition: left 1s, opacity 500ms;
+            transition: left 1s, opacity 500ms;
 }
 
 .story-path__item_state_active
 {
-    display: block;
+    left: 20px;
+    opacity: 1;
 }
 
 .story-path__line
@@ -373,22 +383,22 @@ li:before
 
 .video-btn_type_yellow
 {
-    background-position: -896px -563px;
+    background-position: -566px -26px;
 }
 
 .video-btn_type_red
 {
-    background-position: -569px -563px;
+    background-position: -566px -226px;
 }
 
 .video-btn_type_blue
 {
-    background-position: -735px -563px;
+    background-position: -566px -126px;
 }
 
-/* paths-menu */
+/* person-menu */
 
-.paths-menu__item
+.person-menu__item
 {
     cursor: pointer;
     height: 230px;
@@ -396,7 +406,7 @@ li:before
     margin-left: -27px;
 }
 
-.paths-menu__icon
+.person-menu__icon
 {
     height: 138px;
     width: 138px;
@@ -404,50 +414,50 @@ li:before
     background: no-repeat 0 0 url(img/icons.png);
 }
 
-.paths-menu__icon_type_yellow
+.person-menu__icon_type_yellow
 {
     background-position: 0 0;
 }
 
-.paths-menu__icon_type_red
+.person-menu__icon_type_red
 {
     background-position: 0 -138px;
 }
 
-.paths-menu__icon_type_blue
+.person-menu__icon_type_blue
 {
     background-position: 0 -278px;
 }
 
-.paths-menu__item_state_active .paths-menu__icon
+.person-menu__item_state_active .person-menu__icon
 {
     height: 217px;
     width: 217px;
     margin-top: -36px;
 }
 
-.paths-menu__item_state_active .paths-menu__icon_type_yellow
+.person-menu__item_state_active .person-menu__icon_type_yellow
 {
     background-position: -315px 0;
 }
 
-.paths-menu__item_state_active .paths-menu__icon_type_red
+.person-menu__item_state_active .person-menu__icon_type_red
 {
     background-position: -315px -220px;
 }
 
-.paths-menu__item_state_active .paths-menu__icon_type_blue
+.person-menu__item_state_active .person-menu__icon_type_blue
 {
     background-position: -315px -442px;
 }
 
-.paths-menu__label
+.person-menu__label
 {
     text-align: center;
     margin-top: 15px;
 }
 
-.paths-menu__desc
+.person-menu__desc
 {
     text-align: center;
 }
@@ -463,8 +473,8 @@ li:before
     left: 410px;
     background: no-repeat -140px 0 url(img/icons.png);
     z-index: 100;
-    -webkit-transition: top 200ms;
-            transition: top 200ms;
+    -webkit-transition: top 500ms;
+            transition: top 500ms;
 }
 
 .person-active_state_show{
@@ -488,32 +498,83 @@ li:before
 
 /*@todo Меню в пути */
 
-.fixed-menu
+.person-bar
 {
     position: fixed;
     width: 300px;
     height: 90px;
-    top: 10px;
+    top: -100px;
     left: 350px;
+    -webkit-transition: top 500mx;
+        transition: top 500ms;
 }
-.fixed-menu__item
+.person-bar_state_show
+{
+    top: 10px;
+}
+.person-bar__item
 {
     float: left;
     width: 90px;
     height: 90px;
     margin: 0 5px;
-    background: #000;
-    background: no-repeat 0 0 url(img/icons.png);
+    cursor: pointer;
+    background: no-repeat url(img/person-bar-icons.png);
 }
-.fixed-menu__item_yellow
+
+.person-bar__item_state_active
 {
-    background-position: -565px -26px;
+    background-image: url(img/person-bar-icons-active.png);
+    cursor: default;
 }
-.fixed-menu__item_red
+/*yellow*/
+.person-bar__item_type_yellow.person-bar__item_pos_1
 {
-    background-position: -665px -26px;
+    background-position: 0 0;
 }
-.fixed-menu__item_blue
+.person-bar__item_type_yellow.person-bar__item_pos_2
 {
-    background-position: -765px -26px;
+    background-position: 0 -90px;
+}
+.person-bar__item_type_yellow.person-bar__item_pos_3
+{
+    background-position: 0 -180px;
+}
+.person-bar__item_type_yellow.person-bar__item_pos_4
+{
+    background-position: 0 -270px;
+}
+/*red*/
+.person-bar__item_type_red.person-bar__item_pos_1
+{
+    background-position: -90px 0;
+}
+.person-bar__item_type_red.person-bar__item_pos_2
+{
+    background-position: -90px -90px;
+}
+.person-bar__item_type_red.person-bar__item_pos_3
+{
+    background-position: -90px -180px;
+}
+.person-bar__item_type_red.person-bar__item_pos_4
+{
+    background-position: -90px -270px;
+}
+/*blue*/
+.person-bar__item_type_blue.person-bar__item_pos_1
+{
+    background-position: -180px 0;
+}
+.person-bar__item_type_blue.person-bar__item_pos_2
+{
+    background-position: -180px -90px;
+}
+.person-bar__item_type_blue.person-bar__item_pos_3
+{
+    background-position: -180px -180px;
+}
+.person-bar__item_type_blue.person-bar__item_pos_4
+{
+    background-position: -180px -270px;
 }

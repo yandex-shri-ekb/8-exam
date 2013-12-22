@@ -5,7 +5,7 @@
  * @author Vladimir Shestakov <boolive@yandex.ru>
  */
 (function($) {
-    $.widget("exam.paths-menu", $.boolive.widget, {
+    $.widget("exam.person-menu", $.boolive.widget, {
         _create: function() {
             $.boolive.widget.prototype._create.call(this);
             var self = this;
@@ -17,11 +17,11 @@
             if (!$.isArray(self.options.when_hidden)){
                 self.options.when_hidden = ['out-top', 'out-bottom'];
             }
-            this.element.on('click', '.paths-menu__item', function(e){
-                if (!$(this).hasClass('paths-menu__item_state_active')){
+            this.element.on('click', '.person-menu__item', function(e){
+                if (!$(this).hasClass('person-menu__item_state_active')){
                     e.preventDefault();
                     // сообщаем всем о выборе
-                    self.callParents('select_path', $(this).attr('data-type'), null, true);
+                    self.callParents('select_person', $(this).attr('data-type'), null, true);
                     // автосколл до указанного элемента
                     if (self.options.scrollto){
                         var pos_elem = $(self.options.scrollto+':first');
@@ -31,10 +31,10 @@
                     }
                 }
             })
-            .on('mouseenter', '.paths-menu__item', function(e){
+            .on('mouseenter', '.person-menu__item', function(e){
                 self.show_description($(this).attr('data-type'));
             })
-            .on('mouseleave', '.paths-menu__item', function(e){
+            .on('mouseleave', '.person-menu__item', function(e){
                 self.show_description();
             });
             // Определяем, попадает ли виджет в область viewport'а
@@ -51,7 +51,7 @@
             var self = this;
             if (!this.wait_check){
                 self.wait_check = true;
-                setTimeout(function(){
+//                setTimeout(function(){
                     var $win = $(window),
                         pos = 'in';
                     if (self.element.offset().top + self.element.height() < $win.scrollTop()){
@@ -66,27 +66,27 @@
                     //if (self.current_pos !== pos){
                     //    self.current_pos = pos;
                         // Сообщаем всем о своей позиции
-                        self.callParents('paths_menu_visible', {value: pos === 'in', key: self.eventNamespace}, null, true);
+                        self.callParents('person_menu_visible', {value: pos === 'in', key: self.eventNamespace}, null, true);
                     //}
                     self.wait_check = false;
-                },1000)
+//                },1000)
             }
         },
 
         show_description: function(type){
             if (typeof type === 'undefined'){
-                type = this.element.find('.paths-menu__item_state_active:first').attr('data-type');
+                type = this.element.find('.person-menu__item_state_active:first').attr('data-type');
             }
-            this.element.find('.paths-menu__desc:visible').hide();
-            this.element.find('.paths-menu__desc_type_'+type).show();
+            this.element.find('.person-menu__desc:visible').hide();
+            this.element.find('.person-menu__desc_type_'+type).show();
         },
 
         /**
-         * Реакция на изменения вида боковой панели
+         * Реакция на выбор персонажа
          */
-        call_select_path: function(caller, type){
-            this.element.find('.paths-menu__item_state_active').removeClass('paths-menu__item_state_active');
-            this.element.find('.paths-menu__item_type_'+type).addClass('paths-menu__item_state_active');
+        call_select_person: function(caller, type){
+            this.element.find('.person-menu__item_state_active').removeClass('person-menu__item_state_active');
+            this.element.find('.person-menu__item_type_'+type).addClass('person-menu__item_state_active');
             this.show_description();
         }
     });

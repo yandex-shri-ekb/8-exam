@@ -15,9 +15,9 @@
          */
         _parent: undefined,
         /**
-         * @var {Array}|undefined Массив подчиенных виджетов
+         * @var {Array}|undefined Массив подчиненных виджетов
          */
-        _children: undefined, // Подчиненные виджеты
+        _children: undefined,
 
         /**
          * Конструктор объекта
@@ -106,7 +106,7 @@
          * @param call Название действия (функции)
          * @param args Массив аргументов
          * @param target Объект, иницировавший вызов действия. По умолчанию this.
-         * @param up Признак, когда вызов дойдет до корневого объекты, перенаправить вызов всем подчиенным.
+         * @param up Признак, когда вызов дойдет до корневого объекты, перенаправить вызов всем подчиненным.
          */
         callParents: function(call, args, target, up){
             if (!target) target = null;
@@ -128,11 +128,6 @@
                 this.callChildren(call, args, target);
             }
             return undefined;
-        }
-
-        ,
-        call_view_sidebar: function(caller, show){
-            console.log(this);
         }
     });
 })(jQuery);

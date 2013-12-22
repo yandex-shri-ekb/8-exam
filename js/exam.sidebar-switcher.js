@@ -11,14 +11,14 @@
             var self = this;
             this.element.on('click', function(e){
                 e.preventDefault();
-                self.callParents('view_sidebar', !self.element.hasClass('sidebar-switcher_state_show'), null, true);
+                self.callParents('show_sidebar', !self.element.hasClass('sidebar-switcher_state_show'), null, true);
             });
         },
 
         /**
-         * Реакция на изменения вида боковой панели
+         * Реакция на открытие/скрытыие боковой панели
          */
-        call_view_sidebar: function(caller, show){
+        call_show_sidebar: function(caller, show){
             if (show){
                 this.element.addClass('sidebar-switcher_state_show');
             }else{
