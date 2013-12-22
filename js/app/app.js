@@ -10,6 +10,8 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         $switcherBottom = $('.switcher-bottom'),
         $charFloated = $('.char-floated'),
         $switcherFloated = $('.switcher-floated'),
+        $panel = $('.layout__floated'),
+        panelLeft = $panel.offset().left,
         initedChars = [],
         coords = {
             // диапозон, в котором будет отображаться $charFloated
@@ -157,6 +159,45 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         initedChars.push(char);
     }
 
+    /**
+     */
+    function _onOpenBtnClicked() {
+        var status = $panel.data('status');
+        if(status) {
+            $panel.animate({ left: panelLeft }, "fast");
+            $panel.data('status', 0)
+        }
+        else {
+            var newLeft = _calcPanelLeft();
+            $panel.animate({ left: newLeft }, "fast");
+            $panel.data('status', 1)
+        }
+    }
+
+    /**
+     */
+    function _calcPanelLeft() {
+        var ww = $window.width(),
+            left = $panel.offset().left,
+            w = ww - left;
+
+        if(w < 0) {
+            w = 0;
+        }
+
+        if(w > 870) {
+            return panelLeft;
+        }
+
+        var availableW = ww - w - 200,
+            requireW = 870 - w;
+
+        availableW = availableW < 0 ? 0 : availableW;
+
+        var addW = requireW <= availableW ? requireW : availableW;
+
+        return left - addW;
+    }
 
     /**
      */
@@ -212,10 +253,15 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
             }
         });
 
-        $('.open-btn').on('click', function() {
-            var $btn = $(this);
-            $bPage.toggleClass('dev');
+        $window.resize(function() {
+            var status = $panel.data('status');
+            if(status) {
+                var newLeft = _calcPanelLeft();
+                $panel.css({ left: newLeft + 'px' });
+            }
         });
+
+        $('.open-btn').on('click', _onOpenBtnClicked);
 
         // desc
         var $charText = $('.char-text');
