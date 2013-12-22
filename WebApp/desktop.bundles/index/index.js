@@ -116,6 +116,12 @@
 ;
 /*borschik:include:../../desktop.blocks/atom-logo/atom-logo.browser.js*/
 ;
+/*borschik:include:../../desktop.blocks/max-way/max-way.browser.js*/
+;
+/*borschik:include:../../desktop.blocks/alex-way/alex-way.browser.js*/
+;
+/*borschik:include:../../desktop.blocks/grig-way/grig-way.browser.js*/
+;
 /*borschik:include:../../desktop.blocks/used-services/used-services.browser.js*/
 ;
 /*borschik:include:../../desktop.blocks/application-scenarios/application-scenarios.browser.js*/

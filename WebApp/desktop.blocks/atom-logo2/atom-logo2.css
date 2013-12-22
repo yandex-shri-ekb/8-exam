@@ -2,7 +2,7 @@
 {
     display: inline-block;
     overflow: hidden;
-    background: url('/image/sprite1.png') no-repeat -2px -2px;
     width: 294px;
     height: 201px;
+    background: url('/image/sprite1.png') no-repeat -2px -2px;
 }

@@ -2,10 +2,10 @@
 {
     display: inline-block;
     overflow: hidden;
-    background: url("/image/sprite2.png") no-repeat -1187px -2px;
+    margin-top: 79px;
+    margin-left: 18px;
     width: 138px;
     height: 139px;
-    margin-left: 18px;
-    margin-top: 79px;
+    background: url("/image/sprite2.png") no-repeat -1187px -2px;
     cursor: pointer;
 }

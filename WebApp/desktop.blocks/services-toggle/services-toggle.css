@@ -1,14 +1,14 @@
 .services-toggle
 {
+    position: fixed;
+    top: 36px;
+    right: 36px;
+    z-index: 1;
     display: inline-block;
     overflow: hidden;
-    background: url('/image/sprite2.png') no-repeat -1858px -142px;
     width: 67px;
     height: 67px;
-    position: fixed;
-    right: 36px;
-    top: 36px;
-    z-index: 1;
+    background: url('/image/sprite2.png') no-repeat -1858px -142px;
 }
 
 .services-toggle:hover

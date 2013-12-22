@@ -3,7 +3,7 @@
         {
             "file": "index.bemdecl.js",
             "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.bemdecl.js",
-            "lastUpdated": 1387538243000,
+            "lastUpdated": 1387628444000,
             "suffix": "bemdecl.js"
         }
     ],
@@ -11,7 +11,7 @@
         {
             "file": "index.bemhtml.js",
             "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.bemhtml.js",
-            "lastUpdated": 1387538245000,
+            "lastUpdated": 1387628445000,
             "suffix": "bemhtml.js"
         }
     ],
@@ -19,7 +19,7 @@
         {
             "file": "index.bemjson.js",
             "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.bemjson.js",
-            "lastUpdated": 1387538242000,
+            "lastUpdated": 1387630010000,
             "suffix": "bemjson.js"
         }
     ],
@@ -27,7 +27,7 @@
         {
             "file": "index.css",
             "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.css",
-            "lastUpdated": 1387538292000,
+            "lastUpdated": 1387697930000,
             "suffix": "css"
         }
     ],
@@ -35,7 +35,7 @@
         {
             "file": "index.deps.js",
             "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.deps.js",
-            "lastUpdated": 1387538244000,
+            "lastUpdated": 1387628444000,
             "suffix": "deps.js"
         }
     ],
@@ -43,7 +43,7 @@
         {
             "file": "index.html",
             "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.html",
-            "lastUpdated": 1387538245000,
+            "lastUpdated": 1387630260000,
             "suffix": "html"
         }
     ],
@@ -59,7 +59,7 @@
         {
             "file": "index.js",
             "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.js",
-            "lastUpdated": 1387538244000,
+            "lastUpdated": 1387628444000,
             "suffix": "js"
         }
     ]
@@ -72,7 +72,7 @@
                 {
                     "file": "index.bemdecl.js",
                     "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.bemdecl.js",
-                    "lastUpdated": 1387538243000,
+                    "lastUpdated": 1387628444000,
                     "suffix": "bemdecl.js"
                 }
             ],
@@ -80,7 +80,7 @@
                 {
                     "file": "index.bemhtml.js",
                     "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.bemhtml.js",
-                    "lastUpdated": 1387538245000,
+                    "lastUpdated": 1387628445000,
                     "suffix": "bemhtml.js"
                 }
             ],
@@ -88,7 +88,7 @@
                 {
                     "file": "index.bemjson.js",
                     "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.bemjson.js",
-                    "lastUpdated": 1387538242000,
+                    "lastUpdated": 1387630010000,
                     "suffix": "bemjson.js"
                 }
             ],
@@ -96,7 +96,7 @@
                 {
                     "file": "index.css",
                     "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.css",
-                    "lastUpdated": 1387538292000,
+                    "lastUpdated": 1387697930000,
                     "suffix": "css"
                 }
             ],
@@ -104,7 +104,7 @@
                 {
                     "file": "index.deps.js",
                     "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.deps.js",
-                    "lastUpdated": 1387538244000,
+                    "lastUpdated": 1387628444000,
                     "suffix": "deps.js"
                 }
             ],
@@ -112,7 +112,7 @@
                 {
                     "file": "index.html",
                     "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.html",
-                    "lastUpdated": 1387538245000,
+                    "lastUpdated": 1387630260000,
                     "suffix": "html"
                 }
             ],
@@ -128,7 +128,7 @@
                 {
                     "file": "index.js",
                     "absPath": "/Users/egortrubnikov/Documents/yandex/8-exam/WebApp/desktop.bundles/index/index.js",
-                    "lastUpdated": 1387538244000,
+                    "lastUpdated": 1387628444000,
                     "suffix": "js"
                 }
             ]

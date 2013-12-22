@@ -4285,6 +4285,42 @@ modules.define('atom-logo', function (provide) {
 
 /* ../../desktop.blocks/atom-logo/atom-logo.browser.js end */
 ;
+/* ../../desktop.blocks/max-way/max-way.browser.js begin */
+/*global modules:false */
+
+modules.define('max-way', function (provide) {
+
+    provide();
+
+});
+
+
+/* ../../desktop.blocks/max-way/max-way.browser.js end */
+;
+/* ../../desktop.blocks/alex-way/alex-way.browser.js begin */
+/*global modules:false */
+
+modules.define('alex-way', function (provide) {
+
+    provide();
+
+});
+
+
+/* ../../desktop.blocks/alex-way/alex-way.browser.js end */
+;
+/* ../../desktop.blocks/grig-way/grig-way.browser.js begin */
+/*global modules:false */
+
+modules.define('grig-way', function (provide) {
+
+    provide();
+
+});
+
+
+/* ../../desktop.blocks/grig-way/grig-way.browser.js end */
+;
 /* ../../desktop.blocks/used-services/used-services.browser.js begin */
 /*global modules:false */
 
