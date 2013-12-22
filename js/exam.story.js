@@ -31,12 +31,17 @@
                     self._person_pos[key].push({pos:$(this).data('pos'), top: $(this).offset().top})
                 });
             });
-            // Определяем, попадает ли виджет в область viewport'а
+            // При скроллинге определять позицию персонажей
             $(window).on('scroll', function(){
                 self.find_person_position();
             }).on('resize', function(){
                 self.find_person_position();
             });
+            // play видео
+            this._$video_btn.on('click', function(e){
+                e.preventDefault();
+                self.callParents('play_video', true, null, true);
+            })
         },
 
         /**

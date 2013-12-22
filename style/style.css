@@ -48,6 +48,7 @@ li:before
     font-weight: 400;
     margin: 0 0 20px;
 }
+
 /* sidebar */
 .sidebar
 {
@@ -508,10 +509,12 @@ li:before
     -webkit-transition: top 500mx;
         transition: top 500ms;
 }
+
 .person-bar_state_show
 {
     top: 10px;
 }
+
 .person-bar__item
 {
     float: left;
@@ -527,54 +530,103 @@ li:before
     background-image: url(img/person-bar-icons-active.png);
     cursor: default;
 }
+
 /*yellow*/
 .person-bar__item_type_yellow.person-bar__item_pos_1
 {
     background-position: 0 0;
 }
+
 .person-bar__item_type_yellow.person-bar__item_pos_2
 {
     background-position: 0 -90px;
 }
+
 .person-bar__item_type_yellow.person-bar__item_pos_3
 {
     background-position: 0 -180px;
 }
+
 .person-bar__item_type_yellow.person-bar__item_pos_4
 {
     background-position: 0 -270px;
 }
+
 /*red*/
 .person-bar__item_type_red.person-bar__item_pos_1
 {
     background-position: -90px 0;
 }
+
 .person-bar__item_type_red.person-bar__item_pos_2
 {
     background-position: -90px -90px;
 }
+
 .person-bar__item_type_red.person-bar__item_pos_3
 {
     background-position: -90px -180px;
 }
+
 .person-bar__item_type_red.person-bar__item_pos_4
 {
     background-position: -90px -270px;
 }
+
 /*blue*/
 .person-bar__item_type_blue.person-bar__item_pos_1
 {
     background-position: -180px 0;
 }
+
 .person-bar__item_type_blue.person-bar__item_pos_2
 {
     background-position: -180px -90px;
 }
+
 .person-bar__item_type_blue.person-bar__item_pos_3
 {
     background-position: -180px -180px;
 }
+
 .person-bar__item_type_blue.person-bar__item_pos_4
 {
     background-position: -180px -270px;
+}
+
+/*modal*/
+.modal
+{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+    /*background: rgba(0,0,0,0.1);*/
+}
+
+.modal__zone{
+    width: 970px;
+    height: 100%;
+    position: relative;
+}
+
+.modal_open_true
+{
+    display: block;
+}
+
+.modal__window
+{
+    left: 50%;
+    top: 50%;
+    width: 762px;
+    height: 428px;
+    margin-left: -381px;
+    margin-top: -214px;
+    background: #fff;
+    position: absolute;
+    box-shadow: 15px 15px 0 0 rgba(0,0,0,0.1);
 }
