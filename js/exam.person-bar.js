@@ -20,6 +20,7 @@
                     self.callParents('select_person', $(this).attr('data-type'), null, true);
                 }
             });
+            this.call_select_person({}, this.callParents('get_person_type', null, null, true));
         },
 
         /**

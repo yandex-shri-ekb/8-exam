@@ -43,8 +43,7 @@
             }).on('resize', function(){
                 self.check_visible();
             });
-
-            self.show_description();
+            this.call_select_person({}, this.callParents('get_person_type', null, null, true));
         },
 
         check_visible: function(){

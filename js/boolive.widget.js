@@ -125,7 +125,7 @@
                 return this._parent.callParents(call, args, target || this, up);
             }else
             if (up){
-                this.callChildren(call, args, target);
+                return this.callChildren(call, args, target);
             }
             return undefined;
         }

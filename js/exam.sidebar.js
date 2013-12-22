@@ -29,6 +29,7 @@
                 self.view();
             });
             this.view();
+            this.call_select_person({}, this.callParents('get_person_type', null, null, true));
         },
         /**
          * Обновление вида в соответсвуии с текущим состоянием и размерами окна

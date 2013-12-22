@@ -13,6 +13,7 @@
         _create: function() {
             $.boolive.widget.prototype._create.call(this);
             this._menu_states = {};
+            this.call_select_person({}, this.callParents('get_person_type', null, null, true));
         },
 
         call_person_menu_visible: function(caller, state){

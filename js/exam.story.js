@@ -10,6 +10,7 @@
         _$video_btn: null,
         _person_pos: null,
         _person_pos_current: null,
+        _person_type: null,
         _create: function() {
             $.boolive.widget.prototype._create.call(this);
             var self = this;
@@ -41,8 +42,19 @@
             this._$video_btn.on('click', function(e){
                 e.preventDefault();
                 self.callParents('play_video', true, null, true);
-            })
+            });
+            // Случайный выбор активного персонажа
+            this.call_select_person({}, ['yellow', 'blue', 'red'][Math.round(Math.random()*2)]);
         },
+
+        /**
+         * Возвращает текущего персонажа
+         * @returns {String}
+         */
+        call_get_person_type: function(){
+            return this._person_type;
+        },
+
 
         /**
          * Поиск позиции каждого персонажа
@@ -86,6 +98,7 @@
          * Реакция на выбор персонажа
          */
         call_select_person: function(caller, type){
+            this._person_type = type;
             //фон
             this.element.removeClass('story_type_yellow story_type_red story_type_blue');
             this.element.addClass('story_type_'+type);

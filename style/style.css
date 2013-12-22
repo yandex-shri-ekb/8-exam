@@ -28,6 +28,10 @@ li:before
     margin-right: 5px;
 }
 
+img
+{
+    border: 0;
+}
 .layout
 {
     position: relative;
@@ -245,6 +249,10 @@ li:before
     top: -20px;
 }
 
+.story__link
+{
+    margin-left: 20px;
+}
 /* Пути историй */
 .story-path
 {
