@@ -1,0 +1,5 @@
+({
+    mustDeps: [
+        {mods: {blocked: 'yes'}}
+    ]
+})
