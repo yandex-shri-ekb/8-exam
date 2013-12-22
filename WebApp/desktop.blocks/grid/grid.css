@@ -1,7 +1,7 @@
 .grid
 {
-    float: left;
     position: relative;
+    float: left;
 }
 
 .grid_coll_1
@@ -66,72 +66,72 @@
 
 .grid_size_1
 {
-    width: 10%;
     margin-right: -10%;
+    width: 10%;
 }
 
 .grid_size_2
 {
-    width: 20%;
     margin-right: -20%;
+    width: 20%;
 }
 
 .grid_size_3
 {
-    width: 30%;
     margin-right: -30%;
+    width: 30%;
 }
 
 .grid_size_4
 {
-    width: 40%;
     margin-right: -40%;
+    width: 40%;
 }
 
 .grid_size_5
 {
-    width: 50%;
     margin-right: -50%;
+    width: 50%;
 }
 
 .grid_size_6
 {
-    width: 60%;
     margin-right: -60%;
+    width: 60%;
 }
 
 .grid_size_7
 {
-    width: 70%;
     margin-right: -70%;
+    width: 70%;
 }
 
 .grid_size_8
 {
-    width: 80%;
     margin-right: -80%;
+    width: 80%;
 }
 
 .grid_size_9
 {
-    width: 90%;
     margin-right: -90%;
+    width: 90%;
 }
 
 .grid_size_10
 {
-    width: 100%;
     margin-right: -100%;
+    width: 100%;
 }
 
 .grid_size_11
 {
-    width: 110%;
     margin-right: -110%;
+    width: 110%;
 }
 
 .grid_size_12
 {
-    width: 120%;
     margin-right: -120%;
+    width: 120%;
 }

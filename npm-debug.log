@@ -1,0 +1,101 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/0.10.21/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'bem-cli' ]
+2 info using npm@1.3.11
+3 info using node@v0.10.21
+4 verbose cache add [ 'bem-cli', null ]
+5 verbose cache add name=undefined spec="bem-cli" args=["bem-cli",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'bem-cli',
+6 verbose parsed url   path: 'bem-cli',
+6 verbose parsed url   href: 'bem-cli' }
+7 silly lockFile 979acf07-bem-cli bem-cli
+8 verbose lock bem-cli /Users/egortrubnikov/.npm/979acf07-bem-cli.lock
+9 silly lockFile 979acf07-bem-cli bem-cli
+10 silly lockFile 979acf07-bem-cli bem-cli
+11 verbose addNamed [ 'bem-cli', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile 7f08df59-bem-cli bem-cli@
+14 verbose lock bem-cli@ /Users/egortrubnikov/.npm/7f08df59-bem-cli.lock
+15 silly addNameRange { name: 'bem-cli', range: '*', hasData: false }
+16 verbose url raw bem-cli
+17 verbose url resolving [ 'https://registry.npmjs.org/', './bem-cli' ]
+18 verbose url resolved https://registry.npmjs.org/bem-cli
+19 info trying registry request attempt 1 at 21:42:16
+20 verbose etag "4T2OGKN2HP2L4G2USYPW7VE2B"
+21 http GET https://registry.npmjs.org/bem-cli
+22 http 304 https://registry.npmjs.org/bem-cli
+23 silly registry.get cb [ 304,
+23 silly registry.get   { server: 'CouchDB/1.3.1 (Erlang OTP/R15B03)',
+23 silly registry.get     etag: '"4T2OGKN2HP2L4G2USYPW7VE2B"',
+23 silly registry.get     date: 'Thu, 12 Dec 2013 15:42:18 GMT',
+23 silly registry.get     'content-length': '0' } ]
+24 verbose etag bem-cli from cache
+25 silly addNameRange number 2 { name: 'bem-cli', range: '*', hasData: true }
+26 silly addNameRange versions [ 'bem-cli', [ '1.0.1' ] ]
+27 verbose addNamed [ 'bem-cli', '1.0.1' ]
+28 verbose addNamed [ '1.0.1', '1.0.1' ]
+29 silly lockFile c28eefe1-bem-cli-1-0-1 bem-cli@1.0.1
+30 verbose lock bem-cli@1.0.1 /Users/egortrubnikov/.npm/c28eefe1-bem-cli-1-0-1.lock
+31 silly lockFile c28eefe1-bem-cli-1-0-1 bem-cli@1.0.1
+32 silly lockFile c28eefe1-bem-cli-1-0-1 bem-cli@1.0.1
+33 silly lockFile 7f08df59-bem-cli bem-cli@
+34 silly lockFile 7f08df59-bem-cli bem-cli@
+35 silly resolved [ { name: 'bem-cli',
+35 silly resolved     version: '1.0.1',
+35 silly resolved     description: 'bem runner',
+35 silly resolved     main: 'index.js',
+35 silly resolved     bin: { bem: './bin/bem' },
+35 silly resolved     repository:
+35 silly resolved      { type: 'git',
+35 silly resolved        url: 'https://github.com/azproduction/bem-cli.git' },
+35 silly resolved     keywords: [ 'bem', 'cli', 'runner', 'tool', 'helper' ],
+35 silly resolved     dependencies: { resolve: '*' },
+35 silly resolved     author: { name: 'Mikhail Davydov', email: 'i@azproduction.ru' },
+35 silly resolved     license: 'MIT',
+35 silly resolved     preferGlobal: true,
+35 silly resolved     readme: '# bem-cli\n\nThis script inspired by `grunt-cli`. Install this globally and you\'ll have access to the `bem` command anywhere on your system.\n\n```shell\nnpm install -g bem-cli\n```\n',
+35 silly resolved     readmeFilename: 'README.md',
+35 silly resolved     bugs: { url: 'https://github.com/azproduction/bem-cli/issues' },
+35 silly resolved     _id: 'bem-cli@1.0.1',
+35 silly resolved     _from: 'bem-cli@' } ]
+36 info install bem-cli@1.0.1 into /usr/local/lib
+37 info installOne bem-cli@1.0.1
+38 info /usr/local/lib/node_modules/bem-cli unbuild
+39 info preuninstall bem-cli@1.0.1
+40 info uninstall bem-cli@1.0.1
+41 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild bem-cli@1.0.1
+42 verbose /usr/local/bin,[object Object] binRoot
+43 info /usr/local/lib/node_modules/bem-cli unbuild
+44 info preuninstall bem-cli@1.0.1
+45 info uninstall bem-cli@1.0.1
+46 verbose true,/usr/local/lib/node_modules,/usr/local/lib/node_modules unbuild bem-cli@1.0.1
+47 verbose /usr/local/bin,[object Object] binRoot
+48 error error rolling back Error: Refusing to delete: /usr/local/bin/bem not in /usr/local/lib/node_modules/bem-cli
+48 error error rolling back     at clobberFail (/usr/local/Cellar/node/0.10.21/lib/node_modules/npm/lib/utils/gently-rm.js:41:12)
+48 error error rolling back     at next (/usr/local/Cellar/node/0.10.21/lib/node_modules/npm/lib/utils/gently-rm.js:27:14)
+48 error error rolling back     at /usr/local/Cellar/node/0.10.21/lib/node_modules/npm/lib/utils/gently-rm.js:36:12
+48 error error rolling back     at Object.oncomplete (fs.js:107:15)
+48 error error rolling back  bem-cli@1.0.1 { [Error: Refusing to delete: /usr/local/bin/bem not in /usr/local/lib/node_modules/bem-cli] code: 'EEXIST', path: '/usr/local/bin/bem' }
+49 error Refusing to delete: /usr/local/bin/bem not in /usr/local/lib/node_modules/bem-cli
+File exists: /usr/local/bin/bem
+Move it away, and try again.
+50 error System Darwin 13.0.0
+51 error command "/usr/local/Cellar/node/0.10.21/bin/node" "/usr/local/bin/npm" "install" "-g" "bem-cli"
+52 error cwd /Users/egortrubnikov/Documents/yandex/8-exam
+53 error node -v v0.10.21
+54 error npm -v 1.3.11
+55 error path /usr/local/bin/bem
+56 error code EEXIST
+57 verbose exit [ 1, true ]

@@ -295,6 +295,30 @@ exports.deps = [
         "block": "atom-logo"
     },
     {
+        "block": "block-the-way"
+    },
+    {
+        "block": "max-way"
+    },
+    {
+        "block": "way-1"
+    },
+    {
+        "block": "way-2"
+    },
+    {
+        "block": "way-3"
+    },
+    {
+        "block": "way-4"
+    },
+    {
+        "block": "alex-way"
+    },
+    {
+        "block": "grig-way"
+    },
+    {
         "block": "used-services"
     },
     {

@@ -1,6 +1,6 @@
 .atom-logo
 {
-    background: url("/image/atom-logo.png") no-repeat;
     width: 102px;
     height: 102px;
+    background: url("/image/atom-logo.png") no-repeat;
 }

@@ -162,6 +162,30 @@ exports.blocks = [
         "name": "atom-logo"
     },
     {
+        "name": "block-the-way"
+    },
+    {
+        "name": "max-way"
+    },
+    {
+        "name": "way-1"
+    },
+    {
+        "name": "way-2"
+    },
+    {
+        "name": "way-3"
+    },
+    {
+        "name": "way-4"
+    },
+    {
+        "name": "alex-way"
+    },
+    {
+        "name": "grig-way"
+    },
+    {
         "name": "used-services"
     },
     {
