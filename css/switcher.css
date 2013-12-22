@@ -154,3 +154,149 @@
 {
     background-position: 0 -1443px;
 }
+
+.switcher-floated
+{
+    position: fixed;
+    top: 40px;
+    width: 954px;
+    z-index: 20;
+    display: none;
+    text-align: center;
+}
+
+.switcher-floated__item
+{
+    display: inline-block;
+}
+
+.char-state
+{
+    height: 96px;
+    width: 96px;
+    background: url("../images/char-state.png") no-repeat transparent;
+    display: none;
+    cursor: pointer;
+}
+
+.char-state-yellow-1
+{
+    background-position: 0 0;
+}
+
+.char-state-yellow-2
+{
+    background-position: 0 -96px;
+}
+
+.char-state-yellow-3
+{
+    background-position: 0 -192px;
+}
+
+.char-state-yellow-4
+{
+    background-position: 0 -288px;
+}
+
+.char-state-red-1
+{
+    background-position: -96px 0;
+}
+
+.char-state-red-2
+{
+    background-position: -96px -96px;
+}
+
+.char-state-red-3
+{
+    background-position: -96px -192px;
+}
+
+.char-state-red-4
+{
+    background-position: -96px -288px;
+}
+
+.char-state-blue-1
+{
+    background-position: -192px 0;
+}
+
+.char-state-blue-2
+{
+    background-position: -192px -96px;
+}
+
+.char-state-blue-3
+{
+    background-position: -192px -192px;
+}
+
+.char-state-blue-4
+{
+    background-position: -192px -288px;
+}
+
+/*
+*/
+.char-state-yellow-1.char-state_selected
+{
+    background-position: -288px 0;
+}
+
+.char-state-yellow-2.char-state_selected
+{
+    background-position: -288px -96px;
+}
+
+.char-state-yellow-3.char-state_selected
+{
+    background-position: -288px -192px;
+}
+
+.char-state-yellow-4.char-state_selected
+{
+    background-position: -288px -288px;
+}
+
+.char-state-red-1.char-state_selected
+{
+    background-position: -384px 0;
+}
+
+.char-state-red-2.char-state_selected
+{
+    background-position: -384px -96px;
+}
+
+.char-state-red-3.char-state_selected
+{
+    background-position: -384px -192px;
+}
+
+.char-state-red-4.char-state_selected
+{
+    background-position: -384px -288px;
+}
+
+.char-state-blue-1.char-state_selected
+{
+    background-position: -480px 0;
+}
+
+.char-state-blue-2.char-state_selected
+{
+    background-position: -480px -96px;
+}
+
+.char-state-blue-3.char-state_selected
+{
+    background-position: -480px -192px;
+}
+
+.char-state-blue-4.char-state_selected
+{
+    background-position: -480px -288px;
+}

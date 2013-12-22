@@ -9,10 +9,16 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         $switcherTop = $('.switcher-top'),
         $switcherBottom = $('.switcher-bottom'),
         $charFloated = $('.char-floated'),
-        infoPartInited = [],
+        $switcherFloated = $('.switcher-floated'),
+        initedChars = [],
         coords = {
             // диапозон, в котором будет отображаться $charFloated
             charFloated: [0, 0]
+        },
+        storyParts = {
+            yellow: [],
+            red: [],
+            blue: []
         };
 
     /**
@@ -66,18 +72,8 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         $bPage.addClass('b-page_' + char);
 
         // высота info блоков
-        if(infoPartInited.indexOf(char) === -1) {
-            $('#info-' + char).find('.info-part').each(function() {
-                var $part = $(this),
-                    $related = $($part.data('related')),
-                    ph = $part.outerHeight(),
-                    partBottom = $part.offset().top + ph,
-                    relatedBottom = $related.offset().top + $related.outerHeight(),
-                    h = ph + (relatedBottom - partBottom);
-                $part.height(h);
-            });
-
-            infoPartInited.push(char);
+        if(initedChars.indexOf(char) === -1) {
+            _initChar(char);
         }
 
         // расчет диапозона
@@ -87,6 +83,8 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         ];
     }
 
+    /**
+     */
     function _getCurrentChar()
     {
         var color = null;
@@ -101,15 +99,71 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
     }
 
     /**
+     * @param {int} wYc
+     */
+    function _showRelatedState(wYc)
+    {
+        var char = _getCurrentChar(),
+            parts = storyParts[char],
+            minDif = null,
+            closestState;
+
+        $('.char-state', $switcherFloated).hide().removeClass('char-state_selected');
+
+        $.each(parts, function(i, partData) {
+            var dif = Math.abs(partData.center - wYc);
+            if(minDif === null || dif < minDif) {
+                minDif = dif;
+                closestState = partData.state;
+            }
+        });
+
+        $.each(charColors, function(i, c) {
+            var $state = $('.char-state-' + c + '-' + closestState, $switcherFloated);
+            $state.show();
+            if(c === char) {
+                $state.addClass('char-state_selected');
+            }
+        });
+    }
+
+    /**
+     * @param {string} char red|blue|yellow
+     */
+    function _initChar(char)
+    {
+        $('#info-' + char).find('.info-part').each(function() {
+            var $part = $(this),
+                $related = $($part.data('related')),
+                ph = $part.outerHeight(),
+                partBottom = $part.offset().top + ph,
+                relatedBottom = $related.offset().top + $related.outerHeight(),
+                h = ph + (relatedBottom - partBottom);
+            $part.height(h);
+        });
+
+        $('#story-' + char).find('.story__part').each(function() {
+            var $part = $(this),
+                state = $part.data('state'),
+                center = $part.offset().top + $part.height() / 2;
+
+            storyParts[char].push({
+                $part: $part,
+                state: state,
+                center: center
+            });
+        });
+
+        initedChars.push(char);
+    }
+
+
+    /**
      */
     App.prototype.init = function() {
 
         _selectChar(charColors[random.getInt(0, 2)]);
         //_selectChar('blue');
-
-        /*setInterval(function() {
-            _selectChar(charColors[random.getInt(0, 2)]);
-        }, 5000);*/
 
         $('.switcher-top,.switcher-bottom').on('click', '.char', function() {
             var $char = $(this);
@@ -138,13 +192,23 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
 
         // todo timer
         $window.scroll(function() {
-            var wY1 = $window.scrollTop(),
-                wY2 = wY1 + $window.height();
-            if( wY1 > coords.charFloated[0] && wY2 < coords.charFloated[1] ) {
+            var
+                wh = $window.height(),
+                // верхняя граница
+                wYt = $window.scrollTop(),
+                // нижняя граница
+                wYb = wYt + wh,
+                // центр
+                wYc = wYt + wh / 2;
+
+            if( wYt > coords.charFloated[0] && wYb < coords.charFloated[1] ) {
                 $charFloated.fadeIn('fast');
+                $switcherFloated.fadeIn('fast');
+                _showRelatedState(wYc);
             }
             else {
                 $charFloated.fadeOut('fast');
+                $switcherFloated.fadeOut('fast');
             }
         });
 
@@ -177,6 +241,25 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
                 $charText.filter('.char-text_' + currentChar).show();
             }
         );
+
+        // floated states
+        $('.char-state').on('click', function() {
+            var currentChar = _getCurrentChar(),
+                $state = $(this),
+                selected = null;
+
+            $.each(charColors, function(i, c) {
+                if($state.attr('id').indexOf(c) !== -1) {
+                    selected = c;
+                }
+            });
+
+            if(currentChar !== selected) {
+                _selectChar(selected);
+                $('.char-state_selected').removeClass('char-state_selected');
+                $state.addClass('char-state_selected');
+            }
+        });
     };
 
     return App;
