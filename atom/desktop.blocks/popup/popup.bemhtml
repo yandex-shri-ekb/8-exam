@@ -5,7 +5,13 @@ block popup {
             content: [
                 {elem: 'content', content: this.ctx.content},
                 {elem: 'close'},
-                {elem: 'shadow'}
+                {
+                    elem: 'shadow',
+                    content: [
+                        {elem: 'shadow-tr'},
+                        {elem: 'shadow-bl'}
+                    ]
+                }
             ]
         },
         {elem: 'va-helper'}

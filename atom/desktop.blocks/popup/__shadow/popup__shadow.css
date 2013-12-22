@@ -8,12 +8,11 @@
     width: 100%;
     height: 100%;
 
-    background: url(popup__shadow_ie.png);
     background: rgba(0,0,0, .1);
 }
 
-.popup__shadow:after,
-.popup__shadow:before
+.popup__shadow-tr,
+.popup__shadow-bl
 {
     position: absolute;
 
@@ -22,18 +21,16 @@
     width: 18px;
     height: 18px;
 
-    content: "";
-
     background: url(popup__shadow.png);
 }
 
-.popup__shadow:after
+.popup__shadow-tr
 {
     top: -18px;
     right: 0;
 }
 
-.popup__shadow:before
+.popup__shadow-bl
 {
     bottom: 0;
     left: -18px;
