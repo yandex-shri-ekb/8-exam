@@ -1,3 +1,4 @@
+/*
 modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
 
     BEMDOM.decl('aside', {
@@ -7,24 +8,23 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                     var self = this;
                     this._setWidths();
                     this._resetButtonVisibility();
+                    this._content = this.findBlockOutside('content');
+
                     this.bindTo('button', 'click', this._onButtonClick);
-                    this.bindTo('sheet-button', 'click', this._onButtonClick);
+                    this.bindTo('click', this._onAsideClick);
 
                     $(window).on('resize', function() {
                         clearTimeout(self.timer);
                         self.timer = setTimeout(function() {
                             self._resetButtonVisibility();
-                            self._resetAsidePosition();
+                            self._resetPosition();
                         }, 200);
                     });
-
-                    this.on('openAside', this._openAside);
-                    this.on('closeAside', this._closeAside);
                 }
             },
             opened: {
                 yes: function() {
-                    this._resetAsidePosition();
+                    this._resetPosition();
                 },
                 no: function() {
                     this.domElem.animate({left: this.historyWidth});
@@ -39,41 +39,46 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             this.asideWidth = parseInt(asideItems.outerWidth());
         },
         _onButtonClick: function() {
-            if(this.hasMod('opened', 'yes')) {
-                this.trigger('closeAside');
+            if(this.hasMod('opened', 'no')) {
+                this._open();
             } else {
-                this.trigger('openAside');
+                this._close();
+            }
+            return false;
+        },
+        _onAsideClick: function() {
+            if(this.hasMod('opened', 'no') && $(window).width() < this.historyWidth + this.asideWidth) {
+                this._open();
             }
         },
         _resetButtonVisibility: function() {
             var button = this.elem('button');
-            var sheetButton = this.elem('sheet-button');
             if($(window).width() < this.historyWidth + this.asideWidth) {
                 this.delMod(button, 'hide');
-                this.delMod(sheetButton, 'hide');
             } else {
                 this.setMod(button, 'hide', 'yes');
-                this.setMod(sheetButton, 'hide', 'yes');
+                this._open();
             }
         },
-        _resetAsidePosition: function() {
+        _resetPosition: function() {
             if(this.hasMod('opened', 'yes')) {
                 var windowWidth = $(window).width(),
                     asideLeft = windowWidth - this.asideWidth;
                 if(asideLeft > this.historyWidth) {
                     asideLeft = this.historyWidth;
-                    this._closeAside();
+                    this._close();
                 }
                 this.domElem.animate({left: asideLeft});
             }
         },
-        _openAside: function() {
+        _open: function() {
             this.setMod('opened', 'yes');
         },
-        _closeAside: function() {
+        _close: function() {
             this.setMod('opened', 'no');
         }
     });
 
     provide(BEMDOM);
 });
+*/

@@ -13,7 +13,7 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                 }
             }
         },
-        _onLinkClick: function(e) {
+        _onLinkClick: function() {
             this._showPopup();
         },
         _showPopup: function() {
@@ -25,7 +25,6 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             this._popup.close();
             return false;
         },
-        // TODO: вынести в методы блока page
         _blockPage: function() {
             this._page.domElem.css({top: -$(window).scrollTop()});
             this._page.setMod('blocked', 'yes');

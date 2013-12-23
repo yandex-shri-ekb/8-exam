@@ -35,6 +35,7 @@
         },
         {
             block: 'content',
+            js: true,
             content: [
                 {
                     elem: 'history',
@@ -302,11 +303,10 @@
                 },
                 {
                     block: 'aside',
-                    js: true,
+                    mix: [{block: 'content', elem: 'aside'}],
                     content: [
-                        {elem: 'button', mods: {hide: 'yes', icon: 'question'}, js: true},
+                        {elem: 'button', mods: {icon: 'question'}, js: true},
                         {elem: 'shadow'},
-                        {elem: 'sheet-button'},
                         {elem: 'ya-logo'},
                         {
                             elem: 'cell',

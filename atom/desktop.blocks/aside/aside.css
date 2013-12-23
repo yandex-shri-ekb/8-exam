@@ -8,6 +8,14 @@
     width: 100%;
     height: 100%;
 
+    cursor: pointer;
+
     border-left: 2px solid #000;
     background: #fff;
+}
+
+.content_aside_opened .aside,
+.content_control_disable .aside
+{
+    cursor: auto;
 }

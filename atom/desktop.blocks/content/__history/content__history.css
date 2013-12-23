@@ -5,6 +5,8 @@
     width: 952px;
     margin: 18px 0 18px 18px;
 
+    cursor: pointer;
+
     border-right: 2px solid #000;
     border-left: 2px solid #000;
 
@@ -26,4 +28,10 @@
 .page_color_blue .content__history
 {
     background: #72c4f6;
+}
+
+.content_aside_closed .content__history,
+.content_control_disable .content__history
+{
+    cursor: auto;
 }

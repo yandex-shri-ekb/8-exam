@@ -5,17 +5,14 @@
     top: 70px;
     right: 20px;
 
+    display: none;
+
     width: 67px;
     height: 71px;
 
     cursor: pointer;
 
-    background-image: url(aside__button.png);
-}
-
-.aside__button
-{
-    background-position: 0 0;
+    background: 0 0 url(aside__button.png);
 }
 
 .aside__button:hover
@@ -23,12 +20,17 @@
     background-position: 0 -100%;
 }
 
-.aside_opened_yes .aside__button
+.content_aside_opened .aside__button
 {
     background-position: -100% 0;
 }
 
-.aside_opened_yes .aside__button:hover
+.content_aside_opened .aside__button:hover
 {
     background-position: -100% -100%;
+}
+
+.content_control_enable .aside__button
+{
+    display: block;
 }
