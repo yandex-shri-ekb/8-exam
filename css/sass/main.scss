@@ -98,18 +98,21 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
 
         & .b-story_yellow
         {
+            display: block;
             opacity: 1;
             left: 0;
         }
 
         & .b-story_red
         {
+            display: none;
             opacity: 0;
             left: -240%;
         }
 
         & .b-story_blue
         {
+            display: none;
             opacity: 0;
             left: -240%;
         }
@@ -171,6 +174,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
 
         & .b-story_blue
         {
+            display: block;
             opacity: 1;
             left: 0;
         }
@@ -219,18 +223,21 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
 
         & .b-story_yellow
         {
+            display: none;
             opacity: 0;
             left: -240%;
         }
 
         & .b-story_red
         {
+            display: block;
             opacity: 1;
             left: 0;
         }
 
         & .b-story_blue
         {
+            display: none;
             opacity: 0;
             left: -240%;
         }
@@ -541,6 +548,10 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     height: 800px;
 }
 
+.b-story-yellow-stage_4 {
+    height: 862px;
+}
+
 /* Paths */
 .b-story-yellow-path-1
 {
@@ -713,7 +724,6 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
 .b-story-blue-path-2
 {
     bottom: -61px;
-    margin: 0 0 0 -23px;
 }
 
 .b-story-blue-path-3

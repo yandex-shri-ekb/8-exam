@@ -19,7 +19,7 @@
 .grid__module {
     float: left;
     position: relative;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 .grid__module_span_1 {
