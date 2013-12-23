@@ -87,4 +87,5 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
     });
 
     provide(BEMDOM);
+
 });

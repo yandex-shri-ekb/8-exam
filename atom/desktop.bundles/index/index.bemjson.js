@@ -17,21 +17,19 @@
         {block: 'nav', js: true},
         {
             block: 'popup',
+            js: {src: '//player.vimeo.com/video/75709551?autoplay=1'},
             content: {
                 elem: 'iframe',
                 tag: 'iframe',
                 attrs: {
-                    src: '//player.vimeo.com/video/75709551?title=0&amp;byline=0&amp;portrait=0&amp;color=ffcc00&amp',
-                    width: 500,
-                    height: 281,
+                    width: 630,
+                    height: 355,
                     frameborder: 0,
                     webkitallowfullscreen: 'true',
                     mozallowfullscreen: 'true',
                     allowfullscreen: 'true',
                 },
             },
-            attrs: {id: 'video'},
-            js: true,
         },
         {
             block: 'content',
