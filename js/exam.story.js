@@ -5,88 +5,92 @@
  * @author Vladimir Shestakov <boolive@yandex.ru>
  */
 (function($, undefined) {
+
     $.widget("exam.story", $.boolive.widget, {
-        _$story_path: null,
-        _$video_btn: null,
-        _person_pos: null,
-        _person_pos_current: null,
-        _person_type: null,
+        /** {jQuery} Элемент с путями (историями) персонажей */
+        _$storyPath: null,
+        /** {jQuery} Кнопка показа видео */
+        _$videoBtn: null,
+        /** {Object} Все позиции для каждого персонажа, чтобы отслеживать их текущее положение */
+        _personPosAll: null,
+        /** {Object} Текущая позиция (номер) для каждого персонажа */
+        _personPosCur: null,
+        /** {String} Текущий персонаж. */
+        _personTypeCur: null,
+
         _create: function() {
             $.boolive.widget.prototype._create.call(this);
             var self = this;
-            this._$story_path = this.element.find('.story-path:first');
-            this._$video_btn = this.element.find('.video-btn:first');
+            // Скрытие боковой панели
             this.element.on('click', function(e){
                 if (self.element.hasClass('story_state_close')){
                     e.preventDefault();
-                    // скрытие боковой панели
-                    self.callParents('show_sidebar', false, null, true);
+                    self.callParents('showSidebar', false, null, true);
                 }
             });
-            this._person_pos = {};
-            this._person_pos_current = {};
-            this._$story_path.children('.story-path__item[data-type]').each(function(){
+            // Поиск всех позиций в пути у всех персонажей
+            this._personPosAll = {};
+            this._personPosCur = {};
+            this._$storyPath = this.element.find('.story-path:first');
+            this._$storyPath.children('.story-path__item[data-type]').each(function(){
                 var key = $(this).data('type');
-                if (typeof self._person_pos[key] === 'undefined') self._person_pos[key] = [];
+                if (typeof self._personPosAll[key] === 'undefined') self._personPosAll[key] = [];
                 $(this).find('[data-pos]').each(function(){
-                    self._person_pos[key].push({pos:$(this).data('pos'), top: $(this).offset().top})
+                    self._personPosAll[key].push({pos:$(this).data('pos'), top: $(this).offset().top})
                 });
             });
-            // При скроллинге определять позицию персонажей
-            $(window).on('scroll', function(){
-                self.find_person_position();
-            }).on('resize', function(){
-                self.find_person_position();
+            // При скроллинге и ресайзе определять позицию персонажей
+            $(window).on('scroll resize', function(){
+                self._findPersonPosition();
             });
-            // play видео
-            this._$video_btn.on('click', function(e){
+            // Play видео
+            this._$videoBtn = this.element.find('.video-btn:first');
+            this._$videoBtn.on('click', function(e){
                 e.preventDefault();
-                self.callParents('play_video', true, null, true);
+                self.callParents('playVideo', true, null, true);
             });
             // Случайный выбор активного персонажа
-            this.call_select_person({}, ['yellow', 'blue', 'red'][Math.round(Math.random()*2)]);
+            this.call_selectPerson({}, ['yellow', 'blue', 'red'][Math.round(Math.random()*2)]);
         },
-
-        /**
-         * Возвращает текущего персонажа
-         * @returns {String}
-         */
-        call_get_person_type: function(){
-            return this._person_type;
-        },
-
 
         /**
          * Поиск позиции каждого персонажа
          * О смене позиции сообщается всем виджетам
          */
-        find_person_position: function(){
+        _findPersonPosition: function(){
             var self = this,
                 scroll = $(window).scrollTop() + $(window).height()/2;
-            $.each(this._person_pos, function(type, positions){
-                var find = {pos: positions[0].pos, dt: Math.abs(scroll - positions[0].top)};
-                var i,
+            $.each(this._personPosAll, function(type, positions){
+                var find = {pos: positions[0].pos, dt: Math.abs(scroll - positions[0].top)},
+                    i,
                     dt,
                     cnt = positions.length;
-                for (i=1; i<cnt; i++){
+                for (i = 1; i < cnt; i++){
                     dt = Math.abs(scroll - positions[i].top);
                     if (dt < find.dt){
                         find.pos = positions[i].pos;
                         find.dt = dt;
                     }
                 }
-                if (self._person_pos_current[type] !== find.pos){
-                    self._person_pos_current[type] = find.pos;
-                    self.callParents('person_position', {type: type, pos: find.pos}, null, true);
+                if (self._personPosCur[type] !== find.pos){
+                    self._personPosCur[type] = find.pos;
+                    self.callParents('personPosition', {type: type, pos: find.pos}, null, true);
                 }
             });
         },
 
         /**
+         * Возвращает текущего персонажа
+         * @returns {String}
+         */
+        call_getPersonType: function(){
+            return this._personTypeCur;
+        },
+
+        /**
          * Реакция на открытие/скрытыие боковой панели
          */
-        call_show_sidebar: function(caller, show){
-            // Если боковая панель отображется, то пути в режиме скрытия
+        call_showSidebar: function(caller, show){
             if (show){
                 this.element.addClass('story_state_close');
             }else{
@@ -97,19 +101,17 @@
         /**
          * Реакция на выбор персонажа
          */
-        call_select_person: function(caller, type){
-            this._person_type = type;
+        call_selectPerson: function(caller, type){
+            this._personTypeCur = type;
             //фон
             this.element.removeClass('story_type_yellow story_type_red story_type_blue');
             this.element.addClass('story_type_'+type);
             //кнопка видео
-            this._$video_btn.removeClass('video-btn_type_yellow video-btn_type_red video-btn_type_blue');
-            this._$video_btn.addClass('video-btn_type_'+type);
+            this._$videoBtn.removeClass('video-btn_type_yellow video-btn_type_red video-btn_type_blue');
+            this._$videoBtn.addClass('video-btn_type_'+type);
             // пути
-            this._$story_path.find('.story-path__item_state_active').removeClass('story-path__item_state_active');
-            this._$story_path.find('.story-path__item_type_'+type).addClass('story-path__item_state_active');
-
+            this._$storyPath.find('.story-path__item_state_active').removeClass('story-path__item_state_active');
+            this._$storyPath.find('.story-path__item_type_'+type).addClass('story-path__item_state_active');
         }
-
     });
 })(jQuery);
