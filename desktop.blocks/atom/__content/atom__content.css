@@ -8,17 +8,17 @@
     overflow: hidden;
 }
 
-.atom_theme_yellow .atom__content
+.atom__content_theme_yellow
 {
     background: #ffe05d;
 }
 
-.atom_theme_red .atom__content
+.atom__content_theme_red
 {
     background: #ff8282;
 }
 
-.atom_theme_blue .atom__content
+.atom__content_theme_blue
 {
     background: #72c4f6;
 }

@@ -3,14 +3,17 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
     BEMDOM.decl('locomotive', {
         onSetMod: {
             'js': function() {
-
                 this._steps = [];
-                this._calculateThemeSteps();
+                this._calculateLastStepHeight();
                 this._bindToScroll();
+                this._bindToClick();
             },
-            'show': function(modName, modVal) {
-                this._activateThemeIcon();
-                modVal === 'yes' && this._calculateThemeSteps();
+
+            'theme': function(modName, modVal) {
+                this._calculateThemeSteps();
+                this._activateThemeIcon(modVal);
+                this._activateUserIcon(modVal);
+                this._onScroll();
             }
         },
 
@@ -18,26 +21,29 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             $(window).on('scroll', $.proxy(this._onScroll, this));
         },
 
+        _bindToClick: function() {
+            this.bindTo(this.elem('step-icon'), 'click', this._onClickStepIcon);
+        },
+
         _onScroll: function(e) {
-            debugger;
             var step = this._identifyStep();
             step ? this._changeStepIcons(step) : this._hide();
         },
 
+        _onClickStepIcon: function(e) {
+            var theme = $(e.currentTarget).bem('step-icon').getMod('theme');
+            this._getBlockAtom().setMod('theme', theme);
+        },
+
         _activateThemeIcon: function(theme) {
-            var icons = this.elem('.step-icon');
-            this.setMod(icons, 'active', 'no');
-            // TODO не знаю как отфильтровать элементы
-            var icon = this.findElem('step-icon', 'theme', theme);
-            this.setMod(icon, 'active', 'yes')
+            this.findBlocksInside('step-icon').forEach(function(icon) {
+                var modVal = icon.hasMod('theme', theme) ? 'yes' : 'no';
+                icon.setMod('active', modVal);
+            });
         },
 
         _activateUserIcon: function(theme) {
-            this.setMod(this.elem('user-icon'), 'theme', theme);
-        },
-
-        _identifyTheme: function() {
-            return this.getMod('theme');
+            this.findBlockInside('user-icon').setMod('theme', theme);
         },
 
         _identifyStep: function() {
@@ -53,43 +59,44 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         },
 
         _calculateThemeSteps: function() {
-            var atom = this.findBlockOutside('atom');
-            var theme = atom.findBlockInside(
-                {
+            var theme = this._getBlockAtom().findBlockInside({
                     'blockName': 'story',
                     'modName': 'theme',
-                    'modVal': atom.getMod('theme')}
-                );
-
-            var self = this;
-
-            var lastStep = 4;
+                    'modVal': this.getMod('theme')}
+                ),
+                lastStep = 4,
+                self = this;
 
             theme.findBlocksInside('step').forEach(function(step, i) {
-                var $step = step.domElem;
-                var start = $step.offset().top;
-                var end = start + $step.height();
+                var $step = step.domElem,
+                    start = $step.offset().top,
+                    end = start + $step.height();
 
-                // TODO оптимизировать
-                if(i === lastStep -1) {
-                    var users = atom.findBlockInside(
-                        {
-                            'blockName': 'users',
-                            'modName': 'pos',
-                            'modVal': 'bottom'
-                        }
-                    );
-                    end -= users.domElem.height() * 2;
-                }
+                i === lastStep -1 && (end -= self._lastStepHeight);
                 self._steps[i+1] = { start: start, end: end };
             });
             this._steps = self._steps;
         },
 
+        _calculateLastStepHeight: function() {
+            this._lastStepHeight = this._getBlockAtom().findBlockInside({
+                    'blockName': 'users',
+                    'modName': 'pos',
+                    'modVal': 'bottom'
+                }
+            ).domElem.height() * 2;
+        },
+
+        _getBlockAtom: function() {
+            if(!this._atom) {
+                this._atom = this.findBlockOutside('atom');
+            }
+            return this._atom;
+        },
+
         _changeStepIcons: function(step) {
             if(step > 0) {
-                var icons = this.findBlocksInside('step-icon');
-                icons.forEach(function(icon) {
+                this.findBlocksInside('step-icon').forEach(function(icon) {
                     icon.setMod('step', step);
                 });
             }
@@ -103,7 +110,6 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         _hide: function() {
             this.setMod('show', 'no');
         }
-
     });
 
     provide(BEMDOM);

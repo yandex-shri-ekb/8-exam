@@ -24,9 +24,6 @@ exports.blocks = [
             },
             {
                 "name": "border"
-            },
-            {
-                "name": "stories"
             }
         ]
     },
@@ -59,6 +56,9 @@ exports.blocks = [
             },
             {
                 "name": "step-icon"
+            },
+            {
+                "name": "user-icon"
             }
         ]
     },
@@ -101,8 +101,17 @@ exports.blocks = [
                 "vals": [
                     "yes"
                 ]
+            },
+            {
+                "name": "active",
+                "vals": [
+                    "no"
+                ]
             }
         ]
+    },
+    {
+        "name": "stories"
     },
     {
         "name": "story_theme_yellow"

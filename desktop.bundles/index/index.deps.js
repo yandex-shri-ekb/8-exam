@@ -122,10 +122,6 @@ exports.deps = [
         "elem": "border"
     },
     {
-        "block": "atom",
-        "elem": "stories"
-    },
-    {
         "block": "header"
     },
     {
@@ -211,6 +207,10 @@ exports.deps = [
         "elem": "step-icon"
     },
     {
+        "block": "locomotive",
+        "elem": "user-icon"
+    },
+    {
         "block": "step-icon"
     },
     {
@@ -282,6 +282,18 @@ exports.deps = [
         "block": "user-icon",
         "mod": "push_down",
         "val": "yes"
+    },
+    {
+        "block": "user-icon",
+        "mod": "active"
+    },
+    {
+        "block": "user-icon",
+        "mod": "active",
+        "val": "no"
+    },
+    {
+        "block": "stories"
     },
     {
         "block": "story_theme_yellow"

@@ -3,7 +3,6 @@
 @import url(../../desktop.blocks/atom/atom.css);
 @import url(../../desktop.blocks/atom/__content/atom__content.css);
 @import url(../../desktop.blocks/atom/__border/atom__border.css);
-@import url(../../desktop.blocks/atom/__stories/atom__stories.css);
 @import url(../../desktop.blocks/header/header.css);
 @import url(../../desktop.blocks/header-logo/header-logo.css);
 @import url(../../desktop.blocks/header-logo/__orbital/header-logo__orbital.css);
@@ -24,6 +23,7 @@
 @import url(../../desktop.blocks/step-icon/__red/step-icon__red.css);
 @import url(../../desktop.blocks/step-icon/__blue/step-icon__blue.css);
 @import url(../../desktop.blocks/user-icon/user-icon.css);
+@import url(../../desktop.blocks/stories/stories.css);
 @import url(../../desktop.blocks/story/story.css);
 @import url(../../desktop.blocks/story/__steps/story__steps.css);
 @import url(../../desktop.blocks/step/step.css);

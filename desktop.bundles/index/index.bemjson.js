@@ -6,7 +6,7 @@
         {elem: 'css', url: '_index.css', ie: false},
         {elem: 'css', url: 'css/_anygrid.css', ie: false},
         {elem: 'css', url: '_index.ie.css', ie: 'gte IE 6'},
-        {elem: 'meta', attrs: {name: 'description', content: ''}},
+        {elem: 'meta', attrs: {name: 'description', content: ''}}
     ],
     content: [
         {
@@ -62,13 +62,21 @@
                                                 ]
                                             },
                                             {
-                                                block: 'user-icon',
-                                                mods: {'size': 'large', 'theme': 'yellow', 'push_down': 'yes'}
+                                                elem: 'user-icon',
+                                                mix: {
+                                                    block: 'user-icon',
+                                                    mods: {
+                                                        'size': 'large',
+                                                        'theme': 'yellow',
+                                                        'push_down': 'yes',
+                                                        'active': 'no'
+                                                    }
+                                                }
                                             }
                                         ]
                                     },
                                     {
-                                        elem: 'stories',
+                                        block: 'stories',
                                         content: [
                                             {block: 'story_theme_yellow', mix: {block: 'story', js: true}},
                                             {block: 'story_theme_red', mix: {block: 'story', js: true}},

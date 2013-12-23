@@ -26,6 +26,13 @@
     background-position: 0 -460px
 }
 
+
+.user-icon_size_middle
+{
+    width: 180px;
+    height: 180px;
+}
+
 .user-icon_size_middle.user-icon_theme_yellow
 {
     background-position: -150px 0;
@@ -65,4 +72,9 @@
 .user-icon_push_down_yes
 {
     margin-top: 50px;
+}
+
+.user-icon_active_no
+{
+    cursor: auto;
 }

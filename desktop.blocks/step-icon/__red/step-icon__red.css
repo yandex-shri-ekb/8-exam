@@ -1,40 +1,40 @@
-.step-icon_theme_red.step-icon_step_1.step-icon_active_yes
+.step-icon_theme_red.step-icon_step_1.step-icon_active_no
 {
     background-position: -220px 0;
 }
 
-.step-icon_theme_red.step-icon_step_2.step-icon_active_yes
+.step-icon_theme_red.step-icon_step_2.step-icon_active_no
 {
     background-position: -220px -110px;
 }
 
-.step-icon_theme_red.step-icon_step_3.step-icon_active_yes
+.step-icon_theme_red.step-icon_step_3.step-icon_active_no
 {
     background-position: -220px -220px;
 }
 
-.step-icon_theme_red.step-icon_step_4.step-icon_active_yes
+.step-icon_theme_red.step-icon_step_4.step-icon_active_no
 {
     background-position: -220px -330px;
 }
 
 
-.step-icon_theme_red.step-icon_step_1.step-icon_active_no
+.step-icon_theme_red.step-icon_step_1.step-icon_active_yes
 {
     background-position: -330px 0;
 }
 
-.step-icon_theme_red.step-icon_step_2.step-icon_active_no
+.step-icon_theme_red.step-icon_step_2.step-icon_active_yes
 {
     background-position: -330px -110px;
 }
 
-.step-icon_theme_red.step-icon_step_3.step-icon_active_no
+.step-icon_theme_red.step-icon_step_3.step-icon_active_yes
 {
     background-position: -330px -220px;
 }
 
-.step-icon_theme_red.step-icon_step_4.step-icon_active_no
+.step-icon_theme_red.step-icon_step_4.step-icon_active_yes
 {
     background-position: -330px -330px;
 }

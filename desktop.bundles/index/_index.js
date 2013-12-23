@@ -3858,7 +3858,6 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
     BEMDOM.decl('atom', {
         onSetMod: {
             'js': function() {
-                this._calculateHeight();
                 this._setRandomTheme();
             },
             'theme': function(modName, modVal) {
@@ -3868,34 +3867,21 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 
         _setRandomTheme: function() {
             var themes = ['yellow',  'red', 'blue'];
-            var theme = themes[this._getRandomInt(0, 2)];
+            var theme = themes[this.__getRandomInt(0, 2)];
             this.setMod('theme', theme);
         },
 
         _activateTheme: function(theme) {
             this.setMod(this.elem('content'), 'theme', theme);
-            var oldBlock = this.findBlockInside({'blockName': 'story', 'modName': 'active', modVal: 'yes'});
-            oldBlock && oldBlock.setMod('active', 'no');
+            this.findBlockInside('stories').setMod('theme', theme);
+            this.findBlockInside({'blockName': 'users', 'modName': 'pos', 'modVal': 'top'})
+                .setMod('theme', theme);
+            this.findBlockInside('locomotive').setMod('theme', theme);
 
-            var activeBlock = this.findBlockInside({'blockName': 'story', 'modName': 'theme', 'modVal': theme})
-            this.elem('stories').height(this._getHeight(theme));
-            activeBlock.setMod('active', 'yes');
+            // right side
         },
 
-        _calculateHeight: function() {
-            var list = [];
-            this.findBlocksInside('story').forEach(function(item) {
-                list[item.getMod('theme')] = item.domElem.height();
-                item.setMod('show', 'no');
-            });
-            this._height = list;
-        },
-
-        _getHeight: function(theme) {
-            return this._height[theme];
-        },
-
-        _getRandomInt: function(min, max) {
+        __getRandomInt: function(min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
     });
@@ -3905,6 +3891,28 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 });
 /* ../../desktop.blocks/atom/atom.js end */
 ;
+/* ../../desktop.blocks/users/users.js begin */
+modules.define('i-bem__dom', function(provide, BEMDOM) {
+
+    BEMDOM.decl('users', {
+        onSetMod: {
+            'theme': function(modName, currentTheme) {
+                this.hasMod('pos', 'top') && this._changeUsers(currentTheme);
+            }
+        },
+        _changeUsers: function(theme) {
+            this.findBlocksInside('user').forEach(function(user) {
+                var modVal = user.hasMod('theme', theme) ? 'yes' : 'no';
+                user.setMod('active', modVal);
+            });
+        }
+    });
+
+    provide(BEMDOM);
+
+});
+/* ../../desktop.blocks/users/users.js end */
+;
 /* ../../desktop.blocks/user/user.js begin */
 modules.define('i-bem__dom', function(provide, BEMDOM) {
 
@@ -3913,15 +3921,28 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
             'js': function() {
                 this._bindToClick();
                 this._bindToMouseOver();
+            },
+            'active': function(modName, modVal)  {
+                var size = modVal === 'yes' ? 'middle' : 'mini';
+                var self = this;
+
+                // возможно лучше добавить модификатор
+                this._getBlocksUsers().forEach(function(usersBlock) {
+                    usersBlock.findBlockInside({
+                        'blockName': 'user-icon',
+                        'modName': 'theme',
+                        'modVal': self.getMod('theme')
+                    }).setMod('size', size);
+                })
             }
         },
 
         _bindToClick: function() {
-            this.bindTo('icon', 'click', this._onClick);
+            !this.hasMod('passive', 'yes') && this.bindTo('icon', 'click', this._onClick);
         },
 
         _bindToMouseOver: function() {
-            this.bindTo('mouseover', this._onMouseOver);
+            !this.hasMod('passive', 'yes') && this.bindTo('mouseover', this._onMouseOver);
         },
 
         _onClick: function() {
@@ -3930,7 +3951,6 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
                 atom = this.findBlockOutside('atom');
 
             !isTop && this._scrollToBegin();
-
             theme !== atom.getMod('theme') && atom.setMod('theme', theme);
         },
 
@@ -3959,6 +3979,13 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
             var activeText = users.findBlockInside({'blockName': 'user', 'modName': 'theme', 'modVal': theme })
                 .findElem('text');
             this.setMod(activeText, 'show', 'yes');
+        },
+
+        _getBlocksUsers: function() {
+            if(!this._users) {
+                this._users = this.findBlockOutside('atom').findBlocksInside('users');
+            }
+            return this._users;
         }
     });
 
@@ -3973,14 +4000,17 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
     BEMDOM.decl('locomotive', {
         onSetMod: {
             'js': function() {
-
                 this._steps = [];
-                this._calculateThemeSteps();
+                this._calculateLastStepHeight();
                 this._bindToScroll();
+                this._bindToClick();
             },
-            'show': function(modName, modVal) {
-                this._activateThemeIcon();
-                modVal === 'yes' && this._calculateThemeSteps();
+
+            'theme': function(modName, modVal) {
+                this._calculateThemeSteps();
+                this._activateThemeIcon(modVal);
+                this._activateUserIcon(modVal);
+                this._onScroll();
             }
         },
 
@@ -3988,26 +4018,29 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             $(window).on('scroll', $.proxy(this._onScroll, this));
         },
 
+        _bindToClick: function() {
+            this.bindTo(this.elem('step-icon'), 'click', this._onClickStepIcon);
+        },
+
         _onScroll: function(e) {
-            debugger;
             var step = this._identifyStep();
             step ? this._changeStepIcons(step) : this._hide();
         },
 
+        _onClickStepIcon: function(e) {
+            var theme = $(e.currentTarget).bem('step-icon').getMod('theme');
+            this._getBlockAtom().setMod('theme', theme);
+        },
+
         _activateThemeIcon: function(theme) {
-            var icons = this.elem('.step-icon');
-            this.setMod(icons, 'active', 'no');
-            // TODO не знаю как отфильтровать элементы
-            var icon = this.findElem('step-icon', 'theme', theme);
-            this.setMod(icon, 'active', 'yes')
+            this.findBlocksInside('step-icon').forEach(function(icon) {
+                var modVal = icon.hasMod('theme', theme) ? 'yes' : 'no';
+                icon.setMod('active', modVal);
+            });
         },
 
         _activateUserIcon: function(theme) {
-            this.setMod(this.elem('user-icon'), 'theme', theme);
-        },
-
-        _identifyTheme: function() {
-            return this.getMod('theme');
+            this.findBlockInside('user-icon').setMod('theme', theme);
         },
 
         _identifyStep: function() {
@@ -4023,43 +4056,44 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         },
 
         _calculateThemeSteps: function() {
-            var atom = this.findBlockOutside('atom');
-            var theme = atom.findBlockInside(
-                {
+            var theme = this._getBlockAtom().findBlockInside({
                     'blockName': 'story',
                     'modName': 'theme',
-                    'modVal': atom.getMod('theme')}
-                );
-
-            var self = this;
-
-            var lastStep = 4;
+                    'modVal': this.getMod('theme')}
+                ),
+                lastStep = 4,
+                self = this;
 
             theme.findBlocksInside('step').forEach(function(step, i) {
-                var $step = step.domElem;
-                var start = $step.offset().top;
-                var end = start + $step.height();
+                var $step = step.domElem,
+                    start = $step.offset().top,
+                    end = start + $step.height();
 
-                // TODO оптимизировать
-                if(i === lastStep -1) {
-                    var users = atom.findBlockInside(
-                        {
-                            'blockName': 'users',
-                            'modName': 'pos',
-                            'modVal': 'bottom'
-                        }
-                    );
-                    end -= users.domElem.height() * 2;
-                }
+                i === lastStep -1 && (end -= self._lastStepHeight);
                 self._steps[i+1] = { start: start, end: end };
             });
             this._steps = self._steps;
         },
 
+        _calculateLastStepHeight: function() {
+            this._lastStepHeight = this._getBlockAtom().findBlockInside({
+                    'blockName': 'users',
+                    'modName': 'pos',
+                    'modVal': 'bottom'
+                }
+            ).domElem.height() * 2;
+        },
+
+        _getBlockAtom: function() {
+            if(!this._atom) {
+                this._atom = this.findBlockOutside('atom');
+            }
+            return this._atom;
+        },
+
         _changeStepIcons: function(step) {
             if(step > 0) {
-                var icons = this.findBlocksInside('step-icon');
-                icons.forEach(function(icon) {
+                this.findBlocksInside('step-icon').forEach(function(icon) {
                     icon.setMod('step', step);
                 });
             }
@@ -4073,7 +4107,6 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         _hide: function() {
             this.setMod('show', 'no');
         }
-
     });
 
     provide(BEMDOM);
@@ -4081,40 +4114,83 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
 });
 /* ../../desktop.blocks/locomotive/locomotive.js end */
 ;
+/* ../../desktop.blocks/stories/stories.js begin */
+modules.define('i-bem__dom', function(provide, BEMDOM) {
+
+    BEMDOM.decl('stories', {
+        onSetMod: {
+            'js': function() {
+                this._listHeight = this._calculateHeight();
+                this._hideStoriesInside();
+            },
+
+            'theme': function(modName, currentTheme, oldTheme) {
+                this._activateTheme(currentTheme);
+                oldTheme && this._deactivateTheme(oldTheme);
+                this._changeHeight(currentTheme);
+            }
+        },
+
+        _activateTheme: function(themeName) {
+            var theme = this.__findStory(themeName);
+            theme.setMod('show', 'yes');
+            theme.domElem.animate({left: '+=' + 952}, 300);
+        },
+
+        _deactivateTheme: function(themeName) {
+            var theme = this.__findStory(themeName);
+            theme.domElem.animate({left: '+=' + 952}, {
+                duration: 300,
+                complete: function() {
+                    theme.setMod('show', 'no');
+                }
+            });
+        },
+
+        __findStory: function(themeName) {
+            return this.findBlockInside({'blockName': 'story', 'modName': 'theme', 'modVal': themeName});
+        },
+
+        _calculateHeight: function() {
+            var list = [];
+            this.findBlocksInside('story').forEach(function(item) {
+                list[item.getMod('theme')] = item.domElem.height();
+            });
+            return list;
+        },
+
+        _hideStoriesInside: function() {
+            this.findBlocksInside('story').forEach(function(item) {
+                item.setMod('show', 'no');
+            });
+        },
+
+        _getHeight: function(theme) {
+            return this._listHeight[theme];
+        },
+
+        _changeHeight: function(theme) {
+            this.domElem.height(this._getHeight(theme));
+        }
+    });
+
+    provide(BEMDOM);
+
+});
+/* ../../desktop.blocks/stories/stories.js end */
+;
 /* ../../desktop.blocks/story/story.js begin */
 modules.define('i-bem__dom', function(provide, BEMDOM) {
 
     BEMDOM.decl('story', {
         onSetMod: {
-            'active': function(modName, modVal) {
-                modVal === 'yes' ? this._activateTheme() : this._deactivateTheme();
-            },
-            'show': {
-                'no': function() {
-                    this.domElem.css({left: '-952px', top: 0});
-                }
+            'show': function() {
+                this.domElem.css({left: '-952px', top: 0});
             }
-        },
-
-        _activateTheme: function() {
-            this.setMod('show', 'yes');
-            this.domElem.animate({left: '+=' + 952}, 300);
-        },
-
-        _deactivateTheme: function() {
-            var self = this;
-            debugger;
-            this.domElem.animate({left: '+=' + 952}, {
-                duration: 300,
-
-                complete: function() {
-                    self.setMod('show', 'no');
-                }
-            });
         }
     });
 
-provide(BEMDOM);
+    provide(BEMDOM);
 
 });
 /* ../../desktop.blocks/story/story.js end */
