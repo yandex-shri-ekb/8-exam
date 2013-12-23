@@ -1,0 +1,15 @@
+.aside__section:first-child {
+    border-top-color: white;
+}
+
+.aside__section:last-child {
+    border-bottom-color: white;
+}
+
+.aside__section .scene {
+    top: 0;
+}
+
+.aside__section p {
+    max-width: 500px;
+}
