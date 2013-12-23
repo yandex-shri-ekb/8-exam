@@ -1,16 +1,17 @@
 define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImagePreloader, random) {
     'use strict';
 
+
     var $window = $(window),
         $body = $(document.body),
-        charColors = ['yellow', 'red', 'blue'],
-        bPageColors = ['b-page_yellow', 'b-page_red', 'b-page_blue'],
         $bPage = $('.b-page', $body),
         $switcherTop = $('.switcher-top'),
         $switcherBottom = $('.switcher-bottom'),
         $charFloated = $('.char-floated'),
         $switcherFloated = $('.switcher-floated'),
         $panel = $('.layout__floated'),
+        charColors = ['yellow', 'red', 'blue'],
+        bPageColors = ['b-page_yellow', 'b-page_red', 'b-page_blue'],
         panelLeft = $panel.offset().left,
         initedChars = [],
         coords = {
@@ -185,18 +186,18 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
             w = 0;
         }
 
-        if(w > 870) {
-            return panelLeft;
-        }
-
+        // магические константы это ужасно
+        // 200 - минимальная ширина story области
+        // 870 - максимальная ширина info области
         var availableW = ww - w - 200,
             requireW = 870 - w;
 
         availableW = availableW < 0 ? 0 : availableW;
 
-        var addW = requireW <= availableW ? requireW : availableW;
+        var addW = requireW <= availableW ? requireW : availableW,
+            newLeft = left - addW;
 
-        return left - addW;
+        return newLeft > panelLeft ? panelLeft : newLeft;
     }
 
     /**
