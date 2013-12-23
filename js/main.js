@@ -1,15 +1,10 @@
 require.config({
     paths: {
-        jquery: '//yandex.st/jquery/2.0.3/jquery.min',
-        handlebars: '//cdnjs.cloudflare.com/ajax/libs/handlebars.js/1.1.2/handlebars.min',
-        app: 'app'
+        jquery: '//yandex.st/jquery/1.10.2/jquery.min'
     },
-    shim: {
-        handlebars: {
-            exports: 'Handlebars'
-        }
-    }
+    shim: {}
 });
 
 require(['app/utils/string']);
+require(['app/utils/array']);
 require(['app/init']);

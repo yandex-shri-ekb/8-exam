@@ -32,6 +32,8 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
          * @type {Object}
          */
         this.config = {};
+
+        _selectChar(charColors[random.getInt(0, 2)]);
     }
 
     /**
@@ -202,9 +204,6 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
     /**
      */
     App.prototype.init = function() {
-
-        _selectChar(charColors[random.getInt(0, 2)]);
-        //_selectChar('blue');
 
         $('.switcher-top,.switcher-bottom').on('click', '.char', function() {
             var $char = $(this);
