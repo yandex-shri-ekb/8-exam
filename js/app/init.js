@@ -1,9 +1,18 @@
-'use strict';
+define(['app/app', 'jquery', 'app/modal'], function(App, $, Modal) {
+    'use strict';
 
-define(['app/app', 'jquery'], function(App, $) {
     var app = new App();
 
     $(function() {
         app.init();
+
+        _initModal();
     });
+
+    function _initModal() {
+        var modal = new Modal($('#modal'));
+        $('.video-btn__btn').click(function() {
+            modal.show();
+        });
+    }
 });

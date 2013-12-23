@@ -1,7 +1,6 @@
 define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImagePreloader, random) {
     'use strict';
 
-
     var $window = $(window),
         $body = $(document.body),
         $bPage = $('.b-page', $body),

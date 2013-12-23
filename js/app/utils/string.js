@@ -1,6 +1,6 @@
-'use strict';
-
 define([], function() {
+    'use strict';
+
     if (!String.prototype.format) {
         /**
          * "{0} is dead, but {1} is alive! {0} {2}".format("ASP", "ASP.NET")
