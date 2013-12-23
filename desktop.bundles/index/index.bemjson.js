@@ -1,12 +1,12 @@
 ({
     block: 'page',
-    title: 'Title of the page',
+    title: 'Александр Сердитов. ШРИ. Экзамен',
     favicon: '/favicon.ico',
     head: [
+        {elem: 'meta', attrs: {name: 'description', content: ''}},
         {elem: 'css', url: '_index.css', ie: false},
         {elem: 'css', url: 'css/_anygrid.css', ie: false},
-        {elem: 'css', url: '_index.ie.css', ie: 'gte IE 6'},
-        {elem: 'meta', attrs: {name: 'description', content: ''}}
+        {elem: 'css', url: '_index.ie.css', ie: 'gte IE 6'}
     ],
     content: [
         {

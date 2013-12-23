@@ -3,10 +3,10 @@ exports.blocks = [
         "name": "page",
         "elems": [
             {
-                "name": "css"
+                "name": "meta"
             },
             {
-                "name": "meta"
+                "name": "css"
             },
             {
                 "name": "wrap"

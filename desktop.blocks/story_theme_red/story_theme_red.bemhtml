@@ -175,6 +175,11 @@ block 'story_theme_red' {
                             },
                             {
                                 block: 'image_theme_red',
+                                mix: {block: 'grid__module', mods: {col: 7, span: 2}},
+                                content: {elem: 'drink-glass', mods: {'push_down': 'yes', 'push_right': 'yes'}}
+                            },
+                            {
+                                block: 'image_theme_red',
                                 mix: {block: 'grid__module', mods: {col: 1, span: 6}},
                                 content: {elem: 'bags', mods: {'push_down': 'yes', 'push_left': 'yes'}}
                             }
