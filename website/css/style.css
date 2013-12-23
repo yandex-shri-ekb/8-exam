@@ -1,0 +1,286 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;    
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+.story {
+    font-family: sans-serif;
+    font-size: 16px;
+    min-width: 500px;
+
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+.story td {
+    vertical-align: top;
+    padding:0;
+}
+
+.story__article {
+    border: 2px solid black;
+    margin: 18px;
+    width: 972px;
+    background-position: -18px 0;
+}
+
+.story__aside {
+    position: relative;
+    background: white;
+    left: -37px;
+    border-left: 1px solid black;
+    /*padding: 18px;*/
+    width: 800px;
+    /*height: 5285px;*/
+}
+
+.story_color_blue .story__article{
+    background-color: #72c4f6;
+    background-image: url(../img/bg/blue.png);
+}
+
+.story_color_red .story__article{
+    background-color: #ff8282;
+    background-image: url(../img/bg/red.png);
+}
+
+.story_color_yellow .story__article{
+    background-color: #ffe05d;
+    background-image: url(../img/bg/yellow.png);
+}
+
+.article__section {
+    position: relative;
+}
+
+.article__section_header {
+    height: 1380px;
+}
+
+.article__section_step {
+    height: 790px;
+}
+
+.header__logo {
+    position: relative;
+    top: -2px;
+    left: 405px;
+}
+
+.header__background {
+    position: absolute;
+    top: -19px;
+    left: -21px;
+}
+
+.header__tagline {
+    font-size: 48px;
+    text-align: center;
+    top: 330px;
+    position: relative;
+    padding: 0 50px;
+}
+
+.brief {
+    position: relative;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    padding-top: 55px;
+    line-height: 25px;
+    height: 370px;
+}
+
+.brief-position-top {
+    background: white;
+    top: 390px;
+}
+
+.brief-position-bottom {
+    top: 175px;    
+}
+
+.video-preview {
+    margin: 20px 0 0;
+    height: 80px;
+    width: 135px;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.story_user_blue .video-preview {
+    background: #72c4f6;
+}
+
+.video-preview__play-btn {
+    position: relative;
+    top: 23px;
+    left: 57px;
+}
+
+.persons {
+    position: relative;
+}
+
+.persons_position_top {
+    top: 470px;
+}
+
+.persons_position_bottom {
+    top: 140px;
+}
+
+.person {
+    cursor: pointer;
+}
+
+.person__image {
+    width: 138px;
+    height: 138px;
+    background-image: url(../img/persons/small.png);
+}
+
+.person__name {
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.person__description {
+    width: 200%;
+    position: relative;
+    left: -50%;
+    text-align: center;
+    display: none;
+}
+
+.person:hover .person__description {
+    display: block;
+}
+
+.person_color_yellow .person__image {
+    background-position: center 0;
+}
+
+.person_color_red .person__image {
+    background-position: center 287px;
+}
+
+.person_color_blue .person__image {
+    background-position: center 138px;
+}
+
+.scene {
+    position: relative;
+    top: 90px;
+}
+
+.article__section_footer {
+    height: 741px;
+}
+
+.aside__section {
+    border: 1px solid black;
+    border-left: none;
+    border-right: none;
+    padding-left: 36px;
+}
+
+.aside__section_header {
+    height: 1400px;
+}
+
+.aside__section_step {
+    height: 790px;
+}
+
+.aside__section_footer {
+    height: 750px;
+}
+
+.video-frame {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    width: 762px;
+    height: 429px;
+    background: #c0c0c0;
+
+    margin: -214px 0 0 -381px;
+
+    display: none;
+}
+
+.video-frame__close-button {
+    width: 35px;
+    height: 35px;
+
+    background: white;
+
+    font-size: 40px;
+    text-align: center;
+
+    line-height: 37px;
+
+    border: 2px solid black;
+
+    top: 18px;
+    right: 18px;
+    position: absolute;
+
+    cursor: pointer;
+}
+
+.story_color_blue .video-preview{
+    background-color: #72c4f6;
+}
+
+.story_color_red .video-preview{
+    background-color: #ff8282;
+}
+
+.story_color_yellow .video-preview{
+    background-color: #ffe05d;
+}
+
+.main-person {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    width: 217px;
+    height: 217px;
+
+    margin: -108px 0 0 -108px;
+
+    display: none;
+}
+
+.main-person__image {
+    width: 217px;
+    height: 217px;
+    background-image: url(../img/persons/large.png);
+}
+
+.person_color_yellow .main-person__image {
+    background-position: center 0;
+}
+
+.person_color_red .main-person__image {
+    background-position: center 287px;
+}
+
+.person_color_blue .main-person__image {
+    background-position: center 138px;
+}
