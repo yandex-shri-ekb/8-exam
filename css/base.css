@@ -8,7 +8,7 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000319}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000321}}
 html,
 button,
 input,
@@ -17,24 +17,25 @@ textarea {
   color: #000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000326}}
 html {
   height: 100%;
   min-height: 100%;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000330}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000332}}
 body {
   position: relative;
   min-height: 100%;
   font: 16px/1.5 "Arial", "Helvetica", sans-serif;
   color: #000;
+  padding: 16px 0 16px 16px;
 }
 
 /*
  * A better looking default horizontal rule
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000342}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000345}}
 hr {
   display: block;
   height: 1px;
@@ -47,7 +48,7 @@ hr {
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000359}}
 img {
   vertical-align: middle;
 }
@@ -55,7 +56,7 @@ img {
 /*
  * Remove default fieldset styles.
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000368}}
 fieldset {
   border: 0;
   margin: 0;
@@ -65,7 +66,7 @@ fieldset {
 /*
  * Allow only vertical resizing of textareas.
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000379}}
 textarea {
   resize: vertical;
 }
@@ -73,7 +74,7 @@ textarea {
 /* ==========================================================================
    Chrome Frame prompt
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000385}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000388}}
 .chromeframe {
   margin: 0.2em 0;
   background: #ccc;
@@ -84,13 +85,13 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\0000399}}
 a {
   color: #000;
   text-decoration: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003105}}
 a:hover {
   color: red;
   text-decoration: none;
@@ -102,7 +103,7 @@ a:hover {
 /*
  * Image replacement
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003119}}
 .i-text-hidden {
   background-color: transparent;
   border: 0;
@@ -111,7 +112,7 @@ a:hover {
   *text-indent: -9999px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003128}}
 .i-text-hidden:before {
   content: "";
   display: block;
@@ -122,7 +123,7 @@ a:hover {
 /*
  * Hide from both screenreaders and browsers: h5bp.com/u
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003140}}
 .hidden {
   display: none !important;
   visibility: hidden;
@@ -131,7 +132,7 @@ a:hover {
 /*
  * Hide only visually, but have it available for screenreaders: h5bp.com/v
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003150}}
 .visuallyhidden {
   border: 0;
   clip: rect(0 0 0 0);
@@ -147,7 +148,7 @@ a:hover {
  * Extends the .visuallyhidden class to allow the element to be focusable
  * when navigated to via the keyboard: h5bp.com/p
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003168}}
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
   clip: auto;
@@ -161,9 +162,14 @@ a:hover {
 /*
  * Hide visually and from screenreaders, but maintain layout
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003179}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003182}}
 .i-invisible {
   visibility: hidden;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003187}}
+.i-visible {
+  visibility: visible;
 }
 
 /*
@@ -177,7 +183,7 @@ a:hover {
  * 2. The use of `table` rather than `block` is only necessary if using
  *    `:before` to contain the top-margins of child elements.
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003205}}
 .i-clearfix:before,
 .i-clearfix:after {
   content: " ";
@@ -186,7 +192,7 @@ a:hover {
   /* 2 */
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003203}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003211}}
 .i-clearfix:after {
   clear: both;
 }
@@ -195,7 +201,7 @@ a:hover {
  * For IE 6/7 only
  * Include this rule to trigger hasLayout and contain floats.
 */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003213}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003221}}
 .i-clearfix {
   *zoom: 1;
 }
@@ -205,7 +211,7 @@ a:hover {
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003225}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003233}}
   * {
     background: transparent !important;
     color: #000 !important;
@@ -214,18 +220,18 @@ a:hover {
     text-shadow: none !important;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003234}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003242}}
   a,
   a:visited {
     text-decoration: underline;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003247}}
   a[href]:after {
     content: " (" attr(href) ")";
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003244}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003252}}
   abbr[title]:after {
     content: " (" attr(title) ")";
   }
@@ -233,33 +239,33 @@ a:hover {
   /*
    * Don't show links for images, or javascript/internal links
   */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003263}}
   .ir a:after,
   a[href^="javascript:"]:after,
   a[href^="#"]:after {
     content: "";
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003261}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003269}}
   pre,
   blockquote {
     border: 1px solid #999;
     page-break-inside: avoid;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003275}}
   thead {
     display: table-header-group;
     /* h5bp.com/t */
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003281}}
   tr,
   img {
     page-break-inside: avoid;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003278}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003286}}
   img {
     max-width: 100% !important;
   }
@@ -268,7 +274,7 @@ a:hover {
     margin: 0.5cm;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003290}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003298}}
   p,
   h2,
   h3 {
@@ -276,17 +282,17 @@ a:hover {
     widows: 3;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003297}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003305}}
   h2,
   h3 {
     page-break-after: avoid;
   }
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003302}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003310}}
 p {
   font: 16px/1.5 "Arial";
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/base\.scss}line{font-family:\00003313}}
 p + p {
   margin-top: 20px;
 }

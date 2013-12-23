@@ -1,28 +1,7 @@
 var person = {
-    hiddenClass: 'i-invisible',
     init: function () {
         var _this = this;
 
-        _this.initToggleShowShortPersonDesc();
-    },
-    initToggleShowShortPersonDesc: function () {
-        var _this = this;
-
-        $('.js-person-icon')
-            .mouseover(function () {
-                var $this = $(this),
-                    $personDescription = $($this.data('person-description')),
-                    $personsDescription = $('.js-person-description');
-
-                $personsDescription.addClass(_this.hiddenClass);
-                $personDescription.removeClass(_this.hiddenClass);
-            })
-            .mouseout(function () {
-                var $this = $(this),
-                    $personDescription = $($this.data('person-description'));
-
-                $personDescription.addClass(_this.hiddenClass);
-            });
     }
 };
 
@@ -31,7 +10,14 @@ var theme = {
     init: function () {
         var _this = this;
 
-        $('.js-person-icon').click(function (event) {
+//        _this.initToggleTheme();
+//        _this.setRandomTheme();
+    },
+    initToggleTheme: function () {
+        var _this = this,
+            $personIcons = $('.js-person-icon');
+
+        $personIcons.click(function (event) {
             event.preventDefault();
 
             var $this = $(this),
@@ -42,9 +28,16 @@ var theme = {
     },
     toggleTheme: function (classTheme) {
         var _this = this,
-            $themeElements = $('.js-theme-element');
+            $body = $('body');
 
-        $themeElements.removeClass(_this.themeClasses.join(' ')).addClass(classTheme);
+        $body.removeClass(_this.themeClasses.join(' ')).addClass(classTheme);
+    },
+    setRandomTheme: function () {
+        var _this = this,
+            $body = $('body'),
+            randomThemeIndex = Math.floor(Math.random() * 3);
+
+        $body.removeClass(_this.themeClasses.join(' ')).addClass(_this.themeClasses[randomThemeIndex]);
     }
 };
 

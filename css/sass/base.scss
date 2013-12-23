@@ -1,3 +1,5 @@
+@import "compass";
+
 @charset "utf-8";
 /*
  * HTML5 Boilerplate
@@ -32,6 +34,7 @@ body
     min-height: 100%;
     font: 16px/1.5 "Arial", "Helvetica", sans-serif;
     color: #000;
+    padding: 16px 0 16px 16px;
 }
 
 /*
@@ -178,6 +181,11 @@ a:hover
 .i-invisible
 {
     visibility: hidden;
+}
+
+.i-visible
+{
+    visibility: visible;
 }
 
 /*
