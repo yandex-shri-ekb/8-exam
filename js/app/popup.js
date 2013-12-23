@@ -18,7 +18,6 @@ define(['jquery'], function($) {
 	 * @constructor 
 	 */
     Popup = function() {
-    	var t = 1;
     	/** Обработка клика по кнопке проигрывания видео */
 		$('.btn_play').click($.proxy(this.openPopUp, this));
 

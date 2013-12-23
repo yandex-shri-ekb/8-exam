@@ -22,10 +22,13 @@ define(['jquery'], function($) {
     Slide = function() {
     	eventRight();
 
+		/** Обработка клика по кнопке с вопросительным знаком */
     	$helpBtn.click($.proxy(this.viewRight, this));
 
+    	/** Обработка клика по правому блоку */
     	$right.click($.proxy(this.viewRight, this));
 
+    	/** Обработка клика по основному блоку */
     	$content.click($.proxy(this.viewContent, this));
     }
 

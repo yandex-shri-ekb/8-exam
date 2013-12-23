@@ -262,7 +262,7 @@ h3
 
 .title
 {
-    font: 45px/48px Arial,Helvetica,sans-serif;
+    font: 44px/48px Arial,Helvetica,sans-serif;
     position: absolute;
     text-align: center;
     top: 421px;
@@ -382,13 +382,7 @@ h3
 .history
 {
     padding: 0 16px; 
-    background: #e7e7e7;
     overflow: hidden;
-    -webkit-transition: background-color 300ms linear 0s;
-       -moz-transition: background-color 300ms linear 0s;
-        -ms-transition: background-color 300ms linear 0s;
-         -o-transition: background-color 300ms linear 0s;
-            transition: background 300ms linear 0s;
 }
 
 .histort__text

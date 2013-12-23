@@ -30,12 +30,13 @@ define(['app/random',
 	/** @define {object} */
 	    $blue        = $('.blue'), // Синий персонаж
 	/** @define {object} */
-	    $content     = $('.content'), // Григорий в подвале сайта
+	    $content     = $('.content'), // Основная часть сайта
 	/** @define {object} */
-	    $btnPlay     = $('.play'), // Описание для персонажа
+	    $btnPlay     = $('.play'), // Кнопка вызова PopUp-окна
 	/** @define {object} */
-	    $history     = $('.history'); // Описание для персонажа
-
+	    $history     = $('.history'), // История персонажа
+	/** @define {object} */
+	    $persons     = $('.persons'); // Персонажи в шапке сайта
 
 
 	/**
@@ -46,26 +47,36 @@ define(['app/random',
     	/** @define {string} */
     	this.color = ''; //цвет выбранного персонажа
 
+    	/** Обработка клика по Максиму в шапке сайта */
     	$yellowCharH.click($.proxy(this.yellow, this));
 
+    	/** Обработка клика по Алексею в шапке сайта */
     	$redCharH.click($.proxy(this.red, this));
 
+    	/** Обработка клика по Григорию в шапке сайта */
     	$blueCharH.click($.proxy(this.blue, this));
 
-    	$yellowCharF.click($.proxy(this.yellow, this));
+    	/** Обработка клика по Григорию в подвале сайта */
+    	$yellowCharF.click($.proxy(this.yellowF, this));
 
-    	$redCharF.click($.proxy(this.red, this));
+    	/** Обработка клика по Григорию в подвале сайта */
+    	$redCharF.click($.proxy(this.redF, this));
 
-    	$blueCharF.click($.proxy(this.blue, this));
+    	/** Обработка клика по Григорию в подвале сайта */
+    	$blueCharF.click($.proxy(this.blueF, this));
+
+    	window.onscroll = function() {
+    		console.log(isScrolledIntoView($('.red_block2')));
+    	}
+
     }
 
     /**
-     * Функция которая должна быть вызвана при запуске приложения
+     * Отрисовываем случайно выбранного персонажа
      */
     App.prototype.init = function() {
     	var app = this;
 
-    	console.log(RandomChar);
 		switch (RandomChar) {
             case 1:
                 app.yellow();
@@ -80,7 +91,6 @@ define(['app/random',
                 app.yellow();
         }
 
-
         app.renderStory();
 	};
 
@@ -91,11 +101,9 @@ define(['app/random',
     	var app = this;
 
     	app.clearChar();
-    	this.color = 'yellow';
+    	app.color = 'yellow';
 
-    	$yellowCharH.find('.person__yellow__avatar').addClass('active');
-    	$yellowCharH.find('.person__desc').addClass('view');
-    	app.renderStory();
+    	app.chengeChar($yellowCharH);
 	}
 
 	/**
@@ -105,11 +113,9 @@ define(['app/random',
     	var app = this;
 
     	app.clearChar();
-    	this.color = 'red';
+    	app.color = 'red';
 
-    	$redCharH.find('.person__red__avatar').addClass('active');
-    	$redCharH.find('.person__desc').addClass('view');
-    	app.renderStory();
+    	app.chengeChar($redCharH);
 	}
 
 	/**
@@ -119,15 +125,54 @@ define(['app/random',
     	var app = this;
 
     	app.clearChar();
-    	this.color = 'blue';
+    	app.color = 'blue';
 
-    	$blueCharH.find('.person__blue__avatar').addClass('active');
-    	$blueCharH.find('.person__desc').addClass('view');
+    	app.chengeChar($blueCharH);
+	}
+
+	/**
+	 * Изменяем аватарку у выбранного персонажа и отображаем его описание
+	 */
+    App.prototype.chengeChar = function(element) {
+    	var app = this;
+
+    	element.find('.person__' + app.color + '__avatar').addClass('active');
+    	element.find('.person__desc').addClass('view');
     	app.renderStory();
 	}
 
 	/**
-	 * @return {string} размер рабочей области браузера
+	 * События, которые происходят при клике по Максиму в подвале сайта
+	 */
+    App.prototype.yellowF = function(event) {
+    	var app = this;
+
+    	app.yellow();
+    	scrollToElement($('.persons'));
+	}
+
+	/**
+	 * События, которые происходят при клике по Алексею в подвале сайта
+	 */
+    App.prototype.redF = function(event) {
+    	var app = this;
+
+    	app.red();
+    	scrollToElement($('.persons'));
+	}
+
+	/**
+	 * События, которые происходят при клике по Григорию в подвале сайта
+	 */
+    App.prototype.blueF = function(event) {
+    	var app = this;
+
+    	app.blue();
+    	scrollToElement($('.persons'));
+	}
+
+	/**
+	 * Очищем всех персонажей
 	 */
 	App.prototype.clearChar = function() {
 		var app = this;
@@ -139,11 +184,11 @@ define(['app/random',
 		$blue.hide();
 		$content.removeClass(app.color + '__color');
 		$btnPlay.removeClass(app.color + '__color');
-		$history.removeClass(app.color + '__color history__' + app.color);
+		$history.removeClass('history__' + app.color);
 	}
 
 	/**
-	 * @return {string} размер рабочей области браузера
+	 * Ренедер персонажа
 	 */
     App.prototype.renderStory = function() {
     	var app = this;
@@ -151,10 +196,34 @@ define(['app/random',
 		$('.' + app.color).show();
 		$content.addClass(app.color + '__color');
 		$btnPlay.addClass(app.color + '__color');
-		$history.addClass(app.color + '__color history__' + app.color);
+		$history.addClass('history__' + app.color);
 	}
 
-	
+	/**
+	 * Скроллинг к нужному элементу
+	 * @param  {object} el элемент, к которому скроллим
+	 */
+	function scrollToElement(el) {
+		$('html,body').animate({
+		    scrollTop: el.offset().top
+		}, 800);
+	}
+
+	/**
+	 * Определение, виден ли в текущий момент элемент на экране
+	 * @param  {object}  el элемент, к которому скроллим
+	 * @return {Boolean}
+	 */
+	function isScrolledIntoView(el)
+	{
+	    var docViewTop = $(window).scrollTop();
+	    //var docViewBottom = docViewTop + $(window).height();
+
+	    var elemTop = $(el).offset().top;
+	    var elemBottom = elemTop + $(el).height() + Number($(el).css('padding-top').replace("px", ""));
+
+	    return ((elemBottom >= docViewTop) && (elemTop <= docViewTop));
+	}
 
 	return App;
 });
