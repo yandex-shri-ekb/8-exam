@@ -1,7 +1,11 @@
 require(['jquery',
-	     'app/app'], function($, App) {
+		 'app/popup',
+		 'app/slide',
+	     'app/app'], function($, Popup, Slide, App) {
+	new Popup();
 	$(document).ready(function () {
-		/*var app = new App();
-		app.first();*/
+		new Slide();
+		//var app = new App();
+		//app.first();
 	});
 });

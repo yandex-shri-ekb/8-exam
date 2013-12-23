@@ -1,3 +1,5 @@
+[https://rawgithub.com/ArtKuz/8-exam/master/index.html](https://rawgithub.com/ArtKuz/8-exam/master/index.html)
+
 # Выбор персонажа
   - Блок выбора персонажа позволяет переключаться между персонажами.
   - По наведению на блок персонажа меняется блок с его описанием.
