@@ -306,6 +306,7 @@
                     content: [
                         {elem: 'button', mods: {hide: 'yes', icon: 'question'}, js: true},
                         {elem: 'shadow'},
+                        {elem: 'sheet-button'},
                         {elem: 'ya-logo'},
                         {
                             elem: 'cell',

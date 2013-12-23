@@ -1,0 +1,17 @@
+.aside__sheet-button
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+.aside__sheet-button_hide_yes,
+.aside_opened_yes .aside__sheet-button
+{
+    display: none;
+}

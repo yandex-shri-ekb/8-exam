@@ -8,6 +8,7 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                     this._setWidths();
                     this._resetButtonVisibility();
                     this.bindTo('button', 'click', this._onButtonClick);
+                    this.bindTo('sheet-button', 'click', this._onButtonClick);
 
                     $(window).on('resize', function() {
                         clearTimeout(self.timer);
@@ -46,10 +47,13 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         },
         _resetButtonVisibility: function() {
             var button = this.elem('button');
+            var sheetButton = this.elem('sheet-button');
             if($(window).width() < this.historyWidth + this.asideWidth) {
                 this.delMod(button, 'hide');
+                this.delMod(sheetButton, 'hide');
             } else {
                 this.setMod(button, 'hide', 'yes');
+                this.setMod(sheetButton, 'hide', 'yes');
             }
         },
         _resetAsidePosition: function() {
