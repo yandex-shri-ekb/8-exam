@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Яндекс Атом</title>
+    <meta charset="UTF-8">
+    <link href="style/grid.css" rel="stylesheet" media="all">
+    <link href="style/style.css" rel="stylesheet" media="all">
+    <script src="//code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="js/jquery-ui-1.10.3.core.widget.min.js"></script>
+    <script src="js/boolive.widget.js"></script>
+    <script src="js/exam.story.js"></script>
+    <script src="js/exam.sidebar.js"></script>
+    <script src="js/exam.sidebar-switcher.js"></script>
+    <script src="js/exam.person-menu.js"></script>
+    <script src="js/exam.person-active.js"></script>
+    <script src="js/exam.person-bar.js"></script>
+    <script src="js/exam.modal-video.js"></script>
+    <script>
+    $(document).ready(function(){
+        // Подключение виджетов к тегам
+        $('[data-w]').each(function(){
+            var plugin = $(this).attr('data-w');
+            if (typeof $(this)[plugin] === 'function'){
+                var options = $(this).data('w-options');
+                $(this)[plugin](options);
+            }
+        });
+    });
+    </script>
+</head>
+<body>
+<div class="atom" data-w="widget">
+    <div class="story" data-w="story">
+        <div class="story__item story__item_1">
+            <div class="story__bg">
+                <img src="img/bg.png" width="1112" height="570" alt=""/>
+            </div>
+            <div class="story__logo">
+                <a href="http://yandex.ru" target="_blank"><img src="img/yandex.png" width="78" height="30" alt="Яндекс"/></a>
+            </div>
+            <div class="grid_cols_12">
+                <div class="grid__row">
+                    <div class="grid__module grid__module_col_2 grid__module_span_10">
+                        — А что если интернет подстроится под меня?
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="story__item story__item_2">
+            <div class="grid_cols_12">
+                <div class="grid__row">
+                    <div class="grid__module grid__module_col_2 grid__module_span_6">
+                        <p>Интернет сегодня — это не только информация и технологии, но и люди. Людей много и они все разные, а сайты для всех пользователей обычно выглядят одинаково. Яндекс уже научился адаптироваться под конкретного пользователя и готов поделиться этой технологией с другими.</p>
+                        <p>«Атом». Технологическая платформа, задача которой — предоставить сайтам возможность изменять содержание страниц под конкретного пользователя.</p>
+                    </div>
+                    <div class="grid__module grid__module_col_9 grid__module_span_3">
+                        <a class="video-btn" href="" title="Весь сайт в одном видео"></a>
+                        Весь сайт в одном видео
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="story__item story__item_3">
+            <!-- меню выбора персонажа -->
+            <div class="person-menu" data-w="person-menu" data-w-options='{"when_hidden":["out-top"]}'>
+                <div class="person-menu grid_cols_12">
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_3 grid__module_span_2">
+                            <div class="person-menu__item person-menu__item_type_yellow" data-type="yellow">
+                                <div class="person-menu__icon person-menu__icon_type_yellow"></div>
+                                <div class="person-menu__label">Максим</div>
+                            </div>
+                        </div>
+                        <div class="grid__module grid__module_col_6 grid__module_span_2">
+                            <div class="person-menu__item person-menu__item_type_red" data-type="red">
+                                <div class="person-menu__icon person-menu__icon_type_red"></div>
+                                <div class="person-menu__label">Алексей Быков</div>
+                            </div>
+                        </div>
+                        <div class="grid__module grid__module_col_9 grid__module_span_2">
+                            <div class="person-menu__item person-menu__item_type_blue" data-type="blue">
+                                <div class="person-menu__icon person-menu__icon_type_blue"></div>
+                                <div class="person-menu__label">Георгий И. Дауге</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_4">
+                            <div class="person-menu__desc person-menu__desc_type_yellow">
+                                Предпочитает путешествовать самостоятельно и налегке. Уверен, что только так можно проникнуться культурой страны.
+                            </div>
+                        </div>
+                        <div class="grid__module grid__module_col_5 grid__module_span_4">
+                            <div class="person-menu__desc person-menu__desc_type_red">
+                                В отпуск ездит вместе с женой и дочкой. Считает, что отдыхать лучше всего в отелях на побережье.
+                            </div>
+                        </div>
+                        <div class="grid__module grid__module_col_8 grid__module_span_4">
+                            <div class="person-menu__desc person-menu__desc_type_blue">
+                                Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="story-path">
+            <!-- Путь первого юзера -->
+            <div class="story-path__item story-path__item_type_yellow" data-type="yellow">
+                <div class="grid_cols_12">
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__line" src="img/yellow/path-1.png" width="762" height="87" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_7  grid__module_span_1">
+                            <img class="story-path__image story-path__image_yellow-1" src="img/yellow/step1.png" width="294" height="218" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_4">
+                            <div class="story-path__text" data-pos="1">
+                                <p>Максим хочет увидеть настоящий, нетуристический Таиланд.</p>
+                                <p>Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё, что ему нужно, — билет на самолёт.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_3 grid__module_span_1">
+                            <img class="story-path__line story-path__line_yellow-2" src="img/yellow/path-2.png" width="626" height="565" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                            <img class="story-path__image story-path__image_yellow-2" src="img/yellow/step2.png" width="1056" height="302" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_8 grid__module_span_4">
+                            <div class="story-path__text" data-pos="2">
+                                <p>Для путешествия по жаркой стране Максиму нужна удобная одежда и крепкая обувь.</p>
+                                <p>Он не желает тратить время на походы по магазинам, ведь интересные ему вещи можно с лёгкостью найти в интернете.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__line" src="img/yellow/path-3.png" width="686" height="565" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                             <img class="story-path__image story-path__image_yellow-3" src="img/yellow/step3.png" width="810" height="604" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_4">
+                            <div class="story-path__text" data-pos="3">
+                                <p>Рюкзак с вещами и ноутбуком — вот и весь багаж Максима.</p>
+                                <p>На метро он доберётся до вокзала, а оттуда поедет на аэроэкспрессе.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__line" src="img/yellow/path-4.png" width="626" height="565" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                            <img class="story-path__image story-path__image_yellow-4" src="img/yellow/step4.png" width="1074" height="834" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_8 grid__module_span_4">
+                            <div class="story-path__text" data-pos="4">
+                                <p>Максим не сидит на месте — в поисках интересных мест он колесит по всей стране.</p>
+                                <p>Когда ночь застаёт его в пути, Максим находит ближайший хостел. Утром решает остаться и осмотреть местные достопри-мечательности или вернуться на дорогу.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_4 grid__module_span_1">
+                            <img class="story-path__line" src="img/yellow/path-5.png" width="570" height="588" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__image story-path__image_yellow-5" src="img/yellow/step5.png" width="922" height="394" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_3 grid__module_span_1">
+                            <img class="story-path__image story-path__image_yellow-6" src="img/yellow/step6.png" width="618" height="228" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Путь второго юзера -->
+            <div class="story-path__item story-path__item_type_red" data-type="red">
+                <div class="grid_cols_12">
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__line" src="img/red/path-1.png" width="762" height="97" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_7  grid__module_span_1">
+                            <img class="story-path__image story-path__image_red-1" src="img/red/step-1.png" width="560" height="623" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_4">
+                            <div class="story-path__text" data-pos="1">
+                                <p>Максим хочет увидеть настоящий, нетуристический Таиланд.</p>
+                                <p>Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё, что ему нужно, — билет на самолёт.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_3 grid__module_span_1">
+                            <img class="story-path__line story-path__line_red-2" src="img/red/path-2.png" width="626" height="555" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                            <img class="story-path__image story-path__image_red-2" src="img/red/step-2.png" width="420" height="747" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_8 grid__module_span_4">
+                            <div class="story-path__text" data-pos="2">
+                                <p>Для путешествия по жаркой стране Максиму нужна удобная одежда и крепкая обувь.</p>
+                                <p>Он не желает тратить время на походы по магазинам, ведь интересные ему вещи можно с лёгкостью найти в интернете.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__line" src="img/red/path-3.png" width="684" height="565" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                             <img class="story-path__image story-path__image_red-3" src="img/red/step-3.png" width="966" height="574" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_4">
+                            <div class="story-path__text" data-pos="3">
+                                <p>Рюкзак с вещами и ноутбуком — вот и весь багаж Максима.</p>
+                                <p>На метро он доберётся до вокзала, а оттуда поедет на аэроэкспрессе.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__line" src="img/red/path-4.png" width="626" height="565" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                            <img class="story-path__image story-path__image_red-4" src="img/red/step-4.png" width="1032" height="999" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_8 grid__module_span_4">
+                            <div class="story-path__text" data-pos="4">
+                                <p>Максим не сидит на месте — в поисках интересных мест он колесит по всей стране.</p>
+                                <p>Когда ночь застаёт его в пути, Максим находит ближайший хостел. Утром решает остаться и осмотреть местные достопри-мечательности или вернуться на дорогу.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_7 grid__module_span_1">
+                            <img class="story-path__line story-path__line_red-5" src="img/red/path-5.png" width="258" height="548" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                            <img class="story-path__image story-path__image_red-5" src="img/red/step-5.png" width="1044" height="439" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Путь третьего юзера -->
+            <div class="story-path__item story-path__item_type_blue" data-type="blue">
+                <div class="grid_cols_12">
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__line" src="img/blue/path-1.png" width="762" height="97" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_4">
+                            <div class="story-path__text" data-pos="1">
+                                <p>Григорий Иоганович Дауге редко отдыхает — бизнес требует от него полной отдачи.</p>
+                                <p>Друзья и коллеги, переживающие за его здоровье, подарили ему билет в Таиланд. Поспорив для вида, Григорий Иоганович решает, что здоровье важнее, и садится выбирать отель.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_3 grid__module_span_1">
+                            <img class="story-path__line" src="img/blue/path-2.png" width="596" height="566" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                            <img class="story-path__image story-path__image_blue-1" src="img/blue/step-1.png" width="1043" height="764" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_8 grid__module_span_4">
+                            <div class="story-path__text" data-pos="2">
+                                <p>Даже отдых должен приносить в жизнь что-нибудь новое — таков жизненный принцип Григория Иогановича.</p>
+                                <p>В этой поездке он планирует научиться дайвингу: посмотреть на коралловые рифы и причудливых морских животных.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__line" src="img/blue/path-3.png" width="684" height="565" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                             <img class="story-path__image story-path__image_blue-2" src="img/blue/step-2.png" width="972" height="672" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_4">
+                            <div class="story-path__text" data-pos="3">
+                                <p>Перед отлётом Григорий Иоганович отправил своего личного водителя в отпуск.</p>
+                                <p>Добираться до аэропорта он будет на такси.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__line" src="img/blue/path-4.png" width="626" height="565" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_1 grid__module_span_1">
+                            <img class="story-path__image story-path__image_blue-3" src="img/blue/step-3.png" width="1200" height="1166" alt=""/>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_8 grid__module_span_4">
+                            <div class="story-path__text" data-pos="4">
+                                <p>В Таиланде Григорий Иоганович наконец понимает, как сильно он устал на работе.</p>
+                                <p>Каждый день он в обязательном порядке ходит на массаж, а утро начинает с йоги.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_4 grid__module_span_1">
+                            <img class="story-path__line" src="img/blue/path-5.png" width="528" height="548" alt=""/>
+                        </div>
+                        <div class="grid__module grid__module_col_2 grid__module_span_1">
+                            <img class="story-path__image story-path__image_blue-4" src="img/blue/step-4.png" width="996" height="421" alt=""/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="story__item story__item_last-1">
+            <!-- меню выбора персонажа без описания -->
+            <div class="person-menu" data-w="person-menu" data-w-options='{"scrollto":".story__item_3", "when_hidden":["out-bottom"]}'>
+                <div class="person-menu grid_cols_12">
+                    <div class="grid__row">
+                        <div class="grid__module grid__module_col_3 grid__module_span_2">
+                            <div class="person-menu__item person-menu__item_type_yellow" data-type="yellow">
+                                <div class="person-menu__icon person-menu__icon_type_yellow"></div>
+                                <div class="person-menu__label">Максим</div>
+                            </div>
+                        </div>
+                        <div class="grid__module grid__module_col_6 grid__module_span_2">
+                            <div class="person-menu__item person-menu__item_type_red" data-type="red">
+                                <div class="person-menu__icon person-menu__icon_type_red"></div>
+                                <div class="person-menu__label">Алексей Быков</div>
+                            </div>
+                        </div>
+                        <div class="grid__module grid__module_col_9 grid__module_span_2">
+                            <div class="person-menu__item person-menu__item_type_blue" data-type="blue">
+                                <div class="person-menu__icon person-menu__icon_type_blue"></div>
+                                <div class="person-menu__label">Георгий И. Дауге</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+        </div>
+        <div class="story__item story__item_last-2">
+            <div class="grid_cols_12">
+                <div class="grid__row">
+                    <div class="grid__module grid__module_col_2 grid__module_span_6">
+                        <p>Мир один, а люди разные. Так и интернет — он один, но для каждого разный.</p>
+                        <p>Теперь посмотрите, как планировали путешествие в Таиланд другие герои.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="story__item story__item_footer">
+            <div class="grid_cols_12">
+                <div class="grid__row">
+                    <div class="grid__module grid__module_col_2 grid__module_span_3">
+                        © 2013  ООО «<a href="http://yandex.ru">Яндекс</a>»
+                    </div>
+                    <div class="grid__module grid__module_col_5 grid__module_span_4">
+                        <a class="story__link" href="">Помощь</a> <a  class="story__link"  href="">Обратная связь</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sidebar" data-w="sidebar">
+        <div class="sidebar__item sidebar__item-1">
+            <div class="sidebar__item-content">
+                <h2 class="h_size_2">«Атом»</h2>
+                <h3 class="h_size_3">Сценарии применения</h3>
+                <p>«Атом» — это платформа, которая позволит сайтам в интернете адаптироваться под каждого конкретного пользователя. Показывать ему только интересную информацию, помогать быстрее решать задачи.</p>
+                <p>Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому пользователю, но делающих страницу более интересной, более удобной для него.</p>
+            </div>
+        </div>
+        <div class="sidebar__item sidebar__item-2">
+            <div class="sidebar__item-content">
+                <h3 class="h_size_3">Презентация платформы «Атом» на конференции YaС 2013</h3>
+                <p>Yet another Conference (YaС) — технологическая конференция Яндекса, которая ежегодно проходит в Москве, начиная с 2010 года.</p>
+            </div>
+        </div>
+        <div class="texts">
+            <!-- Тексты первого персонажа -->
+            <div class="texts__item texts__item_type_yellow">
+                <div class="sidebar__item sidebar__item-3">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Покупка авиабилетов</h3>
+                        <p>Уже в результатах поиска Максим может уточнить удобные даты и перейти сразу на сайт с подходящими ему вариантами.</p>
+                        <img src="img/yellow/right.1.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="sidebar__item sidebar__item-4">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Рекомендации по покупке подходящих товаров</h3>
+                        <p>Предложения на главной странице выбраны на основе информации о предпочтениях Максима, полученных сайтом от «Атома».</p>
+                        <img src="img/yellow/right.2.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="sidebar__item sidebar__item-5">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Предложение купить билет на аэроэкспресс</h3>
+                        <p>Зная предпочтения Максима, сайт предлагает ему подходящий способ добраться до аэропорта и рекомендует время отправления.</p>
+                        <img src="img/yellow/right.3.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="sidebar__item sidebar__item-6">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Выбор интересных мест для посещения</h3>
+                        <p>Когда Максим выбирает в интернете достопримечательности для посещения в путешествии, сайт предлагает ему обратить внимание и на другие объекты, которые могут быть ему интересны.</p>
+                        <img src="img/yellow/right.4.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <!-- Тексты второго персонажа -->
+            <div class="texts__item texts__item_type_red">
+                <div class="sidebar__item sidebar__item-3">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Покупка тура</h3>
+                        <p>В острове Алексей Быков сразу указывает параметры для поиска тура. Из результатов убраны слишком дорогие и престижные для Алексея отели. В списке вариантов — туры, идеально подходящие для семейного отдыха с детьми.</p>
+                        <img src="img/red/right.1.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="sidebar__item sidebar__item-4">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Напоминание от интернет-магазина</h3>
+                        <p>Контактные линзы из прошлого заказа Алексея скоро должны подойти к концу. Сайт, на котором он обычно их приобретает, отправляет ему напоминание о повторной покупке с кнопкой перехода на предзаполненную форму заказа в один клик.</p>
+                        <img src="img/red/right.2.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="sidebar__item sidebar__item-5">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Рекомендация по времени выезда с учётом пробок на дорогах</h3>
+                        <p>Алексею предлагается оптимальный маршрут с учётом времени вылета и прогнозом пробок.</p>
+                        <img src="img/red/right.3.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="sidebar__item sidebar__item-6">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Рекомендации по выбору ресторана</h3>
+                        <p>При поиске ресторанов для посещения, сайт рекомендует Алексею места на основе информации о его предпочтениях и вкусах.</p>
+                        <img src="img/red/right.4.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+            <!-- Тексты третьего персонажа -->
+            <div class="texts__item texts__item_type_blue">
+                <div class="sidebar__item sidebar__item-3">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Покупка авиабилетов</h3>
+                        <p>Уже в результатах поиска Максим может уточнить удобные даты и перейти сразу на сайт с подходящими ему вариантами.</p>
+                        <img src="img/blue/right.1.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="sidebar__item sidebar__item-4">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Рекомендации по покупке подходящих товаров</h3>
+                        <p>Предложения на главной странице выбраны на основе информации о предпочтениях Максима, полученных сайтом от «Атома».</p>
+                        <img src="img/blue/right.2.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="sidebar__item sidebar__item-5">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Предложение купить билет на аэроэкспресс</h3>
+                        <p>Зная предпочтения Максима, сайт предлагает ему подходящий способ добраться до аэропорта и рекомендует время отправления.</p>
+                        <img src="img/blue/right.3.jpg" alt=""/>
+                    </div>
+                </div>
+                <div class="sidebar__item sidebar__item-6">
+                    <div class="sidebar__item-content">
+                        <h3 class="h_size_3">Выбор интересных мест для посещения</h3>
+                        <p>Когда Максим выбирает в интернете достопримечательности для посещения в путешествии, сайт предлагает ему обратить внимание и на другие объекты, которые могут быть ему интересны.</p>
+                        <img src="img/blue/right.4.jpg" alt=""/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar__item sidebar__item-7">
+            <div class="sidebar__item-content">
+                <h3 class="h_size_3">Закрытое тестирование «Атома»</h3>
+                <p>Замысел такого масштаба невозможно воплотить в одиночку, поэтому мы уже начали проводить эксперименты с первыми партнёрами. Каким будет результат этой работы, во многом зависит от них и от других вебмастеров. У нас есть идея и технологии для её реализации, но мы не хотим двигаться дальше без ваших мыслей, мнения, опыта и осознания ваших потребностей. Всё это необходимо нам для того, чтобы превратить идею в полноценный продукт, полезный в реальных ситуациях.</p>
+                <ul>
+                    <li>выбрать ключевые рубрики вашего сайта;</li>
+                    <li>установить на ваш сайт Яндекс.Метрику;</li>
+                    <li>разметить страницы каждой выбранной рубрики разными целями в Метрике.</li>
+                </ul>
+                <p>Присылайте письмо, в котором указаны идентификаторы целей и чётко описаны те задачи, которые вы бы хотели решить с помощью «Атома».</p>
+                <p>Авторы самых интересных писем и предложений станут участниками эксперимента. Все новости и примеры мы будет публиковать в корпоративном блоге и на Хабрахабре.</p>
+                <p>Свяжитесь с нами через <a href="">форму обратной связи</a> или пишите на <a href="mailto:atom-experiments@yandex-team.ru">atom-experiments@yandex-team.ru</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="sidebar-switcher" data-w="sidebar-switcher"></div>
+
+    <div class="person-bar" data-w="person-bar">
+        <div class="person-bar__item person-bar__item_type_yellow person-bar__item_pos_1" data-type="yellow"></div>
+        <div class="person-bar__item person-bar__item_type_red person-bar__item_pos_1" data-type="red"></div>
+        <div class="person-bar__item person-bar__item_type_blue person-bar__item_pos_1" data-type="blue"></div>
+    </div>
+    <div class="person-active" data-w="person-active">
+
+    </div>
+
+    <div class="modal" data-w="modal-video"><div class="modal__zone">
+        <div class="modal__window">
+            <div class="modal__btn_close"></div>
+            <iframe src="http://player.vimeo.com/video/75709551" width="100%" height="100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        </div>
+    </div></div>
+</div>
+</body>
+</html>
