@@ -1,7 +1,9 @@
 ({
     shouldDeps: [
-        { elem: 'foot'},
-        { elem: 'links' },
-        { elem: 'link' },
+        {elem: 'atom-logo'},
+        {elem: 'copyright'},
+        {elem: 'foot'},
+        {elem: 'links'},
+        {elem: 'link'},
     ]
 })

@@ -20,4 +20,8 @@
 /*borschik:include:../../libs/bem-core/common.blocks/ecma/__json/ecma__json.js*/;
 /*borschik:include:../../libs/bem-core/common.blocks/i-bem/__dom/_init/i-bem__dom_init_auto.js*/;
 /*borschik:include:../../libs/bem-core/desktop.blocks/ua/ua.js*/;
+/*borschik:include:../../desktop.blocks/atom/atom.js*/;
+/*borschik:include:../../desktop.blocks/user/user.js*/;
+/*borschik:include:../../desktop.blocks/locomotive/locomotive.js*/;
+/*borschik:include:../../desktop.blocks/story/story.js*/;
 /*borschik:include:../../desktop.blocks/atom-ledge/atom-ledge.js*/;

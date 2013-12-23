@@ -12,7 +12,7 @@ block footer {
                 },
                 {
                     elem: 'atom-logo',
-                    mix: { block: 'grid__module', mods: { col: 8, span: 2 } }
+                    mix: { block: 'grid__module', mods: { col: 9, span: 2 } }
                 }
             ]
         },
@@ -38,7 +38,8 @@ block footer {
                 },
                 {
                     elem: 'copyright',
-                    mix: { block: 'grid__module', mods: { col: 4, span: 3 } }
+                    mix: { block: 'grid__module', mods: { col: 6, span: 3 } },
+                    content: '© 2013 ООО «Яндекс»'
                 }
             ]
         }

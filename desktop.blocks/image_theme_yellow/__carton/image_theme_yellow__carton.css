@@ -1,0 +1,11 @@
+.image_theme_yellow__carton
+{
+    background: url(image_theme_yellow__carton.png) no-repeat;
+    width: 454px;
+    height: 132px;
+}
+
+.image_theme_yellow__carton_push_down_yes
+{
+    margin-top: 42px;
+}

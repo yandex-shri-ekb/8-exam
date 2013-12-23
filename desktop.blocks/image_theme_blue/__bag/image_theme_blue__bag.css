@@ -1,0 +1,16 @@
+.image_theme_blue__bag
+{
+    background: url(image_theme_blue__bag.png) no-repeat;
+    width: 475px;
+    height: 409px;
+}
+
+.image_theme_blue__bag_push_up_yes
+{
+    margin-top: -124px;
+}
+
+.image_theme_blue__bag_push_left_yes
+{
+    margin-left: -75px;
+}

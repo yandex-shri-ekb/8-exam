@@ -1,0 +1,16 @@
+.image_theme_red__bear
+{
+    background: url(image_theme_red__bear.png) no-repeat;
+    width: 318px;
+    height: 386px;
+}
+
+.image_theme_red__bear_push_left_yes
+{
+    margin-left: -94px;
+}
+
+.image_theme_red__bear_push_down_yes
+{
+    margin-top: 400px;
+}

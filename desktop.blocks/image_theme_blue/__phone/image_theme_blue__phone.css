@@ -1,0 +1,16 @@
+.image_theme_blue__phone
+{
+    background: url(image_theme_blue__phone.png);
+    width: 303px;
+    height: 384px;
+}
+
+.image_theme_blue__phone_push_down_yes
+{
+    margin-top: 36px;
+}
+
+.image_theme_blue__phone_push_left_yes
+{
+    margin-left: -79px;
+}

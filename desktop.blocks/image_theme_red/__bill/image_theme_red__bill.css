@@ -1,0 +1,11 @@
+.image_theme_red__bill
+{
+    background: url(image_theme_red__bill.png) no-repeat;
+    width: 220px;
+    height: 347px;
+}
+
+.image_theme_red__bill_push_down_yes
+{
+    margin-top: 72px;
+}

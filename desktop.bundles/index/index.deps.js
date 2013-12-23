@@ -123,12 +123,7 @@ exports.deps = [
     },
     {
         "block": "atom",
-        "mod": "theme"
-    },
-    {
-        "block": "atom",
-        "mod": "theme",
-        "val": "red"
+        "elem": "stories"
     },
     {
         "block": "header"
@@ -205,15 +200,15 @@ exports.deps = [
         "val": "no"
     },
     {
-        "block": "stories"
+        "block": "locomotive"
     },
     {
-        "block": "stories",
-        "elem": "locomotive"
-    },
-    {
-        "block": "stories",
+        "block": "locomotive",
         "elem": "icons"
+    },
+    {
+        "block": "locomotive",
+        "elem": "step-icon"
     },
     {
         "block": "step-icon"
@@ -289,105 +284,14 @@ exports.deps = [
         "val": "yes"
     },
     {
-        "block": "story-theme-yellow"
+        "block": "story_theme_yellow"
     },
     {
-        "block": "image-theme-yellow"
+        "block": "story"
     },
     {
-        "block": "image-theme-yellow",
-        "elem": "aeroexpress"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "aviaticket"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "backpack"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "book"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "bottle"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "camera"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "carton"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "compass"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "iphone"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "ipod"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "laptop"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "magazine"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "map"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "money"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "notebook"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "polaroid"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "ticket"
-    },
-    {
-        "block": "image-theme-yellow",
-        "elem": "traffic"
-    },
-    {
-        "block": "path-theme-yellow"
-    },
-    {
-        "block": "path-theme-yellow",
-        "elem": "step-1"
-    },
-    {
-        "block": "path-theme-yellow",
-        "elem": "step-2"
-    },
-    {
-        "block": "path-theme-yellow",
-        "elem": "step-3"
-    },
-    {
-        "block": "path-theme-yellow",
-        "elem": "step-4"
-    },
-    {
-        "block": "path-theme-yellow",
-        "elem": "step-5"
+        "block": "story",
+        "elem": "steps"
     },
     {
         "block": "step"
@@ -409,248 +313,351 @@ exports.deps = [
         "elem": "text-holder"
     },
     {
-        "block": "story"
+        "block": "image_theme_yellow"
     },
     {
-        "block": "story-theme-red"
+        "block": "image_theme_yellow",
+        "elem": "aeroexpress"
     },
     {
-        "block": "image-theme-red"
+        "block": "image_theme_yellow",
+        "elem": "aviaticket"
     },
     {
-        "block": "image-theme-red",
-        "elem": "bags"
+        "block": "image_theme_yellow",
+        "elem": "backpack"
     },
     {
-        "block": "image-theme-red",
-        "elem": "bear"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "bill"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "cup"
-    },
-    {
-        "block": "image-theme-red",
+        "block": "image_theme_yellow",
         "elem": "book"
     },
     {
-        "block": "image-theme-red",
-        "elem": "drink-coup-full"
+        "block": "image_theme_yellow",
+        "elem": "bottle"
     },
     {
-        "block": "image-theme-red",
-        "elem": "drink-coup-middle"
+        "block": "image_theme_yellow",
+        "elem": "camera"
     },
     {
-        "block": "image-theme-red",
-        "elem": "drink-glass"
+        "block": "image_theme_yellow",
+        "elem": "carton"
     },
     {
-        "block": "image-theme-red",
-        "elem": "drink-milk"
+        "block": "image_theme_yellow",
+        "elem": "compass"
     },
     {
-        "block": "image-theme-red",
-        "elem": "drink-wine"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "food-eggs"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "food-fish"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "food-grape"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "glassess"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "imac-keyboard"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "imac-monitor"
-    },
-    {
-        "block": "image-theme-red",
+        "block": "image_theme_yellow",
         "elem": "iphone"
     },
     {
-        "block": "image-theme-red",
-        "elem": "keys"
+        "block": "image_theme_yellow",
+        "elem": "ipod"
     },
     {
-        "block": "image-theme-red",
-        "elem": "lenses"
+        "block": "image_theme_yellow",
+        "elem": "laptop"
     },
     {
-        "block": "image-theme-red",
-        "elem": "license"
+        "block": "image_theme_yellow",
+        "elem": "magazine"
     },
     {
-        "block": "image-theme-red",
-        "elem": "passports"
+        "block": "image_theme_yellow",
+        "elem": "map"
     },
     {
-        "block": "image-theme-red",
-        "elem": "portlet"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "tamagotchi"
-    },
-    {
-        "block": "image-theme-red",
-        "elem": "tour"
-    },
-    {
-        "block": "path-theme-red"
-    },
-    {
-        "block": "path-theme-red",
-        "elem": "step-1"
-    },
-    {
-        "block": "path-theme-red",
-        "elem": "step-2"
-    },
-    {
-        "block": "path-theme-red",
-        "elem": "step-3"
-    },
-    {
-        "block": "path-theme-red",
-        "elem": "step-4"
-    },
-    {
-        "block": "path-theme-red",
-        "elem": "step-5"
-    },
-    {
-        "block": "story-theme-blue"
-    },
-    {
-        "block": "image-theme-blue"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "bag"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "book"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "cards"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "cup"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "ipad"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "iphone"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "krug"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "maska"
-    },
-    {
-        "block": "image-theme-blue",
+        "block": "image_theme_yellow",
         "elem": "money"
     },
     {
-        "block": "image-theme-blue",
-        "elem": "newspaper"
+        "block": "image_theme_yellow",
+        "elem": "notebook"
     },
     {
-        "block": "image-theme-blue",
-        "elem": "notebook2"
+        "block": "image_theme_yellow",
+        "elem": "polaroid"
     },
     {
-        "block": "image-theme-blue",
-        "elem": "notepad"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "palka"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "paper"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "pen"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "phone"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "photo"
-    },
-    {
-        "block": "image-theme-blue",
-        "elem": "pie"
-    },
-    {
-        "block": "image-theme-blue",
+        "block": "image_theme_yellow",
         "elem": "ticket"
     },
     {
-        "block": "image-theme-blue",
-        "elem": "watch"
+        "block": "image_theme_yellow",
+        "elem": "traffic"
     },
     {
-        "block": "image-theme-blue",
-        "elem": "yoga"
+        "block": "path_theme_yellow"
     },
     {
-        "block": "path-theme-blue"
-    },
-    {
-        "block": "path-theme-blue",
+        "block": "path_theme_yellow",
         "elem": "step-1"
     },
     {
-        "block": "path-theme-blue",
+        "block": "path_theme_yellow",
         "elem": "step-2"
     },
     {
-        "block": "path-theme-blue",
+        "block": "path_theme_yellow",
         "elem": "step-3"
     },
     {
-        "block": "path-theme-blue",
+        "block": "path_theme_yellow",
         "elem": "step-4"
     },
     {
-        "block": "path-theme-blue",
+        "block": "path_theme_yellow",
+        "elem": "step-5"
+    },
+    {
+        "block": "story_theme_red"
+    },
+    {
+        "block": "image_theme_red"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "bags"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "bear"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "bill"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "cup"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "book"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "drink-coup-full"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "drink-coup-middle"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "drink-glass"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "drink-milk"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "drink-wine"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "food-eggs"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "food-fish"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "food-grape"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "glassess"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "imac-keyboard"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "imac-monitor"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "iphone"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "keys"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "lenses"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "license"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "passports"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "portlet"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "tamagotchi"
+    },
+    {
+        "block": "image_theme_red",
+        "elem": "tour"
+    },
+    {
+        "block": "path_theme_red"
+    },
+    {
+        "block": "path_theme_red",
+        "elem": "step-1"
+    },
+    {
+        "block": "path_theme_red",
+        "elem": "step-2"
+    },
+    {
+        "block": "path_theme_red",
+        "elem": "step-3"
+    },
+    {
+        "block": "path_theme_red",
+        "elem": "step-4"
+    },
+    {
+        "block": "path_theme_red",
+        "elem": "step-5"
+    },
+    {
+        "block": "story_theme_blue"
+    },
+    {
+        "block": "image_theme_blue"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "bag"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "book"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "cards"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "cup"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "ipad"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "iphone"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "krug"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "maska"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "money"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "newspaper"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "notebook2"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "notepad"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "palka"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "paper"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "pen"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "phone"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "photo"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "pie"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "ticket"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "watch"
+    },
+    {
+        "block": "image_theme_blue",
+        "elem": "yoga"
+    },
+    {
+        "block": "path_theme_blue"
+    },
+    {
+        "block": "path_theme_blue",
+        "elem": "step-1"
+    },
+    {
+        "block": "path_theme_blue",
+        "elem": "step-2"
+    },
+    {
+        "block": "path_theme_blue",
+        "elem": "step-3"
+    },
+    {
+        "block": "path_theme_blue",
+        "elem": "step-4"
+    },
+    {
+        "block": "path_theme_blue",
         "elem": "step-5"
     },
     {
         "block": "footer"
+    },
+    {
+        "block": "footer",
+        "elem": "atom-logo"
+    },
+    {
+        "block": "footer",
+        "elem": "copyright"
     },
     {
         "block": "footer",

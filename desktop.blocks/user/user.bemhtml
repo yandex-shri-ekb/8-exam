@@ -4,10 +4,13 @@ block user {
 
     content: [
         {
-            block: 'user-icon',
-            mods: {
-                theme: this.ctx.mods.theme,
-                size: this.ctx.mods.size
+            elem: 'icon',
+            mix: {
+                block: 'user-icon',
+                mods: {
+                    theme: this.ctx.mods.theme,
+                    size: this.ctx.mods.size
+                }
             },
             content: this.ctx.icon
         },

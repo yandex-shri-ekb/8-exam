@@ -5,6 +5,11 @@
     font-family: sans-serif;
     min-width: 1024px;
 }
+
+.page_active_yes
+{
+    cursor: pointer;
+}
 /* ../../desktop.blocks/page/page.css end */
 /* ../../desktop.blocks/page/__wrap/page__wrap.css begin */
 .page__wrap
@@ -27,7 +32,27 @@
 /* ../../desktop.blocks/atom/__content/atom__content.css begin */
 .atom__content
 {
-    padding: 18px 0 18px 18px;
+    margin: 18px 0 18px 18px;
+}
+
+.atom__content_move_yes
+{
+    overflow: hidden;
+}
+
+.atom_theme_yellow .atom__content
+{
+    background: #ffe05d;
+}
+
+.atom_theme_red .atom__content
+{
+    background: #ff8282;
+}
+
+.atom_theme_blue .atom__content
+{
+    background: #72c4f6;
 }
 /* ../../desktop.blocks/atom/__content/atom__content.css end */
 /* ../../desktop.blocks/atom/__border/atom__border.css begin */
@@ -35,23 +60,21 @@
 {
     border: 2px solid #000;
     border-right: 0;
-}
-
-.atom__border_theme_yellow
-{
-    background: #ffe05d;
-}
-
-.atom__border_theme_red
-{
-    background: #ff8282;
-}
-
-.atom__border_theme_blue
-{
-    background: #72c4f6;
+    padding: 0 16px 0 18px;
 }
 /* ../../desktop.blocks/atom/__border/atom__border.css end */
+/* ../../desktop.blocks/atom/__stories/atom__stories.css begin */
+.atom__stories
+{
+    position: relative;
+}
+/* ../../desktop.blocks/atom/__stories/atom__stories.css end */
+/* ../../desktop.blocks/header/header.css begin */
+.header
+{
+    margin: 0 -16px 0 -18px;
+}
+/* ../../desktop.blocks/header/header.css end */
 /* ../../desktop.blocks/header-logo/header-logo.css begin */
 .header-logo
 {
@@ -109,17 +132,17 @@
     margin: 0 0 16px;
 }
 
-.header-atom__content_color_yellow
+.atom_theme_yellow .header-info__video-image
 {
     background-color: #ffe05d;
 }
 
-.header-info__video-image_color_red
+.atom_theme_red .header-info__video-image
 {
     background-color: #ff8282;
 }
 
-.header-info__video-image_color_blue
+.atom_theme_blue .header-info__video-image
 {
     background-color: #72c4f6;
 }
@@ -173,14 +196,8 @@
     padding: 80px 0 0;
 }
 /* ../../desktop.blocks/users/__wrap/users__wrap.css end */
-/* ../../desktop.blocks/stories/stories.css begin */
-.stories
-{
-    position: relative;
-}
-/* ../../desktop.blocks/stories/stories.css end */
-/* ../../desktop.blocks/stories/__locomotive/stories__locomotive.css begin */
-.stories__locomotive
+/* ../../desktop.blocks/locomotive/locomotive.css begin */
+.locomotive
 {
     position: fixed;
     top: 50px;
@@ -191,18 +208,18 @@
     display: none;
 }
 
-.stories__locomotive_show_yes
+.locomotive_show_yes
 {
     display: block;
 }
-/* ../../desktop.blocks/stories/__locomotive/stories__locomotive.css end */
-/* ../../desktop.blocks/stories/__icons/stories__icons.css begin */
-.stories__icons
+/* ../../desktop.blocks/locomotive/locomotive.css end */
+/* ../../desktop.blocks/locomotive/__icons/locomotive__icons.css begin */
+.locomotive__icons
 {
     width: 330px;
     margin: 0 auto;
 }
-/* ../../desktop.blocks/stories/__icons/stories__icons.css end */
+/* ../../desktop.blocks/locomotive/__icons/locomotive__icons.css end */
 /* ../../desktop.blocks/step-icon/step-icon.css begin */
 .step-icon
 {
@@ -412,333 +429,30 @@
     margin-top: 50px;
 }
 /* ../../desktop.blocks/user-icon/user-icon.css end */
-/* ../../desktop.blocks/image-theme-yellow/image-theme-yellow.css begin */
-[class^=image-theme-yellow__]
+/* ../../desktop.blocks/story/story.css begin */
+.story
 {
     position: absolute;
+    top: 0;
+    left: -952px;
 }
 
-.image-theme-yellow_layer_middle
+.story_show_yes
 {
-    z-index: 10;
-}
-/* ../../desktop.blocks/image-theme-yellow/image-theme-yellow.css end */
-/* ../../desktop.blocks/image-theme-yellow/__aeroexpress/image-theme-yellow__aeroexpress.css begin */
-.image-theme-yellow__aeroexpress
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__aeroexpress/image-theme-yellow__aeroexpress.png") no-repeat;
-    width: 628px;
-    height: 244px;
+    display: block;
 }
 
-.image-theme-yellow__aeroexpress_push_down_yes
+.story_show_no
 {
-    margin-top: 40px;
+    display: none;
 }
-
-.image-theme-yellow__aeroexpress_push_left_yes
+/* ../../desktop.blocks/story/story.css end */
+/* ../../desktop.blocks/story/__steps/story__steps.css begin */
+.story__steps
 {
-    margin-left: -174px;
+    padding: 0 18px 0 16px;
 }
-/* ../../desktop.blocks/image-theme-yellow/__aeroexpress/image-theme-yellow__aeroexpress.css end */
-/* ../../desktop.blocks/image-theme-yellow/__aviaticket/image-theme-yellow__aviaticket.css begin */
-.image-theme-yellow__aviaticket
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__aviaticket/image-theme-yellow__aviaticket.png") no-repeat;
-    width: 620px;
-    height: 244px;
-}
-
-.image-theme-yellow__aviaticket_push_down_yes
-{
-    margin-top: 319px;
-}
-
-.image-theme-yellow__aviaticket_push_left_yes
-{
-    margin-left: -166px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__aviaticket/image-theme-yellow__aviaticket.css end */
-/* ../../desktop.blocks/image-theme-yellow/__backpack/image-theme-yellow__backpack.css begin */
-.image-theme-yellow__backpack
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__backpack/image-theme-yellow__backpack.png") no-repeat;
-    width: 396px;
-    height: 394px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__backpack/image-theme-yellow__backpack.css end */
-/* ../../desktop.blocks/image-theme-yellow/__book/image-theme-yellow__book.css begin */
-.image-theme-yellow__book
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__book/image-theme-yellow__book.png") no-repeat;
-    width: 240px;
-    height: 302px;
-}
-
-.image-theme-yellow__book_push_down_yes
-{
-    margin-top: 40px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__book/image-theme-yellow__book.css end */
-/* ../../desktop.blocks/image-theme-yellow/__bottle/image-theme-yellow__bottle.css begin */
-.image-theme-yellow__bottle
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__bottle/image-theme-yellow__bottle.png") no-repeat;
-    width: 108px;
-    height: 228px;
-}
-
-.image-theme-yellow__bottle_push_down_yes
-{
-    margin-top: 262px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__bottle/image-theme-yellow__bottle.css end */
-/* ../../desktop.blocks/image-theme-yellow/__camera/image-theme-yellow__camera.css begin */
-.image-theme-yellow__camera
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__camera/image-theme-yellow__camera.png") no-repeat;
-    width: 228px;
-    height: 164px;
-}
-
-.image-theme-yellow__camera_push_down_yes
-{
-    margin-top: 289px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__camera/image-theme-yellow__camera.css end */
-/* ../../desktop.blocks/image-theme-yellow/__carton/image-theme-yellow__carton.css begin */
-.image-theme-yellow__carton
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__carton/image-theme-yellow__carton.png") no-repeat;
-    width: 454px;
-    height: 132px;
-}
-
-.image-theme-yellow__carton_push_down_yes
-{
-    margin-top: 42px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__carton/image-theme-yellow__carton.css end */
-/* ../../desktop.blocks/image-theme-yellow/__compass/image-theme-yellow__compass.css begin */
-.image-theme-yellow__compass
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__compass/image-theme-yellow__compass.png") no-repeat;
-    width: 150px;
-    height: 161px;
-}
-
-.image-theme-yellow__compass_push_down_yes
-{
-    margin-top: 40px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__compass/image-theme-yellow__compass.css end */
-/* ../../desktop.blocks/image-theme-yellow/__iphone/image-theme-yellow__iphone.css begin */
-.image-theme-yellow__iphone
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__iphone/image-theme-yellow__iphone.png") no-repeat;
-    width: 150px;
-    height: 282px;
-}
-
-.image-theme-yellow__iphone_push_down_yes
-{
-    margin-top: 34px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__iphone/image-theme-yellow__iphone.css end */
-/* ../../desktop.blocks/image-theme-yellow/__ipod/image-theme-yellow__ipod.css begin */
-.image-theme-yellow__ipod
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__ipod/image-theme-yellow__ipod.png") no-repeat;
-    width: 620px;
-    height: 238px;
-}
-
-.image-theme-yellow__ipod_push_down_yes
-{
-    margin-top: 136px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__ipod/image-theme-yellow__ipod.css end */
-/* ../../desktop.blocks/image-theme-yellow/__laptop/image-theme-yellow__laptop.css begin */
-.image-theme-yellow__laptop
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__laptop/image-theme-yellow__laptop.png") no-repeat;
-    width: 384px;
-    height: 493px;
-}
-
-.image-theme-yellow__laptop_push_down_yes
-{
-    margin-top: 78px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__laptop/image-theme-yellow__laptop.css end */
-/* ../../desktop.blocks/image-theme-yellow/__magazine/image-theme-yellow__magazine.css begin */
-.image-theme-yellow__magazine
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__magazine/image-theme-yellow__magazine.png") no-repeat;
-    width: 306px;
-    height: 394px;
-}
-
-.image-theme-yellow__magazine_push_up_yes
-{
-    margin-top: -80px;
-}
-
-.image-theme-yellow__magazine_push_right_yes
-{
-    margin-left: 30px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__magazine/image-theme-yellow__magazine.css end */
-/* ../../desktop.blocks/image-theme-yellow/__map/image-theme-yellow__map.css begin */
-.image-theme-yellow__map
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__map/image-theme-yellow__map.png") no-repeat;
-    width: 294px;
-    height: 218px;
-}
-
-.image-theme-yellow__map_push_up_yes
-{
-    margin-top: -32px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__map/image-theme-yellow__map.css end */
-/* ../../desktop.blocks/image-theme-yellow/__money/image-theme-yellow__money.css begin */
-.image-theme-yellow__money
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__money/image-theme-yellow__money.png") no-repeat;
-    width: 215px;
-    height: 207px;
-}
-
-.image-theme-yellow__money_push_down_yes
-{
-    margin-top: 0;
-}
-
-.image-theme-yellow__money_push_right_yes
-{
-    margin-left: 18px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__money/image-theme-yellow__money.css end */
-/* ../../desktop.blocks/image-theme-yellow/__notebook/image-theme-yellow__notebook.css begin */
-.image-theme-yellow__notebook
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__notebook/image-theme-yellow__notebook.png") no-repeat;
-    width: 620px;
-    height: 244px;
-}
-
-.image-theme-yellow__notebook_push_down_yes
-{
-    margin-top: 262px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__notebook/image-theme-yellow__notebook.css end */
-/* ../../desktop.blocks/image-theme-yellow/__polaroid/image-theme-yellow__polaroid.css begin */
-.image-theme-yellow__polaroid
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__polaroid/image-theme-yellow__polaroid.png") no-repeat;
-    width: 142px;
-    height: 158px;
-}
-
-.image-theme-yellow__polaroid_pos_1
-{
-    margin-top: 84px;
-    margin-left: -106px;
-}
-
-.image-theme-yellow__polaroid_pos_2
-{
-    margin-top: 256px;
-}
-
-.image-theme-yellow__polaroid_pos_3
-{
-    margin-top: 216px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__polaroid/image-theme-yellow__polaroid.css end */
-/* ../../desktop.blocks/image-theme-yellow/__ticket/image-theme-yellow__ticket.css begin */
-.image-theme-yellow__ticket
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__ticket/image-theme-yellow__ticket.png") no-repeat;
-    width: 193px;
-    height: 244px;
-}
-
-.image-theme-yellow__ticket_push_right_yes
-{
-    margin-left: 27px;
-}
-
-.image-theme-yellow__ticket_push_down_yes
-{
-    margin-top: 119px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__ticket/image-theme-yellow__ticket.css end */
-/* ../../desktop.blocks/image-theme-yellow/__traffic/image-theme-yellow__traffic.css begin */
-.image-theme-yellow__traffic
-{
-    background: url("../../desktop.blocks/image-theme-yellow/__traffic/image-theme-yellow__traffic.png") no-repeat;
-    width: 620px;
-    height: 244px;
-}
-
-.image-theme-yellow__traffic_push_down_yes
-{
-    margin-top: 318px;
-}
-/* ../../desktop.blocks/image-theme-yellow/__traffic/image-theme-yellow__traffic.css end */
-/* ../../desktop.blocks/path-theme-yellow/__step-1/path-theme-yellow__step-1.css begin */
-.path-theme-yellow__step-1
-{
-    position: absolute;
-    background: url("../../desktop.blocks/path-theme-yellow/__step-1/path-theme-yellow__step-1.png") no-repeat;
-    width: 762px;
-    height: 87px;
-    top: -40px;
-}
-
-
-
-
-
-/* ../../desktop.blocks/path-theme-yellow/__step-1/path-theme-yellow__step-1.css end */
-/* ../../desktop.blocks/path-theme-yellow/__step-2/path-theme-yellow__step-2.css begin */
-.path-theme-yellow__step-2
-{
-    position: absolute;
-    background: url("../../desktop.blocks/path-theme-yellow/__step-2/path-theme-yellow__step-2.png") no-repeat;
-    width: 684px;
-    height: 565px;
-}
-/* ../../desktop.blocks/path-theme-yellow/__step-2/path-theme-yellow__step-2.css end */
-/* ../../desktop.blocks/path-theme-yellow/__step-3/path-theme-yellow__step-3.css begin */
-.path-theme-yellow__step-3
-{
-    position: absolute;
-    background: url("../../desktop.blocks/path-theme-yellow/__step-3/path-theme-yellow__step-3.png") no-repeat;
-    width: 687px;
-    height: 565px;
-}
-/* ../../desktop.blocks/path-theme-yellow/__step-3/path-theme-yellow__step-3.css end */
-/* ../../desktop.blocks/path-theme-yellow/__step-4/path-theme-yellow__step-4.css begin */
-.path-theme-yellow__step-4
-{
-    position: absolute;
-    background: url("../../desktop.blocks/path-theme-yellow/__step-4/path-theme-yellow__step-4.png") no-repeat;
-    width: 626px;
-    height: 565px;
-}
-/* ../../desktop.blocks/path-theme-yellow/__step-4/path-theme-yellow__step-4.css end */
-/* ../../desktop.blocks/path-theme-yellow/__step-5/path-theme-yellow__step-5.css begin */
-.path-theme-yellow__step-5
-{
-    position: absolute;
-    background: url("../../desktop.blocks/path-theme-yellow/__step-5/path-theme-yellow__step-5.png") no-repeat;
-    width: 570px;
-    height: 588px;
-}
-/* ../../desktop.blocks/path-theme-yellow/__step-5/path-theme-yellow__step-5.css end */
+/* ../../desktop.blocks/story/__steps/story__steps.css end */
 /* ../../desktop.blocks/step/step.css begin */
 .step
 {
@@ -758,329 +472,656 @@
     padding-top: 80px;
 }
 /* ../../desktop.blocks/step/__text/step__text.css end */
-/* ../../desktop.blocks/image-theme-red/image-theme-red.css begin */
-[class^=image-theme-red__]
+/* ../../desktop.blocks/image_theme_yellow/image_theme_yellow.css begin */
+[class^=image_theme_yellow__]
 {
     position: absolute;
 }
 
-.image-theme-red_layer_middle
+.image_theme_yellow_layer_middle
 {
     z-index: 10;
 }
-/* ../../desktop.blocks/image-theme-red/image-theme-red.css end */
-/* ../../desktop.blocks/image-theme-red/__bags/image-theme-red__bags.css begin */
-.image-theme-red__bags
+/* ../../desktop.blocks/image_theme_yellow/image_theme_yellow.css end */
+/* ../../desktop.blocks/image_theme_yellow/__aeroexpress/image_theme_yellow__aeroexpress.css begin */
+.image_theme_yellow__aeroexpress
 {
-    background: url("../../desktop.blocks/image-theme-red/__bags/image-theme-red__bags.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_yellow/__aeroexpress/image_theme_yellow__aeroexpress.png") no-repeat;
+    width: 628px;
+    height: 244px;
+}
+
+.image_theme_yellow__aeroexpress_push_down_yes
+{
+    margin-top: 40px;
+}
+
+.image_theme_yellow__aeroexpress_push_left_yes
+{
+    margin-left: -174px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__aeroexpress/image_theme_yellow__aeroexpress.css end */
+/* ../../desktop.blocks/image_theme_yellow/__aviaticket/image_theme_yellow__aviaticket.css begin */
+.image_theme_yellow__aviaticket
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__aviaticket/image_theme_yellow__aviaticket.png") no-repeat;
+    width: 620px;
+    height: 244px;
+}
+
+.image_theme_yellow__aviaticket_push_down_yes
+{
+    margin-top: 319px;
+}
+
+.image_theme_yellow__aviaticket_push_left_yes
+{
+    margin-left: -166px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__aviaticket/image_theme_yellow__aviaticket.css end */
+/* ../../desktop.blocks/image_theme_yellow/__backpack/image_theme_yellow__backpack.css begin */
+.image_theme_yellow__backpack
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__backpack/image_theme_yellow__backpack.png") no-repeat;
+    width: 396px;
+    height: 394px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__backpack/image_theme_yellow__backpack.css end */
+/* ../../desktop.blocks/image_theme_yellow/__book/image_theme_yellow__book.css begin */
+.image_theme_yellow__book
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__book/image_theme_yellow__book.png") no-repeat;
+    width: 240px;
+    height: 302px;
+}
+
+.image_theme_yellow__book_push_down_yes
+{
+    margin-top: 40px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__book/image_theme_yellow__book.css end */
+/* ../../desktop.blocks/image_theme_yellow/__bottle/image_theme_yellow__bottle.css begin */
+.image_theme_yellow__bottle
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__bottle/image_theme_yellow__bottle.png") no-repeat;
+    width: 108px;
+    height: 228px;
+}
+
+.image_theme_yellow__bottle_push_down_yes
+{
+    margin-top: 262px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__bottle/image_theme_yellow__bottle.css end */
+/* ../../desktop.blocks/image_theme_yellow/__camera/image_theme_yellow__camera.css begin */
+.image_theme_yellow__camera
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__camera/image_theme_yellow__camera.png") no-repeat;
+    width: 228px;
+    height: 164px;
+}
+
+.image_theme_yellow__camera_push_down_yes
+{
+    margin-top: 289px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__camera/image_theme_yellow__camera.css end */
+/* ../../desktop.blocks/image_theme_yellow/__carton/image_theme_yellow__carton.css begin */
+.image_theme_yellow__carton
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__carton/image_theme_yellow__carton.png") no-repeat;
+    width: 454px;
+    height: 132px;
+}
+
+.image_theme_yellow__carton_push_down_yes
+{
+    margin-top: 42px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__carton/image_theme_yellow__carton.css end */
+/* ../../desktop.blocks/image_theme_yellow/__compass/image_theme_yellow__compass.css begin */
+.image_theme_yellow__compass
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__compass/image_theme_yellow__compass.png") no-repeat;
+    width: 150px;
+    height: 161px;
+}
+
+.image_theme_yellow__compass_push_down_yes
+{
+    margin-top: 40px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__compass/image_theme_yellow__compass.css end */
+/* ../../desktop.blocks/image_theme_yellow/__iphone/image_theme_yellow__iphone.css begin */
+.image_theme_yellow__iphone
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__iphone/image_theme_yellow__iphone.png") no-repeat;
+    width: 150px;
+    height: 282px;
+}
+
+.image_theme_yellow__iphone_push_down_yes
+{
+    margin-top: 34px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__iphone/image_theme_yellow__iphone.css end */
+/* ../../desktop.blocks/image_theme_yellow/__ipod/image_theme_yellow__ipod.css begin */
+.image_theme_yellow__ipod
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__ipod/image_theme_yellow__ipod.png") no-repeat;
+    width: 620px;
+    height: 238px;
+}
+
+.image_theme_yellow__ipod_push_down_yes
+{
+    margin-top: 136px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__ipod/image_theme_yellow__ipod.css end */
+/* ../../desktop.blocks/image_theme_yellow/__laptop/image_theme_yellow__laptop.css begin */
+.image_theme_yellow__laptop
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__laptop/image_theme_yellow__laptop.png") no-repeat;
+    width: 384px;
+    height: 493px;
+}
+
+.image_theme_yellow__laptop_push_down_yes
+{
+    margin-top: 78px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__laptop/image_theme_yellow__laptop.css end */
+/* ../../desktop.blocks/image_theme_yellow/__magazine/image_theme_yellow__magazine.css begin */
+.image_theme_yellow__magazine
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__magazine/image_theme_yellow__magazine.png") no-repeat;
+    width: 306px;
+    height: 394px;
+}
+
+.image_theme_yellow__magazine_push_up_yes
+{
+    margin-top: -80px;
+}
+
+.image_theme_yellow__magazine_push_right_yes
+{
+    margin-left: 30px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__magazine/image_theme_yellow__magazine.css end */
+/* ../../desktop.blocks/image_theme_yellow/__map/image_theme_yellow__map.css begin */
+.image_theme_yellow__map
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__map/image_theme_yellow__map.png") no-repeat;
+    width: 294px;
+    height: 218px;
+}
+
+.image_theme_yellow__map_push_up_yes
+{
+    margin-top: -32px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__map/image_theme_yellow__map.css end */
+/* ../../desktop.blocks/image_theme_yellow/__money/image_theme_yellow__money.css begin */
+.image_theme_yellow__money
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__money/image_theme_yellow__money.png") no-repeat;
+    width: 215px;
+    height: 207px;
+}
+
+.image_theme_yellow__money_push_down_yes
+{
+    margin-top: 0;
+}
+
+.image_theme_yellow__money_push_right_yes
+{
+    margin-left: 18px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__money/image_theme_yellow__money.css end */
+/* ../../desktop.blocks/image_theme_yellow/__notebook/image_theme_yellow__notebook.css begin */
+.image_theme_yellow__notebook
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__notebook/image_theme_yellow__notebook.png") no-repeat;
+    width: 620px;
+    height: 244px;
+}
+
+.image_theme_yellow__notebook_push_down_yes
+{
+    margin-top: 262px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__notebook/image_theme_yellow__notebook.css end */
+/* ../../desktop.blocks/image_theme_yellow/__polaroid/image_theme_yellow__polaroid.css begin */
+.image_theme_yellow__polaroid
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__polaroid/image_theme_yellow__polaroid.png") no-repeat;
+    width: 142px;
+    height: 158px;
+}
+
+.image_theme_yellow__polaroid_pos_1
+{
+    margin-top: 84px;
+    margin-left: -106px;
+}
+
+.image_theme_yellow__polaroid_pos_2
+{
+    margin-top: 256px;
+}
+
+.image_theme_yellow__polaroid_pos_3
+{
+    margin-top: 216px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__polaroid/image_theme_yellow__polaroid.css end */
+/* ../../desktop.blocks/image_theme_yellow/__ticket/image_theme_yellow__ticket.css begin */
+.image_theme_yellow__ticket
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__ticket/image_theme_yellow__ticket.png") no-repeat;
+    width: 193px;
+    height: 244px;
+}
+
+.image_theme_yellow__ticket_push_right_yes
+{
+    margin-left: 27px;
+}
+
+.image_theme_yellow__ticket_push_down_yes
+{
+    margin-top: 119px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__ticket/image_theme_yellow__ticket.css end */
+/* ../../desktop.blocks/image_theme_yellow/__traffic/image_theme_yellow__traffic.css begin */
+.image_theme_yellow__traffic
+{
+    background: url("../../desktop.blocks/image_theme_yellow/__traffic/image_theme_yellow__traffic.png") no-repeat;
+    width: 620px;
+    height: 244px;
+}
+
+.image_theme_yellow__traffic_push_down_yes
+{
+    margin-top: 318px;
+}
+/* ../../desktop.blocks/image_theme_yellow/__traffic/image_theme_yellow__traffic.css end */
+/* ../../desktop.blocks/path_theme_yellow/__step-1/path_theme_yellow__step-1.css begin */
+.path_theme_yellow__step-1
+{
+    position: absolute;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-1/path_theme_yellow__step-1.png") no-repeat;
+    width: 762px;
+    height: 87px;
+    top: -40px;
+}
+
+
+
+
+
+/* ../../desktop.blocks/path_theme_yellow/__step-1/path_theme_yellow__step-1.css end */
+/* ../../desktop.blocks/path_theme_yellow/__step-2/path_theme_yellow__step-2.css begin */
+.path_theme_yellow__step-2
+{
+    position: absolute;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-2/path_theme_yellow__step-2.png") no-repeat;
+    width: 684px;
+    height: 565px;
+}
+/* ../../desktop.blocks/path_theme_yellow/__step-2/path_theme_yellow__step-2.css end */
+/* ../../desktop.blocks/path_theme_yellow/__step-3/path_theme_yellow__step-3.css begin */
+.path_theme_yellow__step-3
+{
+    position: absolute;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-3/path_theme_yellow__step-3.png") no-repeat;
+    width: 687px;
+    height: 565px;
+}
+/* ../../desktop.blocks/path_theme_yellow/__step-3/path_theme_yellow__step-3.css end */
+/* ../../desktop.blocks/path_theme_yellow/__step-4/path_theme_yellow__step-4.css begin */
+.path_theme_yellow__step-4
+{
+    position: absolute;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-4/path_theme_yellow__step-4.png") no-repeat;
+    width: 626px;
+    height: 565px;
+}
+/* ../../desktop.blocks/path_theme_yellow/__step-4/path_theme_yellow__step-4.css end */
+/* ../../desktop.blocks/path_theme_yellow/__step-5/path_theme_yellow__step-5.css begin */
+.path_theme_yellow__step-5
+{
+    position: absolute;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-5/path_theme_yellow__step-5.png") no-repeat;
+    width: 570px;
+    height: 588px;
+}
+/* ../../desktop.blocks/path_theme_yellow/__step-5/path_theme_yellow__step-5.css end */
+/* ../../desktop.blocks/image_theme_red/image_theme_red.css begin */
+[class^=image_theme_red__]
+{
+    position: absolute;
+}
+
+.image_theme_red_layer_middle
+{
+    z-index: 10;
+}
+/* ../../desktop.blocks/image_theme_red/image_theme_red.css end */
+/* ../../desktop.blocks/image_theme_red/__bags/image_theme_red__bags.css begin */
+.image_theme_red__bags
+{
+    background: url("../../desktop.blocks/image_theme_red/__bags/image_theme_red__bags.png") no-repeat;
     width: 566px;
     height: 521px;
 }
 
-.image-theme-red__bags_push_down_yes
+.image_theme_red__bags_push_down_yes
 {
     margin-top: 278px;
 }
 
-.image-theme-red__bags_push_left_yes
+.image_theme_red__bags_push_left_yes
 {
     margin-left: -155px;
 }
-/* ../../desktop.blocks/image-theme-red/__bags/image-theme-red__bags.css end */
-/* ../../desktop.blocks/image-theme-red/__bear/image-theme-red__bear.css begin */
-.image-theme-red__bear
+/* ../../desktop.blocks/image_theme_red/__bags/image_theme_red__bags.css end */
+/* ../../desktop.blocks/image_theme_red/__bear/image_theme_red__bear.css begin */
+.image_theme_red__bear
 {
-    background: url("../../desktop.blocks/image-theme-red/__bear/image-theme-red__bear.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__bear/image_theme_red__bear.png") no-repeat;
     width: 318px;
     height: 386px;
 }
 
-.image-theme-red__bear_push_left_yes
+.image_theme_red__bear_push_left_yes
 {
     margin-left: -94px;
 }
 
-.image-theme-red__bear_push_down_yes
+.image_theme_red__bear_push_down_yes
 {
     margin-top: 400px;
 }
 
-/* ../../desktop.blocks/image-theme-red/__bear/image-theme-red__bear.css end */
-/* ../../desktop.blocks/image-theme-red/__bill/image-theme-red__bill.css begin */
-.image-theme-red__bill
+/* ../../desktop.blocks/image_theme_red/__bear/image_theme_red__bear.css end */
+/* ../../desktop.blocks/image_theme_red/__bill/image_theme_red__bill.css begin */
+.image_theme_red__bill
 {
-    background: url("../../desktop.blocks/image-theme-red/__bill/image-theme-red__bill.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__bill/image_theme_red__bill.png") no-repeat;
     width: 220px;
     height: 347px;
 }
 
-.image-theme-red__bill_push_down_yes
+.image_theme_red__bill_push_down_yes
 {
     margin-top: 72px;
 }
-/* ../../desktop.blocks/image-theme-red/__bill/image-theme-red__bill.css end */
-/* ../../desktop.blocks/image-theme-red/__book/image-theme-red__book.css begin */
-.image-theme-red__book
+/* ../../desktop.blocks/image_theme_red/__bill/image_theme_red__bill.css end */
+/* ../../desktop.blocks/image_theme_red/__book/image_theme_red__book.css begin */
+.image_theme_red__book
 {
-    background: url("../../desktop.blocks/image-theme-red/__book/image-theme-red__book.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__book/image_theme_red__book.png") no-repeat;
     width: 475px;
     height: 409px;
 }
 
-.image-theme-red__book_push_down_yes
+.image_theme_red__book_push_down_yes
 {
     margin-top: 350px;
 }
-/* ../../desktop.blocks/image-theme-red/__book/image-theme-red__book.css end */
-/* ../../desktop.blocks/image-theme-red/__drink-coup-full/image-theme-red__drink-coup-full.css begin */
-.image-theme-red__drink-coup-full
+/* ../../desktop.blocks/image_theme_red/__book/image_theme_red__book.css end */
+/* ../../desktop.blocks/image_theme_red/__drink-coup-full/image_theme_red__drink-coup-full.css begin */
+.image_theme_red__drink-coup-full
 {
-    background: url("../../desktop.blocks/image-theme-red/__drink-coup-full/image-theme-red__drink-coup-full.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__drink-coup-full/image_theme_red__drink-coup-full.png") no-repeat;
     width: 86px;
     height: 181px;
 }
 
-.image-theme-red__drink-coup-full_push_down_yes
+.image_theme_red__drink-coup-full_push_down_yes
 {
     margin-top: 266px;
 }
-/* ../../desktop.blocks/image-theme-red/__drink-coup-full/image-theme-red__drink-coup-full.css end */
-/* ../../desktop.blocks/image-theme-red/__drink-coup-middle/image-theme-red__drink-coup-middle.css begin */
-.image-theme-red__drink-coup-middle
+/* ../../desktop.blocks/image_theme_red/__drink-coup-full/image_theme_red__drink-coup-full.css end */
+/* ../../desktop.blocks/image_theme_red/__drink-coup-middle/image_theme_red__drink-coup-middle.css begin */
+.image_theme_red__drink-coup-middle
 {
-    background: url("../../desktop.blocks/image-theme-red/__drink-coup-middle/image-theme-red__drink-coup-middle.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__drink-coup-middle/image_theme_red__drink-coup-middle.png") no-repeat;
     width: 86px;
     height: 180px;
 }
 
-.image-theme-red__drink-coup-middle_push_down_yes
+.image_theme_red__drink-coup-middle_push_down_yes
 {
     margin-top: 266px;
 }
-/* ../../desktop.blocks/image-theme-red/__drink-coup-middle/image-theme-red__drink-coup-middle.css end */
-/* ../../desktop.blocks/image-theme-red/__drink-glass/image-theme-red__drink-glass.css begin */
-.image-theme-red__drink-glass
+/* ../../desktop.blocks/image_theme_red/__drink-coup-middle/image_theme_red__drink-coup-middle.css end */
+/* ../../desktop.blocks/image_theme_red/__drink-glass/image_theme_red__drink-glass.css begin */
+.image_theme_red__drink-glass
 {
-    background: url("../../desktop.blocks/image-theme-red/__drink-glass/image-theme-red__drink-glass.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__drink-glass/image_theme_red__drink-glass.png") no-repeat;
     width: 138px;
     height: 224px;
 }
 
-.image-theme-red__drink-glass_push_down_yes
+.image_theme_red__drink-glass_push_down_yes
 {
     margin-top: 84px;
 }
-/* ../../desktop.blocks/image-theme-red/__drink-glass/image-theme-red__drink-glass.css end */
-/* ../../desktop.blocks/image-theme-red/__drink-milk/image-theme-red__drink-milk.css begin */
-.image-theme-red__drink-milk
+/* ../../desktop.blocks/image_theme_red/__drink-glass/image_theme_red__drink-glass.css end */
+/* ../../desktop.blocks/image_theme_red/__drink-milk/image_theme_red__drink-milk.css begin */
+.image_theme_red__drink-milk
 {
-    background: url("../../desktop.blocks/image-theme-red/__drink-milk/image-theme-red__drink-milk.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__drink-milk/image_theme_red__drink-milk.png") no-repeat;
     width: 103px;
     height: 256px;
 }
 
-.image-theme-red__drink-milk_push_down_yes
+.image_theme_red__drink-milk_push_down_yes
 {
     margin-top: 212px;
 }
-/* ../../desktop.blocks/image-theme-red/__drink-milk/image-theme-red__drink-milk.css end */
-/* ../../desktop.blocks/image-theme-red/__drink-wine/image-theme-red__drink-wine.css begin */
-.image-theme-red__drink-wine
+/* ../../desktop.blocks/image_theme_red/__drink-milk/image_theme_red__drink-milk.css end */
+/* ../../desktop.blocks/image_theme_red/__drink-wine/image_theme_red__drink-wine.css begin */
+.image_theme_red__drink-wine
 {
-    background: url("../../desktop.blocks/image-theme-red/__drink-wine/image-theme-red__drink-wine.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__drink-wine/image_theme_red__drink-wine.png") no-repeat;
     width: 162px;
     height: 397px;
 }
 
-.image-theme-red__drink-wine_push_right_yes
+.image_theme_red__drink-wine_push_right_yes
 {
     margin-left: 36px;
 }
-/* ../../desktop.blocks/image-theme-red/__drink-wine/image-theme-red__drink-wine.css end */
-/* ../../desktop.blocks/image-theme-red/__food-eggs/image-theme-red__food-eggs.css begin */
-.image-theme-red__food-eggs
+/* ../../desktop.blocks/image_theme_red/__drink-wine/image_theme_red__drink-wine.css end */
+/* ../../desktop.blocks/image_theme_red/__food-eggs/image_theme_red__food-eggs.css begin */
+.image_theme_red__food-eggs
 {
-    background: url("../../desktop.blocks/image-theme-red/__food-eggs/image-theme-red__food-eggs.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__food-eggs/image_theme_red__food-eggs.png") no-repeat;
     width: 475px;
     height: 409px;
 }
 
-.image-theme-red__food-eggs_push_down_yes
+.image_theme_red__food-eggs_push_down_yes
 {
     margin-top: 40px;
 }
-/* ../../desktop.blocks/image-theme-red/__food-eggs/image-theme-red__food-eggs.css end */
-/* ../../desktop.blocks/image-theme-red/__food-fish/image-theme-red__food-fish.css begin */
-.image-theme-red__food-fish
+/* ../../desktop.blocks/image_theme_red/__food-eggs/image_theme_red__food-eggs.css end */
+/* ../../desktop.blocks/image_theme_red/__food-fish/image_theme_red__food-fish.css begin */
+.image_theme_red__food-fish
 {
-    background: url("../../desktop.blocks/image-theme-red/__food-fish/image-theme-red__food-fish.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__food-fish/image_theme_red__food-fish.png") no-repeat;
     width: 384px;
     height: 308px;
 }
 
-.image-theme-red__food-fish_push_down_yes
+.image_theme_red__food-fish_push_down_yes
 {
     margin-top: 40px;
 }
 
-.image-theme-red__food-fish_push_left_yes
+.image_theme_red__food-fish_push_left_yes
 {
     margin-left: -272px;
 }
-/* ../../desktop.blocks/image-theme-red/__food-fish/image-theme-red__food-fish.css end */
-/* ../../desktop.blocks/image-theme-red/__food-grape/image-theme-red__food-grape.css begin */
-.image-theme-red__food-grape
+/* ../../desktop.blocks/image_theme_red/__food-fish/image_theme_red__food-fish.css end */
+/* ../../desktop.blocks/image_theme_red/__food-grape/image_theme_red__food-grape.css begin */
+.image_theme_red__food-grape
 {
-    background: url("../../desktop.blocks/image-theme-red/__food-grape/image-theme-red__food-grape.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__food-grape/image_theme_red__food-grape.png") no-repeat;
     width: 228px;
     height: 231px;
 }
 
-.image-theme-red__food-grape_push_down_yes
+.image_theme_red__food-grape_push_down_yes
 {
     margin-top: 40px;
 }
-/* ../../desktop.blocks/image-theme-red/__food-grape/image-theme-red__food-grape.css end */
-/* ../../desktop.blocks/image-theme-red/__imac-keyboard/image-theme-red__imac-keyboard.css begin */
-.image-theme-red__imac-keyboard
+/* ../../desktop.blocks/image_theme_red/__food-grape/image_theme_red__food-grape.css end */
+/* ../../desktop.blocks/image_theme_red/__imac-keyboard/image_theme_red__imac-keyboard.css begin */
+.image_theme_red__imac-keyboard
 {
-    background: url("../../desktop.blocks/image-theme-red/__imac-keyboard/image-theme-red__imac-keyboard.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__imac-keyboard/image_theme_red__imac-keyboard.png") no-repeat;
     width: 294px;
     height: 111px;
 }
 
-.image-theme-red__imac-keyboard_push_down_yes
+.image_theme_red__imac-keyboard_push_down_yes
 {
     margin-top: 518px;
 }
-/* ../../desktop.blocks/image-theme-red/__imac-keyboard/image-theme-red__imac-keyboard.css end */
-/* ../../desktop.blocks/image-theme-red/__imac-monitor/image-theme-red__imac-monitor.css begin */
-.image-theme-red__imac-monitor
+/* ../../desktop.blocks/image_theme_red/__imac-keyboard/image_theme_red__imac-keyboard.css end */
+/* ../../desktop.blocks/image_theme_red/__imac-monitor/image_theme_red__imac-monitor.css begin */
+.image_theme_red__imac-monitor
 {
-    background: url("../../desktop.blocks/image-theme-red/__imac-monitor/image-theme-red__imac-monitor.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__imac-monitor/image_theme_red__imac-monitor.png") no-repeat;
     width: 450px;
     height: 377px;
 }
 
-.image-theme-red__imac-monitor_push_down_yes
+.image_theme_red__imac-monitor_push_down_yes
 {
     margin-top: 80px;
 }
 
-/* ../../desktop.blocks/image-theme-red/__imac-monitor/image-theme-red__imac-monitor.css end */
-/* ../../desktop.blocks/image-theme-red/__iphone/image-theme-red__iphone.css begin */
-.image-theme-red__iphone
+/* ../../desktop.blocks/image_theme_red/__imac-monitor/image_theme_red__imac-monitor.css end */
+/* ../../desktop.blocks/image_theme_red/__iphone/image_theme_red__iphone.css begin */
+.image_theme_red__iphone
 {
-    background: url("../../desktop.blocks/image-theme-red/__iphone/image-theme-red__iphone.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__iphone/image_theme_red__iphone.png") no-repeat;
     width: 150px;
     height: 280px;
 }
 
-.image-theme-red__iphone_pushd_down_yes
+.image_theme_red__iphone_pushd_down_yes
 {
     margin-top: 74px
 }
-/* ../../desktop.blocks/image-theme-red/__iphone/image-theme-red__iphone.css end */
-/* ../../desktop.blocks/image-theme-red/__keys/image-theme-red__keys.css begin */
-.image-theme-red__keys
+/* ../../desktop.blocks/image_theme_red/__iphone/image_theme_red__iphone.css end */
+/* ../../desktop.blocks/image_theme_red/__keys/image_theme_red__keys.css begin */
+.image_theme_red__keys
 {
-    background: url("../../desktop.blocks/image-theme-red/__keys/image-theme-red__keys.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__keys/image_theme_red__keys.png") no-repeat;
     width: 222px;
     height: 147px;
 }
 
-.image-theme-red__keys_push_down_yes
+.image_theme_red__keys_push_down_yes
 {
     margin-top: 120px;
 }
-/* ../../desktop.blocks/image-theme-red/__keys/image-theme-red__keys.css end */
-/* ../../desktop.blocks/image-theme-red/__lenses/image-theme-red__lenses.css begin */
-.image-theme-red__lenses
+/* ../../desktop.blocks/image_theme_red/__keys/image_theme_red__keys.css end */
+/* ../../desktop.blocks/image_theme_red/__lenses/image_theme_red__lenses.css begin */
+.image_theme_red__lenses
 {
-    background: url("../../desktop.blocks/image-theme-red/__lenses/image-theme-red__lenses.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__lenses/image_theme_red__lenses.png") no-repeat;
     width: 410px;
     height: 283px;
 }
 
-.image-theme-red__lenses_push_down_yes
+.image_theme_red__lenses_push_down_yes
 {
     margin-top: 80px;
 }
-/* ../../desktop.blocks/image-theme-red/__lenses/image-theme-red__lenses.css end */
-/* ../../desktop.blocks/image-theme-red/__license/image-theme-red__license.css begin */
-.image-theme-red__license
+/* ../../desktop.blocks/image_theme_red/__lenses/image_theme_red__lenses.css end */
+/* ../../desktop.blocks/image_theme_red/__license/image_theme_red__license.css begin */
+.image_theme_red__license
 {
-    background: url("../../desktop.blocks/image-theme-red/__license/image-theme-red__license.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__license/image_theme_red__license.png") no-repeat;
     width: 299px;
     height: 187px;
 }
 
-.image-theme-red__license_push_down_yes
+.image_theme_red__license_push_down_yes
 {
     margin-top: 70px;
 }
-/* ../../desktop.blocks/image-theme-red/__license/image-theme-red__license.css end */
-/* ../../desktop.blocks/image-theme-red/__passports/image-theme-red__passports.css begin */
-.image-theme-red__passports
+/* ../../desktop.blocks/image_theme_red/__license/image_theme_red__license.css end */
+/* ../../desktop.blocks/image_theme_red/__passports/image_theme_red__passports.css begin */
+.image_theme_red__passports
 {
-    background: url("../../desktop.blocks/image-theme-red/__passports/image-theme-red__passports.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__passports/image_theme_red__passports.png") no-repeat;
     width: 475px;
     height: 409px;
 }
 
-.image-theme-red__passports_push_down_yes
+.image_theme_red__passports_push_down_yes
 {
     margin-top: 486px;
 }
-/* ../../desktop.blocks/image-theme-red/__passports/image-theme-red__passports.css end */
-/* ../../desktop.blocks/image-theme-red/__portlet/image-theme-red__portlet.css begin */
-.image-theme-red__portlet
+/* ../../desktop.blocks/image_theme_red/__passports/image_theme_red__passports.css end */
+/* ../../desktop.blocks/image_theme_red/__portlet/image_theme_red__portlet.css begin */
+.image_theme_red__portlet
 {
-    background: url("../../desktop.blocks/image-theme-red/__portlet/image-theme-red__portlet.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__portlet/image_theme_red__portlet.png") no-repeat;
     width: 475px;
     height: 409px;
 }
 
-.image-theme-red__portlet_push_down_yes
+.image_theme_red__portlet_push_down_yes
 {
     margin-top: 40px;
 }
-/* ../../desktop.blocks/image-theme-red/__portlet/image-theme-red__portlet.css end */
-/* ../../desktop.blocks/image-theme-red/__tamagotchi/image-theme-red__tamagotchi.css begin */
-.image-theme-red__tamagotchi
+/* ../../desktop.blocks/image_theme_red/__portlet/image_theme_red__portlet.css end */
+/* ../../desktop.blocks/image_theme_red/__tamagotchi/image_theme_red__tamagotchi.css begin */
+.image_theme_red__tamagotchi
 {
-    background: url("../../desktop.blocks/image-theme-red/__tamagotchi/image-theme-red__tamagotchi.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__tamagotchi/image_theme_red__tamagotchi.png") no-repeat;
     width: 149px;
     height: 237px;
 }
 
-.image-theme-red__tamagotchi_push_down_yes
+.image_theme_red__tamagotchi_push_down_yes
 {
     margin-top: 378px;
 }
 
-.image-theme-red__tamagotchi_push_left_yes
+.image_theme_red__tamagotchi_push_left_yes
 {
     margin-left: -79px;
 }
-/* ../../desktop.blocks/image-theme-red/__tamagotchi/image-theme-red__tamagotchi.css end */
-/* ../../desktop.blocks/image-theme-red/__tour/image-theme-red__tour.css begin */
-.image-theme-red__tour
+/* ../../desktop.blocks/image_theme_red/__tamagotchi/image_theme_red__tamagotchi.css end */
+/* ../../desktop.blocks/image_theme_red/__tour/image_theme_red__tour.css begin */
+.image_theme_red__tour
 {
-    background: url("../../desktop.blocks/image-theme-red/__tour/image-theme-red__tour.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_red/__tour/image_theme_red__tour.png") no-repeat;
     width: 384px;
     height: 492px;
 }
 
-.image-theme-red__tour_push_down_yes
+.image_theme_red__tour_push_down_yes
 {
     margin-top: 90px;
 }
-/* ../../desktop.blocks/image-theme-red/__tour/image-theme-red__tour.css end */
-/* ../../desktop.blocks/path-theme-red/__step-1/path-theme-red__step-1.css begin */
-.path-theme-red__step-1 {
+/* ../../desktop.blocks/image_theme_red/__tour/image_theme_red__tour.css end */
+/* ../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.css begin */
+.path_theme_red__step-1 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-red/__step-1/path-theme-red__step-1.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.png") no-repeat;
     width: 763px;
     height: 97px;
     top: -40px;
@@ -1090,347 +1131,348 @@
 
 
 
-/* ../../desktop.blocks/path-theme-red/__step-1/path-theme-red__step-1.css end */
-/* ../../desktop.blocks/path-theme-red/__step-2/path-theme-red__step-2.css begin */
-.path-theme-red__step-2 {
+/* ../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.css end */
+/* ../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.css begin */
+.path_theme_red__step-2 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-red/__step-2/path-theme-red__step-2.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.png") no-repeat;
     width: 626px;
     height: 561px;
+    margin-left: -18px;
 }
-/* ../../desktop.blocks/path-theme-red/__step-2/path-theme-red__step-2.css end */
-/* ../../desktop.blocks/path-theme-red/__step-3/path-theme-red__step-3.css begin */
-.path-theme-red__step-3 {
+/* ../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.css end */
+/* ../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.css begin */
+.path_theme_red__step-3 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-red/__step-3/path-theme-red__step-3.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.png") no-repeat;
     width: 684px;
     height: 565px;
 }
-/* ../../desktop.blocks/path-theme-red/__step-3/path-theme-red__step-3.css end */
-/* ../../desktop.blocks/path-theme-red/__step-4/path-theme-red__step-4.css begin */
-.path-theme-red__step-4 {
+/* ../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.css end */
+/* ../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.css begin */
+.path_theme_red__step-4 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-red/__step-4/path-theme-red__step-4.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.png") no-repeat;
     width: 626px;
     height: 565px;
 }
-/* ../../desktop.blocks/path-theme-red/__step-4/path-theme-red__step-4.css end */
-/* ../../desktop.blocks/path-theme-red/__step-5/path-theme-red__step-5.css begin */
-.path-theme-red__step-5 {
+/* ../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.css end */
+/* ../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.css begin */
+.path_theme_red__step-5 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-red/__step-5/path-theme-red__step-5.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.png") no-repeat;
     width: 528px;
     height: 548px;
 }
-/* ../../desktop.blocks/path-theme-red/__step-5/path-theme-red__step-5.css end */
-/* ../../desktop.blocks/image-theme-blue/image-theme-blue.css begin */
-[class^=image-theme-blue__]
+/* ../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.css end */
+/* ../../desktop.blocks/image_theme_blue/image_theme_blue.css begin */
+[class^=image_theme_blue__]
 {
     position: absolute;
 }
 
-.image-theme-blue_layer_middle
+.image_theme_blue_layer_middle
 {
     z-index: 10;
 }
-/* ../../desktop.blocks/image-theme-blue/image-theme-blue.css end */
-/* ../../desktop.blocks/image-theme-blue/__bag/image-theme-blue__bag.css begin */
-.image-theme-blue__bag
+/* ../../desktop.blocks/image_theme_blue/image_theme_blue.css end */
+/* ../../desktop.blocks/image_theme_blue/__bag/image_theme_blue__bag.css begin */
+.image_theme_blue__bag
 {
-    background: url("../../desktop.blocks/image-theme-blue/__bag/image-theme-blue__bag.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__bag/image_theme_blue__bag.png") no-repeat;
     width: 475px;
     height: 409px;
 }
 
-.image-theme-blue__bag_push_up_yes
+.image_theme_blue__bag_push_up_yes
 {
     margin-top: -124px;
 }
 
-.image-theme-blue__bag_push_left_yes
+.image_theme_blue__bag_push_left_yes
 {
     margin-left: -75px;
 }
-/* ../../desktop.blocks/image-theme-blue/__bag/image-theme-blue__bag.css end */
-/* ../../desktop.blocks/image-theme-blue/__book/image-theme-blue__book.css begin */
-.image-theme-blue__book
+/* ../../desktop.blocks/image_theme_blue/__bag/image_theme_blue__bag.css end */
+/* ../../desktop.blocks/image_theme_blue/__book/image_theme_blue__book.css begin */
+.image_theme_blue__book
 {
-    background: url("../../desktop.blocks/image-theme-blue/__book/image-theme-blue__book.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__book/image_theme_blue__book.png") no-repeat;
     width: 234px;
     height: 303px;
 }
 
-.image-theme-blue__book_push_down_yes
+.image_theme_blue__book_push_down_yes
 {
     margin-top: 133px;
 }
-/* ../../desktop.blocks/image-theme-blue/__book/image-theme-blue__book.css end */
-/* ../../desktop.blocks/image-theme-blue/__cards/image-theme-blue__cards.css begin */
-.image-theme-blue__cards
+/* ../../desktop.blocks/image_theme_blue/__book/image_theme_blue__book.css end */
+/* ../../desktop.blocks/image_theme_blue/__cards/image_theme_blue__cards.css begin */
+.image_theme_blue__cards
 {
-    background: url("../../desktop.blocks/image-theme-blue/__cards/image-theme-blue__cards.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__cards/image_theme_blue__cards.png") no-repeat;
     width: 299px;
     height: 234px;
 }
 
-.image-theme-blue__cards_push_down_yes
+.image_theme_blue__cards_push_down_yes
 {
     margin-top: 306px;
 }
-/* ../../desktop.blocks/image-theme-blue/__cards/image-theme-blue__cards.css end */
-/* ../../desktop.blocks/image-theme-blue/__cup/image-theme-blue__cup.css begin */
-.image-theme-blue__cup
+/* ../../desktop.blocks/image_theme_blue/__cards/image_theme_blue__cards.css end */
+/* ../../desktop.blocks/image_theme_blue/__cup/image_theme_blue__cup.css begin */
+.image_theme_blue__cup
 {
-    background: url("../../desktop.blocks/image-theme-blue/__cup/image-theme-blue__cup.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__cup/image_theme_blue__cup.png") no-repeat;
     width: 228px;
     height: 303px;
 }
 
-.image-theme-blue__cup_push_down_yes
+.image_theme_blue__cup_push_down_yes
 {
     margin-top: 468px;
 }
-/* ../../desktop.blocks/image-theme-blue/__cup/image-theme-blue__cup.css end */
-/* ../../desktop.blocks/image-theme-blue/__ipad/image-theme-blue__ipad.css begin */
-.image-theme-blue__ipad
+/* ../../desktop.blocks/image_theme_blue/__cup/image_theme_blue__cup.css end */
+/* ../../desktop.blocks/image_theme_blue/__ipad/image_theme_blue__ipad.css begin */
+.image_theme_blue__ipad
 {
-    background: url("../../desktop.blocks/image-theme-blue/__ipad/image-theme-blue__ipad.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__ipad/image_theme_blue__ipad.png") no-repeat;
     width: 304px;
     height: 453px;
 }
 
-.image-theme-blue__ipad_push_down_yes
+.image_theme_blue__ipad_push_down_yes
 {
     margin-top: 80px;
 }
-/* ../../desktop.blocks/image-theme-blue/__ipad/image-theme-blue__ipad.css end */
-/* ../../desktop.blocks/image-theme-blue/__iphone/image-theme-blue__iphone.css begin */
-.image-theme-blue__iphone
+/* ../../desktop.blocks/image_theme_blue/__ipad/image_theme_blue__ipad.css end */
+/* ../../desktop.blocks/image_theme_blue/__iphone/image_theme_blue__iphone.css begin */
+.image_theme_blue__iphone
 {
-    background: url("../../desktop.blocks/image-theme-blue/__iphone/image-theme-blue__iphone.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__iphone/image_theme_blue__iphone.png") no-repeat;
     width: 148px;
     height: 278px;
 }
 
-.image-theme-blue__iphone_push_down_yes
+.image_theme_blue__iphone_push_down_yes
 {
     margin-top: 34px;
 }
-/* ../../desktop.blocks/image-theme-blue/__iphone/image-theme-blue__iphone.css end */
-/* ../../desktop.blocks/image-theme-blue/__krug/image-theme-blue__krug.css begin */
-.image-theme-blue__krug
+/* ../../desktop.blocks/image_theme_blue/__iphone/image_theme_blue__iphone.css end */
+/* ../../desktop.blocks/image_theme_blue/__krug/image_theme_blue__krug.css begin */
+.image_theme_blue__krug
 {
-    background: url("../../desktop.blocks/image-theme-blue/__krug/image-theme-blue__krug.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__krug/image_theme_blue__krug.png") no-repeat;
     width: 528px;
     height: 552px;
 }
 
-.image-theme-blue__krug_push_up_yes
+.image_theme_blue__krug_push_up_yes
 {
     margin-top: -78px;
 }
-/* ../../desktop.blocks/image-theme-blue/__krug/image-theme-blue__krug.css end */
-/* ../../desktop.blocks/image-theme-blue/__maska/image-theme-blue__maska.css begin */
-.image-theme-blue__maska
+/* ../../desktop.blocks/image_theme_blue/__krug/image_theme_blue__krug.css end */
+/* ../../desktop.blocks/image_theme_blue/__maska/image_theme_blue__maska.css begin */
+.image_theme_blue__maska
 {
-    background: url("../../desktop.blocks/image-theme-blue/__maska/image-theme-blue__maska.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__maska/image_theme_blue__maska.png") no-repeat;
     width: 390px;
     height: 223px;
 }
 
-.image-theme-blue__maska_push_down_yes
+.image_theme_blue__maska_push_down_yes
 {
     margin-top: 36px;
 }
-/* ../../desktop.blocks/image-theme-blue/__maska/image-theme-blue__maska.css end */
-/* ../../desktop.blocks/image-theme-blue/__money/image-theme-blue__money.css begin */
-.image-theme-blue__money
+/* ../../desktop.blocks/image_theme_blue/__maska/image_theme_blue__maska.css end */
+/* ../../desktop.blocks/image_theme_blue/__money/image_theme_blue__money.css begin */
+.image_theme_blue__money
 {
-    background: url("../../desktop.blocks/image-theme-blue/__money/image-theme-blue__money.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__money/image_theme_blue__money.png") no-repeat;
     width: 148px;
     height: 244px;
 }
 
-.image-theme-blue__money_push_down_yes
+.image_theme_blue__money_push_down_yes
 {
     margin-top: 486px;
 }
-/* ../../desktop.blocks/image-theme-blue/__money/image-theme-blue__money.css end */
-/* ../../desktop.blocks/image-theme-blue/__newspaper/image-theme-blue__newspaper.css begin */
-.image-theme-blue__newspaper
+/* ../../desktop.blocks/image_theme_blue/__money/image_theme_blue__money.css end */
+/* ../../desktop.blocks/image_theme_blue/__newspaper/image_theme_blue__newspaper.css begin */
+.image_theme_blue__newspaper
 {
-    background: url("../../desktop.blocks/image-theme-blue/__newspaper/image-theme-blue__newspaper.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__newspaper/image_theme_blue__newspaper.png") no-repeat;
     width: 318px;
     height: 421px;
 }
 
-.image-theme-blue__newspaper_push_down_yes
+.image_theme_blue__newspaper_push_down_yes
 {
     margin-top: 320px;
 }
-/* ../../desktop.blocks/image-theme-blue/__newspaper/image-theme-blue__newspaper.css end */
-/* ../../desktop.blocks/image-theme-blue/__notebook2/image-theme-blue__notebook2.css begin */
-.image-theme-blue__notebook2
+/* ../../desktop.blocks/image_theme_blue/__newspaper/image_theme_blue__newspaper.css end */
+/* ../../desktop.blocks/image_theme_blue/__notebook2/image_theme_blue__notebook2.css begin */
+.image_theme_blue__notebook2
 {
-    background: url("../../desktop.blocks/image-theme-blue/__notebook2/image-theme-blue__notebook2.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__notebook2/image_theme_blue__notebook2.png") no-repeat;
     width: 228px;
     height: 318px;
 }
 
-.image-theme-blue__notebook2_push_up_yes
+.image_theme_blue__notebook2_push_up_yes
 {
     margin-top: 244px;
 }
 
-.image-theme-blue__notebook2_push_left_yes
+.image_theme_blue__notebook2_push_left_yes
 {
     margin-left: -150px;
 }
-/* ../../desktop.blocks/image-theme-blue/__notebook2/image-theme-blue__notebook2.css end */
-/* ../../desktop.blocks/image-theme-blue/__notepad/image-theme-blue__notepad.css begin */
-.image-theme-blue__notepad
+/* ../../desktop.blocks/image_theme_blue/__notebook2/image_theme_blue__notebook2.css end */
+/* ../../desktop.blocks/image_theme_blue/__notepad/image_theme_blue__notepad.css begin */
+.image_theme_blue__notepad
 {
-    background: url("../../desktop.blocks/image-theme-blue/__notepad/image-theme-blue__notepad.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__notepad/image_theme_blue__notepad.png") no-repeat;
     width: 306px;
     height: 434px;
 }
 
-.image-theme-blue__notepad_push_down_yes
+.image_theme_blue__notepad_push_down_yes
 {
     margin-top: 80px;
 }
-/* ../../desktop.blocks/image-theme-blue/__notepad/image-theme-blue__notepad.css end */
-/* ../../desktop.blocks/image-theme-blue/__palka/image-theme-blue__palka.css begin */
-.image-theme-blue__palka
+/* ../../desktop.blocks/image_theme_blue/__notepad/image_theme_blue__notepad.css end */
+/* ../../desktop.blocks/image_theme_blue/__palka/image_theme_blue__palka.css begin */
+.image_theme_blue__palka
 {
-    background: url("../../desktop.blocks/image-theme-blue/__palka/image-theme-blue__palka.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__palka/image_theme_blue__palka.png") no-repeat;
     width: 228px;
     height: 622px;
 }
 
-.image-theme-blue__palka_push_down_yes
+.image_theme_blue__palka_push_down_yes
 {
     margin-top: 80px;
 }
-/* ../../desktop.blocks/image-theme-blue/__palka/image-theme-blue__palka.css end */
-/* ../../desktop.blocks/image-theme-blue/__paper/image-theme-blue__paper.css begin */
-.image-theme-blue__paper
+/* ../../desktop.blocks/image_theme_blue/__palka/image_theme_blue__palka.css end */
+/* ../../desktop.blocks/image_theme_blue/__paper/image_theme_blue__paper.css begin */
+.image_theme_blue__paper
 {
-    background: url("../../desktop.blocks/image-theme-blue/__paper/image-theme-blue__paper.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__paper/image_theme_blue__paper.png") no-repeat;
     width: 384px;
     height: 621px;
 }
 
-.image-theme-blue__paper_push_down_yes
+.image_theme_blue__paper_push_down_yes
 {
     margin-top: 80px;
 }
 
-.image-theme-blue__paper_push_left_yes
+.image_theme_blue__paper_push_left_yes
 {
     margin-left: -306px;
 }
-/* ../../desktop.blocks/image-theme-blue/__paper/image-theme-blue__paper.css end */
-/* ../../desktop.blocks/image-theme-blue/__pen/image-theme-blue__pen.css begin */
-.image-theme-blue__pen
+/* ../../desktop.blocks/image_theme_blue/__paper/image_theme_blue__paper.css end */
+/* ../../desktop.blocks/image_theme_blue/__pen/image_theme_blue__pen.css begin */
+.image_theme_blue__pen
 {
-    background: url("../../desktop.blocks/image-theme-blue/__pen/image-theme-blue__pen.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__pen/image_theme_blue__pen.png") no-repeat;
     width: 48px;
     height: 223px;
 }
 
-.image-theme-blue__pen_push_down_yes
+.image_theme_blue__pen_push_down_yes
 {
     margin-top: 36px;
 }
-/* ../../desktop.blocks/image-theme-blue/__pen/image-theme-blue__pen.css end */
-/* ../../desktop.blocks/image-theme-blue/__phone/image-theme-blue__phone.css begin */
-.image-theme-blue__phone
+/* ../../desktop.blocks/image_theme_blue/__pen/image_theme_blue__pen.css end */
+/* ../../desktop.blocks/image_theme_blue/__phone/image_theme_blue__phone.css begin */
+.image_theme_blue__phone
 {
-    background: url("../../desktop.blocks/image-theme-blue/__phone/image-theme-blue__phone.png");
+    background: url("../../desktop.blocks/image_theme_blue/__phone/image_theme_blue__phone.png");
     width: 303px;
     height: 384px;
 }
 
-.image-theme-blue__phone_push_down_yes
+.image_theme_blue__phone_push_down_yes
 {
     margin-top: 36px;
 }
 
-.image-theme-blue__phone_push_left_yes
+.image_theme_blue__phone_push_left_yes
 {
     margin-left: -79px;
 }
-/* ../../desktop.blocks/image-theme-blue/__phone/image-theme-blue__phone.css end */
-/* ../../desktop.blocks/image-theme-blue/__photo/image-theme-blue__photo.css begin */
-.image-theme-blue__photo
+/* ../../desktop.blocks/image_theme_blue/__phone/image_theme_blue__phone.css end */
+/* ../../desktop.blocks/image_theme_blue/__photo/image_theme_blue__photo.css begin */
+.image_theme_blue__photo
 {
-    background: url("../../desktop.blocks/image-theme-blue/__photo/image-theme-blue__photo.png");
+    background: url("../../desktop.blocks/image_theme_blue/__photo/image_theme_blue__photo.png");
     width: 227px;
     height: 292px;
 }
 
-.image-theme-blue__photo_push_down_yes
+.image_theme_blue__photo_push_down_yes
 {
     margin-top: 260px;
 }
-/* ../../desktop.blocks/image-theme-blue/__photo/image-theme-blue__photo.css end */
-/* ../../desktop.blocks/image-theme-blue/__pie/image-theme-blue__pie.css begin */
-.image-theme-blue__pie
+/* ../../desktop.blocks/image_theme_blue/__photo/image_theme_blue__photo.css end */
+/* ../../desktop.blocks/image_theme_blue/__pie/image_theme_blue__pie.css begin */
+.image_theme_blue__pie
 {
-    background: url("../../desktop.blocks/image-theme-blue/__pie/image-theme-blue__pie.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__pie/image_theme_blue__pie.png") no-repeat;
     width: 380px;
     height: 529px;
 }
 
-.image-theme-blue__pie_push_down_yes
+.image_theme_blue__pie_push_down_yes
 {
     margin-top: 80px;
 }
-/* ../../desktop.blocks/image-theme-blue/__pie/image-theme-blue__pie.css end */
-/* ../../desktop.blocks/image-theme-blue/__ticket/image-theme-blue__ticket.css begin */
-.image-theme-blue__ticket
+/* ../../desktop.blocks/image_theme_blue/__pie/image_theme_blue__pie.css end */
+/* ../../desktop.blocks/image_theme_blue/__ticket/image_theme_blue__ticket.css begin */
+.image_theme_blue__ticket
 {
-    background: url("../../desktop.blocks/image-theme-blue/__ticket/image-theme-blue__ticket.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__ticket/image_theme_blue__ticket.png") no-repeat;
     width: 454px;
     height: 179px;
 }
 
-.image-theme-blue__ticket_push_down_yes
+.image_theme_blue__ticket_push_down_yes
 {
     margin-top: 144px;
 }
-/* ../../desktop.blocks/image-theme-blue/__ticket/image-theme-blue__ticket.css end */
-/* ../../desktop.blocks/image-theme-blue/__watch/image-theme-blue__watch.css begin */
-.image-theme-blue__watch
+/* ../../desktop.blocks/image_theme_blue/__ticket/image_theme_blue__ticket.css end */
+/* ../../desktop.blocks/image_theme_blue/__watch/image_theme_blue__watch.css begin */
+.image_theme_blue__watch
 {
-    background: url("../../desktop.blocks/image-theme-blue/__watch/image-theme-blue__watch.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__watch/image_theme_blue__watch.png") no-repeat;
     width: 130px;
     height: 247px;
 }
 
-.image-theme-blue__watch_push_down_yes
+.image_theme_blue__watch_push_down_yes
 {
     margin-top: 304px;
 }
-/* ../../desktop.blocks/image-theme-blue/__watch/image-theme-blue__watch.css end */
-/* ../../desktop.blocks/image-theme-blue/__yoga/image-theme-blue__yoga.css begin */
-.image-theme-blue__yoga
+/* ../../desktop.blocks/image_theme_blue/__watch/image_theme_blue__watch.css end */
+/* ../../desktop.blocks/image_theme_blue/__yoga/image_theme_blue__yoga.css begin */
+.image_theme_blue__yoga
 {
-    background: url("../../desktop.blocks/image-theme-blue/__yoga/image-theme-blue__yoga.png") no-repeat;
+    background: url("../../desktop.blocks/image_theme_blue/__yoga/image_theme_blue__yoga.png") no-repeat;
     width: 306px;
     height: 411px;
 }
 
-.image-theme-blue__yoga_push_down_yes
+.image_theme_blue__yoga_push_down_yes
 {
     margin-top: 20px;
 }
-/* ../../desktop.blocks/image-theme-blue/__yoga/image-theme-blue__yoga.css end */
-/* ../../desktop.blocks/path-theme-blue/__step-1/path-theme-blue__step-1.css begin */
-.path-theme-blue__step-1 {
+/* ../../desktop.blocks/image_theme_blue/__yoga/image_theme_blue__yoga.css end */
+/* ../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.css begin */
+.path_theme_blue__step-1 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-blue/__step-1/path-theme-blue__step-1.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.png") no-repeat;
     width: 762px;
     height: 97px;
     top: -40px;
@@ -1440,47 +1482,62 @@
 
 
 
-/* ../../desktop.blocks/path-theme-blue/__step-1/path-theme-blue__step-1.css end */
-/* ../../desktop.blocks/path-theme-blue/__step-2/path-theme-blue__step-2.css begin */
-.path-theme-blue__step-2 {
+/* ../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.css end */
+/* ../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.css begin */
+.path_theme_blue__step-2 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-blue/__step-2/path-theme-blue__step-2.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.png") no-repeat;
     width: 596px;
     height: 566px;
 }
-/* ../../desktop.blocks/path-theme-blue/__step-2/path-theme-blue__step-2.css end */
-/* ../../desktop.blocks/path-theme-blue/__step-3/path-theme-blue__step-3.css begin */
-.path-theme-blue__step-3 {
+/* ../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.css end */
+/* ../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.css begin */
+.path_theme_blue__step-3 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-blue/__step-3/path-theme-blue__step-3.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.png") no-repeat;
     width: 684px;
     height: 565px;
 }
-/* ../../desktop.blocks/path-theme-blue/__step-3/path-theme-blue__step-3.css end */
-/* ../../desktop.blocks/path-theme-blue/__step-4/path-theme-blue__step-4.css begin */
-.path-theme-blue__step-4 {
+/* ../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.css end */
+/* ../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.css begin */
+.path_theme_blue__step-4 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-blue/__step-4/path-theme-blue__step-4.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.png") no-repeat;
     width: 626px;
     height: 565px;
 }
-/* ../../desktop.blocks/path-theme-blue/__step-4/path-theme-blue__step-4.css end */
-/* ../../desktop.blocks/path-theme-blue/__step-5/path-theme-blue__step-5.css begin */
-.path-theme-blue__step-5 {
+/* ../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.css end */
+/* ../../desktop.blocks/path_theme_blue/__step-5/path_theme_blue__step-5.css begin */
+.path_theme_blue__step-5 {
     position: absolute;
-    background: url("../../desktop.blocks/path-theme-blue/__step-5/path-theme-blue__step-5.png") no-repeat;
+    background: url("../../desktop.blocks/path_theme_blue/__step-5/path_theme_blue__step-5.png") no-repeat;
     width: 528px;
     height: 548px;
 }
-/* ../../desktop.blocks/path-theme-blue/__step-5/path-theme-blue__step-5.css end */
+/* ../../desktop.blocks/path_theme_blue/__step-5/path_theme_blue__step-5.css end */
 /* ../../desktop.blocks/footer/footer.css begin */
 .footer
 {
     background: #FFF;
     padding-top: 80px;
     border-top: 2px solid #000;
+    margin: 0 -16px 0 -18px;
 }
 /* ../../desktop.blocks/footer/footer.css end */
+/* ../../desktop.blocks/footer/__atom-logo/footer__atom-logo.css begin */
+.footer__atom-logo
+{
+    width: 104px;
+    height: 104px;
+    background: url("../../desktop.blocks/footer/__atom-logo/footer__atom-logo.png") no-repeat;
+}
+/* ../../desktop.blocks/footer/__atom-logo/footer__atom-logo.css end */
+/* ../../desktop.blocks/footer/__copyright/footer__copyright.css begin */
+.footer__copyright
+{
+    margin-left: -36px;
+}
+/* ../../desktop.blocks/footer/__copyright/footer__copyright.css end */
 /* ../../desktop.blocks/footer/__foot/footer__foot.css begin */
 .footer__foot
 {
@@ -1505,15 +1562,14 @@
 {
     position: absolute;
     left: 972px;
-    background: yellow;
-    top: 0;
-    bottom: 0;
+    top: -18px;
+    bottom: -18px;
     border-left: 2px solid #000;
     z-index: 30;
     cursor: pointer;
 }
 
-.atom-ledge_open_yes
+.atom-ledge_opened_yes
 {
     cursor: auto;
 }

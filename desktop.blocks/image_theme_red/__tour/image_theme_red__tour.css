@@ -1,0 +1,11 @@
+.image_theme_red__tour
+{
+    background: url(image_theme_red__tour.png) no-repeat;
+    width: 384px;
+    height: 492px;
+}
+
+.image_theme_red__tour_push_down_yes
+{
+    margin-top: 90px;
+}

@@ -20,50 +20,59 @@
                         content: [
                             {
                                 elem: 'border',
-                                mods: {theme: 'red'},
                                 content: [
                                     {block: 'header'},
                                     {block: 'users', mods: { 'pos': 'top' }},
                                     {
-                                        elem: 'stories',
+                                        block: 'locomotive',
                                         content: [
                                             {
-                                                block: 'locomotive',
+                                                elem: 'icons',
                                                 content: [
-                                                {
-                                                    elem: 'icons',
-                                                    content: [
-                                                        {
+                                                    {
+                                                        elem: 'step-icon',
+                                                        mix: {
                                                             block: 'step-icon',
                                                             mods: {
                                                                 'theme': 'yellow',
                                                                 'active': 'no'
                                                             }
-                                                        },
-                                                        {
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'step-icon',
+                                                        mix: {
                                                             block: 'step-icon',
                                                             mods: {
                                                                 'theme': 'red',
                                                                 'active': 'no'
                                                             }
-                                                        },
-                                                        {
+                                                        }
+                                                    },
+                                                    {
+                                                        elem: 'step-icon',
+                                                        mix: {
                                                             block: 'step-icon',
                                                             mods: {
                                                                 'theme': 'blue',
                                                                 'active': 'no'
                                                             }
                                                         }
-                                                    ]
-                                                },
-                                                {
-                                                    block: 'user-icon',
-                                                    mods: {'size': 'large', 'theme': 'yellow', 'push_down': 'yes'}
-                                                }
-                                            ]},
-                                            {block: 'story-theme-yellow', mix: {block: 'story'}},
-                                            {block: 'story-theme-red', mix: {block: 'story'}},
-                                            {block: 'story-theme-blue', mix: {block: 'story'}}
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                block: 'user-icon',
+                                                mods: {'size': 'large', 'theme': 'yellow', 'push_down': 'yes'}
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        elem: 'stories',
+                                        content: [
+                                            {block: 'story_theme_yellow', mix: {block: 'story', js: true}},
+                                            {block: 'story_theme_red', mix: {block: 'story', js: true}},
+                                            {block: 'story_theme_blue', mix: {block: 'story', js: true}}
                                         ]
                                    },
                                     {block: 'users', mods: {'show_text': 'no', 'pos': 'bottom'}},

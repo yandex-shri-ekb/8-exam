@@ -118,22 +118,6 @@ var App = (function() {
         $user.attr('class', className);
     };
 
-    App.prototype._onHoverUser = function(e) {
-        e.stopPropagation();
-        var className = $(e.currentTarget).attr('class');
-        var theme = this._identifyTheme(className);
-        this._showUserText(theme);
-    };
-
-    App.prototype._showUserText = function(theme) {
-        var showClass = 'user__text_show_yes';
-
-        var $users = $('.users_pos_top').find('.user');
-        $users.find('.' + showClass).removeClass(showClass);
-        $users.filter('.user_theme_' + theme)
-            .children('.user__text').addClass(showClass);
-    };
-
     App.prototype._identifyTheme = function(className) {
         var theme;
         if(className.match(/theme_yellow/)) {

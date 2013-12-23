@@ -1,0 +1,16 @@
+.image_theme_red__bags
+{
+    background: url(image_theme_red__bags.png) no-repeat;
+    width: 566px;
+    height: 521px;
+}
+
+.image_theme_red__bags_push_down_yes
+{
+    margin-top: 278px;
+}
+
+.image_theme_red__bags_push_left_yes
+{
+    margin-left: -155px;
+}

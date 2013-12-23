@@ -6,17 +6,17 @@
     margin: 0 0 16px;
 }
 
-.header-atom__content_color_yellow
+.atom_theme_yellow .header-info__video-image
 {
     background-color: #ffe05d;
 }
 
-.header-info__video-image_color_red
+.atom_theme_red .header-info__video-image
 {
     background-color: #ff8282;
 }
 
-.header-info__video-image_color_blue
+.atom_theme_blue .header-info__video-image
 {
     background-color: #72c4f6;
 }

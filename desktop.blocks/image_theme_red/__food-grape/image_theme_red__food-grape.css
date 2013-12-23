@@ -1,0 +1,11 @@
+.image_theme_red__food-grape
+{
+    background: url(image_theme_red__food-grape.png) no-repeat;
+    width: 228px;
+    height: 231px;
+}
+
+.image_theme_red__food-grape_push_down_yes
+{
+    margin-top: 40px;
+}

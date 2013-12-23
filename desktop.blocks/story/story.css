@@ -1,0 +1,16 @@
+.story
+{
+    position: absolute;
+    top: 0;
+    left: -952px;
+}
+
+.story_show_yes
+{
+    display: block;
+}
+
+.story_show_no
+{
+    display: none;
+}

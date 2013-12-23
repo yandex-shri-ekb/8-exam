@@ -1,5 +1,8 @@
 modules.define('i-bem__dom', function(provide, BEMDOM) {
 
+    var LEDGE_WIDTH = 800;
+    var CONTENT_WIDTH = 972;
+
     BEMDOM.decl('atom-ledge', {
         onSetMod : {
             'js' : function() {
@@ -27,21 +30,23 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 
         _slide : function() {
             var page = this.findBlockOutside('page'),
-                $el = this.domElem,
+                $el  = this.domElem,
+                offsetChange,
                 offset;
 
             if(!this.hasMod('opened', 'yes')) {
-                offset = 800 - (page.domElem.width() - $el.offset().left);
-                if(offset > 0) {
-                    $el.animate({ 'left': '-=' + offset }, 300);
-                }
+                offset = LEDGE_WIDTH - (page.domElem.width() - $el.offset().left);
+                offsetChange = '-=' + offset;
             } else {
-                offset = 972 - $el.offset().left;
-                $el.animate({ 'left': '+=' + offset }, 300);
+                offset = CONTENT_WIDTH - $el.offset().left;
+                offsetChange = '+=' + offset;
             }
 
-            this.toggleMod('opened', 'yes');
-            page.toggleMod('active', 'yes');
+            if(offset > 0) {
+                $el.animate({ 'left': offsetChange }, 300);
+                this.toggleMod('opened', 'yes');
+                page.toggleMod('active', 'yes');
+            }
         }
     });
 

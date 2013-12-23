@@ -9,10 +9,10 @@ exports.blocks = [
                 "name": "meta"
             },
             {
-                "name": "js"
+                "name": "wrap"
             },
             {
-                "name": "wrap"
+                "name": "js"
             }
         ]
     },
@@ -24,14 +24,9 @@ exports.blocks = [
             },
             {
                 "name": "border"
-            }
-        ],
-        "mods": [
+            },
             {
-                "name": "theme",
-                "vals": [
-                    "red"
-                ]
+                "name": "stories"
             }
         ]
     },
@@ -57,13 +52,13 @@ exports.blocks = [
         ]
     },
     {
-        "name": "stories",
+        "name": "locomotive",
         "elems": [
             {
-                "name": "locomotive"
+                "name": "icons"
             },
             {
-                "name": "icons"
+                "name": "step-icon"
             }
         ]
     },
@@ -110,16 +105,16 @@ exports.blocks = [
         ]
     },
     {
-        "name": "story-theme-yellow"
+        "name": "story_theme_yellow"
     },
     {
         "name": "story"
     },
     {
-        "name": "story-theme-red"
+        "name": "story_theme_red"
     },
     {
-        "name": "story-theme-blue"
+        "name": "story_theme_blue"
     },
     {
         "name": "footer"

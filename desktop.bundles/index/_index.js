@@ -3852,16 +3852,328 @@ provide(browser);
 });
 /* ../../libs/bem-core/desktop.blocks/ua/ua.js end */
 ;
-/* ../../desktop.blocks/atom-ledge/atom-ledge.js begin */
-BEM.DOM.decl('atom-ledge', {
-    onSetMod : {
-        'js' : function() {
+/* ../../desktop.blocks/atom/atom.js begin */
+modules.define('i-bem__dom', function(provide, BEMDOM) {
 
+    BEMDOM.decl('atom', {
+        onSetMod: {
+            'js': function() {
+                this._calculateHeight();
+                this._setRandomTheme();
+            },
+            'theme': function(modName, modVal) {
+                this._activateTheme(modVal);
+            }
         },
-        'open': function() {
 
+        _setRandomTheme: function() {
+            var themes = ['yellow',  'red', 'blue'];
+            var theme = themes[this._getRandomInt(0, 2)];
+            this.setMod('theme', theme);
+        },
+
+        _activateTheme: function(theme) {
+            this.setMod(this.elem('content'), 'theme', theme);
+            var oldBlock = this.findBlockInside({'blockName': 'story', 'modName': 'active', modVal: 'yes'});
+            oldBlock && oldBlock.setMod('active', 'no');
+
+            var activeBlock = this.findBlockInside({'blockName': 'story', 'modName': 'theme', 'modVal': theme})
+            this.elem('stories').height(this._getHeight(theme));
+            activeBlock.setMod('active', 'yes');
+        },
+
+        _calculateHeight: function() {
+            var list = [];
+            this.findBlocksInside('story').forEach(function(item) {
+                list[item.getMod('theme')] = item.domElem.height();
+                item.setMod('show', 'no');
+            });
+            this._height = list;
+        },
+
+        _getHeight: function(theme) {
+            return this._height[theme];
+        },
+
+        _getRandomInt: function(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
         }
-    }
+    });
+
+    provide(BEMDOM);
+
+});
+/* ../../desktop.blocks/atom/atom.js end */
+;
+/* ../../desktop.blocks/user/user.js begin */
+modules.define('i-bem__dom', function(provide, BEMDOM) {
+
+    BEMDOM.decl('user', {
+        onSetMod: {
+            'js': function() {
+                this._bindToClick();
+                this._bindToMouseOver();
+            }
+        },
+
+        _bindToClick: function() {
+            this.bindTo('icon', 'click', this._onClick);
+        },
+
+        _bindToMouseOver: function() {
+            this.bindTo('mouseover', this._onMouseOver);
+        },
+
+        _onClick: function() {
+            var isTop = this.findBlockOutside('users').hasMod('pos', 'top'),
+                theme = this.getMod('theme'),
+                atom = this.findBlockOutside('atom');
+
+            !isTop && this._scrollToBegin();
+
+            theme !== atom.getMod('theme') && atom.setMod('theme', theme);
+        },
+
+        _scrollToBegin: function() {
+            var page = this.findBlockOutside('page');
+            var destination = page.findBlockInside({'blockName': 'users', 'modName': 'pos', 'modVal': 'top'});
+            var top = destination.domElem.offset().top;
+            page.domElem.animate({"scrollTop": top}, 500);
+        },
+
+        _onMouseOver: function(e) {
+            var text = this.elem('text');
+            !this.hasMod(text, 'show', 'yes') && this._showUserText();
+        },
+
+        _showUserText: function() {
+            var users = this.findBlockOutside('users'),
+                theme = this.getMod('theme'),
+                self  = this;
+
+            users.findBlocksInside('user').forEach(function(item) {
+                item = item.findElem('text', 'show', 'yes');
+                item && self.delMod(item, 'show');
+            });
+
+            var activeText = users.findBlockInside({'blockName': 'user', 'modName': 'theme', 'modVal': theme })
+                .findElem('text');
+            this.setMod(activeText, 'show', 'yes');
+        }
+    });
+
+    provide(BEMDOM);
+
+});
+/* ../../desktop.blocks/user/user.js end */
+;
+/* ../../desktop.blocks/locomotive/locomotive.js begin */
+modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
+
+    BEMDOM.decl('locomotive', {
+        onSetMod: {
+            'js': function() {
+
+                this._steps = [];
+                this._calculateThemeSteps();
+                this._bindToScroll();
+            },
+            'show': function(modName, modVal) {
+                this._activateThemeIcon();
+                modVal === 'yes' && this._calculateThemeSteps();
+            }
+        },
+
+        _bindToScroll: function() {
+            $(window).on('scroll', $.proxy(this._onScroll, this));
+        },
+
+        _onScroll: function(e) {
+            debugger;
+            var step = this._identifyStep();
+            step ? this._changeStepIcons(step) : this._hide();
+        },
+
+        _activateThemeIcon: function(theme) {
+            var icons = this.elem('.step-icon');
+            this.setMod(icons, 'active', 'no');
+            // TODO не знаю как отфильтровать элементы
+            var icon = this.findElem('step-icon', 'theme', theme);
+            this.setMod(icon, 'active', 'yes')
+        },
+
+        _activateUserIcon: function(theme) {
+            this.setMod(this.elem('user-icon'), 'theme', theme);
+        },
+
+        _identifyTheme: function() {
+            return this.getMod('theme');
+        },
+
+        _identifyStep: function() {
+            var stepNum = 0;
+            var windowTop = $(window).scrollTop();
+
+            this._steps.forEach(function(step, index) {
+                if(step.start <= windowTop && windowTop <= step.end) {
+                    stepNum = index;
+                }
+            });
+            return stepNum;
+        },
+
+        _calculateThemeSteps: function() {
+            var atom = this.findBlockOutside('atom');
+            var theme = atom.findBlockInside(
+                {
+                    'blockName': 'story',
+                    'modName': 'theme',
+                    'modVal': atom.getMod('theme')}
+                );
+
+            var self = this;
+
+            var lastStep = 4;
+
+            theme.findBlocksInside('step').forEach(function(step, i) {
+                var $step = step.domElem;
+                var start = $step.offset().top;
+                var end = start + $step.height();
+
+                // TODO оптимизировать
+                if(i === lastStep -1) {
+                    var users = atom.findBlockInside(
+                        {
+                            'blockName': 'users',
+                            'modName': 'pos',
+                            'modVal': 'bottom'
+                        }
+                    );
+                    end -= users.domElem.height() * 2;
+                }
+                self._steps[i+1] = { start: start, end: end };
+            });
+            this._steps = self._steps;
+        },
+
+        _changeStepIcons: function(step) {
+            if(step > 0) {
+                var icons = this.findBlocksInside('step-icon');
+                icons.forEach(function(icon) {
+                    icon.setMod('step', step);
+                });
+            }
+            this._show();
+        },
+
+        _show: function() {
+            this.setMod('show', 'yes');
+        },
+
+        _hide: function() {
+            this.setMod('show', 'no');
+        }
+
+    });
+
+    provide(BEMDOM);
+
+});
+/* ../../desktop.blocks/locomotive/locomotive.js end */
+;
+/* ../../desktop.blocks/story/story.js begin */
+modules.define('i-bem__dom', function(provide, BEMDOM) {
+
+    BEMDOM.decl('story', {
+        onSetMod: {
+            'active': function(modName, modVal) {
+                modVal === 'yes' ? this._activateTheme() : this._deactivateTheme();
+            },
+            'show': {
+                'no': function() {
+                    this.domElem.css({left: '-952px', top: 0});
+                }
+            }
+        },
+
+        _activateTheme: function() {
+            this.setMod('show', 'yes');
+            this.domElem.animate({left: '+=' + 952}, 300);
+        },
+
+        _deactivateTheme: function() {
+            var self = this;
+            debugger;
+            this.domElem.animate({left: '+=' + 952}, {
+                duration: 300,
+
+                complete: function() {
+                    self.setMod('show', 'no');
+                }
+            });
+        }
+    });
+
+provide(BEMDOM);
+
+});
+/* ../../desktop.blocks/story/story.js end */
+;
+/* ../../desktop.blocks/atom-ledge/atom-ledge.js begin */
+modules.define('i-bem__dom', function(provide, BEMDOM) {
+
+    var LEDGE_WIDTH = 800;
+    var CONTENT_WIDTH = 972;
+
+    BEMDOM.decl('atom-ledge', {
+        onSetMod : {
+            'js' : function() {
+                this._bindToClick();
+            }
+        },
+
+        _bindToClick : function() {
+            this.findBlockOutside('page')
+                .bindTo('click', this._onClickOutsideLedge);
+            this.bindTo('click', this._onClickInsideLedge);
+        },
+
+        _onClickInsideLedge : function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            !this.hasMod('opened', 'yes') && this._slide();
+        },
+
+        _onClickOutsideLedge : function(e) {
+            e.preventDefault();
+            var ledge = this.findBlockInside('atom-ledge');
+            ledge.hasMod('opened', 'yes') && ledge._slide();
+        },
+
+        _slide : function() {
+            var page = this.findBlockOutside('page'),
+                $el  = this.domElem,
+                offsetChange,
+                offset;
+
+            if(!this.hasMod('opened', 'yes')) {
+                offset = LEDGE_WIDTH - (page.domElem.width() - $el.offset().left);
+                offsetChange = '-=' + offset;
+            } else {
+                offset = CONTENT_WIDTH - $el.offset().left;
+                offsetChange = '+=' + offset;
+            }
+
+            if(offset > 0) {
+                $el.animate({ 'left': offsetChange }, 300);
+                this.toggleMod('opened', 'yes');
+                page.toggleMod('active', 'yes');
+            }
+        }
+    });
+
+    provide(BEMDOM);
+
 });
 /* ../../desktop.blocks/atom-ledge/atom-ledge.js end */
 ;

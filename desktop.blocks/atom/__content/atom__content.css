@@ -1,4 +1,24 @@
 .atom__content
 {
-    padding: 18px 0 18px 18px;
+    margin: 18px 0 18px 18px;
+}
+
+.atom__content_move_yes
+{
+    overflow: hidden;
+}
+
+.atom_theme_yellow .atom__content
+{
+    background: #ffe05d;
+}
+
+.atom_theme_red .atom__content
+{
+    background: #ff8282;
+}
+
+.atom_theme_blue .atom__content
+{
+    background: #72c4f6;
 }
