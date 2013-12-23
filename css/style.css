@@ -78,7 +78,7 @@ h3
     padding: 18px 0 0;
     position: absolute;
     top: -18px;
-    z-index: 1s0;
+    z-index: 10;
     bottom: -18px;
     width: 100%;
     -webkit-transition: left 300ms linear 0s;
@@ -1078,6 +1078,16 @@ h3
     background-position: 0 -70px;
 }
 
+.help__close
+{
+    background-position: -70px 0;
+}
+
+.help__close:hover
+{
+    background-position: -70px -70px;
+}
+
 .popup
 {
     height: 100%;
@@ -1122,4 +1132,9 @@ h3
 .popup__close:hover
 {
     background: url("../images/close_btn.png") no-repeat scroll -37px 0 rgba(0, 0, 0, 0);
+}
+
+.cursor_pointer
+{
+    cursor: pointer;
 }

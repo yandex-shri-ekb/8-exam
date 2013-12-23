@@ -9,9 +9,9 @@
 define(['jquery'], function($) {
 	
 	/** @define {object} */
-	var $popup     = $('.popup'); // Элемент popup
+	var $popup     = $('.popup'), // Элемент popup
 	/** @define {object} */
-	var $popupCont = $('.popup__content'); // Cодержимое popup
+	    $popupCont = $('.popup__content'); // Cодержимое popup
 
 	/**
 	 * Конструктор возвращаемого объекта
@@ -33,7 +33,7 @@ define(['jquery'], function($) {
 	 * События, которые происходят при клике по кнопке проигрывания видео
 	 */
     Popup.prototype.openPopUp = function(event) {
-    	$popupCont.append('<iframe width="762" height="429" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="http://player.vimeo.com/video/75709551"></iframe>');
+    	$popupCont.append('<iframe width="762" height="429" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true" src="//player.vimeo.com/video/75709551"></iframe>');
 		$popup.show();
 	}
 
