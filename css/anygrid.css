@@ -4,7 +4,6 @@
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    /*height: 100%;*/
 }
 
 .grid_cols_12:before, .grid_cols_12:after, .grid__row:before, .grid__row:after {
@@ -20,7 +19,7 @@
 .grid__module {
     float: left;
     position: relative;
-    outline: 1px solid red;
+    /*outline: 1px solid red;*/
 }
 
 .grid__module_span_1 {
