@@ -8,7 +8,7 @@ $(document).ready(function(){
     switchingPersonFloat();
     changeStatusPerson();
     topAfterClickPersonBottom();
-
+    openCloseIconToggle();
 });
 
 $( window ).resize(function() {
@@ -44,12 +44,7 @@ function toggleRightSide(){
                 }, 500);
 
         });
-        $('.close-icon').click(function(){
-            $('.close-icon').removeClass('close-icon').addClass('open-icon');
-            $('.b-right-side').animate({
-                left: "970px"
-            }, 500);
-        });
+
     } else{
 
         $('.b-right-side').css('cursor', 'default');
@@ -260,4 +255,24 @@ function randomPerson(){
 	
 	toggleClassActivePerson(parametrs.param1, parametrs.param2, parametrs.param3, parametrs.param4, parametrs.param5, parametrs.param6);  
 
+}
+
+
+function openCloseIconToggle(){
+    $('.open-close-icon').click(function(){
+        if($(this).hasClass('open-icon')){
+            var windowWidth = $(window).width();
+            var leftMargin = windowWidth-810;
+            $(this).removeClass('open-icon').addClass('close-icon');
+            $('.b-right-side').animate({
+                left: leftMargin
+            }, 500);
+        }else{
+            $('.close-icon').removeClass('close-icon').addClass('open-icon');
+            $('.b-right-side').animate({
+                left: "970px"
+            }, 500);
+        }
+
+    });
 }

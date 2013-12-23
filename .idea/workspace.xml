@@ -28,7 +28,7 @@
       <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="281" column="80" selection-start="21211" selection-end="21211" vertical-scroll-proportion="-78.0" vertical-offset="2749" max-vertical-offset="8160">
+            <state line="295" column="32" selection-start="21751" selection-end="21751" vertical-scroll-proportion="-9.153846" vertical-offset="4777" max-vertical-offset="8160">
               <folding />
             </state>
           </provider>
@@ -37,7 +37,7 @@
       <file leaf-file-name="script.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/html/js/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="0" selection-start="793" selection-end="793" vertical-scroll-proportion="0.53264606" vertical-offset="198" max-vertical-offset="4386">
+            <state line="276" column="7" selection-start="11488" selection-end="11488" vertical-scroll-proportion="0.9053452" vertical-offset="3879" max-vertical-offset="4811">
               <folding />
             </state>
           </provider>
@@ -46,7 +46,7 @@
       <file leaf-file-name="floating-switch.css" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/html/css/floating-switch.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="1" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4080">
+            <state line="16" column="1" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="4080">
               <folding />
             </state>
           </provider>
@@ -140,8 +140,8 @@
         <option value="$PROJECT_DIR$/html/css/b-footer.css" />
         <option value="$PROJECT_DIR$/html/css/b-right-side.css" />
         <option value="$PROJECT_DIR$/html/css/b-story.css" />
-        <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/css/floating-switch.css" />
+        <option value="$PROJECT_DIR$/html/index.html" />
         <option value="$PROJECT_DIR$/html/js/script.js" />
       </list>
     </option>
@@ -282,8 +282,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -408,13 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="281" column="80" selection-start="21211" selection-end="21211" vertical-scroll-proportion="-78.0" vertical-offset="2749" max-vertical-offset="8160">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/html/css/floating-switch.css">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="1" selection-start="292" selection-end="292" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4080">
@@ -422,9 +415,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="295" column="32" selection-start="21751" selection-end="21751" vertical-scroll-proportion="-9.153846" vertical-offset="4777" max-vertical-offset="8160">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/html/js/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="793" selection-end="793" vertical-scroll-proportion="0.53264606" vertical-offset="198" max-vertical-offset="4386">
+        <state line="276" column="7" selection-start="11488" selection-end="11488" vertical-scroll-proportion="0.9053452" vertical-offset="3879" max-vertical-offset="4811">
           <folding />
         </state>
       </provider>
