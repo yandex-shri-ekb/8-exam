@@ -632,7 +632,7 @@
 
 @media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003740}}
 .b-story-blue-path-5 {
-  bottom: -63px;
+  bottom: -45px;
 }
 
 /* Things */
@@ -661,91 +661,81 @@
   margin: 232px 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003784}}
-.b-story-blue-thing-9 {
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003776}}
+.b-story-blue-thing-7 {
+  margin: 90px 0 0 -18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003781}}
+.b-story-blue-thing-8 {
+  margin: 220px 0 0 -18px;
   z-index: 3;
-  margin: -50px 0 0 -18px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003790}}
-.b-story-blue-thing-10 {
-  z-index: 4;
-  margin: -95px 0 0 22px;
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003787}}
+.b-story-blue-thing-9 {
+  margin: 90px 0 0 4px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003796}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003797}}
 .b-story-blue-thing-11 {
-  margin: 25px 0 0 34px;
+  margin: 95px 0 0 -5px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003805}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003802}}
+.b-story-blue-thing-12 {
+  margin: -277px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003807}}
 .b-story-blue-thing-13 {
-  margin: 34px 0 0 -8px;
+  z-index: 3;
+  margin: 94px 0 0 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003810}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003813}}
 .b-story-blue-thing-14 {
-  margin: 222px 0 0;
+  margin: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003815}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003818}}
 .b-story-blue-thing-15 {
-  margin: 92px 0 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003820}}
-.b-story-blue-thing-16 {
-  margin: 1px 0 0 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003825}}
-.b-story-blue-thing-17 {
-  margin: 74px 0 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003830}}
-.b-story-blue-thing-18 {
-  margin: 74px 0 0;
-}
-
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003835}}
-.b-story-blue-thing-19 {
-  margin: 106px 0 0;
+  margin: -124px 0 0 -18px;
 }
 
 /* Texts */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003841}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003839}}
 .b-story-blue-text-1 {
   margin-top: 79px;
   margin-bottom: 95px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003847}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003845}}
 .b-story-blue-text-2 {
   margin-bottom: 89px;
   margin-top: 90px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003853}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003851}}
 .b-story-blue-text-3 {
   margin-bottom: 89px;
   margin-top: 90px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003859}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003857}}
 .b-story-blue-text-4 {
-  margin-bottom: 89px;
+  margin-bottom: 62px;
   margin-top: 90px;
 }
 
 /* Footer */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003866}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003864}}
 .b-copyright {
   margin-top: 100px;
 }
 
 /* Icons */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003872}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003870}}
 .b-atom-icon {
   display: block;
   width: 102px;
@@ -753,7 +743,7 @@
   background: url('/../img/sprites-s27797367d2.png') 0 -201px no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003880}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003878}}
 .b-icon-play {
   display: -moz-inline-stack;
   display: inline-block;
@@ -767,7 +757,7 @@
 }
 
 /* sidebar */
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003889}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003887}}
 .l-sidebar {
   position: absolute;
   left: 956px;
@@ -778,7 +768,7 @@
   border-left: 2px solid #000;
   z-index: 10;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003900}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003898}}
 .l-sidebar::before {
   display: block;
   width: 18px;
@@ -791,19 +781,19 @@
   bottom: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003914}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003912}}
 .b-sidebar {
   overflow: hidden;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003921}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003919}}
 .b-sidebar_yellow,
 .b-sidebar_red,
 .b-sidebar_blue {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003926}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003924}}
 .b-sidebar-toggle {
   display: block;
   position: fixed;
@@ -820,37 +810,37 @@
   transition: opacity 0.5s ease;
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003940}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003938}}
 .b-sidebar-toggle:hover {
   background: url('/../img/sprites-s27797367d2.png') 0 0 no-repeat;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003946}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003944}}
 .b-form-checkbox_sidebar-toggle {
   display: none;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003953}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003951}}
 .b-sidebar-status:checked + .b-sidebar-toggle {
   background: url('/../img/sprites-s27797367d2.png') 0 -333px no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003957}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003955}}
 .b-sidebar-status:checked + .b-sidebar-toggle:hover {
   background: url('/../img/sprites-s27797367d2.png') 0 -134px no-repeat;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003963}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003961}}
 .b-sidebar-status:checked ~ .l-wrapper-base > .l-sidebar {
   width: 700px;
   right: 0;
   left: auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003969}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003967}}
 .b-sidebar-status:checked ~ .l-wrapper-base > .l-sidebar .b-sidebar-toggle-overlay {
   width: 0;
   height: 0;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003977}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003975}}
 .b-sidebar-toggle-overlay {
   display: block;
   position: absolute;
@@ -861,14 +851,14 @@
 }
 
 @media (min-width: 1690px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003994}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\00003992}}
   .b-sidebar-status:checked ~ .l-wrapper-base > .l-sidebar {
     width: auto;
     right: 0;
     left: 956px;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\000031002}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\000031000}}
   .b-sidebar-toggle {
     opacity: 0;
     -webkit-transition: opacity 0.5s ease;
@@ -877,7 +867,7 @@
     transition: opacity 0.5s ease;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\000031008}}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/main\.scss}line{font-family:\000031006}}
   .b-sidebar-toggle-overlay {
     width: 0;
     height: 0;
