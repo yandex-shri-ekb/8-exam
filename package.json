@@ -1,0 +1,13 @@
+{
+  "name": "8-exam",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-cssmin": "~0.4.0",
+    "grunt-contrib-jshint": "~0.5.2",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-usemin": "~2.0.2"
+  }
+}
