@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	randomPerson();
     floatingSwitch();
     lightboxToggle();
     toggleRightSide();
@@ -7,6 +8,7 @@ $(document).ready(function(){
     switchingPersonFloat();
     changeStatusPerson();
     topAfterClickPersonBottom();
+
 });
 
 $( window ).resize(function() {
@@ -14,6 +16,7 @@ $( window ).resize(function() {
     toggleRightSide();
 
 });
+
 
 function toggleRightSide(){
 
@@ -241,4 +244,20 @@ function topAfterClickPersonBottom(){
     $('.b-person_bottom .b-person-avatar').click(function(){
         $('html, body').animate({scrollTop: 1500}, 'slow')
     });
+}
+
+
+function randomPerson(){
+
+	var themPerson= [
+		{param1: $('.b-person-avatar_max_small'), param2: 'b-container_blue', param3: 'b-container_red', param4: 'b-container_yellow', param5: $('.b-story-max'), param6: $('.b-right-side__max')},
+		{param1: $('.b-person-avatar_alex_small'), param2: 'b-container_blue', param3: 'b-container_yellow', param4: 'b-container_red', param5: $('.b-story-alex'), param6: $('.b-right-side__alex')},
+		{param1: $('.b-person-avatar_georgiy_small'), param2: 'b-container_yellow', param3: 'b-container_red', param4: 'b-container_blue', param5: $('.b-story-georgiy'), param6: $('.b-right-side__georgiy')}
+	]
+
+	var number = Math.floor(Math.random()*(3-0+1)+0);
+	var parametrs = themPerson [number]  
+	
+	toggleClassActivePerson(parametrs.param1, parametrs.param2, parametrs.param3, parametrs.param4, parametrs.param5, parametrs.param6);  
+
 }
