@@ -1,15 +1,22 @@
 modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
 
     BEMDOM.decl('aside', {
-        historyWidth: 972,
-        asideWidth: 860,
         onSetMod: {
             js: {
                 inited: function() {
+                    var self = this;
+                    this._setWidths();
                     this._resetButtonVisibility();
                     this.bindTo('button', 'click', this._onButtonClick);
-                    $(window).on('resize', $.proxy(this._resetButtonVisibility, this));
-                    $(window).on('resize', $.proxy(this._resetAsidePosition, this));
+
+                    $(window).on('resize', function() {
+                        clearTimeout(self.timer);
+                        self.timer = setTimeout(function() {
+                            self._resetButtonVisibility();
+                            self._resetAsidePosition();
+                        }, 200);
+                    });
+
                     this.on('openAside', this._openAside);
                     this.on('closeAside', this._closeAside);
                 }
@@ -22,6 +29,13 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                     this.domElem.animate({left: this.historyWidth});
                 }
             }
+        },
+        _setWidths: function() {
+            var content = this.findBlockOutside('content').elem('history'),
+                asideItems = this.findBlockInside('aside-items').elem('inner'),
+                borderWidth = parseInt(content.css('border-right-width'));
+            this.historyWidth = parseInt(content.outerWidth(true)) - borderWidth;
+            this.asideWidth = parseInt(asideItems.outerWidth());
         },
         _onButtonClick: function() {
             if(this.hasMod('opened', 'yes')) {

@@ -4,12 +4,12 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         onSetMod: {
             js: {
                 inited: function() {
-                    this._popup = this.findBlockOn('popup', 'popup');
+                    this._popup = this.findBlockInside('popup');
                     this._page = this.findBlockOn('page');
 
                     this.bindTo('link', 'click', this._onLinkClick);
-                    this._popup.bindTo('click', $.proxy(this._hidePopup, this));
-                    this._popup.bindTo('close', 'click', $.proxy(this._hidePopup, this));
+                    this.bindTo('popup', 'click', this._hidePopup);
+                    this.bindTo('close', 'click', this._hidePopup);
                 }
             }
         },

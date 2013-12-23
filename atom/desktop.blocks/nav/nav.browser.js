@@ -19,7 +19,7 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         _onIcoClick: function(e) {
             var color = this.getMod($(e.delegateTarget), 'color');
             this.trigger('colorChange', {color: color});
-        },
+        }
     });
 
     provide(BEMDOM);
