@@ -1,17 +1,19 @@
 .story-red-part-1
 {
-    padding: 0 0 240px;
     margin: 0 0 50px;
+    padding: 0 0 240px;
 }
 
 .story-red-part-1__bg
 {
     position: absolute;
+    top: 230px;
+    left: 0;
+
     width: 100%;
     height: 565px;
+
     background: url("../images/red/story-red-part-1__bg.png") 215px 0 no-repeat;
-    left: 0;
-    top: 230px;
 }
 
 .image_red-painting
@@ -27,8 +29,8 @@
 .image_red-passport
 {
     position: absolute;
-    bottom: -110px;
     right: -170px;
+    bottom: -110px;
 }
 
 .image_red-book
@@ -41,8 +43,8 @@
 .image_red-bear
 {
     position: absolute;
-    left: -234px;
     top: 130px;
+    left: -234px;
 }
 
 .story-red-part-2
@@ -54,11 +56,13 @@
 .story-red-part-2__bg
 {
     position: absolute;
+    top: 260px;
+    left: 0;
+
     width: 100%;
     height: 565px;
+
     background: url("../images/red/story-red-part-2__bg.png") 79px 0 no-repeat;
-    left: 0;
-    top: 260px;
 }
 
 .story-red-part-2__row-1
@@ -92,8 +96,8 @@
 
 .story-red-part-3
 {
-    padding: 0 0 250px;
     margin: 0 0 60px;
+    padding: 0 0 250px;
 }
 
 .image_red-imac
@@ -102,15 +106,16 @@
 
 .image_red-lisence
 {
-    margin-top: 60px;
     position: relative;
+
+    margin-top: 60px;
 }
 
 .image_red-keys
 {
-    bottom: -38px;
     position: absolute;
     right: -80px;
+    bottom: -38px;
 }
 
 .story-red-part-4
@@ -121,80 +126,83 @@
 .story-red-part-3__bg
 {
     position: absolute;
+    top: 275px;
+    left: 0;
+
     width: 100%;
     height: 565px;
+
     background: url("../images/red/story-red-part-3__bg.png") 132px 0 no-repeat;
-    left: 0;
-    top: 275px;
 }
 
 .image_red-bags
 {
-    right: -30px;
     position: absolute;
     top: 30px;
+    right: -30px;
 }
 
 .image_red-cup
 {
-    left: 15px;
     position: absolute;
     top: -30px;
+    left: 15px;
 }
 
 .story-red-part-5
 {
     height: 565px;
-    background: url("../images/red/story-red-part-5__bg.png") 472px 0 no-repeat;
     margin-top: 30px;
+
+    background: url("../images/red/story-red-part-5__bg.png") 472px 0 no-repeat;
 }
 
 .image_red-fish
 {
-    left: -288px;
     position: absolute;
     top: 30px;
+    left: -288px;
 }
 
 .image_red-breakfast
 {
-    left: 140px;
     position: absolute;
     top: 22px;
+    left: 140px;
 }
 
 .image_red-fruit
 {
     position: absolute;
-    right: -66px;
     top: 15px;
+    right: -66px;
 }
 
 .image_red-juice
 {
-    left: 55px;
     position: absolute;
     top: 196px;
+    left: 55px;
 }
 
 .image_red-wineglass1
 {
     position: absolute;
-    right: 395px;
     top: 245px;
+    right: 395px;
 }
 
 .image_red-wineglass2
 {
     position: absolute;
-    right: 74px;
     top: 245px;
+    right: 74px;
 }
 
 /* красное вино =D */
 .image_red-wine
 {
     position: absolute;
-    right: 186px;
     top: 72px;
+    right: 186px;
 }

@@ -1,17 +1,20 @@
 .dev [class*="col-"]
 {
-    background: rgba(100, 100, 100, 0.3);
     outline: 1px solid #000;
+    background: rgba(100, 100, 100, 0.3);
 }
 
 .dev__grid
 {
     position: fixed;
-    top: 40px;
-    opacity: 0.5;
     z-index: 1000;
-    width: 954px;
+    top: 40px;
+
     display: none;
+
+    width: 954px;
+
+    opacity: 0.5;
 }
 
 .dev .dev__grid
@@ -21,6 +24,7 @@
 
 .dev__grid [class*="col-"]
 {
-    font-size: 30px;
     text-align: center;
+
+    font-size: 30px;
 }

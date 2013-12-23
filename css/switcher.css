@@ -1,10 +1,12 @@
 
 .char
 {
-    cursor: pointer;
     float: left;
-    text-align: center;
+
     width: 33.33%;
+
+    cursor: pointer;
+    text-align: center;
 }
 
 .char__image
@@ -12,24 +14,29 @@
     width: 142px;
     height: 142px;
     margin: 0 auto;
+
     background: url("../images/char__image.png") no-repeat transparent;
 }
 
 .char__name
 {
+    padding: 5px 0 0;
+
+    text-align: center;
+
     font-size: 16px;
     font-weight: 700;
     line-height: 24px;
-    padding: 5px 0 0;
-    text-align: center;
 }
 
 .char-text
 {
-    text-align: center;
     display: none;
+
     min-height: 100px;
     margin-top: 15px;
+
+    text-align: center;
 }
 
 .char-yellow
@@ -120,23 +127,27 @@
 .switcher-bottom
 {
     padding: 30px 0 50px;
+
     border-bottom: 2px solid #000;
 }
 
 .char-floated
 {
     position: fixed;
-    top: 50%;
-    width: 954px;
     z-index: 20;
+    top: 50%;
+
     display: none;
+
+    width: 954px;
 }
 
 .char-floated__image
 {
-    margin: -110px auto 0;
     width: 220px;
     height: 220px;
+    margin: -110px auto 0;
+
     background: url("../images/char__image.png") no-repeat transparent;
 }
 
@@ -158,10 +169,13 @@
 .switcher-floated
 {
     position: fixed;
-    top: 40px;
-    width: 954px;
     z-index: 20;
+    top: 40px;
+
     display: none;
+
+    width: 954px;
+
     text-align: center;
 }
 
@@ -172,11 +186,14 @@
 
 .char-state
 {
-    height: 96px;
-    width: 96px;
-    background: url("../images/char-state.png") no-repeat transparent;
     display: none;
+
+    width: 96px;
+    height: 96px;
+
     cursor: pointer;
+
+    background: url("../images/char-state.png") no-repeat transparent;
 }
 
 .char-state-yellow-1

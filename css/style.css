@@ -6,10 +6,12 @@ html
 body
 {
     height: 100%;
-    padding: 0;
     margin: 0;
-    font: 13px Arial, sans-serif;
+    padding: 0;
+
     color: #000;
+
+    font: 13px Arial, sans-serif;
 }
 
 .b-page
@@ -20,8 +22,10 @@ body
 .layout
 {
     position: relative;
-    min-height: 100%;
+
     overflow: hidden;
+
+    min-height: 100%;
     padding: 18px;
 }
 
@@ -33,19 +37,22 @@ body
 .layout__floated
 {
     position: absolute;
+    z-index: 5;
     top: -18px;
     bottom: -18px;
-    z-index: 5;
-    width: 100%;
     left: 970px;
+
+    width: 100%;
     padding: 18px 0 0;
-    border-left: 2px solid #000;
+
+    cursor: pointer;
     -webkit-transition: left 200ms linear;
     -moz-transition: left 200ms linear;
     -o-transition: left 200ms linear;
     transition: left 200ms linear;
+
+    border-left: 2px solid #000;
     background: #FFF;
-    cursor: pointer;
 }
 
 .layout__floated:before
@@ -54,8 +61,11 @@ body
     top: 0;
     bottom: 0;
     left: -18px;
+
     width: 18px;
+
     content: "";
+
     background: rgba(0, 0, 0, 0.2);
 }
 
@@ -73,6 +83,7 @@ body
 .info__block
 {
     padding: 0 35px;
+
     border-bottom: 2px solid #000;
 }
 
@@ -88,18 +99,20 @@ body
 
 .info__holder
 {
-    padding: 35px 0;
     width: 800px;
+    padding: 35px 0;
 }
 
 .story-container
 {
-    border: 2px solid #000;
-    border-right: none;
     -webkit-transition: background-color 200ms linear;
     -moz-transition: background-color 200ms linear;
     -o-transition: background-color 200ms linear;
     transition: background-color 200ms linear;
+
+    border: 2px solid #000;
+    border-right: none;
+
     /*-webkit-transform: translateZ(0);*/
     background-color: #F6F5F3;
 }
@@ -117,15 +130,19 @@ body
 .story-header
 {
     position: relative;
+
     padding: 80px 0;
-    background: #FFF;
+
     border-bottom: 2px solid #000;
+    background: #FFF;
 }
 
 .footer
 {
     position: relative;
+
     padding: 80px 0;
+
     background: #FFF;
 }
 
@@ -167,8 +184,10 @@ body
 .frame
 {
     position: relative;
+
     width: 750px;
     height: 435px;
+
     background: url("../images/frame.png") no-repeat;
 }
 
@@ -177,6 +196,7 @@ body
     position: absolute;
     top: 10px;
     left: 10px;
+
     width: 720px;
     height: 405px;
 }
@@ -184,21 +204,25 @@ body
 .header
 {
     position: relative;
+
     border-bottom: 2px solid #000;
 }
 
 .header__logo
 {
-    padding-top: 16px;
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    left: 50%;
+
     width: 138px;
     height: 76px;
-    background: url("../images/header__logo.png") no-repeat;
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top: -2px;
     margin-left: -69px;
-    z-index: 1;
+    padding-top: 16px;
+
+    text-align: center;
+
+    background: url("../images/header__logo.png") no-repeat;
 }
 
 .header__logo-inner
@@ -206,30 +230,36 @@ body
     width: 83px;
     height: 34px;
     margin: 0 auto 3px;
+
     background-image: url("../images/header__logo-inner.png");
 }
 
 .header__text
 {
-    text-align: center;
     padding-top: 420px;
+
+    text-align: center;
+
     font: 48px/1 "Myriad Pro", Arial;
 }
 
 .banner
 {
     position: relative;
+
     height: 590px;
 }
 
 .banner__bg
 {
     position: absolute;
-    width: 970px;
-    height: 570px;
-    background: url("../images/banner__bg.png") no-repeat;
     top: -18px;
     left: -18px;
+
+    width: 970px;
+    height: 570px;
+
+    background: url("../images/banner__bg.png") no-repeat;
 }
 
 .video-btn
@@ -241,19 +271,22 @@ body
 {
     width: 140px;
     height: 80px;
+
     cursor: pointer;
-    -moz-border-radius: 4px;
-    -webkit-border-radius: 4px;
-    border-radius: 4px;
+
     border: 2px solid #000;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
     background: #F6F5F3 url("../images/video-btn__btn.png") 50% 50% no-repeat;
 }
 
 .video-btn__text
 {
+    margin-top: 5px;
+
     font-size: 16px;
     line-height: 24px;
-    margin-top: 5px;
 }
 
 .b-page_yellow .video-btn__btn
@@ -288,6 +321,7 @@ body
 .image
 {
     z-index: 1;
+
     display: block;
 }
 
@@ -310,12 +344,15 @@ body
 .open-btn
 {
     position: fixed;
-    right: 36px;
-    top: 36px;
     z-index: 20;
+    top: 36px;
+    right: 36px;
+
     width: 65px;
     height: 69px;
+
     cursor: pointer;
+
     background: url("../images/open-btn.png") no-repeat;
 }
 
