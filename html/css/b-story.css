@@ -1,0 +1,423 @@
+.b-story
+{
+    position: relative;
+    height: 3230px;
+    width: 100%;
+    display: none;
+}
+
+.b-story.active
+{
+    display: block;
+}
+
+.b-story-georgiy:after,
+.b-story-alex:after,
+.b-story-max:after
+{
+    content: "";
+    position: absolute;
+    display: block;
+    left: 96px;
+    top: -34px;
+    background: url("../img/georgiy/b-story-georgiy-line.png") no-repeat;
+    width: 762px;
+    height: 3280px;
+}
+
+.b-story-alex:after
+{
+    background: url("../img/alex/path.png") no-repeat;
+}
+
+.b-story-max:after
+{
+    background: url("../img/max/path.png") no-repeat;
+}
+
+.b-story__first,
+.b-story__second,
+.b-story__third,
+.b-story__fourth
+{
+    height: 800px;
+    position: relative;
+}
+
+.b-description-step
+{
+    width: 294px;
+    padding: 80px 0 0;
+    margin: 0 96px 0;
+}
+
+.b-description-step_right
+{
+    float: right;
+}
+
+.b-story-img-fon
+{
+    position: absolute;
+}
+
+.b-story-georgiy__img-notebook
+{
+    left: 504px;
+    top: 90px;
+}
+
+.b-story-georgiy__img-phone
+{
+    left: -18px;
+    top: 338px;
+}
+
+.b-story-georgiy__img-pen
+{
+    left: 340px;
+    top: 335px;
+}
+
+.b-story-georgiy__img-ticket
+{
+    left: 426px;
+    top: 445px;
+}
+
+.b-story-georgiy__img-watch
+{
+    left: 504px;
+    top: 602px;
+    z-index: 2;
+}
+
+.b-story-georgiy__img-photo
+{
+    left: 816px;
+    top: 558px;
+}
+
+.b-story-georgiy__img-paper
+{
+    left: -18px;
+    top: 98px;
+}
+
+.b-story-georgiy__img-ipad
+{
+    left: 174px;
+    top: 98px;
+}
+
+.b-story-georgiy__img-mask
+{
+    left: 564px;
+    top: 338px;
+    z-index: 2;
+}
+
+.b-story-georgiy__img-note
+{
+    left: -18px;
+    top: 245px;
+}
+
+.b-story-georgiy__img-cup
+{
+    left: 330px;
+    top: 466px;
+}
+
+.b-story-georgiy__img-trubka
+{
+    left: 720px;
+    top: 98px;
+    z-index: 3;
+}
+
+.b-story-georgiy__img-iphone
+{
+    left: 174px;
+    top: 338px;
+    z-index: 2;
+}
+
+.b-story-georgiy__img-cards
+{
+    left: 408px;
+    top: 338px;
+}
+
+.b-story-georgiy__img-krug
+{
+    left: 798px;
+    top: -55px;
+}
+
+.b-story-georgiy__img-money
+{
+    left: 798px;
+    top: 485px;
+}
+
+.b-story-georgiy__img-tie
+{
+    left: 486px;
+    top: 98px;
+}
+
+.b-story-georgiy__img-bag
+{
+    left: -18px;
+    top: -123px;
+    z-index: 2;
+}
+
+.b-story-georgiy__img-newspaper
+{
+    left: 96px;
+    top: 318px;
+}
+
+.b-story-georgiy__img-magazine
+{
+    left: 486px;
+    top: 318px;
+    z-index: 2;
+}
+
+.b-story-georgiy__img-book
+{
+    left: 858px;
+    top: 428px;
+}
+
+.b-story-alex__img-portrate
+{
+    left: 96px;
+    top: 340px;
+    z-index: 2;
+}
+
+.b-story-alex__img-tour
+{
+    left: 486px;
+    top: 89px;
+}
+
+.b-story-alex__img-passport
+{
+    left: 564px;
+    top: 486px;
+}
+
+.b-story-alex__img-bear
+{
+    left: -18px;
+    top: 694px;
+    z-index: 3;
+}
+
+.b-story-alex__img-book
+{
+    left: 174px;
+    top: 648px;
+    z-index: 2;
+}
+
+
+.b-story-alex__img-iphone
+{
+    left: 96px;
+    top: 378px;
+}
+
+.b-story-alex__img-bill
+{
+    left: 330px;
+    top: 338px;
+}
+
+.b-story-alex__img-linzy
+{
+    left: 486px;
+    top: 378px;
+    z-index: 2;
+}
+
+.b-story-alex__img-tamagochi
+{
+    left: -18px;
+    top: 673px;
+}
+
+.b-story-alex__img-glasses
+{
+    left: 564px;
+    top: 715px;
+    z-index: 2;
+}
+
+.b-story-alex__img-lisence
+{
+    left: 96px;
+    top: 338px;
+    z-index: 2;
+}
+
+.b-story-alex__img-imac
+{
+    left: 564px;
+    top: 98px;
+}
+
+.b-story-alex__img-cap
+{
+    left: 522px;
+    top: 507px;
+}
+
+.b-story-alex__img-bags
+{
+    left: -18px;
+    top: 578px;
+    z-index: 2;
+}
+
+.b-story-alex__img-key
+{
+    left: 250px;
+    top: 415px;
+    z-index: 3;
+}
+
+.b-story-alex__img-food
+{
+    left: -18px;
+    top: 338px;
+}
+
+.b-story-alex__img-drinks
+{
+    left: 88px;
+    top: 380px;
+    z-index: 2;
+}
+
+.b-story-max__aviaticket
+{
+    left: -18px;
+    top: 318px;
+    z-index: 2;
+}
+
+.b-story-max__map
+{
+    left: 486px;
+    top: -36px;
+    z-index: 2;
+}
+
+.b-story-max__compass
+{
+    left: 564px;
+    top: 318px;
+}
+
+.b-story-max__book
+{
+    left: 798px;
+    top: 318px;
+}
+
+.b-story-max__palaroid
+{
+    left: -18px;
+    top: 358px;
+}
+
+.b-story-max__laptop
+{
+    left: 80px;
+    top: 96px;
+}
+
+.b-story-max__iphone
+{
+    left: 642px;
+    top: 318px;
+    z-index: 2;
+}
+
+.b-story-max__ticket
+{
+    left: 358px;
+    top: 398px;
+}
+
+.b-story-max__aeroexpress
+{
+    left: -18px;
+    top: 326px;
+    z-index: 2;
+}
+
+.b-story-max__money
+{
+    left: 426px;
+    top: 278px;
+    z-index: 3;
+}
+
+.b-story-max__vogue
+{
+    left: 750px;
+    top: -80px;
+    z-index: 2;
+}
+
+.b-story-max__ipod
+{
+    left: 642px;
+    top: 412px;
+}
+
+.b-story-max__traffic
+{
+    left: 174px;
+    top: 596px;
+    z-index: 2;
+}
+
+.b-story-max__backpack
+{
+    left: 96px;
+    top: 80px;
+}
+
+.b-story-max__carton
+{
+    left: 564px;
+    top: 320px;
+    z-index: 2;
+}
+
+.b-story-max__notebook
+{
+    left: 174px;
+    top: 538px;
+}
+
+.b-story-max__bottle
+{
+    left: 408px;
+    top: 538px;
+}
+
+.b-story-max__camera
+{
+    left: 564px;
+    top: 564px;
+    z-index: 2;
+}

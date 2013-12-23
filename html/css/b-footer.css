@@ -1,0 +1,31 @@
+.b-footer
+{
+    border-top: 2px solid #000;
+}
+
+.b-footer-feedback
+{
+    margin: 30px 0 80px;
+}
+
+.b-footer-feedback__menu
+{
+    list-style: none;
+    float: left;
+    margin: 0 58px 0 96px;
+}
+
+.b-footer-feedback__menu li
+{
+    margin-bottom: 0 18px 0 0;
+    display: inline-block;
+}
+
+.b-footer-feedback__menu li a,
+.b-footer-feedback__menu li a:hover,
+.b-footer-feedback__menu li a:visited,
+.b-footer-feedback__menu li a:active
+{
+    color: #000;
+    text-decoration: none;
+}
