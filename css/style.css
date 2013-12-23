@@ -284,7 +284,8 @@ h3
     left: -1px;
 }
 
-.btn_play
+.btn_play,
+.foot__logo
 {
     margin: 0 0 0 18px;
 }
@@ -333,7 +334,6 @@ h3
 .person__blue
 {
     cursor: pointer;
-    height: 138px;
 }
 
 .person__yellow__avatar
@@ -430,7 +430,7 @@ h3
     border-bottom: 2px solid #000;
 }
 
-.yellow_active
+.person__yellow .active
 {
     background: url("../images/persons.png") no-repeat scroll center -450px rgba(0, 0, 0, 0);
     height: 174px;
@@ -439,7 +439,7 @@ h3
     cursor: default;
 }
 
-.red_active
+.person__red .active
 {
     background: url("../images/persons.png") no-repeat scroll center -634px rgba(0, 0, 0, 0);
     height: 174px;
@@ -448,7 +448,7 @@ h3
     cursor: default;
 }
 
-.blue_active
+.person__blue .active
 {
     background: url("../images/persons.png") no-repeat scroll center -818px rgba(0, 0, 0, 0);
     height: 174px;
@@ -1137,4 +1137,24 @@ h3
 .cursor_pointer
 {
     cursor: pointer;
+}
+
+.view
+{
+    display: block;
+}
+
+.yellow__color
+{
+    background-color: #ffe05d;
+}
+
+.red__color
+{
+    background-color: #ff8282;
+}
+
+.blue__color
+{
+    background-color: #72cff6;
 }

@@ -5,7 +5,6 @@ require(['jquery',
 	new Popup();
 	$(document).ready(function () {
 		new Slide();
-		//var app = new App();
-		//app.first();
+		new App().init();
 	});
 });

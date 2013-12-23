@@ -11,7 +11,7 @@ define(['jquery'], function($) {
 	/** @define {object} */
 	var $helpBtn = $('.help'), // Элемент для показа правого блока
 	/** @define {object} */
-	    $right   = $('.right'); // Правый блок
+	    $right   = $('.right'), // Правый блок
 	/** @define {object} */
 	    $content = $('.content'); // Основное содержимое страницы
 
@@ -66,7 +66,7 @@ define(['jquery'], function($) {
 	}
 
 	/**
-	 * @return {[string]} размер рабочей области браузера
+	 * @return {string} размер рабочей области браузера
 	 */
 	function widthViewPort() {
 		return $(window).width();
