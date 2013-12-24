@@ -11,9 +11,9 @@
 .grid_11,
 .grid_12
 {
+    position: relative;
     display:inline;
     float: left;
-    position: relative;
 }
 
 .gutter_left
@@ -198,10 +198,10 @@
 
 .clear
 {
-  clear: both;
   display: block;
-  overflow: hidden;
   visibility: hidden;
+  clear: both;
+  overflow: hidden;
   width: 0;
   height: 0;
 }

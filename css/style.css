@@ -6,11 +6,11 @@ body
 
 body
 {
+    min-width: 990px;
+    min-height: 100%;
     background: #FFFFFF;
     color: #000;
     font: 400 16px/24px Arial,Helvetica,sans-serif;
-    min-height: 100%;
-    min-width: 990px;
 }
 
 a
@@ -33,17 +33,17 @@ ul
 
 h3
 {
-    font: 400 24px/24px Arial,Helvetica,sans-serif;
     margin: 18px 0;
+    font: 400 24px/24px Arial,Helvetica,sans-serif;
 }
 
 .content
 {
-    background: #e7e7e7;
-    margin: 18px;
-    border: 2px solid #000;
     position: relative;
+    margin: 18px;
     width: 952px;
+    border: 2px solid #000;
+    background: #e7e7e7;
     -webkit-transition: background-color 300ms linear 0s;
        -moz-transition: background-color 300ms linear 0s;
         -ms-transition: background-color 300ms linear 0s;
@@ -53,34 +53,34 @@ h3
 
 .wrapper
 {
-    overflow: hidden;
     position: relative;
+    overflow: hidden;
 }
 
 .right:before
 {
-    background: rgba(0, 0, 0, 0.2);
-    bottom: 0;
-    content: "";
-    left: -18px;
     position: absolute;
     top: 0;
-    width: 18px;
+    bottom: 0;
+    left: -18px;
     z-index: 10;
+    width: 18px;
+    background: rgba(0, 0, 0, 0.2);
+    content: "";
 }
 
 .right
 {
-    background: #fff;
-    border-left: 2px solid #000;
-    cursor: pointer;
-    left: 972px;
-    padding: 18px 0 0;
     position: absolute;
     top: -18px;
-    z-index: 10;
     bottom: -18px;
+    left: 972px;
+    z-index: 10;
+    padding: 18px 0 0;
     width: 100%;
+    border-left: 2px solid #000;
+    background: #fff;
+    cursor: pointer;
     -webkit-transition: left 300ms linear 0s;
        -moz-transition: left 300ms linear 0s;
         -ms-transition: left 300ms linear 0s;
@@ -106,9 +106,9 @@ h3
 
 .right__header__logo
 {
-    left: 680px;
     position: absolute;
     top: 47px;
+    left: 680px;
 }
 
 .right__header__img
@@ -117,17 +117,17 @@ h3
 }
 
 .right__intro
-{ 
+{
+    height: 780px; 
     border-bottom: 2px solid #000;
-    height: 780px;
 }
 
 .right__intro__video
 {
-    background: url("../images/right_video.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    margin: 30px 0 0;
     width: 712px;
     height: 405px;
-    margin: 30px 0 0;
+    background: url("../images/right_video.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 .right__intro__video__cont
@@ -139,74 +139,74 @@ h3
 
 .right__yellow__block1
 {
-    border-bottom: 2px solid #000;
     height: 758px;
+    border-bottom: 2px solid #000;
 }
 
 .right__yellow__block2
 {
-    border-bottom: 2px solid #000;
     height: 767px;
+    border-bottom: 2px solid #000;
 }
 
 .right__yellow__block3
 {
-    border-bottom: 2px solid #000;
     height: 768px;
+    border-bottom: 2px solid #000;
 }
 
 .right__yellow__block4
 {
-    border-bottom: 2px solid #000;
     height: 788px;
+    border-bottom: 2px solid #000;
 }
 
 .right__red__block1
 {
-    border-bottom: 2px solid #000;
     height: 768px;
+    border-bottom: 2px solid #000;
 }
 
 .right__red__block2
 {
-    border-bottom: 2px solid #000;
     height: 769px;
+    border-bottom: 2px solid #000;
 }
 
 .right__red__block3
 {
-    border-bottom: 2px solid #000;
     height: 826px;
+    border-bottom: 2px solid #000;
 }
 
 .right__red__block4
 {
-    border-bottom: 2px solid #000;
     height: 768px;
+    border-bottom: 2px solid #000;
 }
 
 .right__blue__block1
 {
-    border-bottom: 2px solid #000;
     height: 768px;
+    border-bottom: 2px solid #000;
 }
 
 .right__blue__block2
 {
-    border-bottom: 2px solid #000;
     height: 766px;
+    border-bottom: 2px solid #000;
 }
 
 .right__blue__block3
 {
-    border-bottom: 2px solid #000;
     height: 768px;
+    border-bottom: 2px solid #000;
 }
 
 .right__blue__block4
 {
-    border-bottom: 2px solid #000;
     height: 780px;
+    border-bottom: 2px solid #000;
 }
 
 .link
@@ -217,21 +217,21 @@ h3
 
 .header
 {
-    height: 589px;
     padding: 0 16px;
+    height: 589px;
     border-bottom: 2px solid #000;
 }
 
 .substrate
 {
-    background: url("../images/background.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 570px;
-    width: 100%;
-    left: -36px;
     position: relative;
     top: -20px;
-    width: 972px;
+    left: -36px;
     z-index: 1;
+    width: 100%;
+    width: 972px;
+    height: 570px;
+    background: url("../images/background.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 .ticket
@@ -241,39 +241,39 @@ h3
 
 .label
 {
-    background: url("../images/label.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 92px;
     position: relative;
     top: -2px;
-    width: 138px;
     display: block;
+    width: 138px;
+    height: 92px;
+    background: url("../images/label.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 .logo
 {
-    display: block;
-    background: url("../images/logo_ya.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 30px;
     position: relative;
     top: 18px;
-    width: 78px;
+    display: block;
     margin: 0 auto;
+    width: 78px;
+    height: 30px;
+    background: url("../images/logo_ya.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 .title
 {
-    font: 44px/48px Arial,Helvetica,sans-serif;
     position: absolute;
-    text-align: center;
     top: 421px;
     z-index: 2;
+    text-align: center;
+    font: 44px/48px Arial,Helvetica,sans-serif;
 }
 
 .intro
 {
+    padding: 80px 16px;
     height: 232px;
     border-bottom: 2px solid #000;
-    padding: 80px 16px;
     background: #fff;
 }
 
@@ -292,9 +292,9 @@ h3
 
 .play
 {
-    background: url("../images/btn_play.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 80px;
     width: 138px;
+    height: 80px;
+    background: url("../images/btn_play.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     cursor: pointer;
     -webkit-transition: background-color 300ms linear 0s;
        -moz-transition: background-color 300ms linear 0s;
@@ -311,8 +311,8 @@ h3
 
 .persons
 {
-    height: 222px;
     padding: 80px 16px;
+    height: 222px;
 }
 
 .persons__switch
@@ -327,8 +327,8 @@ h3
 
 .person__red
 {
-    cursor: pointer;
     margin: 0 96px;
+    cursor: pointer;
 }
 
 .person__blue
@@ -338,38 +338,38 @@ h3
 
 .person__yellow__avatar
 {
-    background: url("../images/persons.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
-    height: 138px;
     width: 138px;
+    height: 138px;
+    background: url("../images/persons.png") no-repeat scroll center 0 rgba(0, 0, 0, 0);
 }
 
 .person__red__avatar
 {
-    background: url("../images/persons.png") no-repeat scroll center -147px rgba(0, 0, 0, 0);
-    height: 138px;
     width: 138px;
+    height: 138px;
+    background: url("../images/persons.png") no-repeat scroll center -147px rgba(0, 0, 0, 0);
 }
 
 .person__blue__avatar
 {
-    background: url("../images/persons.png") no-repeat scroll center -297px rgba(0, 0, 0, 0);
-    height: 138px;
     width: 138px;
+    height: 138px;
+    background: url("../images/persons.png") no-repeat scroll center -297px rgba(0, 0, 0, 0);
 }
 
 .person__name
 {
-    text-align: center;
-    font-weight: 700;
     margin: 10px 0 0 -5px;
     width: 150px;
+    text-align: center;
+    font-weight: 700;
 }
 
 .person__desc
 {
     display: none;
-    text-align: center;
     margin: 13px 0 0 -78px;
+    text-align: center;
 }
 
 .person__yellow:hover .person__desc,
@@ -380,9 +380,9 @@ h3
 }
 
 .history
-{
-    padding: 0 16px; 
+{ 
     overflow: hidden;
+    padding: 0 16px;
 }
 
 .histort__text
@@ -419,42 +419,42 @@ h3
 
 .persons__footer
 {
-    height: 192px;
     padding: 32px 16px 56px;
+    height: 192px;
     border-bottom: 2px solid #000;
 }
 
 .person__yellow .active
 {
-    background: url("../images/persons.png") no-repeat scroll center -450px rgba(0, 0, 0, 0);
-    height: 174px;
-    width: 174px;
     margin: -20px 0 0 -20px;
+    width: 174px;
+    height: 174px;
+    background: url("../images/persons.png") no-repeat scroll center -450px rgba(0, 0, 0, 0);
     cursor: default;
 }
 
 .person__red .active
 {
-    background: url("../images/persons.png") no-repeat scroll center -634px rgba(0, 0, 0, 0);
-    height: 174px;
-    width: 174px;
     margin: -20px 0 0 -20px;
+    width: 174px;
+    height: 174px;
+    background: url("../images/persons.png") no-repeat scroll center -634px rgba(0, 0, 0, 0);
     cursor: default;
 }
 
 .person__blue .active
 {
-    background: url("../images/persons.png") no-repeat scroll center -818px rgba(0, 0, 0, 0);
-    height: 174px;
-    width: 174px;
     margin: -20px 0 0 -20px;
+    width: 174px;
+    height: 174px;
+    background: url("../images/persons.png") no-repeat scroll center -818px rgba(0, 0, 0, 0);
     cursor: default;
 }
 
 .footer
 {
-    height: 316px;
     padding: 80px 16px;
+    height: 316px;
 }
 
 .footer__text
@@ -464,9 +464,9 @@ h3
 
 .logoatom
 {
-    background: url("../images/logoatom.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 102px;
     width: 102px;
+    height: 102px;
+    background: url("../images/logoatom.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 .footer__links
@@ -491,8 +491,8 @@ h3
 
 .yellow_block1__substrate
 {
-    background: url("../images/yellow/line1.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
     height: 85px;
+    background: url("../images/yellow/line1.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
 }
 
 .yellow_block1__map
@@ -502,14 +502,14 @@ h3
 
 .yellow_block2
 {
-    height: 504px;
     padding: 276px 0 0;
+    height: 504px;
 }
 
 .yellow_block2__substrate
 {
-    background: url("../images/yellow/line2.png") no-repeat scroll 136px 0 rgba(0, 0, 0, 0);
     height: 565px;
+    background: url("../images/yellow/line2.png") no-repeat scroll 136px 0 rgba(0, 0, 0, 0);
 }
 
 .yellow_block2__text
@@ -524,14 +524,14 @@ h3
 
 .yellow_block3
 {
-    height: 504px;
     padding: 295px 0 0;
+    height: 504px;
 }
 
 .yellow_block3__substrate
 {
-    background: url("../images/yellow/line3.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
     height: 565px;
+    background: url("../images/yellow/line3.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
 }
 
 .yellow_block3__text
@@ -541,32 +541,32 @@ h3
 
 .yellow_block3__laptop
 {
-    margin: -199px 0 0;
     position: relative;
     z-index: 2;
+    margin: -199px 0 0;
 }
 
 .yellow_block3__polaroid1
 {
-    left: -186px;
-    top: -220px;
     position: relative;
+    top: -220px;
+    left: -186px;
     z-index: 1;
 }
 
 .yellow_block3__polaroid2
 {
-    left: 10px;
-    top: -93px;
     position: relative;
+    top: -93px;
+    left: 10px;
     z-index: 1;
 }
 
 .yellow_block3__polaroid3
 {
-    left: 78px;
-    top: -217px;
     position: relative;
+    top: -217px;
+    left: 78px;
     z-index: 1;
 }
 
@@ -582,14 +582,14 @@ h3
 
 .yellow_block4
 {
-    height: 504px;
     padding: 296px 0 0;
+    height: 504px;
 }
 
 .yellow_block4__substrate
 {
-    background: url("../images/yellow/line4.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
     height: 565px;
+    background: url("../images/yellow/line4.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
 }
 
 .yellow_block4__text
@@ -599,32 +599,32 @@ h3
 
 .yellow_block4__aeroexpress
 {
-    margin: -3px 0 0 -174px;
     position: relative;
     z-index: 2;
+    margin: -3px 0 0 -174px;
 }
 
 .yellow_block4__money
 {
-    left: 408px;
     position: relative;
     top: -328px;
+    left: 408px;
     z-index: 3;
 }
 
 .yellow_block4__ticket
 {
-    left: 119px;
     position: relative;
     top: -171px;
+    left: 119px;
     z-index: 1;
 }
 
 .yellow_block4__traffic
 {
-    left: 156px;
     position: relative;
     top: -223px;
+    left: 156px;
 }
 
 .yellow_block4__ipod
@@ -634,14 +634,14 @@ h3
 
 .yellow_block5
 {
-    height: 524px;
     padding: 296px 0 0;
+    height: 524px;
 }
 
 .yellow_block5__substrate
 {
-    background: url("../images/yellow/line5.png") no-repeat scroll 234px 0 rgba(0, 0, 0, 0);
     height: 588px;
+    background: url("../images/yellow/line5.png") no-repeat scroll 234px 0 rgba(0, 0, 0, 0);
 }
 
 .yellow_block5__text
@@ -671,20 +671,20 @@ h3
 
 .red_block1__substrate
 {
-    background: url("../images/red/line1.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
     height: 97px;
+    background: url("../images/red/line1.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
 }
 
 .red_block2
 {
-    height: 504px;
     padding: 286px 0 0;
+    height: 504px;
 }
 
 .red_block2__substrate
 {
-    background: url("../images/red/line2.png") no-repeat scroll 214px 0 rgba(0, 0, 0, 0);
     height: 555px;
+    background: url("../images/red/line2.png") no-repeat scroll 214px 0 rgba(0, 0, 0, 0);
 }
 
 .red_block2__text
@@ -719,14 +719,14 @@ h3
 
 .red_block3
 {
-    height: 504px;
     padding: 296px 0 0;
+    height: 504px;
 }
 
 .red_block3__substrate
 {
-    background: url("../images/red/line3.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
     height: 565px;
+    background: url("../images/red/line3.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
 }
 
 .red_block3__text
@@ -746,9 +746,9 @@ h3
 
 .red_block3__lenses
 {
-    margin: -250px 0 0 156px;
     position: relative;
     top: -64px;
+    margin: -250px 0 0 156px;
 }
 
 .red_block3__tamagotchi
@@ -763,14 +763,14 @@ h3
 
 .red_block4
 {
-    height: 504px;
     padding: 355px 0 0;
+    height: 504px;
 }
 
 .red_block4__substrate
 {
-    background: url("../images/red/line4.png") no-repeat scroll 124px 0 rgba(0, 0, 0, 0);
     height: 565px;
+    background: url("../images/red/line4.png") no-repeat scroll 124px 0 rgba(0, 0, 0, 0);
 }
 
 .red_block4__text
@@ -810,14 +810,14 @@ h3
 
 .red_block5
 {
-    height: 504px;
     padding: 295px 0 0;
+    height: 504px;
 }
 
 .red_block5__substrate
 {
-    background: url("../images/red/line5.png") no-repeat scroll 468px 0 rgba(0, 0, 0, 0);
     height: 548px;
+    background: url("../images/red/line5.png") no-repeat scroll 468px 0 rgba(0, 0, 0, 0);
 }
 
 .red_block5__fish
@@ -862,8 +862,8 @@ h3
 
 .blue_block1__substrate
 {
-    background: url("../images/blue/line1.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
     height: 97px;
+    background: url("../images/blue/line1.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
 }
 
 .blue_block2__text
@@ -873,14 +873,14 @@ h3
 
 .blue_block2
 {
-    height: 504px;
     padding: 296px 0 0;
+    height: 504px;
 }
 
 .blue_block2__substrate
 {
-    background: url("../images/blue/line2.png") no-repeat scroll 156px 0 rgba(0, 0, 0, 0);
     height: 566px;
+    background: url("../images/blue/line2.png") no-repeat scroll 156px 0 rgba(0, 0, 0, 0);
 }
 
 .blue_block2__phone
@@ -900,23 +900,23 @@ h3
 
 .blue_block2__notebook
 {
-    margin: -170px 0 0 78px;
     position: relative;
     top: -374px;
+    margin: -170px 0 0 78px;
 }
 
 .blue_block2__watch
 {
-    left: -310px;
     position: relative;
     top: -44px;
+    left: -310px;
 }
 
 .blue_block2__photo
 {
-    left: 390px;
     position: relative;
     top: -342px;
+    left: 390px;
 }
 
 .blue_block3__text
@@ -926,14 +926,14 @@ h3
 
 .blue_block3
 {
-    height: 504px;
     padding: 296px 0 0;
+    height: 504px;
 }
 
 .blue_block3__substrate
 {
-    background: url("../images/blue/line3.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
     height: 565px;
+    background: url("../images/blue/line3.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
 }
 
 .blue_block3__paper
@@ -943,10 +943,10 @@ h3
 
 .blue_block3__notebook
 {
-    left: -78px;
-    margin: -300px 0 0;
     position: relative;
     top: -185px;
+    left: -78px;
+    margin: -300px 0 0;
 }
 
 .blue_block3__ipad
@@ -976,14 +976,14 @@ h3
 
 .blue_block4
 {
-    height: 504px;
     padding: 296px 0 0;
+    height: 504px;
 }
 
 .blue_block4__substrate
 {
-    background: url("../images/blue/line4.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
     height: 565px;
+    background: url("../images/blue/line4.png") no-repeat scroll 78px 0 rgba(0, 0, 0, 0);
 }
 
 .blue_block4__iphone
@@ -1004,17 +1004,17 @@ h3
 
 .blue_block4__money
 {
+    position: relative;
     left: 88px;
     margin: 6px 0 0;
-    position: relative;
 }
 
 .blue_block4__tie
 {
-    left: 78px;
-    margin: -500px 0 0;
     position: relative;
     top: -135px;
+    left: 78px;
+    margin: -500px 0 0;
 }
 
 .blue_block4__bag
@@ -1029,14 +1029,14 @@ h3
 
 .blue_block5
 {
-    height: 504px;
     padding: 296px 0 0;
+    height: 504px;
 }
 
 .blue_block5__substrate
 {
-    background: url("../images/blue/line5.png") no-repeat scroll 234px 0 rgba(0, 0, 0, 0);
     height: 548px;
+    background: url("../images/blue/line5.png") no-repeat scroll 234px 0 rgba(0, 0, 0, 0);
 }
 
 .blue_block5__newspaper
@@ -1056,15 +1056,15 @@ h3
 
 .help
 {
-    background: url("../images/right_btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    height: 68px;
-    width: 67px;
     position: fixed;
+    top: 36px;
+    right: 36px;
     z-index: 20;
     display: block;
+    width: 67px;
+    height: 68px;
+    background: url("../images/right_btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     cursor: pointer;
-    right: 36px;
-    top: 36px;
 }
 
 .help:hover
@@ -1084,43 +1084,43 @@ h3
 
 .popup
 {
-    height: 100%;
-    width: 100%;
+    position: fixed;
     z-index: 30;
     display: none;
-    position: fixed;
+    width: 100%;
+    height: 100%;
 }
 
 .popup__back
 {
-    background: none no-repeat scroll 0 0 rgba(0, 0, 0, 0.5);
-    height: 100%;
     width: 100%;
+    height: 100%;
+    background: none no-repeat scroll 0 0 rgba(0, 0, 0, 0.5);
 }
 
 .popup__content
 {
-    background: url("../images/popup.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
-    bottom: 0;
-    height: 447px;
-    left: 0;
-    margin: auto;
     position: fixed;
-    right: 0;
     top: 0;
-    width: 780px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 40;
+    margin: auto;
+    width: 780px;
+    height: 447px;
+    background: url("../images/popup.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
 }
 
 .popup__close
 {
+    position: absolute;
+    top: 16px;
+    right: 36px;
+    width: 36px;
+    height: 36px;
     background: url("../images/close_btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
     cursor: pointer;
-    height: 36px;
-    position: absolute;
-    right: 36px;
-    top: 16px;
-    width: 36px;
 }
 
 .popup__close:hover
@@ -1151,4 +1151,267 @@ h3
 .blue__color
 {
     background-color: #72cff6;
+}
+
+.this_story
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+    display: none;
+    margin: auto 400px;
+    width: 210px;
+    height: 210px;
+    background: url("../images/persons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.this_story:hover
+{
+           opacity: 0.5;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha'(Opacity=0.5);
+    -khtml-opacity: 0.5;
+      -moz-opacity: 0.5;
+}
+
+.yellow_character
+{
+    background-position: 0 -1008px;
+}
+
+.red_character
+{
+    background-position: 0 -1235px;
+}
+
+.blue_character
+{
+    background-position: 0 -1462px;
+}
+
+.icons_story
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 40;
+    display: none;
+    margin: 36px 340px;
+    width: 330px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0);
+}
+
+.icons_yellow,
+.icons_red,
+.icons_blue
+{
+    display: block;
+    float: left;
+    margin: 0 10px;
+    width: 90px;
+    height: 90px;
+    background: rgba(0, 0, 0, 0);
+    cursor: pointer;
+}
+
+.icon_yellow_block2,
+.icon_yellow_block3,
+.icon_yellow_block4,
+.icon_yellow_block5,
+.icon_yellow_block2_active,
+.icon_yellow_block3_active,
+.icon_yellow_block4_active,
+.icon_yellow_block5_active,
+.icon_red_block2,
+.icon_red_block3,
+.icon_red_block4,
+.icon_red_block5,
+.icon_red_block2_active,
+.icon_red_block3_active,
+.icon_red_block4_active,
+.icon_red_block5_active,
+.icon_blue_block2,
+.icon_blue_block3,
+.icon_blue_block4,
+.icon_blue_block5,
+.icon_blue_block2_active,
+.icon_blue_block3_active,
+.icon_blue_block4_active,
+.icon_blue_block5_active
+{
+    width: 90px;
+    background: url("../images/icons.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+}
+
+.icon_yellow_block2:hover,
+.icon_yellow_block3:hover,
+.icon_yellow_block4:hover,
+.icon_yellow_block5:hover,
+.icon_yellow_block2_active:hover,
+.icon_yellow_block3_active:hover,
+.icon_yellow_block4_active:hover,
+.icon_yellow_block5_active:hover,
+.icon_red_block2:hover,
+.icon_red_block3:hover,
+.icon_red_block4:hover,
+.icon_red_block5:hover,
+.icon_red_block2_active:hover,
+.icon_red_block3_active:hover,
+.icon_red_block4_active:hover,
+.icon_red_block5_active:hover,
+.icon_blue_block2:hover,
+.icon_blue_block3:hover,
+.icon_blue_block4:hover,
+.icon_blue_block5:hover,
+.icon_blue_block2_active:hover,
+.icon_blue_block3_active:hover,
+.icon_blue_block4_active:hover,
+.icon_blue_block5_active:hover
+{
+           opacity: 0.7;
+    -ms-filter:'progid:DXImageTransform.Microsoft.Alpha'(Opacity=0.7);
+    -khtml-opacity: 0.7;
+      -moz-opacity: 0.7;
+}
+
+.icon_yellow_block2
+{
+    background-position: -400px 0;
+}
+
+.icon_yellow_block3
+{
+    background-position: -400px -90px;
+}
+
+.icon_yellow_block4
+{
+    background-position: -400px -190px;
+}
+
+.icon_yellow_block5
+{
+    background-position: -400px -290px;
+}
+
+.icon_yellow_block2_active
+{
+    background-position: 0 0;
+}
+
+.icon_yellow_block3_active
+{
+    background-position: 0 -90px;
+}
+
+.icon_yellow_block4_active
+{
+    background-position: 0 -190px;
+}
+
+.icon_yellow_block5_active
+{
+    background-position: 0 -290px;
+}
+
+.icon_red_block2
+{
+    background-position: -300px 0;
+}
+
+.icon_red_block3
+{
+    background-position: -300px -90px;
+}
+
+.icon_red_block4
+{
+    background-position: -300px -190px;
+}
+
+.icon_red_block5
+{
+    background-position: -300px -290px;
+}
+
+.icon_red_block2_active
+{
+    background-position: -100px 0;
+}
+
+.icon_red_block3_active
+{
+    background-position: -100px -90px;
+}
+
+.icon_red_block4_active
+{
+    background-position: -100px -190px;
+}
+
+.icon_red_block5_active
+{
+    background-position: -100px -290px;
+}
+
+.icon_blue_block2
+{
+    background-position: -500px 0;
+}
+
+.icon_blue_block3
+{
+    background-position: -500px -90px;
+}
+
+.icon_blue_block4
+{
+    background-position: -500px -190px;
+}
+
+.icon_blue_block5
+{
+    background-position: -500px -290px;
+}
+
+.icon_blue_block2_active
+{
+    background-position: -200px 0;
+}
+
+.icon_blue_block3_active
+{
+    background-position: -200px -90px;
+}
+
+.icon_blue_block4_active
+{
+    background-position: -200px -190px;
+}
+
+.icon_blue_block5_active
+{
+    background-position: -200px -290px;
+}
+
+.icon_yellow_block2_active,
+.icon_yellow_block3_active,
+.icon_yellow_block4_active,
+.icon_yellow_block5_active,
+.icon_red_block2_active,
+.icon_red_block3_active,
+.icon_red_block4_active,
+.icon_red_block5_active,
+.icon_blue_block2_active,
+.icon_blue_block3_active,
+.icon_blue_block4_active,
+.icon_blue_block5_active
+{
+    cursor: default;
 }

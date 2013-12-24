@@ -9,35 +9,26 @@
 define(['app/random',
 	    'jquery'], function(RandomChar, $) {
 	
-	/** @define {object} */
 	var $yellowCharH = $('.person__yellow'), // Максим в шапке сайта
-	/** @define {object} */
 	    $redCharH    = $('.person__red'), // Алексей в шапке сайта
-	/** @define {object} */
 	    $blueCharH   = $('.person__blue'), // Григорий в шапке сайта
-	/** @define {object} */
 	    $yellowCharF = $('.person__yellow.foot'), // Максим в подвале сайта
-	/** @define {object} */
 	    $redCharF    = $('.person__red.foot'), // Алексей в подвале сайта
-	/** @define {object} */
 	    $blueCharF   = $('.person__blue.foot'), // Григорий в подвале сайта
-	 /** @define {object} */
 	    $descChar    = $('.person__desc'), // Описание для персонажа
-	/** @define {object} */
 	    $yellow      = $('.yellow'), // Желтый персонаж
-	/** @define {object} */
 	    $red         = $('.red'), // Красный персонаж
-	/** @define {object} */
 	    $blue        = $('.blue'), // Синий персонаж
-	/** @define {object} */
 	    $content     = $('.content'), // Основная часть сайта
-	/** @define {object} */
 	    $btnPlay     = $('.play'), // Кнопка вызова PopUp-окна
-	/** @define {object} */
 	    $history     = $('.history'), // История персонажа
-	/** @define {object} */
 	    $persons     = $('.persons'); // Персонажи в шапке сайта
-
+	    $personsF    = $('.persons__footer'); // Персонажи в подвале сайта
+	    $bigAvatar   = $('.this_story'), // Аватар текущей истории
+	    $iconsStory  = $('.icons_story'),
+	    $iconsY  	 = $('.icons_yellow'),
+	    $iconsR  	 = $('.icons_red'),
+	    $iconsB  	 = $('.icons_blue');
 
 	/**
 	 * Конструктор возвращаемого объекта
@@ -65,10 +56,14 @@ define(['app/random',
     	/** Обработка клика по Григорию в подвале сайта */
     	$blueCharF.click($.proxy(this.blueF, this));
 
-    	window.onscroll = function() {
-    		console.log(isScrolledIntoView($('.red_block2')));
-    	}
+    	/** Обработка клика по икоке услуги Максима */
+    	$iconsY.click($.proxy(this.iconChar, this));
 
+    	/** Обработка клика по икоке услуги Алексея */
+    	$iconsR.click($.proxy(this.iconChar, this));
+
+    	/** Обработка клика по икоке услуги Григория */
+    	$iconsB.click($.proxy(this.iconChar, this));
     }
 
     /**
@@ -77,18 +72,22 @@ define(['app/random',
     App.prototype.init = function() {
     	var app = this;
 
-		switch (RandomChar) {
+		switch(RandomChar) {
             case 1:
                 app.yellow();
                 break;
+
             case 2:
                 app.red();
                 break;
+
             case 3:
                 app.blue();
                 break;
+
             default:
                 app.yellow();
+                 break;
         }
 
         app.renderStory();
@@ -103,6 +102,9 @@ define(['app/random',
     	app.clearChar();
     	app.color = 'yellow';
 
+    	hoverChar($redCharH, $yellowCharH);
+    	hoverChar($blueCharH, $yellowCharH);
+
     	app.chengeChar($yellowCharH);
 	}
 
@@ -115,6 +117,9 @@ define(['app/random',
     	app.clearChar();
     	app.color = 'red';
 
+    	hoverChar($yellowCharH, $redCharH);
+    	hoverChar($blueCharH, $redCharH);
+
     	app.chengeChar($redCharH);
 	}
 
@@ -126,6 +131,9 @@ define(['app/random',
 
     	app.clearChar();
     	app.color = 'blue';
+
+    	hoverChar($yellowCharH, $blueCharH);
+    	hoverChar($redCharH, $blueCharH);
 
     	app.chengeChar($blueCharH);
 	}
@@ -185,18 +193,73 @@ define(['app/random',
 		$content.removeClass(app.color + '__color');
 		$btnPlay.removeClass(app.color + '__color');
 		$history.removeClass('history__' + app.color);
+		$bigAvatar.removeClass(app.color + '_character');
+		$iconsY.attr('class',"icons_yellow");
+		$iconsR.attr('class',"icons_red");
+		$iconsB.attr('class',"icons_blue");
 	}
 
 	/**
 	 * Ренедер персонажа
 	 */
     App.prototype.renderStory = function() {
-    	var app = this;
+    	var app  = this;
 
 		$('.' + app.color).show();
 		$content.addClass(app.color + '__color');
 		$btnPlay.addClass(app.color + '__color');
 		$history.addClass('history__' + app.color);
+		$bigAvatar.addClass(app.color + '_character');
+
+		foot = $history.offset().top + $history.height();
+
+		window.onscroll = function() {
+			iconRender(app.color);
+
+			if(isScrolledIntoView($('.' + app.color), foot)) {
+				$bigAvatar.show();
+				$iconsStory.show();
+			} else {
+				$bigAvatar.hide();
+				$iconsStory.hide();
+			}
+    	}
+	}
+
+	/**
+	 * События, которые происходят при клике по иконке услуги
+	 */
+    App.prototype.iconChar = function(event) {
+    	var app     = this,
+    		element = event.target; // текущий элемент в jQuery
+
+    	for (var i = 2; i < 6; i++) {
+    		if ($(element).hasClass('icon_yellow_block' + i)) {
+    			app.yellow();
+    			scrollToElement($('.yellow_block' + i));
+    		} else if ($(element).hasClass('icon_red_block' + i)) {
+    			app.red();
+    			scrollToElement($('.red_block' + i));
+    		} else if ($(element).hasClass('icon_blue_block' + i)) {
+    			app.blue();
+    			scrollToElement($('.blue_block' + i));
+    		}
+    	}
+	}
+
+	/**
+	 * Hover-эффект для соседних персонажей
+	 * @param  {object} el1 персонаж на которого наводим стрелку мыши
+	 * @param  {object} el2 текущий персонаж
+	 */
+	function hoverChar(el1, el2) {
+		el1.hover(
+		  	function() {
+		      el2.find('.person__desc').hide();
+		    }, function() {
+		      el2.find('.person__desc').css('display', '');
+		    }
+		)
 	}
 
 	/**
@@ -214,15 +277,45 @@ define(['app/random',
 	 * @param  {object}  el элемент, к которому скроллим
 	 * @return {Boolean}
 	 */
-	function isScrolledIntoView(el)
-	{
-	    var docViewTop = $(window).scrollTop();
-	    //var docViewBottom = docViewTop + $(window).height();
+	function isScrolledIntoView(el, foot)	{
+	    var docViewTop    = $(window).scrollTop(),
+	    	elemTop       = $(el).offset().top,
+	    	docViewBottom = docViewTop + $(window).height(),
+	     	elemBottom    = elemTop + $(el).height() + Number($(el).css('padding-top').replace("px", ""));
 
-	    var elemTop = $(el).offset().top;
-	    var elemBottom = elemTop + $(el).height() + Number($(el).css('padding-top').replace("px", ""));
+	    return ((elemBottom >= docViewTop) && (elemTop <= docViewTop) && (docViewBottom <= foot));
+	}
 
-	    return ((elemBottom >= docViewTop) && (elemTop <= docViewTop));
+	/**
+	 * Отрисовка иконок услуг
+	 * @param  {string}  текущий цвет персонажа
+	 */
+	function iconRender(color)	{
+		var color2 = '',
+			color3 = '';
+
+		if (color == 'yellow') {
+			color2 = 'red';
+			color3 = 'blue';
+		} else if (color == 'red') {
+			color2 = 'yellow';
+			color3 = 'blue';
+		} else {
+			color2 = 'yellow';
+			color3 = 'red';
+		}
+
+		for (var i = 2; i < 6; i++) {
+			if(isScrolledIntoView($('.' + color + '_block' + i), foot)) {
+				$('.icons_' + color).addClass('icon_' + color + '_block' + i + '_active');
+				$('.icons_' + color2).addClass('icon_' + color2 + '_block' + i);
+				$('.icons_' + color3).addClass('icon_' + color3 + '_block' + i);
+			} else {
+				$('.icons_' + color).removeClass('icon_' + color + '_block' + i + '_active');
+				$('.icons_' + color2).removeClass('icon_' + color2 + '_block' + i);
+				$('.icons_' + color3).removeClass('icon_' + color3 + '_block' + i);
+			}
+		}
 	}
 
 	return App;
