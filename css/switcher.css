@@ -1,0 +1,319 @@
+
+.char
+{
+    float: left;
+
+    width: 33.33%;
+
+    cursor: pointer;
+    text-align: center;
+}
+
+.char__image
+{
+    width: 142px;
+    height: 142px;
+    margin: 0 auto;
+
+    background: url("../images/char__image.png") no-repeat transparent;
+}
+
+.char__name
+{
+    padding: 5px 0 0;
+
+    text-align: center;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.char-text
+{
+    display: none;
+
+    min-height: 100px;
+    margin-top: 15px;
+
+    text-align: center;
+}
+
+.char-yellow
+{
+    text-align: left;
+}
+
+.char-red
+{
+    text-align: center;
+}
+
+.char-blue
+{
+    text-align: right;
+}
+
+.char__inner
+{
+    display: inline-block;
+}
+
+.char-yellow .char__image
+{
+    background-position: 0 0;
+}
+
+.char-red .char__image
+{
+    background-position: 0 -149px;
+}
+
+.char-blue .char__image
+{
+    background-position: 0 -298px;
+}
+
+.char-yellow_selected .char__image,
+.char-red_selected .char__image,
+.char-blue_selected .char__image
+{
+    width: 180px;
+    height: 180px;
+    margin: -19px 0 0;
+}
+
+.char-yellow_selected .char__image
+{
+    background-position: 0 -440px;
+}
+
+.char-red_selected .char__image
+{
+    background-position: 0 -625px;
+}
+
+.char-blue_selected .char__image
+{
+    background-position: 0 -810px;
+}
+
+.char-yellow_selected .char__inner
+{
+    margin-left: -19px;
+}
+
+.char-red_selected .char__inner
+{
+}
+
+.char-blue_selected .char__inner
+{
+    margin-right: -19px;
+}
+
+.switcher-top
+{
+    padding: 80px 0 0;
+}
+
+.switcher-top__line
+{
+    width: 762px;
+    height: 97px;
+    margin: 30px 0 0;
+}
+
+.switcher-bottom
+{
+    padding: 30px 0 50px;
+
+    border-bottom: 2px solid #000;
+}
+
+.char-floated
+{
+    position: fixed;
+    z-index: 20;
+    top: 50%;
+
+    display: none;
+
+    width: 954px;
+}
+
+.char-floated__image
+{
+    width: 220px;
+    height: 220px;
+    margin: -110px auto 0;
+
+    background: url("../images/char__image.png") no-repeat transparent;
+}
+
+.char-floated__image_yellow
+{
+    background-position: 0 -990px;
+}
+
+.char-floated__image_red
+{
+    background-position: 0 -1216px;
+}
+
+.char-floated__image_blue
+{
+    background-position: 0 -1443px;
+}
+
+.switcher-floated
+{
+    position: fixed;
+    z-index: 20;
+    top: 40px;
+
+    display: none;
+
+    width: 954px;
+
+    text-align: center;
+}
+
+.switcher-floated__item
+{
+    display: inline-block;
+}
+
+.char-state
+{
+    display: none;
+
+    width: 96px;
+    height: 96px;
+
+    cursor: pointer;
+
+    background: url("../images/char-state.png") no-repeat transparent;
+}
+
+.char-state-yellow-1
+{
+    background-position: 0 0;
+}
+
+.char-state-yellow-2
+{
+    background-position: 0 -96px;
+}
+
+.char-state-yellow-3
+{
+    background-position: 0 -192px;
+}
+
+.char-state-yellow-4
+{
+    background-position: 0 -288px;
+}
+
+.char-state-red-1
+{
+    background-position: -96px 0;
+}
+
+.char-state-red-2
+{
+    background-position: -96px -96px;
+}
+
+.char-state-red-3
+{
+    background-position: -96px -192px;
+}
+
+.char-state-red-4
+{
+    background-position: -96px -288px;
+}
+
+.char-state-blue-1
+{
+    background-position: -192px 0;
+}
+
+.char-state-blue-2
+{
+    background-position: -192px -96px;
+}
+
+.char-state-blue-3
+{
+    background-position: -192px -192px;
+}
+
+.char-state-blue-4
+{
+    background-position: -192px -288px;
+}
+
+/*
+*/
+.char-state-yellow-1.char-state_selected
+{
+    background-position: -288px 0;
+}
+
+.char-state-yellow-2.char-state_selected
+{
+    background-position: -288px -96px;
+}
+
+.char-state-yellow-3.char-state_selected
+{
+    background-position: -288px -192px;
+}
+
+.char-state-yellow-4.char-state_selected
+{
+    background-position: -288px -288px;
+}
+
+.char-state-red-1.char-state_selected
+{
+    background-position: -384px 0;
+}
+
+.char-state-red-2.char-state_selected
+{
+    background-position: -384px -96px;
+}
+
+.char-state-red-3.char-state_selected
+{
+    background-position: -384px -192px;
+}
+
+.char-state-red-4.char-state_selected
+{
+    background-position: -384px -288px;
+}
+
+.char-state-blue-1.char-state_selected
+{
+    background-position: -480px 0;
+}
+
+.char-state-blue-2.char-state_selected
+{
+    background-position: -480px -96px;
+}
+
+.char-state-blue-3.char-state_selected
+{
+    background-position: -480px -192px;
+}
+
+.char-state-blue-4.char-state_selected
+{
+    background-position: -480px -288px;
+}
