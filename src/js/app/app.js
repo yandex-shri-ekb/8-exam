@@ -22,8 +22,8 @@ define(['app/random',
 	    $content     = $('.content'), // Основная часть сайта
 	    $btnPlay     = $('.play'), // Кнопка вызова PopUp-окна
 	    $history     = $('.history'), // История персонажа
-	    $persons     = $('.persons'); // Персонажи в шапке сайта
-	    $personsF    = $('.persons__footer'); // Персонажи в подвале сайта
+	    $persons     = $('.persons'), // Персонажи в шапке сайта
+	    $personsF    = $('.persons__footer'), // Персонажи в подвале сайта
 	    $bigAvatar   = $('.this_story'), // Аватар текущей истории
 	    $iconsStory  = $('.icons_story'),
 	    $iconsY  	 = $('.icons_yellow'),

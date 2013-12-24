@@ -409,7 +409,13 @@ h3
 .red,
 .blue
 {
+    position: relative;
     display: none;
+    -webkit-transition: left 300ms linear 0s;
+       -moz-transition: left 300ms linear 0s;
+        -ms-transition: left 300ms linear 0s;
+         -o-transition: left 300ms linear 0s;
+            transition: left 300ms linear 0s;
 }
 
 .grid__align
