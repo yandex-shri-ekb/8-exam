@@ -1,3 +1,53 @@
 block locomotive {
     js: true
+
+    content: [
+         {
+             elem: 'icons',
+             content: [
+                 {
+                     elem: 'step-icon',
+                     mix: {
+                         block: 'step-icon',
+                         mods: {
+                             'theme': 'yellow',
+                             'active': 'no'
+                         }
+                     }
+                 },
+                 {
+                     elem: 'step-icon',
+                     mix: {
+                         block: 'step-icon',
+                         mods: {
+                             'theme': 'red',
+                             'active': 'no'
+                         }
+                     }
+                 },
+                 {
+                     elem: 'step-icon',
+                     mix: {
+                         block: 'step-icon',
+                         mods: {
+                             'theme': 'blue',
+                             'active': 'no'
+                         }
+                     }
+                 }
+             ]
+         },
+         {
+             elem: 'user-icon',
+             mix: {
+                 block: 'user-icon',
+                 mods: {
+                     'size': 'large',
+                     'theme': 'yellow',
+                     'push_down': 'yes',
+                     'active': 'no'
+                 }
+             }
+         }
+     ]
 }

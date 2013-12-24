@@ -18,11 +18,11 @@
 @import url(../../desktop.blocks/users/__wrap/users__wrap.css);
 @import url(../../desktop.blocks/locomotive/locomotive.css);
 @import url(../../desktop.blocks/locomotive/__icons/locomotive__icons.css);
+@import url(../../desktop.blocks/user-icon/user-icon.css);
 @import url(../../desktop.blocks/step-icon/step-icon.css);
 @import url(../../desktop.blocks/step-icon/__yellow/step-icon__yellow.css);
 @import url(../../desktop.blocks/step-icon/__red/step-icon__red.css);
 @import url(../../desktop.blocks/step-icon/__blue/step-icon__blue.css);
-@import url(../../desktop.blocks/user-icon/user-icon.css);
 @import url(../../desktop.blocks/stories/stories.css);
 @import url(../../desktop.blocks/story/story.css);
 @import url(../../desktop.blocks/story/__steps/story__steps.css);

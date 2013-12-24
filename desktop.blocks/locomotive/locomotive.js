@@ -3,16 +3,16 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
     BEMDOM.decl('locomotive', {
         onSetMod: {
             'js': function() {
-                this._steps = [];
+                this._themes = {};
                 this._calculateLastStepHeight();
                 this._bindToScroll();
                 this._bindToClick();
             },
 
-            'theme': function(modName, modVal) {
-                this._calculateThemeSteps();
-                this._activateThemeIcon(modVal);
-                this._activateUserIcon(modVal);
+            'theme': function(modName, themeName) {
+                !this._themes[themeName] && this._calculateSteps(themeName);
+                this._activateThemeIcon(themeName);
+                this._activateUserIcon(themeName);
                 this._onScroll();
             }
         },
@@ -47,10 +47,11 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         },
 
         _identifyStep: function() {
-            var stepNum = 0;
-            var windowTop = $(window).scrollTop();
+            var stepNum = 0,
+                windowTop = $(window).scrollTop(),
+                steps = this._themes[this.getMod('theme')];
 
-            this._steps.forEach(function(step, index) {
+            steps.forEach(function(step, index) {
                 if(step.start <= windowTop && windowTop <= step.end) {
                     stepNum = index;
                 }
@@ -58,12 +59,13 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             return stepNum;
         },
 
-        _calculateThemeSteps: function() {
+        _calculateSteps: function(themeName) {
             var theme = this._getBlockAtom().findBlockInside({
                     'blockName': 'story',
                     'modName': 'theme',
-                    'modVal': this.getMod('theme')}
+                    'modVal': themeName}
                 ),
+                steps = [],
                 lastStep = 4,
                 self = this;
 
@@ -73,9 +75,9 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                     end = start + $step.height();
 
                 i === lastStep -1 && (end -= self._lastStepHeight);
-                self._steps[i+1] = { start: start, end: end };
+                steps[i+1] = { start: start, end: end };
             });
-            this._steps = self._steps;
+            this._themes[themeName] = steps;
         },
 
         _calculateLastStepHeight: function() {

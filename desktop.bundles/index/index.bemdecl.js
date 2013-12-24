@@ -9,10 +9,10 @@ exports.blocks = [
                 "name": "css"
             },
             {
-                "name": "wrap"
+                "name": "js"
             },
             {
-                "name": "js"
+                "name": "wrap"
             }
         ]
     },
@@ -49,66 +49,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "locomotive",
-        "elems": [
-            {
-                "name": "icons"
-            },
-            {
-                "name": "step-icon"
-            },
-            {
-                "name": "user-icon"
-            }
-        ]
-    },
-    {
-        "name": "step-icon",
-        "mods": [
-            {
-                "name": "theme",
-                "vals": [
-                    "yellow",
-                    "red",
-                    "blue"
-                ]
-            },
-            {
-                "name": "active",
-                "vals": [
-                    "no"
-                ]
-            }
-        ]
-    },
-    {
-        "name": "user-icon",
-        "mods": [
-            {
-                "name": "size",
-                "vals": [
-                    "large"
-                ]
-            },
-            {
-                "name": "theme",
-                "vals": [
-                    "yellow"
-                ]
-            },
-            {
-                "name": "push_down",
-                "vals": [
-                    "yes"
-                ]
-            },
-            {
-                "name": "active",
-                "vals": [
-                    "no"
-                ]
-            }
-        ]
+        "name": "locomotive"
     },
     {
         "name": "stories"
@@ -117,7 +58,15 @@ exports.blocks = [
         "name": "story_theme_yellow"
     },
     {
-        "name": "story"
+        "name": "story",
+        "mods": [
+            {
+                "name": "show",
+                "vals": [
+                    "no"
+                ]
+            }
+        ]
     },
     {
         "name": "story_theme_red"

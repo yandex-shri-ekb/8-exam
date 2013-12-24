@@ -9,3 +9,8 @@
     *display: inline;
     zoom: 1;
 }
+
+.step-icon_active_yes
+{
+    cursor: auto;
+}

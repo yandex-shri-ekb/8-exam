@@ -2,8 +2,10 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 
     BEMDOM.decl('atom', {
         onSetMod: {
-            'js': function() {
-                this._setRandomTheme();
+            'js': {
+                'inited': function() {
+                    this._setRandomTheme();
+                }
             },
             'theme': function(modName, modVal) {
                 this._activateTheme(modVal);

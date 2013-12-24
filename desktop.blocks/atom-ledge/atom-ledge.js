@@ -46,6 +46,7 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
                 $el.animate({ 'left': offsetChange }, 300);
                 this.toggleMod('opened', 'yes');
                 page.toggleMod('active', 'yes');
+                page.findBlockInside('locomotive').toggleMod('show', 'yes');
             }
         }
     });

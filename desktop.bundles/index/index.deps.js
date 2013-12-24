@@ -203,12 +203,7 @@ exports.deps = [
         "elem": "icons"
     },
     {
-        "block": "locomotive",
-        "elem": "step-icon"
-    },
-    {
-        "block": "locomotive",
-        "elem": "user-icon"
+        "block": "user-icon"
     },
     {
         "block": "step-icon"
@@ -224,73 +219,6 @@ exports.deps = [
     {
         "block": "step-icon",
         "elem": "blue"
-    },
-    {
-        "block": "step-icon",
-        "mod": "theme"
-    },
-    {
-        "block": "step-icon",
-        "mod": "theme",
-        "val": "yellow"
-    },
-    {
-        "block": "step-icon",
-        "mod": "theme",
-        "val": "red"
-    },
-    {
-        "block": "step-icon",
-        "mod": "theme",
-        "val": "blue"
-    },
-    {
-        "block": "step-icon",
-        "mod": "active"
-    },
-    {
-        "block": "step-icon",
-        "mod": "active",
-        "val": "no"
-    },
-    {
-        "block": "user-icon"
-    },
-    {
-        "block": "user-icon",
-        "mod": "size"
-    },
-    {
-        "block": "user-icon",
-        "mod": "size",
-        "val": "large"
-    },
-    {
-        "block": "user-icon",
-        "mod": "theme"
-    },
-    {
-        "block": "user-icon",
-        "mod": "theme",
-        "val": "yellow"
-    },
-    {
-        "block": "user-icon",
-        "mod": "push_down"
-    },
-    {
-        "block": "user-icon",
-        "mod": "push_down",
-        "val": "yes"
-    },
-    {
-        "block": "user-icon",
-        "mod": "active"
-    },
-    {
-        "block": "user-icon",
-        "mod": "active",
-        "val": "no"
     },
     {
         "block": "stories"
@@ -421,6 +349,15 @@ exports.deps = [
     {
         "block": "path_theme_yellow",
         "elem": "step-5"
+    },
+    {
+        "block": "story",
+        "mod": "show"
+    },
+    {
+        "block": "story",
+        "mod": "show",
+        "val": "no"
     },
     {
         "block": "story_theme_red"
