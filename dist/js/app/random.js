@@ -1,7 +1,1 @@
-define([], function() {
-	function randomizer(min, max) {
-	    return (Math.floor(Math.random() * (Number(max) - Number(min) + 1))) + Number(min);
-	}
-
-	return randomizer(1, 3); 
-});
+define([],function(){function e(e,t){return Math.floor(Math.random()*(Number(t)-Number(e)+1))+Number(e)}return e(1,3)})
