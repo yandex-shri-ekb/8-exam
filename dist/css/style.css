@@ -57,8 +57,8 @@ h3{font:400 24px/24px Arial,Helvetica,sans-serif;margin:18px 0}
 .right__yellow__block1{height:748px;border-bottom:2px solid #000}
 .right__yellow__block2{height:767px;border-bottom:2px solid #000}
 .right__yellow__block4{height:788px;border-bottom:2px solid #000}
-.right__red__block2{height:769px;border-bottom:2px solid #000}
-.right__red__block3{height:826px;border-bottom:2px solid #000}
+.right__red__block1{height:758px;border-bottom:2px solid #000}
+.right__red__block3{height:827px;border-bottom:2px solid #000}
 .right__blue__block2{height:766px;border-bottom:2px solid #000}
 .right__blue__block4{height:780px;border-bottom:2px solid #000}
 .link{color:#1a3dc1;text-decoration:underline}
@@ -228,8 +228,7 @@ h3{font:400 24px/24px Arial,Helvetica,sans-serif;margin:18px 0}
 .icon_blue_block4_active{background-position:-200px -190px}
 .icon_blue_block5_active{background-position:-200px -290px}
 .icon_yellow_block2_active,.icon_yellow_block3_active,.icon_yellow_block4_active,.icon_yellow_block5_active,.icon_red_block2_active,.icon_red_block3_active,.icon_red_block4_active,.icon_red_block5_active,.icon_blue_block2_active,.icon_blue_block3_active,.icon_blue_block4_active,.icon_blue_block5_active{cursor:default}
-.right__yellow__block3,.right__red__block4,.right__blue__block3{height:768px;border-bottom:2px solid #000}
-.right__red__block1,.right__blue__block1{height:758px;border-bottom:2px solid #000}
+.right__yellow__block3,.right__red__block2,.right__red__block4,.right__blue__block1,.right__blue__block3{height:768px;border-bottom:2px solid #000}
 .person__yellow,.person__blue,.cursor_pointer{cursor:pointer}
 .person__yellow:hover .person__desc,.person__red:hover .person__desc,.person__blue:hover .person__desc,.view{display:block}
 .yellow_block1,.red_block1,.blue_block1{height:46px}
