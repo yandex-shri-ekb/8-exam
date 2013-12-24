@@ -87,7 +87,7 @@ define(['app/random',
 
             default:
                 app.yellow();
-                 break;
+                break;
         }
 
         app.renderStory();
