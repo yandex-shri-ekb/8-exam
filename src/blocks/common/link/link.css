@@ -1,0 +1,20 @@
+.link
+{
+    white-space: nowrap;
+
+    color: #1a3dc1;
+}
+
+.link:hover
+{
+    color: #f00;
+}
+
+.link_type_footer
+{
+    margin: 0 18px 0 0;
+
+    text-decoration: none;
+
+    color: #000;
+}

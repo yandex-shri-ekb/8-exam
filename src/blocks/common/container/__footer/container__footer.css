@@ -1,0 +1,11 @@
+.container__footer
+{
+    padding: 74px 0 0;
+
+    border-top: 2px solid #000;
+}
+
+.container__footer-links
+{
+    height: 100px;
+}

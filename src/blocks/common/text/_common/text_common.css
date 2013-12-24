@@ -1,0 +1,11 @@
+.text_common_header
+{
+    font: 100 45px/1 Arial, sans-serif;
+
+    top: 424px;
+}
+
+.text_common_atom-info
+{
+    top: -6px;
+}

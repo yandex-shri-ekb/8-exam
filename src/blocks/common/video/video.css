@@ -1,0 +1,36 @@
+.video__desc
+{
+    margin: 11px 0 0;
+}
+
+.video__thumb
+{
+    width: 134px;
+    height: 76px;
+
+    cursor: pointer;
+    -webkit-transition: background-color 200ms linear;
+       -moz-transition: background-color 200ms linear;
+         -o-transition: background-color 200ms linear;
+            transition: background-color 200ms linear;
+
+    border: 2px solid #000;
+    -moz-border-radius: 4px;
+         border-radius: 4px;
+    background: transparent 53% 50% no-repeat url("../../../images/common/common-play.png");
+}
+
+.container_type_yellow .video__thumb
+{
+    background-color: #ffe05d;
+}
+
+.container_type_blue .video__thumb
+{
+    background-color: #72c4f6;
+}
+
+.container_type_red .video__thumb
+{
+    background-color: #ff8283;
+}

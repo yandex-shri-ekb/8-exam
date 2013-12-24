@@ -1,0 +1,35 @@
+.drawer__control
+{
+    position: fixed;
+    top: 36px;
+    right: 36px;
+
+    display: none;
+
+    width: 67px;
+    height: 67px;
+
+    cursor: pointer;
+
+    background: url('../../../../images/common/common-drawer-control.png') no-repeat 0 0;
+}
+
+.drawer_covered .drawer__control
+{
+    display: block;
+}
+
+.drawer__control:hover
+{
+    background-position: 0 -80px;
+}
+
+.drawer__control_opened
+{
+    background-position: -100px 0;
+}
+
+.drawer__control_opened:hover
+{
+    background-position: -100px -80px;
+}

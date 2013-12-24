@@ -1,0 +1,207 @@
+.pers-switch_position_fixed
+{
+    display: none;
+
+    width: 400px;
+    margin: 50px auto 0;
+}
+
+.pers-switch_position_fixed.pers-switch_active
+{
+    display: block;
+
+    -webkit-animation: fadeIn .3s;
+       -moz-animation: fadeIn .3s;
+         -o-animation: fadeIn .3s;
+            animation: fadeIn .3s;
+}
+
+.pers-switch_position_fixed .pers-switch__item
+{
+    float: left;
+
+    width: 33.333%;
+}
+
+.pers-switch__pictogram
+{
+    display: inline-block;
+
+    width: 96px;
+    height: 96px;
+
+    cursor: pointer;
+
+    background: url("../../../../images/pers/pers-switch-pictogram.png") 0 0 no-repeat;
+}
+
+.pers-switch__item_selected .pers-switch__pictogram
+{
+    cursor: initial;
+}
+
+.pers-switch_area_1
+    .pers-switch__item_selected.pers-switch__item_type_yellow .pers-switch__pictogram
+{
+    background-position: 0 0;
+}
+
+.pers-switch_area_2
+    .pers-switch__item_selected.pers-switch__item_type_yellow
+        .pers-switch__pictogram
+{
+    background-position: 0 -96px;
+}
+
+.pers-switch_area_3
+    .pers-switch__item_selected.pers-switch__item_type_yellow
+        .pers-switch__pictogram
+{
+    background-position: 0 -192px;
+}
+
+.pers-switch_area_4
+    .pers-switch__item_selected.pers-switch__item_type_yellow
+        .pers-switch__pictogram
+{
+    background-position: 0 -288px;
+}
+
+.pers-switch_area_1
+    .pers-switch__item_selected.pers-switch__item_type_red
+        .pers-switch__pictogram
+{
+    background-position: -96px 0;
+}
+
+.pers-switch_area_2
+    .pers-switch__item_selected.pers-switch__item_type_red
+        .pers-switch__pictogram
+{
+    background-position: -96px -96px;
+}
+
+.pers-switch_area_3
+    .pers-switch__item_selected.pers-switch__item_type_red
+        .pers-switch__pictogram
+{
+    background-position: -96px -192px;
+}
+
+.pers-switch_area_4
+    .pers-switch__item_selected.pers-switch__item_type_red
+        .pers-switch__pictogram
+{
+    background-position: -96px -288px;
+}
+
+.pers-switch_area_1
+    .pers-switch__item_selected.pers-switch__item_type_blue
+        .pers-switch__pictogram
+{
+    background-position: -192px 0;
+}
+
+.pers-switch_area_2
+    .pers-switch__item_selected.pers-switch__item_type_blue
+        .pers-switch__pictogram
+{
+    background-position: -192px -96px;
+}
+
+.pers-switch_area_3
+    .pers-switch__item_selected.pers-switch__item_type_blue
+        .pers-switch__pictogram
+{
+    background-position: -192px -192px;
+}
+
+.pers-switch_area_4
+    .pers-switch__item_selected.pers-switch__item_type_blue
+        .pers-switch__pictogram
+{
+    background-position: -192px -288px;
+}
+
+.pers-switch_area_1
+    .pers-switch__item_type_yellow .pers-switch__pictogram
+{
+    background-position: -288px 0;
+}
+
+.pers-switch_area_2
+    .pers-switch__item_type_yellow
+        .pers-switch__pictogram
+{
+    background-position: -288px -96px;
+}
+
+.pers-switch_area_3
+    .pers-switch__item_type_yellow
+        .pers-switch__pictogram
+{
+    background-position: -288px -192px;
+}
+
+.pers-switch_area_4
+    .pers-switch__item_type_yellow
+        .pers-switch__pictogram
+{
+    background-position: -288px -288px;
+}
+
+.pers-switch_area_1
+    .pers-switch__item_type_red
+        .pers-switch__pictogram
+{
+    background-position: -384px 0;
+}
+
+.pers-switch_area_2
+    .pers-switch__item_type_red
+        .pers-switch__pictogram
+{
+    background-position: -384px -96px;
+}
+
+.pers-switch_area_3
+    .pers-switch__item_type_red
+        .pers-switch__pictogram
+{
+    background-position: -384px -192px;
+}
+
+.pers-switch_area_4
+    .pers-switch__item_type_red
+        .pers-switch__pictogram
+{
+    background-position: -384px -288px;
+}
+
+.pers-switch_area_1
+    .pers-switch__item_type_blue
+        .pers-switch__pictogram
+{
+    background-position: -480px 0;
+}
+
+.pers-switch_area_2
+    .pers-switch__item_type_blue
+        .pers-switch__pictogram
+{
+    background-position: -480px -96px;
+}
+
+.pers-switch_area_3
+    .pers-switch__item_type_blue
+        .pers-switch__pictogram
+{
+    background-position: -480px -192px;
+}
+
+.pers-switch_area_4
+    .pers-switch__item_type_blue
+        .pers-switch__pictogram
+{
+    background-position: -480px -288px;
+}

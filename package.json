@@ -1,0 +1,26 @@
+{
+    "name": "shri-exam",
+    "version": "0.0.1",
+    "engines": {
+        "node": ">= 0.8.0"
+    },
+    "dependencies": {
+        "bem-core": "git://github.com/bem/bem-core.git#v1.0.0",
+        "bh": ">= 0.1.19",
+        "ym": ">= 0.0.12"
+    },
+    "devDependencies": {
+        "matchdep": ">= 0.3.0",
+        "enb": ">= 0.8.43",
+        "enb-modules": ">= 0.0.14",
+        "grunt": ">= 0.4.2",
+        "grunt-enb": ">= 0.1.1",
+        "grunt-csscomb": ">= 1.1.0",
+        "grunt-imgo": ">= 0.1.1",
+        "grunt-contrib-copy": ">= 0.4.1",
+        "grunt-contrib-rename": ">= 0.0.3",
+        "grunt-contrib-clean": ">= 0.5.0",
+        "grunt-text-replace": ">= 0.3.10",
+        "grunt-autoprefixer": ">= 0.5.0"
+    }
+}

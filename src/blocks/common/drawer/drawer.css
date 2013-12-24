@@ -1,0 +1,31 @@
+.drawer
+{
+    position: absolute;
+    z-index: 1;
+    top: -2px;
+    bottom: 0;
+    left: 972px;
+
+    width: 100%;
+
+    -webkit-transition: left 200ms linear;
+       -moz-transition: left 200ms linear;
+         -o-transition: left 200ms linear;
+            transition: left 200ms linear;
+
+    border-left: 2px solid #000;
+    background: #fff;
+    -webkit-box-shadow: -18px 0 0 rgba(0, 0, 0, .2);
+       -moz-box-shadow: -18px 0 0 rgba(0, 0, 0, .2);
+            box-shadow: -18px 0 0 rgba(0, 0, 0, .2);
+}
+
+.drawer_covered
+{
+    cursor: pointer;
+}
+
+.drawer_opened
+{
+    cursor: auto;
+}

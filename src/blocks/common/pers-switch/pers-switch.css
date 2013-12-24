@@ -1,0 +1,72 @@
+.pers-switch__item
+{
+    width: 100%;
+
+    text-align: center;
+}
+
+.pers-switch__name
+{
+    font-weight: 700;
+
+    padding: 5px 0 0;
+}
+
+.pers-switch__icon
+{
+    display: inline-block;
+
+    width: 138px;
+    height: 139px;
+
+    background: 0 0 no-repeat url("../../../images/pers/pers-switch.png");
+}
+
+.pers-switch__name,
+.pers-switch__icon
+{
+    cursor: pointer;
+}
+
+.pers-switch__item_type_yellow .pers-switch__icon
+{
+    background-position: 0 0;
+}
+
+.pers-switch__item_type_red .pers-switch__icon
+{
+    background-position: -332px 0;
+}
+
+.pers-switch__item_type_blue .pers-switch__icon
+{
+    background-position: -664px 0;
+}
+
+.pers-switch__item_selected .pers-switch__icon
+{
+    width: 174px;
+    height: 174px;
+    margin: -17px 0 0;
+}
+
+.pers-switch__item_selected .pers-switch__icon,
+.pers-switch__item_selected .pers-switch__name
+{
+    cursor: initial;
+}
+
+.pers-switch__item_selected.pers-switch__item_type_yellow .pers-switch__icon
+{
+    background-position: -148px 0;
+}
+
+.pers-switch__item_selected.pers-switch__item_type_red .pers-switch__icon
+{
+    background-position: -480px 0;
+}
+
+.pers-switch__item_selected.pers-switch__item_type_blue .pers-switch__icon
+{
+    background-position: -812px;
+}
