@@ -1,5 +1,5 @@
 ({
     mustDeps: [
-        {mods:{hide: 'yes', icon: ['question', 'close']}}
+        {mods: {hide: 'yes', icon: ['question', 'close']}}
     ]
 })

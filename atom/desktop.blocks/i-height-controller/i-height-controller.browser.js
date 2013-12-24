@@ -14,7 +14,7 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                         heightImporter.css('height', height);
                     }
 
-                    steps = this.findBlocksInside('steps');
+                    var steps = this.findBlocksInside('steps');
                     for(var i = 0, len = steps.length; i < len; i++) {
                         steps[i].domElem.css('display', 'none');
                     }

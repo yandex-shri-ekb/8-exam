@@ -7,14 +7,11 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                     this._popup = this.findBlockInside('popup');
                     this._page = this.findBlockOn('page');
 
-                    this.bindTo('link', 'click', this._onLinkClick);
-                    this.bindTo('popup', 'click', this._hidePopup);
-                    this.bindTo('close', 'click', this._hidePopup);
+                    this.bindTo('link', 'click', this._showPopup)
+                        .bindTo('popup', 'click', this._hidePopup)
+                        .bindTo('close', 'click', this._hidePopup);
                 }
             }
-        },
-        _onLinkClick: function() {
-            this._showPopup();
         },
         _showPopup: function() {
             this._blockPage();
@@ -26,13 +23,17 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             return false;
         },
         _blockPage: function() {
-            this._page.domElem.css({top: -$(window).scrollTop()});
-            this._page.setMod('blocked', 'yes');
+            this._page
+                .setMod('blocked', 'yes')
+                .domElem
+                .css({top: -$(window).scrollTop()});
         },
         _unblockPage: function() {
             var top = -parseInt(this._page.domElem.css('top'));
-            this._page.delMod('blocked');
-            this._page.domElem.css({top: ''});
+            this._page
+                .delMod('blocked')
+                .domElem
+                .css({top: ''});
             $(window).scrollTop(top);
         }
     });

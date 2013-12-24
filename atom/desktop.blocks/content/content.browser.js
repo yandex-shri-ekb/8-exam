@@ -9,9 +9,9 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
                     this._setWidths();
                     this._setStatuses();
 
-                    this.bindTo(this._aside.elem('button'), 'click', this._onButtonClick);
-                    this.bindTo('history', 'click', this._onHistoryClick);
-                    this.bindTo('aside', 'click', this._onAsideClick);
+                    this.bindTo(this._aside.elem('button'), 'click', this._onButtonClick)
+                        .bindTo('history', 'click', this._onHistoryClick)
+                        .bindTo('aside', 'click', this._onAsideClick);
 
                     $(window).on('resize', function() {
                         clearTimeout(self.timer);
@@ -82,7 +82,9 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             }
         },
         _moveAside: function(left) {
-            this._aside.domElem.animate({left: left});
+            this._aside
+                .domElem
+                .animate({left: left});
         }
     });
 

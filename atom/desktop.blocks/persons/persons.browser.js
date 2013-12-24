@@ -4,15 +4,15 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
         onSetMod: {
             js: {
                 inited : function() {
-                    this.bindTo('link', 'click', this._onLinkClick);
-                    this.bindTo('item', 'mouseenter', this._onMouseEnter);
-                    this.bindTo('item', 'mouseleave', this._onMouseLeave);
+                    this.bindTo('link', 'click', this._onLinkClick)
+                        .bindTo('item', 'mouseenter', this._onMouseEnter)
+                        .bindTo('item', 'mouseleave', this._onMouseLeave);
                 }
             }
         },
         _onLinkClick: function(e) {
             var color = this.getMod($(e.delegateTarget), 'color');
-            this.trigger('colorChange', {color: color, scroll: this.hasMod('bottom') ? true : false });
+            this.trigger('colorChange', {color: color, scroll: this.hasMod('bottom')});
         },
         _onMouseEnter: function(e) {
             this.setMod($(e.delegateTarget), 'hovered', 'yes');

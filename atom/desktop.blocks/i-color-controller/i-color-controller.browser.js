@@ -26,13 +26,14 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             this._page.setMod('color', data.color);
             this._person.setMod('color', data.color);
 
-            if(data.scroll === true)
+            if(data.scroll === true) {
                 $('html, body').animate({scrollTop: this._personsYPos}, 'fast');
+            }
         }
     }, {
         getRandomColor: function() {
-            var colors = ['yellow', 'red', 'blue'];
-            var random = Math.floor(Math.random() * (colors.length));
+            var colors = ['yellow', 'red', 'blue'],
+                random = Math.floor(Math.random() * (colors.length));
             return colors[random];
         }
     });

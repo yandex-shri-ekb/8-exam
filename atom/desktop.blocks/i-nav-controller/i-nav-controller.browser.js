@@ -16,12 +16,12 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
             var currentColor = this._page.getMod('color'),
                 steps = this._steps;
 
-            for(var i = 0, len_i = steps.length; i < len_i; i++) {
+            for(var i = 0, iLen = steps.length; i < iLen; i++) {
                 if(steps[i].getMod('color') !== currentColor)
                     continue;
 
                 var items = steps[i].elem('item');
-                for(var j = 0, len_j = items.length; j < len_j; j++) {
+                for(var j = 0, jLen = items.length; j < jLen; j++) {
                     var rect = items[j].getBoundingClientRect();
                     if (rect.top < 100 && rect.bottom > 100) {
                         var num = steps[i].getMod($(items[j]), 'num');

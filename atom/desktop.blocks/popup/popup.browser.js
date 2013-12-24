@@ -2,12 +2,14 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 
     BEMDOM.decl('popup', {
         close: function() {
-            this.elem('iframe').attr('src', '');
-            this.delMod('showed');
+            this.delMod('showed')
+                .elem('iframe')
+                .attr('src', '');
         },
         show: function() {
-            this.elem('iframe').attr('src', this.params.src);
-            this.setMod('showed', 'yes');
+            this.setMod('showed', 'yes')
+                .elem('iframe')
+                .attr('src', this.params.src);
         }
     });
 
