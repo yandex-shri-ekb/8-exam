@@ -96,7 +96,8 @@ textarea
    Author's custom styles
    ========================================================================== */
 
-a {
+a
+{
     color: #000;
     text-decoration: none;
 }
@@ -307,10 +308,36 @@ a:hover
     }
 }
 
-p {
+p
+{
     font: 16px/1.5 "Arial";
 
-    & + p {
+    & + p
+    {
         margin-top: 20px;
+    }
+}
+
+ul
+{
+    list-style-type: none;
+
+    & > li:before
+    {
+        content: "\2014";
+        display: block;
+        position: absolute;
+        margin: 0 0 0 -25px;
+    }
+}
+
+.b-link_underline
+{
+    color: #0d44a0;
+    text-decoration: underline;
+
+    &:hover
+    {
+        text-decoration: underline;
     }
 }

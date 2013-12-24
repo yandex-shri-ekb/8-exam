@@ -41,7 +41,54 @@ var theme = {
     }
 };
 
+var video = {
+    init: function () {
+        var _this = this;
+
+        _this.initVideoShow();
+        _this.initVideoHide();
+    },
+    initVideoShow: function () {
+        var _this = this,
+            $videoOverlay = $('#video-overlay'),
+            $videoToggle = $('#video-toggle');
+
+        $videoToggle.click(function (event) {
+            event.preventDefault();
+
+            $videoOverlay.fadeIn(300);
+            _this.setVideoFrameSrc();
+        });
+    },
+    initVideoHide: function () {
+        var _this = this,
+            $videoOverlay = $('#video-overlay'),
+            $videoClose = $('#video-close');
+
+        $videoClose.click(function (event) {
+            event.preventDefault();
+
+            $videoOverlay.fadeOut(300);
+            _this.clearVideoFrameSrc();
+        });
+    },
+    setVideoFrameSrc: function () {
+        var _this = this,
+            $videoFrame = $('#video-frame'),
+            videoSrc = $videoFrame.data('src');
+
+        $videoFrame.attr('src', videoSrc);
+    },
+    clearVideoFrameSrc: function () {
+        var _this = this,
+            $videoFrame = $('#video-frame');
+
+        $videoFrame.attr('src', '');
+    }
+};
+
 $(function () {
     person.init();
     theme.init();
+    video.init();
 });

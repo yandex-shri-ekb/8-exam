@@ -34,18 +34,48 @@
 
 <div class="l-wrapper-base l-wrapper-base_first">
     <div class="l-sidebar">
-        <div class="b-sidebar">
-            <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-            <div style="width:700px;height:300px;">
-
+        <div class="l-sidebar-overflow">
+            <div class="b-sidebar">
+                <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+                <div class="l-wrapper l-wrapper_sidebar">
+                    <div class="grid_cols_12">
+                        <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                            <h2 class="b-sidebar-head">«Атом»: сценарии применения</h2>
+                        </div>
+                        <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                            <p>«Атом» — это платформа, которая позволит сайтам в интернете адаптироваться под каждого
+                                конкретного пользователя. Показывать ему только интересную информацию, помогать быстрее
+                                решать задачи.</p>
+                            <p>Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому
+                                пользователю, но делающих страницу более интересной, более удобной для него.</p>
+                            <p><img src="img/atom-graph.jpg" alt="Яндекс.Атом"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="l-wrapper l-wrapper_sidebar">
+                    <div class="grid_cols_12">
+                        <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                            <h2 class="b-sidebar-head">Презентация платформы «Атом» на конференции YaС 2013</h2>
+                        </div>
+                        <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                            <p>Yet another Conference (YaС) — технологическая конференция Яндекса, которая ежегодно
+                                проходит
+                                в Москве, начиная с 2010 года.</p>
+                            <p>
+                                <iframe width="720" height="405" frameborder="0"
+                                        src="//video.yandex.ru/iframe/ya-events/ey7zrfqdd2.2022/" class="b-video-player"
+                                        data-src="" allowfullscreen="true"></iframe>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
     <div class="l-wrapper">
         <div class="grid_cols_12">
             <header class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-header">
-
-                <div class="grid_cols_12" style="height:100%;">
+                <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_6 grid__module_span_2">
                         <div class="l-logo">
                             <a class="b-logo i-text-hidden" href="#" title="Яндекс">Яндекс</a>
@@ -60,6 +90,7 @@
             <section class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-description">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_2 grid__module_span_6 b-description-content">
+                        <a name="video-off"></a>
                         <p>Интернет сегодня — это не только информация и технологии, но и люди. Людей много и они все
                             разные, а сайты для всех пользователей обычно выглядят одинаково. Яндекс уже научился
                             адаптироваться под конкретного пользователя и готов поделиться этой технологией с
@@ -68,9 +99,9 @@
                             содержание страниц под конкретного пользователя.</p>
                     </div>
                     <figure class="grid__module grid__module_col_9 grid__module_span_3 b-description-video">
-                        <a class="b-description-video-icon" href="#"
-                                title="Просмотреть видео"><i
-                                class="b-icon-play"></i></a>
+                        <a class="b-description-video-icon" id="video-toggle" href="#video" title="Просмотреть видео">
+                            <i class="b-icon-play"></i>
+                        </a>
                         <figcaprion class="b-description-video-caption">Весь сайт в одном видео</figcaprion>
                     </figure>
                 </div>
@@ -122,10 +153,20 @@
 
 <div class="l-wrapper-base">
     <div class="l-sidebar">
-        <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-        <div class="b-sidebar b-sidebar_yellow">
-            <div style="width:700px;height:300px;">
-
+        <div class="l-sidebar-overflow">
+            <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Рекомендации по подбору отеля</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Список отелей, показанных на главной странице сайта бронирования, основан на полученных от
+                            «Атома» гипотезах. В списке на первых местах те отели, которые наверняка понравятся Григорию
+                            Иогановичу.</p>
+                        <p><img src="img/blue/sidebar/1.jpg" alt=""></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -277,10 +318,18 @@
 
 <div class="l-wrapper-base">
     <div class="l-sidebar">
-        <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-        <div class="b-sidebar b-sidebar_yellow">
-            <div style="width:700px;height:300px;">
-
+        <div class="l-sidebar-overflow">
+            <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Рекомендации по покупке подходящих товаров</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Сайт рекомендует Григорию Иогановичу различные товары, которые точно ему подойдут.</p>
+                        <p><img src="img/blue/sidebar/2.jpg" alt=""></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -415,10 +464,19 @@
 
 <div class="l-wrapper-base">
     <div class="l-sidebar">
-        <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-        <div class="b-sidebar b-sidebar_yellow">
-            <div style="width:700px;height:300px;">
-
+        <div class="l-sidebar-overflow">
+            <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Напоминание о заказе такси</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Григорию Иогановичу приходит уведомление с рекомендацией вызвать такси с учётом времени
+                            отправления его рейса.</p>
+                        <p><img src="img/blue/sidebar/3.jpg" alt=""></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -567,10 +625,19 @@
 
 <div class="l-wrapper-base">
     <div class="l-sidebar">
-        <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-        <div class="b-sidebar b-sidebar_yellow">
-            <div style="width:700px;height:300px;">
-
+        <div class="l-sidebar-overflow">
+            <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Рекомендации по оздоровительным процедурам</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>На сайте про оздоровительные процедуры в Таиланде Григорию Иогановичу сразу предлагаются
+                            подходящие ему варианты, учитывающие его предпочтения.</p>
+                        <p><img src="img/blue/sidebar/4.jpg" alt=""></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -670,7 +737,8 @@
                             </div>
 
                             <div class="grid__module grid__module_col_8 grid__module_span_4 b-story-text b-story-red-text-4">
-                                <p>Для Алексея один из основных мотивов выбора Таиланда — гастрономический: и он, и жена любят экзотическую кухню.</p>
+                                <p>Для Алексея один из основных мотивов выбора Таиланда — гастрономический: и он, и жена
+                                    любят экзотическую кухню.</p>
                                 <p>Каждый день они вместе отправляются на поиски новых ресторанов.</p>
                             </div>
 
@@ -679,7 +747,8 @@
                                         class="b-story-thing b-story-red-thing-16">
                             </div>
 
-                            <div class="grid__module grid__module_col_11 grid__module_span_2" style="height: 236px;margin:-100px 0 0;overflow: hidden;">
+                            <div class="grid__module grid__module_col_11 grid__module_span_2"
+                                    style="height: 236px;margin:-100px 0 0;overflow: hidden;">
                                 <img src="img/red/things/food-2.png" alt=""
                                         class="b-story-thing b-story-red-thing-17">
                             </div>
@@ -702,10 +771,40 @@
 
 <div class="l-wrapper-base l-wrapper-base_last">
     <div class="l-sidebar">
-        <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-        <div class="b-sidebar">
-            <div style="width:700px;height:300px;">
-
+        <div class="l-sidebar-overflow">
+            <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+            <div class="l-wrapper l-wrapper_sidebar">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Закрытое тестирование «Атома»</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Замысел такого масштаба невозможно воплотить в одиночку, поэтому мы уже начали проводить
+                            эксперименты с первыми партнёрами. Каким будет результат этой работы, во многом зависит от
+                            них и
+                            от других вебмастеров. У нас есть идея и технологии для её реализации, но мы не хотим
+                            двигаться
+                            дальше без ваших мыслей, мнения, опыта и осознания ваших потребностей. Всё это необходимо
+                            нам
+                            для того, чтобы превратить идею в полноценный продукт, полезный в реальных ситуациях.</p>
+                        <p>Если вы хотите принять участие в развитии «Атома», то вам необходимо выполнить следующие
+                            шаги:</p>
+                        <ul>
+                            <li>выбрать ключевые рубрики вашего сайта;</li>
+                            <li>установить на ваш сайт Яндекс.Метрику;</li>
+                            <li>разметить страницы каждой выбранной рубрики разными целями в Метрике.</li>
+                        </ul>
+                        <p>Присылайте письмо, в котором указаны идентификаторы целей и чётко описаны те задачи, которые
+                            вы
+                            бы хотели решить с помощью «Атома».</p>
+                        <p>Авторы самых интересных писем и предложений станут участниками эксперимента. Все новости и
+                            примеры мы будет публиковать в корпоративном блоге и на Хабрахабре.</p>
+                        <p>Свяжитесь с нами через <a href="#" class="b-link_underline">форму обратной связи</a> или
+                            пишите
+                            на <a href="mailto:atom-experiments@yandex-team.ru" class="b-link_underline">atom-experiments@yandex-team.ru</a>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -757,6 +856,14 @@
                 </div>
             </footer>
         </div>
+    </div>
+</div>
+
+<div class="b-video-overlay" id="video-overlay">
+    <a href="#video-off" class="b-video-close" id="video-close"></a>
+    <div class="b-video">
+        <iframe frameborder="0" width="720" height="405" id="video-frame"
+                data-src="//player.vimeo.com/video/75709551?autoplay=1" allowfullscreen="true"></iframe>
     </div>
 </div>
 
