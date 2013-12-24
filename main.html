@@ -28,8 +28,8 @@
         class="b-form-checkbox_sidebar-toggle b-sidebar-status">
 <label for="sidebar-toggle" class="b-sidebar-toggle"></label>
 
-<input type="radio" name="theme_toggle" id="theme-toggle-yellow" class="b-form-radio_theme-toggle b-yellow">
-<input type="radio" name="theme_toggle" id="theme-toggle-red" class="b-form-radio_theme-toggle b-red" checked>
+<input type="radio" name="theme_toggle" id="theme-toggle-yellow" class="b-form-radio_theme-toggle b-yellow" checked>
+<input type="radio" name="theme_toggle" id="theme-toggle-red" class="b-form-radio_theme-toggle b-red">
 <input type="radio" name="theme_toggle" id="theme-toggle-blue" class="b-form-radio_theme-toggle b-blue">
 
 <div class="l-wrapper-base l-wrapper-base_first">
@@ -49,6 +49,7 @@
                             <p>Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому
                                 пользователю, но делающих страницу более интересной, более удобной для него.</p>
                             <p><img src="img/atom-graph.jpg" alt="Яндекс.Атом"></p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
@@ -107,22 +108,19 @@
                 </div>
             </section>
 
-            <section class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-persons">
+            <section class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-persons" id="person-items">
                 <div class="grid_cols_12">
-                    <figure class="grid__module grid__module_col_3 grid__module_span_2 js-person-icon b-persons-item"
-                            data-person-description="#person-yellow-description" data-theme-class="b-yellow">
+                    <figure class="grid__module grid__module_col_3 grid__module_span_2 js-person-icon b-persons-item">
                         <label for="theme-toggle-yellow" class="b-theme-toggle b-theme-toggle_yellow"></label>
                         <div class="b-person-icon b-person-yellow-icon i-text-hidden">Энергичный Максим</div>
                         <figcaprion class="b-persons-item-caption">Максим</figcaprion>
                     </figure>
-                    <figure class="grid__module grid__module_col_6 grid__module_span_2 js-person-icon b-persons-item"
-                            data-person-description="#person-red-description" data-theme-class="b-red">
+                    <figure class="grid__module grid__module_col_6 grid__module_span_2 js-person-icon b-persons-item">
                         <label for="theme-toggle-red" class="b-theme-toggle b-theme-toggle_red"></label>
                         <div class="b-person-icon b-person-red-icon i-text-hidden">Семейный Алексей</div>
                         <figcaprion class="b-persons-item-caption">Алексей</figcaprion>
                     </figure>
-                    <figure class="grid__module grid__module_col_9 grid__module_span_2 js-person-icon b-persons-item"
-                            data-person-description="#person-blue-description" data-theme-class="b-blue">
+                    <figure class="grid__module grid__module_col_9 grid__module_span_2 js-person-icon b-persons-item">
                         <label for="theme-toggle-blue" class="b-theme-toggle b-theme-toggle_blue"></label>
                         <div class="b-person-icon b-person-blue-icon i-text-hidden">Профессор Григорий И. Дауге</div>
                         <figcaprion class="b-persons-item-caption">Григорий И. Дауге</figcaprion>
@@ -155,6 +153,31 @@
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Покупка авиабилетов</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Уже в результатах поиска Максим может уточнить удобные даты и перейти сразу на сайт с
+                            подходящими ему вариантами.</p>
+                        <p><img src="img/yellow/sidebar/1.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_red">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Покупка тура</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>В острове Алексей Быков сразу указывает параметры для поиска тура. Из результатов убраны
+                            слишком дорогие и престижные для Алексея отели. В списке вариантов — туры, идеально
+                            подходящие для семейного отдыха с детьми.</p>
+                        <p><img src="img/red/sidebar/1.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
             <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
@@ -320,6 +343,31 @@
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Рекомендации по покупке подходящих товаров</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Предложения на главной странице выбраны на основе информации о предпочтениях Максима,
+                            полученных сайтом от «Атома».</p>
+                        <p><img src="img/yellow/sidebar/2.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_red">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Напоминание от интернет-магазина</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Контактные линзы из прошлого заказа Алексея скоро должны подойти к концу. Сайт, на котором он
+                            обычно их приобретает, отправляет ему напоминание о повторной покупке с кнопкой перехода на
+                            предзаполненную форму заказа в один клик.</p>
+                        <p><img src="img/red/sidebar/2.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
             <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
@@ -466,6 +514,29 @@
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Предложение купить билет на аэроэкспресс</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Зная предпочтения Максима, сайт предлагает ему подходящий способ добраться до аэропорта и
+                            рекомендует время отправления.</p>
+                        <p><img src="img/yellow/sidebar/3.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_red">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Рекомендация по времени выезда с учётом пробок на дорогах</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Алексею предлагается оптимальный маршрут с учётом времени вылета и прогнозом пробок.</p>
+                        <p><img src="img/red/sidebar/3.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
             <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
@@ -627,6 +698,30 @@
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Выбор интересных мест для посещения</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>Когда Максим выбирает в интернете достопримечательности для посещения в путешествии, сайт
+                            предлагает ему обратить внимание и на другие объекты, которые могут быть ему интересны.</p>
+                        <p><img src="img/yellow/sidebar/4.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
+            <div class="l-wrapper l-wrapper_sidebar b-sidebar_red">
+                <div class="grid_cols_12">
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
+                        <h2 class="b-sidebar-head">Рекомендации по выбору ресторана</h2>
+                    </div>
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
+                        <p>При поиске ресторанов для посещения, сайт рекомендует Алексею места на основе информации о
+                            его предпочтениях и вкусах.</p>
+                        <p><img src="img/red/sidebar/4.jpg" alt=""></p>
+                    </div>
+                </div>
+            </div>
             <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
@@ -813,21 +908,18 @@
             <section
                     class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-persons b-persons_footer">
                 <div class="grid_cols_12">
-                    <figure class="grid__module grid__module_col_3 grid__module_span_2 js-person-icon b-persons-item"
-                            data-person-description="#person-yellow-description" data-theme-class="b-yellow">
-                        <label for="theme-toggle-yellow" class="b-theme-toggle b-theme-toggle_yellow"></label>
+                    <figure class="grid__module grid__module_col_3 grid__module_span_2 b-persons-item">
+                        <label for="theme-toggle-yellow" class="b-theme-toggle b-theme-toggle_yellow js-person-icon js-move" data-theme="b-yellow" data-move-to="#person-items"></label>
                         <div class="b-person-icon b-person-yellow-icon i-text-hidden">Энергичный Максим</div>
                         <figcaprion class="b-persons-item-caption">Максим</figcaprion>
                     </figure>
-                    <figure class="grid__module grid__module_col_6 grid__module_span_2 js-person-icon b-persons-item"
-                            data-person-description="#person-red-description" data-theme-class="b-red">
-                        <label for="theme-toggle-red" class="b-theme-toggle b-theme-toggle_red"></label>
+                    <figure class="grid__module grid__module_col_6 grid__module_span_2 js-person-icon b-persons-item">
+                        <label for="theme-toggle-red" class="b-theme-toggle b-theme-toggle_red js-person-icon js-move" data-theme="b-red" data-move-to="#person-items"></label>
                         <div class="b-person-icon b-person-red-icon i-text-hidden">Семейный Алексей</div>
                         <figcaprion class="b-persons-item-caption">Алексей</figcaprion>
                     </figure>
-                    <figure class="grid__module grid__module_col_9 grid__module_span_2 js-person-icon b-persons-item"
-                            data-person-description="#person-blue-description" data-theme-class="b-blue">
-                        <label for="theme-toggle-blue" class="b-theme-toggle b-theme-toggle_blue"></label>
+                    <figure class="grid__module grid__module_col_9 grid__module_span_2 js-person-icon b-persons-item">
+                        <label for="theme-toggle-blue" class="b-theme-toggle b-theme-toggle_blue js-person-icon js-move" data-theme="b-blue" data-move-to="#person-items"></label>
                         <div class="b-person-icon b-person-blue-icon i-text-hidden">Профессор Григорий И. Дауге</div>
                         <figcaprion class="b-persons-item-caption">Григорий И. Дауге</figcaprion>
                     </figure>

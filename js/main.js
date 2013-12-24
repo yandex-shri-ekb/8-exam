@@ -1,3 +1,24 @@
+var main = {
+    init: function () {
+        var _this = this;
+
+        _this.initSlowMoveToElement();
+    },
+    initSlowMoveToElement: function () {
+        var _this = this,
+            $elemFrom = $('.js-move');
+
+        $('.js-move').click(function () {
+            var $this = $(this),
+                $elemTo = $($this.data('move-to'));
+
+            $('html, body').animate({
+                scrollTop: $elemTo.offset().top
+            }, 500);
+        });
+    }
+};
+
 var person = {
     init: function () {
         var _this = this;
@@ -7,11 +28,12 @@ var person = {
 
 var theme = {
     themeClasses: ['b-yellow', 'b-blue', 'b-red'],
+    themeTogglesRadio: ['#theme-toggle-yellow', '#theme-toggle-red', '#theme-toggle-blue'],
     init: function () {
         var _this = this;
 
 //        _this.initToggleTheme();
-//        _this.setRandomTheme();
+        _this.setRandomTheme();
     },
     initToggleTheme: function () {
         var _this = this,
@@ -34,10 +56,10 @@ var theme = {
     },
     setRandomTheme: function () {
         var _this = this,
-            $body = $('body'),
-            randomThemeIndex = Math.floor(Math.random() * 3);
+            randomThemeIndex = Math.floor(Math.random() * 3),
+            $randomThemeToggleRadio = $(_this.themeTogglesRadio[randomThemeIndex]);
 
-        $body.removeClass(_this.themeClasses.join(' ')).addClass(_this.themeClasses[randomThemeIndex]);
+        $randomThemeToggleRadio.attr('checked', true);
     }
 };
 
@@ -88,6 +110,7 @@ var video = {
 };
 
 $(function () {
+    main.init();
     person.init();
     theme.init();
     video.init();

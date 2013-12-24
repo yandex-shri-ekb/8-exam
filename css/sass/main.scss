@@ -31,10 +31,6 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
 {
     border: none;
     margin: 0 0 0 35px;
-
-    & + .l-wrapper_sidebar {
-        margin-top: 30px;
-    }
 }
 
 .l-wrapper-base
@@ -349,7 +345,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
 /* Persons block */
 .b-persons
 {
-    margin: 80px 0 77px 0;
+    padding: 80px 0 77px 0;
 }
 
 .b-persons_footer
