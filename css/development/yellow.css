@@ -1,0 +1,333 @@
+/* Sprites */
+/* Anygrid */
+/*grid-restore,
+.grid-initial
+{
+    position: relative;
+}
+
+.grid-restore .b-grid-cols_12
+{
+    padding-right: 0;
+    margin-right: -400%;
+}
+
+.grid-restore .grid-initial
+{
+    margin-right: -1070%;
+}
+
+.b-grid-module_span_1 .grid-restore
+{
+    margin-right: -42.86%;
+}
+
+.b-grid-module_col_1 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_1 .grid-restore .grid-initial
+{
+    left: 0%;
+}
+
+.b-grid-module_span_2 .grid-restore
+{
+    margin-right: 41.18%;
+}
+
+.b-grid-module_col_2 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_2 .grid-restore .grid-initial
+{
+    left: -100%;
+}
+
+.b-grid-module_span_3 .grid-restore
+{
+    margin-right: 62.96%;
+}
+
+.b-grid-module_col_3 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_3 .grid-restore .grid-initial
+{
+    left: -200%;
+}
+
+.b-grid-module_span_4 .grid-restore
+{
+    margin-right: 72.97%;
+}
+
+.b-grid-module_col_4 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_4 .grid-restore .grid-initial
+{
+    left: -300%;
+}
+
+.b-grid-module_span_5 .grid-restore
+{
+    margin-right: 78.72%;
+}
+
+.b-grid-module_col_5 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_5 .grid-restore .grid-initial
+{
+    left: -400%;
+}
+
+.b-grid-module_span_6 .grid-restore
+{
+    margin-right: 82.46%;
+}
+
+.b-grid-module_col_6 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_6 .grid-restore .grid-initial
+{
+    left: -500%;
+}
+
+.b-grid-module_span_7 .grid-restore
+{
+    margin-right: 85.07%;
+}
+
+.b-grid-module_col_7 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_7 .grid-restore .grid-initial
+{
+    left: -600%;
+}
+
+.b-grid-module_span_8 .grid-restore
+{
+    margin-right: 87.01%;
+}
+
+.b-grid-module_col_8 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_8 .grid-restore .grid-initial
+{
+    left: -700%;
+}
+
+.b-grid-module_span_9 .grid-restore
+{
+    margin-right: 88.51%;
+}
+
+.b-grid-module_col_9 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_9 .grid-restore .grid-initial
+{
+    left: -800%;
+}
+
+.b-grid-module_span_10 .grid-restore
+{
+    margin-right: 89.69%;
+}
+
+.b-grid-module_col_10 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_10 .grid-restore .grid-initial
+{
+    left: -900%;
+}
+
+.b-grid-module_span_11 .grid-restore
+{
+    margin-right: 90.65%;
+}
+
+.b-grid-module_col_11 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_11 .grid-restore .grid-initial
+{
+    left: -1000%;
+}
+
+.b-grid-module_span_12 .grid-restore
+{
+    margin-right: 91.45%;
+}
+
+.b-grid-module_col_12 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_12 .grid-restore .grid-initial
+{
+    left: -1100%;
+}*/
+/* Check yellow theme */
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000311}}
+.b-yellow:checked ~ .l-wrapper-base > .l-wrapper {
+  background-color: #ffe05d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000315}}
+.b-yellow:checked ~ .l-wrapper-base .l-person-description_yellow {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000320}}
+.b-yellow:checked ~ .l-wrapper-base .b-theme-toggle_yellow {
+  display: none;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000325}}
+.b-yellow:checked ~ .l-wrapper-base .b-person-yellow-icon {
+  width: 174px;
+  height: 174px;
+  margin: -18px 0 0 -18px;
+  background: url('../../img/spritegen/yellow/icons-sf511e8b75c.png') 0 -217px no-repeat;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000333}}
+.b-yellow:checked ~ .l-wrapper-base .b-sidebar_yellow {
+  display: block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000338}}
+.b-yellow:checked ~ .l-wrapper-base .b-description-video-icon {
+  background-color: #ffe05d;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000343}}
+.b-yellow:checked ~ .l-wrapper-base .b-story_yellow {
+  display: block;
+  left: 0;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000349}}
+.b-yellow:checked ~ .l-wrapper-base .b-story_red {
+  display: none;
+  left: -240%;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000355}}
+.b-yellow:checked ~ .l-wrapper-base .b-story_blue {
+  display: none;
+  left: -240%;
+}
+
+/* Story */
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000372}}
+.b-story-yellow-stage_1,
+.b-story-yellow-stage_2,
+.b-story-yellow-stage_3,
+.b-story-yellow-stage_4 {
+  height: 800px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000377}}
+.b-story-yellow-stage_4 {
+  height: 862px;
+}
+
+/* Paths */
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000383}}
+.b-story-yellow-path-1 {
+  top: -44px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000388}}
+.b-story-yellow-path-2 {
+  bottom: -61px;
+  margin: 0 0 0 -23px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000394}}
+.b-story-yellow-path-3 {
+  bottom: -63px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\0000399}}
+.b-story-yellow-path-4 {
+  bottom: -63px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003104}}
+.b-story-yellow-path-5 {
+  bottom: -63px;
+}
+
+/* Things */
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003110}}
+.b-story-yellow-thing-1 {
+  top: -44px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003115}}
+.b-story-yellow-thing-2 {
+  margin: 0 0 0 -18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003128}}
+.b-story-yellow-thing-5 {
+  margin: 371px 0 0 -18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003133}}
+.b-story-yellow-thing-6 {
+  margin: -255px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003148}}
+.b-story-yellow-thing-9 {
+  z-index: 3;
+  margin: -50px 0 0 -18px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003154}}
+.b-story-yellow-thing-10 {
+  z-index: 4;
+  margin: -95px 0 0 22px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003160}}
+.b-story-yellow-thing-11 {
+  margin: 25px 0 0 34px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003170}}
+.b-story-yellow-thing-13 {
+  margin: 34px 0 0 -8px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003175}}
+.b-story-yellow-thing-14 {
+  margin: 222px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003180}}
+.b-story-yellow-thing-15 {
+  margin: 92px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003185}}
+.b-story-yellow-thing-16 {
+  margin: 1px 0 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003190}}
+.b-story-yellow-thing-17 {
+  margin: 74px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003195}}
+.b-story-yellow-thing-18 {
+  margin: 74px 0 0;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003200}}
+.b-story-yellow-thing-19 {
+  margin: 106px 0 0;
+}
+
+/* Texts */
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003206}}
+.b-story-yellow-text-1 {
+  margin-top: 79px;
+  margin-bottom: 95px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003212}}
+.b-story-yellow-text-2 {
+  margin-bottom: 89px;
+  margin-top: 90px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003218}}
+.b-story-yellow-text-3 {
+  margin-bottom: 89px;
+  margin-top: 90px;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/z\:\/home\/shri-exam\/www\/css\/sass\/yellow\.scss}line{font-family:\00003224}}
+.b-story-yellow-text-4 {
+  margin-bottom: 89px;
+  margin-top: 90px;
+}

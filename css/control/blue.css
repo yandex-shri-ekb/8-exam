@@ -1,0 +1,327 @@
+/* Sprites */
+/* Anygrid */
+/*grid-restore,
+.grid-initial
+{
+    position: relative;
+}
+
+.grid-restore .b-grid-cols_12
+{
+    padding-right: 0;
+    margin-right: -400%;
+}
+
+.grid-restore .grid-initial
+{
+    margin-right: -1070%;
+}
+
+.b-grid-module_span_1 .grid-restore
+{
+    margin-right: -42.86%;
+}
+
+.b-grid-module_col_1 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_1 .grid-restore .grid-initial
+{
+    left: 0%;
+}
+
+.b-grid-module_span_2 .grid-restore
+{
+    margin-right: 41.18%;
+}
+
+.b-grid-module_col_2 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_2 .grid-restore .grid-initial
+{
+    left: -100%;
+}
+
+.b-grid-module_span_3 .grid-restore
+{
+    margin-right: 62.96%;
+}
+
+.b-grid-module_col_3 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_3 .grid-restore .grid-initial
+{
+    left: -200%;
+}
+
+.b-grid-module_span_4 .grid-restore
+{
+    margin-right: 72.97%;
+}
+
+.b-grid-module_col_4 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_4 .grid-restore .grid-initial
+{
+    left: -300%;
+}
+
+.b-grid-module_span_5 .grid-restore
+{
+    margin-right: 78.72%;
+}
+
+.b-grid-module_col_5 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_5 .grid-restore .grid-initial
+{
+    left: -400%;
+}
+
+.b-grid-module_span_6 .grid-restore
+{
+    margin-right: 82.46%;
+}
+
+.b-grid-module_col_6 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_6 .grid-restore .grid-initial
+{
+    left: -500%;
+}
+
+.b-grid-module_span_7 .grid-restore
+{
+    margin-right: 85.07%;
+}
+
+.b-grid-module_col_7 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_7 .grid-restore .grid-initial
+{
+    left: -600%;
+}
+
+.b-grid-module_span_8 .grid-restore
+{
+    margin-right: 87.01%;
+}
+
+.b-grid-module_col_8 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_8 .grid-restore .grid-initial
+{
+    left: -700%;
+}
+
+.b-grid-module_span_9 .grid-restore
+{
+    margin-right: 88.51%;
+}
+
+.b-grid-module_col_9 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_9 .grid-restore .grid-initial
+{
+    left: -800%;
+}
+
+.b-grid-module_span_10 .grid-restore
+{
+    margin-right: 89.69%;
+}
+
+.b-grid-module_col_10 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_10 .grid-restore .grid-initial
+{
+    left: -900%;
+}
+
+.b-grid-module_span_11 .grid-restore
+{
+    margin-right: 90.65%;
+}
+
+.b-grid-module_col_11 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_11 .grid-restore .grid-initial
+{
+    left: -1000%;
+}
+
+.b-grid-module_span_12 .grid-restore
+{
+    margin-right: 91.45%;
+}
+
+.b-grid-module_col_12 .grid-restore .b-grid-cols_12,
+.b-grid-module_col_12 .grid-restore .grid-initial
+{
+    left: -1100%;
+}*/
+/* Check blue theme */
+/* line 11, ../sass/blue.scss */
+.b-blue:checked ~ .l-wrapper-base > .l-wrapper {
+  background-color: #72c4f6;
+}
+/* line 16, ../sass/blue.scss */
+.b-blue:checked ~ .l-wrapper-base .l-person-description_blue {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+/* line 21, ../sass/blue.scss */
+.b-blue:checked ~ .l-wrapper-base .b-theme-toggle_blue {
+  display: none;
+}
+/* line 26, ../sass/blue.scss */
+.b-blue:checked ~ .l-wrapper-base .b-person-blue-icon {
+  width: 174px;
+  height: 174px;
+  margin: -18px 0 0 -18px;
+  background: url('../../img/spritegen/blue/icons-s2007a5a5f3.png') 0 -217px no-repeat;
+}
+/* line 34, ../sass/blue.scss */
+.b-blue:checked ~ .l-wrapper-base .b-sidebar_blue {
+  display: block;
+}
+/* line 39, ../sass/blue.scss */
+.b-blue:checked ~ .l-wrapper-base .b-description-video-icon {
+  background-color: #72c4f6;
+}
+/* line 44, ../sass/blue.scss */
+.b-blue:checked ~ .l-wrapper-base .b-story_yellow {
+  left: -240%;
+  display: none;
+}
+/* line 50, ../sass/blue.scss */
+.b-blue:checked ~ .l-wrapper-base .b-story_red {
+  left: -240%;
+  display: none;
+}
+/* line 56, ../sass/blue.scss */
+.b-blue:checked ~ .l-wrapper-base .b-story_blue {
+  display: block;
+  left: 0;
+}
+
+/* Story */
+/* line 73, ../sass/blue.scss */
+.b-story-blue-stage_1,
+.b-story-blue-stage_2,
+.b-story-blue-stage_3,
+.b-story-blue-stage_4 {
+  height: 800px;
+}
+
+/* line 78, ../sass/blue.scss */
+.b-story-blue-stage_1 {
+  height: 835px;
+}
+
+/* Paths */
+/* line 84, ../sass/blue.scss */
+.b-story-blue-path-1 {
+  top: -44px;
+}
+
+/* line 89, ../sass/blue.scss */
+.b-story-blue-path-2 {
+  bottom: -61px;
+}
+
+/* line 94, ../sass/blue.scss */
+.b-story-blue-path-3 {
+  bottom: -63px;
+}
+
+/* line 99, ../sass/blue.scss */
+.b-story-blue-path-4 {
+  bottom: -63px;
+}
+
+/* line 104, ../sass/blue.scss */
+.b-story-blue-path-5 {
+  bottom: -45px;
+}
+
+/* Things */
+/* line 110, ../sass/blue.scss */
+.b-story-blue-thing-1 {
+  top: 78px;
+}
+
+/* line 115, ../sass/blue.scss */
+.b-story-blue-thing-2 {
+  margin: 0 0 0 -18px;
+}
+
+/* line 125, ../sass/blue.scss */
+.b-story-blue-thing-4 {
+  margin: 113px 0 0;
+}
+
+/* line 130, ../sass/blue.scss */
+.b-story-blue-thing-5 {
+  margin: 273px 0 0 0;
+}
+
+/* line 135, ../sass/blue.scss */
+.b-story-blue-thing-6 {
+  margin: 232px 0 0;
+}
+
+/* line 140, ../sass/blue.scss */
+.b-story-blue-thing-7 {
+  margin: 90px 0 0 -18px;
+}
+
+/* line 145, ../sass/blue.scss */
+.b-story-blue-thing-8 {
+  margin: 220px 0 0 -18px;
+  z-index: 3;
+}
+
+/* line 151, ../sass/blue.scss */
+.b-story-blue-thing-9 {
+  margin: 90px 0 0 4px;
+}
+
+/* line 161, ../sass/blue.scss */
+.b-story-blue-thing-11 {
+  margin: 95px 0 0 -5px;
+}
+
+/* line 166, ../sass/blue.scss */
+.b-story-blue-thing-12 {
+  margin: -277px 0 0;
+}
+
+/* line 171, ../sass/blue.scss */
+.b-story-blue-thing-13 {
+  z-index: 3;
+  margin: 94px 0 0 0;
+}
+
+/* line 177, ../sass/blue.scss */
+.b-story-blue-thing-14 {
+  margin: 0;
+}
+
+/* line 182, ../sass/blue.scss */
+.b-story-blue-thing-15 {
+  margin: -124px 0 0 -18px;
+}
+
+/* Texts */
+/* line 203, ../sass/blue.scss */
+.b-story-blue-text-1 {
+  margin-top: 79px;
+  margin-bottom: 95px;
+}
+
+/* line 209, ../sass/blue.scss */
+.b-story-blue-text-2 {
+  margin-bottom: 89px;
+  margin-top: 90px;
+}
+
+/* line 215, ../sass/blue.scss */
+.b-story-blue-text-3 {
+  margin-bottom: 89px;
+  margin-top: 90px;
+}
+
+/* line 221, ../sass/blue.scss */
+.b-story-blue-text-4 {
+  margin-bottom: 62px;
+  margin-top: 90px;
+}

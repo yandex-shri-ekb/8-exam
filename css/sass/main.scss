@@ -1,18 +1,4 @@
-@import "compass";
-
-$sprite-spacing: 20px;
-$sprite: sprite-map("sprites/*.png");
-$sprites_blue_icons: sprite-map("sprites_blue_icons/*.png");
-$sprites_red_icons: sprite-map("sprites_red_icons/*.png");
-$sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
-
-/* fonts */
-@font-face
-{
-    font-family: 'Textbook';
-    src: local('textbook');
-    src: url("//yandex.st/atom-www/_/1wUguRKdVPX0Lw2dlQ1I-l4X0hI.woff"), url("//yandex.st/atom-www/_/_qMiA1SBxUbup2B5BieefMuSpsk.ttf")
-}
+@import "settings";
 
 /* Wrappers */
 .l-wrapper
@@ -62,186 +48,9 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
         padding: 0 0 18px;
         border-bottom: none;
 
-        &:before {
+        &:before
+        {
             bottom: 0;
-        }
-    }
-}
-
-/* Themes */
-.b-yellow:checked
-{
-    $background-color: #ffe05d;
-
-    & ~ .l-wrapper-base
-    {
-        & > .l-wrapper
-        {
-            background-color: $background-color;
-        }
-        & .l-person-description_yellow
-        {
-            @include opacity(1);
-        }
-
-        & .b-theme-toggle_yellow
-        {
-            display: none;
-        }
-
-        & .b-person-yellow-icon
-        {
-            width: 174px;
-            height: 174px;
-            margin: -18px 0 0 -18px;
-            background: sprite($sprites_yellow_icons, "b-person-yellow-icon_active") no-repeat;
-        }
-
-        & .b-sidebar_yellow
-        {
-            display: block;
-        }
-
-        & .b-description-video-icon
-        {
-            background-color: $background-color;
-        }
-
-        & .b-story_yellow
-        {
-            display: block;
-            left: 0;
-        }
-
-        & .b-story_red
-        {
-            display: none;
-            left: -240%;
-        }
-
-        & .b-story_blue
-        {
-            display: none;
-            left: -240%;
-        }
-    }
-}
-
-.b-blue:checked
-{
-    $background-color: #72c4f6;
-
-    & ~ .l-wrapper-base
-    {
-        & > .l-wrapper
-        {
-            background-color: $background-color;
-        }
-
-        & .l-person-description_blue
-        {
-            @include opacity(1);
-        }
-
-        & .b-theme-toggle_blue
-        {
-            display: none;
-        }
-
-        & .b-person-blue-icon
-        {
-            width: 174px;
-            height: 174px;
-            margin: -18px 0 0 -18px;
-            background: sprite($sprites_blue_icons, "b-person-blue-icon_active") no-repeat;
-        }
-
-        & .b-sidebar_blue
-        {
-            display: block;
-        }
-
-        & .b-description-video-icon
-        {
-            background-color: $background-color;
-        }
-
-        & .b-story_yellow
-        {
-            left: -240%;
-            display: none;
-        }
-
-        & .b-story_red
-        {
-            left: -240%;
-            display: none;
-        }
-
-        & .b-story_blue
-        {
-            display: block;
-            left: 0;
-        }
-    }
-}
-
-.b-red:checked
-{
-    $background-color: #ff8282;
-
-    & ~ .l-wrapper-base
-    {
-
-        & > .l-wrapper
-        {
-            background-color: $background-color;
-        }
-
-        & .l-person-description_red
-        {
-            @include opacity(1);
-        }
-
-        & .b-theme-toggle_red
-        {
-            display: none;
-        }
-
-        & .b-person-red-icon
-        {
-            width: 174px;
-            height: 174px;
-            margin: -18px 0 0 -18px;
-            background: sprite($sprites_red_icons, "b-person-red-icon_active") no-repeat;
-        }
-
-        & .b-sidebar_red
-        {
-            display: block;
-        }
-
-        & .b-description-video-icon
-        {
-            background-color: $background-color;
-        }
-
-        & .b-story_yellow
-        {
-            display: none;
-            left: -240%;
-        }
-
-        & .b-story_red
-        {
-            display: block;
-            left: 0;
-        }
-
-        & .b-story_blue
-        {
-            display: none;
-            left: -240%;
         }
     }
 }
@@ -266,7 +75,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
 .b-header
 {
     height: 588px;
-    background: url("../img/b-header.png") 10% 0 no-repeat;
+    background: url("../../img/b-header.png") 10% 0 no-repeat;
 }
 
 .l-logo
@@ -437,7 +246,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     display: block;
     width: 138px;
     height: 138px;
-    background: sprite($sprites_yellow_icons, "b-person-yellow-icon") no-repeat;
+    background: sprite($sprite_yellow_icons, "b-person-yellow-icon") no-repeat;
 }
 
 .b-person-yellow-icon_active
@@ -446,7 +255,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     width: 174px;
     height: 174px;
     margin: -18px 0 0 -18px;
-    background: sprite($sprites_yellow_icons, "b-person-yellow-icon_active") no-repeat;
+    background: sprite($sprite_yellow_icons, "b-person-yellow-icon_active") no-repeat;
 }
 
 .b-person-yellow-icon_popup
@@ -454,7 +263,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     display: block;
     width: 217px;
     height: 217px;
-    background: sprite($sprites_yellow_icons, "b-person-yellow-icon_popup") no-repeat;
+    background: sprite($sprite_yellow_icons, "b-person-yellow-icon_popup") no-repeat;
 }
 
 .b-person-blue-icon
@@ -462,7 +271,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     display: block;
     width: 138px;
     height: 138px;
-    background: sprite($sprites_blue_icons, "b-person-blue-icon") no-repeat;
+    background: sprite($sprite_blue_icons, "b-person-blue-icon") no-repeat;
 }
 
 .b-person-blue-icon_active
@@ -470,7 +279,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     display: block;
     width: 174px;
     height: 174px;
-    background: sprite($sprites_blue_icons, "b-person-blue-icon_active") no-repeat;
+    background: sprite($sprite_blue_icons, "b-person-blue-icon_active") no-repeat;
 }
 
 .b-person-blue-icon_popup
@@ -478,7 +287,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     display: block;
     width: 217px;
     height: 217px;
-    background: sprite($sprites_blue_icons, "b-person-blue-icon_popup") no-repeat;
+    background: sprite($sprite_blue_icons, "b-person-blue-icon_popup") no-repeat;
 }
 
 .b-person-red-icon
@@ -486,7 +295,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     display: block;
     width: 138px;
     height: 138px;
-    background: sprite($sprites_red_icons, "b-person-red-icon") no-repeat;
+    background: sprite($sprite_red_icons, "b-person-red-icon") no-repeat;
 }
 
 .b-person-red-icon_active
@@ -494,7 +303,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     display: block;
     width: 174px;
     height: 174px;
-    background: sprite($sprites_red_icons, "b-person-red-icon_active") no-repeat;
+    background: sprite($sprite_red_icons, "b-person-red-icon_active") no-repeat;
 }
 
 .b-person-red-icon_popup
@@ -502,7 +311,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     display: block;
     width: 217px;
     height: 217px;
-    background: sprite($sprites_red_icons, "b-person-red-icon_popup") no-repeat;
+    background: sprite($sprite_red_icons, "b-person-red-icon_popup") no-repeat;
 }
 
 /* Story */
@@ -536,505 +345,6 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     text-align: center;
 }
 
-/* Story :: Yellow */
-.b-story_yellow
-{
-
-}
-
-.b-story-yellow-stage_1,
-.b-story-yellow-stage_2,
-.b-story-yellow-stage_3,
-.b-story-yellow-stage_4
-{
-    height: 800px;
-}
-
-.b-story-yellow-stage_4
-{
-    height: 862px;
-}
-
-/* Paths */
-.b-story-yellow-path-1
-{
-    top: -44px;
-}
-
-.b-story-yellow-path-2
-{
-    bottom: -61px;
-    margin: 0 0 0 -23px;
-}
-
-.b-story-yellow-path-3
-{
-    bottom: -63px;
-}
-
-.b-story-yellow-path-4
-{
-    bottom: -63px;
-}
-
-.b-story-yellow-path-5
-{
-    bottom: -63px;
-}
-
-/* Things */
-.b-story-yellow-thing-1
-{
-    top: -44px;
-}
-
-.b-story-yellow-thing-2
-{
-    margin: 0 0 0 -18px;
-}
-
-.b-story-yellow-thing-3
-{
-}
-
-.b-story-yellow-thing-4
-{
-}
-
-.b-story-yellow-thing-5
-{
-    margin: 371px 0 0 -18px;
-}
-
-.b-story-yellow-thing-6
-{
-    margin: -255px 0 0;
-}
-
-.b-story-yellow-thing-7
-{
-}
-
-.b-story-yellow-thing-8
-{
-}
-
-.b-story-yellow-thing-9
-{
-    z-index: 3;
-    margin: -50px 0 0 -18px;
-}
-
-.b-story-yellow-thing-10
-{
-    z-index: 4;
-    margin: -95px 0 0 22px;
-}
-
-.b-story-yellow-thing-11
-{
-    margin: 25px 0 0 34px;
-}
-
-.b-story-yellow-thing-12
-{
-}
-
-.b-story-yellow-thing-13
-{
-    margin: 34px 0 0 -8px;
-}
-
-.b-story-yellow-thing-14
-{
-    margin: 222px 0 0;
-}
-
-.b-story-yellow-thing-15
-{
-    margin: 92px 0 0;
-}
-
-.b-story-yellow-thing-16
-{
-    margin: 1px 0 0 0;
-}
-
-.b-story-yellow-thing-17
-{
-    margin: 74px 0 0;
-}
-
-.b-story-yellow-thing-18
-{
-    margin: 74px 0 0;
-}
-
-.b-story-yellow-thing-19
-{
-    margin: 106px 0 0;
-}
-
-/* Texts */
-.b-story-yellow-text-1
-{
-    margin-top: 79px;
-    margin-bottom: 95px;
-}
-
-.b-story-yellow-text-2
-{
-    margin-bottom: 89px;
-    margin-top: 90px;
-}
-
-.b-story-yellow-text-3
-{
-    margin-bottom: 89px;
-    margin-top: 90px;
-}
-
-.b-story-yellow-text-4
-{
-    margin-bottom: 89px;
-    margin-top: 90px;
-}
-
-/* Story :: Blue */
-.b-story_blue
-{
-
-}
-
-.b-story-blue-stage_1,
-.b-story-blue-stage_2,
-.b-story-blue-stage_3,
-.b-story-blue-stage_4
-{
-    height: 800px;
-}
-
-.b-story-blue-stage_1
-{
-    height: 835px;
-}
-
-/* Paths */
-.b-story-blue-path-1
-{
-    top: -44px;
-}
-
-.b-story-blue-path-2
-{
-    bottom: -61px;
-}
-
-.b-story-blue-path-3
-{
-    bottom: -63px;
-}
-
-.b-story-blue-path-4
-{
-    bottom: -63px;
-}
-
-.b-story-blue-path-5
-{
-    bottom: -45px;
-}
-
-/* Things */
-.b-story-blue-thing-1
-{
-    top: 78px;
-}
-
-.b-story-blue-thing-2
-{
-    margin: 0 0 0 -18px;
-}
-
-.b-story-blue-thing-3
-{
-
-}
-
-.b-story-blue-thing-4
-{
-    margin: 113px 0 0;
-}
-
-.b-story-blue-thing-5
-{
-    margin: 273px 0 0 0;
-}
-
-.b-story-blue-thing-6
-{
-    margin: 232px 0 0;
-}
-
-.b-story-blue-thing-7
-{
-    margin: 90px 0 0 -18px;
-}
-
-.b-story-blue-thing-8
-{
-    margin: 220px 0 0 -18px;
-    z-index: 3;
-}
-
-.b-story-blue-thing-9
-{
-    margin: 90px 0 0 4px;
-}
-
-.b-story-blue-thing-10
-{
-
-}
-
-.b-story-blue-thing-11
-{
-    margin: 95px 0 0 -5px;
-}
-
-.b-story-blue-thing-12
-{
-    margin: -277px 0 0;
-}
-
-.b-story-blue-thing-13
-{
-    z-index: 3;
-    margin: 94px 0 0 0;
-}
-
-.b-story-blue-thing-14
-{
-    margin: 0;
-}
-
-.b-story-blue-thing-15
-{
-    margin: -124px 0 0 -18px;
-}
-
-.b-story-blue-thing-16
-{
-
-}
-
-.b-story-blue-thing-17
-{
-
-}
-
-.b-story-blue-thing-18
-{
-
-}
-
-/* Texts */
-.b-story-blue-text-1
-{
-    margin-top: 79px;
-    margin-bottom: 95px;
-}
-
-.b-story-blue-text-2
-{
-    margin-bottom: 89px;
-    margin-top: 90px;
-}
-
-.b-story-blue-text-3
-{
-    margin-bottom: 89px;
-    margin-top: 90px;
-}
-
-.b-story-blue-text-4
-{
-    margin-bottom: 62px;
-    margin-top: 90px;
-}
-
-/* Story :: Red */
-.b-story_red
-{
-
-}
-
-.b-story-red-stage_1,
-.b-story-red-stage_2,
-.b-story-red-stage_3,
-.b-story-red-stage_4
-{
-    height: 800px;
-}
-
-.b-story-red-stage_1
-{
-    height: 835px;
-}
-
-.b-story-red-stage_3
-{
-    height: 860px;
-}
-
-.b-story-red-stage_4
-{
-    height: 780px;
-}
-
-/* Paths */
-.b-story-red-path-1
-{
-    top: -44px;
-}
-
-.b-story-red-path-2
-{
-    bottom: -52px;
-    margin: 0 0 0 55px;
-}
-
-.b-story-red-path-3
-{
-    bottom: -63px;
-}
-
-.b-story-red-path-4
-{
-    bottom: -63px;
-}
-
-.b-story-red-path-5
-{
-    bottom: -45px;
-}
-
-/* Things */
-.b-story-red-thing-1
-{
-    top: 78px;
-}
-
-.b-story-red-thing-2
-{
-
-}
-
-.b-story-red-thing-3
-{
-
-}
-
-.b-story-red-thing-4
-{
-    margin: 68px 0 0;
-}
-
-.b-story-red-thing-5
-{
-    margin: -94px 0 0 -18px;
-}
-
-.b-story-red-thing-6
-{
-
-}
-
-.b-story-red-thing-7
-{
-    margin: -34px 0 0;
-}
-
-.b-story-red-thing-8
-{
-
-}
-
-.b-story-red-thing-9
-{
-    margin: 341px 0 0;
-}
-
-.b-story-red-thing-10
-{
-    margin: -115px 0 0 -18px;
-}
-
-.b-story-red-thing-11
-{
-
-}
-
-.b-story-red-thing-12
-{
-    margin: -215px 0 0;
-}
-
-.b-story-red-thing-13
-{
-    margin: -140px 0 0;
-}
-
-.b-story-red-thing-14
-{
-    margin: -46px 0 0 20px;
-}
-
-.b-story-red-thing-15
-{
-    margin: -210px 0 0 -18px;
-}
-
-.b-story-red-thing-16
-{
-    margin: -100px 0 0 -18px;
-}
-
-.b-story-red-thing-17
-{
-
-}
-
-.b-story-red-thing-18
-{
-    margin: -196px 0 0;
-}
-
-/* Texts */
-.b-story-red-text-1
-{
-    margin-top: 79px;
-    margin-bottom: 95px;
-}
-
-.b-story-red-text-2
-{
-    margin-bottom: 89px;
-    margin-top: 90px;
-}
-
-.b-story-red-text-3
-{
-    margin-bottom: 89px;
-    margin-top: 90px;
-}
-
-.b-story-red-text-4
-{
-    margin-bottom: 197px;
-    margin-top: 90px;
-}
-
 /* Footer */
 .b-copyright
 {
@@ -1058,7 +368,7 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     background: sprite($sprite, "b-icon-play") no-repeat;
 }
 
-/* sidebar */
+/* Sidebar */
 .l-sidebar
 {
     position: absolute;
@@ -1086,7 +396,8 @@ $sprites_yellow_icons: sprite-map("sprites_yellow_icons/*.png");
     }
 }
 
-.l-sidebar-overflow {
+.l-sidebar-overflow
+{
     position: absolute;
     left: 0;
     right: 0;
