@@ -1,0 +1,179 @@
+@import "compass";
+
+/* Sprites */
+$sprite-spacing: 20px;
+$sprite: sprite-map("sprites/*.png");
+$sprite_blue_icons: sprite-map("blue/icons/*.png");
+$sprite_red_icons: sprite-map("red/icons/*.png");
+$sprite_yellow_icons: sprite-map("yellow/icons/*.png");
+
+@charset "utf-8";
+
+/* Anygrid */
+@mixin b-grid-cols_12
+{
+    padding-right: 57.25%;
+    position: relative;
+    @include box-sizing("border-box");
+
+    &:before, &:after
+    {
+        clear: both;
+        content: '';
+        display: block;
+    }
+}
+
+@mixin b-grid-row
+{
+    &:before, &:after
+    {
+        clear: both;
+        content: '';
+        display: block;
+    }
+}
+
+@mixin b-grid-module
+{
+    float: left;
+    position: relative;
+    /*outline: 1px solid red;*/
+}
+
+@mixin b-grid-module_first
+{
+    clear: left;
+}
+
+@mixin b-grid-module_span_1
+{
+    margin-right: -14%;
+    width: 14%;
+}
+
+@mixin b-grid-module_col_1
+{
+    left: 0%;
+}
+
+@mixin b-grid-module_span_2
+{
+    margin-right: -34%;
+    width: 34%;
+}
+
+@mixin b-grid-module_col_2
+{
+    left: 20%;
+}
+
+@mixin b-grid-module_span_3
+{
+    margin-right: -54%;
+    width: 54%;
+}
+
+@mixin b-grid-module_col_3
+{
+    left: 40%;
+}
+
+@mixin b-grid-module_span_4
+{
+    margin-right: -74%;
+    width: 74%;
+}
+
+@mixin b-grid-module_col_4
+{
+    left: 60%;
+}
+
+@mixin b-grid-module_span_5
+{
+    margin-right: -94%;
+    width: 94%;
+}
+
+@mixin b-grid-module_col_5
+{
+    left: 80%;
+}
+
+@mixin b-grid-module_span_6
+{
+    margin-right: -114%;
+    width: 114%;
+}
+
+@mixin b-grid-module_col_6
+{
+    left: 100%;
+}
+
+@mixin b-grid-module_span_7
+{
+    margin-right: -134%;
+    width: 134%;
+}
+
+@mixin b-grid-module_col_7
+{
+    left: 120%;
+}
+
+@mixin b-grid-module_span_8
+{
+    margin-right: -154%;
+    width: 154%;
+}
+
+@mixin b-grid-module_col_8
+{
+    left: 140%;
+}
+
+@mixin b-grid-module_span_9
+{
+    margin-right: -174%;
+    width: 174%;
+}
+
+@mixin b-grid-module_col_9
+{
+    left: 160%;
+}
+
+@mixin b-grid-module_span_10
+{
+    margin-right: -194%;
+    width: 194%;
+}
+
+@mixin b-grid-module_col_10
+{
+    left: 180%;
+}
+
+@mixin b-grid-module_span_11
+{
+    margin-right: -214%;
+    width: 214%;
+}
+
+@mixin b-grid-module_col_11
+{
+    left: 200%;
+}
+
+@mixin b-grid-module_span_12
+{
+    margin-right: -234%;
+    width: 234%;
+}
+
+@mixin b-grid-module_col_12
+{
+    left: 220%;
+}

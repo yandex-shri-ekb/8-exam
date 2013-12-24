@@ -1,0 +1,181 @@
+@import "settings";
+
+html,
+button,
+input,
+select,
+textarea
+{
+    color: #000;
+}
+
+html
+{
+    height: 100%;
+    min-height: 100%;
+}
+
+body
+{
+    position: relative;
+    min-height: 100%;
+    font: 16px/1.5 "Arial", "Helvetica", sans-serif;
+    color: #000;
+    padding: 16px 0 16px 16px;
+}
+
+hr
+{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img
+{
+    vertical-align: middle;
+}
+
+fieldset
+{
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea
+{
+    resize: vertical;
+}
+
+.chromeframe
+{
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: red;
+    text-decoration: none;
+}
+
+.i-text-hidden
+{
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.i-text-hidden:before
+{
+    content: "";
+    display: block;
+    width: 0;
+    height: 100%;
+}
+
+.hidden
+{
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden
+{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus
+{
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.i-invisible
+{
+    visibility: hidden;
+}
+
+.i-visible
+{
+    visibility: visible;
+}
+
+/* Clearfix: contain floats */
+.i-clearfix:before,
+.i-clearfix:after
+{
+    content: " ";
+    display: table;
+}
+
+.i-clearfix:after
+{
+    clear: both;
+}
+
+.i-clearfix
+{
+    *zoom: 1;
+}
+
+/* Content */
+p
+{
+    font: 16px/1.5 "Arial";
+
+    & + p
+    {
+        margin-top: 20px;
+    }
+}
+
+ul
+{
+    list-style-type: none;
+
+    & > li:before
+    {
+        content: "\2014";
+        display: block;
+        position: absolute;
+        margin: 0 0 0 -25px;
+    }
+}
+
+.b-link_underline
+{
+    color: #0d44a0;
+    text-decoration: underline;
+
+    &:hover
+    {
+        text-decoration: underline;
+    }
+}
