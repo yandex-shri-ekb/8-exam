@@ -2,19 +2,5 @@
 {
     position: relative;
     display: none;
-    margin-left: -20px;
-    height: 3280px;
-    background: url("/image/alex-s2.png");
-}
-
-.history-alex:before
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3280px;
-    background: url("/image/alex-s1.png");
-    content: " ";
-
+    height: 3330px;
 }

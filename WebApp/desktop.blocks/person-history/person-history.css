@@ -2,3 +2,25 @@
 {
     text-align: center;
 }
+.person-history .history-alex,
+.person-history .history-max,
+.person-history .history-grig
+{
+    display: none;
+}
+
+
+.person-history_color_red .history-alex
+{
+    display: block;
+}
+
+.person-history_color_blue .history-grig
+{
+    display: block;
+}
+
+.person-history_color_yellow .history-max
+{
+    display: block;
+}

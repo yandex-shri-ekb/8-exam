@@ -116,6 +116,15 @@ exports.deps = [
         "block": "history"
     },
     {
+        "block": "history",
+        "mod": "color"
+    },
+    {
+        "block": "history",
+        "mod": "color",
+        "val": "yellow"
+    },
+    {
         "block": "head-history"
     },
     {
@@ -208,18 +217,6 @@ exports.deps = [
     },
     {
         "block": "video-button",
-        "elem": "max"
-    },
-    {
-        "block": "video-button",
-        "elem": "alex"
-    },
-    {
-        "block": "video-button",
-        "elem": "grig"
-    },
-    {
-        "block": "video-button",
         "elem": "title"
     },
     {
@@ -235,37 +232,63 @@ exports.deps = [
         "val": "up"
     },
     {
-        "block": "select-max"
+        "block": "select-max "
+    },
+    {
+        "block": "js-person"
     },
     {
         "block": "person-name"
     },
     {
-        "block": "select-alex"
+        "block": "select-alex "
     },
     {
-        "block": "select-grig"
+        "block": "select-grig "
     },
     {
         "block": "person-description"
     },
     {
-        "block": "max-description"
+        "block": "max-description js-description"
     },
     {
         "block": "indent"
     },
     {
-        "block": "alex-description"
+        "block": "alex-description js-description"
     },
     {
-        "block": "grig-description"
+        "block": "grig-description js-description"
     },
     {
         "block": "person-history"
     },
     {
         "block": "history-max"
+    },
+    {
+        "block": "max-history-bg"
+    },
+    {
+        "block": "max-history-bg",
+        "elem": "bg-1"
+    },
+    {
+        "block": "max-history-bg",
+        "elem": "bg-2"
+    },
+    {
+        "block": "max-history-bg",
+        "elem": "bg-3"
+    },
+    {
+        "block": "max-history-bg",
+        "elem": "bg-4"
+    },
+    {
+        "block": "max-history-bg",
+        "elem": "bg-5"
     },
     {
         "block": "history-text"
@@ -286,7 +309,62 @@ exports.deps = [
         "block": "history-alex"
     },
     {
+        "block": "alex-history-bg"
+    },
+    {
+        "block": "alex-history-bg",
+        "elem": "bg-1"
+    },
+    {
+        "block": "alex-history-bg",
+        "elem": "bg-2"
+    },
+    {
+        "block": "alex-history-bg",
+        "elem": "bg-3"
+    },
+    {
+        "block": "alex-history-bg",
+        "elem": "bg-4"
+    },
+    {
+        "block": "alex-history-bg",
+        "elem": "bg-5"
+    },
+    {
         "block": "history-grig"
+    },
+    {
+        "block": "grig-history-bg"
+    },
+    {
+        "block": "grig-history-bg",
+        "elem": "bg-1"
+    },
+    {
+        "block": "grig-history-bg",
+        "elem": "bg-2"
+    },
+    {
+        "block": "grig-history-bg",
+        "elem": "bg-3"
+    },
+    {
+        "block": "grig-history-bg",
+        "elem": "bg-4"
+    },
+    {
+        "block": "grig-history-bg",
+        "elem": "bg-5"
+    },
+    {
+        "block": "select-max"
+    },
+    {
+        "block": "select-alex"
+    },
+    {
+        "block": "select-grig"
     },
     {
         "block": "atom-footer"

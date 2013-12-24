@@ -45,8 +45,21 @@
     width: 952px;
     border: 2px solid #000;
     border-right: 0;
-    background: #ffe05d;
 }
+.history_color_blue
+{
+    background: #00d0f8;
+}
+.history_color_yellow
+{
+    background: #ffe152;
+}
+.history_color_red
+{
+    background: #ff8284;
+}
+
+
 
 /* ../../desktop.blocks/history/history.css end */
 /* ../../desktop.blocks/head-history/head-history.css begin */
@@ -253,7 +266,7 @@
 /* ../../desktop.blocks/paragraf/paragraf.css begin */
 .paragraf
 {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 /* ../../desktop.blocks/paragraf/paragraf.css end */
@@ -269,38 +282,30 @@
 {
     display: inline-block;
     overflow: hidden;
+    cursor: pointer;
 }
 
-/* ../../desktop.blocks/video-button/__button/video-button__button.css end */
-/* ../../desktop.blocks/video-button/__max/video-button__max.css begin */
-.video-button__max
+.video-button__button_color_red
+{
+    width: 138px;
+    height: 80px;
+    background: url("/image/sprite1.png") no-repeat -298px -84px;
+}
+
+.video-button__button_color_yellow
 {
     width: 138px;
     height: 80px;
     background: url("/image/sprite1.png") no-repeat -298px -166px;
 }
 
-/* ../../desktop.blocks/video-button/__max/video-button__max.css end */
-/* ../../desktop.blocks/video-button/__alex/video-button__alex.css begin */
-.video-button__alex
+.video-button__button_color_blue
 {
-    display: none;
-    width: 138px;
-    height: 80px;
-    background: url("/image/sprite1.png") no-repeat -298px -84px;
-}
-
-/* ../../desktop.blocks/video-button/__alex/video-button__alex.css end */
-/* ../../desktop.blocks/video-button/__grig/video-button__grig.css begin */
-.video-button__grig
-{
-    display: none;
     width: 138px;
     height: 80px;
     background: url("/image/sprite1.png") no-repeat -298px -2px;
 }
-
-/* ../../desktop.blocks/video-button/__grig/video-button__grig.css end */
+/* ../../desktop.blocks/video-button/__button/video-button__button.css end */
 /* ../../desktop.blocks/video-button/__title/video-button__title.css begin */
 .video-button__title
 {
@@ -323,20 +328,6 @@
 }
 
 /* ../../desktop.blocks/select-person/_top/select-person_top_up.css end */
-/* ../../desktop.blocks/select-max/select-max.css begin */
-.select-max
-{
-    display: inline-block;
-    overflow: hidden;
-    margin-top: 80px;
-    margin-left: 18px;
-    width: 138px;
-    height: 138px;
-    background: url("/image/sprite2.png") no-repeat -1467px -2px;
-    cursor: pointer;
-}
-
-/* ../../desktop.blocks/select-max/select-max.css end */
 /* ../../desktop.blocks/person-name/person-name.css begin */
 .person-name
 {
@@ -348,34 +339,6 @@
 }
 
 /* ../../desktop.blocks/person-name/person-name.css end */
-/* ../../desktop.blocks/select-alex/select-alex.css begin */
-.select-alex
-{
-    display: inline-block;
-    overflow: hidden;
-    margin-top: 79px;
-    margin-left: 18px;
-    width: 138px;
-    height: 139px;
-    background: url("/image/sprite2.png") no-repeat -1327px -2px;
-    cursor: pointer;
-}
-
-/* ../../desktop.blocks/select-alex/select-alex.css end */
-/* ../../desktop.blocks/select-grig/select-grig.css begin */
-.select-grig
-{
-    display: inline-block;
-    overflow: hidden;
-    margin-top: 79px;
-    margin-left: 18px;
-    width: 138px;
-    height: 139px;
-    background: url("/image/sprite2.png") no-repeat -1187px -2px;
-    cursor: pointer;
-}
-
-/* ../../desktop.blocks/select-grig/select-grig.css end */
 /* ../../desktop.blocks/person-description/person-description.css begin */
 .person-description
 {
@@ -396,33 +359,185 @@
 {
     text-align: center;
 }
+.person-history .history-alex,
+.person-history .history-max,
+.person-history .history-grig
+{
+    display: none;
+}
 
+
+.person-history_color_red .history-alex
+{
+    display: block;
+}
+
+.person-history_color_blue .history-grig
+{
+    display: block;
+}
+
+.person-history_color_yellow .history-max
+{
+    display: block;
+}
 /* ../../desktop.blocks/person-history/person-history.css end */
 /* ../../desktop.blocks/history-max/history-max.css begin */
 .history-max
 {
     position: relative;
-    margin-left: -20px;
-    height: 3310px;
-    background: url("/image/max-s2.png");
+    height: 3330px;
+    display: none;
 }
 
-.history-max:before
+/* ../../desktop.blocks/history-max/history-max.css end */
+/* ../../desktop.blocks/max-history-bg/max-history-bg.css begin */
+.max-history-bg
+{
+    margin-left: 18px;
+}
+
+/* ../../desktop.blocks/max-history-bg/max-history-bg.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-1/max-history-bg__bg-1.css begin */
+
+.max-history-bg__bg-1
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 226px;
+    background: url('/image/y2.png') 0 -2958px no-repeat
+}
+
+.max-history-bg__bg-1:before
 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 3310px;
-    background: url("/image/max-s1.png");
-    content: " ";
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 226px;
+    background: url('/image/y1.png') 0 -2958px no-repeat;
+    content: '';
 }
 
-/* ../../desktop.blocks/history-max/history-max.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-1/max-history-bg__bg-1.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-2/max-history-bg__bg-2.css begin */
+
+.max-history-bg__bg-2
+{
+    position: relative;
+    top: 75px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 565px;
+    background: url('/image/y2.png') 0 -1036px no-repeat;
+}
+
+.max-history-bg__bg-2:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 565px;
+    background: url('/image/y1.png') 0 -1036px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/max-history-bg/__bg-2/max-history-bg__bg-2.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-3/max-history-bg__bg-3.css begin */
+
+.max-history-bg__bg-3
+{
+    position: relative;
+    top: 130px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 1034px;
+    background: url('/image/y2.png') 0 0 no-repeat;
+}
+
+.max-history-bg__bg-3:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 1034px;
+    background: url('/image/y1.png') 0 0 no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/max-history-bg/__bg-3/max-history-bg__bg-3.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-4/max-history-bg__bg-4.css begin */
+
+.max-history-bg__bg-4
+{
+    position: relative;
+    top: 47px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 958px;
+    height: 565px;
+    background: url('/image/y2.png') 0 -1603px no-repeat;
+}
+
+.max-history-bg__bg-4:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 958px;
+    height: 565px;
+    background: url('/image/y1.png') 0 -1603px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/max-history-bg/__bg-4/max-history-bg__bg-4.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-5/max-history-bg__bg-5.css begin */
+
+.max-history-bg__bg-5
+{
+    position: relative;
+    top: 133px;
+    display: inline-block;
+    overflow: hidden;
+    width: 858px;
+    height: 786px;
+    background: url('/image/y2.png') 0 -2170px no-repeat;
+}
+
+.max-history-bg__bg-5:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 858px;
+    height: 786px;
+    background: url('/image/y1.png') 0 -2170px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/max-history-bg/__bg-5/max-history-bg__bg-5.css end */
 /* ../../desktop.blocks/history-text/history-text.css begin */
 .history-text
 {
-    margin-left: 20px;
 }
 
 /* ../../desktop.blocks/history-text/history-text.css end */
@@ -457,7 +572,7 @@
 .step4
 {
     position: absolute;
-    top: 2493px;
+    top: 2476px;
     width: 954px;
 }
 
@@ -467,47 +582,255 @@
 {
     position: relative;
     display: none;
-    margin-left: -20px;
-    height: 3280px;
-    background: url("/image/alex-s2.png");
+    height: 3330px;
 }
 
-.history-alex:before
+/* ../../desktop.blocks/history-alex/history-alex.css end */
+/* ../../desktop.blocks/alex-history-bg/alex-history-bg.css begin */
+.alex-history-bg
+{
+    margin-left: 18px;
+}
+
+/* ../../desktop.blocks/alex-history-bg/alex-history-bg.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-1/alex-history-bg__bg-1.css begin */
+.alex-history-bg__bg-1
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/r2.png') -968px -1549px no-repeat
+}
+
+.alex-history-bg__bg-1:before
 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 3280px;
-    background: url("/image/alex-s1.png");
-    content: " ";
-
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/r1.png') -968px -1549px no-repeat;
+    content: '';
 }
 
-/* ../../desktop.blocks/history-alex/history-alex.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-1/alex-history-bg__bg-1.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-2/alex-history-bg__bg-2.css begin */
+.alex-history-bg__bg-2
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 997px;
+    background: url('/image/r2.png') -974px 0 no-repeat
+}
+
+.alex-history-bg__bg-2:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 997px;
+    background: url('/image/r1.png') -974px 0 no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/alex-history-bg/__bg-2/alex-history-bg__bg-2.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-3/alex-history-bg__bg-3.css begin */
+.alex-history-bg__bg-3
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 966px;
+    height: 614px;
+    background: url('/image/r2.png') 0 -1001px no-repeat
+}
+
+.alex-history-bg__bg-3:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 966px;
+    height: 614px;
+    background: url('/image/r1.png') 0 -1001px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/alex-history-bg/__bg-3/alex-history-bg__bg-3.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-4/alex-history-bg__bg-4.css begin */
+.alex-history-bg__bg-4
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 999px;
+    background: url('/image/r2.png') 0 0 no-repeat
+}
+
+.alex-history-bg__bg-4:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 999px;
+    background: url('/image/r1.png') 0 0 no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/alex-history-bg/__bg-4/alex-history-bg__bg-4.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-5/alex-history-bg__bg-5.css begin */
+.alex-history-bg__bg-5
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 548px;
+    background: url('/image/r2.png') -974px -999px no-repeat
+}
+
+.alex-history-bg__bg-5:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 548px;
+    background: url('/image/r1.png') -974px -999px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/alex-history-bg/__bg-5/alex-history-bg__bg-5.css end */
 /* ../../desktop.blocks/history-grig/history-grig.css begin */
 .history-grig
 {
     position: relative;
     display: none;
-    margin-left: -20px;
-    height: 3280px;
-    background: url("/image/grig-s2.png");
-}
-
-.history-grig:before
-{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3280px;
-    background: url("/image/grig-s1.png");
-    content: " ";
-
+    height: 3330px;
 }
 
 /* ../../desktop.blocks/history-grig/history-grig.css end */
+/* ../../desktop.blocks/grig-history-bg/grig-history-bg.css begin */
+.grig-history-bg
+{
+    margin-left: 18px;
+}
+
+/* ../../desktop.blocks/grig-history-bg/grig-history-bg.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-1/grig-history-bg__bg-1.css begin */
+.grig-history-bg__bg-1
+{
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-1/grig-history-bg__bg-1.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-2/grig-history-bg__bg-2.css begin */
+.grig-history-bg__bg-2
+{
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-2/grig-history-bg__bg-2.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-3/grig-history-bg__bg-3.css begin */
+.grig-history-bg__bg-3
+{
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-3/grig-history-bg__bg-3.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-4/grig-history-bg__bg-4.css begin */
+.grig-history-bg__bg-4
+{
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-4/grig-history-bg__bg-4.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-5/grig-history-bg__bg-5.css begin */
+.grig-history-bg__bg-5
+{
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-5/grig-history-bg__bg-5.css end */
+/* ../../desktop.blocks/select-max/select-max.css begin */
+.select-max
+{
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 80px;
+    margin-left: 18px;
+    width: 138px;
+    height: 138px;
+    background: url("/image/sprite2.png") no-repeat -1467px -2px;
+    cursor: pointer;
+}
+
+.select-max.js-person_state_active
+{
+    margin: 62px -18px 0 0;
+    width: 174px;
+    height: 174px;
+    background-position: -659px -2px;
+}
+/* ../../desktop.blocks/select-max/select-max.css end */
+/* ../../desktop.blocks/select-alex/select-alex.css begin */
+.select-alex
+{
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 79px;
+    margin-left: 18px;
+    width: 138px;
+    height: 139px;
+    background: url("/image/sprite2.png") no-repeat -1327px -2px;
+    cursor: pointer;
+}
+
+.select-alex.js-person_state_active
+{
+    margin: 62px -18px 0 0;
+    width: 174px;
+    height: 174px;
+    background-position: -1011px -2px;
+}
+/* ../../desktop.blocks/select-alex/select-alex.css end */
+/* ../../desktop.blocks/select-grig/select-grig.css begin */
+.select-grig
+{
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 79px;
+    margin-left: 18px;
+    width: 138px;
+    height: 139px;
+    background: url("/image/sprite2.png") no-repeat -1187px -2px;
+    cursor: pointer;
+}
+
+.select-grig.js-person_state_active
+{
+    margin: 62px -18px 0 0;
+    width: 174px;
+    height: 174px;
+    background-position: -835px -2px;
+}
+/* ../../desktop.blocks/select-grig/select-grig.css end */
 /* ../../desktop.blocks/atom-footer/atom-footer.css begin */
 .atom-footer
 {
@@ -533,12 +856,6 @@
 }
 
 /* ../../desktop.blocks/max-way/max-way.css end */
-/* ../../desktop.blocks/alex-way/alex-way.css begin */
-.alex-way
-{
-}
-
-/* ../../desktop.blocks/alex-way/alex-way.css end */
 /* ../../desktop.blocks/grig-way/grig-way.css begin */
 .grig-way
 {
@@ -548,11 +865,12 @@
 /* ../../desktop.blocks/used-services/used-services.css begin */
 .used-services
 {
-    position: relative;
+    position: absolute;
     top: 0;
     margin-left: 972px;
     outline: 18px rgba(0, 0, 0, 0.10) solid;
     border-left: 2px #000 solid;
+    background: #fff;
 }
 
 /* ../../desktop.blocks/used-services/used-services.css end */
@@ -632,7 +950,7 @@
 /* ../../desktop.blocks/us-step1/us-step1.css begin */
 .us-step1
 {
-    height: 706px;
+    height: 685px;
 }
 
 /* ../../desktop.blocks/us-step1/us-step1.css end */
@@ -645,21 +963,21 @@
 /* ../../desktop.blocks/us-step2/us-step2.css begin */
 .us-step2
 {
-    height: 726px;
+    height: 751px;
 }
 
 /* ../../desktop.blocks/us-step2/us-step2.css end */
 /* ../../desktop.blocks/us-step3/us-step3.css begin */
 .us-step3
 {
-    height: 726px;
+    height: 686px;
 }
 
 /* ../../desktop.blocks/us-step3/us-step3.css end */
 /* ../../desktop.blocks/us-step4/us-step4.css begin */
 .us-step4
 {
-    height: 746px;
+    height: 802px;
 }
 
 /* ../../desktop.blocks/us-step4/us-step4.css end */

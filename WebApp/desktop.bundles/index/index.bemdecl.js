@@ -20,7 +20,15 @@ exports.blocks = [
         "name": "services-toggle"
     },
     {
-        "name": "history"
+        "name": "history",
+        "mods": [
+            {
+                "name": "color",
+                "vals": [
+                    "yellow"
+                ]
+            }
+        ]
     },
     {
         "name": "head-history",
@@ -77,15 +85,6 @@ exports.blocks = [
                 "name": "button"
             },
             {
-                "name": "max"
-            },
-            {
-                "name": "alex"
-            },
-            {
-                "name": "grig"
-            },
-            {
                 "name": "title"
             }
         ]
@@ -102,37 +101,60 @@ exports.blocks = [
         ]
     },
     {
-        "name": "select-max"
+        "name": "select-max "
+    },
+    {
+        "name": "js-person"
     },
     {
         "name": "person-name"
     },
     {
-        "name": "select-alex"
+        "name": "select-alex "
     },
     {
-        "name": "select-grig"
+        "name": "select-grig "
     },
     {
         "name": "person-description"
     },
     {
-        "name": "max-description"
+        "name": "max-description js-description"
     },
     {
         "name": "indent"
     },
     {
-        "name": "alex-description"
+        "name": "alex-description js-description"
     },
     {
-        "name": "grig-description"
+        "name": "grig-description js-description"
     },
     {
         "name": "person-history"
     },
     {
         "name": "history-max"
+    },
+    {
+        "name": "max-history-bg",
+        "elems": [
+            {
+                "name": "bg-1"
+            },
+            {
+                "name": "bg-2"
+            },
+            {
+                "name": "bg-3"
+            },
+            {
+                "name": "bg-4"
+            },
+            {
+                "name": "bg-5"
+            }
+        ]
     },
     {
         "name": "history-text"
@@ -153,7 +175,56 @@ exports.blocks = [
         "name": "history-alex"
     },
     {
+        "name": "alex-history-bg",
+        "elems": [
+            {
+                "name": "bg-1"
+            },
+            {
+                "name": "bg-2"
+            },
+            {
+                "name": "bg-3"
+            },
+            {
+                "name": "bg-4"
+            },
+            {
+                "name": "bg-5"
+            }
+        ]
+    },
+    {
         "name": "history-grig"
+    },
+    {
+        "name": "grig-history-bg",
+        "elems": [
+            {
+                "name": "bg-1"
+            },
+            {
+                "name": "bg-2"
+            },
+            {
+                "name": "bg-3"
+            },
+            {
+                "name": "bg-4"
+            },
+            {
+                "name": "bg-5"
+            }
+        ]
+    },
+    {
+        "name": "select-max"
+    },
+    {
+        "name": "select-alex"
+    },
+    {
+        "name": "select-grig"
     },
     {
         "name": "atom-footer"

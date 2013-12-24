@@ -7,5 +7,18 @@
     width: 952px;
     border: 2px solid #000;
     border-right: 0;
-    background: #ffe05d;
 }
+.history_color_blue
+{
+    background: #00d0f8;
+}
+.history_color_yellow
+{
+    background: #ffe152;
+}
+.history_color_red
+{
+    background: #ff8284;
+}
+
+

@@ -5,9 +5,9 @@
     head: [
         { elem: 'css', url: 'index/_index.css', ie: false },
         { elem: 'css', url: 'index/_index.ie.css', ie: 'gte IE 6' },
-        { elem: 'meta', attrs: { name: 'description', content: '' }},
-        { elem: 'js', url: '/jquery-1.10.2.min.js' },
-        { elem: 'js', url: '_index.js' }
+        { elem: 'meta', attrs: { name: 'description', content: '' }}
+//        { elem: 'js', url: '/jquery-1.10.2.min.js' },
+//        { elem: 'js', url: '/jquerybem.js' }
     ],
     content: [
         {
@@ -18,6 +18,9 @@
                 },
                 {
                     block: 'history',
+                    mods: {
+                      color: 'yellow'
+                    },
                     content: [
 
                         {
@@ -76,18 +79,7 @@
                                             ],
                                             content: [
                                                 {
-                                                    elem: "button",
-                                                    content: [
-                                                        {
-                                                            elem: "max"
-                                                        },
-                                                        {
-                                                            elem: "alex"
-                                                        },
-                                                        {
-                                                            elem: "grig"
-                                                        }
-                                                    ]
+                                                    elem: "button"
                                                 },
                                                 {
                                                     elem: "title",
@@ -114,7 +106,11 @@
                                             },
                                             content: [
                                                 {
-                                                    block: 'select-max'
+                                                    block: 'select-max ',
+                                                    mix:[
+                                                        {
+                                                            block:'js-person'
+                                                        }]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -130,7 +126,11 @@
                                             },
                                             content: [
                                                 {
-                                                    block: 'select-alex'
+                                                    block: 'select-alex ',
+                                                    mix:[
+                                                        {
+                                                            block:'js-person'
+                                                        }]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -146,7 +146,11 @@
                                             },
                                             content: [
                                                 {
-                                                    block: 'select-grig'
+                                                    block: 'select-grig ',
+                                                    mix:[
+                                                        {
+                                                            block:'js-person'
+                                                        }]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -175,7 +179,7 @@
                                             },
                                             content: [
                                                 {
-                                                    block: 'max-description',
+                                                    block: 'max-description js-description',
                                                     content: 'Предпочитает путешествовать самостоятельно и налегке. Уверен, что только так можно проникнуться культурой страны.',
                                                     mix: [
                                                         {
@@ -194,7 +198,7 @@
                                             },
                                             content: [
                                                 {
-                                                    block: 'alex-description',
+                                                    block: 'alex-description js-description',
                                                     content: 'В отпуск ездит вместе с женой и дочкой. Считает, что отдыхать лучше всего в отелях на побережье.',
                                                     mix: [
                                                         {
@@ -212,7 +216,7 @@
                                             },
                                             content: [
                                                 {
-                                                    block: 'grig-description',
+                                                    block: 'grig-description js-description',
                                                     content: 'Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания.',
                                                     mix: [
                                                         {
@@ -232,6 +236,51 @@
                                 {
                                     block: 'history-max',
                                     content: [
+                                        ,
+                                        {
+                                            block: 'max-history-bg',
+                                            mix: [
+                                                {block: 'grid-wrap'}
+                                            ],
+                                            content: [
+                                                {
+                                                    elem: 'bg-1',
+                                                    mix: [
+                                                        {
+                                                            block: 'grid',
+                                                            mods: {
+                                                                coll: "2",
+                                                                size: "6"
+                                                            }
+                                                        }
+
+                                                    ]
+
+                                                },
+                                                {
+                                                    elem: 'bg-2'
+                                                },
+                                                {
+                                                    elem: 'bg-3'
+                                                },
+                                                {
+                                                    elem: 'bg-4'
+                                                },
+                                                {
+                                                    elem: 'bg-5',
+                                                    mix: [
+                                                        {
+                                                            block: 'grid',
+                                                            mods: {
+                                                                coll: "2",
+                                                                size: "6"
+                                                            }
+                                                        }
+
+                                                    ]
+                                                }
+                                            ]
+                                        },
                                         {
                                             block: 'history-text',
                                             content: [
@@ -378,6 +427,40 @@
                                     block: 'history-alex',
                                     content: [
                                         {
+                                            block: 'alex-history-bg',
+                                            mix: [
+                                                {block: 'grid-wrap'}
+                                            ],
+                                            content: [
+                                                {
+                                                    elem: 'bg-1',
+                                                    mix: [
+                                                        {
+                                                            block: 'grid',
+                                                            mods: {
+                                                                coll: "2",
+                                                                size: "6"
+                                                            }
+                                                        }
+
+                                                    ]
+
+                                                },
+                                                {
+                                                    elem: 'bg-2'
+                                                },
+                                                {
+                                                    elem: 'bg-3'
+                                                },
+                                                {
+                                                    elem: 'bg-4'
+                                                },
+                                                {
+                                                    elem: 'bg-5'
+                                                }
+                                            ]
+                                        },
+                                        {
                                             block: 'history-text',
                                             content: [
                                                 {
@@ -521,6 +604,50 @@
                                 {
                                     block: 'history-grig',
                                     content: [
+                                        {
+                                            block: 'grig-history-bg',
+                                            mix: [
+                                                {block: 'grid-wrap'}
+                                            ],
+                                            content: [
+                                                {
+                                                    elem: 'bg-1',
+                                                    mix: [
+                                                        {
+                                                            block: 'grid',
+                                                            mods: {
+                                                                coll: "2",
+                                                                size: "6"
+                                                            }
+                                                        }
+
+                                                    ]
+
+                                                },
+                                                {
+                                                    elem: 'bg-2'
+                                                },
+                                                {
+                                                    elem: 'bg-3'
+                                                },
+                                                {
+                                                    elem: 'bg-4'
+                                                },
+                                                {
+                                                    elem: 'bg-5',
+                                                    mix: [
+                                                        {
+                                                            block: 'grid',
+                                                            mods: {
+                                                                coll: "2",
+                                                                size: "6"
+                                                            }
+                                                        }
+
+                                                    ]
+                                                }
+                                            ]
+                                        },
                                         {
                                             block: 'history-text',
                                             content: [
@@ -682,7 +809,11 @@
                                             },
                                             content: [
                                                 {
-                                                    block: 'select-max'
+                                                    block: 'select-max',
+                                                    mix:[
+                                                        {
+                                                            block:'js-person'
+                                                        }]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -698,7 +829,11 @@
                                             },
                                             content: [
                                                 {
-                                                    block: 'select-alex'
+                                                    block: 'select-alex',
+                                                    mix:[
+                                                        {
+                                                            block:'js-person'
+                                                        }]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -714,7 +849,11 @@
                                             },
                                             content: [
                                                 {
-                                                    block: 'select-grig'
+                                                    block: 'select-grig',
+                                                    mix:[
+                                                        {
+                                                            block:'js-person'
+                                                        }]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -798,7 +937,7 @@
                                         },
                                         {
                                             block: 'way-4'
-                                        },
+                                        }
                                     ]
                                 },
                                 {
@@ -815,7 +954,7 @@
                                         },
                                         {
                                             block: 'way-4'
-                                        },
+                                        }
                                     ]
                                 },
                                 {
@@ -832,9 +971,9 @@
                                         },
                                         {
                                             block: 'way-4'
-                                        },
+                                        }
                                     ]
-                                },
+                                }
 
                             ]
                         }
@@ -1400,6 +1539,9 @@
         },
         {
             block: "hack"
-        }
+        },
+//        { elem: 'js', url: '/script.jquerybem.js' }
+//        ,
+        { elem: 'js', url: 'index/_index.js' }
     ]
 });
