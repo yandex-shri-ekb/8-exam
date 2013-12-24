@@ -1,0 +1,24 @@
+.video-icon
+{
+    position: relative;
+    margin: 0 0 16px;
+    width: 138px;
+    height: 80px;
+    border: 2px solid #000;
+    border-radius: 4px;
+}
+
+.video-icon_theme_yellow
+{
+    background-color: #ffe05d;
+}
+
+.video-icon_theme_red
+{
+    background-color: #ff8282;
+}
+
+.video-icon_theme_blue
+{
+    background-color: #72c4f6;
+}

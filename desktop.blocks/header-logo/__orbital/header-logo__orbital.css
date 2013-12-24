@@ -1,8 +1,8 @@
 .header-logo__orbital
 {
-    background: url(header-logo__orbital.png) no-repeat;
     position: absolute;
+    margin: -2px 0 0 -20px;
     width: 954px;
     height: 593px;
-    margin: -2px 0 0 -20px;
+    background: url(header-logo__orbital.png) no-repeat;
 }

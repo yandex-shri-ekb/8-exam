@@ -1,11 +1,6 @@
 .page
 {
     margin: 0;
-    font-family: sans-serif;
+    font: 16px/1.5 sans-serif;
     min-width: 1024px;
-}
-
-.page_active_yes
-{
-    cursor: pointer;
 }

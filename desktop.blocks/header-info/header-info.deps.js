@@ -1,6 +1,6 @@
 ({
     shouldDeps: [
         { elem: 'inner' },
-        { elem: 'video-image' }
+        { block: 'video-icon' }
     ]
 })

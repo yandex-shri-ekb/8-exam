@@ -8,31 +8,31 @@ block 'story_theme_red' {
                 content: [
                     {
                         elem: 'text-holder',
-                        mix: {block: 'grid_cols_12'},
+                        mix: { block: 'grid_cols_12' },
                         content: [
                             {
                                 block: 'path_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 2, span: 10}},
-                                content: {elem: 'step-1'}
+                                mix: { block: 'grid__module', mods: { col: 2, span: 10 } },
+                                content: { elem: 'step-1' }
                             },
                             {
                                 elem: 'text-holder-inner',
-                                mix: {block: 'grid_row'},
+                                mix: { block: 'grid_row' },
                                 content: [
                                     {
                                         elem: 'text',
-                                        mix: {block: 'grid__module', mods: {col: 2, span: 4}},
+                                        mix: { block: 'grid__module', mods: { col: 2, span: 4 } },
                                         content: 'Устав от турецких пляжей, Алексей Быков решил вывезти семью в Таиланд. <br><br>Он выбирает тур так, чтобы уложиться в адекватную сумму, но порадовать всех: приемлемый уровень комфорта, детская анимация, недалеко от пляжа, «все включено».'
                                     },
                                     {
                                         block: 'image_theme_red',
-                                        mix: {block: 'grid__module', mods: {col: 7, span: 6}},
-                                        content: {elem: 'tour', mods: {'push_down': 'yes'}}
+                                        mix: { block: 'grid__module', mods: { col: 7, span: 6 } },
+                                        content: { elem: 'tour', mods: { 'push_down': 'yes' } }
                                     },
                                     {
                                         block: 'image_theme_red',
-                                        mix: {block: 'grid__module', mods: {col: 8, span: 6}},
-                                        content: {elem: 'passports', mods: {'push_down': 'yes'}}
+                                        mix: { block: 'grid__module', mods: { col: 8, span: 6 } },
+                                        content: { elem: 'passports', mods: { 'push_down': 'yes' } }
                                     }
                                 ]
                             }
@@ -40,27 +40,27 @@ block 'story_theme_red' {
                     },
                     {
                         elem: 'images',
-                        mix: {block: 'grid_row'},
+                        mix: { block: 'grid_row' },
                         content: [
                             {
                                 block: 'path_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 4, span: 9}},
-                                content: {elem: 'step-2'}
+                                mix: { block: 'grid__module', mods: { col: 4, span: 9 } },
+                                content: { elem: 'step-2' }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 2, span: 5}},
-                                content: {elem: 'portlet', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 2, span: 5 } },
+                                content: { elem: 'portlet', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 3, span: 4}},
-                                content: {elem: 'book', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 3, span: 4 } },
+                                content: { elem: 'book', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 1, span: 4}},
-                                content: {elem: 'bear', mods: {'push_down': 'yes', 'push_left': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 1, span: 4 } },
+                                content: { elem: 'bear', mods: { 'push_down': 'yes', 'push_left': 'yes' } }
                             }
                         ]
                     }
@@ -71,15 +71,15 @@ block 'story_theme_red' {
                 content: [
                     {
                         elem: 'text-holder',
-                        mix: {block: 'grid_cols_12'},
+                        mix: { block: 'grid_cols_12' },
                         content: [
                             {
                                 elem: 'text-holder-inner',
-                                mix: {block: 'grid_row'},
+                                mix: { block: 'grid_row' },
                                 content: [
                                     {
                                         elem: 'text',
-                                        mix: {block: 'grid__module', mods: {col: 8, span: 4}},
+                                        mix: { block: 'grid__module', mods: { col: 8, span: 4 } },
                                         content: 'Алексей твердо уверен, что линзы практичнее обычных очков — как минимум потому, что вместе с ними можно надеть другие очки: для плавания или солнечные. <br><br> Он привык к тому, что у него всегда есть запас одноразовых линз.'
                                     }
                                 ]
@@ -88,37 +88,37 @@ block 'story_theme_red' {
                     },
                     {
                         elem: 'images',
-                        mix: {block: 'grid_row'},
+                        mix: { block: 'grid_row' },
                         content: [
                             {
                                 block: 'path_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 2, span: 10}},
-                                content: {elem: 'step-3'}
+                                mix: { block: 'grid__module', mods: { col: 2, span: 10 } },
+                                content: { elem: 'step-3' }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 2, span: 2}},
-                                content: {elem: 'iphone', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 2, span: 2 } },
+                                content: { elem: 'iphone', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 5, span: 3}},
-                                content: {elem: 'bill', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 5, span: 3 } },
+                                content: { elem: 'bill', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 7, span: 5}},
-                                content: {elem: 'lenses', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 7, span: 5 } },
+                                content: { elem: 'lenses', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 8, span: 5}},
-                                content: {elem: 'glasses', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 8, span: 5 } },
+                                content: { elem: 'glasses', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 1, span: 2}},
-                                content: {elem: 'tamagotchi', mods: {'push_down': 'yes', 'push_left': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 1, span: 2 } },
+                                content: { elem: 'tamagotchi', mods: { 'push_down': 'yes', 'push_left': 'yes' } }
                             }
                         ]
                     }
@@ -129,26 +129,26 @@ block 'story_theme_red' {
                 content: [
                     {
                         elem: 'text-holder',
-                        mix: {block: 'grid_cols_12'},
+                        mix: { block: 'grid_cols_12' },
                         content: [
                             {
                                 elem: 'text-holder-inner',
-                                mix: {block: 'grid_row'},
+                                mix: { block: 'grid_row' },
                                 content: [
                                     {
                                         elem: 'text',
-                                        mix: {block: 'grid__module', mods: {col: 2, span: 4}},
+                                        mix: { block: 'grid__module', mods: { col: 2, span: 4 } },
                                         content: 'У семьи Быковых с собой очень много багажа, большую часть которого занимают платья жены и детские вещи. <br><br> Ехать с сумками на общественном транспорте им совсем не хочется, тем более, когда есть вместительный автомобиль. Алексей решает переплатить за парковку у аэропорта, зато добраться с удобством.'
                                     },
                                     {
                                         block: 'image_theme_red',
-                                        mix: {block: 'grid__module', mods: {col: 8, span: 6}},
-                                        content: {elem: 'imac-monitor', mods: {'push_down': 'yes'}}
+                                        mix: { block: 'grid__module', mods: { col: 8, span: 6 } },
+                                        content: { elem: 'imac-monitor', mods: { 'push_down': 'yes' } }
                                     },
                                     {
                                         block: 'image_theme_red',
-                                        mix: {block: 'grid__module', mods: {col: 10, span: 6}},
-                                        content: {elem: 'imac-keyboard', mods: {'push_down': 'yes'}}
+                                        mix: { block: 'grid__module', mods: { col: 10, span: 6 } },
+                                        content: { elem: 'imac-keyboard', mods: { 'push_down': 'yes' } }
                                     }
                                 ]
                             }
@@ -156,32 +156,32 @@ block 'story_theme_red' {
                     },
                     {
                         elem: 'images',
-                        mix: {block: 'grid_row'},
+                        mix: { block: 'grid_row' },
                         content: [
                             {
                                 block: 'path_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 2, span: 8}},
-                                content: {elem: 'step-4'}
+                                mix: { block: 'grid__module', mods: { col: 2, span: 8 } },
+                                content: { elem: 'step-4' }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 2, span: 4}},
-                                content: {elem: 'license', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 2, span: 4 } },
+                                content: { elem: 'license', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 4, span: 3}},
-                                content: {elem: 'keys', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 4, span: 3 } },
+                                content: { elem: 'keys', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 7, span: 2}},
-                                content: {elem: 'drink-glass', mods: {'push_down': 'yes', 'push_right': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 7, span: 2 } },
+                                content: { elem: 'drink-glass', mods: { 'push_down': 'yes', 'push_right': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 1, span: 6}},
-                                content: {elem: 'bags', mods: {'push_down': 'yes', 'push_left': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 1, span: 6 } },
+                                content: { elem: 'bags', mods: { 'push_down': 'yes', 'push_left': 'yes' } }
                             }
                         ]
                     }
@@ -192,15 +192,15 @@ block 'story_theme_red' {
                 content: [
                     {
                         elem: 'text-holder',
-                        mix: {block: 'grid_cols_12'},
+                        mix: { block: 'grid_cols_12' },
                         content: [
                             {
                                 elem: 'text-holder-inner',
-                                mix: {block: 'grid_row'},
+                                mix: { block: 'grid_row' },
                                 content: [
                                     {
                                         elem: 'text',
-                                        mix: {block: 'grid__module', mods: {col: 8, span: 4}},
+                                        mix: { block: 'grid__module', mods: { col: 8, span: 4 } },
                                         content: 'Для Алексея один из основных мотивов выбора Таиланда — гастрономический: и он, и жена любят экзотическую кухню. <br><br> Каждый день они вместе отправляются на поиски новых ресторанов.'
                                     }
                                 ]
@@ -209,47 +209,47 @@ block 'story_theme_red' {
                     },
                     {
                         elem: 'images',
-                        mix: {block: 'grid_row'},
+                        mix: { block: 'grid_row' },
                         content: [
                             {
                                 block: 'path_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 7, span: 4}},
-                                content: {elem: 'step-5'}
+                                mix: { block: 'grid__module', mods: { col: 7, span: 4 } },
+                                content: { elem: 'step-5' }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 1, span: 4}},
-                                content: {elem: 'food-fish', mods: {'push_down': 'yes', 'push_left': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 1, span: 4 } },
+                                content: { elem: 'food-fish', mods: { 'push_down': 'yes', 'push_left': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 3, span: 4}},
-                                content: {elem: 'food-eggs', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 3, span: 4 } },
+                                content: { elem: 'food-eggs', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 11, span: 3}},
-                                content: {elem: 'food-grape', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 11, span: 3 } },
+                                content: { elem: 'food-grape', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 8, span: 3}},
-                                content: {elem: 'drink-wine', mods: {'push_down': 'yes', 'push_right': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 8, span: 3 } },
+                                content: { elem: 'drink-wine', mods: { 'push_down': 'yes', 'push_right': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 2, span: 4}},
-                                content: {elem: 'drink-milk', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 2, span: 4 } },
+                                content: { elem: 'drink-milk', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 7, span: 4}},
-                                content: {elem: 'drink-coup-full', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 7, span: 4 } },
+                                content: { elem: 'drink-coup-full', mods: { 'push_down': 'yes' } }
                             },
                             {
                                 block: 'image_theme_red',
-                                mix: {block: 'grid__module', mods: {col: 11, span: 4}},
-                                content: {elem: 'drink-coup-middle', mods: {'push_down': 'yes'}}
+                                mix: { block: 'grid__module', mods: { col: 11, span: 4 } },
+                                content: { elem: 'drink-coup-middle', mods: { 'push_down': 'yes' } }
                             }
                         ]
                     }

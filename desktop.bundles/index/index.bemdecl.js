@@ -87,8 +87,89 @@ exports.blocks = [
                 "name": "content"
             },
             {
-                "name": "inner"
+                "name": "help-icon"
             }
         ]
+    },
+    {
+        "name": "help-icon",
+        "mods": [
+            {
+                "name": "active",
+                "vals": [
+                    "no"
+                ]
+            },
+            {
+                "name": "type",
+                "vals": [
+                    "quest"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "section",
+        "elems": [
+            {
+                "name": "item"
+            },
+            {
+                "name": "image"
+            },
+            {
+                "name": "list-mark"
+            },
+            {
+                "name": "mark"
+            }
+        ],
+        "mods": [
+            {
+                "name": "border",
+                "vals": [
+                    "no"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "atom-logo"
+    },
+    {
+        "name": "flex-section"
+    },
+    {
+        "name": "dialog",
+        "elems": [
+            {
+                "name": "content"
+            }
+        ]
+    },
+    {
+        "name": "list-info"
+    },
+    {
+        "name": "info",
+        "mods": [
+            {
+                "name": "theme",
+                "vals": [
+                    "yellow",
+                    "red",
+                    "blue"
+                ]
+            },
+            {
+                "name": "show",
+                "vals": [
+                    "no"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "link"
     }
 ];

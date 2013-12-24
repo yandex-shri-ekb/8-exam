@@ -147,8 +147,11 @@ exports.deps = [
         "elem": "inner"
     },
     {
-        "block": "header-info",
-        "elem": "video-image"
+        "block": "video-icon"
+    },
+    {
+        "block": "video-icon",
+        "elem": "play"
     },
     {
         "block": "users"
@@ -633,13 +636,207 @@ exports.deps = [
     },
     {
         "block": "atom-ledge",
+        "elem": "help-icon"
+    },
+    {
+        "block": "help-icon"
+    },
+    {
+        "block": "help-icon",
+        "mod": "active"
+    },
+    {
+        "block": "help-icon",
+        "mod": "active",
+        "val": "no"
+    },
+    {
+        "block": "help-icon",
+        "mod": "type"
+    },
+    {
+        "block": "help-icon",
+        "mod": "type",
+        "val": "quest"
+    },
+    {
+        "block": "section"
+    },
+    {
+        "block": "section",
+        "elem": "title"
+    },
+    {
+        "block": "section",
+        "elem": "text"
+    },
+    {
+        "block": "section",
+        "elem": "item"
+    },
+    {
+        "block": "section",
         "elem": "inner"
+    },
+    {
+        "block": "section",
+        "elem": "image"
+    },
+    {
+        "block": "section",
+        "elem": "list-mark"
+    },
+    {
+        "block": "section",
+        "elem": "mark"
+    },
+    {
+        "block": "section",
+        "mod": "border"
+    },
+    {
+        "block": "section",
+        "mod": "border",
+        "val": "no"
+    },
+    {
+        "block": "atom-logo"
+    },
+    {
+        "block": "flex-section"
+    },
+    {
+        "block": "dialog"
+    },
+    {
+        "block": "dialog",
+        "elem": "content"
+    },
+    {
+        "block": "list-info"
+    },
+    {
+        "block": "info"
+    },
+    {
+        "block": "info",
+        "mod": "theme"
+    },
+    {
+        "block": "info",
+        "mod": "theme",
+        "val": "yellow"
+    },
+    {
+        "block": "info",
+        "mod": "theme",
+        "val": "red"
+    },
+    {
+        "block": "info",
+        "mod": "theme",
+        "val": "blue"
+    },
+    {
+        "block": "info",
+        "mod": "show"
+    },
+    {
+        "block": "info",
+        "mod": "show",
+        "val": "no"
+    },
+    {
+        "block": "link"
+    },
+    {
+        "block": "link",
+        "mod": "disabled"
+    },
+    {
+        "block": "jquery",
+        "elem": "event"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointer"
+    },
+    {
+        "block": "jquery",
+        "elem": "event",
+        "mod": "type",
+        "val": "pointerclick"
     }
 ];
 exports.depsByTechs = {
     "": {},
     "test.js": {
         "bemhtml": [
+            {
+                "tech": "bemhtml",
+                "block": "link"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "link",
+                "mod": "disabled"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "event"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type",
+                "val": "pointer"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "loader"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "loader",
+                "mod": "type"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "loader",
+                "mod": "type",
+                "val": "js"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "config"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type",
+                "val": "pointerclick"
+            },
             {
                 "tech": "bemhtml",
                 "block": "i-bem"
@@ -692,8 +889,30 @@ exports.depsByTechs = {
         "test.js": [
             {
                 "tech": "test.js",
-                "block": "i-bem",
-                "elem": "dom"
+                "block": "link"
+            },
+            {
+                "tech": "test.js",
+                "block": "link",
+                "mod": "disabled"
+            },
+            {
+                "tech": "test.js",
+                "block": "jquery",
+                "elem": "event"
+            },
+            {
+                "tech": "test.js",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type"
+            },
+            {
+                "tech": "test.js",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type",
+                "val": "pointer"
             },
             {
                 "tech": "test.js",
@@ -718,6 +937,18 @@ exports.depsByTechs = {
                 "tech": "test.js",
                 "block": "jquery",
                 "elem": "config"
+            },
+            {
+                "tech": "test.js",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type",
+                "val": "pointerclick"
+            },
+            {
+                "tech": "test.js",
+                "block": "i-bem",
+                "elem": "dom"
             },
             {
                 "tech": "test.js",
@@ -789,6 +1020,13 @@ exports.depsByTechs = {
                 "tech": "test.js",
                 "block": "ecma",
                 "elem": "json"
+            },
+            {
+                "tech": "test.js",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type",
+                "val": "pointer"
             },
             {
                 "tech": "test.js",
@@ -869,7 +1107,76 @@ exports.depsByTechs = {
             },
             {
                 "tech": "bemhtml",
+                "block": "link"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "link",
+                "mod": "disabled"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "event"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type",
+                "val": "pointer"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "loader"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "loader",
+                "mod": "type"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "loader",
+                "mod": "type",
+                "val": "js"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "config"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type",
+                "val": "pointerclick"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery",
+                "elem": "event",
+                "mod": "type",
+                "val": "pointer"
+            },
+            {
+                "tech": "bemhtml",
                 "block": "i-bem"
+            },
+            {
+                "tech": "bemhtml",
+                "block": "jquery"
             },
             {
                 "tech": "bemhtml",

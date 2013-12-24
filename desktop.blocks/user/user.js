@@ -1,17 +1,18 @@
-modules.define('i-bem__dom', function(provide, BEMDOM) {
+modules.define('i-bem__dom', function (provide, BEMDOM) {
 
     BEMDOM.decl('user', {
         onSetMod: {
-            'js': function() {
+            'js': function () {
                 this._bindToClick();
                 this._bindToMouseOver();
             },
-            'active': function(modName, modVal)  {
+
+            'active': function (modName, modVal) {
                 var size = modVal === 'yes' ? 'middle' : 'mini';
                 var self = this;
 
                 // возможно лучше добавить модификатор
-                this._getBlocksUsers().forEach(function(usersBlock) {
+                this._getBlocksUsers().forEach(function (usersBlock) {
                     usersBlock.findBlockInside({
                         'blockName': 'user-icon',
                         'modName': 'theme',
@@ -21,41 +22,44 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
             }
         },
 
-        _bindToClick: function() {
+        _bindToClick: function () {
             !this.hasMod('passive', 'yes') && this.bindTo('icon', 'click', this._onClick);
         },
 
-        _bindToMouseOver: function() {
+        _bindToMouseOver: function () {
             !this.hasMod('passive', 'yes') && this.bindTo('mouseover', this._onMouseOver);
         },
 
-        _onClick: function() {
-            var isTop = this.findBlockOutside('users').hasMod('pos', 'top'),
-                theme = this.getMod('theme'),
-                atom = this.findBlockOutside('atom');
+        _onClick: function () {
+            var atom = this.findBlockOutside('atom');
 
-            !isTop && this._scrollToBegin();
-            theme !== atom.getMod('theme') && atom.setMod('theme', theme);
+            if (!atom.hasMod('active', 'yes')) {
+                var isTop = this.findBlockOutside('users').hasMod('pos', 'top'),
+                    theme = this.getMod('theme');
+
+                !isTop && this._scrollToBegin();
+                theme !== atom.getMod('theme') && atom.setMod('theme', theme);
+            }
         },
 
-        _scrollToBegin: function() {
+        _scrollToBegin: function () {
             var page = this.findBlockOutside('page');
             var destination = page.findBlockInside({'blockName': 'users', 'modName': 'pos', 'modVal': 'top'});
             var top = destination.domElem.offset().top;
             page.domElem.animate({"scrollTop": top}, 500);
         },
 
-        _onMouseOver: function(e) {
+        _onMouseOver: function (e) {
             var text = this.elem('text');
             !this.hasMod(text, 'show', 'yes') && this._showUserText();
         },
 
-        _showUserText: function() {
+        _showUserText: function () {
             var users = this.findBlockOutside('users'),
                 theme = this.getMod('theme'),
-                self  = this;
+                self = this;
 
-            users.findBlocksInside('user').forEach(function(item) {
+            users.findBlocksInside('user').forEach(function (item) {
                 item = item.findElem('text', 'show', 'yes');
                 item && self.delMod(item, 'show');
             });
@@ -65,8 +69,8 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
             this.setMod(activeText, 'show', 'yes');
         },
 
-        _getBlocksUsers: function() {
-            if(!this._users) {
+        _getBlocksUsers: function () {
+            if (!this._users) {
                 this._users = this.findBlockOutside('atom').findBlocksInside('users');
             }
             return this._users;

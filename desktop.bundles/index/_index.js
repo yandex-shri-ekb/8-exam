@@ -3853,37 +3853,60 @@ provide(browser);
 /* ../../libs/bem-core/desktop.blocks/ua/ua.js end */
 ;
 /* ../../desktop.blocks/atom/atom.js begin */
-modules.define('i-bem__dom', function(provide, BEMDOM) {
+modules.define('i-bem__dom', function (provide, BEMDOM) {
 
     BEMDOM.decl('atom', {
         onSetMod: {
-            'js': {
-                'inited': function() {
-                    this._setRandomTheme();
-                }
+            'js': function () {
+                this._themes = {};
+                this.setMod('active', 'no');
+                this._setRandomTheme();
             },
-            'theme': function(modName, modVal) {
-                this._activateTheme(modVal);
+
+            'theme': function (modName, themeName) {
+                this._activateTheme(themeName);
+            },
+
+            'active': function () {
+                this.findBlockInside('locomotive').toggleMod('active', 'yes', 'no');
             }
         },
 
-        _setRandomTheme: function() {
-            var themes = ['yellow',  'red', 'blue'];
-            var theme = themes[this.__getRandomInt(0, 2)];
+        _setRandomTheme: function () {
+            var themes = ['yellow', 'red', 'blue'];
+            var theme = themes[this._getRandomInt(0, 2)];
             this.setMod('theme', theme);
         },
 
-        _activateTheme: function(theme) {
+        _activateTheme: function (theme) {
             this.setMod(this.elem('content'), 'theme', theme);
             this.findBlockInside('stories').setMod('theme', theme);
-            this.findBlockInside({'blockName': 'users', 'modName': 'pos', 'modVal': 'top'})
-                .setMod('theme', theme);
+            this.findBlockInside('video-icon').setMod('theme', theme);
+            this.findBlockInside({'blockName': 'users', 'modName': 'pos', 'modVal': 'top'}).setMod('theme', theme);
             this.findBlockInside('locomotive').setMod('theme', theme);
-
-            // right side
+            this.findBlockInside('list-info').setMod('theme', theme);
         },
 
-        __getRandomInt: function(min, max) {
+        getThemeStepsOffset: function (themeName) {
+            !this._themes[themeName] && this._calculateSteps(themeName);
+            return this._themes[themeName];
+        },
+
+        _calculateSteps: function (themeName) {
+            var theme = this.findBlockInside({'blockName': 'story', 'modName': 'theme', 'modVal': themeName}),
+                steps = [];
+
+            theme.findBlocksInside('step').forEach(function (step, i) {
+                var $step = step.domElem,
+                    start = $step.offset().top,
+                    end = start + $step.height();
+
+                steps[i + 1] = { start: start, end: end };
+            });
+            this._themes[themeName] = steps;
+        },
+
+        _getRandomInt: function (min, max) {
             return Math.floor(Math.random() * (max - min + 1)) + min;
         }
     });
@@ -3894,16 +3917,17 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 /* ../../desktop.blocks/atom/atom.js end */
 ;
 /* ../../desktop.blocks/users/users.js begin */
-modules.define('i-bem__dom', function(provide, BEMDOM) {
+modules.define('i-bem__dom', function (provide, BEMDOM) {
 
     BEMDOM.decl('users', {
         onSetMod: {
-            'theme': function(modName, currentTheme) {
+            'theme': function (modName, currentTheme) {
                 this.hasMod('pos', 'top') && this._changeUsers(currentTheme);
             }
         },
-        _changeUsers: function(theme) {
-            this.findBlocksInside('user').forEach(function(user) {
+
+        _changeUsers: function (theme) {
+            this.findBlocksInside('user').forEach(function (user) {
                 var modVal = user.hasMod('theme', theme) ? 'yes' : 'no';
                 user.setMod('active', modVal);
             });
@@ -3916,20 +3940,21 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 /* ../../desktop.blocks/users/users.js end */
 ;
 /* ../../desktop.blocks/user/user.js begin */
-modules.define('i-bem__dom', function(provide, BEMDOM) {
+modules.define('i-bem__dom', function (provide, BEMDOM) {
 
     BEMDOM.decl('user', {
         onSetMod: {
-            'js': function() {
+            'js': function () {
                 this._bindToClick();
                 this._bindToMouseOver();
             },
-            'active': function(modName, modVal)  {
+
+            'active': function (modName, modVal) {
                 var size = modVal === 'yes' ? 'middle' : 'mini';
                 var self = this;
 
                 // возможно лучше добавить модификатор
-                this._getBlocksUsers().forEach(function(usersBlock) {
+                this._getBlocksUsers().forEach(function (usersBlock) {
                     usersBlock.findBlockInside({
                         'blockName': 'user-icon',
                         'modName': 'theme',
@@ -3939,41 +3964,44 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
             }
         },
 
-        _bindToClick: function() {
+        _bindToClick: function () {
             !this.hasMod('passive', 'yes') && this.bindTo('icon', 'click', this._onClick);
         },
 
-        _bindToMouseOver: function() {
+        _bindToMouseOver: function () {
             !this.hasMod('passive', 'yes') && this.bindTo('mouseover', this._onMouseOver);
         },
 
-        _onClick: function() {
-            var isTop = this.findBlockOutside('users').hasMod('pos', 'top'),
-                theme = this.getMod('theme'),
-                atom = this.findBlockOutside('atom');
+        _onClick: function () {
+            var atom = this.findBlockOutside('atom');
 
-            !isTop && this._scrollToBegin();
-            theme !== atom.getMod('theme') && atom.setMod('theme', theme);
+            if (!atom.hasMod('active', 'yes')) {
+                var isTop = this.findBlockOutside('users').hasMod('pos', 'top'),
+                    theme = this.getMod('theme');
+
+                !isTop && this._scrollToBegin();
+                theme !== atom.getMod('theme') && atom.setMod('theme', theme);
+            }
         },
 
-        _scrollToBegin: function() {
+        _scrollToBegin: function () {
             var page = this.findBlockOutside('page');
             var destination = page.findBlockInside({'blockName': 'users', 'modName': 'pos', 'modVal': 'top'});
             var top = destination.domElem.offset().top;
             page.domElem.animate({"scrollTop": top}, 500);
         },
 
-        _onMouseOver: function(e) {
+        _onMouseOver: function (e) {
             var text = this.elem('text');
             !this.hasMod(text, 'show', 'yes') && this._showUserText();
         },
 
-        _showUserText: function() {
+        _showUserText: function () {
             var users = this.findBlockOutside('users'),
                 theme = this.getMod('theme'),
-                self  = this;
+                self = this;
 
-            users.findBlocksInside('user').forEach(function(item) {
+            users.findBlocksInside('user').forEach(function (item) {
                 item = item.findElem('text', 'show', 'yes');
                 item && self.delMod(item, 'show');
             });
@@ -3983,8 +4011,8 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
             this.setMod(activeText, 'show', 'yes');
         },
 
-        _getBlocksUsers: function() {
-            if(!this._users) {
+        _getBlocksUsers: function () {
+            if (!this._users) {
                 this._users = this.findBlockOutside('atom').findBlocksInside('users');
             }
             return this._users;
@@ -3997,118 +4025,100 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 /* ../../desktop.blocks/user/user.js end */
 ;
 /* ../../desktop.blocks/locomotive/locomotive.js begin */
-modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
+modules.define('i-bem__dom', ['jquery'], function (provide, $, BEMDOM) {
 
     BEMDOM.decl('locomotive', {
         onSetMod: {
-            'js': function() {
-                this._themes = {};
-                this._calculateLastStepHeight();
+            'js': function () {
                 this._bindToScroll();
                 this._bindToClick();
             },
 
-            'theme': function(modName, themeName) {
-                !this._themes[themeName] && this._calculateSteps(themeName);
+            'theme': function (modName, themeName) {
                 this._activateThemeIcon(themeName);
                 this._activateUserIcon(themeName);
+                this.setMod('active', 'yes');
+                this._changeLocomotive();
+            },
+
+            'active': function (modName, modVal) {
+                modVal === 'no' && this.setMod('show', 'no');
                 this._onScroll();
             }
         },
 
-        _bindToScroll: function() {
+        _bindToScroll: function () {
             $(window).on('scroll', $.proxy(this._onScroll, this));
         },
 
-        _bindToClick: function() {
+        _bindToClick: function () {
             this.bindTo(this.elem('step-icon'), 'click', this._onClickStepIcon);
         },
 
-        _onScroll: function(e) {
-            var step = this._identifyStep();
-            step ? this._changeStepIcons(step) : this._hide();
+        _onScroll: function () {
+            this._changeLocomotive();
         },
 
-        _onClickStepIcon: function(e) {
+        _changeLocomotive: function () {
+            if (this.hasMod('active', 'yes')) {
+                var step = this._identifyStep();
+                step ? this._changeStepIcons(step) : this._hide();
+            }
+        },
+
+        _onClickStepIcon: function (e) {
             var theme = $(e.currentTarget).bem('step-icon').getMod('theme');
             this._getBlockAtom().setMod('theme', theme);
         },
 
-        _activateThemeIcon: function(theme) {
-            this.findBlocksInside('step-icon').forEach(function(icon) {
+        _activateThemeIcon: function (theme) {
+            this.findBlocksInside('step-icon').forEach(function (icon) {
                 var modVal = icon.hasMod('theme', theme) ? 'yes' : 'no';
                 icon.setMod('active', modVal);
             });
         },
 
-        _activateUserIcon: function(theme) {
+        _activateUserIcon: function (theme) {
             this.findBlockInside('user-icon').setMod('theme', theme);
         },
 
-        _identifyStep: function() {
+        _identifyStep: function () {
             var stepNum = 0,
                 windowTop = $(window).scrollTop(),
-                steps = this._themes[this.getMod('theme')];
+                theme = this.getMod('theme'),
+                steps = this._getBlockAtom().getThemeStepsOffset(theme);
 
-            steps.forEach(function(step, index) {
-                if(step.start <= windowTop && windowTop <= step.end) {
+            steps.forEach(function (step, index) {
+                // TODO change
+                var end = index === 4 ? step.end - 600 : step.end;
+                if (step.start <= windowTop && windowTop <= end) {
                     stepNum = index;
                 }
             });
             return stepNum;
         },
 
-        _calculateSteps: function(themeName) {
-            var theme = this._getBlockAtom().findBlockInside({
-                    'blockName': 'story',
-                    'modName': 'theme',
-                    'modVal': themeName}
-                ),
-                steps = [],
-                lastStep = 4,
-                self = this;
-
-            theme.findBlocksInside('step').forEach(function(step, i) {
-                var $step = step.domElem,
-                    start = $step.offset().top,
-                    end = start + $step.height();
-
-                i === lastStep -1 && (end -= self._lastStepHeight);
-                steps[i+1] = { start: start, end: end };
-            });
-            this._themes[themeName] = steps;
-        },
-
-        _calculateLastStepHeight: function() {
-            this._lastStepHeight = this._getBlockAtom().findBlockInside({
-                    'blockName': 'users',
-                    'modName': 'pos',
-                    'modVal': 'bottom'
-                }
-            ).domElem.height() * 2;
-        },
-
-        _getBlockAtom: function() {
-            if(!this._atom) {
+        _getBlockAtom: function () {
+            if (!this._atom) {
                 this._atom = this.findBlockOutside('atom');
             }
             return this._atom;
         },
 
-        _changeStepIcons: function(step) {
-            if(step > 0) {
-                this.findBlocksInside('step-icon').forEach(function(icon) {
+        _changeStepIcons: function (step) {
+            if (step > 0) {
+                this.findBlocksInside('step-icon').forEach(function (icon) {
                     icon.setMod('step', step);
                 });
             }
             this._show();
         },
 
-        _show: function() {
+        _show: function () {
             this.setMod('show', 'yes');
         },
 
-        _hide: function() {
+        _hide: function () {
             this.setMod('show', 'no');
         }
     });
@@ -4119,61 +4129,61 @@ modules.define('i-bem__dom', ['jquery'], function(provide, $, BEMDOM) {
 /* ../../desktop.blocks/locomotive/locomotive.js end */
 ;
 /* ../../desktop.blocks/stories/stories.js begin */
-modules.define('i-bem__dom', function(provide, BEMDOM) {
+modules.define('i-bem__dom', function (provide, BEMDOM) {
 
     BEMDOM.decl('stories', {
         onSetMod: {
-            'js': function() {
+            'js': function () {
                 this._listHeight = this._calculateHeight();
                 this._hideStoriesInside();
             },
 
-            'theme': function(modName, currentTheme, oldTheme) {
+            'theme': function (modName, currentTheme, oldTheme) {
                 this._activateTheme(currentTheme);
                 oldTheme && this._deactivateTheme(oldTheme);
                 this._changeHeight(currentTheme);
             }
         },
 
-        _activateTheme: function(themeName) {
+        _activateTheme: function (themeName) {
             var theme = this.__findStory(themeName);
             theme.setMod('show', 'yes');
             theme.domElem.animate({left: '+=' + 952}, 300);
         },
 
-        _deactivateTheme: function(themeName) {
+        _deactivateTheme: function (themeName) {
             var theme = this.__findStory(themeName);
             theme.domElem.animate({left: '+=' + 952}, {
                 duration: 300,
-                complete: function() {
+                complete: function () {
                     theme.setMod('show', 'no');
                 }
             });
         },
 
-        __findStory: function(themeName) {
+        __findStory: function (themeName) {
             return this.findBlockInside({'blockName': 'story', 'modName': 'theme', 'modVal': themeName});
         },
 
-        _calculateHeight: function() {
+        _calculateHeight: function () {
             var list = [];
-            this.findBlocksInside('story').forEach(function(item) {
+            this.findBlocksInside('story').forEach(function (item) {
                 list[item.getMod('theme')] = item.domElem.height();
             });
             return list;
         },
 
-        _hideStoriesInside: function() {
-            this.findBlocksInside('story').forEach(function(item) {
+        _hideStoriesInside: function () {
+            this.findBlocksInside('story').forEach(function (item) {
                 item.setMod('show', 'no');
             });
         },
 
-        _getHeight: function(theme) {
+        _getHeight: function (theme) {
             return this._listHeight[theme];
         },
 
-        _changeHeight: function(theme) {
+        _changeHeight: function (theme) {
             this.domElem.height(this._getHeight(theme));
         }
     });
@@ -4184,11 +4194,11 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 /* ../../desktop.blocks/stories/stories.js end */
 ;
 /* ../../desktop.blocks/story/story.js begin */
-modules.define('i-bem__dom', function(provide, BEMDOM) {
+modules.define('i-bem__dom', function (provide, BEMDOM) {
 
     BEMDOM.decl('story', {
         onSetMod: {
-            'show': function() {
+            'show': function () {
                 this.domElem.css({left: '-952px', top: 0});
             }
         }
@@ -4200,43 +4210,47 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 /* ../../desktop.blocks/story/story.js end */
 ;
 /* ../../desktop.blocks/atom-ledge/atom-ledge.js begin */
-modules.define('i-bem__dom', function(provide, BEMDOM) {
+modules.define('i-bem__dom', function (provide, BEMDOM) {
 
-    var LEDGE_WIDTH = 800;
+    var LEDGE_WIDTH = 840;
     var CONTENT_WIDTH = 972;
 
     BEMDOM.decl('atom-ledge', {
-        onSetMod : {
-            'js' : function() {
+        onSetMod: {
+            'js': function () {
+                this._resizeSection();
                 this._bindToClick();
+            },
+
+            'opened': function () {
+                this._slide();
             }
         },
 
-        _bindToClick : function() {
-            this.findBlockOutside('page')
-                .bindTo('click', this._onClickOutsideLedge);
+        _bindToClick: function () {
+            this.findBlockOutside('page').bindTo('click', this._onClickOutsideLedge);
             this.bindTo('click', this._onClickInsideLedge);
         },
 
-        _onClickInsideLedge : function(e) {
+        _onClickInsideLedge: function (e) {
             e.preventDefault();
             e.stopPropagation();
-            !this.hasMod('opened', 'yes') && this._slide();
+            !this.hasMod('opened', 'yes') && this.toggleMod('opened', 'yes');
         },
 
-        _onClickOutsideLedge : function(e) {
+        _onClickOutsideLedge: function (e) {
             e.preventDefault();
             var ledge = this.findBlockInside('atom-ledge');
-            ledge.hasMod('opened', 'yes') && ledge._slide();
+            ledge.hasMod('opened', 'yes') && ledge.toggleMod('opened', 'yes');
         },
 
-        _slide : function() {
+        _slide: function () {
             var page = this.findBlockOutside('page'),
-                $el  = this.domElem,
+                $el = this.domElem,
                 offsetChange,
                 offset;
 
-            if(!this.hasMod('opened', 'yes')) {
+            if (this.hasMod('opened', 'yes')) {
                 offset = LEDGE_WIDTH - (page.domElem.width() - $el.offset().left);
                 offsetChange = '-=' + offset;
             } else {
@@ -4244,12 +4258,20 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
                 offsetChange = '+=' + offset;
             }
 
-            if(offset > 0) {
+            if (offset > 0) {
                 $el.animate({ 'left': offsetChange }, 300);
-                this.toggleMod('opened', 'yes');
-                page.toggleMod('active', 'yes');
-                page.findBlockInside('locomotive').toggleMod('show', 'yes');
+                page.findBlockInside('atom').toggleMod('active', 'yes', 'no');
+                this.findBlockInside('help-icon').toggleMod('type', 'quest', 'xmark');
             }
+        },
+
+        _resizeSection: function () {
+            var users = this.findBlockOutside('atom')
+                .findBlockInside({'blockName': 'users', 'modName': 'pos', 'modVal': 'top'}).domElem;
+
+            var section = this.findBlockInside('flex-section').domElem;
+            var newHeight = users.offset().top + users.height() - section.offset().top;
+            section.height(newHeight);
         }
     });
 
@@ -4257,4 +4279,482 @@ modules.define('i-bem__dom', function(provide, BEMDOM) {
 
 });
 /* ../../desktop.blocks/atom-ledge/atom-ledge.js end */
+;
+/* ../../desktop.blocks/help-icon/help-icon.js begin */
+modules.define('i-bem__dom', function (provide, BEMDOM) {
+
+    BEMDOM.decl('help-icon', {
+        onSetMod: {
+            'js': function () {
+                this.bindTo('click', this._onClick);
+                this.bindTo('mouseenter', this._onMouseChange);
+                this.bindTo('mouseleave', this._onMouseChange);
+            }
+        },
+
+        _onClick: function (e) {
+            e.stopPropagation();
+            this.findBlockOutside('atom-ledge').toggleMod('opened', 'yes');
+        },
+
+        _onMouseChange: function () {
+            this.toggleMod('active', 'yes', 'no');
+        }
+    });
+
+    provide(BEMDOM);
+
+});
+/* ../../desktop.blocks/help-icon/help-icon.js end */
+;
+/* ../../desktop.blocks/list-info/list-info.js begin */
+modules.define('i-bem__dom', function (provide, BEMDOM) {
+
+    BEMDOM.decl('list-info', {
+        onSetMod: {
+            'theme': function (modName, modVal) {
+                this._activateTheme(modVal);
+            }
+        },
+
+        _activateTheme: function (themeName) {
+            this.findBlocksInside('info').forEach(function (item) {
+                var modVal = item.hasMod('theme', themeName) ? 'yes' : 'no';
+                item.setMod('show', modVal);
+            });
+            this._changeStepsHeight(themeName);
+        },
+
+        _changeStepsHeight: function (themeName) {
+            var sections = this.findBlockInside({'blockName': 'info', 'modName': 'theme', 'modVal': themeName})
+                .findBlocksInside('section');
+            var stepsOffset = this.findBlockOutside('atom').getThemeStepsOffset(themeName);
+
+            sections.forEach(function (item, i) {
+                var newHeight = stepsOffset[i + 1].end - stepsOffset[i + 1].start;
+                item.domElem.height(newHeight);
+            });
+        }
+    });
+
+    provide(BEMDOM);
+
+});
+/* ../../desktop.blocks/list-info/list-info.js end */
+;
+/* ../../libs/bem-components/common.blocks/link/link.js begin */
+modules.define('i-bem__dom', function(provide, BEMDOM) {
+
+BEMDOM.decl('link', {
+    _onClick : function(e) {
+        e.preventDefault();
+        this.hasMod('disabled') || this.emit('click');
+    }
+}, {
+    live : function() {
+        this.liveBindTo('pointerclick', function(e) {
+            this._onClick(e);
+        });
+    }
+});
+
+provide(BEMDOM);
+
+});
+
+/* ../../libs/bem-components/common.blocks/link/link.js end */
+;
+/* ../../libs/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointer.js begin */
+﻿/**
+ * Basic polyfill for "Pointer Events" W3C Candidate Recommendation
+ * with addition of custom pointerpress/pointerrelease events.
+ *
+ * @see http://www.w3.org/TR/pointerevents/
+ * @see https://dvcs.w3.org/hg/pointerevents/raw-file/tip/pointerEvents.html
+ * @see https://dvcs.w3.org/hg/webevents/raw-file/default/touchevents.html
+ * @see http://msdn.microsoft.com/en-US/library/ie/hh673557.aspx
+ * @see http://www.benalman.com/news/2010/03/jquery-special-events/
+ * @see http://api.jquery.com/category/events/event-object/
+ *
+ * @modules pointerevents
+ *
+ * @author Kir Belevich <kir@soulshine.in>
+ * @copyright Kir Belevich 2013
+ * @license MIT
+ * @version 0.1.0
+ */
+modules.define('jquery', function(provide, $) {
+
+// nothing to do
+if(window.navigator.pointerEnabled) {
+    provide($);
+    return;
+}
+
+// current events type and aliases
+var current;
+
+// touch
+// https://github.com/ariya/phantomjs/issues/10375
+if('ontouchstart' in window && !('_phantom' in window)) {
+    current = {
+        type : 'touch',
+        enter : 'touchstart',
+        over : 'touchstart',
+        down : 'touchstart',
+        move : 'touchmove',
+        up : 'touchend',
+        out : 'touchend',
+        leave : 'touchend',
+        cancel : 'touchcancel'
+    };
+// msPointer
+} else if(window.navigator.msPointerEnabled) {
+    current = {
+        type : 'mspointer',
+        enter : 'mouseenter', // :(
+        over : 'MSPointerOver',
+        down : 'MSPointerDown',
+        move : 'MSPointerMove',
+        up : 'MSPointerUp',
+        out : 'MSPointerOut',
+        leave : 'mouseleave', // :(
+        cancel : 'MSPointerCancel'
+    };
+// mouse
+} else {
+    current = {
+        type : 'mouse',
+        enter : 'mouseenter',
+        over : 'mouseover',
+        down : 'mousedown',
+        move : 'mousemove',
+        up : 'mouseup',
+        out : 'mouseout',
+        leave : 'mouseleave'
+    };
+}
+
+var isTouch = current.type === 'touch',
+    isMouse = current.type === 'mouse';
+
+/**
+ * Mutate an argument event to PointerEvent.
+ *
+ * @param {Object} e current event
+ * @param {String} type new pointerevent type
+ */
+function PointerEvent(e, type) {
+    e.type = type;
+    // do not do anything with multiple touch-events because of gestures
+    if(!(type === 'touch' && e.originalEvent.changedTouches.length > 1)) {
+        normalizeToJQueryEvent(e);
+        extendToPointerEvent(e);
+        $.extend(this, e);
+    }
+}
+
+/**
+ * Dispatch current event.
+ *
+ * @param {Element} target target element
+ */
+PointerEvent.prototype.dispatch = function(target) {
+    this.type && ($.event.handle || $.event.dispatch).call(target, this);
+    return this;
+};
+
+/**
+ * Normalize only touch-event to jQuery event interface.
+ *
+ * @see http://api.jquery.com/category/events/event-object/
+ *
+ * @param {Object} e input event
+ */
+function normalizeToJQueryEvent(e) {
+    if(!isTouch) return;
+
+    var touchPoint = e.originalEvent.changedTouches[0];
+
+    // keep all the properties normalized by jQuery
+    e.clientX = touchPoint.clientX;
+    e.clientY = touchPoint.clientY;
+    e.pageX = touchPoint.pageX;
+    e.pageY = touchPoint.pageY;
+    e.screenX = touchPoint.screenX;
+    e.screenY = touchPoint.screenY;
+    e.layerX = e.originalEvent.layerX;
+    e.layerY = e.originalEvent.layerY;
+    e.offsetX = e.layerX - e.currentTarget.offsetLeft;
+    e.offsetY = e.layerY - e.currentTarget.offsetTop;
+    e.target = touchPoint.target;
+    e.identifier = touchPoint.identifier;
+}
+
+/**
+ * Extend event to match PointerEvent Interface.
+ *
+ * @see https://dvcs.w3.org/hg/pointerevents/raw-file/tip/pointerEvents.html#pointer-events-and-interfaces
+ * @see https://dvcs.w3.org/hg/webevents/raw-file/default/touchevents.html
+ * @param {Object} e input event
+ */
+function extendToPointerEvent(e) {
+    e.width = e.width ||
+        e.webkitRadiusX ||
+        e.radiusX ||
+        0;
+
+    e.height = e.width ||
+        e.webkitRadiusY ||
+        e.radiusY ||
+        0;
+
+    // TODO: stupid Android somehow could send "force" > 1 ;(
+    e.pressure = e.pressure ||
+        e.mozPressure ||
+        e.webkitForce ||
+        e.force ||
+        e.which && 0.5 ||
+        0;
+
+    e.tiltX = e.tiltX || 0;
+    e.tiltY = e.tiltY || 0;
+    e.pointerType = e.pointerType || current.type;
+
+    // https://dvcs.w3.org/hg/pointerevents/raw-file/tip/pointerEvents.html#the-primary-pointer
+    e.isPrimary = true;
+
+    // "1" is always for mouse, need to +2 for touch which can header-info from "0"
+    e.pointerId = e.identifier? e.identifier + 2 : 1;
+}
+
+function addSpecialEvent(eventType, extend) {
+    var pointerEventType = 'pointer' + eventType,
+        handlerFn = 'handler' + (isTouch? 'Touch' : 'NonTouch'),
+        specialEvent = $.event.special[pointerEventType] = {
+            setup : function() {
+                $(this).on(current[eventType], specialEvent.handler);
+            },
+
+            teardown : function() {
+                $(this).off(current[eventType], specialEvent.handler);
+            },
+
+            handler : function() {
+                specialEvent[handlerFn].apply(this, arguments);
+            },
+
+            handlerTouch : function(e) {
+                var pointerEvent = new PointerEvent(e, pointerEventType);
+                pointerEvent.dispatch(pointerEvent.target);
+            },
+
+            handlerNonTouch : function(e) {
+                new PointerEvent(e, pointerEventType).dispatch(this);
+            }
+        };
+
+    extend && $.extend(specialEvent, extend(specialEvent, pointerEventType));
+}
+
+function extendHandlerTouchByElement(_, pointerEventType) {
+    return {
+        handlerTouch : function(e) {
+            var pointerEvent = new PointerEvent(e, pointerEventType),
+                target = document.elementFromPoint(pointerEvent.clientX, pointerEvent.clientY);
+            pointerEvent.dispatch(target);
+        }
+    };
+}
+
+function pressAndReleaseHandlerStub(specialEvent, pointerEventType) {
+    var eventTypeForMouse = current[pointerEventType === 'pointerpress'? 'down' : 'up'];
+    return {
+        setup : function() {
+            isMouse?
+                $(this).on(eventTypeForMouse, specialEvent.handlerMouse) :
+                $(this)
+                    .on(current.down, specialEvent.handlerNonMouseDown)
+                    .on(current.move, specialEvent.handlerNonMouseMove)
+                    .on(current.up, specialEvent.handlerNonMouseUp);
+        },
+
+        teardown : function() {
+            isMouse?
+                $(this).off(eventTypeForMouse, specialEvent.handlerMouse) :
+                $(this)
+                    .off(current.down, specialEvent.handlerNonMouseDown)
+                    .off(current.move, specialEvent.handlerNonMouseMove)
+                    .off(current.up, specialEvent.handlerNonMouseUp);
+        },
+
+        handlerNonMouseMove : function(e) {
+            var data = specialEvent.data;
+            if(Math.abs(e.clientX - data.clientX) > 5 ||
+                Math.abs(e.clientY - data.clientY) > 5) {
+                data.move = true;
+            }
+        },
+
+        handlerMouse : function(e) {
+            // only left mouse button
+            e.which === 1 && new PointerEvent(e, pointerEventType).dispatch(this);
+        }
+    };
+}
+
+addSpecialEvent('enter');
+addSpecialEvent('over');
+addSpecialEvent('down');
+addSpecialEvent('up', extendHandlerTouchByElement);
+addSpecialEvent('out', extendHandlerTouchByElement);
+addSpecialEvent('leave', extendHandlerTouchByElement);
+addSpecialEvent('move', function(specialEvent) {
+    return {
+        setup : function() {
+            isTouch && $(this).on(current.down, specialEvent.downHandler);
+            $(this).on(current.move, specialEvent.moveHandler);
+        },
+
+        teardown : function() {
+            isTouch && $(this).off(current.down, specialEvent.downHandler);
+            $(this).off(current.move, specialEvent.moveHandler);
+        },
+
+        downHandler : function(e) {
+            var pointerEvent = new PointerEvent(e, 'pointerdown');
+            specialEvent.target = pointerEvent.target;
+        },
+
+        moveHandler : function(e) {
+            var pointerEvent = new PointerEvent(e, 'pointermove');
+            if(isTouch) {
+                var newTarget = document.elementFromPoint(pointerEvent.clientX, pointerEvent.clientY),
+                    currentTarget = specialEvent.target;
+
+                pointerEvent.dispatch(currentTarget);
+
+                if(currentTarget !== newTarget) {
+                    // out current target
+                    pointerEvent = new PointerEvent(e, 'pointerout');
+                    pointerEvent.dispatch(currentTarget);
+
+                    // new target is not a child of the current -> leave current target
+                    if(!currentTarget.contains(newTarget)) {
+                        pointerEvent = new PointerEvent(e, 'pointerleave');
+                        pointerEvent.dispatch(currentTarget);
+                    }
+
+                    // new target is not the parent of the current -> leave new target
+                    if(!newTarget.contains(currentTarget)) {
+                        pointerEvent = new PointerEvent(e, 'pointerenter');
+                        pointerEvent.dispatch(newTarget);
+                    }
+
+                    // over new target
+                    pointerEvent = new PointerEvent(e, 'pointerover');
+                    pointerEvent.dispatch(newTarget);
+
+                    // new target -> current target
+                    specialEvent.target = newTarget;
+                }
+            } else {
+                pointerEvent.dispatch(this);
+            }
+        }
+    };
+});
+
+addSpecialEvent('press', function(specialEvent, pointerEventType) {
+    return $.extend(
+        pressAndReleaseHandlerStub(specialEvent, pointerEventType),
+        {
+            handlerNonMouseDown : function(e) {
+                specialEvent.data = {
+                    timer : (function() {
+                        return setTimeout(function() {
+                            if(!specialEvent.data.move) {
+                                var pointerevent = new PointerEvent(e, pointerEventType);
+                                pointerevent.dispatch(pointerevent.target);
+                            }
+                        }, 80);
+                    })(),
+                    clientX : e.clientX,
+                    clientY : e.clientY
+                };
+            },
+
+            handlerNonMouseUp : function() {
+                clearTimeout(specialEvent.data.timer);
+                delete specialEvent.data;
+            }
+        });
+});
+
+addSpecialEvent('release', function(specialEvent, pointerEventType) {
+    return $.extend(
+        pressAndReleaseHandlerStub(specialEvent, pointerEventType),
+        {
+            handlerNonMouseDown : function(e) {
+                var data = specialEvent.data = {
+                    timer : (function() {
+                        return setTimeout(function() {
+                            data.move || (data.pressed = true);
+                        }, 80);
+                    })(),
+                    clientX : e.clientX,
+                    clientY : e.clientY
+                };
+            },
+
+            handlerNonMouseUp : function(e) {
+                clearTimeout(specialEvent.data.timer);
+
+                if(specialEvent.data.pressed) {
+                    var pointerEvent = new PointerEvent(e, pointerEventType),
+                        target = document.elementFromPoint(pointerEvent.clientX, pointerEvent.clientY);
+                    pointerEvent.dispatch(target);
+                }
+
+                delete specialEvent.data;
+            }
+        });
+});
+
+provide($);
+
+});
+/* ../../libs/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointer.js end */
+;
+/* ../../libs/bem-core/desktop.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js begin */
+/**
+ * @modules jquery__event_type_pointerclick
+ * @version 1.0.2
+ * @author Filatov Dmitry <dfilatov@yandex-team.ru>
+ */
+
+modules.define('jquery', function(provide, $) {
+
+var event = $.event.special.pointerclick = {
+        setup : function() {
+            $(this).on('click', event.handler);
+        },
+
+        teardown : function() {
+            $(this).off('click', event.handler);
+        },
+
+        handler : function(e) {
+            if(!e.button) {
+                e.type = 'pointerclick';
+                $.event.dispatch.apply(this, arguments);
+                e.type = 'click';
+            }
+        }
+    };
+
+provide($);
+
+});
+/* ../../libs/bem-core/desktop.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js end */
 ;

@@ -27,3 +27,8 @@
 /*borschik:include:../../desktop.blocks/stories/stories.js*/;
 /*borschik:include:../../desktop.blocks/story/story.js*/;
 /*borschik:include:../../desktop.blocks/atom-ledge/atom-ledge.js*/;
+/*borschik:include:../../desktop.blocks/help-icon/help-icon.js*/;
+/*borschik:include:../../desktop.blocks/list-info/list-info.js*/;
+/*borschik:include:../../libs/bem-components/common.blocks/link/link.js*/;
+/*borschik:include:../../libs/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointer.js*/;
+/*borschik:include:../../libs/bem-core/desktop.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js*/;

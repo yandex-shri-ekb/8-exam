@@ -2,13 +2,8 @@
 .page
 {
     margin: 0;
-    font-family: sans-serif;
+    font: 16px/1.5 sans-serif;
     min-width: 1024px;
-}
-
-.page_active_yes
-{
-    cursor: pointer;
 }
 /* ../../desktop.blocks/page/page.css end */
 /* ../../desktop.blocks/page/__wrap/page__wrap.css begin */
@@ -24,7 +19,7 @@
     width: 972px;
 }
 
-.atom_cursor_pointer
+.atom_active_yes
 {
     cursor: pointer;
 }
@@ -58,9 +53,9 @@
 /* ../../desktop.blocks/atom/__border/atom__border.css begin */
 .atom__border
 {
+    padding: 0 16px 0 18px;
     border: 2px solid #000;
     border-right: 0;
-    padding: 0 16px 0 18px;
 }
 /* ../../desktop.blocks/atom/__border/atom__border.css end */
 /* ../../desktop.blocks/header/header.css begin */
@@ -78,37 +73,37 @@
 /* ../../desktop.blocks/header-logo/__orbital/header-logo__orbital.css begin */
 .header-logo__orbital
 {
-    background: url("../../desktop.blocks/header-logo/__orbital/header-logo__orbital.png") no-repeat;
     position: absolute;
+    margin: -2px 0 0 -20px;
     width: 954px;
     height: 593px;
-    margin: -2px 0 0 -20px;
+    background: url("../../desktop.blocks/header-logo/__orbital/header-logo__orbital.png") no-repeat;
 }
 /* ../../desktop.blocks/header-logo/__orbital/header-logo__orbital.css end */
 /* ../../desktop.blocks/header-logo/__title/header-logo__title.css begin */
 .header-logo__title
 {
     top: 427px;
-    font-size: 44px;
     text-align: center;
+    font-size: 44px;
 }
 /* ../../desktop.blocks/header-logo/__title/header-logo__title.css end */
 /* ../../desktop.blocks/header-logo/__ya-logo/header-logo__ya-logo.css begin */
 .header-logo__ya-logo
 {
-    background: url("../../desktop.blocks/header-logo/__ya-logo/header-logo__ya-logo.png") no-repeat;
     top: -2px;
     width: 138px;
     height: 92px;
+    background: url("../../desktop.blocks/header-logo/__ya-logo/header-logo__ya-logo.png") no-repeat;
 }
 /* ../../desktop.blocks/header-logo/__ya-logo/header-logo__ya-logo.css end */
 /* ../../desktop.blocks/header-info/header-info.css begin */
 .header-info
 {
     height: 392px;
-    background: #fff;
     border-top: 2px solid #000;
     border-bottom: 2px solid #000;
+    background: #fff;
 }
 /* ../../desktop.blocks/header-info/header-info.css end */
 /* ../../desktop.blocks/header-info/__inner/header-info__inner.css begin */
@@ -117,34 +112,48 @@
     padding: 80px 0 0 0;
 }
 /* ../../desktop.blocks/header-info/__inner/header-info__inner.css end */
-/* ../../desktop.blocks/header-info/__video-image/header-info__video-image.css begin */
-.header-info__video-image
+/* ../../desktop.blocks/video-icon/video-icon.css begin */
+.video-icon
 {
-    background: url("../../desktop.blocks/header-info/__video-image/header-info__video-image.png");
+    position: relative;
+    margin: 0 0 16px;
     width: 138px;
     height: 80px;
-    margin: 0 0 16px;
+    border: 2px solid #000;
+    border-radius: 4px;
 }
 
-.header-atom__content_color_yellow
+.video-icon_theme_yellow
 {
     background-color: #ffe05d;
 }
 
-.header-info__video-image_color_red
+.video-icon_theme_red
 {
     background-color: #ff8282;
 }
 
-.header-info__video-image_color_blue
+.video-icon_theme_blue
 {
     background-color: #72c4f6;
 }
-/* ../../desktop.blocks/header-info/__video-image/header-info__video-image.css end */
+/* ../../desktop.blocks/video-icon/video-icon.css end */
+/* ../../desktop.blocks/video-icon/__play/video-icon__play.css begin */
+.video-icon__play
+{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -18px 0 0 -13px;
+    width: 27px;
+    height: 36px;
+    background: url("../../desktop.blocks/video-icon/__play/video-icon__play.png");
+}
+/* ../../desktop.blocks/video-icon/__play/video-icon__play.css end */
 /* ../../desktop.blocks/users/users.css begin */
 .users
 {
-    height: 440px;
+    height: 470px;
 }
 
 .users_show_text_no
@@ -243,7 +252,6 @@
     background-position: 0 -460px
 }
 
-
 .user-icon_size_middle
 {
     width: 180px;
@@ -335,7 +343,6 @@
     background-position: 0 -330px;
 }
 
-
 .step-icon_theme_yellow.step-icon_step_1.step-icon_active_yes
 {
     background-position: -110px 0;
@@ -377,7 +384,6 @@
     background-position: -220px -330px;
 }
 
-
 .step-icon_theme_red.step-icon_step_1.step-icon_active_yes
 {
     background-position: -330px 0;
@@ -418,7 +424,6 @@
 {
     background-position: -440px -330px;
 }
-
 
 .step-icon_theme_blue.step-icon_step_1.step-icon_active_yes
 {
@@ -470,15 +475,10 @@
     padding: 0 18px 0 16px;
 }
 /* ../../desktop.blocks/story/__steps/story__steps.css end */
-/* ../../desktop.blocks/step/step.css begin */
-.step
-{
-}
-/* ../../desktop.blocks/step/step.css end */
 /* ../../desktop.blocks/step/__images/step__images.css begin */
 .step__images
 {
-    height: 522px;
+    height: 502px;
 }
 /* ../../desktop.blocks/step/__images/step__images.css end */
 /* ../../desktop.blocks/step/__text/step__text.css begin */
@@ -772,7 +772,7 @@
     background: url("../../desktop.blocks/path_theme_yellow/__step-1/path_theme_yellow__step-1.png") no-repeat;
     width: 762px;
     height: 87px;
-    top: -40px;
+    top: -44px;
 }
 
 
@@ -814,6 +814,7 @@
     background: url("../../desktop.blocks/path_theme_yellow/__step-5/path_theme_yellow__step-5.png") no-repeat;
     width: 570px;
     height: 588px;
+    margin: -20px 0 0;
 }
 /* ../../desktop.blocks/path_theme_yellow/__step-5/path_theme_yellow__step-5.css end */
 /* ../../desktop.blocks/image_theme_red/image_theme_red.css begin */
@@ -1141,12 +1142,13 @@
 }
 /* ../../desktop.blocks/image_theme_red/__tour/image_theme_red__tour.css end */
 /* ../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.css begin */
-.path_theme_red__step-1 {
+.path_theme_red__step-1
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.png") no-repeat;
     width: 763px;
     height: 97px;
-    top: -40px;
+    top: -44px;
 }
 
 
@@ -1155,16 +1157,19 @@
 
 /* ../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.css end */
 /* ../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.css begin */
-.path_theme_red__step-2 {
+.path_theme_red__step-2
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.png") no-repeat;
     width: 626px;
     height: 561px;
     margin-left: -18px;
+    margin-top: -6px;
 }
 /* ../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.css end */
 /* ../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.css begin */
-.path_theme_red__step-3 {
+.path_theme_red__step-3
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.png") no-repeat;
     width: 684px;
@@ -1172,7 +1177,8 @@
 }
 /* ../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.css end */
 /* ../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.css begin */
-.path_theme_red__step-4 {
+.path_theme_red__step-4
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.png") no-repeat;
     width: 626px;
@@ -1180,11 +1186,13 @@
 }
 /* ../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.css end */
 /* ../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.css begin */
-.path_theme_red__step-5 {
+.path_theme_red__step-5
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.png") no-repeat;
     width: 528px;
     height: 548px;
+    margin: -2px 0 0;
 }
 /* ../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.css end */
 /* ../../desktop.blocks/image_theme_blue/image_theme_blue.css begin */
@@ -1201,9 +1209,9 @@
 /* ../../desktop.blocks/image_theme_blue/__bag/image_theme_blue__bag.css begin */
 .image_theme_blue__bag
 {
-    background: url("../../desktop.blocks/image_theme_blue/__bag/image_theme_blue__bag.png") no-repeat;
     width: 475px;
     height: 409px;
+    background: url("../../desktop.blocks/image_theme_blue/__bag/image_theme_blue__bag.png") no-repeat;
 }
 
 .image_theme_blue__bag_push_up_yes
@@ -1492,12 +1500,13 @@
 }
 /* ../../desktop.blocks/image_theme_blue/__yoga/image_theme_blue__yoga.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.css begin */
-.path_theme_blue__step-1 {
+.path_theme_blue__step-1
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.png") no-repeat;
     width: 762px;
     height: 97px;
-    top: -40px;
+    top: -44px;
 }
 
 
@@ -1506,7 +1515,8 @@
 
 /* ../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.css begin */
-.path_theme_blue__step-2 {
+.path_theme_blue__step-2
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.png") no-repeat;
     width: 596px;
@@ -1514,7 +1524,8 @@
 }
 /* ../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.css begin */
-.path_theme_blue__step-3 {
+.path_theme_blue__step-3
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.png") no-repeat;
     width: 684px;
@@ -1522,7 +1533,8 @@
 }
 /* ../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.css begin */
-.path_theme_blue__step-4 {
+.path_theme_blue__step-4
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.png") no-repeat;
     width: 626px;
@@ -1530,7 +1542,8 @@
 }
 /* ../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-5/path_theme_blue__step-5.css begin */
-.path_theme_blue__step-5 {
+.path_theme_blue__step-5
+{
     position: absolute;
     background: url("../../desktop.blocks/path_theme_blue/__step-5/path_theme_blue__step-5.png") no-repeat;
     width: 528px;
@@ -1540,10 +1553,10 @@
 /* ../../desktop.blocks/footer/footer.css begin */
 .footer
 {
-    background: #FFF;
+    margin: 0 -16px 0 -18px;
     padding-top: 80px;
     border-top: 2px solid #000;
-    margin: 0 -16px 0 -18px;
+    background: #FFF;
 }
 /* ../../desktop.blocks/footer/footer.css end */
 /* ../../desktop.blocks/footer/__atom-logo/footer__atom-logo.css begin */
@@ -1566,12 +1579,6 @@
     padding: 134px 0 76px;
 }
 /* ../../desktop.blocks/footer/__foot/footer__foot.css end */
-/* ../../desktop.blocks/footer/__links/footer__links.css begin */
-.footer__links
-{
-
-}
-/* ../../desktop.blocks/footer/__links/footer__links.css end */
 /* ../../desktop.blocks/footer/__link/footer__link.css begin */
 .footer__link
 {
@@ -1599,26 +1606,129 @@
 /* ../../desktop.blocks/atom-ledge/__shadow/atom-ledge__shadow.css begin */
 .atom-ledge__shadow
 {
-    left: -18px;
-    width: 18px;
-    background: rgba(0, 0, 0, 0.2);
-    height: 100%;
     position: absolute;
     top: 0;
     bottom: 0;
+    left: -18px;
+    width: 18px;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
 }
 /* ../../desktop.blocks/atom-ledge/__shadow/atom-ledge__shadow.css end */
 /* ../../desktop.blocks/atom-ledge/__content/atom-ledge__content.css begin */
 .atom-ledge__content
 {
-    width: 800px;
-    background: #fff;
+    width: 840px;
     height: 100%;
+    background: #fff;
 }
 /* ../../desktop.blocks/atom-ledge/__content/atom-ledge__content.css end */
-/* ../../desktop.blocks/atom-ledge/__inner/atom-ledge__inner.css begin */
-.atom-ledge__inner
+/* ../../desktop.blocks/atom-ledge/__help-icon/atom-ledge__help-icon.css begin */
+.atom-ledge__help-icon
 {
-    padding: 18px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
 }
-/* ../../desktop.blocks/atom-ledge/__inner/atom-ledge__inner.css end */
+/* ../../desktop.blocks/atom-ledge/__help-icon/atom-ledge__help-icon.css end */
+/* ../../desktop.blocks/help-icon/help-icon.css begin */
+.help-icon
+{
+    width: 80px;
+    height: 80px;
+    background: url("../../desktop.blocks/help-icon/help-icon.png") no-repeat;
+}
+
+.help-icon_type_quest.help-icon_active_no
+{
+    background-position: 0 0;
+}
+
+.help-icon_type_quest.help-icon_active_yes
+{
+    background-position: 0 -90px;
+}
+
+.help-icon_type_xmark.help-icon_active_no
+{
+    background-position: -90px 0;
+}
+
+.help-icon_type_xmark.help-icon_active_yes
+{
+    background-position: -90px -90px;
+}
+
+.help-icon_active_yes
+{
+    cursor: pointer;
+}
+/* ../../desktop.blocks/help-icon/help-icon.css end */
+/* ../../desktop.blocks/section/section.css begin */
+.section
+{
+    border-bottom: 2px solid #000;
+    margin-bottom: -2px;
+}
+
+.section_border_no
+{
+    border: 0;
+}
+/* ../../desktop.blocks/section/section.css end */
+/* ../../desktop.blocks/section/__title/section__title.css begin */
+.section__title
+{
+    margin-top: 0;
+}
+/* ../../desktop.blocks/section/__title/section__title.css end */
+/* ../../desktop.blocks/section/__text/section__text.css begin */
+.section__text
+{
+    width: 662px;
+    line-height: 150%;
+}
+/* ../../desktop.blocks/section/__text/section__text.css end */
+/* ../../desktop.blocks/section/__item/section__item.css begin */
+.section__item
+{
+    margin: 24px 0 32px;
+}
+/* ../../desktop.blocks/section/__item/section__item.css end */
+/* ../../desktop.blocks/section/__inner/section__inner.css begin */
+.section__inner
+{
+    padding: 34px;
+}
+/* ../../desktop.blocks/section/__inner/section__inner.css end */
+/* ../../desktop.blocks/atom-logo/atom-logo.css begin */
+.atom-logo
+{
+    width: 294px;
+    height: 201px;
+    background: url("../../desktop.blocks/atom-logo/atom-logo.png") no-repeat;
+}
+/* ../../desktop.blocks/atom-logo/atom-logo.css end */
+/* ../../desktop.blocks/dialog/dialog.css begin */
+.dialog
+{
+    width: 780px;
+    height: 446px;
+    background: url("../../desktop.blocks/dialog/dialog__back.png") no-repeat;
+}
+/* ../../desktop.blocks/dialog/dialog.css end */
+/* ../../desktop.blocks/dialog/__content/dialog__content.css begin */
+.dialog__content
+{
+    width: 760px;
+    height: 426px;
+    border: 2px solid #000;
+}
+/* ../../desktop.blocks/dialog/__content/dialog__content.css end */
+/* ../../desktop.blocks/info/info.css begin */
+.info_show_no
+{
+    display: none;
+}
+/* ../../desktop.blocks/info/info.css end */

@@ -1,8 +1,8 @@
-modules.define('i-bem__dom', function(provide, BEMDOM) {
+modules.define('i-bem__dom', function (provide, BEMDOM) {
 
     BEMDOM.decl('story', {
         onSetMod: {
-            'show': function() {
+            'show': function () {
                 this.domElem.css({left: '-952px', top: 0});
             }
         }

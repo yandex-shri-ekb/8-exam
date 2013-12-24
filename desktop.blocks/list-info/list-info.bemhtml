@@ -1,0 +1,3 @@
+block 'list-info' {
+    js: true
+}

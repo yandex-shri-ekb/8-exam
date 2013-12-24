@@ -1,8 +1,8 @@
 .image_theme_blue__bag
 {
-    background: url(image_theme_blue__bag.png) no-repeat;
     width: 475px;
     height: 409px;
+    background: url(image_theme_blue__bag.png) no-repeat;
 }
 
 .image_theme_blue__bag_push_up_yes

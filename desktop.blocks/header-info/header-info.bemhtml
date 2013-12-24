@@ -13,10 +13,7 @@ block 'header-info' {
                     elem: 'video-holder',
                     mix: { block: 'grid__module', mods: { col: 9, span: 3 } },
                     content: [
-                        {
-                            elem: 'video-image',
-                            mods: { color: this.ctx.color }
-                        },
+                        { block: 'video-icon' },
                         {
                             elem: 'video-text',
                             content: 'Весь сайт в одном видео'
