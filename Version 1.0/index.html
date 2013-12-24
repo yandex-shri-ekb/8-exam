@@ -7,27 +7,38 @@
     <link href="style.css" rel="stylesheet">
     <script src="http://yandex.st/jquery/1.9.1/jquery.min.js"></script>
     <script src="script.js"></script>
+
+
 </head>
 <body>
 
-<div class="main">
+<div class="shadow_back"></div>
+
+<div class="video_popup">
+    <video width="736" height="416" controls="controls" src=""></video>
+</div>
+
+<div class="atom">
+
     <div class="left_block">
-        <div class="left_block_one" style="background-color: #ffe05d">
+
+        <div class="left_block_one">
             <div class="logo">
-                <a href="#"></a>
+                <a href="http://yandex.ru"></a>
             </div>
-            <div class="arrow_down_black">
-                <div class="arrow_down_white"></div>
+            <div class="logo_arrow_down_black">
+                <div class="logo_arrow_down_white"></div>
             </div>
             <h1>А что если интернет подстроится под вас?</h1>
         </div>
+
         <div class="left_block_two">
             <p>
                 Интернет сегодня — это не только информация
                 и технологии, но и люди. Людей много и они все разные,
                 а сайты для всех пользователей обычно выглядят
                 одинаково. Яндекс уже научился адаптироваться под
-                конкретного пользователя <br /> и готов поделиться этой
+                конкретного пользователя и готов поделиться этой
                 технологией с другими.
             </p>
             <p>
@@ -36,16 +47,16 @@
             </p>
 
             <div class="but_wrap">
-                <div class="button" style="background-color: #ffe05d;">
+                <div class="button">
                     <img src="images/button.png" />
                 </div>
                 Весь сайт в одном видео
             </div>
         </div>
 
-        <div class="left_block_three" style="background: #ffe05d;">
-            <div class="person">
-                <div class="one_pers" name="#ffe05d">
+        <div class="left_block_three">
+            <div class="block_person">
+                <div class="one_pers" title="#ffe05d">
                     <div class="pers active boy"></div>
                     <div class="name">Максим</div>
                     <div class="desc_pers">
@@ -54,7 +65,7 @@
                     </div>
                 </div>
 
-                <div class="one_pers" name="#ff8282">
+                <div class="one_pers" title="#ff8282">
                     <div class="pers man"></div>
                     <div class="name">Алексей</div>
                     <div class="desc_pers">
@@ -62,7 +73,7 @@
                     </div>
                 </div>
 
-                <div class="one_pers" name="#72c4f6">
+                <div class="one_pers" title="#72c4f6">
                     <div class="pers grandman"></div>
                     <div class="name">Григорий И. Дауге</div>
                     <div class="desc_pers">
@@ -70,31 +81,28 @@
                     </div>
                 </div>
             </div>
-
-
-
         </div>
 
-
-
         <div class="left_block_four">
-            <div class="left_block_fours boy actives" id="boy">
-                <img class="maps" src="images/maps-yellow.png" />
-                <p>
-                    Максим хочет увидеть настоящий, нетуристический Таиланд.
-                </p>
-                <p>
-                    Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё,
-                    что ему нужно, — билет на самолёт.
-                </p>
 
-                <div class="tickets_and_compass">
-                    <img class="ticket" src="images/ticket_and_compass.png" />
-                    <img class="compass" src="images/compass.png" />
-                    <img class="book" src="images/book.png" />
+            <div class="left_block_fours boy actives" id="boy">
+
+
+                <div class="yellow-1-step">
+                    <img class="maps" src="images/yellow-1-maps.png" />
+                    <p>
+                        Максим хочет увидеть настоящий, нетуристический Таиланд.
+                    </p>
+                    <p>
+                        Он планирует путешествовать по стране самостоятельно, составлять маршрут по ходу. Поэтому всё,
+                        что ему нужно, — билет на самолёт.
+                    </p>
+                    <img class="ticket" src="images/yellow-1-ticket.png" />
+                    <img class="compass" src="images/yellow-1-compass.png" />
+                    <img class="book" src="images/yellow-1-book.png" />
                 </div>
 
-                <div class="comp_disk">
+                <div class="yellow-2-step">
                     <p>
                         Для путешествия по жаркой стране Максиму нужна удобная одежда и крепкая обувь.
                     </p>
@@ -102,25 +110,50 @@
                         Он не желает тратить время на походы по магазинам, ведь интересные ему вещи можно с лёгкостью
                         найти в интернете.
                     </p>
-                    <img class="disk" src="images/yellow_left_disk.png" />
-                    <img class="computer" src="images/yellow_comp.png" />
-                    <img class="phone" src="images/yellow_phone.png" />
-                </div>
-                <div class="yellow_end"></div>
-            </div>
-            <div class="left_block_fours man" id="man">
-                <img class="tour_and_passport" src="images/tour_passport.png" />
-                <p>
-                    Юра сразу покупает тур: в его ситуации так очевидно проще. Основные вводные - приемлемого качества.
-                </p>
-                <p>
-                    Отель центре тайской жизни: чтобы и еда, и качественный пляж, достопримечательности, и рестораны.
-                </p>
-                <div class="photo_book">
-                    <img class="photo" src="images/red-photo.png"/>
+                    <img class="disk" src="images/yellow-2-disk.png" />
+                    <img class="computer" src="images/yellow-2-comp.png" />
+                    <img class="phone" src="images/yellow-2-phone.png" />
                 </div>
 
-                <div class="check_glasses">
+                <div class="yellow-3-step">
+                    <img class="big-book" src="images/yellow-3-book.png" />
+                    <p>
+                        Рюкзак с вещами и ноутбуком — вот и весь багаж Максима.
+                    </p>
+                    <p>
+                        На метро он доберётся до вокзала, а оттуда поедет на аэроэкспрессе.
+                    </p>
+                    <img class="money" src="images/yellow-3-money.png" />
+                    <img class="ipod" src="images/yellow-3-ipod.png" />
+                </div>
+
+                <div class="yellow-4-step">
+                    <p>
+                        Максим не сидит на месте — в поисках интересных мест он колесит по всей стране.
+                    </p>
+                    <p>
+                        Когда ночь застаёт его в пути, Максим просто находит ближайший хостел. Утром он решает —
+                        остаться и осмотреть местные достопримечательности или вернуться на дорогу.
+                    </p>
+                    <img class="bag" src="images/yellow-4-bag.png" />
+                    <img class="band" src="images/yellow-4-band.png" />
+                    <img class="camera" src="images/yellow-4-book-camera.png" />
+                </div>
+            </div>
+
+            <div class="left_block_fours man" id="man">
+                <div class="red-1-step">
+                    <img class="tour_and_passport" src="images/red-1-tour-passport.png" />
+                    <p>
+                        Юра сразу покупает тур: в его ситуации так очевидно проще. Основные вводные - приемлемого качества.
+                    </p>
+                    <p>
+                        Отель центре тайской жизни: чтобы и еда, и качественный пляж, достопримечательности, и рестораны.
+                    </p>
+                    <img class="photo" src="images/red-1-photo.png"/>
+                </div>
+
+                <div class="red-2-step">
                     <p>
                         Алексей твердо уверен, что линзы практичнее обычных очков — как минимум потому, что вместе
                         с ними можно надеть другие очки: для плавания или солнечные.
@@ -128,60 +161,106 @@
                     <p>
                         Он привык к тому, что у него всегда есть запас одноразовых линз.
                     </p>
-                    <img class="beer" src="images/red-beer.png" />
-                    <img class="red-phone" src="images/red_phone.png" />
-                    <img class="check" src="images/red_check.png" />
-                    <img class="glasses" src="images/red_glasses.png" />
+                    <img class="beer" src="images/red-2-beer.png" />
+                    <img class="red-phone" src="images/red-2-phone.png" />
+                    <img class="check" src="images/red-2-check.png" />
+                    <img class="glasses" src="images/red-2-glasses.png" />
                 </div>
-                <div class="red-end"></div>
+
+                <div class="red-3-step">
+                    <img class="toys" src="images/red-3-toys.png" />
+                    <p>
+                        У семьи Быковых с собой очень много багажа, большую часть которого занимают платья жены и
+                        детские вещи.
+                    </p>
+                    <p>
+                        Ехать с сумками на общественном транспорте им совсем не хочется, тем более, когда есть
+                        вместительный автомобиль. Алексей решает переплатить за парковку у аэропорта, зато добраться с удобством.
+                    </p>
+                    <img class="cup" src="images/red-3-comp.png"/>
+                    <img class="key" src="images/red-3-key.png"/>
+                </div>
+
+                <div class="red-4-step">
+                    <p>
+                        Для Алексея один из основных мотивов выбора Таиланда — гастрономический: и он, и жена любят
+                        экзотическую кухню.
+                    </p>
+                    <p>
+                        Каждый день они вместе отправляются на поиски новых ресторанов.
+                    </p>
+                    <img class="bugs" src="images/red-4-bugs.png" />
+                    <img class="food" src="images/red-4-food.png" />
+                </div>
 
             </div>
             <div class="left_block_fours grademan" id="grademan">
-                <img class="ticket_watch" src="images/tickets_watch.png">
-                <p>
-                    Григорий Иоганович Дауге редко отдыхает — бизнес требует от него полной отдачи.
-                </p>
-                <p>
-                    Друзья и коллеги, переживающие за его здоровье, подарили ему билет в Таиланд. Поспорив для вида,
-                    Григорий Иоганович решает, что здоровье важнее, и садится выбирать отель.
-                </p>
-                <div class="phone_pen">
-                    <img class="phone_st" src="images/phone_st.png">
-                    <img class="pen" src="images/pen.png">
+                <div class="blue-1-step">
+                    <img class="ticket_watch" src="images/blue-1-watch.png">
+                    <p>
+                        Григорий Иоганович Дауге редко отдыхает — бизнес требует от него полной отдачи.
+                    </p>
+                    <p>
+                        Друзья и коллеги, переживающие за его здоровье, подарили ему билет в Таиланд. Поспорив для вида,
+                        Григорий Иоганович решает, что здоровье важнее, и садится выбирать отель.
+                    </p>
+                    <img class="phone_st" src="images/blue-1-phone.png">
+                    <img class="pen" src="images/blue-1-pen.png">
                 </div>
 
-                <div class="diving">
+                <div class="blue-2-step">
                     <p>
                         Даже отдых должен приносить в жизнь что-нибудь новое — таков жизненный принцип Григория Иогановича.
                     </p>
                     <p>
                         В этой поездке он планирует научиться дайвингу: посмотреть на коралловые рифы и причудливых морских животных.
                     </p>
-                    <img class="notebook" src="images/notebook.png" />
-                    <img class="ipad" src="images/iPad.png" />
-                    <img class="diving_mask" src="images/diving.png" />
+                    <img class="notebook" src="images/blue-2-notebook.png" />
+                    <img class="ipad" src="images/blue-2-iPad.png" />
+                    <img class="diving_mask" src="images/blue-2-diving.png" />
                 </div>
-                <div class="blue-end"></div>
+
+                <div class="blue-3-step">
+                    <p>
+                        Перед отлётом Григорий Иоганович отправил своего личного водителя в отпуск.
+                    </p>
+                    <p>
+                        Добираться до аэропорта он будет на такси.
+                    </p>
+                    <img class="phone-taxi" src="images/blue-3-taxi.png">
+                    <img class="cards" src="images/blue-3-cards.png">
+                </div>
+
+
+                <div class="blue-4-step">
+                    <p>
+                        В Таиланде Григорий Иоганович наконец понимает, как сильно он устал на работе.
+                    </p>
+                    <p>
+                        Каждый день он в обязательном порядке ходит на массаж, а утро начинает с йоги.
+                    </p>
+                    <img class="bags" src="images/blue-4-bags.png" />
+                    <img class="book-yoga" src="images/blue-4-book.png" />
+                </div>
+
             </div>
         </div>
 
-        <div style="clear: both"></div>
+        <div class="left_block_five">
 
-        <div class="left_block_five" style="background: #ffe05d">
-
-            <div class="person">
-                <div class="one_pers">
-                    <div class="pers boy"></div>
+            <div class="block_person">
+                <div class="one_pers_footer" title="#ffe05d">
+                    <div class="pers_footer active boy"></div>
                     <div class="name">Максим</div>
                 </div>
 
-                <div class="one_pers">
-                    <div class="pers active man"></div>
+                <div class="one_pers_footer" title="#ff8282">
+                    <div class="pers_footer man"></div>
                     <div class="name">Алексей</div>
                 </div>
 
-                <div class="one_pers">
-                    <div class="pers grandman"></div>
+                <div class="one_pers_footer" title="#72c4f6">
+                    <div class="pers_footer grandman"></div>
                     <div class="name">Григорий И. Дауге</div>
                 </div>
             </div>
@@ -197,142 +276,200 @@
                 Теперь посмотрите, как планировали путешествие в Таиланд другие герои.
             </p>
 
-            <p>
-                <a href="#">Помощь</a> <a href="#">Обратная связь</a> © 2013  ООО «<a href="">Яндекс</a>»
-            </p>
+            <div class="">
+                © 2013  ООО «<a href="http://yandex.ru">Яндекс</a>»
+                <span><a href="http://help.yandex.ru">Помощь</a> <a href="http://feedback.yandex.ru">Обратная связь</a></span>
+            </div>
         </div>
 
     </div>
 
-    <div class="right_block">
-        <div class="right_block_one">
-            <h2>«Атом»: сценарии применения</h2>
-            <p class="one_p">
-                «Атом» — это платформа, которая позволит сайтам в интернете адаптироваться под каждого конкретного
-                пользователя. Показывать ему только интересную информацию, помогать быстрее решать задачи.
-            </p>
-
-            <p>
-                Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому пользователю, но
-                делающих страницу более интересной, более удобной для него.
-            </p>
-
-            <img src="images/atom-logo.png" />
+    <div class="wrap_right_block">
+        <div class="right_block">
 
 
-        </div>
-        <div class="right_block_two">
-            <h2>Презентация платформы «Атом» на конференции YaС 2013</h2>
-            <p>
-                Yet another Conference (YaС) — технологическая конференция Яндекса, которая ежегодно проходит в Москве,
-                начиная с 2010 года.
-            </p>
+            <div class="right_block_one">
+                <h2>«Атом»: сценарии применения</h2>
+                <p class="one_p">
+                    «Атом» — это платформа, которая позволит сайтам в интернете адаптироваться под каждого конкретного
+                    пользователя. Показывать ему только интересную информацию, помогать быстрее решать задачи.
+                </p>
+                <p>
+                    Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому пользователю, но
+                    делающих страницу более интересной, более удобной для него.
+                </p>
+                <img src="images/atom-logo.png" />
+            </div>
 
-            <img src="images/present.jpg" />
 
 
-        </div>
+            <div class="right_block_two">
+                <h2>Презентация платформы «Атом» на конференции YaС 2013</h2>
+                <p>
+                    Yet another Conference (YaС) — технологическая конференция Яндекса, которая ежегодно проходит в Москве,
+                    начиная с 2010 года.
+                </p>
 
-        <div class="right_block_three yellow">
-            <h2>Покупка авиабилетов</h2>
-            <p>
-                Уже в результатах поиска Максим может уточнить удобные даты и перейти сразу на сайт с подходящими
-                ему вариантами.
-            </p>
-            <img src="images/right-yellow-1.jpg" />
-        </div>
+                <img src="images/present.jpg" />
 
-        <div class="right_block_four yellow">
-            <h2>Рекомендации по покупке подходящих товаров</h2>
-            <p>
-                Предложения на главной странице выбраны на основе информации о предпочтениях Максима, полученных
-                сайтом от «Атома».
-            </p>
-            <img src="images/right-yellow-2.jpg" />
-        </div>
 
-        <div class="right_block_three red">
-            <h2>Покупка тура</h2>
-            <p>
-                В острове Алексей Быков сразу указывает параметры для поиска тура.
-            </p>
-            <p>
-                Из результатов убраны слишком дорогие и престижные для Алексея отели. В списке вариантов — туры,
-                идеально подходящие для семейного отдыха с детьми.
-            </p>
-            <img src="images/right-red-1.jpg" />
-        </div>
+            </div>
 
-        <div class="right_block_four red">
-            <h2>Напоминание от интернет-магазина</h2>
-            <p>
-                Контактные линзы из прошлого заказа Алексея скоро должны подойти к концу. Сайт, на котором он обычно
-                их приобретает, отправляет ему напоминание о повторной покупке с кнопкой перехода на предзаполненную
-                форму заказа в один клик.
-            </p>
-            <img src="images/right-red-2.jpg" />
-        </div>
+            <div class="right_block_three yellow">
+                <h2>Покупка авиабилетов</h2>
+                <p>
+                    Уже в результатах поиска Максим может уточнить удобные даты и перейти сразу на сайт с подходящими
+                    ему вариантами.
+                </p>
+                <img src="images/right-yellow-1.jpg" />
+            </div>
 
-        <div class="right_block_three blue">
-            <h2>Рекомендации по подбору отеля</h2>
-            <p>
-                Список отелей, показанных на главной странице сайта бронирования, основан на полученных от «Атома»
-                гипотезах. В списке на первых местах те отели, которые наверняка понравятся Григорию Иогановичу.
-            </p>
-            <img src="images/right-blue-1.jpg" />
-        </div>
+            <div class="right_block_four yellow">
+                <h2>Рекомендации по покупке подходящих товаров</h2>
+                <p>
+                    Предложения на главной странице выбраны на основе информации о предпочтениях Максима, полученных
+                    сайтом от «Атома».
+                </p>
+                <img src="images/right-yellow-2.jpg" />
+            </div>
 
-        <div class="right_block_four blue">
-            <h2>Рекомендации по покупке подходящих товаров</h2>
-            <p>
-                Сайт рекомендует Григорию Иогановичу различные товары, которые точно ему подойдут.
-            </p>
-            <img src="images/right-blue-2.jpg" />
-        </div>
+            <div class="right_block_five yellow">
+                <h2>Предложение купить билет на аэроэкспресс</h2>
+                <p>
+                    Зная предпочтения Максима, сайт предлагает ему подходящий способ добраться до аэропорта и
+                    рекомендует время отправления.
+                </p>
+                <img src="images/right-yellow-3.jpg" />
+            </div>
 
-        <div class="right_block_seven">
-            <h2>Закрытое тестирование «Атома»</h2>
+            <div class="right_block_six yellow">
+                <h2>Выбор интересных мест для посещения</h2>
+                <p>
+                    Когда Максим выбирает в интернете достопримечательности для посещения в путешествии, сайт
+                    предлагает ему обратить внимание и на другие объекты, которые могут быть ему интересны.
+                </p>
+                <img src="images/right-yellow-4.jpg" />
+            </div>
 
-            <p>
-                Замысел такого масштаба невозможно воплотить в одиночку, поэтому мы уже начали проводить эксперименты
-                с первыми партнёрами. Каким будет результат этой работы, во многом зависит от них и от других
-                вебмастеров. У нас есть идея и технологии для её реализации, но мы не хотим двигаться дальше
-                без ваших мыслей, мнения, опыта и осознания ваших потребностей. Всё это необходимо нам для того,
-                чтобы превратить идею в полноценный продукт, полезный в реальных ситуациях.
-            </p>
+            <div class="right_block_three red">
+                <h2>Покупка тура</h2>
+                <p>
+                    В острове Алексей Быков сразу указывает параметры для поиска тура.
+                </p>
+                <p>
+                    Из результатов убраны слишком дорогие и престижные для Алексея отели. В списке вариантов — туры,
+                    идеально подходящие для семейного отдыха с детьми.
+                </p>
+                <img src="images/right-red-1.jpg" />
+            </div>
 
-            <p>
-                Если вы хотите принять участие в развитии «Атома», то вам необходимо выполнить следующие шаги:
-            </p>
-            <p>
-                Если вы хотите принять участие в развитии «Атома», то вам необходимо выполнить следующие шаги:
-            </p>
+            <div class="right_block_four red">
+                <h2>Напоминание от интернет-магазина</h2>
+                <p>
+                    Контактные линзы из прошлого заказа Алексея скоро должны подойти к концу. Сайт, на котором он обычно
+                    их приобретает, отправляет ему напоминание о повторной покупке с кнопкой перехода на предзаполненную
+                    форму заказа в один клик.
+                </p>
+                <img src="images/right-red-2.jpg" />
+            </div>
 
-            <ul>
-                <li>выбрать ключевые рубрики вашего сайта;</li>
-                <li>установить на ваш сайт Яндекс.Метрику;</li>
-                <li>разметить страницы каждой выбранной рубрики разными <a href="#">целями в Метрике.</a></li>
-            </ul>
+            <div class="right_block_five red">
+                <h2>Рекомендация по времени выезда с учётом пробок на дорогах</h2>
+                <p>
+                    Алексею предлагается оптимальный маршрут с учётом времени вылета и прогнозом пробок.
+                </p>
+                <img src="images/right-red-3.jpg" />
+            </div>
 
-            <p>
-                Присылайте письмо, в котором указаны идентификаторы целей и чётко описаны те задачи, которые
-                вы бы хотели решить с помощью «Атома».
-            </p>
+            <div class="right_block_six red">
+                <h2>Рекомендации по выбору ресторана</h2>
+                <p>
+                    При поиске ресторанов для посещения, сайт рекомендует Алексею места на основе информации о его
+                    предпочтениях и вкусах.
+                </p>
+                <img src="images/right-red-4.jpg" />
+            </div>
 
-            <p>
-                Авторы самых интересных писем и предложений станут участниками эксперимента. Все новости и
-                примеры мы будет публиковать в корпоративном блоге и на Хабрахабре.
-            </p>
+            <div class="right_block_three blue">
+                <h2>Рекомендации по подбору отеля</h2>
+                <p>
+                    Список отелей, показанных на главной странице сайта бронирования, основан на полученных от «Атома»
+                    гипотезах. В списке на первых местах те отели, которые наверняка понравятся Григорию Иогановичу.
+                </p>
+                <img src="images/right-blue-1.jpg" />
+            </div>
 
-            <p>
-                Свяжитесь с нами через форму обратной связи или пишите на
-                <a href="mailto:atom-experiments@yandex-team.ru">atom-experiments@yandex-team.ru</a>
-            </p>
+            <div class="right_block_four blue">
+                <h2>Рекомендации по покупке подходящих товаров</h2>
+                <p>
+                    Сайт рекомендует Григорию Иогановичу различные товары, которые точно ему подойдут.
+                </p>
+                <img src="images/right-blue-2.jpg" />
+            </div>
 
-            <p>
-                Читайте про «Атом» в нашем <a href="#">корпоративном блоге</a> и на <a href="#">Хабрахабре</a>
-            </p>
+            <div class="right_block_four blue">
+                <h2>Напоминание о заказе такси</h2>
+                <p>
+                    Григорию Иогановичу приходит уведомление с рекомендацией вызвать такси с учётом времени отправления
+                    его рейса.
+                </p>
+                <img src="images/right-blue-3.jpg" />
+            </div>
 
+            <div class="right_block_four blue">
+                <h2>Рекомендации по оздоровительным процедурам</h2>
+                <p>
+                    На сайте про оздоровительные процедуры в Таиланде Григорию Иогановичу сразу предлагаются
+                    подходящие ему варианты, учитывающие его предпочтения.
+                </p>
+                <img src="images/right-blue-4.jpg" />
+            </div>
+
+            <div class="right_block_seven">
+                <h2>Закрытое тестирование «Атома»</h2>
+
+                <p>
+                    Замысел такого масштаба невозможно воплотить в одиночку, поэтому мы уже начали проводить эксперименты
+                    с первыми партнёрами. Каким будет результат этой работы, во многом зависит от них и от других
+                    вебмастеров. У нас есть идея и технологии для её реализации, но мы не хотим двигаться дальше
+                    без ваших мыслей, мнения, опыта и осознания ваших потребностей. Всё это необходимо нам для того,
+                    чтобы превратить идею в полноценный продукт, полезный в реальных ситуациях.
+                </p>
+
+                <p>
+                    Если вы хотите принять участие в развитии «Атома», то вам необходимо выполнить следующие шаги:
+                </p>
+                <p>
+                    Если вы хотите принять участие в развитии «Атома», то вам необходимо выполнить следующие шаги:
+                </p>
+
+                <ul>
+                    <li>выбрать ключевые рубрики вашего сайта;</li>
+                    <li>установить на ваш сайт Яндекс.Метрику;</li>
+                    <li>разметить страницы каждой выбранной рубрики разными <a href="#">целями в Метрике.</a></li>
+                </ul>
+
+                <p>
+                    Присылайте письмо, в котором указаны идентификаторы целей и чётко описаны те задачи, которые
+                    вы бы хотели решить с помощью «Атома».
+                </p>
+
+                <p>
+                    Авторы самых интересных писем и предложений станут участниками эксперимента. Все новости и
+                    примеры мы будет публиковать в корпоративном блоге и на Хабрахабре.
+                </p>
+
+                <p>
+                    Свяжитесь с нами через форму обратной связи или пишите на
+                    <a href="mailto:atom-experiments@yandex-team.ru">atom-experiments@yandex-team.ru</a>
+                </p>
+
+                <p>
+                    Читайте про «Атом» в нашем <a href="http://blog.yandex.ru">корпоративном блоге</a> и на <a href="http://habrahabr.ru">Хабрахабре</a>
+                </p>
+
+
+            </div>
 
         </div>
     </div>
