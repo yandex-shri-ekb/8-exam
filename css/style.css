@@ -45,7 +45,6 @@ body
     width: 100%;
     padding: 18px 0 0;
 
-    cursor: pointer;
     -webkit-transition: left 200ms linear;
     -moz-transition: left 200ms linear;
     -o-transition: left 200ms linear;

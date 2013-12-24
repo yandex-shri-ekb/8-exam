@@ -21,7 +21,11 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
             yellow: [],
             red: [],
             blue: []
-        };
+        },
+        // минимальная ширина story области
+        MIN_STORY_WIDTH = 200,
+        // максимальная ширина info области
+        MAX_INFO_WIDTH = 870;
 
     /**
      * @export app/app
@@ -34,6 +38,7 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         this.config = {};
 
         _selectChar(charColors[random.getInt(0, 2)]);
+        _bindEvents();
     }
 
     /**
@@ -75,16 +80,10 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
 
         $bPage.addClass('b-page_' + char);
 
-        // высота info блоков
+        // динамические параметры для персонажа
         if(initedChars.indexOf(char) === -1) {
             _initChar(char);
         }
-
-        // расчет диапозона
-        coords.charFloated = [
-            $switcherTop.offset().top + $switcherTop.height(),
-            $switcherBottom.offset().top
-        ];
     }
 
     /**
@@ -146,6 +145,7 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
             $part.height(h);
         });
 
+        storyParts[char] = [];
         $('#story-' + char).find('.story__part').each(function() {
             var $part = $(this),
                 state = $part.data('state'),
@@ -158,7 +158,9 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
             });
         });
 
-        initedChars.push(char);
+        if(initedChars.indexOf(char) === -1) {
+            initedChars.push(char);
+        }
     }
 
     /**
@@ -187,11 +189,8 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
             w = 0;
         }
 
-        // магические константы это ужасно
-        // 200 - минимальная ширина story области
-        // 870 - максимальная ширина info области
-        var availableW = ww - w - 200,
-            requireW = 870 - w;
+        var availableW = ww - w - MIN_STORY_WIDTH,
+            requireW = MAX_INFO_WIDTH - w;
 
         availableW = availableW < 0 ? 0 : availableW;
 
@@ -203,8 +202,7 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
 
     /**
      */
-    App.prototype.init = function() {
-
+    function _bindEvents() {
         $('.switcher-top,.switcher-bottom').on('click', '.char', function() {
             var $char = $(this);
 
@@ -233,6 +231,7 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         // todo timer
         $window.scroll(function() {
             var
+                // высота окна
                 wh = $window.height(),
                 // верхняя граница
                 wYt = $window.scrollTop(),
@@ -266,21 +265,18 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
         var $charText = $('.char-text');
         $('.char', $switcherTop).hover(
             function() {
-                var $char = $(this),
-                    charColor;
+                var $char = $(this);
 
                 $charText.hide();
                 $.each(charColors, function(i, c) {
                     if($char.hasClass('char-' + c)) {
-                        charColor = c;
+                        $charText.filter('.char-text_' + c).show();
+                        return false;
                     }
                 });
-
-                $charText.filter('.char-text_' + charColor).show();
             },
             function() {
-                var $char = $(this),
-                    currentChar = _getCurrentChar();
+                var currentChar = _getCurrentChar();
 
                 $charText.hide();
                 $charText.filter('.char-text_' + currentChar).show();
@@ -305,6 +301,20 @@ define(['jquery', 'app/image_preloader', 'app/utils/random'], function($, ImageP
                 $state.addClass('char-state_selected');
             }
         });
+    }
+
+    /**
+     */
+    App.prototype.init = function() {
+        // расчет диапозона
+        coords.charFloated = [
+            $switcherTop.offset().top + $switcherTop.height(),
+            $switcherBottom.offset().top
+        ];
+
+        // clear stored vals and reinit current char
+        initedChars = [];
+        _initChar(_getCurrentChar());
     };
 
     return App;
