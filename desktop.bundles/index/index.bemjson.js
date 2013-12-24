@@ -1,7 +1,7 @@
 ({
     block: 'page',
     title: 'Александр Сердитов. ШРИ. Экзамен',
-    favicon: '/favicon.ico',
+    favicon: 'favicon.ico',
     head: [
         {elem: 'meta', attrs: {name: 'description', content: ''}},
         {elem: 'css', url: '_index.css', ie: false},
