@@ -49,6 +49,7 @@ module.exports = function (grunt) {
             production: {
                 src: [
                     '../css/vendor/normalize.css',
+                    '../css/vendor/anygrid_compatibility.css',
                     '../css/production/fonts.css',
                     '../css/production/base.css',
                     '../css/production/main.css',
@@ -61,6 +62,7 @@ module.exports = function (grunt) {
             control: {
                 src: [
                     '../css/vendor/normalize.css',
+                    '../css/vendor/anygrid_compatibility.css',
                     '../css/production/fonts.css',
                     '../css/control/base.css',
                     '../css/control/main.css',
@@ -133,14 +135,32 @@ module.exports = function (grunt) {
             }
         },
         imagemin: {
-            files: [
-                {
-                    expand: true,
-                    cwd: '../img/',
-                    src: ['**/*.{png,jpg}'],
-                    dest: '../img/'
-                }
-            ]
+            png: {
+                options: {
+                    optimizationLevel: 3
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: '../img/',
+                        src: ['*.png'],
+                        dest: '../img/compress/'
+                    }
+                ]
+            },
+            jpg: {
+                options: {
+                    progressive: true
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: '../img/',
+                        src: ['*.jpg'],
+                        dest: '../img/compress/'
+                    }
+                ]
+            }
         },
         pngmin: {
             compile: {
@@ -185,8 +205,8 @@ module.exports = function (grunt) {
         'compress'
     ]);
 
-    grunt.registerTask('imagemin', [
-        'imagemin:production'
+    grunt.registerTask('img_compress', [
+        'imagemin'
     ]);
 
     grunt.registerTask('pngmin', [

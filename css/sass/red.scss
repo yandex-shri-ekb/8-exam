@@ -58,6 +58,26 @@
             display: none;
             left: -240%;
         }
+
+        .b-person-popup_show_red {
+            display: block;
+        }
+
+        .b-person-popup-action_red
+        {
+            cursor: default;
+            @include opacity(.5);
+        }
+
+        .b-person-popup-action_yellow
+        {
+            background: url("../../img/yellow/actions/1a.png") 0 0 no-repeat;
+        }
+
+        .b-person-popup-action_blue
+        {
+            background: url("../../img/blue/actions/1a.png") 0 0 no-repeat;
+        }
     }
 }
 

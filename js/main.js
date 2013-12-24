@@ -23,6 +23,29 @@ var person = {
     init: function () {
         var _this = this;
 
+        _this.showPersPopupStage1();
+    },
+    showPersPopupStage1: function () {
+        var _this = this;
+
+        $(window).scroll(function () {
+            var $storyYellow1 = $('#story-yellow-1'),
+                $storyYellow2 = $('#story-yellow-2'),
+                $storyRed1 = $('#story-red-1'),
+                $storyBlue1 = $('#story-blue-1'),
+                curTheme = $('input[name="theme_toggle"]').filter(':checked').val();
+
+            if ($(window).scrollTop() >= $('#story-' + curTheme + '-1').offset().top &&
+                $(window).scrollTop() < $('#story-' + curTheme + '-2').offset().top) {
+                $storyYellow1.find('.b-person-popup').addClass('b-person-popup_show_yellow');
+                $storyRed1.find('.b-person-popup').addClass('b-person-popup_show_red');
+                $storyBlue1.find('.b-person-popup').addClass('b-person-popup_show_blue');
+            } else {
+                $storyYellow1.find('.b-person-popup').removeClass('b-person-popup_show_yellow');
+                $storyRed1.find('.b-person-popup').removeClass('b-person-popup_show_red');
+                $storyBlue1.find('.b-person-popup').removeClass('b-person-popup_show_blue');
+            }
+        });
     }
 };
 
@@ -32,7 +55,6 @@ var theme = {
     init: function () {
         var _this = this;
 
-//        _this.initToggleTheme();
         _this.setRandomTheme();
     },
     initToggleTheme: function () {
@@ -114,176 +136,4 @@ $(function () {
     person.init();
     theme.init();
     video.init();
-});
-
-loadWait = 30000;
-loadCheck = 300;
-preloadObjects = "img";
-notImagesLoaded = [];
-excludeImages = false;
-
-function getScreenHeight() {
-
-    var myHeight = 0;
-    if (typeof( window.innerHeight ) == "number") {
-        //Non-IE
-        myHeight = window.innerHeight;
-    } else if (document.documentElement &&
-        ( document.documentElement.clientHeight
-            || document.documentElement.clientHeight )) {
-        //IE 6+ in "standards compliant mode"
-        myHeight = document.documentElement.clientHeight;
-    }
-    return  myHeight;
-
-}
-
-function preloadOther() {
-    var l = notImagesLoaded.length;
-    var currentExists = false;
-
-    for (var i = 0; i < l; i++) {
-        var item = notImagesLoaded[i];
-        if (item) {
-            loadImage(item);
-            currentExists = true;
-        }
-        ;
-    }
-    ;
-
-
-    if (!currentExists) {
-        notImagesLoaded = [];
-        jQuery(window).unbind("scroll", preloadOther);
-    }
-    ;
-
-};
-
-function imagesPreloader() {
-
-    jQuery(preloadObjects).each(function () {
-
-        var item = this;
-
-        if (item.nodeName.toLowerCase() == "img"
-
-            &&
-            (
-                typeof excludeImages == "undefined"
-                    || excludeImages == false
-                    || (item.className.indexOf(excludeImages) == -1)
-                )
-            ) {
-
-            item.longDesc = item.src;
-
-            item.src = "#";
-
-            item.alt = "";
-
-            var preloaderElt = jQuery("<span></span>");
-            jQuery(preloaderElt).css({"display": "block"});
-            preloaderElt.className = "preloader " + item.className;
-
-            jQuery(item).before(preloaderElt);
-            loadImage(item);
-
-        }
-        ;
-
-
-    });
-
-    jQuery(window).bind("scroll", preloadOther);
-
-
-};
-
-function loadImage(item) {
-    var pos = jQuery(item).position();
-    var ItemOffsetTop = typeof pos == "object"
-        && typeof pos.top != "undefined" ? pos.top : 0;
-
-
-    var documentScrollTop = jQuery(window).scrollTop();
-
-
-    var scrHeight = getScreenHeight();
-
-    if (ItemOffsetTop <= (documentScrollTop + scrHeight)
-        && typeof item.storePeriod == "undefined") {
-
-        item.src = item.longDesc;
-
-        item.onerror = function () {
-            this.width = 0;
-            this.height = 0;
-        }
-
-        item.onabort = function () {
-            this.width = 0;
-            this.height = 0;
-        }
-
-
-        item.wait = 0;
-
-        item.storePeriod = setInterval(function () {
-
-
-            item.wait += loadCheck;
-
-            if (item.width && item.height && item.complete) {
-
-
-                clearInterval(item.storePeriod);
-                item.storePeriod = false;
-
-
-                jQuery(item.previousSibling).remove();
-
-                jQuery(item).css("visibility", "visible");
-
-                if (typeof item.loadedCount != "undefined"
-                    && notImagesLoaded[item.loadedCount]) {
-                    notImagesLoaded[item.loadedCount] = false;
-                }
-                ;
-
-
-            } else if (item.wait > loadWait) {
-
-                clearInterval(item.storePeriod);
-                item.storePeriod = false;
-
-                if (typeof item.loadedCount != "undefined"
-                    && notImagesLoaded[item.loadedCount]) {
-                    notImagesLoaded[item.loadedCount] = false;
-                }
-                ;
-
-                jQuery(item).css({"display": "none", "visibility": "hidden"});
-                jQuery(item.previousSibling).remove();
-
-
-            }
-            ;
-
-        }, loadCheck);
-
-    } else {
-        if (typeof item.loadedCount == "undefined") {
-            item.loadedCount = notImagesLoaded.length;
-            notImagesLoaded[item.loadedCount] = item;
-        }
-        ;
-    }
-    ;
-
-};
-
-$(function () {
-    imagesPreloader();
 });

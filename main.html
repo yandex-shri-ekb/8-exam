@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns="http://www.w3.org/1999/html">
 <head>
     <title>Яндекс.Атом</title>
     <meta charset="utf-8">
@@ -25,48 +25,40 @@
         class="b-form-checkbox_sidebar-toggle b-sidebar-status">
 <label for="sidebar-toggle" class="b-sidebar-toggle"></label>
 
-<input type="radio" name="theme_toggle" id="theme-toggle-yellow" class="b-form-radio_theme-toggle b-yellow" checked>
-<input type="radio" name="theme_toggle" id="theme-toggle-red" class="b-form-radio_theme-toggle b-red">
-<input type="radio" name="theme_toggle" id="theme-toggle-blue" class="b-form-radio_theme-toggle b-blue">
+<input type="radio" name="theme_toggle" value="yellow" id="theme-toggle-yellow" class="b-form-radio_theme-toggle b-yellow" checked>
+<input type="radio" name="theme_toggle" value="red" id="theme-toggle-red" class="b-form-radio_theme-toggle b-red">
+<input type="radio" name="theme_toggle" value="blue" id="theme-toggle-blue" class="b-form-radio_theme-toggle b-blue">
 
 <div class="l-wrapper-base l-wrapper-base_first">
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <div class="b-sidebar">
                 <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-                <div class="l-wrapper l-wrapper_sidebar">
-                    <div class="grid_cols_12">
-                        <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                            <h2 class="b-sidebar-head">«Атом»: сценарии применения</h2>
-                        </div>
-                        <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                            <p>«Атом» — это платформа, которая позволит сайтам в интернете адаптироваться под каждого
-                                конкретного пользователя. Показывать ему только интересную информацию, помогать быстрее
-                                решать задачи.</p>
-                            <p>Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому
-                                пользователю, но делающих страницу более интересной, более удобной для него.</p>
-                            <p><img src="img/atom-graph.jpg" alt="Яндекс.Атом"></p>
-                            <p></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="l-wrapper l-wrapper_sidebar">
-                    <div class="grid_cols_12">
-                        <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                            <h2 class="b-sidebar-head">Презентация платформы «Атом» на конференции YaС 2013</h2>
-                        </div>
-                        <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                            <p>Yet another Conference (YaС) — технологическая конференция Яндекса, которая ежегодно
-                                проходит
-                                в Москве, начиная с 2010 года.</p>
-                            <p>
-                                <iframe width="720" height="405" frameborder="0"
-                                        src="//video.yandex.ru/iframe/ya-events/ey7zrfqdd2.2022/" class="b-video-player"
-                                        data-src="" allowfullscreen="true"></iframe>
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <section class="l-wrapper l-wrapper_sidebar">
+                    <header class="b-sidebar-head">«Атом»: сценарии применения</header>
+                    <article class="b-sidebar-content">
+                        <p>«Атом» — это платформа, которая позволит сайтам в интернете адаптироваться под каждого
+                            конкретного пользователя. Показывать ему только интересную информацию, помогать быстрее
+                            решать задачи.</p>
+                        <p>Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому
+                            пользователю, но делающих страницу более интересной, более удобной для него.</p>
+                        <p><img src="img/atom-graph.jpg" alt="Яндекс.Атом"></p>
+                        <p></p>
+                    </article>
+                </section>
+                <section class="l-wrapper l-wrapper_sidebar">
+                    <header class="b-sidebar-head">Презентация платформы «Атом» на конференции YaС 2013</header>
+                    <article class="b-sidebar-content">
+                        <p>Yet another Conference (YaС) — технологическая конференция Яндекса, которая ежегодно
+                            проходит
+                            в Москве, начиная с 2010 года.</p>
+                        <p>
+                            <iframe width="720" height="405" frameborder="0"
+                                    src="//video.yandex.ru/iframe/ya-events/ey7zrfqdd2.2022/" class="b-video-player"
+                                    data-src="" allowfullscreen="true"></iframe>
+                        </p>
+                    </article>
+                </section>
             </div>
         </div>
     </div>
@@ -105,7 +97,8 @@
                 </div>
             </section>
 
-            <section class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-persons" id="person-items">
+            <section class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-persons"
+                    id="person-items">
                 <div class="grid_cols_12">
                     <figure class="grid__module grid__module_col_3 grid__module_span_2 js-person-icon b-persons-item">
                         <label for="theme-toggle-yellow" class="b-theme-toggle b-theme-toggle_yellow"></label>
@@ -150,51 +143,45 @@
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Покупка авиабилетов</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Уже в результатах поиска Максим может уточнить удобные даты и перейти сразу на сайт с
-                            подходящими ему вариантами.</p>
-                        <p><img src="img/yellow/sidebar/1.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_red">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Покупка тура</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>В острове Алексей Быков сразу указывает параметры для поиска тура. Из результатов убраны
-                            слишком дорогие и престижные для Алексея отели. В списке вариантов — туры, идеально
-                            подходящие для семейного отдыха с детьми.</p>
-                        <p><img src="img/red/sidebar/1.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Рекомендации по подбору отеля</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Список отелей, показанных на главной странице сайта бронирования, основан на полученных от
-                            «Атома» гипотезах. В списке на первых местах те отели, которые наверняка понравятся Григорию
-                            Иогановичу.</p>
-                        <p><img src="img/blue/sidebar/1.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
+            <section class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
+                <header class="b-sidebar-head">Покупка авиабилетов</header>
+                <article class="b-sidebar-content">
+                    <p>Уже в результатах поиска Максим может уточнить удобные даты и перейти сразу на сайт с
+                        подходящими ему вариантами.</p>
+                    <p><img src="img/yellow/sidebar/1.jpg" alt=""></p>
+                </article>
+            </section>
+            <section class="l-wrapper l-wrapper_sidebar b-sidebar_red">
+                <header class="b-sidebar-head">Покупка тура</header>
+                <article class="b-sidebar-content">
+                    <p>В острове Алексей Быков сразу указывает параметры для поиска тура. Из результатов убраны
+                        слишком дорогие и престижные для Алексея отели. В списке вариантов — туры, идеально
+                        подходящие для семейного отдыха с детьми.</p>
+                    <p><img src="img/red/sidebar/1.jpg" alt=""></p>
+                </article>
+            </section>
+            <section class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
+                <header class="b-sidebar-head">Рекомендации по подбору отеля</header>
+                <article class="b-sidebar-content">
+                    <p>Список отелей, показанных на главной странице сайта бронирования, основан на полученных от
+                        «Атома» гипотезах. В списке на первых местах те отели, которые наверняка понравятся Григорию
+                        Иогановичу.</p>
+                    <p><img src="img/blue/sidebar/1.jpg" alt=""></p>
+                </article>
+            </section>
         </div>
     </div>
     <div class="l-wrapper">
         <div class="grid_cols_12">
             <article
-                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_yellow b-story-yellow-stage_1">
+                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_yellow b-story-yellow-stage_1" id="story-yellow-1">
                 <div class="grid_cols_12">
+                    <div class="b-person-popup">
+                        <div class="b-person-popup-action b-person-popup-action_yellow"></div>
+                        <label for="theme-toggle-red" class="b-person-popup-action b-person-popup-action_red"></label>
+                        <label for="theme-toggle-blue" class="b-person-popup-action b-person-popup-action_blue"></label>
+                        <div class="b-person-yellow-icon_popup"></div>
+                    </div>
                     <div class="grid__module grid__module_first_yes grid__module_col_2 grid__module_span_10">
                         <img src="img/yellow/path/1.png" alt="" class="b-story-path b-story-yellow-path-1">
                     </div>
@@ -223,7 +210,7 @@
                             </div>
 
                             <div class="grid__module grid__module_first_yes grid__module_col_11 grid__module_span_2"
-                                    style="height:302px;overflow:hidden;">
+                                    style="height:302px;overflow:hidden;top:-151px;">
                                 <img src="img/yellow/things/guidebook.png" alt=""
                                         class="b-story-thing b-story-yellow-thing-4">
                             </div>
@@ -236,8 +223,65 @@
                 </div>
             </article>
             <article
-                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_blue b-story-blue-stage_1">
+                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_red b-story-red-stage_1" id="story-red-1">
                 <div class="grid_cols_12">
+                    <div class="b-person-popup">
+                        <label for="theme-toggle-yellow" class="b-person-popup-action b-person-popup-action_yellow"></label>
+                        <div class="b-person-popup-action b-person-popup-action_red"></div>
+                        <label for="theme-toggle-blue" class="b-person-popup-action b-person-popup-action_blue"></label>
+                        <div class="b-person-red-icon_popup"></div>
+                    </div>
+
+                    <div class="grid__module grid__module_first_yes grid__module_col_2 grid__module_span_10">
+                        <img src="img/red/path/1.png" alt="" class="b-story-path b-story-red-path-1">
+                    </div>
+
+                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story-red-stage_1">
+                        <div class="grid_cols_12">
+                            <div class="grid__module grid__module_first_yes grid__module_col_2 grid__module_span_4 b-story-text b-story-red-text-1">
+                                <p>Устав от турецких пляжей, Алексей Быков решил вывезти семью в Таиланд.</p>
+                                <p>Он выбирает тур так, чтобы уложиться в адекватную сумму, но порадовать всех:
+                                    приемлемый уровень комфорта, детская анимация, недалеко от пляжа, «все
+                                    включено».</p>
+                            </div>
+                            <div class="grid__module grid__module_col_7 grid__module_span_5">
+                                <img src="img/red/things/tour.png" alt=""
+                                        class="b-story-thing b-story-red-thing-1">
+                            </div>
+
+                            <div class="grid__module grid__module_first_yes grid__module_col_2 grid__module_span_4">
+                                <img src="img/red/things/portret.png" alt=""
+                                        class="b-story-thing b-story-red-thing-2">
+                            </div>
+
+                            <div class="grid__module grid__module_first_yes grid__module_col_8 grid__module_span_5"
+                                    style="height:240px;overflow:hidden;top: 92px;">
+                                <img src="img/red/things/pasports.png" alt=""
+                                        class="b-story-thing b-story-red-thing-3">
+                            </div>
+
+                            <div class="grid__module grid__module_first_yes grid__module_col_3 grid__module_span_3">
+                                <img src="img/red/things/book.png" alt=""
+                                        class="b-story-thing b-story-red-thing-4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grid__module grid__module_first_yes grid__module_col_3 grid__module_span_8">
+                        <img src="img/red/path/2.png" alt="" class="b-story-path b-story-red-path-2">
+                    </div>
+                </div>
+            </article>
+            <article
+                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_blue b-story-blue-stage_1" id="story-blue-1">
+                <div class="grid_cols_12">
+                    <div class="b-person-popup">
+                        <label for="theme-toggle-yellow" class="b-person-popup-action b-person-popup-action_yellow"></label>
+                        <label for="theme-toggle-red" class="b-person-popup-action b-person-popup-action_red"></label>
+                        <div class="b-person-popup-action b-person-popup-action_blue"></div>
+                        <div class="b-person-blue-icon_popup"></div>
+                    </div>
+
                     <div class="grid__module grid__module_first_yes grid__module_col_2 grid__module_span_10">
                         <img src="img/blue/path/1.png" alt="" class="b-story-path b-story-blue-path-1">
                     </div>
@@ -289,49 +333,6 @@
                     </div>
                 </div>
             </article>
-            <article
-                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_red b-story-red-stage_1">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_2 grid__module_span_10">
-                        <img src="img/red/path/1.png" alt="" class="b-story-path b-story-red-path-1">
-                    </div>
-
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story-red-stage_1">
-                        <div class="grid_cols_12">
-                            <div class="grid__module grid__module_first_yes grid__module_col_2 grid__module_span_4 b-story-text b-story-red-text-1">
-                                <p>Устав от турецких пляжей, Алексей Быков решил вывезти семью в Таиланд.</p>
-                                <p>Он выбирает тур так, чтобы уложиться в адекватную сумму, но порадовать всех:
-                                    приемлемый уровень комфорта, детская анимация, недалеко от пляжа, «все
-                                    включено».</p>
-                            </div>
-                            <div class="grid__module grid__module_col_7 grid__module_span_5">
-                                <img src="img/red/things/tour.png" alt=""
-                                        class="b-story-thing b-story-red-thing-1">
-                            </div>
-
-                            <div class="grid__module grid__module_first_yes grid__module_col_2 grid__module_span_4">
-                                <img src="img/red/things/portret.png" alt=""
-                                        class="b-story-thing b-story-red-thing-2">
-                            </div>
-
-                            <div class="grid__module grid__module_first_yes grid__module_col_8 grid__module_span_5"
-                                    style="height:240px;overflow:hidden;top: 92px;">
-                                <img src="img/red/things/pasports.png" alt=""
-                                        class="b-story-thing b-story-red-thing-3">
-                            </div>
-
-                            <div class="grid__module grid__module_first_yes grid__module_col_3 grid__module_span_3">
-                                <img src="img/red/things/book.png" alt=""
-                                        class="b-story-thing b-story-red-thing-4">
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="grid__module grid__module_first_yes grid__module_col_3 grid__module_span_8">
-                        <img src="img/red/path/2.png" alt="" class="b-story-path b-story-red-path-2">
-                    </div>
-                </div>
-            </article>
         </div>
     </div>
 </div>
@@ -340,48 +341,36 @@
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Рекомендации по покупке подходящих товаров</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Предложения на главной странице выбраны на основе информации о предпочтениях Максима,
-                            полученных сайтом от «Атома».</p>
-                        <p><img src="img/yellow/sidebar/2.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_red">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Напоминание от интернет-магазина</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Контактные линзы из прошлого заказа Алексея скоро должны подойти к концу. Сайт, на котором он
-                            обычно их приобретает, отправляет ему напоминание о повторной покупке с кнопкой перехода на
-                            предзаполненную форму заказа в один клик.</p>
-                        <p><img src="img/red/sidebar/2.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Рекомендации по покупке подходящих товаров</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Сайт рекомендует Григорию Иогановичу различные товары, которые точно ему подойдут.</p>
-                        <p><img src="img/blue/sidebar/2.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
+            <section class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
+                <header class="b-sidebar-head">Рекомендации по покупке подходящих товаров</header>
+                <article class="b-sidebar-content">
+                    <p>Предложения на главной странице выбраны на основе информации о предпочтениях Максима,
+                        полученных сайтом от «Атома».</p>
+                    <p><img src="img/yellow/sidebar/2.jpg" alt=""></p>
+                </article>
+            </section>
+            <section class="l-wrapper l-wrapper_sidebar b-sidebar_red">
+                <header class="b-sidebar-head">Напоминание от интернет-магазина</header>
+                <article class="b-sidebar-content">
+                    <p>Контактные линзы из прошлого заказа Алексея скоро должны подойти к концу. Сайт, на котором он
+                        обычно их приобретает, отправляет ему напоминание о повторной покупке с кнопкой перехода на
+                        предзаполненную форму заказа в один клик.</p>
+                    <p><img src="img/red/sidebar/2.jpg" alt=""></p>
+                </article>
+            </section>
+            <section class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
+                <header class="b-sidebar-head">Рекомендации по покупке подходящих товаров</header>
+                <article class="b-sidebar-content">
+                    <p>Сайт рекомендует Григорию Иогановичу различные товары, которые точно ему подойдут.</p>
+                    <p><img src="img/blue/sidebar/2.jpg" alt=""></p>
+                </article>
+            </section>
         </div>
     </div>
     <div class="l-wrapper">
         <div class="grid_cols_12">
             <article
-                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_yellow b-story-yellow-stage_2">
+                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_yellow b-story-yellow-stage_2" id="story-yellow-2">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story-yellow-stage_2">
                         <div class="grid_cols_12">
@@ -412,7 +401,7 @@
                 </div>
             </article>
             <article
-                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_blue b-story-blue-stage_2">
+                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_blue b-story-blue-stage_2" id="story-blue-2">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story-blue-stage_2">
                         <div class="grid_cols_12">
@@ -461,7 +450,7 @@
                 </div>
             </article>
             <article
-                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_red b-story-red-stage_2">
+                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_red b-story-red-stage_2" id="story-red-2">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story-red-stage_2">
                         <div class="grid_cols_12">
@@ -511,47 +500,36 @@
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Предложение купить билет на аэроэкспресс</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Зная предпочтения Максима, сайт предлагает ему подходящий способ добраться до аэропорта и
-                            рекомендует время отправления.</p>
-                        <p><img src="img/yellow/sidebar/3.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_red">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Рекомендация по времени выезда с учётом пробок на дорогах</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Алексею предлагается оптимальный маршрут с учётом времени вылета и прогнозом пробок.</p>
-                        <p><img src="img/red/sidebar/3.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Напоминание о заказе такси</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Григорию Иогановичу приходит уведомление с рекомендацией вызвать такси с учётом времени
-                            отправления его рейса.</p>
-                        <p><img src="img/blue/sidebar/3.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
+            <sectuon class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
+                <header class="b-sidebar-head">Предложение купить билет на аэроэкспресс</header>
+                <article class="b-sidebar-content">
+                    <p>Зная предпочтения Максима, сайт предлагает ему подходящий способ добраться до аэропорта и
+                        рекомендует время отправления.</p>
+                    <p><img src="img/yellow/sidebar/3.jpg" alt=""></p>
+                </article>
+            </sectuon>
+            <sectuon class="l-wrapper l-wrapper_sidebar b-sidebar_red">
+                <header class="b-sidebar-head">Рекомендация по времени выезда с учётом пробок на дорогах
+                </header>
+                <article class="b-sidebar-content">
+                    <p>Алексею предлагается оптимальный маршрут с учётом времени вылета и прогнозом пробок.</p>
+                    <p><img src="img/red/sidebar/3.jpg" alt=""></p>
+                </article>
+            </sectuon>
+            <sectuon class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
+                <header class="b-sidebar-head">Напоминание о заказе такси</header>
+                <article class="b-sidebar-content">
+                    <p>Григорию Иогановичу приходит уведомление с рекомендацией вызвать такси с учётом времени
+                        отправления его рейса.</p>
+                    <p><img src="img/blue/sidebar/3.jpg" alt=""></p>
+                </article>
+            </sectuon>
         </div>
     </div>
     <div class="l-wrapper">
         <div class="grid_cols_12">
             <article
-                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_yellow b-story-yellow-stage_3">
+                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_yellow b-story-yellow-stage_3" id="story-yellow-3">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story-yellow-stage_3">
                         <div class="grid_cols_12">
@@ -695,48 +673,36 @@
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Выбор интересных мест для посещения</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Когда Максим выбирает в интернете достопримечательности для посещения в путешествии, сайт
-                            предлагает ему обратить внимание и на другие объекты, которые могут быть ему интересны.</p>
-                        <p><img src="img/yellow/sidebar/4.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_red">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Рекомендации по выбору ресторана</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>При поиске ресторанов для посещения, сайт рекомендует Алексею места на основе информации о
-                            его предпочтениях и вкусах.</p>
-                        <p><img src="img/red/sidebar/4.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
-            <div class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Рекомендации по оздоровительным процедурам</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>На сайте про оздоровительные процедуры в Таиланде Григорию Иогановичу сразу предлагаются
-                            подходящие ему варианты, учитывающие его предпочтения.</p>
-                        <p><img src="img/blue/sidebar/4.jpg" alt=""></p>
-                    </div>
-                </div>
-            </div>
+            <section class="l-wrapper l-wrapper_sidebar b-sidebar_yellow">
+                <header class="b-sidebar-head">Выбор интересных мест для посещения</header>
+                <article class="b-sidebar-content">
+                    <p>Когда Максим выбирает в интернете достопримечательности для посещения в путешествии, сайт
+                        предлагает ему обратить внимание и на другие объекты, которые могут быть ему интересны.</p>
+                    <p><img src="img/yellow/sidebar/4.jpg" alt=""></p>
+                </article>
+            </section>
+            <section class="l-wrapper l-wrapper_sidebar b-sidebar_red">
+                <header class="b-sidebar-head">Рекомендации по выбору ресторана</header>
+                <article class="b-sidebar-content">
+                    <p>При поиске ресторанов для посещения, сайт рекомендует Алексею места на основе информации о
+                        его предпочтениях и вкусах.</p>
+                    <p><img src="img/red/sidebar/4.jpg" alt=""></p>
+                </article>
+            </section>
+            <section class="l-wrapper l-wrapper_sidebar b-sidebar_blue">
+                <header class="b-sidebar-head">Рекомендации по оздоровительным процедурам</header>
+                <article class="b-sidebar-content">
+                    <p>На сайте про оздоровительные процедуры в Таиланде Григорию Иогановичу сразу предлагаются
+                        подходящие ему варианты, учитывающие его предпочтения.</p>
+                    <p><img src="img/blue/sidebar/4.jpg" alt=""></p>
+                </article>
+            </section>
         </div>
     </div>
     <div class="l-wrapper">
         <div class="grid_cols_12">
             <article
-                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_yellow b-story-yellow-stage_4">
+                    class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story b-story_yellow b-story-yellow-stage_4" id="story-yellow-4">
                 <div class="grid_cols_12">
                     <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-story-yellow-stage_4">
                         <div class="grid_cols_12">
@@ -865,39 +831,35 @@
     <div class="l-sidebar">
         <div class="l-sidebar-overflow">
             <label for="sidebar-toggle" class="b-sidebar-toggle-overlay"></label>
-            <div class="l-wrapper l-wrapper_sidebar">
-                <div class="grid_cols_12">
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_10">
-                        <h2 class="b-sidebar-head">Закрытое тестирование «Атома»</h2>
-                    </div>
-                    <div class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_9">
-                        <p>Замысел такого масштаба невозможно воплотить в одиночку, поэтому мы уже начали проводить
-                            эксперименты с первыми партнёрами. Каким будет результат этой работы, во многом зависит от
-                            них и
-                            от других вебмастеров. У нас есть идея и технологии для её реализации, но мы не хотим
-                            двигаться
-                            дальше без ваших мыслей, мнения, опыта и осознания ваших потребностей. Всё это необходимо
-                            нам
-                            для того, чтобы превратить идею в полноценный продукт, полезный в реальных ситуациях.</p>
-                        <p>Если вы хотите принять участие в развитии «Атома», то вам необходимо выполнить следующие
-                            шаги:</p>
-                        <ul>
-                            <li>выбрать ключевые рубрики вашего сайта;</li>
-                            <li>установить на ваш сайт Яндекс.Метрику;</li>
-                            <li>разметить страницы каждой выбранной рубрики разными целями в Метрике.</li>
-                        </ul>
-                        <p>Присылайте письмо, в котором указаны идентификаторы целей и чётко описаны те задачи, которые
-                            вы
-                            бы хотели решить с помощью «Атома».</p>
-                        <p>Авторы самых интересных писем и предложений станут участниками эксперимента. Все новости и
-                            примеры мы будет публиковать в корпоративном блоге и на Хабрахабре.</p>
-                        <p>Свяжитесь с нами через <a href="#" class="b-link_underline">форму обратной связи</a> или
-                            пишите
-                            на <a href="mailto:atom-experiments@yandex-team.ru" class="b-link_underline">atom-experiments@yandex-team.ru</a>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <section class="l-wrapper l-wrapper_sidebar">
+                <header class="b-sidebar-head">Закрытое тестирование «Атома»</header>
+                <section class="b-sidebar-content">
+                    <p>Замысел такого масштаба невозможно воплотить в одиночку, поэтому мы уже начали проводить
+                        эксперименты с первыми партнёрами. Каким будет результат этой работы, во многом зависит от
+                        них и
+                        от других вебмастеров. У нас есть идея и технологии для её реализации, но мы не хотим
+                        двигаться
+                        дальше без ваших мыслей, мнения, опыта и осознания ваших потребностей. Всё это необходимо
+                        нам
+                        для того, чтобы превратить идею в полноценный продукт, полезный в реальных ситуациях.</p>
+                    <p>Если вы хотите принять участие в развитии «Атома», то вам необходимо выполнить следующие
+                        шаги:</p>
+                    <ul>
+                        <li>выбрать ключевые рубрики вашего сайта;</li>
+                        <li>установить на ваш сайт Яндекс.Метрику;</li>
+                        <li>разметить страницы каждой выбранной рубрики разными целями в Метрике.</li>
+                    </ul>
+                    <p>Присылайте письмо, в котором указаны идентификаторы целей и чётко описаны те задачи, которые
+                        вы
+                        бы хотели решить с помощью «Атома».</p>
+                    <p>Авторы самых интересных писем и предложений станут участниками эксперимента. Все новости и
+                        примеры мы будет публиковать в корпоративном блоге и на Хабрахабре.</p>
+                    <p>Свяжитесь с нами через <a href="#" class="b-link_underline">форму обратной связи</a> или
+                        пишите
+                        на <a href="mailto:atom-experiments@yandex-team.ru" class="b-link_underline">atom-experiments@yandex-team.ru</a>
+                    </p>
+                </section>
+            </section>
         </div>
     </div>
     <div class="l-wrapper">
@@ -906,17 +868,21 @@
                     class="grid__module grid__module_first_yes grid__module_col_1 grid__module_span_12 b-persons b-persons_footer">
                 <div class="grid_cols_12">
                     <figure class="grid__module grid__module_col_3 grid__module_span_2 b-persons-item">
-                        <label for="theme-toggle-yellow" class="b-theme-toggle b-theme-toggle_yellow js-person-icon js-move" data-theme="b-yellow" data-move-to="#person-items"></label>
+                        <label for="theme-toggle-yellow"
+                                class="b-theme-toggle b-theme-toggle_yellow js-person-icon js-move"
+                                data-theme="b-yellow" data-move-to="#person-items"></label>
                         <div class="b-person-icon b-person-yellow-icon i-text-hidden">Энергичный Максим</div>
                         <figcaprion class="b-persons-item-caption">Максим</figcaprion>
                     </figure>
                     <figure class="grid__module grid__module_col_6 grid__module_span_2 js-person-icon b-persons-item">
-                        <label for="theme-toggle-red" class="b-theme-toggle b-theme-toggle_red js-person-icon js-move" data-theme="b-red" data-move-to="#person-items"></label>
+                        <label for="theme-toggle-red" class="b-theme-toggle b-theme-toggle_red js-person-icon js-move"
+                                data-theme="b-red" data-move-to="#person-items"></label>
                         <div class="b-person-icon b-person-red-icon i-text-hidden">Семейный Алексей</div>
                         <figcaprion class="b-persons-item-caption">Алексей</figcaprion>
                     </figure>
                     <figure class="grid__module grid__module_col_9 grid__module_span_2 js-person-icon b-persons-item">
-                        <label for="theme-toggle-blue" class="b-theme-toggle b-theme-toggle_blue js-person-icon js-move" data-theme="b-blue" data-move-to="#person-items"></label>
+                        <label for="theme-toggle-blue" class="b-theme-toggle b-theme-toggle_blue js-person-icon js-move"
+                                data-theme="b-blue" data-move-to="#person-items"></label>
                         <div class="b-person-icon b-person-blue-icon i-text-hidden">Профессор Григорий И. Дауге</div>
                         <figcaprion class="b-persons-item-caption">Григорий И. Дауге</figcaprion>
                     </figure>
@@ -958,6 +924,6 @@
 
 <script src="//yandex.st/jquery/2.0.3/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-<script src="js/main_production.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
