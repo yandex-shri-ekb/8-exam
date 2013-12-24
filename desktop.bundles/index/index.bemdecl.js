@@ -17,6 +17,9 @@ exports.blocks = [
         ]
     },
     {
+        "name": "anygrid"
+    },
+    {
         "name": "atom",
         "elems": [
             {

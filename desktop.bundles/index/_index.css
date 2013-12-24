@@ -2,16 +2,180 @@
 .page
 {
     margin: 0;
-    font: 16px/1.5 sans-serif;
     min-width: 1024px;
+    font: 16px/1.5 sans-serif;
 }
+
 /* ../../desktop.blocks/page/page.css end */
 /* ../../desktop.blocks/page/__wrap/page__wrap.css begin */
 .page__wrap
 {
     overflow-x: hidden;
 }
+
 /* ../../desktop.blocks/page/__wrap/page__wrap.css end */
+/* ../../desktop.blocks/anygrid/anygrid.css begin */
+.grid_cols_12
+{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-right: 57.99%;
+}
+
+.grid_cols_12:before, .grid_cols_12:after, .grid_row:before, .grid_row:after
+{
+    display: block;
+    clear: both;
+    content: '';
+}
+
+.grid__module_first_yes
+{
+    clear: left;
+}
+
+.grid__module
+{
+    position: relative;
+    float: left;
+    /**display: inline;*/
+}
+
+.grid__module_span_1
+{
+    margin-right: -60px;
+    width: 60px;
+}
+
+.grid__module_col_1
+{
+    left: 0;
+}
+
+.grid__module_span_2
+{
+    margin-right: -138px;
+    width: 138px;
+}
+
+.grid__module_col_2
+{
+    left: 78px;
+}
+
+.grid__module_span_3
+{
+    margin-right: -216px;
+    width: 216px;
+}
+
+.grid__module_col_3
+{
+    left: 156px;
+}
+
+.grid__module_span_4
+{
+    margin-right: -294px;
+    width: 294px;
+}
+
+.grid__module_col_4
+{
+    left: 234px;
+}
+
+.grid__module_span_5
+{
+    margin-right: -372px;
+    width: 372px;
+}
+
+.grid__module_col_5
+{
+    left: 312px;
+}
+
+.grid__module_span_6
+{
+    margin-right: -450px;
+    width: 450px;
+}
+
+.grid__module_col_6
+{
+    left: 390px;
+}
+
+.grid__module_span_7
+{
+    margin-right: -528px;
+    width: 528px;
+}
+
+.grid__module_col_7
+{
+    left: 468px;
+}
+
+.grid__module_span_8
+{
+    margin-right: -606px;
+    width: 606px;
+}
+
+.grid__module_col_8
+{
+    left: 546px;
+}
+
+.grid__module_span_9
+{
+    margin-right: -684px;
+    width: 684px;
+}
+
+.grid__module_col_9
+{
+    left: 624px;
+}
+
+.grid__module_span_10
+{
+    margin-right: -762px;
+    width: 762px;
+}
+
+.grid__module_col_10
+{
+    left: 702px;
+}
+
+.grid__module_span_11
+{
+    margin-right: -840px;
+    width: 840px;
+}
+
+.grid__module_col_11
+{
+    left: 780px;
+}
+
+.grid__module_span_12
+{
+    margin-right: -918px;
+    width: 918px;
+}
+
+.grid__module_col_12
+{
+    left: 858px;
+}
+
+/* ../../desktop.blocks/anygrid/anygrid.css end */
 /* ../../desktop.blocks/atom/atom.css begin */
 .atom
 {
@@ -23,6 +187,7 @@
 {
     cursor: pointer;
 }
+
 /* ../../desktop.blocks/atom/atom.css end */
 /* ../../desktop.blocks/atom/__content/atom__content.css begin */
 .atom__content
@@ -49,6 +214,7 @@
 {
     background: #72c4f6;
 }
+
 /* ../../desktop.blocks/atom/__content/atom__content.css end */
 /* ../../desktop.blocks/atom/__border/atom__border.css begin */
 .atom__border
@@ -57,18 +223,21 @@
     border: 2px solid #000;
     border-right: 0;
 }
+
 /* ../../desktop.blocks/atom/__border/atom__border.css end */
 /* ../../desktop.blocks/header/header.css begin */
 .header
 {
     margin: 0 -16px 0 -18px;
 }
+
 /* ../../desktop.blocks/header/header.css end */
 /* ../../desktop.blocks/header-logo/header-logo.css begin */
 .header-logo
 {
     height: 590px;
 }
+
 /* ../../desktop.blocks/header-logo/header-logo.css end */
 /* ../../desktop.blocks/header-logo/__orbital/header-logo__orbital.css begin */
 .header-logo__orbital
@@ -79,6 +248,7 @@
     height: 593px;
     background: url("../../desktop.blocks/header-logo/__orbital/header-logo__orbital.png") no-repeat;
 }
+
 /* ../../desktop.blocks/header-logo/__orbital/header-logo__orbital.css end */
 /* ../../desktop.blocks/header-logo/__title/header-logo__title.css begin */
 .header-logo__title
@@ -87,6 +257,7 @@
     text-align: center;
     font-size: 44px;
 }
+
 /* ../../desktop.blocks/header-logo/__title/header-logo__title.css end */
 /* ../../desktop.blocks/header-logo/__ya-logo/header-logo__ya-logo.css begin */
 .header-logo__ya-logo
@@ -96,6 +267,7 @@
     height: 92px;
     background: url("../../desktop.blocks/header-logo/__ya-logo/header-logo__ya-logo.png") no-repeat;
 }
+
 /* ../../desktop.blocks/header-logo/__ya-logo/header-logo__ya-logo.css end */
 /* ../../desktop.blocks/header-info/header-info.css begin */
 .header-info
@@ -105,12 +277,14 @@
     border-bottom: 2px solid #000;
     background: #fff;
 }
+
 /* ../../desktop.blocks/header-info/header-info.css end */
 /* ../../desktop.blocks/header-info/__inner/header-info__inner.css begin */
 .header-info__inner
 {
     padding: 80px 0 0 0;
 }
+
 /* ../../desktop.blocks/header-info/__inner/header-info__inner.css end */
 /* ../../desktop.blocks/video-icon/video-icon.css begin */
 .video-icon
@@ -137,6 +311,7 @@
 {
     background-color: #72c4f6;
 }
+
 /* ../../desktop.blocks/video-icon/video-icon.css end */
 /* ../../desktop.blocks/video-icon/__play/video-icon__play.css begin */
 .video-icon__play
@@ -149,6 +324,7 @@
     height: 36px;
     background: url("../../desktop.blocks/video-icon/__play/video-icon__play.png");
 }
+
 /* ../../desktop.blocks/video-icon/__play/video-icon__play.css end */
 /* ../../desktop.blocks/users/users.css begin */
 .users
@@ -166,6 +342,7 @@
 {
     display: none;
 }
+
 /* ../../desktop.blocks/users/users.css end */
 /* ../../desktop.blocks/user/user.css begin */
 .user
@@ -173,13 +350,15 @@
     position: relative;
     text-align: center;
 }
+
 /* ../../desktop.blocks/user/user.css end */
 /* ../../desktop.blocks/user/__name/user__name.css begin */
 .user__name
 {
-    font-weight: 700;
     margin: 0 0 16px;
+    font-weight: 700;
 }
+
 /* ../../desktop.blocks/user/__name/user__name.css end */
 /* ../../desktop.blocks/user/__text/user__text.css begin */
 .user__text
@@ -192,12 +371,14 @@
 {
     display: block;
 }
+
 /* ../../desktop.blocks/user/__text/user__text.css end */
 /* ../../desktop.blocks/users/__wrap/users__wrap.css begin */
 .users__wrap
 {
     padding: 80px 0 0;
 }
+
 /* ../../desktop.blocks/users/__wrap/users__wrap.css end */
 /* ../../desktop.blocks/locomotive/locomotive.css begin */
 .locomotive
@@ -205,29 +386,31 @@
     position: fixed;
     top: 50px;
     left: 18px;
-    text-align: center;
-    width: 954px;
     z-index: 20;
     display: none;
+    width: 954px;
+    text-align: center;
 }
 
 .locomotive_show_yes
 {
     display: block;
 }
+
 /* ../../desktop.blocks/locomotive/locomotive.css end */
 /* ../../desktop.blocks/locomotive/__icons/locomotive__icons.css begin */
 .locomotive__icons
 {
-    width: 330px;
     margin: 0 auto;
+    width: 330px;
 }
+
 /* ../../desktop.blocks/locomotive/__icons/locomotive__icons.css end */
 /* ../../desktop.blocks/user-icon/user-icon.css begin */
 .user-icon
 {
-    background: url("../../desktop.blocks/user-icon/user-icon.png") no-repeat;
     margin: 0 auto 18px;
+    background: url("../../desktop.blocks/user-icon/user-icon.png") no-repeat;
     cursor: pointer;
 }
 
@@ -303,17 +486,18 @@
 {
     cursor: auto;
 }
+
 /* ../../desktop.blocks/user-icon/user-icon.css end */
 /* ../../desktop.blocks/step-icon/step-icon.css begin */
 .step-icon
 {
-    background: url("../../desktop.blocks/step-icon/step-icon.png") no-repeat;
+    display: inline-block;
+    *display: inline;
     width: 100px;
     height: 100px;
-    cursor: pointer;
-    display: inline-block;
+    background: url("../../desktop.blocks/step-icon/step-icon.png") no-repeat;
     /* TODO optimize */
-    *display: inline;
+    cursor: pointer;
     zoom: 1;
 }
 
@@ -321,6 +505,7 @@
 {
     cursor: auto;
 }
+
 /* ../../desktop.blocks/step-icon/step-icon.css end */
 /* ../../desktop.blocks/step-icon/__yellow/step-icon__yellow.css begin */
 .step-icon_theme_yellow.step-icon_step_1.step-icon_active_no
@@ -362,6 +547,7 @@
 {
     background-position: -110px -330px;
 }
+
 /* ../../desktop.blocks/step-icon/__yellow/step-icon__yellow.css end */
 /* ../../desktop.blocks/step-icon/__red/step-icon__red.css begin */
 .step-icon_theme_red.step-icon_step_1.step-icon_active_no
@@ -403,6 +589,7 @@
 {
     background-position: -330px -330px;
 }
+
 /* ../../desktop.blocks/step-icon/__red/step-icon__red.css end */
 /* ../../desktop.blocks/step-icon/__blue/step-icon__blue.css begin */
 .step-icon_theme_blue.step-icon_step_1.step-icon_active_no
@@ -444,12 +631,14 @@
 {
     background-position: -550px -330px;
 }
+
 /* ../../desktop.blocks/step-icon/__blue/step-icon__blue.css end */
 /* ../../desktop.blocks/stories/stories.css begin */
 .stories
 {
     position: relative;
 }
+
 /* ../../desktop.blocks/stories/stories.css end */
 /* ../../desktop.blocks/story/story.css begin */
 .story
@@ -468,26 +657,30 @@
 {
     display: none;
 }
+
 /* ../../desktop.blocks/story/story.css end */
 /* ../../desktop.blocks/story/__steps/story__steps.css begin */
 .story__steps
 {
     padding: 0 18px 0 16px;
 }
+
 /* ../../desktop.blocks/story/__steps/story__steps.css end */
 /* ../../desktop.blocks/step/__images/step__images.css begin */
 .step__images
 {
     height: 502px;
 }
+
 /* ../../desktop.blocks/step/__images/step__images.css end */
 /* ../../desktop.blocks/step/__text/step__text.css begin */
 .step__text
 {
-    text-align: center;
     margin-bottom: 35px;
     padding-top: 80px;
+    text-align: center;
 }
+
 /* ../../desktop.blocks/step/__text/step__text.css end */
 /* ../../desktop.blocks/image_theme_yellow/image_theme_yellow.css begin */
 [class^=image_theme_yellow__]
@@ -499,13 +692,14 @@
 {
     z-index: 10;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/image_theme_yellow.css end */
 /* ../../desktop.blocks/image_theme_yellow/__aeroexpress/image_theme_yellow__aeroexpress.css begin */
 .image_theme_yellow__aeroexpress
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__aeroexpress/image_theme_yellow__aeroexpress.png") no-repeat;
     width: 628px;
     height: 244px;
+    background: url("../../desktop.blocks/image_theme_yellow/__aeroexpress/image_theme_yellow__aeroexpress.png") no-repeat;
 }
 
 .image_theme_yellow__aeroexpress_push_down_yes
@@ -517,13 +711,14 @@
 {
     margin-left: -174px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__aeroexpress/image_theme_yellow__aeroexpress.css end */
 /* ../../desktop.blocks/image_theme_yellow/__aviaticket/image_theme_yellow__aviaticket.css begin */
 .image_theme_yellow__aviaticket
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__aviaticket/image_theme_yellow__aviaticket.png") no-repeat;
     width: 620px;
     height: 244px;
+    background: url("../../desktop.blocks/image_theme_yellow/__aviaticket/image_theme_yellow__aviaticket.png") no-repeat;
 }
 
 .image_theme_yellow__aviaticket_push_down_yes
@@ -535,125 +730,135 @@
 {
     margin-left: -166px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__aviaticket/image_theme_yellow__aviaticket.css end */
 /* ../../desktop.blocks/image_theme_yellow/__backpack/image_theme_yellow__backpack.css begin */
 .image_theme_yellow__backpack
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__backpack/image_theme_yellow__backpack.png") no-repeat;
     width: 396px;
     height: 394px;
+    background: url("../../desktop.blocks/image_theme_yellow/__backpack/image_theme_yellow__backpack.png") no-repeat;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__backpack/image_theme_yellow__backpack.css end */
 /* ../../desktop.blocks/image_theme_yellow/__book/image_theme_yellow__book.css begin */
 .image_theme_yellow__book
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__book/image_theme_yellow__book.png") no-repeat;
     width: 240px;
     height: 302px;
+    background: url("../../desktop.blocks/image_theme_yellow/__book/image_theme_yellow__book.png") no-repeat;
 }
 
 .image_theme_yellow__book_push_down_yes
 {
     margin-top: 40px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__book/image_theme_yellow__book.css end */
 /* ../../desktop.blocks/image_theme_yellow/__bottle/image_theme_yellow__bottle.css begin */
 .image_theme_yellow__bottle
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__bottle/image_theme_yellow__bottle.png") no-repeat;
     width: 108px;
     height: 228px;
+    background: url("../../desktop.blocks/image_theme_yellow/__bottle/image_theme_yellow__bottle.png") no-repeat;
 }
 
 .image_theme_yellow__bottle_push_down_yes
 {
     margin-top: 262px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__bottle/image_theme_yellow__bottle.css end */
 /* ../../desktop.blocks/image_theme_yellow/__camera/image_theme_yellow__camera.css begin */
 .image_theme_yellow__camera
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__camera/image_theme_yellow__camera.png") no-repeat;
     width: 228px;
     height: 164px;
+    background: url("../../desktop.blocks/image_theme_yellow/__camera/image_theme_yellow__camera.png") no-repeat;
 }
 
 .image_theme_yellow__camera_push_down_yes
 {
     margin-top: 289px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__camera/image_theme_yellow__camera.css end */
 /* ../../desktop.blocks/image_theme_yellow/__carton/image_theme_yellow__carton.css begin */
 .image_theme_yellow__carton
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__carton/image_theme_yellow__carton.png") no-repeat;
     width: 454px;
     height: 132px;
+    background: url("../../desktop.blocks/image_theme_yellow/__carton/image_theme_yellow__carton.png") no-repeat;
 }
 
 .image_theme_yellow__carton_push_down_yes
 {
     margin-top: 42px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__carton/image_theme_yellow__carton.css end */
 /* ../../desktop.blocks/image_theme_yellow/__compass/image_theme_yellow__compass.css begin */
 .image_theme_yellow__compass
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__compass/image_theme_yellow__compass.png") no-repeat;
     width: 150px;
     height: 161px;
+    background: url("../../desktop.blocks/image_theme_yellow/__compass/image_theme_yellow__compass.png") no-repeat;
 }
 
 .image_theme_yellow__compass_push_down_yes
 {
     margin-top: 40px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__compass/image_theme_yellow__compass.css end */
 /* ../../desktop.blocks/image_theme_yellow/__iphone/image_theme_yellow__iphone.css begin */
 .image_theme_yellow__iphone
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__iphone/image_theme_yellow__iphone.png") no-repeat;
     width: 150px;
     height: 282px;
+    background: url("../../desktop.blocks/image_theme_yellow/__iphone/image_theme_yellow__iphone.png") no-repeat;
 }
 
 .image_theme_yellow__iphone_push_down_yes
 {
     margin-top: 34px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__iphone/image_theme_yellow__iphone.css end */
 /* ../../desktop.blocks/image_theme_yellow/__ipod/image_theme_yellow__ipod.css begin */
 .image_theme_yellow__ipod
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__ipod/image_theme_yellow__ipod.png") no-repeat;
     width: 620px;
     height: 238px;
+    background: url("../../desktop.blocks/image_theme_yellow/__ipod/image_theme_yellow__ipod.png") no-repeat;
 }
 
 .image_theme_yellow__ipod_push_down_yes
 {
     margin-top: 136px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__ipod/image_theme_yellow__ipod.css end */
 /* ../../desktop.blocks/image_theme_yellow/__laptop/image_theme_yellow__laptop.css begin */
 .image_theme_yellow__laptop
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__laptop/image_theme_yellow__laptop.png") no-repeat;
     width: 384px;
     height: 493px;
+    background: url("../../desktop.blocks/image_theme_yellow/__laptop/image_theme_yellow__laptop.png") no-repeat;
 }
 
 .image_theme_yellow__laptop_push_down_yes
 {
     margin-top: 78px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__laptop/image_theme_yellow__laptop.css end */
 /* ../../desktop.blocks/image_theme_yellow/__magazine/image_theme_yellow__magazine.css begin */
 .image_theme_yellow__magazine
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__magazine/image_theme_yellow__magazine.png") no-repeat;
     width: 306px;
     height: 394px;
+    background: url("../../desktop.blocks/image_theme_yellow/__magazine/image_theme_yellow__magazine.png") no-repeat;
 }
 
 .image_theme_yellow__magazine_push_up_yes
@@ -665,26 +870,28 @@
 {
     margin-left: 30px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__magazine/image_theme_yellow__magazine.css end */
 /* ../../desktop.blocks/image_theme_yellow/__map/image_theme_yellow__map.css begin */
 .image_theme_yellow__map
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__map/image_theme_yellow__map.png") no-repeat;
     width: 294px;
     height: 218px;
+    background: url("../../desktop.blocks/image_theme_yellow/__map/image_theme_yellow__map.png") no-repeat;
 }
 
 .image_theme_yellow__map_push_up_yes
 {
     margin-top: -32px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__map/image_theme_yellow__map.css end */
 /* ../../desktop.blocks/image_theme_yellow/__money/image_theme_yellow__money.css begin */
 .image_theme_yellow__money
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__money/image_theme_yellow__money.png") no-repeat;
     width: 215px;
     height: 207px;
+    background: url("../../desktop.blocks/image_theme_yellow/__money/image_theme_yellow__money.png") no-repeat;
 }
 
 .image_theme_yellow__money_push_down_yes
@@ -696,26 +903,28 @@
 {
     margin-left: 18px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__money/image_theme_yellow__money.css end */
 /* ../../desktop.blocks/image_theme_yellow/__notebook/image_theme_yellow__notebook.css begin */
 .image_theme_yellow__notebook
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__notebook/image_theme_yellow__notebook.png") no-repeat;
     width: 620px;
     height: 244px;
+    background: url("../../desktop.blocks/image_theme_yellow/__notebook/image_theme_yellow__notebook.png") no-repeat;
 }
 
 .image_theme_yellow__notebook_push_down_yes
 {
     margin-top: 262px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__notebook/image_theme_yellow__notebook.css end */
 /* ../../desktop.blocks/image_theme_yellow/__polaroid/image_theme_yellow__polaroid.css begin */
 .image_theme_yellow__polaroid
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__polaroid/image_theme_yellow__polaroid.png") no-repeat;
     width: 142px;
     height: 158px;
+    background: url("../../desktop.blocks/image_theme_yellow/__polaroid/image_theme_yellow__polaroid.png") no-repeat;
 }
 
 .image_theme_yellow__polaroid_pos_1
@@ -733,13 +942,14 @@
 {
     margin-top: 216px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__polaroid/image_theme_yellow__polaroid.css end */
 /* ../../desktop.blocks/image_theme_yellow/__ticket/image_theme_yellow__ticket.css begin */
 .image_theme_yellow__ticket
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__ticket/image_theme_yellow__ticket.png") no-repeat;
     width: 193px;
     height: 244px;
+    background: url("../../desktop.blocks/image_theme_yellow/__ticket/image_theme_yellow__ticket.png") no-repeat;
 }
 
 .image_theme_yellow__ticket_push_right_yes
@@ -751,71 +961,73 @@
 {
     margin-top: 119px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__ticket/image_theme_yellow__ticket.css end */
 /* ../../desktop.blocks/image_theme_yellow/__traffic/image_theme_yellow__traffic.css begin */
 .image_theme_yellow__traffic
 {
-    background: url("../../desktop.blocks/image_theme_yellow/__traffic/image_theme_yellow__traffic.png") no-repeat;
     width: 620px;
     height: 244px;
+    background: url("../../desktop.blocks/image_theme_yellow/__traffic/image_theme_yellow__traffic.png") no-repeat;
 }
 
 .image_theme_yellow__traffic_push_down_yes
 {
     margin-top: 318px;
 }
+
 /* ../../desktop.blocks/image_theme_yellow/__traffic/image_theme_yellow__traffic.css end */
 /* ../../desktop.blocks/path_theme_yellow/__step-1/path_theme_yellow__step-1.css begin */
 .path_theme_yellow__step-1
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_yellow/__step-1/path_theme_yellow__step-1.png") no-repeat;
+    top: -44px;
     width: 762px;
     height: 87px;
-    top: -44px;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-1/path_theme_yellow__step-1.png") no-repeat;
 }
-
-
-
-
 
 /* ../../desktop.blocks/path_theme_yellow/__step-1/path_theme_yellow__step-1.css end */
 /* ../../desktop.blocks/path_theme_yellow/__step-2/path_theme_yellow__step-2.css begin */
 .path_theme_yellow__step-2
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_yellow/__step-2/path_theme_yellow__step-2.png") no-repeat;
     width: 684px;
     height: 565px;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-2/path_theme_yellow__step-2.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_yellow/__step-2/path_theme_yellow__step-2.css end */
 /* ../../desktop.blocks/path_theme_yellow/__step-3/path_theme_yellow__step-3.css begin */
 .path_theme_yellow__step-3
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_yellow/__step-3/path_theme_yellow__step-3.png") no-repeat;
     width: 687px;
     height: 565px;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-3/path_theme_yellow__step-3.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_yellow/__step-3/path_theme_yellow__step-3.css end */
 /* ../../desktop.blocks/path_theme_yellow/__step-4/path_theme_yellow__step-4.css begin */
 .path_theme_yellow__step-4
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_yellow/__step-4/path_theme_yellow__step-4.png") no-repeat;
     width: 626px;
     height: 565px;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-4/path_theme_yellow__step-4.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_yellow/__step-4/path_theme_yellow__step-4.css end */
 /* ../../desktop.blocks/path_theme_yellow/__step-5/path_theme_yellow__step-5.css begin */
 .path_theme_yellow__step-5
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_yellow/__step-5/path_theme_yellow__step-5.png") no-repeat;
+    margin: -20px 0 0;
     width: 570px;
     height: 588px;
-    margin: -20px 0 0;
+    background: url("../../desktop.blocks/path_theme_yellow/__step-5/path_theme_yellow__step-5.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_yellow/__step-5/path_theme_yellow__step-5.css end */
 /* ../../desktop.blocks/image_theme_red/image_theme_red.css begin */
 [class^=image_theme_red__]
@@ -827,13 +1039,14 @@
 {
     z-index: 10;
 }
+
 /* ../../desktop.blocks/image_theme_red/image_theme_red.css end */
 /* ../../desktop.blocks/image_theme_red/__bags/image_theme_red__bags.css begin */
 .image_theme_red__bags
 {
-    background: url("../../desktop.blocks/image_theme_red/__bags/image_theme_red__bags.png") no-repeat;
     width: 566px;
     height: 521px;
+    background: url("../../desktop.blocks/image_theme_red/__bags/image_theme_red__bags.png") no-repeat;
 }
 
 .image_theme_red__bags_push_down_yes
@@ -845,13 +1058,14 @@
 {
     margin-left: -155px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__bags/image_theme_red__bags.css end */
 /* ../../desktop.blocks/image_theme_red/__bear/image_theme_red__bear.css begin */
 .image_theme_red__bear
 {
-    background: url("../../desktop.blocks/image_theme_red/__bear/image_theme_red__bear.png") no-repeat;
     width: 318px;
     height: 386px;
+    background: url("../../desktop.blocks/image_theme_red/__bear/image_theme_red__bear.png") no-repeat;
 }
 
 .image_theme_red__bear_push_left_yes
@@ -868,61 +1082,65 @@
 /* ../../desktop.blocks/image_theme_red/__bill/image_theme_red__bill.css begin */
 .image_theme_red__bill
 {
-    background: url("../../desktop.blocks/image_theme_red/__bill/image_theme_red__bill.png") no-repeat;
     width: 220px;
     height: 347px;
+    background: url("../../desktop.blocks/image_theme_red/__bill/image_theme_red__bill.png") no-repeat;
 }
 
 .image_theme_red__bill_push_down_yes
 {
     margin-top: 72px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__bill/image_theme_red__bill.css end */
 /* ../../desktop.blocks/image_theme_red/__book/image_theme_red__book.css begin */
 .image_theme_red__book
 {
-    background: url("../../desktop.blocks/image_theme_red/__book/image_theme_red__book.png") no-repeat;
     width: 475px;
     height: 409px;
+    background: url("../../desktop.blocks/image_theme_red/__book/image_theme_red__book.png") no-repeat;
 }
 
 .image_theme_red__book_push_down_yes
 {
     margin-top: 350px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__book/image_theme_red__book.css end */
 /* ../../desktop.blocks/image_theme_red/__drink-coup-full/image_theme_red__drink-coup-full.css begin */
 .image_theme_red__drink-coup-full
 {
-    background: url("../../desktop.blocks/image_theme_red/__drink-coup-full/image_theme_red__drink-coup-full.png") no-repeat;
     width: 86px;
     height: 181px;
+    background: url("../../desktop.blocks/image_theme_red/__drink-coup-full/image_theme_red__drink-coup-full.png") no-repeat;
 }
 
 .image_theme_red__drink-coup-full_push_down_yes
 {
     margin-top: 266px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__drink-coup-full/image_theme_red__drink-coup-full.css end */
 /* ../../desktop.blocks/image_theme_red/__drink-coup-middle/image_theme_red__drink-coup-middle.css begin */
 .image_theme_red__drink-coup-middle
 {
-    background: url("../../desktop.blocks/image_theme_red/__drink-coup-middle/image_theme_red__drink-coup-middle.png") no-repeat;
     width: 86px;
     height: 180px;
+    background: url("../../desktop.blocks/image_theme_red/__drink-coup-middle/image_theme_red__drink-coup-middle.png") no-repeat;
 }
 
 .image_theme_red__drink-coup-middle_push_down_yes
 {
     margin-top: 266px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__drink-coup-middle/image_theme_red__drink-coup-middle.css end */
 /* ../../desktop.blocks/image_theme_red/__drink-glass/image_theme_red__drink-glass.css begin */
 .image_theme_red__drink-glass
 {
-    background: url("../../desktop.blocks/image_theme_red/__drink-glass/image_theme_red__drink-glass.png") no-repeat;
     width: 138px;
     height: 224px;
+    background: url("../../desktop.blocks/image_theme_red/__drink-glass/image_theme_red__drink-glass.png") no-repeat;
 }
 
 .image_theme_red__drink-glass_push_down_yes
@@ -934,52 +1152,56 @@
 {
     margin-left: 36px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__drink-glass/image_theme_red__drink-glass.css end */
 /* ../../desktop.blocks/image_theme_red/__drink-milk/image_theme_red__drink-milk.css begin */
 .image_theme_red__drink-milk
 {
-    background: url("../../desktop.blocks/image_theme_red/__drink-milk/image_theme_red__drink-milk.png") no-repeat;
     width: 103px;
     height: 256px;
+    background: url("../../desktop.blocks/image_theme_red/__drink-milk/image_theme_red__drink-milk.png") no-repeat;
 }
 
 .image_theme_red__drink-milk_push_down_yes
 {
     margin-top: 212px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__drink-milk/image_theme_red__drink-milk.css end */
 /* ../../desktop.blocks/image_theme_red/__drink-wine/image_theme_red__drink-wine.css begin */
 .image_theme_red__drink-wine
 {
-    background: url("../../desktop.blocks/image_theme_red/__drink-wine/image_theme_red__drink-wine.png") no-repeat;
     width: 162px;
     height: 397px;
+    background: url("../../desktop.blocks/image_theme_red/__drink-wine/image_theme_red__drink-wine.png") no-repeat;
 }
 
 .image_theme_red__drink-wine_push_right_yes
 {
     margin-left: 36px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__drink-wine/image_theme_red__drink-wine.css end */
 /* ../../desktop.blocks/image_theme_red/__food-eggs/image_theme_red__food-eggs.css begin */
 .image_theme_red__food-eggs
 {
-    background: url("../../desktop.blocks/image_theme_red/__food-eggs/image_theme_red__food-eggs.png") no-repeat;
     width: 475px;
     height: 409px;
+    background: url("../../desktop.blocks/image_theme_red/__food-eggs/image_theme_red__food-eggs.png") no-repeat;
 }
 
 .image_theme_red__food-eggs_push_down_yes
 {
     margin-top: 40px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__food-eggs/image_theme_red__food-eggs.css end */
 /* ../../desktop.blocks/image_theme_red/__food-fish/image_theme_red__food-fish.css begin */
 .image_theme_red__food-fish
 {
-    background: url("../../desktop.blocks/image_theme_red/__food-fish/image_theme_red__food-fish.png") no-repeat;
     width: 384px;
     height: 308px;
+    background: url("../../desktop.blocks/image_theme_red/__food-fish/image_theme_red__food-fish.png") no-repeat;
 }
 
 .image_theme_red__food-fish_push_down_yes
@@ -991,39 +1213,42 @@
 {
     margin-left: -272px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__food-fish/image_theme_red__food-fish.css end */
 /* ../../desktop.blocks/image_theme_red/__food-grape/image_theme_red__food-grape.css begin */
 .image_theme_red__food-grape
 {
-    background: url("../../desktop.blocks/image_theme_red/__food-grape/image_theme_red__food-grape.png") no-repeat;
     width: 228px;
     height: 231px;
+    background: url("../../desktop.blocks/image_theme_red/__food-grape/image_theme_red__food-grape.png") no-repeat;
 }
 
 .image_theme_red__food-grape_push_down_yes
 {
     margin-top: 40px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__food-grape/image_theme_red__food-grape.css end */
 /* ../../desktop.blocks/image_theme_red/__imac-keyboard/image_theme_red__imac-keyboard.css begin */
 .image_theme_red__imac-keyboard
 {
-    background: url("../../desktop.blocks/image_theme_red/__imac-keyboard/image_theme_red__imac-keyboard.png") no-repeat;
     width: 294px;
     height: 111px;
+    background: url("../../desktop.blocks/image_theme_red/__imac-keyboard/image_theme_red__imac-keyboard.png") no-repeat;
 }
 
 .image_theme_red__imac-keyboard_push_down_yes
 {
     margin-top: 518px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__imac-keyboard/image_theme_red__imac-keyboard.css end */
 /* ../../desktop.blocks/image_theme_red/__imac-monitor/image_theme_red__imac-monitor.css begin */
 .image_theme_red__imac-monitor
 {
-    background: url("../../desktop.blocks/image_theme_red/__imac-monitor/image_theme_red__imac-monitor.png") no-repeat;
     width: 450px;
     height: 377px;
+    background: url("../../desktop.blocks/image_theme_red/__imac-monitor/image_theme_red__imac-monitor.png") no-repeat;
 }
 
 .image_theme_red__imac-monitor_push_down_yes
@@ -1035,87 +1260,93 @@
 /* ../../desktop.blocks/image_theme_red/__iphone/image_theme_red__iphone.css begin */
 .image_theme_red__iphone
 {
-    background: url("../../desktop.blocks/image_theme_red/__iphone/image_theme_red__iphone.png") no-repeat;
     width: 150px;
     height: 280px;
+    background: url("../../desktop.blocks/image_theme_red/__iphone/image_theme_red__iphone.png") no-repeat;
 }
 
 .image_theme_red__iphone_pushd_down_yes
 {
     margin-top: 74px
 }
+
 /* ../../desktop.blocks/image_theme_red/__iphone/image_theme_red__iphone.css end */
 /* ../../desktop.blocks/image_theme_red/__keys/image_theme_red__keys.css begin */
 .image_theme_red__keys
 {
-    background: url("../../desktop.blocks/image_theme_red/__keys/image_theme_red__keys.png") no-repeat;
     width: 222px;
     height: 147px;
+    background: url("../../desktop.blocks/image_theme_red/__keys/image_theme_red__keys.png") no-repeat;
 }
 
 .image_theme_red__keys_push_down_yes
 {
     margin-top: 120px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__keys/image_theme_red__keys.css end */
 /* ../../desktop.blocks/image_theme_red/__lenses/image_theme_red__lenses.css begin */
 .image_theme_red__lenses
 {
-    background: url("../../desktop.blocks/image_theme_red/__lenses/image_theme_red__lenses.png") no-repeat;
     width: 410px;
     height: 283px;
+    background: url("../../desktop.blocks/image_theme_red/__lenses/image_theme_red__lenses.png") no-repeat;
 }
 
 .image_theme_red__lenses_push_down_yes
 {
     margin-top: 80px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__lenses/image_theme_red__lenses.css end */
 /* ../../desktop.blocks/image_theme_red/__license/image_theme_red__license.css begin */
 .image_theme_red__license
 {
-    background: url("../../desktop.blocks/image_theme_red/__license/image_theme_red__license.png") no-repeat;
     width: 299px;
     height: 187px;
+    background: url("../../desktop.blocks/image_theme_red/__license/image_theme_red__license.png") no-repeat;
 }
 
 .image_theme_red__license_push_down_yes
 {
     margin-top: 70px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__license/image_theme_red__license.css end */
 /* ../../desktop.blocks/image_theme_red/__passports/image_theme_red__passports.css begin */
 .image_theme_red__passports
 {
-    background: url("../../desktop.blocks/image_theme_red/__passports/image_theme_red__passports.png") no-repeat;
     width: 475px;
     height: 409px;
+    background: url("../../desktop.blocks/image_theme_red/__passports/image_theme_red__passports.png") no-repeat;
 }
 
 .image_theme_red__passports_push_down_yes
 {
     margin-top: 486px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__passports/image_theme_red__passports.css end */
 /* ../../desktop.blocks/image_theme_red/__portlet/image_theme_red__portlet.css begin */
 .image_theme_red__portlet
 {
-    background: url("../../desktop.blocks/image_theme_red/__portlet/image_theme_red__portlet.png") no-repeat;
     width: 475px;
     height: 409px;
+    background: url("../../desktop.blocks/image_theme_red/__portlet/image_theme_red__portlet.png") no-repeat;
 }
 
 .image_theme_red__portlet_push_down_yes
 {
     margin-top: 40px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__portlet/image_theme_red__portlet.css end */
 /* ../../desktop.blocks/image_theme_red/__tamagotchi/image_theme_red__tamagotchi.css begin */
 .image_theme_red__tamagotchi
 {
-    background: url("../../desktop.blocks/image_theme_red/__tamagotchi/image_theme_red__tamagotchi.png") no-repeat;
     width: 149px;
     height: 237px;
+    background: url("../../desktop.blocks/image_theme_red/__tamagotchi/image_theme_red__tamagotchi.png") no-repeat;
 }
 
 .image_theme_red__tamagotchi_push_down_yes
@@ -1127,73 +1358,75 @@
 {
     margin-left: -79px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__tamagotchi/image_theme_red__tamagotchi.css end */
 /* ../../desktop.blocks/image_theme_red/__tour/image_theme_red__tour.css begin */
 .image_theme_red__tour
 {
-    background: url("../../desktop.blocks/image_theme_red/__tour/image_theme_red__tour.png") no-repeat;
     width: 384px;
     height: 492px;
+    background: url("../../desktop.blocks/image_theme_red/__tour/image_theme_red__tour.png") no-repeat;
 }
 
 .image_theme_red__tour_push_down_yes
 {
     margin-top: 90px;
 }
+
 /* ../../desktop.blocks/image_theme_red/__tour/image_theme_red__tour.css end */
 /* ../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.css begin */
 .path_theme_red__step-1
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.png") no-repeat;
+    top: -44px;
     width: 763px;
     height: 97px;
-    top: -44px;
+    background: url("../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.png") no-repeat;
 }
-
-
-
-
 
 /* ../../desktop.blocks/path_theme_red/__step-1/path_theme_red__step-1.css end */
 /* ../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.css begin */
 .path_theme_red__step-2
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.png") no-repeat;
+    margin-top: -6px;
+    margin-left: -18px;
     width: 626px;
     height: 561px;
-    margin-left: -18px;
-    margin-top: -6px;
+    background: url("../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_red/__step-2/path_theme_red__step-2.css end */
 /* ../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.css begin */
 .path_theme_red__step-3
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.png") no-repeat;
     width: 684px;
     height: 565px;
+    background: url("../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_red/__step-3/path_theme_red__step-3.css end */
 /* ../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.css begin */
 .path_theme_red__step-4
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.png") no-repeat;
     width: 626px;
     height: 565px;
+    background: url("../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_red/__step-4/path_theme_red__step-4.css end */
 /* ../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.css begin */
 .path_theme_red__step-5
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.png") no-repeat;
+    margin: -2px 0 0;
     width: 528px;
     height: 548px;
-    margin: -2px 0 0;
+    background: url("../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_red/__step-5/path_theme_red__step-5.css end */
 /* ../../desktop.blocks/image_theme_blue/image_theme_blue.css begin */
 [class^=image_theme_blue__]
@@ -1205,6 +1438,7 @@
 {
     z-index: 10;
 }
+
 /* ../../desktop.blocks/image_theme_blue/image_theme_blue.css end */
 /* ../../desktop.blocks/image_theme_blue/__bag/image_theme_blue__bag.css begin */
 .image_theme_blue__bag
@@ -1223,130 +1457,140 @@
 {
     margin-left: -75px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__bag/image_theme_blue__bag.css end */
 /* ../../desktop.blocks/image_theme_blue/__book/image_theme_blue__book.css begin */
 .image_theme_blue__book
 {
-    background: url("../../desktop.blocks/image_theme_blue/__book/image_theme_blue__book.png") no-repeat;
     width: 234px;
     height: 303px;
+    background: url("../../desktop.blocks/image_theme_blue/__book/image_theme_blue__book.png") no-repeat;
 }
 
 .image_theme_blue__book_push_down_yes
 {
     margin-top: 133px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__book/image_theme_blue__book.css end */
 /* ../../desktop.blocks/image_theme_blue/__cards/image_theme_blue__cards.css begin */
 .image_theme_blue__cards
 {
-    background: url("../../desktop.blocks/image_theme_blue/__cards/image_theme_blue__cards.png") no-repeat;
     width: 299px;
     height: 234px;
+    background: url("../../desktop.blocks/image_theme_blue/__cards/image_theme_blue__cards.png") no-repeat;
 }
 
 .image_theme_blue__cards_push_down_yes
 {
     margin-top: 306px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__cards/image_theme_blue__cards.css end */
 /* ../../desktop.blocks/image_theme_blue/__cup/image_theme_blue__cup.css begin */
 .image_theme_blue__cup
 {
-    background: url("../../desktop.blocks/image_theme_blue/__cup/image_theme_blue__cup.png") no-repeat;
     width: 228px;
     height: 303px;
+    background: url("../../desktop.blocks/image_theme_blue/__cup/image_theme_blue__cup.png") no-repeat;
 }
 
 .image_theme_blue__cup_push_down_yes
 {
     margin-top: 468px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__cup/image_theme_blue__cup.css end */
 /* ../../desktop.blocks/image_theme_blue/__ipad/image_theme_blue__ipad.css begin */
 .image_theme_blue__ipad
 {
-    background: url("../../desktop.blocks/image_theme_blue/__ipad/image_theme_blue__ipad.png") no-repeat;
     width: 304px;
     height: 453px;
+    background: url("../../desktop.blocks/image_theme_blue/__ipad/image_theme_blue__ipad.png") no-repeat;
 }
 
 .image_theme_blue__ipad_push_down_yes
 {
     margin-top: 80px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__ipad/image_theme_blue__ipad.css end */
 /* ../../desktop.blocks/image_theme_blue/__iphone/image_theme_blue__iphone.css begin */
 .image_theme_blue__iphone
 {
-    background: url("../../desktop.blocks/image_theme_blue/__iphone/image_theme_blue__iphone.png") no-repeat;
     width: 148px;
     height: 278px;
+    background: url("../../desktop.blocks/image_theme_blue/__iphone/image_theme_blue__iphone.png") no-repeat;
 }
 
 .image_theme_blue__iphone_push_down_yes
 {
     margin-top: 34px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__iphone/image_theme_blue__iphone.css end */
 /* ../../desktop.blocks/image_theme_blue/__krug/image_theme_blue__krug.css begin */
 .image_theme_blue__krug
 {
-    background: url("../../desktop.blocks/image_theme_blue/__krug/image_theme_blue__krug.png") no-repeat;
     width: 528px;
     height: 552px;
+    background: url("../../desktop.blocks/image_theme_blue/__krug/image_theme_blue__krug.png") no-repeat;
 }
 
 .image_theme_blue__krug_push_up_yes
 {
     margin-top: -78px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__krug/image_theme_blue__krug.css end */
 /* ../../desktop.blocks/image_theme_blue/__maska/image_theme_blue__maska.css begin */
 .image_theme_blue__maska
 {
-    background: url("../../desktop.blocks/image_theme_blue/__maska/image_theme_blue__maska.png") no-repeat;
     width: 390px;
     height: 223px;
+    background: url("../../desktop.blocks/image_theme_blue/__maska/image_theme_blue__maska.png") no-repeat;
 }
 
 .image_theme_blue__maska_push_down_yes
 {
     margin-top: 36px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__maska/image_theme_blue__maska.css end */
 /* ../../desktop.blocks/image_theme_blue/__money/image_theme_blue__money.css begin */
 .image_theme_blue__money
 {
-    background: url("../../desktop.blocks/image_theme_blue/__money/image_theme_blue__money.png") no-repeat;
     width: 148px;
     height: 244px;
+    background: url("../../desktop.blocks/image_theme_blue/__money/image_theme_blue__money.png") no-repeat;
 }
 
 .image_theme_blue__money_push_down_yes
 {
     margin-top: 486px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__money/image_theme_blue__money.css end */
 /* ../../desktop.blocks/image_theme_blue/__newspaper/image_theme_blue__newspaper.css begin */
 .image_theme_blue__newspaper
 {
-    background: url("../../desktop.blocks/image_theme_blue/__newspaper/image_theme_blue__newspaper.png") no-repeat;
     width: 318px;
     height: 421px;
+    background: url("../../desktop.blocks/image_theme_blue/__newspaper/image_theme_blue__newspaper.png") no-repeat;
 }
 
 .image_theme_blue__newspaper_push_down_yes
 {
     margin-top: 320px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__newspaper/image_theme_blue__newspaper.css end */
 /* ../../desktop.blocks/image_theme_blue/__notebook2/image_theme_blue__notebook2.css begin */
 .image_theme_blue__notebook2
 {
-    background: url("../../desktop.blocks/image_theme_blue/__notebook2/image_theme_blue__notebook2.png") no-repeat;
     width: 228px;
     height: 318px;
+    background: url("../../desktop.blocks/image_theme_blue/__notebook2/image_theme_blue__notebook2.png") no-repeat;
 }
 
 .image_theme_blue__notebook2_push_up_yes
@@ -1358,39 +1602,42 @@
 {
     margin-left: -150px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__notebook2/image_theme_blue__notebook2.css end */
 /* ../../desktop.blocks/image_theme_blue/__notepad/image_theme_blue__notepad.css begin */
 .image_theme_blue__notepad
 {
-    background: url("../../desktop.blocks/image_theme_blue/__notepad/image_theme_blue__notepad.png") no-repeat;
     width: 306px;
     height: 434px;
+    background: url("../../desktop.blocks/image_theme_blue/__notepad/image_theme_blue__notepad.png") no-repeat;
 }
 
 .image_theme_blue__notepad_push_down_yes
 {
     margin-top: 80px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__notepad/image_theme_blue__notepad.css end */
 /* ../../desktop.blocks/image_theme_blue/__palka/image_theme_blue__palka.css begin */
 .image_theme_blue__palka
 {
-    background: url("../../desktop.blocks/image_theme_blue/__palka/image_theme_blue__palka.png") no-repeat;
     width: 228px;
     height: 622px;
+    background: url("../../desktop.blocks/image_theme_blue/__palka/image_theme_blue__palka.png") no-repeat;
 }
 
 .image_theme_blue__palka_push_down_yes
 {
     margin-top: 80px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__palka/image_theme_blue__palka.css end */
 /* ../../desktop.blocks/image_theme_blue/__paper/image_theme_blue__paper.css begin */
 .image_theme_blue__paper
 {
-    background: url("../../desktop.blocks/image_theme_blue/__paper/image_theme_blue__paper.png") no-repeat;
     width: 384px;
     height: 621px;
+    background: url("../../desktop.blocks/image_theme_blue/__paper/image_theme_blue__paper.png") no-repeat;
 }
 
 .image_theme_blue__paper_push_down_yes
@@ -1402,26 +1649,28 @@
 {
     margin-left: -306px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__paper/image_theme_blue__paper.css end */
 /* ../../desktop.blocks/image_theme_blue/__pen/image_theme_blue__pen.css begin */
 .image_theme_blue__pen
 {
-    background: url("../../desktop.blocks/image_theme_blue/__pen/image_theme_blue__pen.png") no-repeat;
     width: 48px;
     height: 223px;
+    background: url("../../desktop.blocks/image_theme_blue/__pen/image_theme_blue__pen.png") no-repeat;
 }
 
 .image_theme_blue__pen_push_down_yes
 {
     margin-top: 36px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__pen/image_theme_blue__pen.css end */
 /* ../../desktop.blocks/image_theme_blue/__phone/image_theme_blue__phone.css begin */
 .image_theme_blue__phone
 {
-    background: url("../../desktop.blocks/image_theme_blue/__phone/image_theme_blue__phone.png");
     width: 303px;
     height: 384px;
+    background: url("../../desktop.blocks/image_theme_blue/__phone/image_theme_blue__phone.png");
 }
 
 .image_theme_blue__phone_push_down_yes
@@ -1433,122 +1682,128 @@
 {
     margin-left: -79px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__phone/image_theme_blue__phone.css end */
 /* ../../desktop.blocks/image_theme_blue/__photo/image_theme_blue__photo.css begin */
 .image_theme_blue__photo
 {
-    background: url("../../desktop.blocks/image_theme_blue/__photo/image_theme_blue__photo.png");
     width: 227px;
     height: 292px;
+    background: url("../../desktop.blocks/image_theme_blue/__photo/image_theme_blue__photo.png");
 }
 
 .image_theme_blue__photo_push_down_yes
 {
     margin-top: 260px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__photo/image_theme_blue__photo.css end */
 /* ../../desktop.blocks/image_theme_blue/__pie/image_theme_blue__pie.css begin */
 .image_theme_blue__pie
 {
-    background: url("../../desktop.blocks/image_theme_blue/__pie/image_theme_blue__pie.png") no-repeat;
     width: 380px;
     height: 529px;
+    background: url("../../desktop.blocks/image_theme_blue/__pie/image_theme_blue__pie.png") no-repeat;
 }
 
 .image_theme_blue__pie_push_down_yes
 {
     margin-top: 80px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__pie/image_theme_blue__pie.css end */
 /* ../../desktop.blocks/image_theme_blue/__ticket/image_theme_blue__ticket.css begin */
 .image_theme_blue__ticket
 {
-    background: url("../../desktop.blocks/image_theme_blue/__ticket/image_theme_blue__ticket.png") no-repeat;
     width: 454px;
     height: 179px;
+    background: url("../../desktop.blocks/image_theme_blue/__ticket/image_theme_blue__ticket.png") no-repeat;
 }
 
 .image_theme_blue__ticket_push_down_yes
 {
     margin-top: 144px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__ticket/image_theme_blue__ticket.css end */
 /* ../../desktop.blocks/image_theme_blue/__watch/image_theme_blue__watch.css begin */
 .image_theme_blue__watch
 {
-    background: url("../../desktop.blocks/image_theme_blue/__watch/image_theme_blue__watch.png") no-repeat;
     width: 130px;
     height: 247px;
+    background: url("../../desktop.blocks/image_theme_blue/__watch/image_theme_blue__watch.png") no-repeat;
 }
 
 .image_theme_blue__watch_push_down_yes
 {
     margin-top: 304px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__watch/image_theme_blue__watch.css end */
 /* ../../desktop.blocks/image_theme_blue/__yoga/image_theme_blue__yoga.css begin */
 .image_theme_blue__yoga
 {
-    background: url("../../desktop.blocks/image_theme_blue/__yoga/image_theme_blue__yoga.png") no-repeat;
     width: 306px;
     height: 411px;
+    background: url("../../desktop.blocks/image_theme_blue/__yoga/image_theme_blue__yoga.png") no-repeat;
 }
 
 .image_theme_blue__yoga_push_down_yes
 {
     margin-top: 20px;
 }
+
 /* ../../desktop.blocks/image_theme_blue/__yoga/image_theme_blue__yoga.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.css begin */
 .path_theme_blue__step-1
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.png") no-repeat;
+    top: -44px;
     width: 762px;
     height: 97px;
-    top: -44px;
+    background: url("../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.png") no-repeat;
 }
-
-
-
-
 
 /* ../../desktop.blocks/path_theme_blue/__step-1/path_theme_blue__step-1.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.css begin */
 .path_theme_blue__step-2
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.png") no-repeat;
     width: 596px;
     height: 566px;
+    background: url("../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_blue/__step-2/path_theme_blue__step-2.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.css begin */
 .path_theme_blue__step-3
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.png") no-repeat;
     width: 684px;
     height: 565px;
+    background: url("../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_blue/__step-3/path_theme_blue__step-3.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.css begin */
 .path_theme_blue__step-4
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.png") no-repeat;
     width: 626px;
     height: 565px;
+    background: url("../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_blue/__step-4/path_theme_blue__step-4.css end */
 /* ../../desktop.blocks/path_theme_blue/__step-5/path_theme_blue__step-5.css begin */
 .path_theme_blue__step-5
 {
     position: absolute;
-    background: url("../../desktop.blocks/path_theme_blue/__step-5/path_theme_blue__step-5.png") no-repeat;
     width: 528px;
     height: 548px;
+    background: url("../../desktop.blocks/path_theme_blue/__step-5/path_theme_blue__step-5.png") no-repeat;
 }
+
 /* ../../desktop.blocks/path_theme_blue/__step-5/path_theme_blue__step-5.css end */
 /* ../../desktop.blocks/footer/footer.css begin */
 .footer
@@ -1558,6 +1813,7 @@
     border-top: 2px solid #000;
     background: #FFF;
 }
+
 /* ../../desktop.blocks/footer/footer.css end */
 /* ../../desktop.blocks/footer/__atom-logo/footer__atom-logo.css begin */
 .footer__atom-logo
@@ -1566,18 +1822,21 @@
     height: 104px;
     background: url("../../desktop.blocks/footer/__atom-logo/footer__atom-logo.png") no-repeat;
 }
+
 /* ../../desktop.blocks/footer/__atom-logo/footer__atom-logo.css end */
 /* ../../desktop.blocks/footer/__copyright/footer__copyright.css begin */
 .footer__copyright
 {
     margin-left: -36px;
 }
+
 /* ../../desktop.blocks/footer/__copyright/footer__copyright.css end */
 /* ../../desktop.blocks/footer/__foot/footer__foot.css begin */
 .footer__foot
 {
     padding: 134px 0 76px;
 }
+
 /* ../../desktop.blocks/footer/__foot/footer__foot.css end */
 /* ../../desktop.blocks/footer/__link/footer__link.css begin */
 .footer__link
@@ -1585,16 +1844,17 @@
     display: inline;
     margin: 0 18px 0 0;
 }
+
 /* ../../desktop.blocks/footer/__link/footer__link.css end */
 /* ../../desktop.blocks/atom-ledge/atom-ledge.css begin */
 .atom-ledge
 {
     position: absolute;
-    left: 972px;
     top: -18px;
     bottom: -18px;
-    border-left: 2px solid #000;
+    left: 972px;
     z-index: 30;
+    border-left: 2px solid #000;
     cursor: pointer;
 }
 
@@ -1602,6 +1862,7 @@
 {
     cursor: auto;
 }
+
 /* ../../desktop.blocks/atom-ledge/atom-ledge.css end */
 /* ../../desktop.blocks/atom-ledge/__shadow/atom-ledge__shadow.css begin */
 .atom-ledge__shadow
@@ -1614,6 +1875,7 @@
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
 }
+
 /* ../../desktop.blocks/atom-ledge/__shadow/atom-ledge__shadow.css end */
 /* ../../desktop.blocks/atom-ledge/__content/atom-ledge__content.css begin */
 .atom-ledge__content
@@ -1622,6 +1884,7 @@
     height: 100%;
     background: #fff;
 }
+
 /* ../../desktop.blocks/atom-ledge/__content/atom-ledge__content.css end */
 /* ../../desktop.blocks/atom-ledge/__help-icon/atom-ledge__help-icon.css begin */
 .atom-ledge__help-icon
@@ -1631,6 +1894,7 @@
     right: 20px;
 
 }
+
 /* ../../desktop.blocks/atom-ledge/__help-icon/atom-ledge__help-icon.css end */
 /* ../../desktop.blocks/help-icon/help-icon.css begin */
 .help-icon
@@ -1664,24 +1928,27 @@
 {
     cursor: pointer;
 }
+
 /* ../../desktop.blocks/help-icon/help-icon.css end */
 /* ../../desktop.blocks/section/section.css begin */
 .section
 {
-    border-bottom: 2px solid #000;
     margin-bottom: -2px;
+    border-bottom: 2px solid #000;
 }
 
 .section_border_no
 {
     border: 0;
 }
+
 /* ../../desktop.blocks/section/section.css end */
 /* ../../desktop.blocks/section/__title/section__title.css begin */
 .section__title
 {
     margin-top: 0;
 }
+
 /* ../../desktop.blocks/section/__title/section__title.css end */
 /* ../../desktop.blocks/section/__text/section__text.css begin */
 .section__text
@@ -1689,18 +1956,21 @@
     width: 662px;
     line-height: 150%;
 }
+
 /* ../../desktop.blocks/section/__text/section__text.css end */
 /* ../../desktop.blocks/section/__item/section__item.css begin */
 .section__item
 {
     margin: 24px 0 32px;
 }
+
 /* ../../desktop.blocks/section/__item/section__item.css end */
 /* ../../desktop.blocks/section/__inner/section__inner.css begin */
 .section__inner
 {
     padding: 34px;
 }
+
 /* ../../desktop.blocks/section/__inner/section__inner.css end */
 /* ../../desktop.blocks/atom-logo/atom-logo.css begin */
 .atom-logo
@@ -1709,6 +1979,7 @@
     height: 201px;
     background: url("../../desktop.blocks/atom-logo/atom-logo.png") no-repeat;
 }
+
 /* ../../desktop.blocks/atom-logo/atom-logo.css end */
 /* ../../desktop.blocks/dialog/dialog.css begin */
 .dialog
@@ -1717,6 +1988,7 @@
     height: 446px;
     background: url("../../desktop.blocks/dialog/dialog__back.png") no-repeat;
 }
+
 /* ../../desktop.blocks/dialog/dialog.css end */
 /* ../../desktop.blocks/dialog/__content/dialog__content.css begin */
 .dialog__content
@@ -1725,10 +1997,12 @@
     height: 426px;
     border: 2px solid #000;
 }
+
 /* ../../desktop.blocks/dialog/__content/dialog__content.css end */
 /* ../../desktop.blocks/info/info.css begin */
 .info_show_no
 {
     display: none;
 }
+
 /* ../../desktop.blocks/info/info.css end */

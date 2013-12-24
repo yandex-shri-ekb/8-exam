@@ -5,7 +5,7 @@
     head: [
         {elem: 'meta', attrs: {name: 'description', content: ''}},
         {elem: 'css', url: '_index.css', ie: false},
-        {elem: 'css', url: 'css/_anygrid.css', ie: false},
+        {block: 'anygrid'},
         {elem: 'js', url: '_index.js'}
     ],
     content: [

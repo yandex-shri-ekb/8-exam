@@ -111,6 +111,9 @@ exports.deps = [
         "elem": "wrap"
     },
     {
+        "block": "anygrid"
+    },
+    {
         "block": "atom"
     },
     {
