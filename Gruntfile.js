@@ -4,7 +4,8 @@ module.exports = function(grunt) {
         csscomb: {
             dist: {
                 files: {
-                    'css/style.css': ['css/style.css']
+                    'css/grid.css': 'css/grid.css',
+                    'css/style.css': 'css/style.css'
                 }
             }
         }
