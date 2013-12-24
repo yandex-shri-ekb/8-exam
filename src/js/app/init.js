@@ -3,6 +3,8 @@ require(['jquery',
 		 'app/slide',
 	     'app/app'], function($, Popup, Slide, App) {
 	new Popup();
-	new Slide();
-	new App().init();
+	$(document).ready(function () {
+		new Slide();
+		new App().init();
+	});
 });
