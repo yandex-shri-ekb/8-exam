@@ -118,7 +118,7 @@ h3
 
 .right__intro
 {
-    height: 780px; 
+    height: 790px; 
     border-bottom: 2px solid #000;
 }
 
@@ -139,7 +139,7 @@ h3
 
 .right__yellow__block1
 {
-    height: 758px;
+    height: 748px;
     border-bottom: 2px solid #000;
 }
 
@@ -163,7 +163,7 @@ h3
 
 .right__red__block1
 {
-    height: 768px;
+    height: 758px;
     border-bottom: 2px solid #000;
 }
 
@@ -187,7 +187,7 @@ h3
 
 .right__blue__block1
 {
-    height: 768px;
+    height: 758px;
     border-bottom: 2px solid #000;
 }
 
@@ -857,7 +857,7 @@ h3
 
 .blue_block1
 {
-    height: 36px;
+    height: 46px;
 }
 
 .blue_block1__substrate
@@ -868,7 +868,7 @@ h3
 
 .blue_block2__text
 {
-    margin: 72px 0 0;
+    margin: 62px 0 0;
 }
 
 .blue_block2
@@ -1170,11 +1170,11 @@ h3
 }
 
 .this_story:hover
-{
-           opacity: 0.5;
+{    
     -ms-filter:'progid:DXImageTransform.Microsoft.Alpha'(Opacity=0.5);
     -khtml-opacity: 0.5;
       -moz-opacity: 0.5;
+           opacity: 0.5;
 }
 
 .yellow_character
@@ -1217,7 +1217,6 @@ h3
     width: 90px;
     height: 90px;
     background: rgba(0, 0, 0, 0);
-    cursor: pointer;
 }
 
 .icon_yellow_block2,
@@ -1274,10 +1273,10 @@ h3
 .icon_blue_block4_active:hover,
 .icon_blue_block5_active:hover
 {
-           opacity: 0.7;
     -ms-filter:'progid:DXImageTransform.Microsoft.Alpha'(Opacity=0.7);
     -khtml-opacity: 0.7;
       -moz-opacity: 0.7;
+           opacity: 0.7;
 }
 
 .icon_yellow_block2

@@ -194,9 +194,6 @@ define(['app/random',
 		$btnPlay.removeClass(app.color + '__color');
 		$history.removeClass('history__' + app.color);
 		$bigAvatar.removeClass(app.color + '_character');
-		$iconsY.attr('class',"icons_yellow");
-		$iconsR.attr('class',"icons_red");
-		$iconsB.attr('class',"icons_blue");
 	}
 
 	/**
@@ -277,7 +274,8 @@ define(['app/random',
 	 * @param  {object}  el элемент, к которому скроллим
 	 * @return {Boolean}
 	 */
-	function isScrolledIntoView(el, foot)	{
+	function isScrolledIntoView(el, foot) {
+
 	    var docViewTop    = $(window).scrollTop(),
 	    	elemTop       = $(el).offset().top,
 	    	docViewBottom = docViewTop + $(window).height(),
@@ -307,6 +305,9 @@ define(['app/random',
 
 		for (var i = 2; i < 6; i++) {
 			if(isScrolledIntoView($('.' + color + '_block' + i), foot)) {
+				$iconsY.attr('class',"icons_yellow");
+				$iconsR.attr('class',"icons_red");
+				$iconsB.attr('class',"icons_blue");
 				$('.icons_' + color).addClass('icon_' + color + '_block' + i + '_active');
 				$('.icons_' + color2).addClass('icon_' + color2 + '_block' + i);
 				$('.icons_' + color3).addClass('icon_' + color3 + '_block' + i);
