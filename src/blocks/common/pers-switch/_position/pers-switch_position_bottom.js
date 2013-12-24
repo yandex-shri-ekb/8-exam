@@ -7,8 +7,13 @@ modules.define(
                 onSetMod: {
                     js: function() {
                         this._initSuper();
+
+                        var topSwitchPos = this._page
+                            .findBlockInside({block: 'pers-switch', modName: 'position', modVal: 'top'})
+                            .domElem.offset();
+
                         this.bindTo(this.elem('item'), 'click', function() {
-                            $('html, body').animate({scrollTop: 0}, 400);
+                            $('html, body').animate({scrollTop: topSwitchPos.top}, 400);
                         });
 
                         this._page.trigger('change-state', {

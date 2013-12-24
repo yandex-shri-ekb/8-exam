@@ -19,7 +19,7 @@
     width: 138px;
     height: 139px;
 
-    background: url("../../../images/pers/pers-switch.png") 0 0 no-repeat;
+    background: 0 0 no-repeat url("../../../images/pers/pers-switch.png");
 }
 
 .pers-switch__name,

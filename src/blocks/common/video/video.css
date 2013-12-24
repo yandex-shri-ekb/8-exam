@@ -9,11 +9,15 @@
     height: 76px;
 
     cursor: pointer;
+    -webkit-transition: background-color 200ms linear;
+       -moz-transition: background-color 200ms linear;
+         -o-transition: background-color 200ms linear;
+            transition: background-color 200ms linear;
 
     border: 2px solid #000;
     -moz-border-radius: 4px;
          border-radius: 4px;
-    background: transparent url("../../../images/common/common-play.png") 53% 50% no-repeat;
+    background: transparent 53% 50% no-repeat url("../../../images/common/common-play.png");
 }
 
 .container_type_yellow .video__thumb

@@ -1,7 +1,7 @@
 modules.define(
     'i-bem__dom',
-    ['jquery', 'functions__debounce'],
-    function (provide, $, debounce, DOM) {
+    ['jquery', 'functions__debounce', 'modernizr'],
+    function (provide, $, debounce, modernizr, DOM) {
 
         /**
          * Описывает поведение плавающего блока с поясняющей информацией.
@@ -12,7 +12,11 @@ modules.define(
                     this.$window = $(window);
                     this.$document = $(document);
 
-                    this._container = this.findBlockOutside('page').findBlockInside('container');
+                    this._minWidth = 800;
+                    this._containerWidth = 972;
+
+                    this._page = this.findBlockOutside('page');
+                    this._container = this._page.findBlockInside('container');
 
                     this._initialize();
 
@@ -27,13 +31,15 @@ modules.define(
 
                         selector && $el.height($(selector).height() - 36);
                     });
+
+                    this._page.on('change-state', $.proxy(this, 'disactive'));
                 }
             },
 
             _initialize: function () {
                 this.unbindFrom(this.domElem, 'click');
 
-                if(this.$window.width() < 972 + 800) {
+                if(this.$window.width() < this._containerWidth + this._minWidth) {
                     this.bindTo(this.domElem, 'click', this.active, this);
                     this.setMod('covered');
                 } else {
@@ -43,14 +49,26 @@ modules.define(
             },
 
             _open: function() {
-                var left = this.$window.width() - 800;
-                this.domElem.css({left: left > 154 ? left : 154});
+                var left = this.$window.width() - this._minWidth,
+                    position = {left: left > 154 ? left : 154};
+
+                if(modernizr.csstransitions) {
+                    this.domElem.css(position);
+                } else {
+                    this.domElem.animate(position, 200);
+                }
+
                 this.setMod('opened', true);
                 this.setMod(this.elem('control'), 'opened');
             },
 
             _close: function() {
-                this.domElem.removeAttr('style');
+                if(modernizr.csstransitions) {
+                    this.domElem.removeAttr('style');
+                } else {
+                    this.domElem.animate({left: this._containerWidth}, 200);
+                }
+
                 this.delMod('opened');
                 this.delMod(this.elem('control'), 'opened');
             },

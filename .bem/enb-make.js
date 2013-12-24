@@ -41,6 +41,7 @@ module.exports = function (config) {
         return [
             'src/blocks/vendors/bem-core/common.blocks',
             'src/blocks/vendors/bem-core/desktop.blocks',
+            'src/blocks/vendors',
             'src/blocks/common'
         ].map(config.resolvePath.bind(config));
     }
