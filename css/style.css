@@ -1035,9 +1035,11 @@ body
     background: #c0c0c0;
     -webkit-box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, .2);
             box-shadow: 5px 5px 30px 20px rgba(0, 0, 0, .2);
+}
 
-    *display: inline;
-    *zoom: 1;
+.ie7 .window__popup-inner {
+    display: inline;
+    zoom: 1;
 }
 
 .window__popup-helper
@@ -1048,7 +1050,9 @@ body
     height: 100%;
 
     vertical-align: middle;
+}
 
-    *display: inline;
-    *zoom: 1;
+.ie7 .window__popup-helper {
+    display: inline;
+    zoom: 1;
 }
