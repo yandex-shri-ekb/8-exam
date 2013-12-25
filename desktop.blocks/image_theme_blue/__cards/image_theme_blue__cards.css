@@ -1,0 +1,11 @@
+.image_theme_blue__cards
+{
+    background: url(image_theme_blue__cards.png) no-repeat;
+    width: 299px;
+    height: 234px;
+}
+
+.image_theme_blue__cards_push_down_yes
+{
+    margin-top: 306px;
+}

@@ -1,0 +1,47 @@
+block footer {
+
+    content: [
+        {
+            elem: 'info-holder',
+            mix: { block: 'grid_row' },
+            content: [
+                {
+                    elem: 'info',
+                    mix: { block: 'grid__module', mods: { col: 2, span: 6 } },
+                    content: 'Мир один, а люди разные. Так и интернет — он один, но для каждого разный. <br><br>Теперь посмотрите, как планировали путешествие в Таиланд другие герои.'
+                },
+                {
+                    elem: 'atom-logo',
+                    mix: { block: 'grid__module', mods: { col: 9, span: 2 } }
+                }
+            ]
+        },
+        {
+            elem: 'foot',
+            mix: { block: 'grid_row' },
+            content: [
+                {
+                    elem: 'links',
+                    mix: { block: 'grid__module', mods: { col: 2, span: 3 } },
+                    content: [
+                        {
+                            elem: 'link',
+                            mix: { block: 'link' } ,
+                            content: 'Помощь'
+                        },
+                        {
+                            elem: 'link',
+                            mix: { block: 'link' } ,
+                            content: 'Обратная связь'
+                        }
+                    ]
+                },
+                {
+                    elem: 'copyright',
+                    mix: { block: 'grid__module', mods: { col: 6, span: 3 } },
+                    content: '© 2013 ООО «Яндекс»'
+                }
+            ]
+        }
+    ]
+}

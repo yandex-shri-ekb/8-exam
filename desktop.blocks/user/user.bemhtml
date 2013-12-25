@@ -1,0 +1,26 @@
+block user {
+
+    js: true,
+
+    content: [
+        {
+            elem: 'icon',
+            mix: {
+                block: 'user-icon',
+                mods: {
+                    theme: this.ctx.mods.theme,
+                    size: this.ctx.mods.size
+                }
+            },
+            content: this.ctx.icon
+        },
+        {
+            elem: 'name',
+            content: this.ctx.name
+        },
+        {
+            elem: 'text',
+            content: this.ctx.text
+        }
+    ]
+}

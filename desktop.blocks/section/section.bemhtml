@@ -1,0 +1,40 @@
+block 'section' {
+
+    content: {
+        var content = [];
+
+        var self = this;
+
+        this.ctx.content.forEach(function(item) {
+            var newItem = item;
+
+            if(item.elem === 'item') {
+                newItem.tag = 'p';
+            } else if (item.elem === 'image') {
+                newItem.tag = 'img';
+                newItem.attrs = {
+                    title: item.title || self.ctx.title,
+                    src: item.src
+                };
+            }
+            content.push(newItem);
+        });
+
+        return [
+            {
+                elem: 'inner',
+                content: [
+                    {
+                        tag: this.ctx.tagTitle || 'h3',
+                        elem: 'title',
+                        content: this.ctx.title
+                    },
+                    {
+                        elem: 'content',
+                        content: content
+                    }
+                ]
+            }
+        ];
+    }
+}

@@ -1,0 +1,10 @@
+.atom
+{
+    position: relative;
+    width: 972px;
+}
+
+.atom_active_yes
+{
+    cursor: pointer;
+}

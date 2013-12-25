@@ -1,0 +1,11 @@
+.image_theme_red__book
+{
+    background: url(image_theme_red__book.png) no-repeat;
+    width: 475px;
+    height: 409px;
+}
+
+.image_theme_red__book_push_down_yes
+{
+    margin-top: 350px;
+}

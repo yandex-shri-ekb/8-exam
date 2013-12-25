@@ -1,0 +1,15 @@
+.locomotive
+{
+    position: fixed;
+    top: 50px;
+    left: 18px;
+    text-align: center;
+    width: 954px;
+    z-index: 20;
+    display: none;
+}
+
+.locomotive_show_yes
+{
+    display: block;
+}

@@ -1,0 +1,22 @@
+.image_theme_yellow__polaroid
+{
+    background: url(image_theme_yellow__polaroid.png) no-repeat;
+    width: 142px;
+    height: 158px;
+}
+
+.image_theme_yellow__polaroid_pos_1
+{
+    margin-top: 84px;
+    margin-left: -106px;
+}
+
+.image_theme_yellow__polaroid_pos_2
+{
+    margin-top: 256px;
+}
+
+.image_theme_yellow__polaroid_pos_3
+{
+    margin-top: 216px;
+}

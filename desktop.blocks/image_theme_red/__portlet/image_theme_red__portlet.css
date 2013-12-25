@@ -1,0 +1,11 @@
+.image_theme_red__portlet
+{
+    background: url(image_theme_red__portlet.png) no-repeat;
+    width: 475px;
+    height: 409px;
+}
+
+.image_theme_red__portlet_push_down_yes
+{
+    margin-top: 40px;
+}

@@ -1,0 +1,15 @@
+.users
+{
+    height: 470px;
+}
+
+.users_show_text_no
+{
+    height: 320px;
+}
+
+/* Уверен, что можно найти лучшее решение ... */
+.users_show_text_no .user__text
+{
+    display: none;
+}

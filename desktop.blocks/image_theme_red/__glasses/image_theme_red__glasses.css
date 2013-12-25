@@ -1,0 +1,11 @@
+.image_theme_red__glasses
+{
+    background: url(image_theme_red__glasses.png) no-repeat;
+    width: 475px;
+    height: 409px;
+}
+
+.image_theme_red__glasses_push_down_yes
+{
+    margin-top: 420px;
+}

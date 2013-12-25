@@ -1,0 +1,7 @@
+block header {
+
+    content: [
+        { block: 'header-logo' },
+        { block: 'header-info' }
+    ]
+}

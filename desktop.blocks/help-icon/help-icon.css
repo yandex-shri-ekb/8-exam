@@ -1,0 +1,31 @@
+.help-icon
+{
+    width: 80px;
+    height: 80px;
+    background: url(help-icon.png) no-repeat;
+}
+
+.help-icon_type_quest.help-icon_active_no
+{
+    background-position: 0 0;
+}
+
+.help-icon_type_quest.help-icon_active_yes
+{
+    background-position: 0 -90px;
+}
+
+.help-icon_type_xmark.help-icon_active_no
+{
+    background-position: -90px 0;
+}
+
+.help-icon_type_xmark.help-icon_active_yes
+{
+    background-position: -90px -90px;
+}
+
+.help-icon_active_yes
+{
+    cursor: pointer;
+}

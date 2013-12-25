@@ -1,0 +1,11 @@
+.image_theme_yellow__map
+{
+    background: url(image_theme_yellow__map.png) no-repeat;
+    width: 294px;
+    height: 218px;
+}
+
+.image_theme_yellow__map_push_up_yes
+{
+    margin-top: -32px;
+}

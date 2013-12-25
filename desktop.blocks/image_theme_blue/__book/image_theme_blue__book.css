@@ -1,0 +1,11 @@
+.image_theme_blue__book
+{
+    background: url(image_theme_blue__book.png) no-repeat;
+    width: 234px;
+    height: 303px;
+}
+
+.image_theme_blue__book_push_down_yes
+{
+    margin-top: 133px;
+}

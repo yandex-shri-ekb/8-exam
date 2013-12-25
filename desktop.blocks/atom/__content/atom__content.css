@@ -1,0 +1,24 @@
+.atom__content
+{
+    margin: 18px 0 18px 18px;
+}
+
+.atom__content_move_yes
+{
+    overflow: hidden;
+}
+
+.atom__content_theme_yellow
+{
+    background: #ffe05d;
+}
+
+.atom__content_theme_red
+{
+    background: #ff8282;
+}
+
+.atom__content_theme_blue
+{
+    background: #72c4f6;
+}

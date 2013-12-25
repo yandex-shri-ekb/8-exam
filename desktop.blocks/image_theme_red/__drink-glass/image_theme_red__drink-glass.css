@@ -1,0 +1,16 @@
+.image_theme_red__drink-glass
+{
+    background: url(image_theme_red__drink-glass.png) no-repeat;
+    width: 138px;
+    height: 224px;
+}
+
+.image_theme_red__drink-glass_push_down_yes
+{
+    margin-top: 214px;
+}
+
+.image_theme_red__drink-glass_push_right_yes
+{
+    margin-left: 36px;
+}

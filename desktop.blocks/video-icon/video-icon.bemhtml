@@ -1,0 +1,4 @@
+block 'video-icon' {
+    js: true,
+    content: { elem: 'play' }
+}

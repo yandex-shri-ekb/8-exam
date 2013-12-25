@@ -1,0 +1,15 @@
+.atom-ledge
+{
+    position: absolute;
+    left: 972px;
+    top: -18px;
+    bottom: -18px;
+    border-left: 2px solid #000;
+    z-index: 30;
+    cursor: pointer;
+}
+
+.atom-ledge_opened_yes
+{
+    cursor: auto;
+}

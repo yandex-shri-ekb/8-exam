@@ -1,0 +1,11 @@
+.image_theme_blue__krug
+{
+    background: url(image_theme_blue__krug.png) no-repeat;
+    width: 528px;
+    height: 552px;
+}
+
+.image_theme_blue__krug_push_up_yes
+{
+    margin-top: -78px;
+}

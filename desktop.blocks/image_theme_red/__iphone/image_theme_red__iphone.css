@@ -1,0 +1,11 @@
+.image_theme_red__iphone
+{
+    background: url(image_theme_red__iphone.png) no-repeat;
+    width: 150px;
+    height: 280px;
+}
+
+.image_theme_red__iphone_pushd_down_yes
+{
+    margin-top: 74px
+}

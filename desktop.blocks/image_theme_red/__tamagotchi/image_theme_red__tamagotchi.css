@@ -1,0 +1,16 @@
+.image_theme_red__tamagotchi
+{
+    background: url(image_theme_red__tamagotchi.png) no-repeat;
+    width: 149px;
+    height: 237px;
+}
+
+.image_theme_red__tamagotchi_push_down_yes
+{
+    margin-top: 378px;
+}
+
+.image_theme_red__tamagotchi_push_left_yes
+{
+    margin-left: -79px;
+}
