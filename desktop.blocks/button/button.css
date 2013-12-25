@@ -1,0 +1,18 @@
+.button
+{
+	position: fixed;
+	top: 18px;
+	right: 18px;
+	z-index: 90;
+	width: 65px;
+	height: 69px;
+	background: url('../../i/button_type_details/open.png') transparent;
+	border: none;
+	outline: none;
+}
+
+.button_opened
+{
+	background: url('../../i/button_type_details/close.png') transparent;
+}
+

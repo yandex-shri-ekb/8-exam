@@ -1,0 +1,28 @@
+.description
+{
+	position: absolute;
+	top: 210px;
+	width: 300px;
+	font: 16px/20px Arial, sans-serif;
+	display: none;
+}
+
+.description_color_yellow
+{
+	margin: 0 0 0 20px;
+}
+
+.description_color_red
+{
+	margin: 0 0 0 250px;
+}
+
+.description_color_blue
+{
+	margin: 0 0 0 485px;	
+}
+
+.description_visible
+{
+	display: block;
+}

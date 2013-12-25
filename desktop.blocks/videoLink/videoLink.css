@@ -1,0 +1,24 @@
+.videoLink
+{
+	width: 138px;
+	height: 80px;
+	border: 2px solid #000;
+	border-radius: 4px;
+	background: url('play.png') center center no-repeat;
+	cursor: pointer;
+}
+
+.videoLink_color_yellow
+{
+	background-color: #ffe05d;
+}
+
+.videoLink_color_red
+{
+	background-color: #ff8282;
+}
+
+.videoLink_color_blue
+{
+	background-color: #72cff6;
+}

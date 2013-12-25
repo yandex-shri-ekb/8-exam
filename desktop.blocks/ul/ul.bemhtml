@@ -1,0 +1,6 @@
+block ul {
+	tag: 'ul'
+	elem li, tag: 'li'
+	elem span, tag: 'span'
+}
+

@@ -1,0 +1,359 @@
+.images
+{
+}
+.images__yellow-way1
+{
+	position: absolute;
+	top: -45px;
+	left: 96px;
+}
+
+.images__yellow-way2
+{
+	position: absolute;
+	top: 286px;
+	left: 152px;
+}
+
+.images__yellow-way3
+{
+	position: absolute;
+	top: 286px;
+	left: 96px;
+}
+
+.images__yellow-way4
+{
+	position: absolute;
+	top: 280px;
+	left: 96px;
+}
+
+.images__yellow-way5
+{
+	position: absolute;
+	top: 280px;
+	left: 252px;
+}
+
+.images__yellow-map
+{
+	position: absolute;	
+	top: -36px;
+	left: 486px;
+}
+
+.images__yellow-ticket
+{
+	position: absolute;
+	top: 318px;
+	left: -20px;
+}
+
+.images__yellow-compas
+{
+	position: absolute;
+	top: 318px;
+	left: 564px;
+}
+
+.images__yellow-book
+{
+	position: absolute;
+	top: 318px;
+	left: 798px;
+}
+
+.images__yellow-photo
+{
+	position: absolute;
+	top: 358px;
+	left: -20px;
+}
+
+.images__yellow-computer
+{
+	position: absolute;
+	top: 80px;
+	left: 96px;
+}
+
+.images__yellow-iphone
+{
+	position: absolute;
+	top: 314px;
+	left: 642px;
+}
+
+.images__yellow-magazine
+{
+	position: absolute;
+	top: -80px;
+	left: 750px;
+}
+
+.images__yellow-trivial
+{
+	position: absolute;
+	top: 278px;
+	left: -20px;
+}
+
+.images__yellow-ipod
+{
+	position: absolute;
+	top: 414px;
+	left: 642px;
+}
+
+.images__yellow-bag
+{
+	position: absolute;
+	top: 80px;
+	left: 96px;
+}
+
+.images__yellow-phuket
+{
+	position: absolute;
+	top: 322px;
+	left: 564px;
+}
+
+.images__yellow-other
+{
+	position: absolute;
+	top: 540px;
+	left: 174px;
+}
+
+.images__blue-way1
+{
+	position: absolute;
+	top: -56px;
+	left: 96px;
+}
+
+.images__blue-way2
+{
+	position: absolute;
+	top: 286px;
+	left: 176px;
+}
+
+.images__blue-way3
+{
+	position: absolute;
+	top: 286px;
+	left: 96px;
+}
+
+.images__blue-way4
+{
+	position: absolute;
+	top: 286px;
+	left: 96px;
+}
+
+.images__blue-way5
+{
+	position: absolute;
+	top: 288px;
+	left: 252px;
+}
+
+.images__blue-phone
+{
+	position: absolute;	
+	top: 338px;
+	left: -20px;
+}
+
+.images__blue-ticket
+{
+	position: absolute;
+	top: 86px;
+	left: 330px;
+}
+
+.images__blue-notebook
+{
+	position: absolute;
+	top: 102px;
+	left: -20px;
+}
+
+.images__blue-ipad
+{
+	position: absolute;
+	top: 102px;
+	left: 174px;
+}
+
+.images__blue-mask
+{
+	position: absolute;
+	top: 102px;
+	left: 564px;
+}
+
+.images__blue-iphone
+{
+	position: absolute;
+	top: 332px;
+	left: 174px;
+}
+
+.images__blue-credit-cadr
+{
+	position: absolute;
+	top: 100px;
+	left: 408px;
+}
+
+.images__blue-bag
+{
+	position: absolute;
+	top: -124px;
+	left: -20px;
+}
+
+.images__blue-yoga
+{
+	position: absolute;
+	top: 304px;
+	left: 96px;
+}
+
+.images__blue-krug
+{
+	position: absolute;
+	top: -58px;
+	left: 798px;
+}
+
+.images__red-way1
+{
+	position: absolute;
+	top: -56px;
+	left: 96px;
+}
+
+.images__red-way2
+{
+	position: absolute;
+	top: 286px;
+	left: 230px;
+}
+
+.images__red-way3
+{
+	position: absolute;
+	top: 286px;
+	left: 96px;
+}
+
+.images__red-way4
+{
+	position: absolute;
+	top: 302px;
+	left: 96px;
+}
+
+.images__red-way5
+{
+	position: absolute;
+	top: 286px;
+	left: 478px;
+}
+
+.images__red-photo
+{
+	position: absolute;	
+	top: 338px;
+	left: 96px;
+}
+
+.images__red-ticket
+{
+	position: absolute;
+	top: 88px;
+	left: 486px;
+}
+
+.images__red-bear
+{
+	position: absolute;
+	top: -150px;
+	left: -20px;
+}
+
+.images__red-iphone
+{
+	position: absolute;
+	top: 374px;
+	left: 96px;
+}
+
+.images__red-lenses
+{
+	position: absolute;
+	top: 324px;
+	left: 330px;
+}
+
+.images__red-glasses
+{
+	position: absolute;
+	top: -86px;
+	left: 564px;
+}
+
+.images__red-toy
+{
+	position: absolute;
+	top: -124px;
+	left: -20px;
+}
+
+.images__red-keys
+{
+	position: absolute;
+	top: 338px;
+	left: 96px;
+}
+
+.images__red-keyboard
+{
+	position: absolute;
+	top: 520px;
+	left: 720px;
+}
+
+.images__red-monitor
+{
+	position: absolute;
+	top: 100px;
+	left: 564px;
+}
+
+.images__red-cup
+{
+	position: absolute;
+	top: 512px;
+	left: 522px;
+}
+
+.images__red-bag
+{
+	position: absolute;
+	top: -222px;
+	left: -20px;
+}
+
+.images__red-food
+{
+	position: absolute;
+	top: 340px;
+	left: -20px;
+}

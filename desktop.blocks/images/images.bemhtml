@@ -1,0 +1,17 @@
+block('images')(
+	content() (
+		function() {
+			var content = [];
+			this.ctx.images.forEach(function(item){
+				content.push({
+					elem: item.class,
+					tag: 'img',
+					attrs: { src: item.url }
+				});
+			});
+            content.push(' '); 
+			return content
+		}
+	)
+)
+

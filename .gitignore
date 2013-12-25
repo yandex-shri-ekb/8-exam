@@ -1,0 +1,7 @@
+libs/
+node_modules/
+.DS_Store
+.idea
+.project
+.svn
+.bem/cache/

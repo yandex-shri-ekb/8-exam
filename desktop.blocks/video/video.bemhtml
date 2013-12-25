@@ -1,0 +1,22 @@
+block('video')(
+
+	js() (true),
+
+	content() (
+		function() {
+			return { 
+				elem: 'video-wrapper',
+				content: {
+					elem: 'iframe', 
+					tag: 'iframe',
+					attrs: {
+						src : this.ctx.src,
+						width: this.ctx.width,
+						height: this.ctx.height
+					}		
+				}
+			};
+		}
+	)
+)
+

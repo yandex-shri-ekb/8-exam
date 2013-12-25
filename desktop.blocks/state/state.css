@@ -1,0 +1,32 @@
+.state
+{
+	display: inline-block;
+	border: none;
+	width: 82px;
+	height: 70px;
+	background: url('icons-active.png') no-repeat;
+	cursor: pointer;
+}
+
+.state_active
+{
+	height: 65px;
+	border-bottom: 4px solid rgba(0,0,0,0);
+	background: url('icons.png') no-repeat;
+}
+
+.state_color_yellow
+{
+	background-position: left top;
+}
+
+.state_color_red
+{
+	margin: 0 17px;
+	background-position: center top;
+}
+
+.state_color_blue
+{
+	background-position: right top;
+}

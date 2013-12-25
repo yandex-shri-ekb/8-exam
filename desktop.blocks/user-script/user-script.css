@@ -1,0 +1,9 @@
+.user-script
+{
+	position: relative;
+	height: 492px;
+	border-bottom: 2px solid #000;
+	padding: 0 0 0 40px;
+	overflow: hidden;
+	background: url('user-script.png') 40px 248px no-repeat;
+}

@@ -1,0 +1,30 @@
+.person-center
+{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin: -113px 0 0 -109px;
+	width: 217px;
+	height: 226px;
+}
+
+.person-center_pers_yellow
+{
+	background: url('person-center.png') left top no-repeat;
+}
+
+.person-center_pers_red
+{
+	background: url('person-center.png') left center no-repeat;
+}
+
+.person-center_pers_blue
+{
+	background: url('person-center.png') left bottom no-repeat;
+}
+
+.person-center_visible
+{
+	display: block;
+}
+
