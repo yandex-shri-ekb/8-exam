@@ -223,9 +223,12 @@ img
 .rightcol
 {
     position: absolute;
-    left: 974px;
+    left: 972px;
     width: 713px;
+    height: 5387px;
     border-left: 2px solid #000;
+    background: #fff;
+    cursor: pointer;
 }
 
 .poststory

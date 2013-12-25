@@ -1,3 +1,5 @@
+var state = 1;
+
 $('.singlechar_1').click(function() {
     event.preventDefault();
     changeClasses('maxim');
@@ -59,3 +61,16 @@ function changeClasses(character) {
 	$(".story__step_three").html(story[n][2]);
 	$(".story__step_four").html(story[n][3]);
 }
+
+$('.rightcol').click(function() {
+	coordinate = $(window).width() - 714;
+	$('.rightcol').css("left", coordinate);
+	$('.leftcol').css('cursor','pointer');
+	$('.rightcol').css('cursor','default');
+});
+
+$('.leftcol').click(function() {
+	$('.rightcol').css("left", 972);
+	$('.rightcol').css('cursor','pointer');
+	$('.leftcol').css('cursor','default');
+});
