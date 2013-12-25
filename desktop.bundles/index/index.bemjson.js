@@ -3,10 +3,10 @@
     title: 'Александр Сердитов. ШРИ. Экзамен',
     favicon: 'favicon.ico',
     head: [
-        {elem: 'meta', attrs: {name: 'description', content: ''}},
-        {elem: 'css', url: '_index.css', ie: false},
-        {block: 'anygrid'},
-        {elem: 'js', url: '_index.js'}
+        { elem: 'meta', attrs: { name: 'description', content: '' } },
+        { elem: 'css', url: '_index.css', ie: false },
+        { block: 'anygrid' },
+        { elem: 'js', url: '_index.js' }
     ],
     content: [
         {
@@ -21,19 +21,19 @@
                             {
                                 elem: 'border',
                                 content: [
-                                    {block: 'header'},
-                                    {block: 'users', mods: {'pos': 'top' }},
-                                    {block: 'locomotive'},
+                                    { block: 'header' },
+                                    { block: 'users', mods: {'pos': 'top' } },
+                                    { block: 'locomotive' },
                                     {
                                         block: 'stories',
                                         content: [
-                                            {block: 'story_theme_yellow', mix: {block: 'story', mods: {'show': 'no'}}},
-                                            {block: 'story_theme_red', mix: {block: 'story', mods: {'show': 'no'}}},
-                                            {block: 'story_theme_blue', mix: {block: 'story', mods: {'show': 'no'}}}
+                                            { block: 'story_theme_yellow', mix: { block: 'story', mods: {'show': 'no' } } },
+                                            { block: 'story_theme_red', mix: { block: 'story', mods: {'show': 'no' } } },
+                                            { block: 'story_theme_blue', mix: { block: 'story', mods: {'show': 'no' } } }
                                         ]
                                    },
-                                    {block: 'users', mods: {'show_text': 'no', 'pos': 'bottom'}},
-                                    {block: 'footer'}
+                                    { block: 'users', mods: {'show_text': 'no', 'pos': 'bottom' } },
+                                    { block: 'footer' }
                                 ]
                            }
                         ]
@@ -41,7 +41,7 @@
                     {
                         block: 'atom-ledge',
                         content: [
-                            {elem: 'shadow'},
+                            { elem: 'shadow' },
                             {
                                 elem: 'content',
                                 content: [
@@ -49,7 +49,7 @@
                                         elem: 'help-icon',
                                         mix: {
                                             block: 'help-icon',
-                                            mods: {'active': 'no', 'type': 'quest'}
+                                            mods: {'active': 'no', 'type': 'quest' }
                                         }
                                     },
                                     {
@@ -65,12 +65,12 @@
                                                 elem: 'item',
                                                 content: 'Этого можно достигнуть за счёт индивидуальных изменений, не всегда заметных самому пользователю, но делающих страницу более интересной, более удобной для него.'
                                             },
-                                            {block: 'atom-logo'}
+                                            { block: 'atom-logo' }
                                         ]
                                     },
                                     {
                                         block: 'section',
-                                        mix: {'block': 'flex-section'},
+                                        mix: {'block': 'flex-section' },
                                         title: 'Презентация платформы «Атом» на конференции YaС 2013',
                                         content: [
                                             {
@@ -79,7 +79,7 @@
                                             },
                                             {
                                                 block: 'dialog',
-                                                content: {elem: 'content'}
+                                                content: { elem: 'content' }
                                             }
                                         ]
                                     },
@@ -88,7 +88,7 @@
                                         content: [
                                             {
                                                 block: 'info',
-                                                mods: {'theme': 'yellow', 'show': 'no'},
+                                                mods: {'theme': 'yellow', 'show': 'no' },
                                                 content: [
                                                     {
                                                         block: 'section',
@@ -150,7 +150,7 @@
                                             },
                                             {
                                                 block: 'info',
-                                                mods: {'theme': 'red', 'show': 'no'},
+                                                mods: {'theme': 'red', 'show': 'no' },
                                                 content: [
                                                     {
                                                         block: 'section',
@@ -212,7 +212,7 @@
                                             },
                                             {
                                                 block: 'info',
-                                                mods: {'theme': 'blue', 'show': 'no'},
+                                                mods: {'theme': 'blue', 'show': 'no' },
                                                 content: [
                                                     {
                                                         block: 'section',
@@ -275,7 +275,7 @@
                                             {
                                                 block: 'section',
                                                 title: 'Закрытое тестирование «Атома»',
-                                                mods: {'border': 'no'},
+                                                mods: {'border': 'no' },
                                                 content: [
                                                     {
                                                         elem: 'item',
