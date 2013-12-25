@@ -1,0 +1,9 @@
+.this-user
+{
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 954px;
+    height: 50%;
+    text-align: center;
+}

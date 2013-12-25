@@ -1,0 +1,67 @@
+
+.smal-person-button__grig
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background: url('/image/sprite2.png') no-repeat;
+    cursor: pointer;
+}
+
+.smal-person-button__grig_step_1.smal-person-button__grig_state_active
+{
+    margin: 0 10px;
+    width: 69px;
+    height: 74px;
+    background-position: -1441px -143px
+}
+
+.smal-person-button__grig_step_1
+{
+    width: 60px;
+    height: 60px;
+    background-position: -1981px -2px
+}
+
+.smal-person-button__grig_step_2.smal-person-button__grig_state_active
+{
+    width: 84px;
+    height: 84px;
+    background-position: -1607px -2px;
+}
+
+.smal-person-button__grig_step_2
+{
+    width: 70px;
+    height: 70px;
+    background-position: -1594px -157px
+}
+
+.smal-person-button__grig_step_3.smal-person-button__grig_state_active
+{
+    width: 94px;
+    height: 67px;
+    background-position: -1885px -2px
+}
+
+.smal-person-button__grig_step_3
+{
+    width: 80px;
+    height: 60px;
+    background-position: -659px -178px
+}
+
+.smal-person-button__grig_step_4.smal-person-button__grig_state_active
+{
+    width: 84px;
+    height: 74px;
+    background-position: -1269px -143px
+}
+
+.smal-person-button__grig_step_4
+{
+    width: 70px;
+    height: 65px;
+    background-position: -1735px -147px
+}

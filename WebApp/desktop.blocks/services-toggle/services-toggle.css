@@ -8,10 +8,18 @@
     overflow: hidden;
     width: 67px;
     height: 67px;
-    background: url('/image/sprite2.png') no-repeat -1858px -142px;
+    background: url('/image/sprite2.png') no-repeat -1885px -71px;
 }
 
 .services-toggle:hover
 {
-    background-position: -1789px -142px
+    background-position: -1807px -147px
+}
+
+.services-toggle_state_active{
+    background-position: -1876px -147px
+}
+
+.services-toggle_state_active:hover{
+    background-position: -1954px -71px
 }

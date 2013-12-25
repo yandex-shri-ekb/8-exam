@@ -1,0 +1,25 @@
+
+.max-history-bg__bg-3
+{
+    position: relative;
+    top: 130px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 1034px;
+    background: url('/image/y2.png') 0 0 no-repeat;
+}
+
+.max-history-bg__bg-3:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 1034px;
+    background: url('/image/y1.png') 0 0 no-repeat;
+    content: '';
+}

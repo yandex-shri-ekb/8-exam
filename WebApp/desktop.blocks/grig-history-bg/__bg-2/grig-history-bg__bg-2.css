@@ -1,0 +1,24 @@
+.grig-history-bg__bg-2
+{
+    position: relative;
+    top: 31px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 777px;
+    background: url('/image/b2.png') -974px 0 no-repeat
+}
+
+.grig-history-bg__bg-2:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 777px;
+    background: url('/image/b1.png') -974px 0 no-repeat;
+    content: '';
+}

@@ -25,14 +25,21 @@
     overflow: hidden;
     width: 67px;
     height: 67px;
-    background: url('/image/sprite2.png') no-repeat -1858px -142px;
+    background: url('/image/sprite2.png') no-repeat -1885px -71px;
 }
 
 .services-toggle:hover
 {
-    background-position: -1789px -142px
+    background-position: -1807px -147px
 }
 
+.services-toggle_state_active{
+    background-position: -1876px -147px
+}
+
+.services-toggle_state_active:hover{
+    background-position: -1954px -71px
+}
 /* ../../desktop.blocks/services-toggle/services-toggle.css end */
 /* ../../desktop.blocks/history/history.css begin */
 
@@ -57,9 +64,6 @@
 {
     background: #ff8284;
 }
-
-
-
 /* ../../desktop.blocks/history/history.css end */
 /* ../../desktop.blocks/head-history/head-history.css begin */
 .head-history
@@ -516,7 +520,7 @@
     display: inline-block;
     overflow: hidden;
     width: 858px;
-    height: 786px;
+    height: 756px;
     background: url('/image/y2.png') 0 -2170px no-repeat;
 }
 
@@ -528,7 +532,7 @@
     display: inline-block;
     overflow: hidden;
     width: 858px;
-    height: 786px;
+    height: 756px;
     background: url('/image/y1.png') 0 -2170px no-repeat;
     content: '';
 }
@@ -584,6 +588,15 @@
     height: 3330px;
 }
 
+.history-alex .step2
+{
+    top: 890px;
+}
+
+.history-alex .step4
+{
+    top: 2508px
+}
 /* ../../desktop.blocks/history-alex/history-alex.css end */
 /* ../../desktop.blocks/alex-history-bg/alex-history-bg.css begin */
 .alex-history-bg
@@ -740,30 +753,133 @@
 /* ../../desktop.blocks/grig-history-bg/__bg-1/grig-history-bg__bg-1.css begin */
 .grig-history-bg__bg-1
 {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/b2.png') -860px -1544px no-repeat
+}
+
+.grig-history-bg__bg-1:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/b1.png') -860px -1544px no-repeat;
+    content: '';
 }
 
 /* ../../desktop.blocks/grig-history-bg/__bg-1/grig-history-bg__bg-1.css end */
 /* ../../desktop.blocks/grig-history-bg/__bg-2/grig-history-bg__bg-2.css begin */
 .grig-history-bg__bg-2
 {
+    position: relative;
+    top: 31px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 777px;
+    background: url('/image/b2.png') -974px 0 no-repeat
+}
+
+.grig-history-bg__bg-2:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 777px;
+    background: url('/image/b1.png') -974px 0 no-repeat;
+    content: '';
 }
 
 /* ../../desktop.blocks/grig-history-bg/__bg-2/grig-history-bg__bg-2.css end */
 /* ../../desktop.blocks/grig-history-bg/__bg-3/grig-history-bg__bg-3.css begin */
 .grig-history-bg__bg-3
 {
+    position: relative;
+    top: 18px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 763px;
+    background: url('/image/b2.png') -974px -779px no-repeat;
+}
+
+.grig-history-bg__bg-3:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 763px;
+    background: url('/image/b1.png') -974px -779px no-repeat;
+    content: '';
 }
 
 /* ../../desktop.blocks/grig-history-bg/__bg-3/grig-history-bg__bg-3.css end */
 /* ../../desktop.blocks/grig-history-bg/__bg-4/grig-history-bg__bg-4.css begin */
 .grig-history-bg__bg-4
 {
+    position: relative;
+    top: -100px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 1143px;
+    background: url('/image/b2.png') 0 0 no-repeat;
+}
+
+.grig-history-bg__bg-4:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 1143px;
+    background: url('/image/b1.png') 0 0 no-repeat;
+    content: '';
 }
 
 /* ../../desktop.blocks/grig-history-bg/__bg-4/grig-history-bg__bg-4.css end */
 /* ../../desktop.blocks/grig-history-bg/__bg-5/grig-history-bg__bg-5.css begin */
 .grig-history-bg__bg-5
 {
+    position: relative;
+    top: -90px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 76px;
+    width: 858px;
+    height: 548px;
+    background: url('/image/b2.png') 0 -1145px no-repeat
+}
+
+.grig-history-bg__bg-5:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 858px;
+    height: 548px;
+    background: url('/image/b1.png') 0 -1145px no-repeat;
+    content: '';
 }
 
 /* ../../desktop.blocks/grig-history-bg/__bg-5/grig-history-bg__bg-5.css end */
@@ -780,7 +896,7 @@
     cursor: pointer;
 }
 
-.select-max.js-person_state_active
+.select-max_state_active
 {
     margin: 62px -18px 0 0;
     width: 174px;
@@ -801,7 +917,7 @@
     cursor: pointer;
 }
 
-.select-alex.js-person_state_active
+.select-alex_state_active
 {
     margin: 62px -18px 0 0;
     width: 174px;
@@ -822,7 +938,7 @@
     cursor: pointer;
 }
 
-.select-grig.js-person_state_active
+.select-grig_state_active
 {
     margin: 62px -18px 0 0;
     width: 174px;
@@ -864,32 +980,15 @@
 /* ../../desktop.blocks/this-user/this-user.css begin */
 .this-user
 {
-    height: 50%;
     position: fixed;
-    width: 100%;
-    background: red;
     top: 0;
+    display: none;
+    width: 954px;
+    height: 50%;
+    text-align: center;
 }
 
 /* ../../desktop.blocks/this-user/this-user.css end */
-/* ../../desktop.blocks/this-user/__max/this-user__max.css begin */
-.this-user__max
-{
-}
-
-/* ../../desktop.blocks/this-user/__max/this-user__max.css end */
-/* ../../desktop.blocks/this-user/__alex/this-user__alex.css begin */
-.this-user__alex
-{
-}
-
-/* ../../desktop.blocks/this-user/__alex/this-user__alex.css end */
-/* ../../desktop.blocks/this-user/__grig/this-user__grig.css begin */
-.this-user__grig
-{
-}
-
-/* ../../desktop.blocks/this-user/__grig/this-user__grig.css end */
 /* ../../desktop.blocks/this-user/__person/this-user__person.css begin */
 .this-user__person
 {
@@ -926,12 +1025,247 @@
 
 
 /* ../../desktop.blocks/this-user/__person/this-user__person.css end */
+/* ../../desktop.blocks/this-user-sel/this-user-sel.css begin */
+.this-user-sel
+{
+    display: inline-block;
+    margin-top: 36px;
+    position: relative;
+}
+
+/* ../../desktop.blocks/this-user-sel/this-user-sel.css end */
+/* ../../desktop.blocks/smal-person-button/smal-person-button.css begin */
+.smal-person-button
+{
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* ../../desktop.blocks/smal-person-button/smal-person-button.css end */
+/* ../../desktop.blocks/smal-person-button/__max/smal-person-button__max.css begin */
+
+.smal-person-button__max
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background: url('/image/sprite2.png') no-repeat;
+    cursor: pointer;
+}
+
+.smal-person-button__max_step_1.smal-person-button__max_state_active
+{
+    width: 79px;
+    height: 79px;
+    background-position: -1188px -143px
+}
+
+.smal-person-button__max_step_1
+{
+    width: 65px;
+    height: 65px;
+    background-position: -1945px -140px
+}
+
+.smal-person-button__max_step_2.smal-person-button__max_state_active
+{
+    width: 84px;
+    height: 74px;
+    background-position: -1355px -143px
+}
+
+.smal-person-button__max_step_2
+{
+    width: 70px;
+    height: 60px;
+    background-position: -982px -178px
+}
+
+.smal-person-button__max_step_3.smal-person-button__max_state_active
+{
+    margin-top: -6px;
+    width: 94px;
+    height: 72px;
+    background-position: -1789px -2px;
+}
+
+.smal-person-button__max_step_3
+{
+    width: 80px;
+    height: 65px;
+    background-position: -1512px -142px;
+}
+
+.smal-person-button__max_step_4.smal-person-button__max_state_active
+{
+    width: 89px;
+    height: 69px;
+    background-position: -1789px -76px
+}
+
+.smal-person-button__max_step_4
+{
+    width: 75px;
+    height: 60px;
+    background-position: -905px -178px
+}
+
+/* ../../desktop.blocks/smal-person-button/__max/smal-person-button__max.css end */
+/* ../../desktop.blocks/smal-person-button/__alex/smal-person-button__alex.css begin */
+
+.smal-person-button__alex
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background: url('/image/sprite2.png') no-repeat;
+    cursor: pointer;
+}
+
+.smal-person-button__alex_step_1.smal-person-button__alex_state_active
+{
+
+    width: 94px;
+    height: 74px;
+    background-position: -1693px -2px
+
+}
+
+.smal-person-button__alex_step_1
+{
+    width: 80px;
+    height: 60px;
+    background-position: -741px -178px
+}
+
+.smal-person-button__alex_step_2.smal-person-button__alex_state_active
+{
+
+    width: 84px;
+    height: 67px;
+    background-position: -1607px -88px
+}
+
+.smal-person-button__alex_step_2
+{
+    width: 70px;
+    height: 60px;
+    background-position: -1054px -178px
+}
+
+.smal-person-button__alex_step_3.smal-person-button__alex_state_active
+{
+
+    width: 94px;
+    height: 67px;
+    background-position: -1693px -78px
+}
+
+.smal-person-button__alex_step_3
+{
+    width: 80px;
+    height: 60px;
+    background-position: -823px -178px
+}
+
+.smal-person-button__alex_step_4.smal-person-button__alex_state_active
+{
+
+    width: 67px;
+    height: 69px;
+    background-position: -1666px -157px
+}
+
+.smal-person-button__alex_step_4
+{
+    width: 60px;
+    height: 60px;
+    background-position: -1126px -178px
+}
+
+/* ../../desktop.blocks/smal-person-button/__alex/smal-person-button__alex.css end */
+/* ../../desktop.blocks/smal-person-button/__grig/smal-person-button__grig.css begin */
+
+.smal-person-button__grig
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background: url('/image/sprite2.png') no-repeat;
+    cursor: pointer;
+}
+
+.smal-person-button__grig_step_1.smal-person-button__grig_state_active
+{
+    margin: 0 10px;
+    width: 69px;
+    height: 74px;
+    background-position: -1441px -143px
+}
+
+.smal-person-button__grig_step_1
+{
+    width: 60px;
+    height: 60px;
+    background-position: -1981px -2px
+}
+
+.smal-person-button__grig_step_2.smal-person-button__grig_state_active
+{
+    width: 84px;
+    height: 84px;
+    background-position: -1607px -2px;
+}
+
+.smal-person-button__grig_step_2
+{
+    width: 70px;
+    height: 70px;
+    background-position: -1594px -157px
+}
+
+.smal-person-button__grig_step_3.smal-person-button__grig_state_active
+{
+    width: 94px;
+    height: 67px;
+    background-position: -1885px -2px
+}
+
+.smal-person-button__grig_step_3
+{
+    width: 80px;
+    height: 60px;
+    background-position: -659px -178px
+}
+
+.smal-person-button__grig_step_4.smal-person-button__grig_state_active
+{
+    width: 84px;
+    height: 74px;
+    background-position: -1269px -143px
+}
+
+.smal-person-button__grig_step_4
+{
+    width: 70px;
+    height: 65px;
+    background-position: -1735px -147px
+}
+
+/* ../../desktop.blocks/smal-person-button/__grig/smal-person-button__grig.css end */
 /* ../../desktop.blocks/used-services/used-services.css begin */
 .used-services
 {
     position: absolute;
     top: 0;
     margin-left: 972px;
+    width: 100%;
     outline: 18px rgba(0, 0, 0, 0.10) solid;
     border-left: 2px #000 solid;
     background: #fff;
@@ -1011,6 +1345,12 @@
 }
 
 /* ../../desktop.blocks/YaC-video/YaC-video.css end */
+/* ../../desktop.blocks/max-used-services/max-used-services.css begin */
+.max-used-services
+{
+}
+
+/* ../../desktop.blocks/max-used-services/max-used-services.css end */
 /* ../../desktop.blocks/us-step1/us-step1.css begin */
 .us-step1
 {
@@ -1045,10 +1385,43 @@
 }
 
 /* ../../desktop.blocks/us-step4/us-step4.css end */
+/* ../../desktop.blocks/alex-used-services/alex-used-services.css begin */
+.alex-used-services
+{
+}
+
+/* ../../desktop.blocks/alex-used-services/alex-used-services.css end */
+/* ../../desktop.blocks/grig-used-services/grig-used-services.css begin */
+.grig-used-services
+{
+
+}
+
+.grig-used-services .us-step1
+{
+    height: 723px;
+}
+
+.grig-used-services .us-step2
+{
+    height: 684px;
+}
+
+.grig-used-services .us-step3
+{
+    height: 735px;
+}
+
+.grig-used-services .us-step4
+{
+    height: 731px;
+}
+
+/* ../../desktop.blocks/grig-used-services/grig-used-services.css end */
 /* ../../desktop.blocks/closed-testing/closed-testing.css begin */
 .closed-testing
 {
-    height: 690px;
+    height: 800px;
     border-bottom: 0;
 }
 
@@ -1059,14 +1432,13 @@
     position: absolute;
     top: 0;
     left: 0;
+    display: none;
     margin: 0;
     padding: 0;
     width: 100%;
     height: 1100%;
-    background-image: linear-gradient(-90deg, transparent 0px, transparent 18px, rgba(0, 0, 0, .1) 18px, rgba(0, 0, 0, .1) 78px);
-    background-position: -42px 0;
+    background: linear-gradient(-90deg, transparent 0px, transparent 18px, rgba(0, 0, 0, .1) 18px, rgba(0, 0, 0, .1) 78px) -42px 0;
     background-size: 78px 78px;
-
 }
 
 /* ../../desktop.blocks/hack/hack.css end */

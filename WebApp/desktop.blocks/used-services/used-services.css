@@ -3,6 +3,7 @@
     position: absolute;
     top: 0;
     margin-left: 972px;
+    width: 100%;
     outline: 18px rgba(0, 0, 0, 0.10) solid;
     border-left: 2px #000 solid;
     background: #fff;

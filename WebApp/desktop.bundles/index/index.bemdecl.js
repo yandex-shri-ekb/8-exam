@@ -260,6 +260,17 @@ exports.blocks = [
         "name": "this-user",
         "elems": [
             {
+                "name": "person"
+            }
+        ]
+    },
+    {
+        "name": "this-user-sel"
+    },
+    {
+        "name": "smal-person-button",
+        "elems": [
+            {
                 "name": "max"
             },
             {
@@ -267,9 +278,6 @@ exports.blocks = [
             },
             {
                 "name": "grig"
-            },
-            {
-                "name": "person"
             }
         ]
     },

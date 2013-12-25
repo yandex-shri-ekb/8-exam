@@ -1,0 +1,33 @@
+.this-user__person
+{
+    position: absolute;
+    bottom: -107px;
+    left: 369px;
+    display: inline-block;
+    overflow: hidden;
+    width: 217px;
+    height: 217px;
+    background: url('/image/sprite2.png') no-repeat;
+
+}
+
+.this-user__person:hover
+{
+    opacity: .6;
+}
+
+.this-user__person_color_red
+{
+    background-position: -440px -2px
+}
+
+.this-user__person_color_yellow
+{
+    background-position: -2px -2px
+}
+
+.this-user__person_color_blue
+{
+    background-position: -221px -2px
+}
+

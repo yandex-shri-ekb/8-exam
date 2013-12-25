@@ -637,17 +637,7 @@
                                                     elem: 'bg-4'
                                                 },
                                                 {
-                                                    elem: 'bg-5',
-                                                    mix: [
-                                                        {
-                                                            block: 'grid',
-                                                            mods: {
-                                                                coll: "2",
-                                                                size: "6"
-                                                            }
-                                                        }
-
-                                                    ]
+                                                    elem: 'bg-5'
                                                 }
                                             ]
                                         },
@@ -987,14 +977,38 @@
                             block: 'this-user',
                             content: [
                                 {
-                                    elem: 'max'
-                                },
-                                {
-                                    elem: 'alex'
-                                },
-                                {
-                                    elem: 'grig'
-                                },
+                                    block: 'this-user-sel',
+
+                                    content: [
+                                        {
+                                            block: 'smal-person-button',
+                                            content: [
+                                                {
+                                                    elem: 'max'
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            block: 'smal-person-button',
+                                            content: [
+                                                {
+                                                    elem: 'alex'
+                                                }
+                                            ]
+
+                                        },
+                                        {
+                                            block: 'smal-person-button',
+                                            content: [
+                                                {
+                                                    elem: 'grig'
+                                                }
+                                            ]
+
+                                        }
+                                    ]
+                                }
+                                ,
                                 {
                                     elem: 'person'
                                 }

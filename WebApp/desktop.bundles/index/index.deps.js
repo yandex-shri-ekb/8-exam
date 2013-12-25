@@ -401,19 +401,25 @@ exports.deps = [
     },
     {
         "block": "this-user",
+        "elem": "person"
+    },
+    {
+        "block": "this-user-sel"
+    },
+    {
+        "block": "smal-person-button"
+    },
+    {
+        "block": "smal-person-button",
         "elem": "max"
     },
     {
-        "block": "this-user",
+        "block": "smal-person-button",
         "elem": "alex"
     },
     {
-        "block": "this-user",
+        "block": "smal-person-button",
         "elem": "grig"
-    },
-    {
-        "block": "this-user",
-        "elem": "person"
     },
     {
         "block": "used-services"
