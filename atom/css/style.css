@@ -1,47 +1,59 @@
-html, body {
-    margin: 0;
-    padding: 0;
+html, body
+{
     width: 100%;
     min-width: 990px;
+
+    margin: 0;
+    padding: 0;
 }
 
-    .b-wrap {
+    .b-wrap
+    {
         position: relative;
+
         width: 952px;
         margin: 18px;
+
         border: 2px solid #333;
     }
 
         .b-sect
         {
-            width: 100%;
             overflow: visible;
+
+            width: 100%;
         }
 
         .b-sect_num_1
         {
-            height: 1385px;
             position: relative;
+
+            height: 1385px;
         }
 
             .b-sect_num_1__bg-image-1
             {
                 position: absolute;
-                width: 972px;
-                height: 570px;
                 top: -20px;
                 left: -20px;
+
+                width: 972px;
+                height: 570px;
+
                 background: url(../blocks/b-sect/bg-image-1/b-sect_num_1__bg-image-1.png) no-repeat;
             }
 
             .b-sect_num_1__logo
             {
-                display: block;
                 position: absolute;
                 top: 0;
                 left: 406px;
+
+                display: block;
+
                 width: 138px;
                 height: 90px;
+
                 background: url(../blocks/b-sect/logo/b-sect_num_1__logo.png) no-repeat;
             }
 
@@ -50,6 +62,7 @@ html, body {
                 position: absolute;
                 top: 427px;
                 left: 94px;
+
                 width: 762px;
             }
 
@@ -57,8 +70,11 @@ html, body {
                 {
                     margin: 0;
                     padding: 0;
-                    font: 400 46px/48px TextbookNew, Arial, sans-serif;
+
                     text-align: center;
+
+                    font: 400 46px/48px TextbookNew, Arial, sans-serif;
+
                     color: #000;
                 }
 
@@ -67,11 +83,13 @@ html, body {
                 position: absolute;
                 top: 589px;
                 left: 0;
+
                 width: 952px;
                 height: 392px;
-                background: #fff;
+
                 border-top: 2px solid #000;
                 border-bottom: 2px solid #000;
+                background: #fff;
             }
 
                 .b-grid-wrap
@@ -84,7 +102,9 @@ html, body {
                     {
                         margin: 0;
                         padding: 0;
+
                         font: 400 16px/24px Arial, sans-serif;
+
                         color: #000;
                     }
 
@@ -92,14 +112,17 @@ html, body {
                     {
                         width: 138px;
                         height: 78px;
-                        background: #009;
+
                         cursor: pointer;
+
+                        background: #009;
                     }
 
                         .b-video-button__triangle
                         {
                             width: 138px;
                             height: 80px;
+
                             background: url(../blocks/b-video-button/triangle/b-video-button__triangle.png) no-repeat;
                         }
 
@@ -107,7 +130,9 @@ html, body {
                     {
                         margin: 0;
                         padding: 0;
+
                         font: 400 16px/24px Arial, sans-serif;
+
                         color: #000;
                     }
 
@@ -116,16 +141,18 @@ html, body {
                 position: absolute;
                 top: 977px;
                 left: 0;
-                width: 952px;
 
+                width: 952px;
             }
 
                 .b-set-user__yel
                 {
                     width: 138px;
                     height: 138px;
-                    background: url(../blocks/b-set-user/yel/b-set-user__yel.png) no-repeat;
+
                     cursor: pointer;
+
+                    background: url(../blocks/b-set-user/yel/b-set-user__yel.png) no-repeat;
                 }
 
                 .b-set-user__yel_act_yes
@@ -133,95 +160,127 @@ html, body {
                     position: relative;
                     top: -18px;
                     left: -18px;
+
                     width: 174px;
                     height: 174px;
                     margin-bottom: -18px;
-                    background: url(../blocks/b-set-user/yel/_act/b-set-user__yel_act_yes.png) no-repeat;
+
                     cursor: default;
+
+                    background: url(../blocks/b-set-user/yel/_act/b-set-user__yel_act_yes.png) no-repeat;
                 }
 
                 .b-set-user__red
                 {
                     position: relative;
                     top: -1px;
+
                     width: 138px;
                     height: 139px;
-                    background: url(../blocks/b-set-user/red/b-set-user__red.png) no-repeat;
+
                     cursor: pointer;
+
+                    background: url(../blocks/b-set-user/red/b-set-user__red.png) no-repeat;
                 }
 
                 .b-set-user__red_act_yes
                 {
                     top: -18px;
                     left: -18px;
+
                     width: 174px;
                     height: 174px;
                     margin-bottom: -18px;
-                    background: url(../blocks/b-set-user/red/_act/b-set-user__red_act_yes.png) no-repeat;
+
                     cursor: default;
+
+                    background: url(../blocks/b-set-user/red/_act/b-set-user__red_act_yes.png) no-repeat;
                 }
 
                 .b-set-user__blu
                 {
                     position: relative;
                     top: -1px;
+
                     width: 138px;
                     height: 139px;
-                    background: url(../blocks/b-set-user/blu/b-set-user__blu.png) no-repeat;
+
                     cursor: pointer;
+
+                    background: url(../blocks/b-set-user/blu/b-set-user__blu.png) no-repeat;
                 }
 
                 .b-set-user__blu_act_yes
                 {
                     top: -18px;
                     left: -18px;
+
                     width: 174px;
                     height: 174px;
                     margin-bottom: -18px;
-                    background: url(../blocks/b-set-user/blu/_act/b-set-user__blu_act_yes.png) no-repeat;
+
                     cursor: default;
+
+                    background: url(../blocks/b-set-user/blu/_act/b-set-user__blu_act_yes.png) no-repeat;
                 }
 
                 .b-set-user__name
                 {
-                    display: block;
                     position: relative;
                     left: -5px;
+
+                    display: block;
+
                     width: 148px;
-                    text-align: center;
                     margin: 0;
                     padding: 0;
+
+                    text-align: center;
+
                     font: 700 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-set-user-desc__y
                 {
                     display: none;
+
                     margin: 0;
                     padding: 0;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: center;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-set-user-desc__r
                 {
                     display: none;
+
                     margin: 0;
                     padding: 0;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: center;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-set-user-desc__b
                 {
                     display: none;
+
                     margin: 0;
                     padding: 0;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: center;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
@@ -245,11 +304,6 @@ html, body {
             height: 820px;
         }
 
-    .b-sect_num_3
-    {
-
-    }
-
         .b-last-area
         {
             width: 918px;
@@ -266,8 +320,11 @@ html, body {
             {
                 margin: 0 0 20px;
                 padding: 0;
-                font: 400 16px/24px Arial, sans-serif;
+
                 text-align: left;
+
+                font: 400 16px/24px Arial, sans-serif;
+
                 color: #000;
             }
 
@@ -275,6 +332,7 @@ html, body {
             {
                 width: 102px;
                 height: 102px;
+
                 background: url(../blocks/b-atom-logo/b-atom-logo.png) no-repeat;
             }
 
@@ -287,39 +345,50 @@ html, body {
             {
                 margin: 0;
                 padding: 0;
-                font: 400 16px/24px Arial, sans-serif;
+
                 text-align: left;
-                color: #000;
                 text-decoration: none;
+
+                font: 400 16px/24px Arial, sans-serif;
+
+                color: #000;
             }
 
             .b-copyrights__p
             {
                 margin: 0;
                 padding: 0;
-                font: 400 16px/24px Arial, sans-serif;
-                color: #000;
+
                 text-align: right;
+
+                font: 400 16px/24px Arial, sans-serif;
+
+                color: #000;
             }
 
     .b-show-story
     {
-        width: 974px;
-        height: 3278px;
         position: absolute;
         top: 1380px;
         left: 0;
+
         overflow: hidden;
+
+        width: 974px;
+        height: 3278px;
     }
 
         .b-story-y
         {
-            display: none;
-            width: 918px;
-            height: 3278px;
             position: absolute;
             top: 0;
             left: -1200px;
+
+            display: none;
+
+            width: 918px;
+            height: 3278px;
+
             background: url(../blocks/b-story-y/b-story-y.png) 70px 1px no-repeat;
         }
 
@@ -327,9 +396,12 @@ html, body {
             {
                 margin: 0;
                 padding: 0;
-                font: 400 16px/24px Arial, sans-serif;
-                color: #000;
+
                 text-align: center;
+
+                font: 400 16px/24px Arial, sans-serif;
+
+                color: #000;
             }
 
             .b-story-y__step_num_1
@@ -346,6 +418,7 @@ html, body {
             {
                 display: block;
                 float: right;
+
                 margin-top: 100px;
             }
 
@@ -359,15 +432,11 @@ html, body {
                 margin-top: 100px;
             }
 
-            .b-story-y__polaroid
-            {
-
-            }
-
             .b-story-y__polaroid_num_1
             {
                 display: block;
                 float: right;
+
                 margin: 400px 30px 0 0;
             }
 
@@ -400,6 +469,7 @@ html, body {
             {
                 display: block;
                 float: right;
+
                 margin: 375px -3px 0 0;
             }
 
@@ -460,11 +530,14 @@ html, body {
 
         .b-story-r
         {
-            width: 918px;
             position: absolute;
-            display: none;
             top: 0;
             left: -1200px;
+
+            display: none;
+
+            width: 918px;
+
             background: url(../blocks/b-story-r/b-story-r.png) 85px -9px no-repeat;
         }
 
@@ -472,9 +545,12 @@ html, body {
             {
                 margin: 0;
                 padding: 0;
-                font: 400 16px/24px Arial, sans-serif;
-                color: #000;
+
                 text-align: center;
+
+                font: 400 16px/24px Arial, sans-serif;
+
+                color: #000;
             }
 
             .b-story-r__step_num_1
@@ -504,9 +580,10 @@ html, body {
 
             .b-story-r__bear
             {
-                margin: 700px -25px 0 0;
                 display: block;
                 float: right;
+
+                margin: 700px -25px 0 0;
             }
 
             .b-story-r__step_num_2
@@ -526,9 +603,10 @@ html, body {
 
             .b-story-r__tamagotchi
             {
-                margin-top: -10px;
                 display: block;
                 float: right;
+
+                margin-top: -10px;
             }
 
             .b-story-r__glasses
@@ -558,9 +636,10 @@ html, body {
 
             .b-story-r__bags
             {
-                margin-top: 10px;
                 display: block;
                 float: right;
+
+                margin-top: 10px;
             }
 
             .b-story-r__cup
@@ -580,9 +659,10 @@ html, body {
 
             .b-story-r__fish
             {
-                margin: 30px -60px 0 0;
                 display: block;
                 float: right;
+
+                margin: 30px -60px 0 0;
             }
 
             .b-story-r__milk
@@ -602,9 +682,10 @@ html, body {
 
             .b-story-r__bottle
             {
-                margin: 80px 18px 60px 0;
                 display: block;
                 float: right;
+
+                margin: 80px 18px 60px 0;
             }
 
             .b-story-r__grapes
@@ -614,11 +695,14 @@ html, body {
 
         .b-story-b
         {
-            width: 918px;
             position: absolute;
-            display: none;
             top: 0;
             left: -1200px;
+
+            display: none;
+
+            width: 918px;
+
             background: url(../blocks/b-story-b/b-story-b.png) 85px -19px no-repeat;
         }
 
@@ -626,9 +710,12 @@ html, body {
             {
                 margin: 0;
                 padding: 0;
-                font: 400 16px/24px Arial, sans-serif;
-                color: #000;
+
                 text-align: center;
+
+                font: 400 16px/24px Arial, sans-serif;
+
+                color: #000;
             }
 
             .b-story-b__step_num_1
@@ -638,9 +725,10 @@ html, body {
 
             .b-story-b__phone
             {
-                margin-top: 360px;
                 display: block;
                 float: right;
+
+                margin-top: 360px;
             }
 
             .b-story-b__pen
@@ -670,9 +758,10 @@ html, body {
 
             .b-story-b__notebook2
             {
-                margin-top: 40px;
                 display: block;
                 float: right;
+
+                margin-top: 40px;
             }
 
             .b-story-b__ipad
@@ -758,24 +847,29 @@ html, body {
     .b-sidebar
     {
         position: absolute;
-        overflow: hidden;
+        z-index: 2;
         top: 0;
         right: 0;
         bottom: 0;
         left: 954px;
+
+        overflow: hidden;
+
         height: 100%;
+
         cursor: pointer;
-        z-index: 2;
     }
 
         .b-sidebar-inner
         {
             position: relative;
-            height: 100%;
-            width: 100%;
-            min-width: 838px;
             top: 0;
             right: -18px;
+
+            width: 100%;
+            min-width: 838px;
+            height: 100%;
+
             border-left: 2px solid #000;
             background: #fff;
             box-shadow: -18px 0 0 rgba(0,0,0,.1);
@@ -785,20 +879,25 @@ html, body {
             {
                 margin: 0;
                 padding: 30px 0 30px 34px;
-                font: 400 48px/30px Arial, sans-serif;
+
                 text-align: left;
+
+                font: 400 48px/30px Arial, sans-serif;
+
                 color: #000;
             }
 
             .b-side-section
             {
                 padding: 30px 0 30px 34px;
+
                 border-top: 2px solid #000;
             }
 
             .b-side-section-0
             {
                 padding: 30px 0 30px 34px;
+
                 border-top: 0;
             }
 
@@ -806,24 +905,32 @@ html, body {
                 {
                     margin: 0;
                     padding: 0 0 30px;
-                    font: 400 24px/30px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 24px/30px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-0__text
                 {
+                    width: 607px;
+
                     margin: 0;
                     padding: 0;
-                    width: 607px;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
             .b-side-section-1
             {
                 padding: 30px 0 30px 34px;
+
                 border-top: 0;
             }
 
@@ -831,166 +938,214 @@ html, body {
                 {
                     margin: 0;
                     padding: 0 0 30px;
-                    font: 400 24px/30px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 24px/30px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-1__text
                 {
+                    width: 607px;
+
                     margin: 0 0 30px 0;
                     padding: 0;
-                    width: 607px;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
             .b-side-section-2
             {
-                margin: 400px 0 30px;
-                border-top: 2px solid #000;
-                padding: 30px 0 30px 34px;
                 height: 708px;
+
+                margin: 400px 0 30px;
+                padding: 30px 0 30px 34px;
+
+                border-top: 2px solid #000;
             }
 
                 .b-side-section-2__header
                 {
                     margin: 0;
                     padding: 0 0 30px;
-                    font: 400 24px/30px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 24px/30px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-2__text
                 {
+                    width: 607px;
+
                     margin: 0 0 30px 0;
                     padding: 0;
-                    width: 607px;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-2__img
                 {
                     display: block;
+
                     margin: 0;
                     padding: 0;
                 }
 
             .b-side-section-3
             {
-                margin-bottom: 30px;
-                border-top: 2px solid #000;
-                padding: 30px 0 30px 34px;
                 height: 708px;
+
+                margin-bottom: 30px;
+                padding: 30px 0 30px 34px;
+
+                border-top: 2px solid #000;
             }
 
                 .b-side-section-3__header
                 {
                     margin: 0;
                     padding: 0 0 30px;
-                    font: 400 24px/30px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 24px/30px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-3__text
                 {
+                    width: 607px;
+
                     margin: 0 0 30px 0;
                     padding: 0;
-                    width: 607px;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-3__img
                 {
                     display: block;
-                    margin: 0;
-                    padding: 0;
+
                     width: 712px;
                     height: 470px;
+                    margin: 0;
+                    padding: 0;
                 }
 
             .b-side-section-4
             {
-                margin-bottom: 30px;
-                border-top: 2px solid #000;
-                padding: 30px 0 30px 34px;
                 height: 708px;
+
+                margin-bottom: 30px;
+                padding: 30px 0 30px 34px;
+
+                border-top: 2px solid #000;
             }
 
                 .b-side-section-4__header
                 {
                     margin: 0;
                     padding: 0 0 30px;
-                    font: 400 24px/30px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 24px/30px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-4__text
                 {
+                    width: 607px;
+
                     margin: 0 0 30px 0;
                     padding: 0;
-                    width: 607px;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-4__img
                 {
                     display: block;
-                    margin: 0;
-                    padding: 0;
+
                     width: 712px;
                     height: 470px;
+                    margin: 0;
+                    padding: 0;
                 }
 
             .b-side-section-5
             {
-                margin-bottom: 30px;
-                border-top: 2px solid #000;
-                padding: 30px 0 30px 34px;
                 height: 728px;
+
+                margin-bottom: 30px;
+                padding: 30px 0 30px 34px;
+
+                border-top: 2px solid #000;
             }
 
                 .b-side-section-5__header
                 {
                     margin: 0;
                     padding: 0 0 30px;
-                    font: 400 24px/30px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 24px/30px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-5__text
                 {
+                    width: 607px;
+
                     margin: 0 0 30px 0;
                     padding: 0;
-                    width: 607px;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-5__img
                 {
                     display: block;
-                    margin: 0;
-                    padding: 0;
+
                     width: 712px;
                     height: 470px;
+                    margin: 0;
+                    padding: 0;
                 }
 
             .b-side-section-6
             {
                 padding: 30px 0 30px 34px;
+
                 border-top: 0;
             }
 
@@ -998,45 +1153,57 @@ html, body {
                 {
                     margin: 0;
                     padding: 0 0 30px;
-                    font: 400 24px/30px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 24px/30px Arial, sans-serif;
+
                     color: #000;
                 }
 
                 .b-side-section-6__text
                 {
+                    width: 607px;
+
                     margin: 0 0 30px 0;
                     padding: 0;
-                    width: 607px;
-                    font: 400 16px/24px Arial, sans-serif;
+
                     text-align: left;
+
+                    font: 400 16px/24px Arial, sans-serif;
+
                     color: #000;
                 }
 
     .b-icons
     {
-        width: 382px;
-        height: 84px;
         position: fixed;
         top: -999px;
         left: 285px;
+
+        width: 382px;
+        height: 84px;
     }
 
         .b-icons__yel
         {
             float: left;
             overflow: hidden;
+
             width: 94px;
             height: 84px;
             margin-right: 50px;
+
             cursor: pointer;
+
             background: url(../blocks/b-icons/yel/b-icons__yel.png) no-repeat;
         }
 
             .b-icons__yel_active_on
             {
-                background: url(../blocks/b-icons/yel/_active/b-icons__yel_active_on.png) no-repeat;
                 cursor: default;
+
+                background: url(../blocks/b-icons/yel/_active/b-icons__yel_active_on.png) no-repeat;
             }
 
             .b-icons__yel_subsect-num_1
@@ -1063,17 +1230,21 @@ html, body {
         {
             float: left;
             overflow: hidden;
+
             width: 94px;
             height: 84px;
             margin-right: 50px;
+
             cursor: pointer;
+
             background: url(../blocks/b-icons/red/b-icons__red.png) no-repeat;
         }
 
             .b-icons__red_active_on
             {
-                background: url(../blocks/b-icons/red/_active/b-icons__red_active_on.png) no-repeat;
                 cursor: default;
+
+                background: url(../blocks/b-icons/red/_active/b-icons__red_active_on.png) no-repeat;
             }
 
             .b-icons__red_subsect-num_1
@@ -1100,16 +1271,20 @@ html, body {
         {
             float: left;
             overflow: hidden;
+
             width: 94px;
             height: 84px;
+
             cursor: pointer;
+
             background: url(../blocks/b-icons/blu/b-icons__blu.png) no-repeat;
         }
 
             .b-icons__blu_active_on
             {
-                background: url(../blocks/b-icons/blu/_active/b-icons__blu_active_on.png) no-repeat;
                 cursor: default;
+
+                background: url(../blocks/b-icons/blu/_active/b-icons__blu_active_on.png) no-repeat;
             }
 
             .b-icons__blu_subsect-num_1
@@ -1134,43 +1309,50 @@ html, body {
 
     .b-avatar
     {
-        width: 217px;
-        height: 217px;
         position: fixed;
         top: 9999px;
         left: 371px;
+
+        width: 217px;
+        height: 217px;
     }
 
     .b-avatar_usr_yel
     {
-        background: url(../blocks/b-avatar/_usr/b-avatar_usr_yel.png) no-repeat;
         border-radius: 18%;
+
+        background: url(../blocks/b-avatar/_usr/b-avatar_usr_yel.png) no-repeat;
     }
 
     .b-avatar_usr_red
     {
-        background: url(../blocks/b-avatar/_usr/b-avatar_usr_red.png) no-repeat;
         border-radius: 35%;
+
+        background: url(../blocks/b-avatar/_usr/b-avatar_usr_red.png) no-repeat;
     }
 
     .b-avatar_usr_blu
     {
-        background: url(../blocks/b-avatar/_usr/b-avatar_usr_blu.png) no-repeat;
         border-radius: 44%;
+
+        background: url(../blocks/b-avatar/_usr/b-avatar_usr_blu.png) no-repeat;
     }
 
     .b-helper
     {
         position: fixed;
         z-index: 4;
-        width: 56px;
-        height: 56px;
         top: 30px;
         right: 30px;
+
+        width: 56px;
+        height: 56px;
+
         cursor: pointer;
-        background: #fff;
+
         border: 2px solid #000;
         border-radius: 50%;
+        background: #fff;
         box-shadow: 7px 7px 0 rgba(0,0,0,.1);
     }
 
@@ -1184,6 +1366,7 @@ html, body {
             width: 26px;
             height: 30px;
             margin: 14px auto;
+
             background: url(../blocks/b-helper/icon/b-helper__icon.png) no-repeat;
         }
 
@@ -1195,35 +1378,42 @@ html, body {
     .b-substrate
     {
         position: absolute;
-        width: 100%;
-        height: 100%;
+        z-index: 1;
         top: 0;
         right: 0;
         bottom: 0;
         left: 0;
-        cursor: pointer;
+
         display: none;
-        z-index: 1;
+
+        width: 100%;
+        height: 100%;
+
+        cursor: pointer;
     }
 
     .b-modal
     {
-        display: none;
         position: fixed;
         z-index: 6;
-        left: 94px;
         top: 50%;
-        margin-top: -223px;
+        left: 94px;
+
+        display: none;
+
         width: 780px;
         height: 447px;
+        margin-top: -223px;
     }
 
         .b-modal-main
         {
             position: relative;
+
             width: 618px;
             height: 347px;
             padding: 41px 72px;
+
             background: #c0c0c0;
             box-shadow: 18px 18px 0 rgba(0,0,0,.1);
         }
@@ -1233,21 +1423,28 @@ html, body {
                 position: absolute;
                 top: 18px;
                 right: 18px;
+
                 width: 32px;
                 height: 32px;
+
+                cursor: pointer;
+
                 border: 2px solid #000;
                 background: #fff;
-                cursor: pointer;
             }
 
             .b-modal-main__close:after
             {
-                display: block;
                 position: relative;
                 z-index: 7;
-                content: '';
+
+                display: block;
+
                 width: 100%;
                 height: 100%;
+
+                content: '';
+
                 background: url(../blocks/b-modal/b-modal-main/close/b-modal-main__close.png) 50% 50% no-repeat;
             }
 
@@ -1256,6 +1453,7 @@ html, body {
             position: absolute;
             top: 0;
             left: 0;
+
             width: 100%;
             height: 100%;
         }
@@ -1271,6 +1469,7 @@ html, body {
                 position: absolute;
                 top: 0;
                 right: 0;
+
                 background: url(../blocks/b-modal/b-modal-shadow/b-modal-shadow__cor/_pos/b-modal-shadow__cor_pos_top-rig.png) no-repeat;
             }
 
@@ -1279,19 +1478,24 @@ html, body {
                 position: absolute;
                 bottom: 0;
                 left: 0;
+
                 background: url(../blocks/b-modal/b-modal-shadow/b-modal-shadow__cor/_pos/b-modal-shadow__cor_pos_bot-lef.png) no-repeat;
             }
 
     .b-modal-substrate
     {
-        display: none;
         position: fixed;
         z-index: 5;
         top: 0;
         left: 0;
+
+        display: none;
+
         width: 100%;
         height: 100%;
-        background: #000;
-        opacity: 0;
+
         cursor: pointer;
+
+        opacity: 0;
+        background: #000;
     }
