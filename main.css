@@ -1,0 +1,771 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+
+    font: 100%/1.125em Arial, Helvetica, sans-serif normal;
+
+    color: #000;
+    background: #fff;
+}
+
+.b-wrap
+{
+    position: relative;
+
+}
+
+.step-block
+{
+    position: relative;
+
+    width: 59.75em; 
+    min-height: 50em; /*800*/
+    margin: 0 0 0 1.125em; /*18px;*/
+
+    border-left: .125em solid #000;  /*2px*/
+    
+}
+
+.right-panel
+{
+    
+    position: absolute;
+    top: 0;
+    left: 60.875em;
+    z-index: 4;
+
+    min-width: 14.375em; /*230*/
+    height: 100%;
+
+    cursor: pointer;
+
+    background: #fff;
+    border-left: .125em solid #000;
+    box-shadow: -1.125em 0 rgba(122,122,122,.1);/*18*/
+}
+
+.right-panel__open
+{
+    left: 50em;
+    min-width: 16em;
+}
+
+.step-block__yellow
+{
+    background: #ffe05d;
+}
+
+.step-block__red
+{
+    background: #ff8282;
+}
+
+.step-block__blue
+{
+    background: #72c4f6;
+}
+
+
+.step-block-upside
+{
+    min-height: 85.625em; /*800*/
+    margin: 1.125em 0 0 1.125em;
+
+    border: .125em solid #000;
+    border-style: solid none none solid;
+    box-sizing: content-box;
+}
+
+.step-block-upside__yellow
+{
+    background: #ffe05d;
+}
+
+.right-panel__upside
+{
+    margin-top: -1.125em;
+    padding-top: 1.125em;
+}
+
+.step-block-upside-logo-motto
+{
+    position: relative;
+    height: 3.125em; /*50px*/
+    width: 8.625em; /*138px*/
+
+    margin: auto;
+
+    font: 1em/1em Arial, Helvetica, sans-serif;
+
+    background: #fff;
+    border-left: .125em solid #000; /*2px*/
+    border-right: .125em solid #000;
+}
+
+.step-block-upside-logo-link:after,
+.step-block-upside-logo-link:before
+{
+    position: absolute;
+    left: -.125em; /*2px;*/ 
+    top: 3.125em; /*50px;*/ 
+
+    width: 0; 
+    height: 0;
+
+    content: '';
+   
+    border: 4.4375em solid transparent;
+    border-top: 2.3125em solid #000;
+ 
+}
+
+.step-block-upside-logo-link:after
+{
+    top: 3em;   
+
+    border-top: 2.3125em solid #fff;
+}
+
+.step-block-upside-logo
+{
+    position: relative;
+    min-height: 36.8125em;
+
+    background: url(all/upsideBg.png) no-repeat;
+    text-align: center;
+}
+
+.step-block-upside-logo-link
+{
+    display: inline-block;
+
+    margin: 1em 0 0 0;     
+}
+
+.upside-logo-link-img
+{
+    border: none;
+}
+
+.step-block-upside-logo-catchword
+{
+    margin: 9.3em 0 0 2.4em;
+    padding: 0;
+
+    width: 19.05em; /*762px*/
+
+    font: bold 2.5em/1.1em Arial, Helvetica, sans-serif; /*1em=40px*/
+}
+
+.step-block-upside-content
+{
+    display: table-cell;
+
+    height: 24.875em; /*390px*/
+    width: 59.75em;
+
+    vertical-align: middle;
+
+    background: #fff;
+    border-top: .0625em solid #000;
+    border-bottom: .0625em solid #000;
+}
+
+.upsideContent-wrap
+{
+    float: left;
+
+    margin: 0 0 0 6em;
+
+    width: 28.125em; /*450px;*/
+
+    text-align: left;
+}
+
+.upsideContent-text
+{
+    font: bold 1em/1.5em Arial, Helvetica, sans-serif; 
+}
+
+.upside-content-wrapPopupVideo
+{
+    float: left;
+
+    margin: 0 0 0 6em;
+}
+
+.upside-content-popupVideo
+{
+    position: relative;
+
+    height: 5em; /*80px*/
+    width: 8.625em; /*138px*/
+
+    border: .125em solid #000;
+    border-radius: .25em; /*4px;*/
+}
+
+
+.upside-content-popupVideo__yellow
+{
+    background: #ffe05d;
+}
+
+.upside-content-popupVideo:after,
+.upside-content-popupVideo:before
+{
+    position: absolute;
+    left: 3.75em; /*60px;*/ 
+    top: 1.25em; /*50px;*/ 
+
+    width: 0; 
+    height: 0;
+
+    content: '';
+   
+    border: 1.25em solid transparent;
+    border-left: 1.375em solid #000;
+ 
+}
+
+.upside-content-popupVideo:after
+{
+    top: 1.5em;/*24px*/
+    left: 3.875em;/*62px*/
+    border: 1em solid transparent;
+    border-left: 1.125em solid #fff;
+}
+
+.upside-content-popupVideo-text
+{
+    display: inline-block;
+}
+
+.step-block-upside-navigation
+{
+    min-height: 24.0625em;
+
+    padding: 0 0 2.25em 0; 
+}
+
+.navigation
+{
+    display: inline-block;
+    
+    margin: 5em 0 0 10.875em;
+    padding: 0;
+}
+
+.navigation-Person
+{    
+    display: inline-block;
+    
+    margin: 0 6em 0 0;
+
+    height: 8.625em;
+    width: 8.625em;
+
+    list-style-type: none;
+
+    text-align: center;
+
+    border-radius: 4.375em;
+    border: .125em solid #000;    
+}
+
+.navigation-Person__active
+{
+    height: 11.75em;
+    width: 10.625em;
+
+
+    border-radius: 0;
+    border: none; 
+}
+
+.navigation-Person__secondPerson
+{
+    background: #ef4e52;
+}
+
+.navigation-Person__thirdPerson
+{
+    background: #333;
+}
+
+.navigation-Person-link
+{
+    display: inline-block;
+
+    height: 8.625em;
+    width: 8.625em;
+
+    font: bold 1em sans-serif;
+
+    color: #000;
+    text-decoration: none;    
+    vertical-align: middle;
+}
+
+.navigation-Person-title
+{
+    display: inline-block;
+
+    margin: 10em 0 0 0;    
+}
+
+.navigation-Person-title__active
+{
+    margin-top: 12em;
+}
+
+.navigation-Person-link__firstPerson
+{
+    
+    background: url(all/navIcons.png) -2.475em -75.8125em no-repeat;
+}
+
+.navigation-Person-link__firstPerson__active
+{
+    height: 10.875em; /*180px;*/
+    width: 11.125em; /*170px;*/
+
+    margin-top: -1.25em; /*-20px;*/
+
+    background: url(all/navIcons.png) -1.05em -41.9em no-repeat;
+}
+
+.navigation-Person-link__secondPerson
+{
+    
+    background: url(all/navIcons.png) -2.475em -85.175em no-repeat;
+}
+
+.navigation-Person-link__thirdPerson
+{
+    
+    background: url(all/navIcons.png) -2.475em -94.45em no-repeat;
+}
+
+.upside-navigation-description
+{
+    margin: 1em 0 0 0;
+
+    width: 18.375em;
+}
+
+.upside-navigation-description__yellow
+{
+    margin-left: 6em;
+}
+
+.clearfix:after
+{
+    display: block;
+
+    visibility: hidden;
+
+    height: 0;
+    
+    content: " ";
+
+    clear: both;
+}
+
+.upPath
+{
+    position: absolute;
+    
+    z-index: 1;
+}
+
+.upPath_stepOneYelow
+{
+    top: -1.625em; 
+    left: 7.125em; /* 114px*/
+
+    height: 5.3125em; /*85px;*/
+    width: 47.625em; /*762px;*/
+
+    background: url(yellow/path1.png) no-repeat;
+}
+
+.map
+{
+    position: absolute;
+    left: 30.375em; /*486px;*/
+    top: -1em;
+
+    z-index: 3;
+}
+
+.compass
+{
+    position: absolute;
+    right: 14.625em; /*234px;*/
+    top: 22.1875em; /*355px;*/
+
+    z-index: 3;
+}
+
+.book
+{
+    position: absolute;
+    right: 0; /*252px;*/
+    top: 22.1875em; /*355px;*/
+}
+
+.upPath_stepTwoYellow
+{
+    top: -9.0625em; /*145*/
+    left: 10.875em; /*114*/
+
+    width: 39.125em; /*626px;*/
+    height: 13.0625em; /*209px;*/
+
+    background: url(yellow/path2.png) no-repeat;
+}
+
+.b-textStory
+{
+    box-sizing: content-box;
+
+    margin: 0;
+    padding: 0;
+    padding-bottom: 1.875em;
+
+    width: 18.375em; /*294px;*/
+
+    font: normal 1em/1.5em Arial, Helvetica, sans-serif;
+
+
+}
+
+.b-textStory-left
+{
+    float: left;
+    margin: 3.75em 0 0 6em;/*60 96*/
+    padding: 2.1875em 0 0 0; /*35*/
+}
+
+.b-textStory_text
+{
+    margin: 0;
+    padding: 0 0 1.875em 0;
+
+    text-align: center;
+}
+
+.ticket
+{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    left: 8.5em;
+
+    width: .125em;  /*2*/
+    height: 22.5em; /*360*/
+
+    background: url(yellow/pathVert.png) 0 no-repeat;
+}
+
+.ticket-picture
+{
+    float: left;
+    
+    margin: 2.5em 0 0 -15.75em;
+}
+
+.laptop
+{
+    position: absolute;
+    left: 6em; /*96px */
+    top: 6.25em; /*100px;*/
+}
+
+.b-textStory-right
+{
+    float: right;
+    margin: 3.75em 6em 0 0; /*60 90*/
+    padding: 2.1875em 0 0 0; /*35*/
+  
+    box-sizing: content-box;  
+}
+
+.iphone
+{
+    display: inline-block;
+    position: relative;
+    left: 6.5em;
+    z-index: 2;
+
+    width: 9.375em;  /*150*/
+    height: 31.5625em; /*505*/
+
+    background: url(yellow/path3_1.png) no-repeat; /*30*/
+}
+
+.iphone-picture
+{
+    margin: 2.1875em 0 0 -2.125em;/*40*/
+}
+
+.polaroid
+{
+    position: absolute;
+    left: -4.375em; /*70*/
+    top: 23.7375em; /*375*/
+
+    z-index: 3;
+}
+
+.upPath_stepThreeYelow
+{
+    top: -2.425em; 
+    left: 7.125em;
+
+    width: 42.875em;
+    height: 6.125em;
+
+    background: url(yellow/path3.png) no-repeat;
+}
+
+.vogue
+{
+    position: absolute;
+    top: -4em;
+    right: 0;
+    z-index: 1;
+
+}
+
+.tickets
+{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    left: 8.625em;
+
+    width: .125em;  /*2*/
+    height: 22.5em; /*360*/
+
+    background: url(yellow/pathVert.png) 0 no-repeat;
+}
+
+.tickets-picture
+{
+    float: left;
+    
+    margin: -1em 0 0 -15.75em; /*em;*/
+}
+
+.ipod
+{
+    position: absolute;
+    top: 27.125em;
+    right: 1em;
+}
+
+.upPath_stepFourYellow
+{
+    top: -6.5625em;
+    left: 7.125em;
+
+    width: 39.125em;
+    height: 10.435em;
+
+    background: url(yellow/path4.png) no-repeat;
+}
+
+.bagpack
+{
+    position: absolute;
+    left: 6em;
+    top: 6.25em;
+}
+
+.carton
+{
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    left: 9.75em;
+
+    width: 6.375em;  /*2*/
+    height: 31.25em; /*360*/
+
+    background: url(yellow/path4-1.png) 0 no-repeat;
+}
+
+.carton-picture
+{
+    position: relative;
+    left: -9.75em;/*10.125em;*/
+    top: 1.25em;
+}
+
+.stuff
+{
+    position: absolute;
+    left: 9.75em;/*10.875em;*/
+    bottom: 0;
+}
+
+.footer
+{
+    position: relative;
+
+    width: 59.75em; 
+    min-height: 51.25em; /*800*/
+    margin: 0 0 1.125em 1.125em; /*18px;*/
+
+    border-left: .125em solid #000;  /*2px*/
+    border-bottom: .125em solid #000;
+    border-style: none none solid solid; 
+}
+
+.footer__yellow
+{
+    background: #ffe05d;
+}
+
+.right-panel__footer
+{
+   min-height: 52.375em;
+
+   bottom: -1.125em;
+}
+
+.upPath_footerYellow
+{
+    position: absolute;
+    left: 15.875em;
+    top: -0.125em;
+
+    height: 5.3125em;
+    width: 35.625em;
+
+    background: url(yellow/pathFooterYellow.png) 0 no-repeat;
+}
+
+.navigation__footer
+{
+    display: inline-block;
+    
+    margin: 7.5em 0 0 10.875em;
+    padding: 0;
+}
+
+.footerText
+{
+    float: left;
+
+    margin: 6.125em 0 0 6em;
+
+    width: 28.125em;
+}
+
+.footerText-text
+{
+    margin: 0 0 2.625em 0;
+
+    font: normal 1em/1.5em Arial, Helvetica, sans-serif;
+}
+
+.footer-logoAtom
+{
+     float: left;
+    
+     margin: 6.125em 0 0 6em;    
+}
+
+.footer-aboutCompany
+{
+    position: absolute;
+    bottom: 3.75em;
+
+    clear: both;
+}
+
+.footer-logoAtom-link
+{
+    display: inline-block;
+
+    width: 6.5em;
+    height: 6.5em;
+
+    text-align: center;
+    text-decoration: none;
+    
+    background: #000;
+    border-radius: 6.5em;
+}
+
+.footer-logoAtom-linkText
+{
+    margin: 8.4375em 0 0 0;
+
+    display: inline-block;
+
+    min-width: 12.5em;
+    
+    text-align: left;
+
+    color: #000;
+}
+
+.footer-aboutCompany
+{
+    margin: 0 0 0 6em;
+}
+
+.footer-aboutCompan-link,
+.footer-aboutCompan-helpLink,
+.footer-aboutCompany-feedback
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-aboutCompan-link
+{
+    margin: 0 0 0 1em;
+}
+
+.footer-aboutCompan-helpLink
+{
+    margin: 0 0 0 4.375em;
+}
+
+.footer-aboutCompany-feedback
+{
+    margin: 0 0 0 1.375em;
+}
+
+.travelMenu
+{
+    position: absolute;
+    left: 23.75em;
+    top: 6.25em;
+    z-index: 10;
+
+    height: 13.5625em;
+    width: 13.5625em;
+
+    display: none;
+    
+    background: url(all/navIcons.png) 0 0 no-repeat;
+}
+
+.travelMenu__visible
+{
+    position: fixed;
+    display: block;
+}
+
+.travelStep-menu-person-link
+{
+    
+}
