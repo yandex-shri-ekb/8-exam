@@ -1,0 +1,22 @@
+{
+  "name": "8-exam",
+  "version": "0.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pkolt/8-exam.git"
+  },
+  "author": "Pavel Koltyshev",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/pkolt/8-exam/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-csscomb": "~1.2.1"
+  }
+}
