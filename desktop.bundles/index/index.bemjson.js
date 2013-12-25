@@ -23,8 +23,33 @@
             js: true,
             content: [
                 {
-                    block: 'person-center',
-                    js: true
+                    block: 'center-fixed',
+                    js: true,
+                    content: [
+                        {
+                            block: 'person-center'
+                        },
+                        {
+                            block: 'states-center',
+                            content: [
+                                {
+                                    block: 'state',
+                                    mods: { color: 'yellow' },
+                                    js: true
+                                },
+                                {
+                                    block: 'state',
+                                    mods: { color: 'red' },
+                                    js: true
+                                },
+                                {
+                                    block: 'state',
+                                    mods: { color: 'blue' },
+                                    js: true
+                                }
+                            ]
+                        }
+                    ]
                 },
                 { 
                     block: 'head-img',
@@ -72,18 +97,45 @@
                         content :[
                             {
                                 block: 'pers',
-                                mods: { color: 'yellow' },
+                                mods: 
+                                { 
+                                    color: 'yellow',
+                                    position: 'top' 
+                                },
                                 content: 'Максим'
                             },
                             {
                                 block: 'pers',
-                                mods: { color: 'red' },
+                                mods: 
+                                { 
+                                    color: 'red',
+                                    position: 'top'
+                                },
                                 content: 'Алексей Быков'
                             },
                             {
                                 block: 'pers',
-                                mods: { color: 'blue' },
+                                mods: 
+                                { 
+                                    color: 'blue',
+                                    position: 'top'
+                                },
                                 content: 'Георгрий И. Дауге'
+                            },
+                            {
+                                block: 'description',
+                                mods: { color: 'yellow' },
+                                content: 'Предпочитает путешествовать самостоятельно и налегке. Уверен, что только так можно проникнуться культурой страны.'
+                            },
+                            {
+                                block: 'description',
+                                mods: { color: 'red' },
+                                content: 'В отпуск ездит вместе с женой и дочкой. Считает, что отдыхать лучше всего в отелях на побережье.'
+                            },
+                            {
+                                block: 'description',
+                                mods: { color: 'blue' },
+                                content: 'Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания.'
                             }
                         ]
                     }
@@ -94,7 +146,6 @@
                     content: [
                         {
                             block: 'part',
-                            mods: { number: 1 },
                             content: [
                                 {
                                     block: 'text1',
@@ -142,7 +193,6 @@
                         },
                          {
                             block: 'part',
-                            mods: { number: 2 },
                             content: [
                                 {
                                     block: 'text2',
@@ -182,7 +232,6 @@
                         },
                          {
                             block: 'part',
-                            mods: { number: 3 },
                             content: [
                                 {
                                     block: 'text1',
@@ -222,7 +271,6 @@
                         },
                          {
                             block: 'part',
-                            mods: { number: 4 },
                             content: [
                                 {
                                     block: 'text2',
@@ -268,7 +316,6 @@
                     content: [
                         {
                             block: 'part',
-                            mods: { number: 1 },
                             content: [
                                 {
                                     block: 'text1',
@@ -308,7 +355,6 @@
                         },
                          {
                             block: 'part',
-                            mods: { number: 2 },
                             content: [
                                 {
                                     block: 'text2',
@@ -348,7 +394,6 @@
                         },
                          {
                             block: 'part',
-                            mods: { number: 3 },
                             content: [
                                 {
                                     block: 'text1',
@@ -400,7 +445,6 @@
                         },
                          {
                             block: 'part',
-                            mods: { number: 4 },
                             content: [
                                 {
                                     block: 'text2',
@@ -442,7 +486,6 @@
                     content: [
                         {
                             block: 'part',
-                            mods: { number: 1 },
                             content: [
                                 {
                                     block: 'text1',
@@ -482,7 +525,6 @@
                         },
                          {
                             block: 'part',
-                            mods: { number: 2 },
                             content: [
                                 {
                                     block: 'text2',
@@ -522,7 +564,6 @@
                         },
                          {
                             block: 'part',
-                            mods: { number: 3 },
                             content: [
                                 {
                                     block: 'text1',
@@ -562,7 +603,6 @@
                         },
                          {
                             block: 'part',
-                            mods: { number: 4 },
                             content: [
                                 {
                                     block: 'text2',
@@ -642,7 +682,7 @@
                             content: [
                                 {
                                     block: 'p',
-                                    content: 'Интернет сегодня — это не только информация и технологии, это люди: их желания, предпочтения, задачи. Люди — вот атомы, из которых на самом деле состоит цифровая материя; и эти люди очень, очень разные.'
+                                    content: 'Мир один, а люди разные. Так и интернет — он один, но для каждого разный.'
                                 },
                                 {
                                     block: 'p',
@@ -739,7 +779,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '../../i/yellow/right.1.jpg'
+                                            url: '/i/yellow/right.1.jpg'
                                         }
                                     ]
                                 }
@@ -761,7 +801,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '../../i/yellow/right.2.jpg'
+                                            url: '/i/yellow/right.2.jpg'
                                         }
                                     ]
                                 }
@@ -783,7 +823,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '../../i/yellow/right.3.jpg'
+                                            url: '/i/yellow/right.3.jpg'
                                         }
                                     ]
                                 }
@@ -805,7 +845,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '../../i/yellow/right.4.jpg'
+                                            url: '/i/yellow/right.4.jpg'
                                         }
                                     ]
                                 }
@@ -837,7 +877,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '../../i/red/right.1.jpg'
+                                            url: '/i/red/right.1.jpg'
                                         }
                                     ]
                                 }
@@ -859,7 +899,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '../../i/red/right.2.jpg'
+                                            url: '/i/red/right.2.jpg'
                                         }
                                     ]
                                 }
@@ -881,7 +921,7 @@
                                     images: [
                                         {
                                             class: '',
-                                            url: '../../i/red/right.3.jpg'
+                                            url: '/i/red/right.3.jpg'
                                         }
                                     ]
                                 }
@@ -903,7 +943,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '../../i/red/right.4.jpg'
+                                            url: '/i/red/right.4.jpg'
                                         }
                                     ]
                                 }
@@ -931,7 +971,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '../../i/blue/right.1.jpg'
+                                            url: '/i/blue/right.1.jpg'
                                         }
                                     ]
                                 }
@@ -953,7 +993,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '../../i/blue/right.2.jpg'
+                                            url: '/i/blue/right.2.jpg'
                                         }
                                     ]
                                 }
@@ -975,7 +1015,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '../../i/blue/right.3.jpg'
+                                            url: '/i/blue/right.3.jpg'
                                         }
                                     ]
                                 }
@@ -997,7 +1037,7 @@
                                     images: [
                                         {
                                             class: 'image',
-                                            url: '../../i/blue/right.4.jpg'
+                                            url: '/i/blue/right.4.jpg'
                                         }
                                     ]
                                 }

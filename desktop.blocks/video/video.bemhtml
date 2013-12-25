@@ -1,24 +1,21 @@
 block('video')(
 
-	tag() ('div'),
-
 	js() (true),
 
 	content() (
 		function() {
-			var content = [{ 
+			return { 
 				elem: 'video-wrapper',
-				content: [{
+				content: {
 					elem: 'iframe', 
 					tag: 'iframe',
 					attrs: {
 						src : this.ctx.src,
-						width: 720,
-						height: 405
-					}
-				}]
-			}];
-			return content;
+						width: this.ctx.width,
+						height: this.ctx.height
+					}		
+				}
+			};
 		}
 	)
 )

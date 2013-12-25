@@ -31,7 +31,26 @@ exports.blocks = [
         "name": "story"
     },
     {
+        "name": "center-fixed"
+    },
+    {
         "name": "person-center"
+    },
+    {
+        "name": "states-center"
+    },
+    {
+        "name": "state",
+        "mods": [
+            {
+                "name": "color",
+                "vals": [
+                    "yellow",
+                    "red",
+                    "blue"
+                ]
+            }
+        ]
     },
     {
         "name": "head-img",
@@ -86,7 +105,21 @@ exports.blocks = [
             {
                 "name": "position",
                 "vals": [
+                    "top",
                     "bottom"
+                ]
+            }
+        ]
+    },
+    {
+        "name": "description",
+        "mods": [
+            {
+                "name": "color",
+                "vals": [
+                    "yellow",
+                    "red",
+                    "blue"
                 ]
             }
         ]
@@ -105,18 +138,7 @@ exports.blocks = [
         ]
     },
     {
-        "name": "part",
-        "mods": [
-            {
-                "name": "number",
-                "vals": [
-                    1,
-                    2,
-                    3,
-                    4
-                ]
-            }
-        ]
+        "name": "part"
     },
     {
         "name": "text1"

@@ -1,13 +1,11 @@
 .person-center
 {
-	position: fixed;
-	left: 493px;
+	position: absolute;
+	left: 50%;
 	top: 50%;
-	margin: -109px 0 0 -116px;
+	margin: -113px 0 0 -109px;
 	width: 217px;
 	height: 226px;
-	z-index: 20;
-	display: none;
 }
 
 .person-center_pers_yellow

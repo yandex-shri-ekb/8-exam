@@ -25,10 +25,10 @@
 /*borschik:include:../../desktop.blocks/button/button.js*/;
 /*borschik:include:../../libs/bem-core/common.blocks/jquery/__event/_type/jquery__event_type_pointer.js*/;
 /*borschik:include:../../libs/bem-core/desktop.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js*/;
-/*borschik:include:../../desktop.blocks/video/video.browser.js*/;
 /*borschik:include:../../desktop.blocks/video/video.js*/;
 /*borschik:include:../../desktop.blocks/story/story.js*/;
-/*borschik:include:../../desktop.blocks/person-center/person-center.js*/;
+/*borschik:include:../../desktop.blocks/center-fixed/center-fixed.browser.js*/;
+/*borschik:include:../../desktop.blocks/center/center.browser.js*/;
 /*borschik:include:../../desktop.blocks/pers/pers.js*/;
 /*borschik:include:../../desktop.blocks/images/images.browser.js*/;
 /*borschik:include:../../libs/bem-components/common.blocks/link/link.js*/;

@@ -186,7 +186,35 @@ exports.deps = [
         "block": "story"
     },
     {
+        "block": "center-fixed"
+    },
+    {
         "block": "person-center"
+    },
+    {
+        "block": "states-center"
+    },
+    {
+        "block": "state"
+    },
+    {
+        "block": "state",
+        "mod": "color"
+    },
+    {
+        "block": "state",
+        "mod": "color",
+        "val": "yellow"
+    },
+    {
+        "block": "state",
+        "mod": "color",
+        "val": "red"
+    },
+    {
+        "block": "state",
+        "mod": "color",
+        "val": "blue"
     },
     {
         "block": "head-img"
@@ -255,7 +283,34 @@ exports.deps = [
     {
         "block": "pers",
         "mod": "position",
+        "val": "top"
+    },
+    {
+        "block": "pers",
+        "mod": "position",
         "val": "bottom"
+    },
+    {
+        "block": "description"
+    },
+    {
+        "block": "description",
+        "mod": "color"
+    },
+    {
+        "block": "description",
+        "mod": "color",
+        "val": "yellow"
+    },
+    {
+        "block": "description",
+        "mod": "color",
+        "val": "red"
+    },
+    {
+        "block": "description",
+        "mod": "color",
+        "val": "blue"
     },
     {
         "block": "area"
@@ -281,30 +336,6 @@ exports.deps = [
     },
     {
         "block": "part"
-    },
-    {
-        "block": "part",
-        "mod": "number"
-    },
-    {
-        "block": "part",
-        "mod": "number",
-        "val": 1
-    },
-    {
-        "block": "part",
-        "mod": "number",
-        "val": 2
-    },
-    {
-        "block": "part",
-        "mod": "number",
-        "val": 3
-    },
-    {
-        "block": "part",
-        "mod": "number",
-        "val": 4
     },
     {
         "block": "text1"
@@ -558,232 +589,6 @@ exports.depsByTechs = {
                 "block": "link",
                 "mod": "disabled"
             }
-        ],
-        "test.js": [
-            {
-                "tech": "test.js",
-                "block": "i-bem"
-            },
-            {
-                "tech": "test.js",
-                "block": "inherit"
-            },
-            {
-                "tech": "test.js",
-                "block": "identify"
-            },
-            {
-                "tech": "test.js",
-                "block": "next-tick"
-            },
-            {
-                "tech": "test.js",
-                "block": "objects"
-            },
-            {
-                "tech": "test.js",
-                "block": "functions"
-            },
-            {
-                "tech": "test.js",
-                "block": "events"
-            },
-            {
-                "tech": "test.js",
-                "block": "events",
-                "elem": "channels"
-            },
-            {
-                "tech": "test.js",
-                "block": "ecma",
-                "elem": "object"
-            },
-            {
-                "tech": "test.js",
-                "block": "ecma",
-                "elem": "array"
-            },
-            {
-                "tech": "test.js",
-                "block": "ecma",
-                "elem": "function"
-            },
-            {
-                "tech": "test.js",
-                "block": "i-bem",
-                "elem": "dom"
-            },
-            {
-                "tech": "test.js",
-                "block": "jquery"
-            },
-            {
-                "tech": "test.js",
-                "block": "loader"
-            },
-            {
-                "tech": "test.js",
-                "block": "loader",
-                "mod": "type"
-            },
-            {
-                "tech": "test.js",
-                "block": "loader",
-                "mod": "type",
-                "val": "js"
-            },
-            {
-                "tech": "test.js",
-                "block": "jquery",
-                "elem": "config"
-            },
-            {
-                "tech": "test.js",
-                "block": "dom"
-            },
-            {
-                "tech": "test.js",
-                "block": "i-bem",
-                "elem": "internal"
-            },
-            {
-                "tech": "test.js",
-                "block": "ecma"
-            },
-            {
-                "tech": "test.js",
-                "block": "ecma",
-                "elem": "string"
-            },
-            {
-                "tech": "test.js",
-                "block": "ecma",
-                "elem": "json"
-            },
-            {
-                "tech": "test.js",
-                "block": "button"
-            },
-            {
-                "tech": "test.js",
-                "block": "button"
-            },
-            {
-                "tech": "test.js",
-                "block": "button",
-                "elem": "text"
-            },
-            {
-                "tech": "test.js",
-                "block": "button",
-                "mod": "focused"
-            },
-            {
-                "tech": "test.js",
-                "block": "button",
-                "mod": "focused",
-                "val": "yes"
-            },
-            {
-                "tech": "test.js",
-                "block": "button",
-                "mod": "hovered"
-            },
-            {
-                "tech": "test.js",
-                "block": "button",
-                "mod": "hovered",
-                "val": "yes"
-            },
-            {
-                "tech": "test.js",
-                "block": "button",
-                "mod": "disabled"
-            },
-            {
-                "tech": "test.js",
-                "block": "button",
-                "mod": "disabled",
-                "val": "yes"
-            },
-            {
-                "tech": "test.js",
-                "block": "button",
-                "mod": "pressed"
-            },
-            {
-                "tech": "test.js",
-                "block": "button",
-                "mod": "pressed",
-                "val": "yes"
-            },
-            {
-                "tech": "test.js",
-                "block": "jquery",
-                "elem": "event"
-            },
-            {
-                "tech": "test.js",
-                "block": "jquery",
-                "elem": "event",
-                "mod": "type"
-            },
-            {
-                "tech": "test.js",
-                "block": "jquery",
-                "elem": "event",
-                "mod": "type",
-                "val": "pointer"
-            },
-            {
-                "tech": "test.js",
-                "block": "jquery",
-                "elem": "event",
-                "mod": "type",
-                "val": "pointerclick"
-            },
-            {
-                "tech": "test.js",
-                "block": "link"
-            },
-            {
-                "tech": "test.js",
-                "block": "link",
-                "mod": "disabled"
-            },
-            {
-                "tech": "test.js",
-                "block": "i-bem",
-                "elem": "dom"
-            },
-            {
-                "tech": "test.js",
-                "block": "i-bem"
-            },
-            {
-                "tech": "test.js",
-                "block": "jquery",
-                "elem": "event",
-                "mod": "type",
-                "val": "pointer"
-            },
-            {
-                "tech": "test.js",
-                "block": "events"
-            },
-            {
-                "tech": "test.js",
-                "block": "events",
-                "elem": "channels"
-            },
-            {
-                "tech": "test.js",
-                "block": "jquery"
-            },
-            {
-                "tech": "test.js",
-                "block": "dom"
-            }
         ]
     },
     "bemhtml": {
@@ -835,10 +640,6 @@ exports.depsByTechs = {
                 "tech": "bemhtml",
                 "block": "ecma",
                 "elem": "function"
-            },
-            {
-                "tech": "bemhtml",
-                "block": "ua"
             },
             {
                 "tech": "bemhtml",

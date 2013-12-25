@@ -1,6 +1,3 @@
-/** @requires BEM */
-/** @requires BEM.DOM */
- 
 modules.define('i-bem__dom', function(provide, DOM) {
 
 	DOM.decl('pers', {
@@ -12,8 +9,24 @@ modules.define('i-bem__dom', function(provide, DOM) {
 							window.scrollTo(0,987);
 						});
 					}
+					if (this.hasMod('position', 'top')){
+						this.bindTo('mouseover', function() {
+							this.showDescription(this.getMod('color'));
+						});
+						this.bindTo('mouseout', function() {
+							this.hideDescription(this.getMod('color'));
+						});
+					}
 				}
 			}
+		},
+		showDescription: function(color) {
+			var selector = { blockName: 'description', modName: 'color', modVal: color };
+			this.findBlockOutside('page').findBlockInside(selector).setMod('visible');
+		},
+		hideDescription: function(color) {
+			var selector = { blockName: 'description', modName: 'color', modVal: color };
+			this.findBlockOutside('page').findBlockInside(selector).delMod('visible');
 		}
 	});
 	provide(DOM);

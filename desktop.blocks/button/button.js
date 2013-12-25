@@ -18,10 +18,12 @@ modules.define('i-bem__dom', function(provide, DOM) {
 			if (this.isOpened) {
 				this.setMod('opened');
 				this.dataPage.setMod('opened');
+				this.findBlockOutside('page').findBlockInside('center-fixed').delMod('visible');
 			}
 			else {
 				this.delMod('opened');
 				this.dataPage.delMod('opened');
+				this.findBlockOutside('page').findBlockInside('center-fixed').setMod('visible');
 			}
 		},
 		isOpened: false

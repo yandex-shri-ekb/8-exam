@@ -1,0 +1,16 @@
+.center-fixed
+{
+	position: fixed;
+	top: 0;
+	left: 493px;
+	margin: 0 0 0 -140px;
+	width: 280px;
+	height: 100%;
+	display: none;
+	z-index: 20;
+}
+
+.center-fixed_visible
+{
+	display: block;
+}

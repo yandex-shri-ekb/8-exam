@@ -20,7 +20,7 @@ modules.define('i-bem__dom', function(provide, DOM) {
 		updateLeft: function() {
 			if (this.hasMod('opened')) {
 				var left = document.documentElement.clientWidth - 870;
-				if (left < 0)
+				if (left < 60)
 					left = 60;
 				if (left < 970)
 					this.domElem.css({left: left});

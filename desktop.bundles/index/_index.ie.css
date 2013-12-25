@@ -11,7 +11,7 @@
 
 /* ../../desktop.blocks/page/page.css end */
 /* ../../desktop.blocks/button/button.css begin */
-.button_type_details
+.button
 {
 	position: fixed;
 	top: 18px;
@@ -93,17 +93,33 @@ iframe
 }
 
 /* ../../desktop.blocks/story/story.css end */
+/* ../../desktop.blocks/center-fixed/center-fixed.css begin */
+.center-fixed
+{
+	position: fixed;
+	top: 0;
+	left: 493px;
+	margin: 0 0 0 -140px;
+	width: 280px;
+	height: 100%;
+	display: none;
+	z-index: 20;
+}
+
+.center-fixed_visible
+{
+	display: block;
+}
+/* ../../desktop.blocks/center-fixed/center-fixed.css end */
 /* ../../desktop.blocks/person-center/person-center.css begin */
 .person-center
 {
-	position: fixed;
-	left: 493px;
+	position: absolute;
+	left: 50%;
 	top: 50%;
-	margin: -109px 0 0 -116px;
+	margin: -113px 0 0 -109px;
 	width: 217px;
 	height: 226px;
-	z-index: 20;
-	display: none;
 }
 
 .person-center_pers_yellow
@@ -128,6 +144,52 @@ iframe
 
 
 /* ../../desktop.blocks/person-center/person-center.css end */
+/* ../../desktop.blocks/states-center/states-center.css begin */
+.states-center
+{
+	position: absolute;
+	left: 0;
+	top: 5%;
+	width: 280px;
+	height: 80px;
+}
+
+/* ../../desktop.blocks/states-center/states-center.css end */
+/* ../../desktop.blocks/state/state.css begin */
+.state
+{
+	display: inline-block;
+	border: none;
+	width: 82px;
+	height: 70px;
+	background: url("../../desktop.blocks/state/icons-active.png") no-repeat;
+	cursor: pointer;
+}
+
+.state_active
+{
+	height: 65px;
+	border-bottom: 4px solid rgba(0,0,0,0);
+	background: url("../../desktop.blocks/state/icons.png") no-repeat;
+}
+
+.state_color_yellow
+{
+	background-position: left top;
+}
+
+.state_color_red
+{
+	margin: 0 17px;
+	background-position: center top;
+}
+
+.state_color_blue
+{
+	background-position: right top;
+}
+
+/* ../../desktop.blocks/state/state.css end */
 /* ../../desktop.blocks/head-img/head-img.css begin */
 .head-img
 {
@@ -284,6 +346,36 @@ iframe
 	background-position: center bottom;
 }
 /* ../../desktop.blocks/pers/pers.css end */
+/* ../../desktop.blocks/description/description.css begin */
+.description
+{
+	position: absolute;
+	top: 210px;
+	width: 300px;
+	font: 16px/20px Arial, sans-serif;
+	display: none;
+}
+
+.description_color_yellow
+{
+	margin: 0 0 0 20px;
+}
+
+.description_color_red
+{
+	margin: 0 0 0 250px;
+}
+
+.description_color_blue
+{
+	margin: 0 0 0 485px;	
+}
+
+.description_visible
+{
+	display: block;
+}
+/* ../../desktop.blocks/description/description.css end */
 /* ../../desktop.blocks/area/area.css begin */
 .area
 {
@@ -305,18 +397,6 @@ iframe
 }
 
 /* ../../desktop.blocks/part/part.css end */
-/* ../../desktop.blocks/part/_number/part_number_1.css begin */
-
-/* ../../desktop.blocks/part/_number/part_number_1.css end */
-/* ../../desktop.blocks/part/_number/part_number_2.css begin */
-
-/* ../../desktop.blocks/part/_number/part_number_2.css end */
-/* ../../desktop.blocks/part/_number/part_number_3.css begin */
-
-/* ../../desktop.blocks/part/_number/part_number_3.css end */
-/* ../../desktop.blocks/part/_number/part_number_4.css begin */
-
-/* ../../desktop.blocks/part/_number/part_number_4.css end */
 /* ../../desktop.blocks/text1/text1.css begin */
 .text1
 {
@@ -469,7 +549,7 @@ iframe
 {
 	position: absolute;
 	top: 286px;
-	left: 174px;
+	left: 176px;
 }
 
 .images__blue-way3
@@ -738,6 +818,7 @@ iframe
 	width: 100%;
 	border-left: 2px solid #000;
 	background-color: #fff;
+	z-index: 25;
 }
 
 .data:before
@@ -749,11 +830,6 @@ iframe
 	left: -18px;
 	width: 18px;
 	background-color: rgba(0,0,0,.1);
-}
-
-.data_opened
-{
-	left: 470px;
 }
 
 

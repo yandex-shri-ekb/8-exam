@@ -4065,10 +4065,12 @@ modules.define('i-bem__dom', function(provide, DOM) {
 			if (this.isOpened) {
 				this.setMod('opened');
 				this.dataPage.setMod('opened');
+				this.findBlockOutside('page').findBlockInside('center-fixed').delMod('visible');
 			}
 			else {
 				this.delMod('opened');
 				this.dataPage.delMod('opened');
+				this.findBlockOutside('page').findBlockInside('center-fixed').setMod('visible');
 			}
 		},
 		isOpened: false
@@ -4474,18 +4476,6 @@ provide($);
 });
 /* ../../libs/bem-core/desktop.blocks/jquery/__event/_type/jquery__event_type_pointerclick.js end */
 ;
-/* ../../desktop.blocks/video/video.browser.js begin */
-/*global modules:false */
-
-modules.define('video', function(provide) {
-
-provide();
-
-});
-
-
-/* ../../desktop.blocks/video/video.browser.js end */
-;
 /* ../../desktop.blocks/video/video.js begin */
 
 /** @requires BEM */
@@ -4494,12 +4484,6 @@ provide();
 modules.define('i-bem__dom', function(provide, DOM) {
 
 	DOM.decl('video', {
-		onSetMod: {
-			'js' : {
-				'inited' : function() {
-				}
-			}
-		},
 		show: function() {
 			this.sendCommand('seekTo', 0);
 			this.sendCommand('play');
@@ -4518,6 +4502,7 @@ modules.define('i-bem__dom', function(provide, DOM) {
 	provide(DOM);
 });
 
+
 /* ../../desktop.blocks/video/video.js end */
 ;
 /* ../../desktop.blocks/story/story.js begin */
@@ -4530,18 +4515,18 @@ modules.define('i-bem__dom', function(provide, DOM) {
 		onSetMod: {
 			'js' : {
 				'inited' : function() {
-					var self = this,
-						rand = Math.floor(Math.random() * this.colors.length),
+					var rand = Math.floor(Math.random() * this.colors.length),
 						video,
 						videoLink;
 
 					this.bindPersonsClick(this.findBlocksInside('pers'));
+					this.bindPersonsClick(this.findBlocksInside('state'));
 
 					video = this.page().findBlockInside('video');
 					videoLink = this.findBlockInside('videoLink');
 					videoLink.bindTo('click', function(){ video.show(); });
 
-					this.page().bindTo('mouseup', function(e){ video.hide(); });
+					this.page().bindTo('mouseup', function(){ video.hide(); });
 					this.selectColor(this.colors[rand]);
 				}
 			}
@@ -4559,8 +4544,16 @@ modules.define('i-bem__dom', function(provide, DOM) {
 		colorVideoLink: function(color) {
 			this.findBlockInside('videoLink').setMod('color', color);
 		},
-		selectPersonCenter: function(color) {
+		selectCenterFixed: function(color) {
+			var i, selector, otherColors;
 			this.findBlockInside('person-center').setMod('pers', color);
+			selector = { blockName: 'state', modName: 'color', modVal: color };
+			this.findBlockInside(selector).setMod('active');
+			otherColors = this.allExcept(color);
+			for (i=0; i<otherColors.length; i++) {
+				selector = { blockName: 'state', modName: 'color', modVal: otherColors[i] };
+				this.findBlockInside(selector).delMod('active');
+			}
 		},
 		showArea: function(color) {
 			var selector = { blockName: 'area', modName: 'pers', modVal: color };
@@ -4576,28 +4569,36 @@ modules.define('i-bem__dom', function(provide, DOM) {
 			this.selectColor(person.getMod('color'));
 		},
 		selectColor: function(color) {
+			var selector,
+				blocks,
+				otherColors,
+				i, j;
+
 			this.setMod('color', color);
 			this.colorVideoLink(color);
-			this.selectPersonCenter(color);
+			this.selectCenterFixed(color);
 			this.showArea(color);
-			var selector = { blockName: 'pers', modName: 'color', modVal: color }
-			this.findBlocksInside(selector).forEach(function(p){
-				p.setMod('selected');
-			});
-			this.forAllExcept(color,function(noColor) {
-				this.hideArea(noColor);
-				var selector = { blockName: 'pers', modName: 'color', modVal: noColor }
-				this.findBlocksInside(selector).forEach(function(p){
-					p.delMod('selected');
-				});
-			},this);
-		},
-		forAllExcept: function(color,func,context) {
-			for (var i=0; i<this.colors.length; i++) {
-				if (this.colors[i] != color) {
-					func.call(context, this.colors[i]);
-				}
+
+			selector = { blockName: 'pers', modName: 'color', modVal: color };
+			blocks = this.findBlocksInside(selector);
+			for (i=0; i<blocks.length; i++)
+				blocks[i].setMod('selected');
+
+			otherColors = this.allExcept(color);
+			for (i=0; i<otherColors.length; i++) {
+				this.hideArea(otherColors[i]);
+				selector = { blockName: 'pers', modName: 'color', modVal: otherColors[i] };
+				blocks = this.findBlocksInside(selector);
+				for (j=0; j<blocks.length; j++)
+					blocks[j].delMod('selected');
 			}
+		},
+		allExcept: function(color) {
+			var result = [];
+			for (var i=0; i<this.colors.length; i++)
+				if (color != this.colors[i])
+					result.push(this.colors[i]);
+			return result;
 		},
 		colors: ['yellow','red','blue'],
 	});
@@ -4608,37 +4609,35 @@ modules.define('i-bem__dom', function(provide, DOM) {
 
 /* ../../desktop.blocks/story/story.js end */
 ;
-/* ../../desktop.blocks/person-center/person-center.js begin */
-/** @requires BEM */
-/** @requires BEM.DOM */
- 
+/* ../../desktop.blocks/center-fixed/center-fixed.browser.js begin */
 modules.define('i-bem__dom', function(provide, DOM) {
 
-	DOM.decl('person-center', {
+	DOM.decl('center-fixed', {
 		onSetMod: {
 			'js' : {
 				'inited' : function() {
 					var self = this;
-					window.onscroll = function () { // при скролле показывать и прятать блок
-						if ( window.pageYOffset > 1430 && window.pageYOffset < 3760)
-							self.setMod('visible');
+					window.onscroll = function () {
+						if ( window.pageYOffset > 1430 && window.pageYOffset < (4742 - document.documentElement.clientHeight))
+							self.setMod('visible');							
 						else
 							self.delMod('visible');
 					}
 				}
 			}
 		}
-	});
+	});	
 	provide(DOM);
 });
 
+/* ../../desktop.blocks/center-fixed/center-fixed.browser.js end */
+;
+/* ../../desktop.blocks/center/center.browser.js begin */
 
-/* ../../desktop.blocks/person-center/person-center.js end */
+
+/* ../../desktop.blocks/center/center.browser.js end */
 ;
 /* ../../desktop.blocks/pers/pers.js begin */
-/** @requires BEM */
-/** @requires BEM.DOM */
- 
 modules.define('i-bem__dom', function(provide, DOM) {
 
 	DOM.decl('pers', {
@@ -4650,8 +4649,24 @@ modules.define('i-bem__dom', function(provide, DOM) {
 							window.scrollTo(0,987);
 						});
 					}
+					if (this.hasMod('position', 'top')){
+						this.bindTo('mouseover', function() {
+							this.showDescription(this.getMod('color'));
+						});
+						this.bindTo('mouseout', function() {
+							this.hideDescription(this.getMod('color'));
+						});
+					}
 				}
 			}
+		},
+		showDescription: function(color) {
+			var selector = { blockName: 'description', modName: 'color', modVal: color };
+			this.findBlockOutside('page').findBlockInside(selector).setMod('visible');
+		},
+		hideDescription: function(color) {
+			var selector = { blockName: 'description', modName: 'color', modVal: color };
+			this.findBlockOutside('page').findBlockInside(selector).delMod('visible');
 		}
 	});
 	provide(DOM);
@@ -4716,7 +4731,7 @@ modules.define('i-bem__dom', function(provide, DOM) {
 		updateLeft: function() {
 			if (this.hasMod('opened')) {
 				var left = document.documentElement.clientWidth - 870;
-				if (left < 0)
+				if (left < 60)
 					left = 60;
 				if (left < 970)
 					this.domElem.css({left: left});

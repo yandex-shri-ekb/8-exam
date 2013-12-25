@@ -2,7 +2,10 @@
 @import url(../../desktop.blocks/button/button.css);
 @import url(../../desktop.blocks/video/video.css);
 @import url(../../desktop.blocks/story/story.css);
+@import url(../../desktop.blocks/center-fixed/center-fixed.css);
 @import url(../../desktop.blocks/person-center/person-center.css);
+@import url(../../desktop.blocks/states-center/states-center.css);
+@import url(../../desktop.blocks/state/state.css);
 @import url(../../desktop.blocks/head-img/head-img.css);
 @import url(../../desktop.blocks/head-img/__text/head-img__text.css);
 @import url(../../desktop.blocks/general-info/general-info.css);
@@ -14,12 +17,9 @@
 @import url(../../desktop.blocks/persons/persons.css);
 @import url(../../desktop.blocks/center/center.css);
 @import url(../../desktop.blocks/pers/pers.css);
+@import url(../../desktop.blocks/description/description.css);
 @import url(../../desktop.blocks/area/area.css);
 @import url(../../desktop.blocks/part/part.css);
-@import url(../../desktop.blocks/part/_number/part_number_1.css);
-@import url(../../desktop.blocks/part/_number/part_number_2.css);
-@import url(../../desktop.blocks/part/_number/part_number_3.css);
-@import url(../../desktop.blocks/part/_number/part_number_4.css);
 @import url(../../desktop.blocks/text1/text1.css);
 @import url(../../desktop.blocks/images/images.css);
 @import url(../../desktop.blocks/text2/text2.css);

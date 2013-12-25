@@ -5,12 +5,6 @@
 modules.define('i-bem__dom', function(provide, DOM) {
 
 	DOM.decl('video', {
-		onSetMod: {
-			'js' : {
-				'inited' : function() {
-				}
-			}
-		},
 		show: function() {
 			this.sendCommand('seekTo', 0);
 			this.sendCommand('play');
@@ -28,3 +22,4 @@ modules.define('i-bem__dom', function(provide, DOM) {
 
 	provide(DOM);
 });
+
