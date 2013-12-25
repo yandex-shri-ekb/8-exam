@@ -765,7 +765,7 @@ body
     display: block;
 }
 
-.travelStep-menu-person-link
+.travelStep
 {
-    
+    display: none;
 }
