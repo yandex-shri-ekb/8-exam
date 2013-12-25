@@ -1,0 +1,274 @@
+body
+{
+    overflow-x: hidden;
+    margin: 0;
+    font:16px/1.465 arial,helvetica,sans-serif;
+}
+
+a
+{
+    background: transparent;
+}
+
+a:focus
+{
+    outline: thin dotted;
+}
+
+a:active,
+a:hover
+{
+    outline: 0;
+}
+
+img
+{
+    border: 0;
+}
+
+.leftcol
+{
+    position: absolute;
+    width: 972px;
+}
+
+.leftcol__padding
+{
+    width: 100%;
+    height: 18px;
+}
+
+.leftcol__seporator
+{
+    height: 2px;
+    background: #000;
+}
+
+.upsidebackground
+{
+    position: absolute;
+    margin: -610px 0 0;
+    width: 954px;
+    height: 590px;
+    background: url("i/upside.png");
+}
+
+.upside
+{
+    padding: 420px 96px 0;
+    height: 170px;
+    text-align: center;
+    font: 44px/1.136 arial,helvetica,sans-serif;
+}
+
+.description
+{
+    padding: 43px 0 0 0;
+    height: 350px;
+}
+
+.description_footer
+{
+    padding: 30px 0 0 0;
+    height: 230px;
+}
+
+.descriptiontext
+{
+    float: left;
+    margin: 40px 0 0 96px;
+    width: 450px;
+}
+
+.descriptiontext > p
+{
+    margin: 0 0 40px;
+}
+
+.descriptionvideo
+{
+    margin: 40px 0 0 642px;
+}
+
+.descriptionvideo__movie
+{
+    width: 138px;
+    height: 78px;
+    border: 2px solid #000;
+}
+
+.descriptionvideo > p
+{
+    margin: 9px 0 0;
+}
+
+.prestory
+{
+    padding: 80px 0 0;
+    height: 200px;
+}
+
+.singlechar
+{
+    float: left;
+    margin: 0 104px 0 0;
+    width: 140px;
+    height: 140px;
+    text-align: center;
+}
+
+.singlechar:nth-of-type(1)
+{
+    margin-left: 165px;
+}
+
+.singlechar_1
+{
+    background: url(i/pers-icons.png);
+}
+
+.singlechar_2
+{
+    background: url(i/pers-icons.png) 0 -149px;
+}
+
+.singlechar_3
+{
+    background: url(i/pers-icons.png) 0 -298px;
+}
+
+.singlechar > a
+{
+    position: relative;
+    display: block;
+    padding: 147px 0 0 0;
+    width: 140px;
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+.intro
+{
+    clear:both;
+    height: 130px;
+}
+
+.intro_element
+{
+    float: left;
+    margin: 0 15px 0 0;
+    width: 229px;
+    height: 140px;
+    text-align: center;
+}
+
+.intro_element:nth-of-type(1)
+{
+    margin-left: 125px;
+}
+
+.storyhandler
+{
+    height: 3280px;
+}
+
+.story
+{
+    margin: -3280px 0 0;
+    height: 3280px;
+}
+
+.story__character
+{
+    background: url(i/_yellow_bg.png);
+}
+
+.story__step
+{
+    position: absolute;
+    width: 312px;
+    text-align: center;
+}
+
+.story__step > p
+{
+    margin: 0 0 1.8em;
+}
+
+.story__step_one
+{
+    top: 1546px;
+    left: 106px;
+}
+
+.story__step_two
+{
+    top: 2344px;
+    left: 580px;
+}
+
+.story__step_three
+{
+    top: 3147px;
+    left: 106px;
+}
+
+.story__step_four
+{
+    top: 3945px;
+    left: 580px;
+}
+
+.rightcol
+{
+    position: absolute;
+    left: 972px;
+    width: 713px;
+    height: 5387px;
+    border-left: 2px solid #000;
+    background: #fff;
+    cursor: pointer;
+}
+
+.poststory
+{
+    padding: 20px 0 0;
+    height: 190px;
+}
+
+.footer
+{
+    clear: both;
+    height: 200px;
+}
+
+.leftcol__seporator,
+.upside,
+.description,
+.prestory,
+.poststory,
+.intro,
+.storyhandler,
+.footer
+{
+    margin: 0 0 0 18px;
+    border-left: 2px solid #000;
+}
+
+._character
+{
+    background-color: #fee05d;
+}
+
+/*
+video
+{
+    display: inline-block;
+}
+
+svg:not(:root)
+{
+    overflow: hidden;
+}
+*/
