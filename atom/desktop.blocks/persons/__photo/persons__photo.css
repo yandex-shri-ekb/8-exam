@@ -1,0 +1,11 @@
+.persons__photo
+{
+    display: block;
+
+    width: 140px;
+    height: 175px;
+    margin: 0 0 10px;
+
+    background-image: url(persons__photo.png);
+    background-repeat: no-repeat;
+}

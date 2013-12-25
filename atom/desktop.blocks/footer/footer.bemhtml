@@ -1,0 +1,38 @@
+block footer {
+    content: [
+        {
+            elem: 'text',
+            content: this.ctx.content
+        },
+        {
+            elem: 'line',
+            content: [
+                {
+                    elem: 'menu',
+                    content: [
+                        {
+                            elem: 'menu-item',
+                            content: ({
+                                elem: 'menu-link',
+                                url: '#',
+                                content: 'Помощь'
+                            })
+                        },
+                        {
+                            elem: 'menu-item',
+                            content: {
+                                elem: 'menu-link',
+                                url: '#',
+                                content: 'Обратная связь'
+                            }
+                        }
+                    ]
+                },
+                {
+                    elem: 'copyrights',
+                    content: '© 2013 ООО «Яндекс»'
+                }
+            ]
+        }
+    ]
+}

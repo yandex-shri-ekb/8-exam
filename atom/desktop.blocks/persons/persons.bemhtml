@@ -1,0 +1,84 @@
+block persons {
+    js: true,
+    mix: [{block: 'i-color-controller'}],
+    content: [
+        {
+            elem: 'items',
+            content: [
+                {
+                    elem: 'item',
+                    content: [
+                        {
+                            elem: 'link',
+                            tag: 'a',
+                            mods: {color: 'yellow'},
+                            content: [
+                                {
+                                    elem: 'photo',
+                                    mods: {color: 'yellow'}
+                                },
+                                {
+                                    elem: 'name',
+                                    content: 'Максим'
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'desc',
+                            content: 'Предпочитает путешествовать самостоятельно и налегке. Уверен, что только так можно проникнуться культурой страны.'
+                        }
+                    ]
+                },
+                {
+                    elem: 'item',
+                    content: [
+                        {
+                            elem: 'link',
+                            tag: 'a',
+                            mods: {color: 'red'},
+                            content: [
+                                {
+                                    elem: 'photo',
+                                    mods: {color: 'red'}
+                                },
+                                {
+                                    elem: 'name',
+                                    content: 'Алексей Быков'
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'desc',
+                            content: 'В отпуск ездит вместе с женой и дочкой. Считает, что отдыхать лучше всего в отелях на побережье.'
+                        }
+                    ]
+                },
+                {
+                    elem: 'item',
+                    content: [
+                        {
+                            elem: 'link',
+                            tag: 'a',
+                            mods: {color: 'blue'},
+                            content: [
+                                {
+                                    elem: 'photo',
+                                    mods: {color: 'blue'}
+                                },
+                                {
+                                    elem: 'name',
+                                    content: 'Георгий И. Дауге'
+                                }
+                            ]
+                        },
+                        {
+                            elem: 'desc',
+                            content: 'Очень дорожит редкими отпусками и превыше всего ценит комфорт и качество обслуживания.'
+                        }
+                    ]
+                }
+            ]
+        },
+        {elem: 'sep'}
+    ]
+}

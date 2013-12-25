@@ -1,0 +1,10 @@
+.thing_type_yellow-guide
+{
+    right: -82px;
+    bottom: 225px;
+
+    width: 240px;
+    height: 302px;
+
+    background: url(thing_type_yellow-guide.png);
+}

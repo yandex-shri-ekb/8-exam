@@ -1,0 +1,19 @@
+.steps__item_num_three
+{
+    padding: 0 0 565px;
+}
+
+.steps_color_yellow .steps__item_num_three
+{
+    background: no-repeat 95px 100% url(yellow/step__item_num_three.png);
+}
+
+.steps_color_red .steps__item_num_three
+{
+    background: no-repeat 95px 100% url(red/step__item_num_three.png);
+}
+
+.steps_color_blue .steps__item_num_three
+{
+    background: no-repeat 85px 100% url(blue/step__item_num_three.png);
+}

@@ -1,0 +1,39 @@
+.nav_num_one .nav__ico_color_yellow
+{
+    background-position: -350px -50px;
+}
+
+.nav_num_two .nav__ico_color_yellow
+{
+    background-position: -350px -150px;
+}
+
+.nav_num_three .nav__ico_color_yellow
+{
+    background-position: -350px -250px;
+}
+
+.nav_num_four .nav__ico_color_yellow
+{
+    background-position: -350px -350px;
+}
+
+.page_color_yellow .nav_num_one .nav__ico_color_yellow
+{
+    background-position: -250px -50px;
+}
+
+.page_color_yellow .nav_num_two .nav__ico_color_yellow
+{
+    background-position: -250px -150px;
+}
+
+.page_color_yellow .nav_num_three .nav__ico_color_yellow
+{
+    background-position: -250px -250px;
+}
+
+.page_color_yellow .nav_num_four .nav__ico_color_yellow
+{
+    background-position: -250px -350px;
+}

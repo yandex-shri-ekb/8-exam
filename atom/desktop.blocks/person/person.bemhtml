@@ -1,0 +1,5 @@
+block person {
+    content: {
+        elem: 'image'
+    }
+}

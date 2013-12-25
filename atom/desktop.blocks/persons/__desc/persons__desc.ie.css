@@ -1,0 +1,9 @@
+.persons__desc
+{
+    visibility: hidden;
+}
+
+.persons__item_hovered_yes .persons__desc
+{
+    visibility: visible;
+}

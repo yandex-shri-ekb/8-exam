@@ -1,0 +1,34 @@
+.person__image
+{
+    width: 220px;
+    height: 220px;
+    margin: -100px auto 0;
+
+    -webkit-transition: opacity .3s;
+       -moz-transition: opacity .3s;
+            transition: opacity .3s;
+}
+
+.person__image:hover
+{
+    opacity: .5;
+
+    -webkit-transition: opacity .3s;
+       -moz-transition: opacity .3s;
+            transition: opacity .3s;
+}
+
+.person_color_yellow .person__image
+{
+    background: 0 0 url(person__image.png);
+}
+
+.person_color_red .person__image
+{
+    background: -220px 0 url(person__image.png);
+}
+
+.person_color_blue .person__image
+{
+    background: -440px 0 url(person__image.png);
+}

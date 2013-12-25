@@ -1,0 +1,4 @@
+elem close {
+    tag: 'a',
+    attrs: {title: 'Закрыть'}
+}

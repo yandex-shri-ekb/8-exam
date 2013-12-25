@@ -1,0 +1,7 @@
+.aside__cell:after
+{
+    display: table;
+    clear: both;
+
+    content: "";
+}

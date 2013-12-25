@@ -1,0 +1,14 @@
+.aside__shadow
+{
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: -20px;
+
+    width: 18px;
+    height: 100%;
+
+    content: "";
+
+    background: rgba(0,0,0, .15);
+}

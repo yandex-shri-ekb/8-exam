@@ -1,0 +1,14 @@
+.persons_bottom_yes
+{
+    padding-top: 30px;
+}
+
+.persons_bottom_yes .persons__sep
+{
+    display: none;
+}
+
+.persons_bottom_yes  .persons__item
+{
+    padding-bottom: 22px;
+}

@@ -1,0 +1,10 @@
+.aside-items__circles
+{
+    display: block;
+
+    width: 294px;
+    height: 201px;
+    margin: 70px 0 30px;
+
+    background: url(aside-items__circles.png);
+}

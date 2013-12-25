@@ -1,0 +1,8 @@
+.content
+{
+    position: relative;
+
+    overflow: hidden;
+
+    min-width: 990px;
+}

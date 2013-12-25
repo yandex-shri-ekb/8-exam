@@ -1,0 +1,11 @@
+.header__flag
+{
+    width: 138px;
+    height: 90px;
+    margin: 0 auto;
+
+    font: 0/0 a;
+
+    color: transparent;
+    background: url(header__flag.png);
+}

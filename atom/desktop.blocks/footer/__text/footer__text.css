@@ -1,0 +1,9 @@
+.footer__text
+{
+    min-height: 102px;
+    padding: 0 40% 135px 10%;
+
+    line-height: 24px;
+
+    background: no-repeat 75% 5px url(ya.png);
+}

@@ -1,0 +1,12 @@
+.persons__photo_color_yellow
+{
+    background-position: 0 50%;
+}
+
+.page_color_yellow .persons__photo_color_yellow
+{
+    width: 175px;
+    height: 175px;
+
+    background: 0 0 url(persons__photo.png);
+}

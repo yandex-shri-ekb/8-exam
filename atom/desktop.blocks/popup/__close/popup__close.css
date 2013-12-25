@@ -1,0 +1,19 @@
+.popup__close
+{
+    position: absolute;
+    top: 18px;
+    right: 18px;
+
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer;
+
+    border: 2px solid #000;
+    background: #fff no-repeat 50% url(popup__close.png);
+}
+
+.popup__close:hover
+{
+    background-color: #e5e5e5;
+}

@@ -1,0 +1,20 @@
+block popup {
+    mix: [{block: 'i-popup-controller', elem: 'popup'}],
+    content: [
+        {
+            elem: 'inner',
+            content: [
+                {elem: 'content', content: this.ctx.content},
+                {elem: 'close', mix: [{block: 'i-popup-controller', elem: 'close'}]},
+                {
+                    elem: 'shadow',
+                    content: [
+                        {elem: 'shadow-tr'},
+                        {elem: 'shadow-bl'}
+                    ]
+                }
+            ]
+        },
+        {elem: 'va-helper'}
+    ]
+}

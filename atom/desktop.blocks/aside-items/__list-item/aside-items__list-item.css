@@ -1,0 +1,4 @@
+.aside-items__list-item:before
+{
+    content: "— ";
+}

@@ -1,0 +1,18 @@
+.persons__desc
+{
+    margin: 0 -30px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    opacity: 0;
+
+    -webkit-transition: opacity .2s;
+       -moz-transition: opacity .2s;
+            transition: opacity .2s;
+}
+
+.persons__item_hovered_yes .persons__desc
+{
+    opacity: 1;
+}

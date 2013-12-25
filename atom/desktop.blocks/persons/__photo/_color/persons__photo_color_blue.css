@@ -1,0 +1,12 @@
+.persons__photo_color_blue
+{
+    background-position: -280px 50%;
+}
+
+.page_color_blue .persons__photo_color_blue
+{
+    width: 175px;
+    height: 175px;
+
+    background: -350px 0 url(persons__photo.png);
+}

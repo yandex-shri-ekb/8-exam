@@ -1,0 +1,10 @@
+.thing_type_red-keyboard
+{
+    right: -60px;
+    bottom: 290px;
+
+    width: 294px;
+    height: 111px;
+
+    background: url(thing_type_red-keyboard.png);
+}

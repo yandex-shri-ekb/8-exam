@@ -1,0 +1,10 @@
+.thing_type_yellow-backpack
+{
+    top: 30px;
+    left: 95px;
+
+    width: 396px;
+    height: 394px;
+
+    background: url(thing_type_yellow-backpack.png);
+}

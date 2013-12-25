@@ -1,0 +1,12 @@
+.nav__ico
+{
+    display: inline-block;
+
+    width: 100px;
+    height: 100px;
+    margin: 0 20px;
+
+    cursor: pointer;
+
+    background: url(nav__ico.png);
+}

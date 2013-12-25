@@ -1,0 +1,14 @@
+.nav
+{
+    position: fixed;
+    z-index: 100;
+    top: -100px;
+    left: 18px;
+
+    width: 956px;
+    height: 100px;
+
+    text-align: center;
+
+    font: 0/0 a;
+}

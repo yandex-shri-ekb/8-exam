@@ -1,0 +1,10 @@
+.thing_type_yellow-notebook
+{
+    top: 30px;
+    left: 95px;
+
+    width: 384px;
+    height: 492px;
+
+    background: url(thing_type_yellow-notebook.png);
+}

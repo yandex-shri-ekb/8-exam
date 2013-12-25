@@ -1,0 +1,9 @@
+.aside-items_color_blue
+{
+    display: none;
+}
+
+.page_color_blue .aside-items_color_blue
+{
+    display: block;
+}

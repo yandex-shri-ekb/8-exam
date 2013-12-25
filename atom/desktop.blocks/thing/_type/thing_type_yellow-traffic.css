@@ -1,0 +1,10 @@
+.thing_type_yellow-traffic
+{
+    bottom: 90px;
+    left: 175px;
+
+    width: 150px;
+    height: 158px;
+
+    background: url(thing_type_yellow-traffic.png);
+}

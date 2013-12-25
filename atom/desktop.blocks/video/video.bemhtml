@@ -1,0 +1,19 @@
+block video {
+    content: [
+        {
+            elem: 'text',
+            content: this.ctx.content
+        },
+        {
+            elem: 'link',
+            tag: 'a',
+            attrs: {title: 'Открыть видео'},
+            mix: [{block: 'i-popup-controller', elem: 'link'}],
+            js: true,
+            content: [
+                {elem: 'link-image'},
+                'Весь сайт в одном видео'
+            ]
+        }
+    ]
+}

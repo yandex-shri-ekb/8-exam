@@ -1,0 +1,10 @@
+.thing_type_blue-small-book
+{
+    right: -135px;
+    bottom: 110px;
+
+    width: 234px;
+    height: 303px;
+
+    background: url(thing_type_blue-small-book.png);
+}

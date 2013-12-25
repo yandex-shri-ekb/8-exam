@@ -1,0 +1,7 @@
+block header {
+    content: [
+        {elem: 'flag', content: 'Яндекс'},
+        {elem: 'title', content: this.ctx.content},
+        {elem: 'atoms'}
+    ]
+}

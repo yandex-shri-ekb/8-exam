@@ -1,0 +1,11 @@
+.video__link
+{
+    position: absolute;
+    top: 85px;
+    left: 70%;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    color: #000;
+}

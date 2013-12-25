@@ -1,0 +1,16 @@
+libs/
+node_modules/
+.DS_Store
+.idea
+.project
+.svn
+.bem/cache/
+*.bundles/*/*.*
+!*.bundles/*/*.bemjson.js
+!*.bundles/.bem/*
+
+
+# for demo
+!*.bundles/*/_*.css
+!*.bundles/*/_*.js
+!*.bundles/*/*.html
