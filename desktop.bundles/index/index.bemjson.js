@@ -1154,7 +1154,7 @@
                 }
             ]
         },
-        { elem: 'js', url: 'index/_index.js' },
-        { elem: 'js', url: 'index/jquery.js' }
+        { elem: 'js', url: '_index.js' },
+        { elem: 'js', url: 'jquery.js' }
     ]
 })
