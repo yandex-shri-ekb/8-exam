@@ -257,6 +257,23 @@ exports.blocks = [
         "name": "grig-way"
     },
     {
+        "name": "this-user",
+        "elems": [
+            {
+                "name": "max"
+            },
+            {
+                "name": "alex"
+            },
+            {
+                "name": "grig"
+            },
+            {
+                "name": "person"
+            }
+        ]
+    },
+    {
         "name": "used-services"
     },
     {

@@ -52,6 +52,11 @@
 @import url(../../desktop.blocks/atom-logo/atom-logo.css);
 @import url(../../desktop.blocks/max-way/max-way.css);
 @import url(../../desktop.blocks/grig-way/grig-way.css);
+@import url(../../desktop.blocks/this-user/this-user.css);
+@import url(../../desktop.blocks/this-user/__max/this-user__max.css);
+@import url(../../desktop.blocks/this-user/__alex/this-user__alex.css);
+@import url(../../desktop.blocks/this-user/__grig/this-user__grig.css);
+@import url(../../desktop.blocks/this-user/__person/this-user__person.css);
 @import url(../../desktop.blocks/used-services/used-services.css);
 @import url(../../desktop.blocks/application-scenarios/application-scenarios.css);
 @import url(../../desktop.blocks/used-services-block/used-services-block.css);

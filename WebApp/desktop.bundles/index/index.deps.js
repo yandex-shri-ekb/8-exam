@@ -397,6 +397,25 @@ exports.deps = [
         "block": "grig-way"
     },
     {
+        "block": "this-user"
+    },
+    {
+        "block": "this-user",
+        "elem": "max"
+    },
+    {
+        "block": "this-user",
+        "elem": "alex"
+    },
+    {
+        "block": "this-user",
+        "elem": "grig"
+    },
+    {
+        "block": "this-user",
+        "elem": "person"
+    },
+    {
         "block": "used-services"
     },
     {

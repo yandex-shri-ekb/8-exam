@@ -861,6 +861,71 @@
 }
 
 /* ../../desktop.blocks/grig-way/grig-way.css end */
+/* ../../desktop.blocks/this-user/this-user.css begin */
+.this-user
+{
+    height: 50%;
+    position: fixed;
+    width: 100%;
+    background: red;
+    top: 0;
+}
+
+/* ../../desktop.blocks/this-user/this-user.css end */
+/* ../../desktop.blocks/this-user/__max/this-user__max.css begin */
+.this-user__max
+{
+}
+
+/* ../../desktop.blocks/this-user/__max/this-user__max.css end */
+/* ../../desktop.blocks/this-user/__alex/this-user__alex.css begin */
+.this-user__alex
+{
+}
+
+/* ../../desktop.blocks/this-user/__alex/this-user__alex.css end */
+/* ../../desktop.blocks/this-user/__grig/this-user__grig.css begin */
+.this-user__grig
+{
+}
+
+/* ../../desktop.blocks/this-user/__grig/this-user__grig.css end */
+/* ../../desktop.blocks/this-user/__person/this-user__person.css begin */
+.this-user__person
+{
+    position: absolute;
+    bottom: -107px;
+    left: 369px;
+    display: inline-block;
+    overflow: hidden;
+    width: 217px;
+    height: 217px;
+    background: url('/image/sprite2.png') no-repeat;
+
+}
+
+.this-user__person:hover
+{
+    opacity: .6;
+}
+
+.this-user__person_color_red
+{
+    background-position: -440px -2px
+}
+
+.this-user__person_color_yellow
+{
+    background-position: -2px -2px
+}
+
+.this-user__person_color_blue
+{
+    background-position: -221px -2px
+}
+
+
+/* ../../desktop.blocks/this-user/__person/this-user__person.css end */
 /* ../../desktop.blocks/used-services/used-services.css begin */
 .used-services
 {

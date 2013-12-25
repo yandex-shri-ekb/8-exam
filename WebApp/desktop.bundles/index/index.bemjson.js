@@ -5,9 +5,9 @@
     head: [
         { elem: 'css', url: 'index/_index.css', ie: false },
         { elem: 'css', url: 'index/_index.ie.css', ie: 'gte IE 6' },
-        { elem: 'meta', attrs: { name: 'description', content: '' }}
-//        { elem: 'js', url: '/jquery-1.10.2.min.js' },
-//        { elem: 'js', url: '/jquerybem.js' }
+        { elem: 'meta', attrs: { name: 'description', content: '' }},
+        { elem: 'js', url: '/jquery-1.10.2.min.js' },
+        { elem: 'js', url: '/jquerybem.js' }
     ],
     content: [
         {
@@ -19,7 +19,7 @@
                 {
                     block: 'history',
                     mods: {
-                      color: 'yellow'
+                        color: 'yellow'
                     },
                     content: [
 
@@ -107,10 +107,11 @@
                                             content: [
                                                 {
                                                     block: 'select-max ',
-                                                    mix:[
+                                                    mix: [
                                                         {
-                                                            block:'js-person'
-                                                        }]
+                                                            block: 'js-person'
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -127,10 +128,11 @@
                                             content: [
                                                 {
                                                     block: 'select-alex ',
-                                                    mix:[
+                                                    mix: [
                                                         {
-                                                            block:'js-person'
-                                                        }]
+                                                            block: 'js-person'
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -147,10 +149,11 @@
                                             content: [
                                                 {
                                                     block: 'select-grig ',
-                                                    mix:[
+                                                    mix: [
                                                         {
-                                                            block:'js-person'
-                                                        }]
+                                                            block: 'js-person'
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -810,10 +813,11 @@
                                             content: [
                                                 {
                                                     block: 'select-max',
-                                                    mix:[
+                                                    mix: [
                                                         {
-                                                            block:'js-person'
-                                                        }]
+                                                            block: 'js-person'
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -830,10 +834,11 @@
                                             content: [
                                                 {
                                                     block: 'select-alex',
-                                                    mix:[
+                                                    mix: [
                                                         {
-                                                            block:'js-person'
-                                                        }]
+                                                            block: 'js-person'
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -850,10 +855,11 @@
                                             content: [
                                                 {
                                                     block: 'select-grig',
-                                                    mix:[
+                                                    mix: [
                                                         {
-                                                            block:'js-person'
-                                                        }]
+                                                            block: 'js-person'
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     block: 'person-name',
@@ -975,6 +981,23 @@
                                     ]
                                 }
 
+                            ]
+                        },
+                        {
+                            block: 'this-user',
+                            content: [
+                                {
+                                    elem: 'max'
+                                },
+                                {
+                                    elem: 'alex'
+                                },
+                                {
+                                    elem: 'grig'
+                                },
+                                {
+                                    elem: 'person'
+                                }
                             ]
                         }
                     ]
@@ -1537,11 +1560,12 @@
                 }
             ]
         },
+
         {
             block: "hack"
         },
-//        { elem: 'js', url: '/script.jquerybem.js' }
+        { elem: 'js', url: '/script.jquerybem.js' }
 //        ,
-        { elem: 'js', url: 'index/_index.js' }
+//        { elem: 'js', url: 'index/_index.js' }
     ]
 });
