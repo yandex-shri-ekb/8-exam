@@ -1,0 +1,22 @@
+
+.history
+{
+    position: relative;
+    float: left;
+    margin: 18px 0 18px 18px;
+    width: 952px;
+    border: 2px solid #000;
+    border-right: 0;
+}
+.history_color_blue
+{
+    background: #00d0f8;
+}
+.history_color_yellow
+{
+    background: #ffe152;
+}
+.history_color_red
+{
+    background: #ff8284;
+}

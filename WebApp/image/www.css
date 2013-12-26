@@ -1,0 +1,51 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:515379e23f28f73579c762ab4c4a43a1:e43c006443df15a9b445cc52da44bdb2:6bf736c582e6b9cf9742173b4b0b88a7$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(Untitled.png);}
+
+.airplane {width:79px; height:79px; background-position: -1188px -143px}
+.airplane-m {width:65px; height:65px; background-position: -1945px -140px}
+.alex {width:138px; height:139px; background-position: -1327px -2px}
+.alex2 {width:174px; height:174px; background-position: -1011px -2px}
+.alex3 {width:217px; height:217px; background-position: -440px -2px}
+.aqualung {width:84px; height:84px; background-position: -1607px -2px}
+.aqualung-m {width:70px; height:70px; background-position: -1594px -157px}
+.car {width:94px; height:67px; background-position: -1693px -78px}
+.car-m {width:80px; height:60px; background-position: -823px -178px}
+.close {width:67px; height:67px; background-position: -1876px -147px}
+.close2 {width:67px; height:67px; background-position: -1954px -71px}
+.grig {width:138px; height:139px; background-position: -1187px -2px}
+.grig2 {width:174px; height:174px; background-position: -835px -2px}
+.grig3 {width:217px; height:217px; background-position: -221px -2px}
+.hotel {width:69px; height:74px; background-position: -1441px -143px}
+.hotel-m {width:60px; height:60px; background-position: -1981px -2px}
+.lenses {width:84px; height:67px; background-position: -1607px -88px}
+.lenses-m {width:70px; height:60px; background-position: -1054px -178px}
+.max {width:138px; height:138px; background-position: -1467px -2px}
+.max2 {width:174px; height:174px; background-position: -659px -2px}
+.max3 {width:217px; height:217px; background-position: -2px -2px}
+.money {width:94px; height:74px; background-position: -1693px -2px}
+.money-m {width:80px; height:60px; background-position: -741px -178px}
+.motorbike {width:89px; height:69px; background-position: -1789px -76px}
+.motorbike-m {width:75px; height:60px; background-position: -905px -178px}
+.question {width:67px; height:67px; background-position: -1885px -71px}
+.question2 {width:67px; height:67px; background-position: -1807px -147px}
+.restaurant {width:67px; height:69px; background-position: -1666px -157px}
+.restaurant-m {width:60px; height:60px; background-position: -1126px -178px}
+.taxi {width:94px; height:67px; background-position: -1885px -2px}
+.taxi-m {width:80px; height:60px; background-position: -659px -178px}
+.things {width:84px; height:74px; background-position: -1355px -143px}
+.things-m {width:70px; height:60px; background-position: -982px -178px}
+.train {width:94px; height:72px; background-position: -1789px -2px}
+.train-m {width:80px; height:65px; background-position: -1512px -142px}
+.yoga {width:84px; height:74px; background-position: -1269px -143px}
+.yoga-m {width:70px; height:65px; background-position: -1735px -147px}

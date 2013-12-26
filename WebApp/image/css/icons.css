@@ -1,0 +1,44 @@
+/* ----------------------------------------------------
+   created with http://www.codeandweb.com/texturepacker 
+   ----------------------------------------------------
+   $TexturePacker:SmartUpdate:c3279d4c364d9a62dd6a6e4bf851e843:533b7be9fdad00e4aebbd43cc2ab872d:f1ca9f615efd41ee6d583ace452461d3$
+   ----------------------------------------------------
+
+   usage: <span class="{-spritename-} sprite"></span>
+
+   replace {-spritename-} with the sprite you like to use
+
+*/
+
+.sprite {display:inline-block; overflow:hidden; background-repeat: no-repeat;background-image:url(icons.png);}
+
+.aiplane {width:79px; height:79px; background-position: -1622px -88px}
+.alex {width:138px; height:139px; background-position: -1327px -2px}
+.alex2 {width:174px; height:174px; background-position: -1011px -2px}
+.alex3 {width:217px; height:217px; background-position: -440px -2px}
+.aqualung {width:84px; height:84px; background-position: -1607px -2px}
+.car {width:94px; height:67px; background-position: -1784px -71px}
+.close {width:67px; height:67px; background-position: -1858px -142px}
+.close2 {width:67px; height:67px; background-position: -1789px -142px}
+.grig {width:138px; height:139px; background-position: -1187px -2px}
+.grig2 {width:174px; height:174px; background-position: -835px -2px}
+.grig3 {width:217px; height:217px; background-position: -221px -2px}
+.hotel {width:69px; height:74px; background-position: -1455px -143px}
+.lenses {width:84px; height:67px; background-position: -1703px -142px}
+
+.max {
+  width: 138px;
+  height: 138px;
+}
+
+.max2 {width:174px; height:174px; background-position: -659px -2px}
+.max3 {width:217px; height:217px; background-position: -2px -2px}
+.money {width:94px; height:74px; background-position: -1187px -143px}
+.motorbike {width:89px; height:69px; background-position: -1693px -2px}
+.question {width:67px; height:67px; background-position: -1703px -73px}
+.question2 {width:67px; height:67px; background-position: -1880px -73px}
+.restaurant {width:67px; height:69px; background-position: -1880px -2px}
+.taxi {width:94px; height:67px; background-position: -1784px -2px}
+.things {width:84px; height:74px; background-position: -1369px -143px}
+.train {width:94px; height:72px; background-position: -1526px -142px}
+.yoga {width:84px; height:74px; background-position: -1283px -143px}

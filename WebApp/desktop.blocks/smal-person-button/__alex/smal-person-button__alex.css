@@ -1,0 +1,71 @@
+
+.smal-person-button__alex
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background: url('/image/sprite2.png') no-repeat;
+    cursor: pointer;
+}
+
+.smal-person-button__alex_step_1.smal-person-button__alex_state_active
+{
+
+    width: 94px;
+    height: 74px;
+    background-position: -1693px -2px
+
+}
+
+.smal-person-button__alex_step_1
+{
+    width: 80px;
+    height: 60px;
+    background-position: -741px -178px
+}
+
+.smal-person-button__alex_step_2.smal-person-button__alex_state_active
+{
+
+    width: 84px;
+    height: 67px;
+    background-position: -1607px -88px
+}
+
+.smal-person-button__alex_step_2
+{
+    width: 70px;
+    height: 60px;
+    background-position: -1054px -178px
+}
+
+.smal-person-button__alex_step_3.smal-person-button__alex_state_active
+{
+
+    width: 94px;
+    height: 67px;
+    background-position: -1693px -78px
+}
+
+.smal-person-button__alex_step_3
+{
+    width: 80px;
+    height: 60px;
+    background-position: -823px -178px
+}
+
+.smal-person-button__alex_step_4.smal-person-button__alex_state_active
+{
+
+    width: 67px;
+    height: 69px;
+    background-position: -1666px -157px
+}
+
+.smal-person-button__alex_step_4
+{
+    width: 60px;
+    height: 60px;
+    background-position: -1126px -178px
+}

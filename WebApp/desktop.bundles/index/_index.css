@@ -1,0 +1,1444 @@
+/* ../../desktop.blocks/page/page.css begin */
+.page
+{
+    margin: 0;
+    font: 16px/24px Arial, sans-serif;
+}
+
+/* ../../desktop.blocks/page/page.css end */
+/* ../../desktop.blocks/wrapper/wrapper.css begin */
+.wrapper
+{
+    position: relative;
+    overflow: hidden;
+}
+
+/* ../../desktop.blocks/wrapper/wrapper.css end */
+/* ../../desktop.blocks/services-toggle/services-toggle.css begin */
+.services-toggle
+{
+    position: fixed;
+    top: 36px;
+    right: 36px;
+    z-index: 1;
+    display: inline-block;
+    overflow: hidden;
+    width: 67px;
+    height: 67px;
+    background: url('/image/sprite2.png') no-repeat -1885px -71px;
+}
+
+.services-toggle:hover
+{
+    background-position: -1807px -147px
+}
+
+.services-toggle_state_active{
+    background-position: -1876px -147px
+}
+
+.services-toggle_state_active:hover{
+    background-position: -1954px -71px
+}
+/* ../../desktop.blocks/services-toggle/services-toggle.css end */
+/* ../../desktop.blocks/history/history.css begin */
+
+.history
+{
+    position: relative;
+    float: left;
+    margin: 18px 0 18px 18px;
+    width: 952px;
+    border: 2px solid #000;
+    border-right: 0;
+}
+.history_color_blue
+{
+    background: #00d0f8;
+}
+.history_color_yellow
+{
+    background: #ffe152;
+}
+.history_color_red
+{
+    background: #ff8284;
+}
+/* ../../desktop.blocks/history/history.css end */
+/* ../../desktop.blocks/head-history/head-history.css begin */
+.head-history
+{
+    position: relative;
+    height: 589px;
+    border-bottom: 2px solid #000;
+}
+
+/* ../../desktop.blocks/head-history/head-history.css end */
+/* ../../desktop.blocks/head-history/__background/head-history__background.css begin */
+.head-history__background
+{
+    background: url("../../desktop.blocks/head-history/__background/head-history__background.png") no-repeat;
+    height: 570px;
+    position: absolute;
+    width: 972px;
+    top: -20px;
+    left: -20px;
+}
+
+/* ../../desktop.blocks/head-history/__background/head-history__background.css end */
+/* ../../desktop.blocks/head-history/__title/head-history__title.css begin */
+.head-history__title
+{
+    font: 48px/48px "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 428px;
+
+}
+
+/* ../../desktop.blocks/head-history/__title/head-history__title.css end */
+/* ../../desktop.blocks/video-history/video-history.css begin */
+.video-history
+{
+    height: 392px;
+    border-bottom: 2px solid #000;
+    background: #fff;
+}
+
+/* ../../desktop.blocks/video-history/video-history.css end */
+/* ../../desktop.blocks/grid-wrap/grid-wrap.css begin */
+.grid-wrap
+{
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-left: -2px;
+    padding-right: 174px;
+}
+
+/* ../../desktop.blocks/grid-wrap/grid-wrap.css end */
+/* ../../desktop.blocks/introductory-text/introductory-text.css begin */
+.introductory-text
+{
+    margin: 77px 0 0 18px;
+}
+
+/* ../../desktop.blocks/introductory-text/introductory-text.css end */
+/* ../../desktop.blocks/grid/grid.css begin */
+.grid
+{
+    position: relative;
+    float: left;
+}
+
+.grid_coll_1
+{
+    left: 0;
+}
+
+.grid_coll_2
+{
+    left: 10%;
+}
+
+.grid_coll_3
+{
+    left: 20%;
+}
+
+.grid_coll_4
+{
+    left: 30%;
+}
+
+.grid_coll_5
+{
+    left: 40%;
+}
+
+.grid_coll_6
+{
+    left: 50%;
+}
+
+.grid_coll_7
+{
+    left: 60%;
+}
+
+.grid_coll_8
+{
+    left: 70%;
+}
+
+.grid_coll_9
+{
+    left: 80%;
+}
+
+.grid_coll_10
+{
+    left: 90%;
+}
+
+.grid_coll_11
+{
+    left: 100%;
+}
+
+.grid_coll_12
+{
+    left: 110%;
+}
+
+.grid_size_1
+{
+    margin-right: -10%;
+    width: 10%;
+}
+
+.grid_size_2
+{
+    margin-right: -20%;
+    width: 20%;
+}
+
+.grid_size_3
+{
+    margin-right: -30%;
+    width: 30%;
+}
+
+.grid_size_4
+{
+    margin-right: -40%;
+    width: 40%;
+}
+
+.grid_size_5
+{
+    margin-right: -50%;
+    width: 50%;
+}
+
+.grid_size_6
+{
+    margin-right: -60%;
+    width: 60%;
+}
+
+.grid_size_7
+{
+    margin-right: -70%;
+    width: 70%;
+}
+
+.grid_size_8
+{
+    margin-right: -80%;
+    width: 80%;
+}
+
+.grid_size_9
+{
+    margin-right: -90%;
+    width: 90%;
+}
+
+.grid_size_10
+{
+    margin-right: -100%;
+    width: 100%;
+}
+
+.grid_size_11
+{
+    margin-right: -110%;
+    width: 110%;
+}
+
+.grid_size_12
+{
+    margin-right: -120%;
+    width: 120%;
+}
+
+/* ../../desktop.blocks/grid/grid.css end */
+/* ../../desktop.blocks/paragraf/paragraf.css begin */
+.paragraf
+{
+    margin-bottom: 20px;
+}
+
+/* ../../desktop.blocks/paragraf/paragraf.css end */
+/* ../../desktop.blocks/video-button/video-button.css begin */
+.video-button
+{
+    margin-top: 80px;
+}
+
+/* ../../desktop.blocks/video-button/video-button.css end */
+/* ../../desktop.blocks/video-button/__button/video-button__button.css begin */
+.video-button__button
+{
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video-button__button_color_red
+{
+    width: 138px;
+    height: 80px;
+    background: url("/image/sprite1.png") no-repeat -298px -84px;
+}
+
+.video-button__button_color_yellow
+{
+    width: 138px;
+    height: 80px;
+    background: url("/image/sprite1.png") no-repeat -298px -166px;
+}
+
+.video-button__button_color_blue
+{
+    width: 138px;
+    height: 80px;
+    background: url("/image/sprite1.png") no-repeat -298px -2px;
+}
+/* ../../desktop.blocks/video-button/__button/video-button__button.css end */
+/* ../../desktop.blocks/video-button/__title/video-button__title.css begin */
+.video-button__title
+{
+    margin-top: 5px;
+}
+
+/* ../../desktop.blocks/video-button/__title/video-button__title.css end */
+/* ../../desktop.blocks/select-person/select-person.css begin */
+.select-person
+{
+    height: 280px;
+}
+
+/* ../../desktop.blocks/select-person/select-person.css end */
+/* ../../desktop.blocks/select-person/_top/select-person_top_up.css begin */
+.select-person_top_up
+{
+    margin-top: -40px;
+    border-bottom: 2px solid #000;
+}
+
+/* ../../desktop.blocks/select-person/_top/select-person_top_up.css end */
+/* ../../desktop.blocks/person-name/person-name.css begin */
+.person-name
+{
+    margin: 0 -4px 0 14px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+/* ../../desktop.blocks/person-name/person-name.css end */
+/* ../../desktop.blocks/person-description/person-description.css begin */
+.person-description
+{
+    height: 106px;
+    text-align: center;
+}
+
+/* ../../desktop.blocks/person-description/person-description.css end */
+/* ../../desktop.blocks/indent/indent.css begin */
+.indent
+{
+    margin-left: 18px;
+}
+
+/* ../../desktop.blocks/indent/indent.css end */
+/* ../../desktop.blocks/person-history/person-history.css begin */
+.person-history
+{
+    text-align: center;
+}
+.person-history .history-alex,
+.person-history .history-max,
+.person-history .history-grig
+{
+    display: none;
+}
+
+
+.person-history_color_red .history-alex
+{
+    display: block;
+}
+
+.person-history_color_blue .history-grig
+{
+    display: block;
+}
+
+.person-history_color_yellow .history-max
+{
+    display: block;
+}
+/* ../../desktop.blocks/person-history/person-history.css end */
+/* ../../desktop.blocks/history-max/history-max.css begin */
+.history-max
+{
+    position: relative;
+    height: 3330px;
+    display: none;
+}
+
+/* ../../desktop.blocks/history-max/history-max.css end */
+/* ../../desktop.blocks/max-history-bg/max-history-bg.css begin */
+.max-history-bg
+{
+    margin-left: 18px;
+}
+
+/* ../../desktop.blocks/max-history-bg/max-history-bg.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-1/max-history-bg__bg-1.css begin */
+
+.max-history-bg__bg-1
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 226px;
+    background: url('/image/y2.png') 0 -2958px no-repeat
+}
+
+.max-history-bg__bg-1:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 226px;
+    background: url('/image/y1.png') 0 -2958px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/max-history-bg/__bg-1/max-history-bg__bg-1.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-2/max-history-bg__bg-2.css begin */
+
+.max-history-bg__bg-2
+{
+    position: relative;
+    top: 75px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 565px;
+    background: url('/image/y2.png') 0 -1036px no-repeat;
+}
+
+.max-history-bg__bg-2:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 565px;
+    background: url('/image/y1.png') 0 -1036px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/max-history-bg/__bg-2/max-history-bg__bg-2.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-3/max-history-bg__bg-3.css begin */
+
+.max-history-bg__bg-3
+{
+    position: relative;
+    top: 130px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 1034px;
+    background: url('/image/y2.png') 0 0 no-repeat;
+}
+
+.max-history-bg__bg-3:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 1034px;
+    background: url('/image/y1.png') 0 0 no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/max-history-bg/__bg-3/max-history-bg__bg-3.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-4/max-history-bg__bg-4.css begin */
+
+.max-history-bg__bg-4
+{
+    position: relative;
+    top: 47px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 958px;
+    height: 565px;
+    background: url('/image/y2.png') 0 -1603px no-repeat;
+}
+
+.max-history-bg__bg-4:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 958px;
+    height: 565px;
+    background: url('/image/y1.png') 0 -1603px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/max-history-bg/__bg-4/max-history-bg__bg-4.css end */
+/* ../../desktop.blocks/max-history-bg/__bg-5/max-history-bg__bg-5.css begin */
+
+.max-history-bg__bg-5
+{
+    position: relative;
+    top: 133px;
+    display: inline-block;
+    overflow: hidden;
+    width: 858px;
+    height: 756px;
+    background: url('/image/y2.png') 0 -2170px no-repeat;
+}
+
+.max-history-bg__bg-5:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 858px;
+    height: 756px;
+    background: url('/image/y1.png') 0 -2170px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/max-history-bg/__bg-5/max-history-bg__bg-5.css end */
+/* ../../desktop.blocks/history-text/history-text.css begin */
+.history-text
+{
+}
+
+/* ../../desktop.blocks/history-text/history-text.css end */
+/* ../../desktop.blocks/step1/step1.css begin */
+.step1
+{
+    position: absolute;
+    top: 114px;
+    width: 954px;
+}
+
+/* ../../desktop.blocks/step1/step1.css end */
+/* ../../desktop.blocks/step2/step2.css begin */
+.step2
+{
+    position: absolute;
+    top: 906px;
+    width: 954px;
+}
+
+/* ../../desktop.blocks/step2/step2.css end */
+/* ../../desktop.blocks/step3/step3.css begin */
+.step3
+{
+    position: absolute;
+    top: 1734px;
+    width: 954px;
+}
+
+/* ../../desktop.blocks/step3/step3.css end */
+/* ../../desktop.blocks/step4/step4.css begin */
+.step4
+{
+    position: absolute;
+    top: 2476px;
+    width: 954px;
+}
+
+/* ../../desktop.blocks/step4/step4.css end */
+/* ../../desktop.blocks/history-alex/history-alex.css begin */
+.history-alex
+{
+    position: relative;
+    display: none;
+    height: 3330px;
+}
+
+.history-alex .step2
+{
+    top: 890px;
+}
+
+.history-alex .step4
+{
+    top: 2508px
+}
+/* ../../desktop.blocks/history-alex/history-alex.css end */
+/* ../../desktop.blocks/alex-history-bg/alex-history-bg.css begin */
+.alex-history-bg
+{
+    margin-left: 18px;
+}
+
+/* ../../desktop.blocks/alex-history-bg/alex-history-bg.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-1/alex-history-bg__bg-1.css begin */
+.alex-history-bg__bg-1
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/r2.png') -968px -1549px no-repeat
+}
+
+.alex-history-bg__bg-1:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/r1.png') -968px -1549px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/alex-history-bg/__bg-1/alex-history-bg__bg-1.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-2/alex-history-bg__bg-2.css begin */
+.alex-history-bg__bg-2
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 997px;
+    background: url('/image/r2.png') -974px 0 no-repeat
+}
+
+.alex-history-bg__bg-2:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 997px;
+    background: url('/image/r1.png') -974px 0 no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/alex-history-bg/__bg-2/alex-history-bg__bg-2.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-3/alex-history-bg__bg-3.css begin */
+.alex-history-bg__bg-3
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 966px;
+    height: 614px;
+    background: url('/image/r2.png') 0 -1001px no-repeat
+}
+
+.alex-history-bg__bg-3:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 966px;
+    height: 614px;
+    background: url('/image/r1.png') 0 -1001px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/alex-history-bg/__bg-3/alex-history-bg__bg-3.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-4/alex-history-bg__bg-4.css begin */
+.alex-history-bg__bg-4
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 999px;
+    background: url('/image/r2.png') 0 0 no-repeat
+}
+
+.alex-history-bg__bg-4:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 999px;
+    background: url('/image/r1.png') 0 0 no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/alex-history-bg/__bg-4/alex-history-bg__bg-4.css end */
+/* ../../desktop.blocks/alex-history-bg/__bg-5/alex-history-bg__bg-5.css begin */
+.alex-history-bg__bg-5
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 548px;
+    background: url('/image/r2.png') -974px -999px no-repeat
+}
+
+.alex-history-bg__bg-5:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 548px;
+    background: url('/image/r1.png') -974px -999px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/alex-history-bg/__bg-5/alex-history-bg__bg-5.css end */
+/* ../../desktop.blocks/history-grig/history-grig.css begin */
+.history-grig
+{
+    position: relative;
+    display: none;
+    height: 3330px;
+}
+
+/* ../../desktop.blocks/history-grig/history-grig.css end */
+/* ../../desktop.blocks/grig-history-bg/grig-history-bg.css begin */
+.grig-history-bg
+{
+    margin-left: 18px;
+}
+
+/* ../../desktop.blocks/grig-history-bg/grig-history-bg.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-1/grig-history-bg__bg-1.css begin */
+.grig-history-bg__bg-1
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/b2.png') -860px -1544px no-repeat
+}
+
+.grig-history-bg__bg-1:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/b1.png') -860px -1544px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-1/grig-history-bg__bg-1.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-2/grig-history-bg__bg-2.css begin */
+.grig-history-bg__bg-2
+{
+    position: relative;
+    top: 31px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 777px;
+    background: url('/image/b2.png') -974px 0 no-repeat
+}
+
+.grig-history-bg__bg-2:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 777px;
+    background: url('/image/b1.png') -974px 0 no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-2/grig-history-bg__bg-2.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-3/grig-history-bg__bg-3.css begin */
+.grig-history-bg__bg-3
+{
+    position: relative;
+    top: 18px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 763px;
+    background: url('/image/b2.png') -974px -779px no-repeat;
+}
+
+.grig-history-bg__bg-3:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 763px;
+    background: url('/image/b1.png') -974px -779px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-3/grig-history-bg__bg-3.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-4/grig-history-bg__bg-4.css begin */
+.grig-history-bg__bg-4
+{
+    position: relative;
+    top: -100px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: -38px;
+    width: 972px;
+    height: 1143px;
+    background: url('/image/b2.png') 0 0 no-repeat;
+}
+
+.grig-history-bg__bg-4:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 972px;
+    height: 1143px;
+    background: url('/image/b1.png') 0 0 no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-4/grig-history-bg__bg-4.css end */
+/* ../../desktop.blocks/grig-history-bg/__bg-5/grig-history-bg__bg-5.css begin */
+.grig-history-bg__bg-5
+{
+    position: relative;
+    top: -90px;
+    display: inline-block;
+    overflow: hidden;
+    margin-left: 76px;
+    width: 858px;
+    height: 548px;
+    background: url('/image/b2.png') 0 -1145px no-repeat
+}
+
+.grig-history-bg__bg-5:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 858px;
+    height: 548px;
+    background: url('/image/b1.png') 0 -1145px no-repeat;
+    content: '';
+}
+
+/* ../../desktop.blocks/grig-history-bg/__bg-5/grig-history-bg__bg-5.css end */
+/* ../../desktop.blocks/select-max/select-max.css begin */
+.select-max
+{
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 80px;
+    margin-left: 18px;
+    width: 138px;
+    height: 138px;
+    background: url("/image/sprite2.png") no-repeat -1467px -2px;
+    cursor: pointer;
+}
+
+.select-max_state_active
+{
+    margin: 62px -18px 0 0;
+    width: 174px;
+    height: 174px;
+    background-position: -659px -2px;
+}
+/* ../../desktop.blocks/select-max/select-max.css end */
+/* ../../desktop.blocks/select-alex/select-alex.css begin */
+.select-alex
+{
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 79px;
+    margin-left: 18px;
+    width: 138px;
+    height: 139px;
+    background: url("/image/sprite2.png") no-repeat -1327px -2px;
+    cursor: pointer;
+}
+
+.select-alex_state_active
+{
+    margin: 62px -18px 0 0;
+    width: 174px;
+    height: 174px;
+    background-position: -1011px -2px;
+}
+/* ../../desktop.blocks/select-alex/select-alex.css end */
+/* ../../desktop.blocks/select-grig/select-grig.css begin */
+.select-grig
+{
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 79px;
+    margin-left: 18px;
+    width: 138px;
+    height: 139px;
+    background: url("/image/sprite2.png") no-repeat -1187px -2px;
+    cursor: pointer;
+}
+
+.select-grig_state_active
+{
+    margin: 62px -18px 0 0;
+    width: 174px;
+    height: 174px;
+    background-position: -835px -2px;
+}
+/* ../../desktop.blocks/select-grig/select-grig.css end */
+/* ../../desktop.blocks/atom-footer/atom-footer.css begin */
+.atom-footer
+{
+    padding-top: 60px;
+    height: 376px;
+    background: #fff;
+}
+
+/* ../../desktop.blocks/atom-footer/atom-footer.css end */
+/* ../../desktop.blocks/atom-logo/atom-logo.css begin */
+.atom-logo
+{
+    width: 102px;
+    height: 102px;
+    background: url("/image/atom-logo.png") no-repeat;
+}
+
+/* ../../desktop.blocks/atom-logo/atom-logo.css end */
+/* ../../desktop.blocks/max-way/max-way.css begin */
+.max-way
+{
+
+}
+
+/* ../../desktop.blocks/max-way/max-way.css end */
+/* ../../desktop.blocks/grig-way/grig-way.css begin */
+.grig-way
+{
+}
+
+/* ../../desktop.blocks/grig-way/grig-way.css end */
+/* ../../desktop.blocks/this-user/this-user.css begin */
+.this-user
+{
+    position: fixed;
+    top: 0;
+    display: none;
+    width: 954px;
+    height: 50%;
+    text-align: center;
+}
+
+/* ../../desktop.blocks/this-user/this-user.css end */
+/* ../../desktop.blocks/this-user/__person/this-user__person.css begin */
+.this-user__person
+{
+    position: absolute;
+    bottom: -107px;
+    left: 369px;
+    display: inline-block;
+    overflow: hidden;
+    width: 217px;
+    height: 217px;
+    background: url('/image/sprite2.png') no-repeat;
+
+}
+
+.this-user__person:hover
+{
+    opacity: .6;
+}
+
+.this-user__person_color_red
+{
+    background-position: -440px -2px
+}
+
+.this-user__person_color_yellow
+{
+    background-position: -2px -2px
+}
+
+.this-user__person_color_blue
+{
+    background-position: -221px -2px
+}
+
+
+/* ../../desktop.blocks/this-user/__person/this-user__person.css end */
+/* ../../desktop.blocks/this-user-sel/this-user-sel.css begin */
+.this-user-sel
+{
+    display: inline-block;
+    margin-top: 36px;
+    position: relative;
+}
+
+/* ../../desktop.blocks/this-user-sel/this-user-sel.css end */
+/* ../../desktop.blocks/smal-person-button/smal-person-button.css begin */
+.smal-person-button
+{
+    display: table-cell;
+    width: 100px;
+    height: 100px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* ../../desktop.blocks/smal-person-button/smal-person-button.css end */
+/* ../../desktop.blocks/smal-person-button/__max/smal-person-button__max.css begin */
+
+.smal-person-button__max
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background: url('/image/sprite2.png') no-repeat;
+    cursor: pointer;
+}
+
+.smal-person-button__max_step_1.smal-person-button__max_state_active
+{
+    width: 79px;
+    height: 79px;
+    background-position: -1188px -143px
+}
+
+.smal-person-button__max_step_1
+{
+    width: 65px;
+    height: 65px;
+    background-position: -1945px -140px
+}
+
+.smal-person-button__max_step_2.smal-person-button__max_state_active
+{
+    width: 84px;
+    height: 74px;
+    background-position: -1355px -143px
+}
+
+.smal-person-button__max_step_2
+{
+    width: 70px;
+    height: 60px;
+    background-position: -982px -178px
+}
+
+.smal-person-button__max_step_3.smal-person-button__max_state_active
+{
+    margin-top: -6px;
+    width: 94px;
+    height: 72px;
+    background-position: -1789px -2px;
+}
+
+.smal-person-button__max_step_3
+{
+    width: 80px;
+    height: 65px;
+    background-position: -1512px -142px;
+}
+
+.smal-person-button__max_step_4.smal-person-button__max_state_active
+{
+    width: 89px;
+    height: 69px;
+    background-position: -1789px -76px
+}
+
+.smal-person-button__max_step_4
+{
+    width: 75px;
+    height: 60px;
+    background-position: -905px -178px
+}
+
+/* ../../desktop.blocks/smal-person-button/__max/smal-person-button__max.css end */
+/* ../../desktop.blocks/smal-person-button/__alex/smal-person-button__alex.css begin */
+
+.smal-person-button__alex
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background: url('/image/sprite2.png') no-repeat;
+    cursor: pointer;
+}
+
+.smal-person-button__alex_step_1.smal-person-button__alex_state_active
+{
+
+    width: 94px;
+    height: 74px;
+    background-position: -1693px -2px
+
+}
+
+.smal-person-button__alex_step_1
+{
+    width: 80px;
+    height: 60px;
+    background-position: -741px -178px
+}
+
+.smal-person-button__alex_step_2.smal-person-button__alex_state_active
+{
+
+    width: 84px;
+    height: 67px;
+    background-position: -1607px -88px
+}
+
+.smal-person-button__alex_step_2
+{
+    width: 70px;
+    height: 60px;
+    background-position: -1054px -178px
+}
+
+.smal-person-button__alex_step_3.smal-person-button__alex_state_active
+{
+
+    width: 94px;
+    height: 67px;
+    background-position: -1693px -78px
+}
+
+.smal-person-button__alex_step_3
+{
+    width: 80px;
+    height: 60px;
+    background-position: -823px -178px
+}
+
+.smal-person-button__alex_step_4.smal-person-button__alex_state_active
+{
+
+    width: 67px;
+    height: 69px;
+    background-position: -1666px -157px
+}
+
+.smal-person-button__alex_step_4
+{
+    width: 60px;
+    height: 60px;
+    background-position: -1126px -178px
+}
+
+/* ../../desktop.blocks/smal-person-button/__alex/smal-person-button__alex.css end */
+/* ../../desktop.blocks/smal-person-button/__grig/smal-person-button__grig.css begin */
+
+.smal-person-button__grig
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background: url('/image/sprite2.png') no-repeat;
+    cursor: pointer;
+}
+
+.smal-person-button__grig_step_1.smal-person-button__grig_state_active
+{
+    margin: 0 10px;
+    width: 69px;
+    height: 74px;
+    background-position: -1441px -143px
+}
+
+.smal-person-button__grig_step_1
+{
+    width: 60px;
+    height: 60px;
+    background-position: -1981px -2px
+}
+
+.smal-person-button__grig_step_2.smal-person-button__grig_state_active
+{
+    width: 84px;
+    height: 84px;
+    background-position: -1607px -2px;
+}
+
+.smal-person-button__grig_step_2
+{
+    width: 70px;
+    height: 70px;
+    background-position: -1594px -157px
+}
+
+.smal-person-button__grig_step_3.smal-person-button__grig_state_active
+{
+    width: 94px;
+    height: 67px;
+    background-position: -1885px -2px
+}
+
+.smal-person-button__grig_step_3
+{
+    width: 80px;
+    height: 60px;
+    background-position: -659px -178px
+}
+
+.smal-person-button__grig_step_4.smal-person-button__grig_state_active
+{
+    width: 84px;
+    height: 74px;
+    background-position: -1269px -143px
+}
+
+.smal-person-button__grig_step_4
+{
+    width: 70px;
+    height: 65px;
+    background-position: -1735px -147px
+}
+
+/* ../../desktop.blocks/smal-person-button/__grig/smal-person-button__grig.css end */
+/* ../../desktop.blocks/used-services/used-services.css begin */
+.used-services
+{
+    position: absolute;
+    top: 0;
+    margin-left: 972px;
+    width: 100%;
+    outline: 18px rgba(0, 0, 0, 0.10) solid;
+    border-left: 2px #000 solid;
+    background: #fff;
+}
+
+/* ../../desktop.blocks/used-services/used-services.css end */
+/* ../../desktop.blocks/application-scenarios/application-scenarios.css begin */
+.application-scenarios
+{
+    height: 630px;
+}
+
+/* ../../desktop.blocks/application-scenarios/application-scenarios.css end */
+/* ../../desktop.blocks/used-services-block/used-services-block.css begin */
+.used-services-block
+{
+    padding: 36px;
+    border-bottom: 2px solid #000;
+}
+
+/* ../../desktop.blocks/used-services-block/used-services-block.css end */
+/* ../../desktop.blocks/used-services-content-wrapper/used-services-content-wrapper.css begin */
+.used-services-content-wrapper
+{
+    position: relative;
+    width: 800px;
+}
+
+/* ../../desktop.blocks/used-services-content-wrapper/used-services-content-wrapper.css end */
+/* ../../desktop.blocks/title/title.css begin */
+.title
+{
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+/* ../../desktop.blocks/title/title.css end */
+/* ../../desktop.blocks/atom-logo2/atom-logo2.css begin */
+.atom-logo2
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 294px;
+    height: 201px;
+    background: url('/image/sprite1.png') no-repeat -2px -2px;
+}
+
+/* ../../desktop.blocks/atom-logo2/atom-logo2.css end */
+/* ../../desktop.blocks/yandex-logo/yandex-logo.css begin */
+.yandex-logo
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 78px;
+    height: 30px;
+    background: url('/image/sprite1.png') no-repeat -2px -205px;
+}
+
+/* ../../desktop.blocks/yandex-logo/yandex-logo.css end */
+/* ../../desktop.blocks/presentation/presentation.css begin */
+.presentation
+{
+    height: 659px;
+}
+
+/* ../../desktop.blocks/presentation/presentation.css end */
+/* ../../desktop.blocks/YaC-video/YaC-video.css begin */
+.YaC-video
+{
+    width: 712px;
+    height: 405px;
+    background: url("/image/for-video.png") no-repeat;
+}
+
+/* ../../desktop.blocks/YaC-video/YaC-video.css end */
+/* ../../desktop.blocks/max-used-services/max-used-services.css begin */
+.max-used-services
+{
+}
+
+/* ../../desktop.blocks/max-used-services/max-used-services.css end */
+/* ../../desktop.blocks/us-step1/us-step1.css begin */
+.us-step1
+{
+    height: 685px;
+}
+
+/* ../../desktop.blocks/us-step1/us-step1.css end */
+/* ../../desktop.blocks/img/img.css begin */
+.img
+{
+}
+
+/* ../../desktop.blocks/img/img.css end */
+/* ../../desktop.blocks/us-step2/us-step2.css begin */
+.us-step2
+{
+    height: 751px;
+}
+
+/* ../../desktop.blocks/us-step2/us-step2.css end */
+/* ../../desktop.blocks/us-step3/us-step3.css begin */
+.us-step3
+{
+    height: 686px;
+}
+
+/* ../../desktop.blocks/us-step3/us-step3.css end */
+/* ../../desktop.blocks/us-step4/us-step4.css begin */
+.us-step4
+{
+    height: 802px;
+}
+
+/* ../../desktop.blocks/us-step4/us-step4.css end */
+/* ../../desktop.blocks/alex-used-services/alex-used-services.css begin */
+.alex-used-services
+{
+}
+
+/* ../../desktop.blocks/alex-used-services/alex-used-services.css end */
+/* ../../desktop.blocks/grig-used-services/grig-used-services.css begin */
+.grig-used-services
+{
+
+}
+
+.grig-used-services .us-step1
+{
+    height: 723px;
+}
+
+.grig-used-services .us-step2
+{
+    height: 684px;
+}
+
+.grig-used-services .us-step3
+{
+    height: 735px;
+}
+
+.grig-used-services .us-step4
+{
+    height: 731px;
+}
+
+/* ../../desktop.blocks/grig-used-services/grig-used-services.css end */
+/* ../../desktop.blocks/closed-testing/closed-testing.css begin */
+.closed-testing
+{
+    height: 800px;
+    border-bottom: 0;
+}
+
+/* ../../desktop.blocks/closed-testing/closed-testing.css end */
+/* ../../desktop.blocks/hack/hack.css begin */
+.hack
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1100%;
+    background: linear-gradient(-90deg, transparent 0px, transparent 18px, rgba(0, 0, 0, .1) 18px, rgba(0, 0, 0, .1) 78px) -42px 0;
+    background-size: 78px 78px;
+}
+
+/* ../../desktop.blocks/hack/hack.css end */

@@ -1,0 +1,22 @@
+.alex-history-bg__bg-1
+{
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/r2.png') -968px -1549px no-repeat
+}
+
+.alex-history-bg__bg-1:before
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    overflow: hidden;
+    width: 762px;
+    height: 97px;
+    background: url('/image/r1.png') -968px -1549px no-repeat;
+    content: '';
+}

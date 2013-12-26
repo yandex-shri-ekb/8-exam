@@ -1,0 +1,27 @@
+.video-button__button
+{
+    display: inline-block;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.video-button__button_color_red
+{
+    width: 138px;
+    height: 80px;
+    background: url("/image/sprite1.png") no-repeat -298px -84px;
+}
+
+.video-button__button_color_yellow
+{
+    width: 138px;
+    height: 80px;
+    background: url("/image/sprite1.png") no-repeat -298px -166px;
+}
+
+.video-button__button_color_blue
+{
+    width: 138px;
+    height: 80px;
+    background: url("/image/sprite1.png") no-repeat -298px -2px;
+}

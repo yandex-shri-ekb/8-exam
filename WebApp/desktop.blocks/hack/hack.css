@@ -1,0 +1,13 @@
+.hack
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 1100%;
+    background: linear-gradient(-90deg, transparent 0px, transparent 18px, rgba(0, 0, 0, .1) 18px, rgba(0, 0, 0, .1) 78px) -42px 0;
+    background-size: 78px 78px;
+}

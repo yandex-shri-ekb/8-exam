@@ -1,0 +1,19 @@
+.select-alex
+{
+    display: inline-block;
+    overflow: hidden;
+    margin-top: 79px;
+    margin-left: 18px;
+    width: 138px;
+    height: 139px;
+    background: url("/image/sprite2.png") no-repeat -1327px -2px;
+    cursor: pointer;
+}
+
+.select-alex_state_active
+{
+    margin: 62px -18px 0 0;
+    width: 174px;
+    height: 174px;
+    background-position: -1011px -2px;
+}

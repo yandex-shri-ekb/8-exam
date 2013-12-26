@@ -1,0 +1,67 @@
+
+.smal-person-button__max
+{
+    display: inline-block;
+    overflow: hidden;
+    width: 100px;
+    height: 100px;
+    background: url('/image/sprite2.png') no-repeat;
+    cursor: pointer;
+}
+
+.smal-person-button__max_step_1.smal-person-button__max_state_active
+{
+    width: 79px;
+    height: 79px;
+    background-position: -1188px -143px
+}
+
+.smal-person-button__max_step_1
+{
+    width: 65px;
+    height: 65px;
+    background-position: -1945px -140px
+}
+
+.smal-person-button__max_step_2.smal-person-button__max_state_active
+{
+    width: 84px;
+    height: 74px;
+    background-position: -1355px -143px
+}
+
+.smal-person-button__max_step_2
+{
+    width: 70px;
+    height: 60px;
+    background-position: -982px -178px
+}
+
+.smal-person-button__max_step_3.smal-person-button__max_state_active
+{
+    margin-top: -6px;
+    width: 94px;
+    height: 72px;
+    background-position: -1789px -2px;
+}
+
+.smal-person-button__max_step_3
+{
+    width: 80px;
+    height: 65px;
+    background-position: -1512px -142px;
+}
+
+.smal-person-button__max_step_4.smal-person-button__max_state_active
+{
+    width: 89px;
+    height: 69px;
+    background-position: -1789px -76px
+}
+
+.smal-person-button__max_step_4
+{
+    width: 75px;
+    height: 60px;
+    background-position: -905px -178px
+}
