@@ -1002,8 +1002,7 @@
                                             content: [
                                                 {
                                                     elem: 'grig'
-                                                }
-                                            ]
+                                                }]
 
                                         }
                                     ]
